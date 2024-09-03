@@ -1,0 +1,3 @@
+{{ $section := .Section }}
+{{ $sectionName := index .Site.Params.sectionNames $section | default $section }}
+{{ $sectionName }}

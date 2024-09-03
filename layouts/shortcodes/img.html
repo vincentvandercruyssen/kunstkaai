@@ -1,0 +1,6 @@
+{{ $image := resources.Get (.Get "src") }}
+{{ $width := .Get "width" | default "800" }}
+{{ $resized := $image.Resize (print $width "x webp q75") }}
+{{ $fileName := path.Base (.Get "src") }} <!-- Ensure correct file name retrieval -->
+{{ $fileNameWithoutExt := replace $fileName (path.Ext $fileName) "" }} <!-- Remove extension -->
+<img src="{{ $resized.Permalink }}" alt="{{ $fileNameWithoutExt }}">

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 511.87">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="256.68" y1="-729.24" x2="253.03" y2="-412.17" gradientTransform="translate(0 -410.49) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38aab0"/>
+      <stop offset="1" stop-color="#0f5f68"/>
+    </linearGradient>
+  </defs>
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 15)  -->
+  <g>
+    <g id="svg2" inkscape:version="0.48.3.1 r9886" sodipodi:docname="Novo documento 1">
+      <g>
+        <rect id="rect3188-8-8-6" class="cls-3" x=".03" y="0" width="511.87" height="511.87"/>
+        <path id="rect3350" class="cls-1" d="M146.81,117.37l16.38,18.72v217.67h-16.38V117.37Z" inkscape:connector-curvature="0"/>
+        <path id="rect3329" class="cls-1" d="M149.13,121.24l16.61,18.53v213.99h-16.61V121.24Z" inkscape:connector-curvature="0"/>
+        <path id="path3331" class="cls-2" d="M102.64,358.19c30.04,1.99,42.2-8.42,47.6-28.78l16.61,3.32c5.5,11.2,9.66,22.86,40.96,25.46v7.75h-106.27l1.11-7.75h0Z" inkscape:connector-curvature="0"/>
+        <path id="path3327" class="cls-2" d="M102.77,95.26l21.96,2.93,8.05,4.39,186.7,210.13,57.84,5.86-24.16-35.14L178.91,90.13l-76.14-.73v5.86h0Z" inkscape:connector-curvature="0"/>
+        <path id="path3317" class="cls-2" d="M102.77,95.26l21.96,2.93,8.05,4.39,186.7,210.13,57.84,5.86-24.16-35.14L178.91,90.13l-76.14-.73v5.86h0Z" inkscape:connector-curvature="0"/>
+        <rect id="rect3333" class="cls-1" x="360.57" y="99.15" width="16.61" height="228.04"/>
+        <path id="path3335" class="cls-2" d="M314.08,94.72c29.75-.82,41.3,12.02,47.6,28.78l16.61-3.32c5.5-11.2,9.66-22.86,40.96-25.46v-7.75h-106.27l1.11,7.75h0Z" inkscape:connector-curvature="0"/>
+        <path id="rect3188-8" d="M257.46,309.92c-97.58,0-187.13,16.11-257.44,42.86v159.09h511.87v-160.21c-69.84-26.07-158.25-41.74-254.44-41.74Z" inkscape:connector-curvature="0"/>
+        <path id="path3352" class="cls-2" d="M100.41,336.38c29.34.82,40.74-12.02,46.95-28.78l16.38,3.32c5.43,11.2,9.53,22.86,40.4,25.46v7.75h-104.83l1.09-7.75h0Z" inkscape:connector-curvature="0"/>
+        <path id="rect3188-8-0" class="cls-1" d="M257.25,309.69c-97.8,0-186.62,16.18-257.2,43.03v1.44L0,355.39l3.56-.09c69.56-25.97,157.73-41.62,253.69-41.62,88.62,4.87,179.76,15.06,254.65,41.79v-1.38l.04-1.46.05-.95c-70.11-26.17-158.34-42-254.75-42Z" inkscape:connector-curvature="0" sodipodi:nodetypes="scccccccccs"/>
+      </g>
+    </g>
+  </g>
+</svg>

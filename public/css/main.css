@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Noto Serif";
+  src: url("/fonts/NotoSerif-VariableFont_wdth,wght.ttf");
+}
+
+:root {
+  --sidebar-width: 20rem;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+  color: #222;
+  font-family: "Noto Serif";
+  line-height: 1.61803;
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  max-width: calc(320px + 80ch + 8rem);
+  margin: 0 auto;
+}
+
+body::after {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0.2rem 1ch 0 1ch;
+  height: 1.2rem;
+  content: "Kunstkaai - V. Vander Cruyssen";
+  background-color: #fff;
+  font-size: 0.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+img,
+object,
+table,
+div:has(iframe) {
+  margin-bottom: 1.5rem;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+p,
+li {
+  max-width: 80ch;
+}
+
+/* :is(h1, h2, h3, h4, h5, h6) + p {
+  text-indent: 2ch;
+} */
+
+a {
+  color: #19f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  font-size: 1rem;
+}
+
+img,
+object {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-spacing: 0;
+}
+
+table td {
+  padding-bottom: 1rem;
+}
+
+table tr:last-child td {
+  padding-bottom: 0;
+}
+
+table td+td {
+  padding-left: 1rem;
+}
+
+table img,
+table object {
+  margin: 0;
+  min-width: 5rem;
+}
+
+header,
+main {
+  padding: 0;
+  background-color: #fffe;
+}
+
+header>* {
+  position: fixed;
+  width: var(--sidebar-width);
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header a {
+  display: block;
+  padding: 0.4rem 0;
+}
+
+header ul,
+header ol,
+header li {
+  list-style: none;
+}
+
+header ol {
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+header li {
+  margin: 0;
+}
+
+header ol li ol {
+  padding-left: 1rem;
+}
+
+header ol li ol a {
+  padding: 0.2rem 0;
+}
+
+main {
+  margin: 0 2rem;
+  padding: 1rem 2rem;
+}
+
+main ul li::before {
+  content: "↪ ";
+}
+
+main ol li {
+  counter-increment: item;
+}
+
+main ol li::before {
+  content: "0" counter(item) ". ";
+}
+
+main ol li:nth-child(n + 10)::before {
+  content: counter(item) ". ";
+}
+
+footer {
+  border-top: 1px solid #0003;
+  margin: 2rem 0;
+  grid-column: 2;
+}

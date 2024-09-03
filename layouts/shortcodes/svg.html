@@ -1,0 +1,21 @@
+{{ $svg := resources.Get (.Get "src") }}
+{{ $width := .Get "width" | default "100%" }}
+{{ $href := .Get "href" | default "" }}
+{{ $text := .Get "text" | default "" }}
+{{ $fileName := path.Base (.Get "src") }} <!-- Ensure correct file name retrieval -->
+{{ $fileNameWithoutExt := replace $fileName (path.Ext $fileName) "" }} 
+
+{{ if $svg }}
+    {{ if $href }}
+        <a href="{{ $href }}" target="_blank" style="display: flex; align-items: center; flex-direction:column;">
+    {{ end }}
+    <img src="{{ $svg.Permalink }}" width="{{ $width }}" alt="{{ $fileNameWithoutExt }}" />
+    {{ if $text }}
+        <p>{{ $text }}</p>
+    {{ end }}
+    {{ if $href }}
+        </a>
+    {{ end }}
+{{ else }}
+    <p>Your browser does not support SVG.</p>
+{{ end }}

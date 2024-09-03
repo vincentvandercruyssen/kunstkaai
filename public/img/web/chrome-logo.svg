@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #1a73e8;
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="34.35" y1="470.04" x2="477.63" y2="470.04" gradientTransform="translate(0 630.04) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d93025"/>
+      <stop offset="1" stop-color="#ea4335"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="221.06" y1="121.49" x2="442.69" y2="505.38" gradientTransform="translate(0 630.04) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcc934"/>
+      <stop offset="1" stop-color="#fbbc04"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="283.69" y1="134.05" x2="62.05" y2="517.94" gradientTransform="translate(0 630.04) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1e8e3e"/>
+      <stop offset="1" stop-color="#34a853"/>
+    </linearGradient>
+  </defs>
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 15)  -->
+  <g>
+    <g id="Layer_1">
+      <g>
+        <circle class="cls-2" cx="256" cy="255.94" r="127.98"/>
+        <path class="cls-3" d="M34.33,383.98c70.68,122.42,227.22,164.37,349.64,93.69,122.42-70.68,164.37-227.22,93.69-349.64C406.98,5.6,250.44-36.35,128.02,34.34c0,0,0,0,0,0C5.6,105.02-36.35,261.56,34.33,383.98ZM366.83,192.01c35.34,61.21,14.37,139.48-46.84,174.82-61.21,35.34-139.48,14.37-174.82-46.84-35.34-61.21-14.37-139.48,46.84-174.82,0,0,0,0,0,0,61.21-35.34,139.48-14.37,174.82,46.84Z"/>
+        <path class="cls-6" d="M256,128.02h221.63C406.98,5.62,250.49-36.34,128.09,34.31c-38.94,22.47-71.27,54.81-93.73,93.75l110.81,191.94.1-.03c-35.41-61.07-14.62-139.28,46.45-174.7,19.53-11.32,41.71-17.27,64.28-17.25Z"/>
+        <circle class="cls-4" cx="256" cy="256" r="101.32"/>
+        <path class="cls-1" d="M366.82,320.02l-110.81,191.94c141.33.02,255.91-114.53,255.93-255.86,0-44.96-11.83-89.12-34.32-128.04h-221.63l-.03.1c70.59-.14,127.93,56.98,128.06,127.57.04,22.57-5.89,44.76-17.2,64.29Z"/>
+        <path class="cls-5" d="M145.18,320.02L34.36,128.09C-36.32,250.47,5.59,406.98,127.98,477.66c38.93,22.48,83.1,34.31,128.05,34.3l110.81-191.94-.07-.07c-35.18,61.2-113.31,82.3-174.52,47.12-19.57-11.25-35.81-27.48-47.08-47.04Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

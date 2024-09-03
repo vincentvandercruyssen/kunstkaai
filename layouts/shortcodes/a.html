@@ -1,0 +1,5 @@
+{{ $href := .Get "href" }}
+{{ $text := .Get "text" | default $href }}
+{{ $target := .Get "target" | default "_blank" }}
+
+<a href="{{ $href }}" target="{{ $target }}">{{ $text }}</a>
