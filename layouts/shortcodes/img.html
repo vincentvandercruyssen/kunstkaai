@@ -3,4 +3,14 @@
 {{ $resized := $image.Resize (print $width "x webp q75") }}
 {{ $fileName := path.Base (.Get "src") }} <!-- Ensure correct file name retrieval -->
 {{ $fileNameWithoutExt := replace $fileName (path.Ext $fileName) "" }} <!-- Remove extension -->
-<img src="{{ $resized.Permalink }}" alt="{{ $fileNameWithoutExt }}">
+{{ $center := .Get "center" }}
+
+{{ if $center }}
+  <div style="display: flex; justify-content: center;">
+{{ end }}
+
+  <img src="{{ $resized.Permalink }}" alt="{{ $fileNameWithoutExt }}">
+  
+{{ if $center }}
+</div>
+{{ end }}

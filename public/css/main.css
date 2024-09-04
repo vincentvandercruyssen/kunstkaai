@@ -44,7 +44,8 @@ li,
 img,
 object,
 table,
-div:has(iframe) {
+div:has(iframe),
+hr {
   margin-bottom: 1.5rem;
 }
 

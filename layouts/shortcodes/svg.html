@@ -5,6 +5,12 @@
 {{ $fileName := path.Base (.Get "src") }} <!-- Ensure correct file name retrieval -->
 {{ $fileNameWithoutExt := replace $fileName (path.Ext $fileName) "" }} 
 
+{{ $center := .Get "center" }}
+
+{{ if $center }}
+  <div style="display: flex; justify-content: center;">
+{{ end }}
+
 {{ if $svg }}
     {{ if $href }}
         <a href="{{ $href }}" target="_blank" style="display: flex; align-items: center; flex-direction:column;">
@@ -18,4 +24,8 @@
     {{ end }}
 {{ else }}
     <p>Your browser does not support SVG.</p>
+{{ end }}
+
+{{ if $center }}
+  </div>
 {{ end }}
