@@ -5,6 +5,9 @@
     <loc>http://localhost:1313/digitaal/cursus-illustrator/</loc>
     <lastmod>2024-08-30T08:00:00-07:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/typo/cursus-intro/</loc>
+    <lastmod>2024-08-30T08:00:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/web/cursus-intro/</loc>
     <lastmod>2024-08-30T08:00:00-07:00</lastmod>
   </url><url>
@@ -15,6 +18,9 @@
     <lastmod>2024-08-30T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/digitaal/opdracht-01-pentool/</loc>
+    <lastmod>2024-08-30T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/typo/</loc>
     <lastmod>2024-08-30T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/web/</loc>
@@ -47,10 +53,6 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/typo/cursus/</loc>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/typo/</loc>
   </url>
 </urlset>
