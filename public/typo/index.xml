@@ -4,7 +4,7 @@
     <title>Typoes on Kunstkaai</title>
     <link>http://localhost:1313/typo/</link>
     <description>Recent content in Typoes on Kunstkaai</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Aug 2024 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/typo/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/typo/cursus-intro/</link>
       <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/typo/cursus-intro/</guid>
-      <description>Inleiding: Wat is typografie? De kunst van het vormgeven, opmaken, drukken of weergeven van tekst voor zowel functionele als esthetische doeleinden wordt typografie genoemd. Typografie is overal: in boeken, op websites, op straatborden, op productverpakkingen, en ga zo maar door. Het beïnvloedt de leesbaarheid, de visuele hiërarchie en de boodschap van een ontwerp.&#xA;Bij esthetische doeleinden draait het erom dat iets mooi en aantrekkelijk wordt gemaakt, met de nadruk op de visuele uitstraling.</description>
+      <description>&lt;h2 id=&#34;inleiding-wat-is-typografie&#34;&gt;Inleiding: Wat is typografie?&lt;/h2&gt;&#xA;&lt;p&gt;De kunst van het &lt;em&gt;vormgeven&lt;/em&gt;, opmaken, drukken of weergeven van &lt;strong&gt;tekst&lt;/strong&gt; voor zowel &lt;em&gt;functionele als esthetische doeleinden&lt;/em&gt; wordt typografie genoemd. Typografie is overal: in boeken, op websites, op straatborden, op productverpakkingen, en ga zo maar door. Het beïnvloedt de leesbaarheid, de visuele hiërarchie en de boodschap van een ontwerp.&lt;/p&gt;&#xA;&lt;p&gt;Bij &lt;em&gt;esthetische doeleinden&lt;/em&gt; draait het erom dat iets mooi en aantrekkelijk wordt gemaakt, met de nadruk op de visuele uitstraling.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

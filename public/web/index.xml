@@ -4,7 +4,7 @@
     <title>Webs on Kunstkaai</title>
     <link>http://localhost:1313/web/</link>
     <description>Recent content in Webs on Kunstkaai</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Aug 2024 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/web/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/web/cursus-intro/</link>
       <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/cursus-intro/</guid>
-      <description>Fundamenten van Webontwikkeling In het vak Webontwikkeling leer je websites en webapplicaties ontwerpen en ontwikkelen. Gedurende het jaar experimenteer je met code en doorloop je het proces van een ontwerp naar een live website. Je krijgt ook de kans om bestaande websites te analyseren en de principes achter gebruiksvriendelijke omgevingen en optimale gebruikerservaringen te doorgronden.&#xA;Voor het ontwikkelen van deze webomgevingen maak je voornamelijk gebruik van een stevige basis HTML en CSS, aangevuld met doordachte lay-outs die gebruik maken van tekst en afbeeldingen.</description>
+      <description>&lt;h2 id=&#34;fundamenten-van-webontwikkeling&#34;&gt;Fundamenten van Webontwikkeling&lt;/h2&gt;&#xA;&lt;p&gt;In het vak Webontwikkeling leer je websites en webapplicaties ontwerpen en ontwikkelen. Gedurende het jaar experimenteer je met code en doorloop je het proces van een ontwerp naar een live website. Je krijgt ook de kans om bestaande websites te analyseren en de principes achter gebruiksvriendelijke omgevingen en optimale gebruikerservaringen te doorgronden.&lt;/p&gt;&#xA;&lt;p&gt;Voor het ontwikkelen van deze webomgevingen maak je voornamelijk gebruik van een stevige basis HTML en CSS, aangevuld met doordachte lay-outs die gebruik maken van tekst en afbeeldingen.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
