@@ -1,12 +1,5 @@
 {{ define "main" }}
 <style>
-  /* remove when content has reached full browser height */
-  html,
-  body,
-  main {
-    height: 100%;
-  }
-
   header {
     display: none;
   }
@@ -40,9 +33,9 @@
     <div class="cursus">
       <h4>Cursusmateriaal</h4>
       <ul>
-        {{ range $page := $folder.Pages }}
-        {{ if (hasPrefix $page.File.BaseFileName "cursus") }}
-        <li><a href="{{ $page.Permalink }}">{{ $page.Title }}</a></li>
+        {{ range sort $folder.Pages.ByDate "Date" "asc" }}
+        {{ if (hasPrefix .File.BaseFileName "cursus") }}
+        <li><a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a></li>
         {{ end }}
         {{ end }}
       </ul>
@@ -52,9 +45,9 @@
     <div class="opdracht">
       <h4>Opdrachten</h4>
       <ul>
-        {{ range $page := $folder.Pages }}
-        {{ if (hasPrefix $page.File.BaseFileName "opdracht") }}
-        <li><a href="{{ $page.Permalink }}">{{ $page.Title }}</a></li>
+        {{ range sort $folder.Pages.ByDate "Date" "asc" }}
+        {{ if (hasPrefix .File.BaseFileName "opdracht") }}
+        <li><a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a></li>
         {{ end }}
         {{ end }}
       </ul>
@@ -63,5 +56,4 @@
   </div>
   {{ end }}
 </div>
-
 {{ end }}
