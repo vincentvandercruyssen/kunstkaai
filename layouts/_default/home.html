@@ -1,0 +1,67 @@
+{{ define "main" }}
+<style>
+  /* remove when content has reached full browser height */
+  html,
+  body,
+  main {
+    height: 100%;
+  }
+
+  header {
+    display: none;
+  }
+
+  main {
+    grid-column: 1 / 3;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+</style>
+
+<div class="grid-container">
+  {{ range $folder := (where .Site.Sections "Section" "!=" "") }}
+  <div class="folder">
+    <h3>{{ partial "sectionName.html" $folder }}</h3>
+
+    <!-- Cursus Section -->
+    <div class="cursus">
+      <h4>Cursusmateriaal</h4>
+      <ul>
+        {{ range $page := $folder.Pages }}
+        {{ if (hasPrefix $page.File.BaseFileName "cursus") }}
+        <li><a href="{{ $page.Permalink }}">{{ $page.Title }}</a></li>
+        {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+
+    <!-- Opdracht Section -->
+    <div class="opdracht">
+      <h4>Opdrachten</h4>
+      <ul>
+        {{ range $page := $folder.Pages }}
+        {{ if (hasPrefix $page.File.BaseFileName "opdracht") }}
+        <li><a href="{{ $page.Permalink }}">{{ $page.Title }}</a></li>
+        {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+
+  </div>
+  {{ end }}
+</div>
+
+{{ end }}
