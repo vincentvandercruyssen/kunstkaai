@@ -56,7 +56,7 @@ Belangrijke stappen in het Data Merge-proces:
 2. Exporteer de catalogus als PDF.
 3. **Presenteer je catalogus** aan de klas en bespreek hoe de Data Merge functie tijd heeft bespaard en wat de voor- en nadelen van deze methode zijn.
 
-## Leerdoelen en beeoordeling
+## Leerdoelen en beoordeling
 
 - Gegevens verzamelen en beheren in Excel of Google Sheets.
 - InDesign en de Data Merge functie gebruiken.
