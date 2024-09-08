@@ -83,10 +83,35 @@ Tijdens je zoektocht naar verschillende soorten lettertypen kom je waarschijnlij
 
 ### Principes van compositie
 - **Proximity**: Groepeer gerelateerde (gelijkaardige) elementen.
+
+|   |   |
+|---|---|
+|{{< svg src="/img/typo/cursus-proximity-1_a.svg" width="800" >}}|{{< svg src="/img/typo/cursus-proximity-1_b.svg" width="800" >}}|
+
 - **White Space**: Gebruik negatieve ruimte om ademruimte te creëren.
+
+|   |   |
+|---|---|
+|{{< img src="/img/typo/cursus-negativespace-1_a.jpg" width="1200" >}}|{{< img src="/img/typo/cursus-negativespace-1_b.jpg" width="1200" >}}|
+
 - **Alignment**: Zorg voor consistente uitlijning voor visuele orde.
+
+|   |   |   |
+|---|---|---|
+|{{< img src="/img/typo/cursus-alignment-1_a.jpg" width="600" >}}|{{< img src="/img/typo/cursus-alignment-1_b.jpg" width="600" >}}|{{< img src="/img/typo/cursus-alignment-1_c.jpg" width="600" >}}|
+
 - **Contrast**: Creëer focus door contrasten in kleur, vorm of grootte te gebruiken.
+
+|   |   |
+|---|---|
+|{{< img src="/img/typo/cursus-contrast-1_a.jpg" width="1200" >}}|{{< img src="/img/typo/cursus-contrast-1_b.jpg" width="1200" >}}|
+|{{< img src="/img/typo/cursus-contrast-1_c.jpg" width="1200" >}}|{{< img src="/img/typo/cursus-contrast-1_d.jpg" width="1200" >}}|
+
 - **Repetition**: Herhaal stijlen voor consistentie en herkenbaarheid.
+
+|   |   |   |
+|---|---|---|
+|{{< img src="/img/typo/cursus-repetition-1_a.png" width="600" >}}|{{< img src="/img/typo/cursus-repetition-1_b.png" width="600" >}}|{{< img src="/img/typo/cursus-repetition-1_c.png" width="600" >}}|
 
 #### Lay-out en structuur
 
