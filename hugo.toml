@@ -4,3 +4,7 @@ title = 'Kunstkaai'
 theme = 'kunstkaai'
 [params]
   sectionNames = { web = "Webontwikkeling", typo = "Typografie", digitaal = "Digitaal atelier", data = "Datamanagement" }
+[imaging]
+  quality = 75
+  resampleFilter = 'Lanczos'
+
