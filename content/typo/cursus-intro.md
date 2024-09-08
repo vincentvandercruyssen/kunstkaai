@@ -41,11 +41,7 @@ Als ontwerper kun je natuurlijk ook de gulden middenweg kiezen, waarbij je zowel
 7. **Gothic (Blackletter)**: hebben een middeleeuwse, hoekige stijl met zware lijnen. Ze werden veel gebruikt in oude manuscripten en officiële documenten. Vandaag de dag worden ze vooral decoratief ingezet, zoals in logo's of titels, om een historische of gotische sfeer te creëren.
 8. **Fonts met ‘baggage’**: Sommige fonts zoals Comic Sans en Papyrus zijn overgebruikt en hebben negatieve associaties. Hoewel ze technisch onder categorieën kunnen vallen zoals 'handwritten' of 'script', hebben ze een eigen reputatie. Wees hier voorzichtig mee…of niet.
 
----
-
-- Een regel die je op eigen risico kunt breken: gebruik maximaal twee lettertypes per project.
-- Combineer contrasten aan de hand van grootte, gewicht of stijl.
-- Gebruik variaties in grootte, gewicht of stijl om diepte en hiërarchie te creëren.
+{{< svg src="/img/typo/cursus-serifvssans-1.svg" width="400" center="true" >}}
 
 ### Typo-terminologie
 
@@ -55,11 +51,14 @@ Tijdens je zoektocht naar verschillende soorten lettertypen kom je waarschijnlij
 
 {{< svg src="/img/typo/cursus-lettertypes-1.svg" width="320" center="true">}}
 
-- **Font:** Een font is een specifieke variant of stijl binnen een lettertypefamilie. Bijvoorbeeld, Helvetica Light is een lichtere versie binnen de Helvetica-familie, en verschilt van zijn familieleden door zijn subtiele en lichte ‘gewicht’.
+- **Letterfamilie (Font):** Een font is een specifieke variant of stijl binnen een lettertypefamilie. Bijvoorbeeld, Helvetica Light is een lichtere versie binnen de Helvetica-familie, en verschilt van zijn familieleden door zijn subtiele en lichte ‘gewicht’.
 
-{{< svg src="/img/typo/cursus-fonts-1.svg" width="320" center="true">}}
+{{< img src="/img/typo/cursus-fonts_letterfamilie-1.png" width="380"  center="true" >}}
 
 - **Gewicht (Weight):** Het gewicht van een font geeft de dikte van de letters aan. Een vet font is dikker en opvallender, terwijl een licht font dunner en subtieler is. Een medium font zit qua dikte tussen deze twee in.
+
+{{< img src="/img/typo/cursus-fonts_letterfamilie-2.jpg" width="380"  center="true" >}}
+
 - **Interlinie (Leading):** Interlinie verwijst naar de verticale ruimte tussen tekstregels. Te weinig ruimte kan de tekst samenpersen en moeilijk leesbaar maken, terwijl te veel ruimte de tekst fragmentarisch en onsamenhangend kan laten lijken.
 
 {{< svg src="/img/typo/cursus-leading-1.svg" width="320" center="true" >}}
@@ -68,10 +67,45 @@ Tijdens je zoektocht naar verschillende soorten lettertypen kom je waarschijnlij
 
 {{< svg src="/img/typo/cursus-tracking-1.svg" width="320" center="true" >}}
 
-
 - **Kerning:** Kerning verwijst naar het aanpassen van de ruimte tussen individuele letters. Dit stelt ons in staat subtiele correcties aan te brengen bij bepaalde lettercombinaties, vooral bij letters die van nature meer of minder ruimte innemen, zoals A, W, V en T. Veel software biedt standaard de opties 'metric' en 'optical', die elk een andere automatische benadering bieden voor kernaanpassing.
 
 {{< svg src="/img/typo/cursus-kerning-1.svg" width="320" center="true" >}}
+
+- Een regel die je op eigen risico kunt breken: gebruik maximaal twee lettertypes per project.
+- Combineer contrasten aan de hand van grootte, gewicht of stijl.
+- Gebruik variaties in grootte, gewicht of stijl om diepte en hiërarchie te creëren.
+
+## De anatomie van lettervormen
+
+De anatomie van typografie bestaat uit verschillende elementen die de structuur van letters definiëren.
+
+{{< img src="/img/typo/cursus-typo_anatomie-1.jpg" width="1600"  center="true" >}}
+
+1. **Apex**: Het punt waar twee diagonale lijnen samenkomen, vaak te zien bij de letter "A".
+2. **Arm**: Een horizontale of diagonale lijn die vrij aan één kant van een letter hangt, zoals in de "T" of "E".
+3. **Tittle**: Het punt boven kleine letters zoals "i" of "j".
+4. **Bowl**: Een afgeronde, gesloten lijn in letters zoals "b", "o" of "d".
+5. **Crossbar**: Een horizontale lijn die twee delen van een letter verbindt, zoals bij de "A".
+6. **Counter (Open/Closed)**: De binnenruimte van een letter. Open counter is gedeeltelijk geopend (zoals bij "c"), terwijl een closed counter volledig omsloten is (zoals bij "o").
+7. **Stem**: De hoofdverticaal van een letter, zoals in "l" of "p".
+8. **Eye**: De volledig omsloten ruimte in een kleine letter "e".
+9. **Ear**: Een klein uitstulpsel, zoals te zien bij de kleine letter "g".
+10. **Spine**: De kromming van de letter "S".
+11. **Shoulder**: Een gebogen lijn, zoals bij de kleine letter "h" of "n".
+12. **Tail**: Een lange lijn die uit de hoofdvorm van een letter steekt, zoals bij "Q" of "y".
+13. **Diagonal Stroke**: Een schuine lijn, vaak in de "N" of "V".
+14. **Aperture**: De opening van een open counter, zoals bij de "n".
+15. **Leg**: Een schuin neergaande lijn, zoals in de "R" of "K".
+
+### Proporties
+
+Daarnaast zijn er de denkbeeldige lijnen die de proporties van de letters aangeven.
+
+- **Baseline**: De denkbeeldige lijn waar alle letters op rusten.
+- **X-height**: De hoogte van kleine letters.
+- **Capital height**: De hoogte van hoofdletters gemeten vanaf de baseline tot de bovenkant van de hoofdletter.
+- **Ascender line**: De lijn die de bovenkant van de letters zoals "b", "d" of "h" markeert.
+- **Descender line**: De lijn die de onderkant van letters met staarten zoals "p", "q" of "y" markeert.
 
 ## Lay-out en compositie
 

@@ -17,10 +17,17 @@
     </item>
     <item>
       <title>Opdracht: Filmpjes</title>
-      <link>http://localhost:1313/typo/opdracht-01-filmpjes/</link>
+      <link>http://localhost:1313/typo/opdracht-4-01-filmpjes/</link>
       <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/typo/opdracht-01-filmpjes/</guid>
+      <guid>http://localhost:1313/typo/opdracht-4-01-filmpjes/</guid>
       <description>Bekijk de twee video&amp;rsquo;s uit de introductiecursus en vul de werkbladen in.</description>
+    </item>
+    <item>
+      <title>Opdracht: Typofiguren</title>
+      <link>http://localhost:1313/typo/opdracht-5-01-typofiguren/</link>
+      <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/typo/opdracht-5-01-typofiguren/</guid>
+      <description>Adobe Illustrator: Typofiguren In deze opdracht ontwerp je vijf figuren in Adobe Illustrator, waarbij je uitsluitend typografie gebruikt. Elk figuur moet uit één specifiek lettertype bestaan, zoals een serif, sans serif, script, display of gothic lettertype. Gebruik verschillende tekens om menselijke, dierlijke of robotachtige figuren samen te stellen, zonder de letters te vervormen, en lever het werk zowel als .AI- als .PDF-bestand in.&#xA;Gebruikte technieken Objecten selecteren. Objecten transformeren: verplaatsen, schalen, draaien en spiegelen.</description>
     </item>
   </channel>
 </rss>

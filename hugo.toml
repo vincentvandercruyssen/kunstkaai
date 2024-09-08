@@ -3,8 +3,7 @@ languageCode = 'en-us'
 title = 'Kunstkaai'
 theme = 'kunstkaai'
 [params]
-  sectionNames = { web = "Webontwikkeling", typo = "Typografie", digitaal = "Digitaal atelier", data = "Datamanagement" }
+  sectionNames = { web = "Webontwikkeling", typo = "Typografische Vormgeving", digitaal = "Digitaal atelier", data = "Datamanagement" }
 [imaging]
-  quality = 75
+  quality = 90
   resampleFilter = 'Lanczos'
-
