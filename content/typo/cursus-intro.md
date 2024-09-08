@@ -19,7 +19,7 @@ Als ontwerper kun je natuurlijk ook de gulden middenweg kiezen, waarbij je zowel
 |   |   |
 |---|---|
 | {{< video src="/img/typo/cursus-voorbeeld-bauhaus_movement-1.mp4" >}} | {{< img src="/img/typo/cursus-voorbeeld-erich_brechbühl1.jpg" >}} |
-| {{< img src="/img/typo/cursus-boekvoorbeeld-outline_rachel_cusk-1.jpg" >}} | {{< img src="/img/typo/cursus-voorbeeld-gabor_lazar-unfold-1.jpg" >}} |
+| {{< img src="/img/typo/cursus-boekvoorbeeld-outline_rachel_cusk-1.jpg" width="1600" >}} | {{< img src="/img/typo/cursus-voorbeeld-gabor_lazar-unfold-1.jpg" width="1600" >}} |
 
 ## Typografische basisprincipes
 
