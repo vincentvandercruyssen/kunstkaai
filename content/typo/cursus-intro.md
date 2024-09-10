@@ -32,16 +32,36 @@ Als ontwerper kun je natuurlijk ook de gulden middenweg kiezen, waarbij je zowel
 |{{< svg src="/img/typo/cursus-types_serif-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_sans-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_display-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_script-1.svg" width="800" >}}|
 |{{< svg src="/img/typo/cursus-types_handwritten-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_monospace-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_gothic-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_yikes-1.svg" width="800" >}}|
 
-1. **Serif**: Klassieke, traditionele uitstraling. Serif-lettertypen hebben kleine lijnen of streepjes aan de uiteinden van de letters, zoals Times New Roman. Ze worden vaak gebruikt in gedrukte media zoals boeken en kranten vanwege hun formele en vertrouwde uitstraling.
-2. **Sans Serif**: Moderne, strakke stijl zonder streepjes of lijnen aan de uiteinden van de letters. Sans serif-lettertypen, zoals Arial en Helvetica, worden vaak gebruikt voor digitale weergave op schermen omdat ze leesbaar zijn en een eenvoudige, moderne uitstraling hebben.
-3. **Display**: Deze decoratieve lettertypen zijn bedoeld voor koppen en titels, niet voor grote tekstblokken. Display-lettertypen zijn vaak opvallend en creatief, zoals bij logo's en posters, om de aandacht te trekken.
-4. **Script**: Script-lettertypen imiteren handschrift en hebben sierlijke, vloeiende lijnen. Ze worden vaak gebruikt voor decoratieve toepassingen, zoals uitnodigingen of luxe merken.
-5. **Handwritten**: Deze lettertypen imiteren handschrift, maar zijn informeler en minder sierlijk dan script-lettertypen. Ze geven een persoonlijke, casual uitstraling en worden vaak gebruikt voor speelse of informele ontwerpen.
-6. **Monospace**: Bij monospace-lettertypen nemen alle tekens dezelfde hoeveelheid ruimte in beslag, zoals Courier. Ze zijn populair in programmeercode en tabellen vanwege hun consistente uitlijning van tekens.
-7. **Gothic (Blackletter)**: hebben een middeleeuwse, hoekige stijl met zware lijnen. Ze werden veel gebruikt in oude manuscripten en officiële documenten. Vandaag de dag worden ze vooral decoratief ingezet, zoals in logo's of titels, om een historische of gotische sfeer te creëren.
-8. **Fonts met ‘baggage’**: Sommige fonts zoals Comic Sans en Papyrus zijn overgebruikt en hebben negatieve associaties. Hoewel ze technisch onder categorieën kunnen vallen zoals 'handwritten' of 'script', hebben ze een eigen reputatie. Wees hier voorzichtig mee…of niet.
 
-{{< svg src="/img/typo/cursus-serifvssans-1.svg" width="400" center="true" >}}
+- **Serif**: Klassieke, traditionele uitstraling. Serif-lettertypen hebben kleine lijnen of streepjes aan de uiteinden van de letters, zoals Times New Roman. Ze worden vaak gebruikt in gedrukte media zoals boeken en kranten vanwege hun formele en vertrouwde uitstraling.
+- **Sans Serif**: Moderne, strakke stijl zonder streepjes of lijnen aan de uiteinden van de letters. Sans serif-lettertypen, zoals Arial en Helvetica, worden vaak gebruikt voor digitale weergave op schermen omdat ze leesbaar zijn en een eenvoudige, moderne uitstraling hebben.
+
+{{< svg src="/img/typo/cursus-serifvssans-1.svg" width="260" center="true" >}}
+
+- **Display**: Deze decoratieve lettertypen zijn bedoeld voor koppen en titels, niet voor grote tekstblokken. Display-lettertypen zijn vaak opvallend en creatief, zoals bij logo's en posters, om de aandacht te trekken.
+- **Script**: Script-lettertypen imiteren handschrift en hebben sierlijke, vloeiende lijnen. Ze worden vaak gebruikt voor decoratieve toepassingen, zoals uitnodigingen of luxe merken.
+- **Handwritten**: Deze lettertypen imiteren handschrift, maar zijn informeler en minder sierlijk dan script-lettertypen. Ze geven een persoonlijke, casual uitstraling en worden vaak gebruikt voor speelse of informele ontwerpen.
+- **Monospace**: Bij monospace-lettertypen nemen alle tekens dezelfde hoeveelheid ruimte in beslag, zoals Courier. Ze zijn populair in programmeercode en tabellen vanwege hun consistente uitlijning van tekens.
+- **Gothic (Blackletter)**: hebben een middeleeuwse, hoekige stijl met zware lijnen. Ze werden veel gebruikt in oude manuscripten en officiële documenten. Vandaag de dag worden ze vooral decoratief ingezet, zoals in logo's of titels, om een historische of gotische sfeer te creëren.
+- **Fonts met ‘baggage’**: Sommige fonts zoals Comic Sans en Papyrus zijn overgebruikt en hebben negatieve associaties. Hoewel ze technisch onder categorieën kunnen vallen zoals 'handwritten' of 'script', hebben ze een eigen reputatie. Wees hier voorzichtig mee…of niet.
+
+**Bekijk eens de website {{< a href="https://comicsanscriminal.com/" text="Comic Sans Criminal" >}}**. Los van de ironie wordt er op een speelse manier duidelijk gemaakt waarom bepaalde lettertypes, zoals Comic Sans, niet altijd even geschikt zijn. De keuze van een font beïnvloedt niet alleen de uitstraling van een ontwerp, maar ook of het past bij de context waarin het wordt gebruikt. Sommige lettertypes werken bijvoorbeeld goed voor een verjaardagskaart, terwijl andere beter geschikt zijn voor eerder formele documenten.
+
+---
+
+{{< p_style style="padding: 0 6rem;" >}}
+    Beste Jimmy,
+    Je bent uitgenodigd op mijn super-awesome kei kei leuke verjaardagsfeestje!
+{{< /p_style >}}
+
+---
+
+{{< p_style style="font-family: fantasy; padding: 0 6rem;" >}}
+    Beste James,
+    Tot mijn grote spijt moet ik u meedelen dat onze testresultaten uitwijzen dat u ongeneeslijk ziek bent. 
+{{< /p_style >}}
+
+---
 
 ### Typo-terminologie
 
@@ -79,9 +99,15 @@ Tijdens je zoektocht naar verschillende soorten lettertypen kom je waarschijnlij
 
 Bij proportionele lettertypen neemt elk teken een andere hoeveelheid ruimte in, afhankelijk van de breedte. Een "i" is bijvoorbeeld smaller dan een "m".
 
+{{< checkerboard >}}
+    Proportioneel: alle schrifttekens hebben steeds een verschillende breedte.
+{{< /checkerboard >}}
+
 Monospace-lettertypen geven elk teken dezelfde breedte, ongeacht de vorm. Dit is handig voor programmeren of tabellen, waar een consistente uitlijning belangrijk is.
 
-{{< img src="/img/typo/cursus-proportioneel_vs_monospace-1.jpg" width="380" center="true" >}}
+{{< checkerboard monospace="true" >}}
+    Monospace: alle schrifttekens hebben telkens dezelfde breedte.
+{{< /checkerboard >}}
 
 ## De anatomie van lettervormen
 
