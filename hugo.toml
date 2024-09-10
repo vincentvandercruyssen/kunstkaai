@@ -7,3 +7,5 @@ theme = 'kunstkaai'
 [imaging]
   quality = 90
   resampleFilter = 'Lanczos'
+[server]
+  cleanDestinationDir = true

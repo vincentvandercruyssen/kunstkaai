@@ -4,7 +4,7 @@
     <title>Webs on Kunstkaai</title>
     <link>http://localhost:1313/web/</link>
     <description>Recent content in Webs on Kunstkaai</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Aug 2024 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/web/index.xml" rel="self" type="application/rss+xml" />
@@ -13,21 +13,21 @@
       <link>http://localhost:1313/web/cursus-html/</link>
       <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/cursus-html/</guid>
-      <description>HyperText Markup Language HTML (HyperText Markup Language) is de meest elementaire bouwsteen van het web. Het is de standaard opmaaktaal voor documenten die zijn ontworpen om in een webbrowser te worden weergegeven. Het geeft webcontent (inhoud) weer in een bepaalde structuur. Naast HTML worden ook andere technologieën gebruikt om het uiterlijk (CSS) of de functionaliteit (JavaScript) van een webpagina te veranderen.&#xA;HyperText verwijst naar links die webpagina&amp;rsquo;s met elkaar verbinden, zowel binnen één website als tussen verschillende websites.</description>
+      <description>&lt;h2 id=&#34;hypertext-markup-language&#34;&gt;HyperText Markup Language&lt;/h2&gt;&#xA;&lt;p&gt;HTML (HyperText Markup Language) is de meest elementaire bouwsteen van het web. Het is de standaard opmaaktaal voor documenten die zijn ontworpen om in een webbrowser te worden weergegeven. Het geeft webcontent (inhoud) weer in een bepaalde structuur. Naast HTML worden ook andere technologieën gebruikt om het uiterlijk (CSS) of de functionaliteit (JavaScript) van een webpagina te veranderen.&lt;/p&gt;&#xA;&lt;p&gt;HyperText verwijst naar links die webpagina&amp;rsquo;s met elkaar verbinden, zowel binnen één website als tussen verschillende websites. Links zijn een fundamenteel aspect van het web.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Opdracht: freecodecamp HTML</title>
+      <title>Opdracht: freeCodeCamp HTML</title>
       <link>http://localhost:1313/web/opdracht-01-freecodecamp/</link>
       <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/opdracht-01-freecodecamp/</guid>
-      <description>We maken een deel van de &amp;lsquo;Learn HTML by Building a Cat Photo App&amp;rsquo; in FreeCodeCamp klassikaal, de rest werk je individueel af.&#xA;https://www.freecodecamp.org/learn/2022/responsive-web-design/ </description>
+      <description>&lt;h2 id=&#34;bouw-een-cat-photo-app&#34;&gt;Bouw een Cat Photo App&lt;/h2&gt;&#xA;&lt;p&gt;In deze opdracht onderzoeken we de basis van HTML en leren we door samen een deel van de freeCodeCamp-cursus &amp;ldquo;Learn HTML by Building a Cat Photo App&amp;rdquo; te volgen. Deze opdracht is ideaal om je kennis op te frissen, maar ook voor HTML voor het eerst te ontdekken.&lt;/p&gt;&#xA;&lt;p&gt;We maken een deel van de &amp;lsquo;Learn HTML by Building a Cat Photo App&amp;rsquo; in freeCodeCamp klassikaal, waarna je de rest individueel afwerkt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cursus: Introductie</title>
       <link>http://localhost:1313/web/cursus-intro/</link>
       <pubDate>Thu, 29 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/cursus-intro/</guid>
-      <description>Fundamenten van Webontwikkeling In het vak Webontwikkeling leer je websites en webapplicaties ontwerpen en ontwikkelen. Gedurende het jaar experimenteer je met code en doorloop je het proces van een ontwerp naar een live website. Je krijgt ook de kans om bestaande websites te analyseren en de principes achter gebruiksvriendelijke omgevingen en optimale gebruikerservaringen te doorgronden.&#xA;Voor het ontwikkelen van deze webomgevingen maak je voornamelijk gebruik van een stevige basis HTML en CSS, aangevuld met doordachte lay-outs die gebruik maken van tekst en afbeeldingen.</description>
+      <description>&lt;h2 id=&#34;fundamenten-van-webontwikkeling&#34;&gt;Fundamenten van Webontwikkeling&lt;/h2&gt;&#xA;&lt;p&gt;In het vak Webontwikkeling leer je websites en webapplicaties ontwerpen en ontwikkelen. Gedurende het jaar experimenteer je met code en doorloop je het proces van een ontwerp naar een live website. Je krijgt ook de kans om bestaande websites te analyseren en de principes achter gebruiksvriendelijke omgevingen en optimale gebruikerservaringen te doorgronden.&lt;/p&gt;&#xA;&lt;p&gt;Voor het ontwikkelen van deze webomgevingen maak je voornamelijk gebruik van een stevige basis HTML en CSS, aangevuld met doordachte lay-outs die gebruik maken van tekst en afbeeldingen.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

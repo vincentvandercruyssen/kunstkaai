@@ -57,7 +57,7 @@ Tijdens je zoektocht naar verschillende soorten lettertypen kom je waarschijnlij
 
 - **Gewicht (Weight):** Het gewicht van een font geeft de dikte van de letters aan. Een vet font is dikker en opvallender, terwijl een licht font dunner en subtieler is. Een medium font zit qua dikte tussen deze twee in.
 
-{{< img src="/img/typo/cursus-fonts_letterfamilie-2.jpg" width="380"  center="true" >}}
+{{< img src="/img/typo/cursus-fonts_letterfamilie-2.jpg" width="380" center="true" >}}
 
 - **Interlinie (Leading):** Interlinie verwijst naar de verticale ruimte tussen tekstregels. Te weinig ruimte kan de tekst samenpersen en moeilijk leesbaar maken, terwijl te veel ruimte de tekst fragmentarisch en onsamenhangend kan laten lijken.
 
@@ -74,6 +74,14 @@ Tijdens je zoektocht naar verschillende soorten lettertypen kom je waarschijnlij
 - Een regel die je op eigen risico kunt breken: gebruik maximaal twee lettertypes per project.
 - Combineer contrasten aan de hand van grootte, gewicht of stijl.
 - Gebruik variaties in grootte, gewicht of stijl om diepte en hiërarchie te creëren.
+
+### Proportioneel vs. Monospace
+
+Bij proportionele lettertypen neemt elk teken een andere hoeveelheid ruimte in, afhankelijk van de breedte. Een "i" is bijvoorbeeld smaller dan een "m".
+
+Monospace-lettertypen geven elk teken dezelfde breedte, ongeacht de vorm. Dit is handig voor programmeren of tabellen, waar een consistente uitlijning belangrijk is.
+
+{{< img src="/img/typo/cursus-proportioneel_vs_monospace-1.jpg" width="380" center="true" >}}
 
 ## De anatomie van lettervormen
 
