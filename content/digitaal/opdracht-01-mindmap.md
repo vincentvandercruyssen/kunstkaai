@@ -4,7 +4,7 @@ date = 2024-08-30T08:00:00-07:00
 draft = false
 +++
 
-In deze eerste les van Adobe Illustrator gaan we een creatieve oefening doen waarbij je een mindmap maakt over jezelf. Dit is een geweldige manier om vertrouwd te raken met de basis van het programma terwijl je een persoonlijk en betekenisvol project creëert.
+In deze eerste les van Adobe Illustrator gaan we een creatieve oefening doen waarbij je een mindmap maakt over jezelf. Dit is een geweldige manier om vertrouwd te raken met de basis van het programma terwijl je een persoonlijk project maakt.
 
 {{< img src="img/digitaal/opdracht-01-pentool.png" width="1200" >}}
 
@@ -13,7 +13,7 @@ In deze eerste les van Adobe Illustrator gaan we een creatieve oefening doen waa
 - Het gebruik van basisvormen in Illustrator.
 - Werken met de pentool en lijnen.
 - Objecten en vormen verbinden en organiseren.
-- De essentie van een mindmap begrijpen en toepassen in een grafische context.
+- Het doel van een mindmap begrijpen en toepassen.
 
 ## Stap-voor-stap
 
@@ -21,6 +21,8 @@ In deze eerste les van Adobe Illustrator gaan we een creatieve oefening doen waa
 
 1. Start Adobe Illustrator op.
 2. Creëer een nieuw document in A4-formaat.
+
+{{< img src="/img/digitaal/opdracht-nieuw_document-a4-1.png" width="1200" >}}
 
 ### Mindmap Structuur
 
@@ -32,7 +34,7 @@ In deze eerste les van Adobe Illustrator gaan we een creatieve oefening doen waa
 - Trek vanaf de vorm met je naam vier lijnen naar vier belangrijke thema's in je leven. Dit kunnen bijvoorbeeld familie, hobby's, werk, en vrienden zijn.
 - Plaats deze thema's in afzonderlijke vormen die de lijnen verbinden.
 
-#### Gerelateerde onderwerpen
+#### Onderwerpen die hiermee te maken hebben
 - Verbind elk thema met ten minste drie gerelateerde onderwerpen. Bijvoorbeeld, als een van je thema's 'Hobby's' is, verbind deze dan met onderwerpen zoals 'Lezen', 'Sport', en 'Muziek'.
 - Gebruik hiervoor kleinere vormen en verbind deze via lijnen met het bijbehorende thema.
 
