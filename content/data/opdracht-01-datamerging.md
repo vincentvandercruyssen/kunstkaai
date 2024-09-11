@@ -33,7 +33,7 @@ Belangrijke stappen in het Data Merge-proces:
 3. **Velden koppelen** via het Data Merge-paneel in InDesign, zodat de juiste productinformatie en afbeeldingen in je sjabloon worden geplaatst.
 4. **Genereer de brochure** automatisch met behulp van Data Merge.
 
-## Je eigen speciaalzaakwinkel
+## Je eigen speciaalzaak
 
 Je opent binnenkort jouw eigen speciaalzaak en wilt je klanten een stijlvolle, overzichtelijke productbrochure aanbieden. Een professionele brochure is de perfecte manier om je producten te presenteren!
 
