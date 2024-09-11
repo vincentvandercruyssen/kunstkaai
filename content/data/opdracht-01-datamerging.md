@@ -83,7 +83,7 @@ Met deze informatie maak je een database aan in Excel of Google Sheets. Uiteinde
 - Compleetheid van de productinformatie en correcte koppeling van afbeeldingen.
 - Creativiteit en presentatie van de brochure.
 
-### Beoordelingscriteria:
+### Beoordelingscriteria
 
 - **Ontwerp**: Is de lay-out van de brochure consistent en professioneel?
 - **Data Merge**: Zijn de velden correct gekoppeld en worden alle gegevens correct weergegeven?
