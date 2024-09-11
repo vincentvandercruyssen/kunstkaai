@@ -22,9 +22,13 @@ Je gaat een gegevensbestand koppelen aan een door jou ontworpen sjabloon in InDe
 
 **Data Merge** in InDesign maakt het mogelijk om automatisch gegevens uit een extern bestand (zoals Excel of CSV) te koppelen aan een sjabloon. Dit wordt vaak gebruikt voor het creëren van gepersonaliseerde documenten zoals productcatalogi, brochures of mailinglijsten. Door velden uit je databestand (bijvoorbeeld productnaam, prijs en afbeelding) te koppelen aan de ontwerpvelden in je sjabloon, kun je snel meerdere versies van een document genereren zonder handmatig alles in te voeren.
 
-Hieronder vind je een zeer duidelijke video over Data Merge en alle benodigde stappen. In dit geval gaat het niet om een productbrochure, maar om visitekaartjes. Dezelfde principes zijn van toepassing.
+Hieronder vind je een zeer duidelijke video over Data Merge en enkele benodigde stappen. In dit geval gaat het niet om een productbrochure, maar om visitekaartjes. Dezelfde principes zijn van toepassing.
 
-{{< youtube 0Df78I_Pksc >}}
+{{< youtube Pj8Fs8nkAiE >}}
+
+Of bekijk de onderstaande video over het maken van een jaarboek, waarin op een zeer duidelijke manier wordt uitgelegd hoe je afbeeldingen moet gebruiken en plaatsen, gegevens kunt invoeren en meerdere records kunt opmaken binnen één pagina.
+
+{{< youtube ylw6_6keG30 >}}
 
 Belangrijke stappen in het Data Merge-proces:
 
