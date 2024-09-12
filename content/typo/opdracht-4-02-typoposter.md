@@ -12,7 +12,7 @@ draft = false
 
 Tijdens de lessen typografische vormgeving leer je over verschillende aspecten van vormgeving en lay-out, met een focus op typografie. Bekijk eventueel de {{< a href="../cursus-intro/" text="cursus" >}} nog eens.
 
-Hoewel er veel meer stijlen zijn, en kunnen lettertypes in nog vele cateogoriën verdeeld worden, behandelen we de volgende vier:
+Hoewel er veel meer stijlen zijn, en kunnen lettertypes in nog vele categorieën verdeeld worden, behandelen we de volgende vier:
 
 - Serif
 - Sans-serif
@@ -25,7 +25,7 @@ Hoewel er veel meer stijlen zijn, en kunnen lettertypes in nog vele cateogoriën
 
 ### Opdracht
 
-Creëer in je schetsboek een typografische poster waarbij jijzelf het centrale thema bent. Denk aan teksthiërarchie: jouw naam moet duidelijk centraal staan, groot en vetgedrukt. Rondom je naam (boven, onder, links, rechts) plaats je woorden die jou omschrijven.
+Creëer in je schetsboek, of op een blaadje papier, een typografische poster waarbij jij zelf het centrale thema bent. Denk aan teksthiërarchie: jouw naam moet duidelijk centraal staan, groot en vetgedrukt. Rondom je naam (boven, onder, links, rechts) plaats je woorden die jou omschrijven.
 
 ### Inhoud
 
