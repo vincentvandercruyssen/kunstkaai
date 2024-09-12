@@ -36,6 +36,8 @@ Creëer een nieuwe map waarin je een HTML-document (genaamd `index.html`) en een
 
 Gebruik `<h1>` voor de hoofdtitel, `<h2>` voor tussentitels, `<p>` voor tekst, `<img>` voor afbeeldingen, en `<ul>` en `<li>` voor opsommingen.
 
+Bekijk ook nog eens {{< a href="../cursus-html/" text="de cursus HTML" >}}.
+
 ### Voeg afbeeldingen en links toe
 
 Integreer relevante afbeeldingen en links. Plaats de afbeeldingen in de juiste map en zorg ervoor dat de links correct werken.
