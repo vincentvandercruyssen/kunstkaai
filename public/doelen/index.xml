@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Doelens on Kunstkaai</title>
+    <link>http://localhost:1313/doelen/</link>
+    <description>Recent content in Doelens on Kunstkaai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Aug 2024 08:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/doelen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doelen: GT</title>
+      <link>http://localhost:1313/doelen/gt/</link>
+      <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/doelen/gt/</guid>
+      <description>BK-doelen&#xA;BK2_01.01&#xA;De leerlingen werken onder begeleiding in teamverband met aandacht voor organisatiecultuur, communicatie en procedures.&#xA;BK2_01.02&#xA;De leerlingen handelen onder begeleiding kwaliteitsbewust.&#xA;BK2_01.03&#xA;De leerlingen handelen onder begeleiding economisch en duurzaam.&#xA;BK2_01.04&#xA;De leerlingen handelen onder begeleiding veilig, ergonomisch en hygiënisch.&#xA;BK2_02.01&#xA;De leerlingen ontleden diverse productie- en werkprocessen binnen de grafische kunsten.&#xA;BK2_02.02&#xA;De leerlingen illustreren ontwikkelingen, evoluties en stijlen binnen de grafische kunsten.&#xA;BK2_02.03&#xA;De leerlingen onderscheiden de stappen in het grafisch ontwerp- en productieproces.</description>
+    </item>
+  </channel>
+</rss>
