@@ -6,8 +6,22 @@
     <description>Recent content in Home on Kunstkaai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Sep 2024 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 14 Sep 2024 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Mijn Monogram</title>
+      <link>http://localhost:1313/typo/opdracht-5-02-mijnmonogram/</link>
+      <pubDate>Sat, 14 Sep 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/typo/opdracht-5-02-mijnmonogram/</guid>
+      <description>Adobe Illustrator: Mijn Monogram Een monogram is een symbool dat is opgebouwd uit twee of meer letters. In deze opdracht ga je een monogram ontwerpen met je eigen initialen (de eerste letters van je voor- en achterna(a)m(en)).&#xA;Gebruikte Technieken Objecten selecteren. Objecten transformeren: verplaatsen, schalen, draaien en spiegelen. Werken met het deelvenster lagen. Werken met het tekstgereedschap. Letteromtrekken maken (Type &amp;gt; Create Outlines). Objecten samenvoegen (Pathfinder &amp;gt; Shape Modes &amp;gt; Unite).</description>
+    </item>
+    <item>
+      <title>Opdracht: Swiss Style Poster</title>
+      <link>http://localhost:1313/typo/opdracht-5-03-swissstyleposter/</link>
+      <pubDate>Sat, 14 Sep 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/typo/opdracht-5-03-swissstyleposter/</guid>
+      <description>Adobe Illustrator: Swiss Style Poster Your browser does not support the video tag.&#xD;De Internationale Typografische Stijl, ook wel Swiss Style genoemd, is een grafische stijl die werd ontwikkeld door Zwitserse designers in de jaren 1950. De nadruk ligt op eenvoud, leesbaarheid, asymmetrische bladschikking op basis van een grid (raster), schreefloze lettertypes (zoals Helvetica), primaire kleuren en geometrische vormen. Josef Müller-Brockmann (1914-1996) was een van de meest invloedrijke designers binnen deze stijl.</description>
+    </item>
     <item>
       <title>Opdracht: Artikel</title>
       <link>http://localhost:1313/web/opdracht-3-01-artikel/</link>
@@ -58,20 +72,6 @@
       <description>Inleiding: Wat is typografie? De kunst van het vormgeven, opmaken, drukken of weergeven van tekst voor zowel functionele als esthetische doeleinden wordt typografie genoemd. Typografie is overal: in boeken, op websites, op straatborden, op productverpakkingen, en ga zo maar door. Het beïnvloedt de leesbaarheid, de visuele hiërarchie en de boodschap van een ontwerp.&#xA;Bij esthetische doeleinden draait het erom dat iets mooi en aantrekkelijk wordt gemaakt, met de nadruk op de visuele uitstraling.</description>
     </item>
     <item>
-      <title>Doelen: GM</title>
-      <link>http://localhost:1313/doelen/gm/</link>
-      <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/doelen/gm/</guid>
-      <description>01.01 Generieke doorstroomcompetenties&#xA;WD3_01.01.01&#xA;De leerlingen doorlopen een onderzoekscyclus in samenhang met inhouden van minstens 1 wetenschapsdomein verbonden aan de studierichting.&#xA;De leerlingen kiezen een onderzoeksmethode in functie van een onderzoeksvraag. Ze verzamelen data en bronnen in functie van de gekozen onderzoeksmethode. Ze verwerken data en bronnen en formuleren een antwoord op de onderzoeksvraag. Ze rapporteren over de onderzoeksactiviteiten en resultaten. WD3_01.01.02&#xA;De leerlingen refereren correct aan gebruikte bronnen volgens een wetenschappelijk referentiesysteem.</description>
-    </item>
-    <item>
-      <title>Doelen: GT</title>
-      <link>http://localhost:1313/doelen/gt/</link>
-      <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/doelen/gt/</guid>
-      <description>BK-doelen&#xA;BK2_01.01&#xA;De leerlingen werken onder begeleiding in teamverband met aandacht voor organisatiecultuur, communicatie en procedures.&#xA;BK2_01.02&#xA;De leerlingen handelen onder begeleiding kwaliteitsbewust.&#xA;BK2_01.03&#xA;De leerlingen handelen onder begeleiding economisch en duurzaam.&#xA;BK2_01.04&#xA;De leerlingen handelen onder begeleiding veilig, ergonomisch en hygiënisch.&#xA;BK2_02.01&#xA;De leerlingen ontleden diverse productie- en werkprocessen binnen de grafische kunsten.&#xA;BK2_02.02&#xA;De leerlingen illustreren ontwikkelingen, evoluties en stijlen binnen de grafische kunsten.&#xA;BK2_02.03&#xA;De leerlingen onderscheiden de stappen in het grafisch ontwerp- en productieproces.</description>
-    </item>
-    <item>
       <title>Opdracht: Data merging</title>
       <link>http://localhost:1313/data/opdracht-01-datamerging/</link>
       <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
@@ -119,6 +119,27 @@
       <pubDate>Thu, 29 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/cursus-intro/</guid>
       <description>Fundamenten van Webontwikkeling In het vak Webontwikkeling leer je websites en webapplicaties ontwerpen en ontwikkelen. Gedurende het jaar experimenteer je met code en doorloop je het proces van een ontwerp naar een live website. Je krijgt ook de kans om bestaande websites te analyseren en de principes achter gebruiksvriendelijke omgevingen en optimale gebruikerservaringen te doorgronden.&#xA;Voor het ontwikkelen van deze webomgevingen maak je voornamelijk gebruik van een stevige basis HTML en CSS, aangevuld met doordachte lay-outs die gebruik maken van tekst en afbeeldingen.</description>
+    </item>
+    <item>
+      <title>Doelen: GM</title>
+      <link>http://localhost:1313/doelen/gm/</link>
+      <pubDate>Thu, 22 Aug 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/doelen/gm/</guid>
+      <description>Generieke doorstroomcompetenties WD3_01.01.01 De leerlingen doorlopen een onderzoekscyclus in samenhang met inhouden van minstens 1 wetenschapsdomein verbonden aan de studierichting. De leerlingen kiezen een onderzoeksmethode in functie van een onderzoeksvraag. Ze verzamelen data en bronnen in functie van de gekozen onderzoeksmethode. Ze verwerken data en bronnen en formuleren een antwoord op de onderzoeksvraag. Ze rapporteren over de onderzoeksactiviteiten en resultaten.&#xA;WD3_01.01.02 De leerlingen refereren correct aan gebruikte bronnen volgens een wetenschappelijk referentiesysteem.</description>
+    </item>
+    <item>
+      <title>Doelen: GT</title>
+      <link>http://localhost:1313/doelen/gt/</link>
+      <pubDate>Wed, 21 Aug 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/doelen/gt/</guid>
+      <description>BK-doelen BK2_01.01&#xA;De leerlingen werken onder begeleiding in teamverband met aandacht voor organisatiecultuur, communicatie en procedures.&#xA;BK2_01.02&#xA;De leerlingen handelen onder begeleiding kwaliteitsbewust.&#xA;BK2_01.03&#xA;De leerlingen handelen onder begeleiding economisch en duurzaam.&#xA;BK2_01.04&#xA;De leerlingen handelen onder begeleiding veilig, ergonomisch en hygiënisch.&#xA;BK2_02.01&#xA;De leerlingen ontleden diverse productie- en werkprocessen binnen de grafische kunsten.&#xA;BK2_02.02&#xA;De leerlingen illustreren ontwikkelingen, evoluties en stijlen binnen de grafische kunsten.&#xA;BK2_02.03&#xA;De leerlingen onderscheiden de stappen in het grafisch ontwerp- en productieproces.</description>
+    </item>
+    <item>
+      <title>Doelen: DEX</title>
+      <link>http://localhost:1313/doelen/dex/</link>
+      <pubDate>Tue, 20 Aug 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/doelen/dex/</guid>
+      <description>BK-doelen BK2_01.01&#xA;De leerlingen werken in teamverband met aandacht voor de organisatiecultuur, communicatie en procedures.&#xA;BK2_01.01.01&#xA;De leerlingen passen strategieën toe om teamgericht te werken.&#xA;BK2_01.01.02&#xA;De leerlingen passen strategieën toe om doelgericht te communiceren.&#xA;BK2_01.01.03&#xA;De leerlingen passen interne procedures en afspraken toe.&#xA;BK2_02.01&#xA;De leerlingen handelen kwaliteitsbewust.&#xA;BK2_02.01.01&#xA;De leerlingen passen procedures uit stappenplannen, instructiefiches of handleidingen toe.&#xA;BK2_02.01.02&#xA;De leerlingen passen strategieën voor planning en organisatie toe.</description>
     </item>
   </channel>
 </rss>

@@ -1,10 +1,11 @@
 +++
 title = 'Doelen: GT'
-date = 2024-08-30T08:00:00-07:00
+date = 2024-08-21T08:00:00-07:00
 draft = false
 +++
 
-**BK-doelen**  
+## BK-doelen
+
 BK2_01.01  
 De leerlingen werken onder begeleiding in teamverband met aandacht voor organisatiecultuur, communicatie en procedures.  
 

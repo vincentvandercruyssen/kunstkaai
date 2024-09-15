@@ -1,5 +1,7 @@
+{{ $width := .Get "width" | default "100%" }}
+
 {{ $video := resources.Get (.Get "src") }}
-<video autoplay muted loop width="100%">
+<video autoplay muted loop width="{{ $width }}">
   <source src="{{ $video.Permalink }}" type="video/mp4">
   Your browser does not support the video tag.
 </video>

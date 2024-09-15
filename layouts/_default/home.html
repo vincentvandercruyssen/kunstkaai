@@ -33,7 +33,16 @@
   <div class="folder">
     <h3>{{ partial "sectionName.html" $folder }}</h3>
 
-    <!-- Cursus Section -->
+    <!-- Direct List for 'doelen' Section -->
+    {{ if eq $folder.Section "doelen" }}
+    <ul>
+      {{ range sort $folder.Pages.ByDate "Date" "asc" }}
+      <li><a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+
+    <!-- Cursus and Opdracht Sections for other folders -->
+    {{ else }}
     <div class="cursus">
       <h4>Cursusmateriaal</h4>
       <ul>
@@ -45,7 +54,6 @@
       </ul>
     </div>
 
-    <!-- Opdracht Section -->
     <div class="opdracht">
       <h4>Opdrachten</h4>
       <ul>
@@ -56,8 +64,10 @@
         {{ end }}
       </ul>
     </div>
+    {{ end }}
 
   </div>
   {{ end }}
 </div>
+
 {{ end }}
