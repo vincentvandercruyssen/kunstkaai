@@ -27,8 +27,6 @@ Een monogram is een symbool dat is opgebouwd uit twee of meer letters. In deze o
 
 - **Ontwerp een monogram** voor je eigen naam.
 - Maak een **reeks voorontwerpen** en kies daaruit het beste ontwerp. Voor de voorontwerpen start je met potlood en papier.
-- Plaats je **eindresultaat centraal** op een **staande A4**.
-- Maak het monogram ongeveer **15 cm x 15 cm** groot.
 - Zet alle letters om naar **letteromtrekken** (*outlines*).
 - Voeg de verschillende vormen samen tot **één object** met het **Pathfinder-gereedschap**.
 - Schik je digitale voorontwerpen op een **tweede tekengebied** (*artboard*).
