@@ -61,10 +61,4 @@ Kortom, de International Typographic Style/Swiss Style draait om eenvoud, functi
 - {{< a href="https://www.grapheine.com/en/graphic-design-en/graphic-designer-muller-brockmann-swiss-style" >}}
 - {{< a href="https://www.printmag.com/featured/swiss-style-principles-typefaces-designers/" >}}
 - {{< a href="https://issuu.com/mary_carnes/docs/book_mary_carnes" >}}
-- {{< a href="https://en.wikipedia.org/wiki/Armin_Hofmann" >}}
-- {{< a href="https://en.wikipedia.org/wiki/Emil_Ruder" >}}
-- {{< a href="https://en.wikipedia.org/wiki/Karl_Gerstner" >}}
-- {{< a href="https://en.wikipedia.org/wiki/Adrian_Frutiger" >}}
-- {{< a href="https://en.wikipedia.org/wiki/Hans_Neuburg" >}}
-- {{< a href="https://en.wikipedia.org/wiki/Wim_Crouwel" >}}
-- {{< a href="https://en.wikipedia.org/wiki/Otl_Aicher" >}}
+- Ontwerpers: {{< a href="https://en.wikipedia.org/wiki/Armin_Hofmann" text="Armin Hofmann" >}}, {{< a href="https://en.wikipedia.org/wiki/Emil_Ruder" text="Emil Ruder" >}}, {{< a href="https://en.wikipedia.org/wiki/Karl_Gerstner" text="Karl Gerstner" >}},  {{< a href="https://en.wikipedia.org/wiki/Adrian_Frutiger" text="Adrian Frutiger" >}}, {{< a href="https://en.wikipedia.org/wiki/Hans_Neuburg" text="Hans Neuburg" >}}, {{< a href="https://en.wikipedia.org/wiki/Wim_Crouwel" text="Wim Crouwel" >}}, {{< a href="https://en.wikipedia.org/wiki/Otl_Aicher" text="Otl Aicher" >}}, {{< a href="https://en.wikipedia.org/wiki/Rosmarie_Tissi" text="Rosmarie Tissi" >}}, {{< a href="https://en.wikipedia.org/wiki/Jacqueline_Casey" text="Jacqueline Casey" >}}
