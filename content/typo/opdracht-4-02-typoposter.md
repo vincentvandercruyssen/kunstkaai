@@ -14,14 +14,11 @@ Tijdens de lessen typografische vormgeving leer je over verschillende aspecten v
 
 Hoewel er veel meer stijlen zijn, en kunnen lettertypes in nog vele categorieën verdeeld worden, behandelen we de volgende vier:
 
-- Serif
-- Sans-serif
-- Script
-- Handwritten
-
 |   |   |   |   |
 |---|---|---|---|
 |{{< svg src="/img/typo/cursus-types_serif-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_sans-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_script-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_handwritten-1.svg" width="800" >}}|
+
+- Serif (schreef), Sans-serif (schreefloos), Script (kalligrafisch), Handwritten (handgeschreven)
 
 ### Opdracht
 

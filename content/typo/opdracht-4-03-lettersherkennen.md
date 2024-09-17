@@ -1,6 +1,6 @@
 +++
 title = "Opdracht: Lettertypes herkennen"
-date = 2024-09-09T08:00:00-07:00
+date = 2024-09-16T08:00:00-07:00
 draft = false
 +++
 

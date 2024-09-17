@@ -111,6 +111,7 @@ table {
 
 table td {
   padding-bottom: 1rem;
+  word-break: break-word;
 }
 
 table tr:last-child td {

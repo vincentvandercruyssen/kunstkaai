@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/typo/opdracht-4-03-lettersherkennen/</loc>
+    <lastmod>2024-09-16T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/typo/</loc>
+    <lastmod>2024-09-16T08:00:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/typo/opdracht-5-02-mijnmonogram/</loc>
     <lastmod>2024-09-14T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/typo/opdracht-5-03-swissstyleposter/</loc>
-    <lastmod>2024-09-14T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/typo/</loc>
     <lastmod>2024-09-14T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/web/opdracht-3-01-artikel/</loc>
@@ -19,9 +22,6 @@
   </url><url>
     <loc>http://localhost:1313/web/</loc>
     <lastmod>2024-09-11T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/typo/opdracht-4-03-lettersherkennen/</loc>
-    <lastmod>2024-09-09T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/typo/opdracht-4-02-typoposter/</loc>
     <lastmod>2024-09-09T08:00:00-07:00</lastmod>
