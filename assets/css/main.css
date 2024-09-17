@@ -141,8 +141,15 @@ main {
 
 header>* {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   width: var(--sidebar-width);
+  height: 100vh;
   padding: 1rem;
+}
+
+header>*>ol {
+  overflow-y: scroll;
 }
 
 header h1 {
