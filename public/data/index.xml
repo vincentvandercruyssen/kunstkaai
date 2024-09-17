@@ -4,7 +4,7 @@
     <title>Data on Kunstkaai</title>
     <link>http://localhost:1313/data/</link>
     <description>Recent content in Data on Kunstkaai</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Aug 2024 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/data/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>http://localhost:1313/data/cursus-intro/</link>
       <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/data/cursus-intro/</guid>
-      <description>&lt;p&gt;In het vak datamanagement verkennen we &lt;strong&gt;automatisering binnen de grafische sector&lt;/strong&gt; met als doel sommige werkprocessen slimmer en efficiënter te maken. Het idee is om tools en technieken te gebruiken die je werkstroom vereenvoudigen, zodat je meer tijd overhoudt voor het creatieve proces.&lt;/p&gt;&#xA;&lt;p&gt;Hieronder vind je een video die laat zien wat je bijvoorbeeld kunt doen met data merging in InDesign.&lt;/p&gt;&#xA;&#xA;&#xA;    &#xA;    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/HO6btgk7Ksc?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&#xA;      &gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;wat-gaan-we-zoal-leren&#34;&gt;Wat gaan we zoal leren?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;data-merge-in-adobe-indesign&#34;&gt;Data Merge in Adobe InDesign&lt;/h3&gt;&#xA;&lt;p&gt;Leer hoe je gegevens uit &lt;strong&gt;Excel- of CSV-bestanden&lt;/strong&gt; kunt gebruiken om automatisch dynamische documenten te maken, zoals prijslijsten, catalogi en brochures. Dit bespaart je de moeite van het handmatig invoeren van elk element.&lt;/p&gt;</description>
+      <description>In het vak datamanagement verkennen we automatisering binnen de grafische sector met als doel sommige werkprocessen slimmer en efficiënter te maken. Het idee is om tools en technieken te gebruiken die je werkstroom vereenvoudigen, zodat je meer tijd overhoudt voor het creatieve proces.&#xA;Hieronder vind je een video die laat zien wat je bijvoorbeeld kunt doen met data merging in InDesign.&#xA;Wat gaan we zoal leren? Data Merge in Adobe InDesign Leer hoe je gegevens uit Excel- of CSV-bestanden kunt gebruiken om automatisch dynamische documenten te maken, zoals prijslijsten, catalogi en brochures.</description>
     </item>
     <item>
       <title>Opdracht: Data merging</title>
       <link>http://localhost:1313/data/opdracht-01-datamerging/</link>
       <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/data/opdracht-01-datamerging/</guid>
-      <description>&lt;h2 id=&#34;productbrochure-adhv-data-merge&#34;&gt;Productbrochure a.d.h.v. Data Merge&lt;/h2&gt;&#xA;&lt;p&gt;In deze opdracht gebruik je de &lt;strong&gt;Data Merge&lt;/strong&gt; functie binnen &lt;strong&gt;Adobe InDesign&lt;/strong&gt; om een productbrochure te maken. Met Data Merge kun je gegevens uit bestanden zoals Excel of CSV koppelen aan je ontwerp, zodat je automatisch meerdere versies van een document kunt genereren. Dit is ideaal voor documenten met herhalende gegevens, zoals catalogi, mailinglijsten, uitnodigingen, enzovoort.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA; &#xA; &#xA;&#xA;&#xA;&#xA;&#xA;  &lt;div style=&#34;display: flex; justify-content: center;&#34;&gt;&#xA;&#xA;&#xA;&#xA;    &#xA;    &lt;img src=&#34;http://localhost:1313/img/data/opdracht-01-datamerging.svg&#34; width=&#34;440&#34; alt=&#34;opdracht-01-datamerging&#34; /&gt;&#xA;    &#xA;    &#xA;&#xA;&#xA;&#xA;  &lt;/div&gt;&#xA;&#xA;&#xA;&lt;p&gt;Je gaat een gegevensbestand koppelen aan een door jou ontworpen sjabloon in InDesign, zodat de productinformatie inclusief afbeeldingen automatisch wordt ingevoerd.&lt;/p&gt;</description>
+      <description>Productbrochure a.d.h.v. Data Merge In deze opdracht gebruik je de Data Merge functie binnen Adobe InDesign om een productbrochure te maken. Met Data Merge kun je gegevens uit bestanden zoals Excel of CSV koppelen aan je ontwerp, zodat je automatisch meerdere versies van een document kunt genereren. Dit is ideaal voor documenten met herhalende gegevens, zoals catalogi, mailinglijsten, uitnodigingen, enzovoort.&#xA;Je gaat een gegevensbestand koppelen aan een door jou ontworpen sjabloon in InDesign, zodat de productinformatie inclusief afbeeldingen automatisch wordt ingevoerd.</description>
     </item>
   </channel>
 </rss>
