@@ -17,9 +17,9 @@ Hier zijn enkele van de belangrijkste classificaties:
 |   |   |   |   |
 |---|---|---|---|
 |{{< svg src="/img/typo/cursus-types_m-1sans.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1serif.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1slab.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1script.svg" width="800">}}|
-| Sans Serif, schreefloos | Serif, schreef | Slab serif, blok schreef | Script, kalligrafisch |
+| Sans Serif {{< br >}}*schreefloos* | Serif {{< br >}}*schreef* | Slab serif {{< br >}}*blok schreef* | Script {{< br >}}*kalligrafisch* |
 |{{< svg src="/img/typo/cursus-types_m-1black.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1mono.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1hand.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1display.svg" width="800">}}|
-| Blackletter, gotisch | Monospace, vaste tekenbreedte | Handwritten, handgeschreven | Display, decoratief |
+| Blackletter {{< br >}}*gotisch* | Monospace {{< br >}}*vaste tekenbreedte* | Handwritten {{< br >}}*handgeschreven* | Display {{< br >}}*decoratief* |
 
 ### Eigenschappen van lettertypes
 
