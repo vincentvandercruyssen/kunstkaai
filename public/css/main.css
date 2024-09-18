@@ -107,19 +107,19 @@ object {
 
 table {
   border-spacing: 0;
+  width: calc(100% + 1rem);
+  margin-left: -0.5rem;
 }
 
 table td {
   padding-bottom: 1rem;
   word-break: break-word;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 table tr:last-child td {
   padding-bottom: 0;
-}
-
-table td+td {
-  padding-left: 1rem;
 }
 
 table img,
@@ -206,7 +206,7 @@ main ol li:nth-child(n + 10)::before {
 }
 
 footer {
-  border-top: 1px solid #0003;
+  /* border-top: 1px solid #0003;
   margin: 2rem 0;
-  grid-column: 2;
+  grid-column: 2; */
 }

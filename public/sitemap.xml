@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/typo/opdracht-4-04-staalkaart/</loc>
+    <lastmod>2024-09-17T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/typo/</loc>
+    <lastmod>2024-09-17T08:00:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/digitaal/</loc>
     <lastmod>2024-09-16T08:00:00-07:00</lastmod>
   </url><url>
@@ -9,9 +15,6 @@
     <lastmod>2024-09-16T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/typo/opdracht-4-03-lettersherkennen/</loc>
-    <lastmod>2024-09-16T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/typo/</loc>
     <lastmod>2024-09-16T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/typo/opdracht-5-02-mijnmonogram/</loc>
