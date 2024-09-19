@@ -16,9 +16,8 @@ Hoewel er veel meer stijlen zijn, en kunnen lettertypes in nog vele categorieën
 
 |   |   |   |   |
 |---|---|---|---|
-|{{< svg src="/img/typo/cursus-types_serif-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_sans-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_script-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_handwritten-1.svg" width="800" >}}|
-
-- Serif (schreef), Sans-serif (schreefloos), Script (kalligrafisch), Handwritten (handgeschreven)
+|{{< svg src="/img/typo/cursus-types_m-serif-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-sans-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_m-script-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_m-handwritten-1.svg" width="800" >}}|
+|Serif {{< br >}} *schreef*|Sans-serif {{< br >}}*schreefloos*|Script {{< br >}}*kalligrafisch*|Handwritten {{< br >}}*handgeschreven*|
 
 ### Opdracht
 

@@ -14,9 +14,9 @@ In deze opdracht leer je verschillende soorten lettertypes herkennen, analyseren
 
 |   |   |   |   |
 |---|---|---|---|
-|{{< svg src="/img/typo/cursus-types_m-1sans.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1serif.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1slab.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1script.svg" width="800">}}|
+|{{< svg src="/img/typo/cursus-types_m-sans-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-serif-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-slab-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-script-1.svg" width="800">}}|
 | Sans Serif, schreefloos | Serif, schreef | Slab serif, blok schreef | Script, kalligrafisch |
-|{{< svg src="/img/typo/cursus-types_m-1black.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1mono.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1hand.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1display.svg" width="800">}}|
+|{{< svg src="/img/typo/cursus-types_m-black-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-mono-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-handwritten-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-display-1.svg" width="800">}}|
 | Blackletter, gotisch | Monospace, vaste tekenbreedte | Handwritten, handgeschreven | Display, decoratief |
 
 #### Letterfamilies

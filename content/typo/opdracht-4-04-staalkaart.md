@@ -16,9 +16,9 @@ Hier zijn enkele van de belangrijkste classificaties:
 
 |   |   |   |   |
 |---|---|---|---|
-|{{< svg src="/img/typo/cursus-types_m-1sans.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1serif.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1slab.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1script.svg" width="800">}}|
+|{{< svg src="/img/typo/cursus-types_m-sans-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-serif-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-slab-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-script-1.svg" width="800">}}|
 | Sans Serif {{< br >}}*schreefloos* | Serif {{< br >}}*schreef* | Slab serif {{< br >}}*blok schreef* | Script {{< br >}}*kalligrafisch* |
-|{{< svg src="/img/typo/cursus-types_m-1black.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1mono.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1hand.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-1display.svg" width="800">}}|
+|{{< svg src="/img/typo/cursus-types_m-black-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-mono-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-handwritten-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-display-1.svg" width="800">}}|
 | Blackletter {{< br >}}*gotisch* | Monospace {{< br >}}*vaste tekenbreedte* | Handwritten {{< br >}}*handgeschreven* | Display {{< br >}}*decoratief* |
 
 ### Eigenschappen van lettertypes
