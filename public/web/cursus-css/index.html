@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Cursus: CSS | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+<link rel="icon" type="image/svg" href="/favicon.svg">
+
+
+</head>
+<body>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+Webontwikkeling
+<br>
+    Cursus: CSS
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#cascading-style-sheets">1. Cascading Style Sheets</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#css-vernieuwingen">1.1 CSS Vernieuwingen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#css-declaration">2. CSS Declaration</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#css-selectors">3. CSS Selectors</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#element-selector">3.1 Element-selector</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#id-selector">3.2 Id-selector</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#klasse-selector">3.3 Klasse-selector</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#pseudo-selector">3.4 Pseudo-selector</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#combinaties">3.5 Combinaties</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#selector-lijst">3.6 Selector lijst</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#css-eigenschappen">4. CSS eigenschappen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#de-meest-gebruikte-css-eigenschappen">4.1 De meest gebruikte CSS eigenschappen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#shorthands">4.2 Shorthands</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#background">4.3 Background</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#background-image">4.4 Background-image</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#css-background-image-eigenschappen">4.5 CSS Background-image eigenschappen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#color">4.6 Color</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#font">4.7 Font</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#font-face">4.8 @font-face</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#import">4.9 @import</a></li>
+      
+    
+
+    
+    </ol></li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+Webontwikkeling
+ <br> Cursus: CSS</h1>
+
+<h2 id="cascading-style-sheets">Cascading Style Sheets</h2>
+<p>Alle HTML-elementen hebben standaard stijlkenmerken. Wanneer je een eigen website maakt, kun je deze stijlkenmerken aanpassen met CSS. Je kunt dan informatie toevoegen aan HTML-elementen, zoals kleur, lettertype, afstand en achtergrond. Dit kan binnen het document zelf (als attribute van ieders element of met een <code>&lt;style&gt;</code>-element) of, nog veel beter, in een extern CSS-bestand aan de hand van het <code>&lt;link&gt;</code>-element.</p>
+<pre><code>&lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
+
+</code></pre>
+<p>CSS staat voor Cascading Style Sheets. Het is een taal die wordt gebruikt om het uiterlijk, of lay-out, van een webpagina te beschrijven. CSS wordt gebruikt om alle HTML-elementen op een pagina op te maken, inclusief de koppen, alinea&rsquo;s en andere stukken tekst. Te beginnen bij het geheel of het hoogst liggend element, om dan steeds gedetailleerder vorm te geven.</p>
+<p>Dit stijlblad dat verschillende eigenschappen toepast op één of meerdere documenten wordt verwerkt van boven naar beneden, vandaar cascade (waterval). CSS kan niet alleen worden gebruikt om de lay-out van een pagina op te maken, maar ook om functies zoals bijvoorbeeld animaties en interactieve dropdownmenu&rsquo;s te creëren.</p>
+<h3 id="css-vernieuwingen">CSS Vernieuwingen</h3>
+<p>CSS is de afgelopen jaren steeds veelzijdiger geworden en kan inmiddels veel meer dan vroeger. Met het nieuwe zogenaamde flex en grid systeem kunnen we eenvoudiger vloeiende lay-outs maken. Deze lay-outs zijn <em>responsive</em> of adaptief aan het beeldscherm; ze zorgen ervoor dat ze op alle schermgroottes goed te zien zijn, van smartphone tot computerscherm.</p>
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+    
+    <img src="http://localhost:1313/img/web/cursus-css-responsive-1.svg" width="100%" alt="cursus-css-responsive-1" />
+    
+    
+
+
+
+
+<p><strong>Responsive design:</strong> lay-outs die veranderlijk zijn aan de schermgrootte van een apparaat.</p>
+<p><strong>CSS flex(box)</strong> is een eendimensionale lay-outmethode die werkt met flex-items binnen een flex-container. Deze flex-items kunnen in een rij of kolom gestapeld worden. Dit is afhankelijk van de flex-richting.</p>
+<p><strong>CSS grid</strong> is een tweedimensionale lay-outmethode die een gebied in rijen en kolommen verdeelt. De elementen binnen het grid kunnen zo netjes meegaan met de schermgrootte.</p>
+<p>In tegenstelling tot de reguliere flow lay-out zijn flex en grid ouderlijke elementen of containers. Zij krijgen extra eigenschappen die voornamelijk bepalen hoe de indeling van onderliggende elementen gebeurt. Dit staat tegenover de bekende flow lay-out waar je speelt met de display-methode van individuele elementen om een vormgeving te creëren.</p>
+<h2 id="css-declaration">CSS Declaration</h2>
+<p>Een CSS-regelset bestaat uit een selector en een declaratieblok. De selector verwijst naar het HTML-element dat je wil opmaken. Het declaratieblok bevat één of meer veranderingen of eigenschappen, gescheiden door puntkomma&rsquo;s. Elke verandering bevat een CSS eigenschapsnaam en een waarde, gescheiden door een dubbele punt.</p>
+<pre><code>p {
+  color: red;
+  text-align: center;
+}
+
+</code></pre>
+<p>Veranderingen aan CSS eigenschappen eindigen altijd met een puntkomma en declaratieblokken zijn omgeven door accolades. De volgorde van de declaratie is belangrijk. Wanneer meerdere declaraties dezelfde eigenschap hebben, wordt alleen de laatste gebruikt.</p>
+<pre><code>p {
+  color: red;
+  color: blue; /* → deze wordt gebruikt */
+}
+
+</code></pre>
+<h2 id="css-selectors">CSS Selectors</h2>
+<p><a href="https://www.w3schools.com/CSSref/trysel.asp">W3S | Selector tester</a></p>
+<p>Met CSS maak je gebruik van verschillende selectors. Hiermee selecteer je de elementen waarop je stijl wilt toepassen. De selectors kunnen verschillende vormen aannemen, afhankelijk van de elementen waarop je wilt selecteren.</p>
+<ul>
+<li>Een element-selector: selecteert alle elementen van een bepaalde soort.</li>
+<li>Een id-selector: selecteert een element met een bepaald id.</li>
+<li>Een klasse-selector: selecteert alle elementen met een bepaalde class.</li>
+<li>Een pseudo-selector: selecteert elementen op basis van hun (vaak tijdelijke) toestand.</li>
+</ul>
+<h3 id="element-selector">Element-selector</h3>
+<p>De eenvoudigste selector is een element-selector. Met deze selector selecteer je alle elementen van een bepaalde soort. Je gebruikt hiervoor de naam van het element. Denk bijvoorbeeld aan de body of <code>&lt;h1&gt;</code> (kop 1).</p>
+<pre><code>body {
+  background-color: red;
+}
+
+h1 {
+  property: value;
+}
+
+</code></pre>
+<h3 id="id-selector">Id-selector</h3>
+<p>Een id-selector is een aanduiding waarmee je kunt opgeven welke stijlen worden aangepast voor een element met een bepaalde id-waarde. Een id-selector wordt geschreven als een hashtag (#) gevolgd door de id van het element. In het onderstaande voorbeeld wordt de id &ldquo;#uniek&rdquo; gebruikt om de stijlen van het element met id=&ldquo;uniek&rdquo; toe te passen.</p>
+<pre><code>#uniek {
+  background-color: yellow;
+}
+
+</code></pre>
+<h3 id="klasse-selector">Klasse-selector</h3>
+<p>Een klasse-selector is een aanduiding waarmee je kunt opgeven welke stijlen worden toegepast op een HTML-element met een class-attribute. Een klasse-selector is een aanduiding die begint met een punt (.). In de onderstaande CSS-regel wordt de klasse-selector &ldquo;.groepje&rdquo; gebruikt. Dit betekent dat de eigenschappen worden toegepast op alle HTML-elementen met de klasse &ldquo;groepje&rdquo;.</p>
+<pre><code>.groepje {
+  background-color: red;
+}
+
+</code></pre>
+<h3 id="pseudo-selector">Pseudo-selector</h3>
+<p>Met een pseudo-selector ga je een bepaalde stijl toepassen op een element dat in een bepaalde relatie tot een ander element staat. Het beste voorbeeld van een pseudo-selector is <code>:hover</code>, waarmee je kunt opgeven dat je een bepaalde stijl wilt toepassen op een element wanneer de muisaanwijzer eroverheen gaat. Pseudo-selectors hebben dus vaak te maken met de, al dan niet tijdelijke, toestand van een element.</p>
+<pre><code>a:hover {
+  color: red;
+}
+
+</code></pre>
+<h3 id="combinaties">Combinaties</h3>
+<h4 id="afstammeling-combinatie">Afstammeling combinatie</h4>
+<p>Je kan meer verfijnde selecties maken door een spatie te gebruiken om afstammelingen van een element te selecteren. Hieronder selecteer ik bijvoorbeeld alleen de list-items binnen nav-elementen.</p>
+<pre><code>nav li {
+  display: inline-block;
+}
+
+</code></pre>
+<h3 id="selector-lijst">Selector lijst</h3>
+<p>Een selector lijst is een aantal selectors gescheiden door komma&rsquo;s, die samen een unieke set van elementen selecteren. Zo kan je heel gemakkelijk meerdere elementen selecteren en eigenschappen toekennen.</p>
+<pre><code>header, main, footer {
+  padding: 2vh 4vw;
+}
+
+</code></pre>
+<h2 id="css-eigenschappen">CSS eigenschappen</h2>
+<p>CSS eigenschappen of properties zijn de stylingsmogelijkheden die je hebt binnen CSS. Ze bepalen hoe je HTML-elementen kunt opmaken, zoals de kleur, het lettertype, de achtergrond, de margins en de padding.</p>
+<h3 id="de-meest-gebruikte-css-eigenschappen">De meest gebruikte CSS eigenschappen</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Kleur en tekst</strong></th>
+<th><strong>Lay-out</strong></th>
+<th><strong>Geavanceerd</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>background</td>
+<td>position</td>
+<td>overflow</td>
+</tr>
+<tr>
+<td>color</td>
+<td>z-index</td>
+<td>cursor</td>
+</tr>
+<tr>
+<td>font</td>
+<td>top</td>
+<td>opacity</td>
+</tr>
+<tr>
+<td>text-align</td>
+<td>right</td>
+<td>filter</td>
+</tr>
+<tr>
+<td>line-height</td>
+<td>bottom</td>
+<td>@font-face</td>
+</tr>
+<tr>
+<td>text-transform</td>
+<td>left</td>
+<td>@import</td>
+</tr>
+<tr>
+<td>text-decoration</td>
+<td>display</td>
+<td>@media</td>
+</tr>
+<tr>
+<td>letter-spacing</td>
+<td>margin</td>
+<td>transform</td>
+</tr>
+<tr>
+<td>word-spacing</td>
+<td>border</td>
+<td>animation</td>
+</tr>
+<tr>
+<td>list-style</td>
+<td>width</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>height</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>padding</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="shorthands">Shorthands</h3>
+<p>Een shorthand is een manier om een aantal CSS-regels in één regel te schrijven. Het is een kortere manier om dezelfde CSS-regels te schrijven. Het is beter om de shorthand-methode in sommige gevallen te vermijden omdat de code zo moeilijker leesbaar wordt. Voor margin en padding is het aan te raden om de shorthand wel te gebruiken.</p>
+<h3 id="background">Background</h3>
+<p>De <code>background</code> eigenschap is een kortere manier, <em>shorthand</em>, om <code>background-color</code>, <code>background-image</code>, <code>background-position</code>, <code>background-repeat</code>, en <code>background-size</code> in één regel te definiëren. Gemakkelijker is het vaak om deze eigenschappen afzonderlijk te definiëren.</p>
+<pre><code>body {
+  background: #ff0000 url(&#34;img/lizard.png&#34;) center no-repeat 200px;
+}
+
+/* hetzelfde als ↓ */
+
+body {
+  background-color: #ff0000;
+  background-image: url(&#34;img/lizard.png&#34;);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+
+</code></pre>
+<h3 id="background-image">Background-image</h3>
+<p>De eigenschap <code>background-image</code> stelt één of meer achtergrondafbeeldingen in op een element. De eigenschappen gekoppeld aan <code>background-image</code> worden gebruikt om de afbeelding in de achtergrond van een element op verschillende manieren te bewerken.</p>
+<p><strong>Background-repeat</strong>: De eigenschap <code>background-repeat</code> wordt gebruikt om aan te geven hoe een achtergrondbeeld moet worden herhaald. Een achtergrondafbeelding kan langs de horizontale en verticale as worden herhaald, of helemaal niet. Zo zijn er onder andere de waarden <code>repeat</code>, <code>repeat-x</code>, <code>repeat-y</code>, en <code>no-repeat</code>.</p>
+<p><strong>Background-position</strong>: De eigenschap <code>background-position</code> wordt gebruikt om de positie van een achtergrondbeeld te specificeren. Zo zijn er de waarden <code>left</code>, <code>right</code>, <code>top</code>, <code>bottom</code>, <code>center</code>, en combinaties daarvan zoals <code>left center</code>, <code>right center</code>, etc.</p>
+<p><strong>Background-size</strong>: De eigenschap <code>background-size</code> wordt gebruikt om aan te geven hoe een achtergrondbeeld moet worden geschaald. De afbeelding kan behouden blijven in de oorspronkelijke grootte, uitgerekt of beperkt worden om in de beschikbare ruimte te passen. Je kunt onder andere de waarden <code>cover</code> en <code>contain</code> gebruiken.</p>
+<h3 id="css-background-image-eigenschappen">CSS Background-image eigenschappen</h3>
+<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" frameborder="0" style="width: 100%;" height="420"></iframe>
+<h3 id="color">Color</h3>
+<p>De <code>color</code> eigenschap bepaalt de kleur van de tekst in een element. De kleur kan worden opgegeven als een hexadecimaal getal, RGB- of HSL-waarde, of een naam van <a href="https://www.w3schools.com/colors/colors_names.asp">een standaard kleur</a>.</p>
+<pre><code>p {
+  color: red;
+  color: #ff0000;
+  color: rgb(255,0,0);
+  color: hsl(0,100%,50%);
+}
+
+</code></pre>
+<h4 id="standaardkleuren">Standaardkleuren</h4>
+<p>Alle moderne browsers ondersteunen 140 standaard kleurnamen. <a href="https://www.w3schools.com/colors/colors_names.asp">Je kan de lijst onder andere terugvinden op w3schools</a>.</p>
+<pre><code>color: firebrick;
+
+</code></pre>
+<h4 id="hexadecimale-kleuren">Hexadecimale kleuren</h4>
+<p>Een hexadecimale kleur wordt opgegeven met: <code>#RRGGBB</code>. RR (rood), GG (groen) en BB (blauw) zijn hexadecimale gehele getallen tussen 00 en FF die de intensiteit van de kleur aangeven.</p>
+<pre><code>color: #B22222;
+
+</code></pre>
+<h4 id="rgb-kleuren">rgb() kleuren</h4>
+<p>De notatie <code>rgb()</code> drukt een kleur uit met drie parameters: rood, groen en blauw (r, g, b). De waarde van elke parameter moet liggen tussen 0 en 255. Een optionele alfacomponent vertegenwoordigt de transparantie van de kleur.</p>
+<pre><code>color: rgb(178, 34, 34);
+
+</code></pre>
+<h4 id="hsl-kleuren">hsl() kleuren</h4>
+<p>De notatie <code>hsl()</code> drukt een kleur uit volgens de componenten voor tint (<em>hue</em>), verzadiging (<em>saturation</em>), en lichtheid (<em>lightness/brightness</em>).</p>
+<pre><code>color: hsl(0, 68%, 42%);
+
+</code></pre>
+<p><img src="https://www.vincentvc.com/kunstkaaiwp/wp-content/uploads/2022/10/color-wheel-1024x918.png" alt="Color Wheel"></p>
+<h4 id="additieve-kleuren">Additieve kleuren</h4>
+<p>Additieve kleuren zijn kleuren die door licht te combineren worden gevormd. Het licht dat we zien is een mix van verschillende kleuren licht, elk met hun eigen golflengte. Wanneer deze kleuren licht samenkomen, worden ze toegevoegd aan elkaar en wordt het totaal licht dat we zien helderder. De primaire additieve kleuren zijn rood, groen, en blauw.</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://www.vincentvc.com/kunstkaaiwp/wp-content/uploads/2022/10/additivecolors-rgb.svg" alt="RGB Additieve kleurmenging"></th>
+<th><img src="https://www.vincentvc.com/kunstkaaiwp/wp-content/uploads/2022/10/additivecolors-cmy.svg" alt="CMYK Subtractieve kleurmenging"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RGB Additieve kleurmenging</td>
+<td>CMYK Subtractieve kleurmenging</td>
+</tr>
+</tbody>
+</table>
+<h3 id="font">Font</h3>
+<p>De <code>font</code> eigenschap bepaalt de weergave van de lettertypen. Het is een kortere manier van het definiëren van onder andere de <code>font-family</code>, <code>font-weight</code>, en <code>font-size</code> eigenschappen in één regel.</p>
+<pre><code>section {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+</code></pre>
+<h4 id="font-family">Font-family</h4>
+<p>Een <code>font-family</code> is een verzameling van verschillende lettertypen die allemaal een soortgelijke stijl hebben. De <code>font-family</code> eigenschap geeft de browser aan welke font de tekst moet laten zien.</p>
+<h4 id="font-size">Font-size</h4>
+<p>De <code>font-size</code> eigenschap bepaalt de grootte van de tekst in een element.</p>
+<h4 id="font-weight">Font-weight</h4>
+<p>De <code>font-weight</code> eigenschap in CSS bepaalt de dikte van de tekst. De beschikbare gewichten zijn afhankelijk van de lettertypefamilie die momenteel is ingesteld.</p>
+<h4 id="schreefloos-sans-serif-en-schreef-serif">Schreefloos (sans-serif) en schreef (serif)</h4>
+<p>Een sans-serif, ook wel schreefloze, lettertype is een lettertype zonder de kleine, versierde details van het lettertype. Serif, of schreef, lettertypes hebben deze kleine details wel.</p>
+<p><img src="https://www.vincentvc.com/kunstkaaiwp/wp-content/uploads/2022/11/Screenshot-2022-11-22-at-11-50-10-prop-vs-mono-copy-1024x312.png" alt="Schreef en schreefloze lettertypes"></p>
+<h4 id="proportioneel-en-monospace">Proportioneel en monospace</h4>
+<p>Een proportioneel lettertype is een lettertype waarbij de letters verschillende breedtes hebben. Een monospace lettertype is een lettertype waarbij iedere letter evenveel ruimte inneemt.</p>
+<p><img src="https://www.vincentvc.com/kunstkaaiwp/wp-content/uploads/2022/10/Screenshot-2022-10-25-at-14-11-11-prop-vs-mono-copy.jpg" alt="Proportioneel en monospace"></p>
+<h4 id="cdn-fonts">CDN Fonts</h4>
+<p>Een CDN, <em>content delivery network</em>, is een netwerk van servers die gebruikt worden om inhoud te leveren aan gebruikers over de hele wereld. CDN fonts zijn lettertypes die via zo een netwerk worden geleverd.</p>
+<ul>
+<li><a href="https://fonts.google.com/">Google Fonts</a></li>
+<li><a href="https://fonts.adobe.com/">Adobe Fonts</a></li>
+</ul>
+<h3 id="font-face">@font-face</h3>
+<p><code>@font-face</code> specificeert een aangepast lettertype waarmee tekst moet worden weergegeven; het lettertype kan worden geladen vanaf een externe server of een lokaal geïnstalleerd lettertype op de eigen computer van de gebruiker.</p>
+<pre><code>@font-face {
+  font-family: &#34;Open Sans&#34;;
+  font-weight: 400;
+  src: url(&#34;/fonts/OpenSans-Regular-webfont.woff2&#34;) format(&#34;woff2&#34;);
+}
+
+</code></pre>
+<h3 id="import">@import</h3>
+<p>De <code>@import</code> wordt gebruikt om stijlregels uit andere stylesheets te importeren, bijvoorbeeld een verzameling fonts.</p>
+<pre><code>@import url(&#39;https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&amp;display=swap&#39;);
+
+</code></pre>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/js/main.js"></script>
+
+  </footer>
+</body>
+</html>
