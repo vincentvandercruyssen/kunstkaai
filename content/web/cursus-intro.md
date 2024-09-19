@@ -148,7 +148,7 @@ In de vroege jaren '70 bestonden er reeds talrijke computernetwerken, maar deze 
 
 #### DNS: het telefoonboek van het internet
 
-DNS (Domain Name System) is een systeem dat mensvriendelijke domeinnamen, zoals "[google.com](http://www.google.com)", vertaalt naar bijbehorende IP-adressen, zoals "192.168.1.1". Het fungeert als een 'telefoonboek' voor het internet, zodat computers gemakkelijk met elkaar kunnen communiceren.
+DNS (Domain Name System) is een systeem dat mensvriendelijke domeinnamen, zoals {{< a href="https://www.google.com/" text="google.com" >}}, vertaalt naar bijbehorende IP-adressen, zoals "192.168.1.1". Het fungeert als een 'telefoonboek' voor het internet, zodat computers gemakkelijk met elkaar kunnen communiceren.
 
 ### De uitvinding van het World Wide Web
 

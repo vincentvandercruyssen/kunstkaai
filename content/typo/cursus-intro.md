@@ -56,7 +56,7 @@ Als ontwerper kun je natuurlijk ook de gulden middenweg kiezen, waarbij je zowel
 
 ---
 
-{{< p_style style="font-family: fantasy; padding: 0 6rem;" >}}
+{{< p_style style="font-family: cursive; padding: 0 6rem;" >}}
     Beste James,
     Tot mijn grote spijt moet ik u meedelen dat onze testresultaten uitwijzen dat u ongeneeslijk ziek bent. 
 {{< /p_style >}}

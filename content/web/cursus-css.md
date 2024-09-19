@@ -52,7 +52,7 @@ Veranderingen aan CSS eigenschappen eindigen altijd met een puntkomma en declara
 
 ## CSS Selectors
 
-[W3S | Selector tester](https://www.w3schools.com/CSSref/trysel.asp)
+- {{< a href="https://www.w3schools.com/CSSref/trysel.asp" >}}
 
 Met CSS maak je gebruik van verschillende selectors. Hiermee selecteer je de elementen waarop je stijl wilt toepassen. De selectors kunnen verschillende vormen aannemen, afhankelijk van de elementen waarop je wilt selecteren.
 
@@ -131,8 +131,9 @@ Een selector lijst is een aantal selectors gescheiden door komma's, die samen ee
 
 CSS eigenschappen of properties zijn de stylingsmogelijkheden die je hebt binnen CSS. Ze bepalen hoe je HTML-elementen kunt opmaken, zoals de kleur, het lettertype, de achtergrond, de margins en de padding.
 
-### De meest gebruikte CSS eigenschappen
+#### De meest gebruikte CSS eigenschappen
 
+{{< table_layoutfixed >}}
 | **Kleur en tekst**     | **Lay-out**        | **Geavanceerd**     |
 |------------------------|--------------------|---------------------|
 | background             | position           | overflow            |
@@ -153,7 +154,7 @@ CSS eigenschappen of properties zijn de stylingsmogelijkheden die je hebt binnen
 
 Een shorthand is een manier om een aantal CSS-regels in één regel te schrijven. Het is een kortere manier om dezelfde CSS-regels te schrijven. Het is beter om de shorthand-methode in sommige gevallen te vermijden omdat de code zo moeilijker leesbaar wordt. Voor margin en padding is het aan te raden om de shorthand wel te gebruiken.
 
-### Background
+### background
 
 De `background` eigenschap is een kortere manier, *shorthand*, om `background-color`, `background-image`, `background-position`, `background-repeat`, en `background-size` in één regel te definiëren. Gemakkelijker is het vaak om deze eigenschappen afzonderlijk te definiëren.
 
@@ -161,9 +162,11 @@ De `background` eigenschap is een kortere manier, *shorthand*, om `background-co
   background: #ff0000 url("img/lizard.png") center no-repeat 200px;
 }
 
-/* hetzelfde als ↓ */
+{{< /showcode >}}
 
-body {
+Dat is hetzelfde als:
+
+{{< showcode >}}body {
   background-color: #ff0000;
   background-image: url("img/lizard.png");
   background-position: center;
@@ -173,7 +176,7 @@ body {
 
 {{< /showcode >}}
 
-### Background-image
+### background-image
 
 De eigenschap `background-image` stelt één of meer achtergrondafbeeldingen in op een element. De eigenschappen gekoppeld aan `background-image` worden gebruikt om de afbeelding in de achtergrond van een element op verschillende manieren te bewerken.
 
@@ -183,13 +186,13 @@ De eigenschap `background-image` stelt één of meer achtergrondafbeeldingen in 
 
 **Background-size**: De eigenschap `background-size` wordt gebruikt om aan te geven hoe een achtergrondbeeld moet worden geschaald. De afbeelding kan behouden blijven in de oorspronkelijke grootte, uitgerekt of beperkt worden om in de beschikbare ruimte te passen. Je kunt onder andere de waarden `cover` en `contain` gebruiken.
 
-### CSS Background-image eigenschappen
+#### background-image eigenschappen
 
 {{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" height="420" >}}
 
-### Color
+### color
 
-De `color` eigenschap bepaalt de kleur van de tekst in een element. De kleur kan worden opgegeven als een hexadecimaal getal, RGB- of HSL-waarde, of een naam van [een standaard kleur](https://www.w3schools.com/colors/colors_names.asp).
+De `color` eigenschap bepaalt de kleur van de tekst in een element. De kleur kan worden opgegeven als een hexadecimaal getal, RGB- of HSL-waarde, of een naam van {{< a href="https://www.w3schools.com/colors/colors_names.asp" text="een standaard kleur" >}}.
 
 {{< showcode >}}p {
   color: red;
@@ -202,7 +205,7 @@ De `color` eigenschap bepaalt de kleur van de tekst in een element. De kleur kan
 
 #### Standaardkleuren
 
-Alle moderne browsers ondersteunen 140 standaard kleurnamen. [Je kan de lijst onder andere terugvinden op w3schools](https://www.w3schools.com/colors/colors_names.asp).
+Alle moderne browsers ondersteunen 140 standaard kleurnamen. {{< a href="https://www.w3schools.com/colors/colors_names.asp" text="Je kan de lijst onder andere terugvinden op w3schools..." >}}
 
 {{< showcode >}}color: firebrick;
 
@@ -232,17 +235,24 @@ De notatie `hsl()` drukt een kleur uit volgens de componenten voor tint (*hue*),
 
 {{< /showcode >}}
 
-![Color Wheel](https://www.vincentvc.com/kunstkaaiwp/wp-content/uploads/2022/10/color-wheel-1024x918.png)
+{{< img src="/img/web/cursus-css-color_wheel-1.png" width="360" >}}
 
 #### Additieve kleuren
 
 Additieve kleuren zijn kleuren die door licht te combineren worden gevormd. Het licht dat we zien is een mix van verschillende kleuren licht, elk met hun eigen golflengte. Wanneer deze kleuren licht samenkomen, worden ze toegevoegd aan elkaar en wordt het totaal licht dat we zien helderder. De primaire additieve kleuren zijn rood, groen, en blauw.
 
-|![RGB Additieve kleurmenging](https://www.vincentvc.com/kunstkaaiwp/wp-content/uploads/2022/10/additivecolors-rgb.svg)|![CMYK Subtractieve kleurmenging](https://www.vincentvc.com/kunstkaaiwp/wp-content/uploads/2022/10/additivecolors-cmy.svg)|
-|------------------------------------------------------------|-------------------------------------------------------------|
-|RGB Additieve kleurmenging                                  |CMYK Subtractieve kleurmenging                               |
+|   |   |
+| - | - |
+| {{< svg src="img/web/colors-additive-rgb.svg" width="1200" >}} | {{< svg src="img/web/colors-subtractive-cmyk.svg" width="1200" >}} |
+| RGB Additieve kleurmenging | CMYK Subtractieve kleurmenging |
 
-### Font
+#### Kleurenkiezer in VSC
+
+In Visual Studio Code kan je door de verschillende kleurennotaties kiezen door over een kleureigenschap te zweven (hoveren) en door te klikken op de balk met de kleurnotatie. 
+
+{{< video src="/img/web/cursus-css-vsc-colorpicker-1.mp4" width="360" >}}
+
+### font
 
 De `font` eigenschap bepaalt de weergave van de lettertypen. Het is een kortere manier van het definiëren van onder andere de `font-family`, `font-weight`, en `font-size` eigenschappen in één regel.
 
@@ -254,15 +264,15 @@ De `font` eigenschap bepaalt de weergave van de lettertypen. Het is een kortere 
 
 {{< /showcode >}}
 
-#### Font-family
+#### font-family
 
 Een `font-family` is een verzameling van verschillende lettertypen die allemaal een soortgelijke stijl hebben. De `font-family` eigenschap geeft de browser aan welke font de tekst moet laten zien.
 
-#### Font-size
+#### font-size
 
 De `font-size` eigenschap bepaalt de grootte van de tekst in een element.
 
-#### Font-weight
+#### font-weight
 
 De `font-weight` eigenschap in CSS bepaalt de dikte van de tekst. De beschikbare gewichten zijn afhankelijk van de lettertypefamilie die momenteel is ingesteld.
 
@@ -270,20 +280,32 @@ De `font-weight` eigenschap in CSS bepaalt de dikte van de tekst. De beschikbare
 
 Een sans-serif, ook wel schreefloze, lettertype is een lettertype zonder de kleine, versierde details van het lettertype. Serif, of schreef, lettertypes hebben deze kleine details wel.
 
-![Schreef en schreefloze lettertypes](https://www.vincentvc.com/kunstkaaiwp/wp-content/uploads/2022/11/Screenshot-2022-11-22-at-11-50-10-prop-vs-mono-copy-1024x312.png)
+{{< p_style style="font-family: sans-serif; font-size: 2rem; padding: 0 6rem;" >}}
+    Schreefloos (sans-serif) 
+{{< /p_style >}}
+
+{{< p_style style="font-family: serif; font-size: 2.2rem; padding: 0 6rem;" >}}
+    Schreef (serif)
+{{< /p_style >}}
 
 #### Proportioneel en monospace
 
 Een proportioneel lettertype is een lettertype waarbij de letters verschillende breedtes hebben. Een monospace lettertype is een lettertype waarbij iedere letter evenveel ruimte inneemt.
 
-![Proportioneel en monospace](https://www.vincentvc.com/kunstkaaiwp/wp-content/uploads/2022/10/Screenshot-2022-10-25-at-14-11-11-prop-vs-mono-copy.jpg)
+{{< checkerboard >}}
+    Proportioneel: alle schrifttekens hebben steeds een verschillende breedte.
+{{< /checkerboard >}}
+
+{{< checkerboard monospace="true" >}}
+    Monospace: alle schrifttekens hebben telkens dezelfde breedte.
+{{< /checkerboard >}}
 
 #### CDN Fonts
 
 Een CDN, *content delivery network*, is een netwerk van servers die gebruikt worden om inhoud te leveren aan gebruikers over de hele wereld. CDN fonts zijn lettertypes die via zo een netwerk worden geleverd.
 
-- [Google Fonts](https://fonts.google.com/)
-- [Adobe Fonts](https://fonts.adobe.com/)
+- {{< a href="https://fonts.adobe.com/" text="Adobe Fonts" >}}
+- {{< a href="https://fonts.google.com/" text="Google Fonts" >}}
 
 ### @font-face
 
@@ -304,3 +326,177 @@ De `@import` wordt gebruikt om stijlregels uit andere stylesheets te importeren,
 {{< showcode >}}@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
 {{< /showcode >}}
+
+## Flow Lay-out
+
+Flow lay-out is de manier waarop block- en inline-elementen op een pagina worden weergegeven. Elk HTML-element heeft een standaardweergave (*display, inline,...*), deze eigenschap is afhankelijk van het type element en kan worden aangepast.
+
+In de flow lay-out worden inline-elementen weergegeven in de inline-richting, dat wil zeggen in de richting van een zin of een regel. Na elkaar van links naar rechts.
+
+Blokelementen worden onder elkaar weergegeven, zoals alinea's. Onder elkaar van boven naar onder.
+
+### display
+
+De `display` eigenschap stelt in of een element wordt behandeld als een blok- of inline-element in de normale flow lay-out. Het kan ook onderliggende elementen (*children*) in een bepaald lay-outtype gieten, zoals bij grid en flex.
+
+- **display: none;** Verbergt een element (en onderliggende geneste elementen).
+- **display: inline;** Elementen worden geplaatst op dezelfde regel als de omringende inhoud. Een inline element begint niet op een nieuwe regel en neemt slechts zoveel breedte in beslag als nodig is.
+- **display: block;** Elementen worden geplaatst op een nieuwe regel. Een element op blokniveau neemt altijd de volledige beschikbare ruimte in beslag.
+- **display: inline-block;** Elementen worden geplaatst op dezelfde regel als de omringende tekst, maar kunnen worden aangepast in breedte en hoogte.
+
+{{< table_layoutfixed >}}
+| | |
+|-|-|
+|░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ {{< br >}}░░░░░░░░░░░░░░░░ ← `inline` richting → {{< br >}}░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ {{< br >}}|↑ {{< br >}} `block` richting {{< br >}} ↓|
+
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/QWOwbWJ" height="548" >}}
+
+#### Flow lay-out navigatie met li's en a's
+
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/bGMZyde" height="480" >}}
+
+## Box Model
+
+Het Box model is de manier van weergeven van HTML-elementen in de webbrowser. Het bevat vier verschillende onderdelen: de content (*inhoud*), de padding (*opvulling*), de border (*rand*), en de margin (*marge*). Deze onderdelen kunnen verschillende eigenschappen hebben, zoals afmetingen, kleuren, en randstijlen.
+
+{{< img src="/img/web/cursus-css-box-model-1.png" width="1600" >}}
+
+- **Content area:** Bevat de "echte" inhoud van het element, zoals tekst, een afbeelding, of een videospeler. 
+- **Padding area:** Breidt het inhoudsgebied uit met de padding van het element.
+- **Border area:** Breidt het opvulgebied uit met randen rond het element.
+- **Margin area:** Breidt het randgebied uit met een leeg gebied dat wordt gebruikt om het element van zijn buren te scheiden.
+
+### padding
+
+Padding wordt gebruikt om tussenruimte te geven rond de inhoud van een element. Net als een postpakketje kan er opvulling (*padding*) rond de inhoud toegevoegd worden zodat deze de rand van de doos niet raakt.
+
+De padding shorthand stelt padding aan alle vier de zijden van een element tegelijk in. Deze shorthand kan worden veranderd met één, twee, drie of vier waarden.
+
+- Wanneer één waarde is opgegeven, wordt dezelfde padding toegepast op alle vier de zijden.
+- Bij twee waarden: de eerste is voor boven/onder, de tweede voor links/rechts.
+- Bij drie waarden: de eerste is voor boven, de tweede voor rechts/links, en de derde voor onder.
+- Bij vier waarden: de padding is van toepassing op *boven, rechts, onder, en links* in die volgorde (met de klok mee).
+
+### border
+
+Een border is een lijn die rond de rand van een element wordt getekend. De `border`-eigenschap is een kortere manier om de `border-width`, `border-style`, en `border-color` eigenschappen in één regel te schrijven.
+
+{{< showcode >}}section {
+  border-width: 4px;
+  border-style: dotted;
+  border-color: red;
+}
+{{< /showcode >}}
+
+### margin
+
+Margin wordt gebruikt om elementen op een pagina op een bepaalde afstand van elkaar te houden.
+
+De margin shorthand stelt margin aan alle vier de zijden van een element tegelijk in. De eigenschap margin kan worden opgegeven met één, twee, drie, of vier waarden.
+
+- Wanneer één waarde is opgegeven, wordt dezelfde margin toegepast op alle vier de zijden.
+- Bij twee waarden: de eerste is voor boven/onder, de tweede voor links/rechts.
+- Bij drie waarden: de eerste is voor boven, de tweede voor rechts/links, en de derde voor onder.
+- Bij vier waarden: de margin is van toepassing op *boven, rechts, onder, en links* in die volgorde.
+
+#### Horizontale centrering
+
+Om iets horizontaal te centreren, kun je `display: flex` en `justify-content: center` gebruiken. Ook kun je `margin: 0 auto` toepassen om een element binnen het bovenliggende element te centreren.
+
+#### Centreren met margin
+
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/ZERGera" height="330" >}}
+
+## Eenheden
+
+Er zijn in CSS verschillende maateenheden om afmetingen aan te passen. Veel van de eigenschappen kunnen veranderd worden met deze eenheden, zoals `width`, `height`, `margin`, `padding`, en `font-size`. 
+
+### Absolute eenheden
+
+Absolute eenheden zijn onafhankelijk van de context waarin ze worden gebruikt. De meest voorkomende absolute CSS-eenheid is pixels (*px*). 
+
+### Relatieve eenheden
+
+Relatieve eenheden zijn afhankelijk van de context waarin ze worden gebruikt. Ze zijn relatief aan iets anders, zoals de grootte van het lettertype van het bovenliggende element of de grootte van de viewport.
+
+| **Eenheid** | **in verhouding tot** |
+|-------------|-----------------------|
+| `%`         | Percentagewaarden zijn altijd relatief ten opzichte van een andere hoeveelheid, bijvoorbeeld relatief aan de breedte van het bovenliggende element. |
+| `em`        | De lettergrootte van het bovenliggende element. |
+| `rem`       | Lettergrootte van het root-element. |
+| `ch`        | De breedte van letterteken "0" van het lettertype (van het element). |
+| `vw`        | Viewport Width, 1% van de breedte van het venster. |
+| `vh`        | Viewport Height, 1% van de hoogte van het venster. |
+
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/bGMZJBP" height="520" >}}
+
+## box-sizing
+
+De `box-sizing` eigenschap wordt gebruikt om te definiëren hoe het CSS box-model werkt. Bij het berekenen van de breedte en hoogte van een element wordt standaard de inhoud, de paddings, en de borders meegeteld.
+
+{{< showcode >}}* {
+  box-sizing: border-box;
+}
+
+{{< /showcode >}}
+
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/rNYBwXP" height="548" >}}
+
+## Flexbox
+
+Flexbox is een CSS lay-outmodel dat een efficiëntere manier biedt om ruimte tussen elementen op een pagina in te delen, uit te lijnen, en te verdelen. Je geeft het bovenliggende element een `display: flex` om een flex-container te maken.
+
+In het flexbox lay-outmodel kunnen de kinderen van een flex-container in elke richting worden opgesteld.
+
+#### Kolommen met Flexbox
+
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/KKeyWQj" height="580" >}}
+
+#### Centreren met Flexbox
+
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/eYemZLZ" height="480" >}}
+
+#### Flexbox Eigenschappen (Demo)
+
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/MWOYyGY" height="800" >}}
+
+## Bronnen
+
+#### Icoontjes
+
+- {{< a href="https://www.svgrepo.com/" >}}
+
+#### Fotografie
+
+- {{< a href="https://unsplash.com/" >}}
+
+#### Typografie
+
+- {{< a href="https://fonts.adobe.com/" >}}
+- {{< a href="https://fonts.google.com/" >}}
+
+#### Kleuren
+
+- {{< a href="https://color.adobe.com/create/color-wheel" >}}
+
+#### Cheat sheets & tools
+
+- {{< a href="https://www.w3schools.com/cssref/trysel.asp" >}}
+- {{< a href="https://css-tricks.com/almanac/" >}}
+- {{< a href="https://flexboxsheet.com/" >}}
+- {{< a href="https://monsido.com/tools/contrast-checker" >}}
+- {{< a href="https://www.w3schools.com/html/html5_semantic_elements.asp" >}}
+- {{< a href="https://caniuse.com/" >}}
+- {{< a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" >}}
+
+#### Meer leren
+
+- {{< a href="https://www.freecodecamp.org/learn/" >}}
+- {{< a href="https://www.youtube.com/kepowob/" >}}
+- {{< a href="https://developer.mozilla.org/en-US/docs/Web/HTML" >}}
+- {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS" >}}
+
+#### Inspiratie
+
+- {{< a href="https://www.siteinspire.com/" >}}
+- {{< a href="https://www.awwwards.com/" >}}

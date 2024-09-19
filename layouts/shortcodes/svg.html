@@ -15,7 +15,7 @@
     {{ if $href }}
         <a href="{{ $href }}" target="_blank" style="display: flex; align-items: center; flex-direction:column;">
     {{ end }}
-    <img src="{{ $svg.Permalink }}" width="{{ $width }}" alt="{{ $fileNameWithoutExt }}" />
+    <img src="{{ $svg.Permalink }}" width="{{ $width }}" alt="{{ $fileNameWithoutExt }}" loading="lazy" >
     {{ if $text }}
         <p>{{ $text }}</p>
     {{ end }}

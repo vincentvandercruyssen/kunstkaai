@@ -9,7 +9,7 @@
   <div style="display: flex; justify-content: center;">
 {{ end }}
 
-  <img src="{{ $resized.Permalink }}" alt="{{ $fileNameWithoutExt }}">
+  <img src="{{ $resized.Permalink }}" alt="{{ $fileNameWithoutExt }}" loading="lazy" >
   
 {{ if $center }}
 </div>

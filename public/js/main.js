@@ -1,5 +1,15 @@
 (() => {
   // <stdin>
+  var fixedLayoutDivs = document.querySelectorAll(".table_layoutfixed");
+  fixedLayoutDivs.forEach((div) => {
+    let nextTable = div.nextElementSibling;
+    while (nextTable && nextTable.tagName !== "TABLE") {
+      nextTable = nextTable.nextElementSibling;
+    }
+    if (nextTable) {
+      nextTable.style.tableLayout = "fixed";
+    }
+  });
   var centerTextDivs = document.querySelectorAll(".table_centertext");
   centerTextDivs.forEach((div) => {
     let nextTable = div.nextElementSibling;

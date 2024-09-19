@@ -16,7 +16,7 @@
 html,
 body,
 main {
-  height: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -48,9 +48,11 @@ h4,
 p,
 li,
 img,
+video,
 object,
 table,
 div:has(iframe),
+iframe,
 hr {
   margin-bottom: 1.5rem;
 }
@@ -79,6 +81,7 @@ h4 {
 p,
 li {
   max-width: 80ch;
+  word-break: break-word;
 }
 
 /* :is(h1, h2, h3, h4, h5, h6) + p {
@@ -99,6 +102,7 @@ code {
 }
 
 img,
+video,
 object {
   display: block;
   max-width: 100%;
