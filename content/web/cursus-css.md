@@ -386,6 +386,7 @@ Een border is een lijn die rond de rand van een element wordt getekend. De `bord
   border-style: dotted;
   border-color: red;
 }
+
 {{< /showcode >}}
 
 ### margin
