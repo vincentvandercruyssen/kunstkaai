@@ -23,6 +23,7 @@ Je kunt {{< a href="https://chatgpt.com/" text="ChatGPT" >}} gebruiken om hulp t
 Je webpagina moet uiteindelijk de volgende elementen bevatten:
 - Eén titel.
 - Minimaal drie tussentitels.
+- Minimaal drie stukjes tekst.
 - Minimaal één hyperlink.
 - Minimaal één afbeelding.
 - Minimaal één lijst.
