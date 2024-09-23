@@ -62,13 +62,22 @@ Onderstaande lijst biedt een selectie van kunstenaars die nauw verbonden zijn me
 
 ### Vlaamse Primitieven (15e-16e eeuw)
 
-- **Joos van Cleve** (1485-1540) - Portretten en religieuze kunstwerken.
 - **Quinten Massijs (I)** (1466-1530) - Portretten en religieuze taferelen.
+- **Jan Gossaert** (1478-1532) - Religieuze en mythologische werken.
+- **Joachim Patinir** (1480-1524) - Landschappen en religieuze schilderijen.
+- **Joos van Cleve** (1485-1540) - Portretten en religieuze kunstwerken.
 
 ### Renaissance (16e eeuw)
 
+- **Jan Massijs** (1509-1573) - Religieuze en mythologische taferelen.
 - **Frans Floris** (1519-1570) - Beïnvloed door de Italiaanse stijl.
+- **Jacob Grimmer** (1525-1590) - Landschappen en seizoensgebonden taferelen.
 - **Caterina van Hemessen** (1528-1587) - Vlaamse Renaissance, zelfportretten.
+- **Maerten de Vos** (1532-1603) - Religieuze en historische taferelen.
+- **Joachim Beuckelaer** (1534-1574) - Markt- en keukenstillevens.
+- **Gillis Coignet** (1542-1599) - Schilder van landschappen en portretten.
+- **Paul Bril** (1554-1626) - Landschapschilder, vaak met mythologische elementen.
+- **Pieter Brueghel de Jonge** (1564-1638) - Genreschilderijen en dorpsscènes.
 - **Jan Brueghel de Oude** (1568-1625) - Allegorische schilderijen.
 
 ### Barok (17e eeuw)
@@ -109,7 +118,10 @@ Onderstaande lijst biedt een selectie van kunstenaars die nauw verbonden zijn me
 
 - **Jan van Beers** (1852-1927) - Symbolisme, historische scènes en portretten.
 - **James Ensor** (1860-1949) - Symbolisme en expressionisme, macabere scènes.
+- **Charles Mertens** (1865-1919) - Symbolisme, vaak sociaal-politieke thema's.
+- **Alice Eckermans** (1866-1921) - Portretten en stillevens in realistische stijl.
 - **Louise De Hem** (1866-1922) - Realistische schilderijen van mensen.
+- **Eugeen Van Mieghem** (1975-1930) - Havenleven, sociaal realisme.
 - **Léon Spilliaert** (1881-1946) - Symbolisme, vaak melancholisch.
 - **Gustave Van de Woestyne** (1881-1947) - Symbolisme, religieus en mystiek.
 - **Rik Wouters** (1882-1916) - Modernisme, felle kleuren en dynamische figuren.
