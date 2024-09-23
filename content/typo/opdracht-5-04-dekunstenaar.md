@@ -6,7 +6,7 @@ draft = false
 
 ## Spread voor magazine
 
-Ontwerp een magazine-spread (dubbele pagina) op basis van een digitaal artikel over het leven en werk van een kunstenaar die nauw verbonden is met Antwerpen. Dit kan iemand zijn die er geboren en getogen is, of op een andere manier sterk betrokken was of is bij de stad.
+Ontwerp een magazine-spread (dubbele pagina) op basis van een digitaal artikel over het leven en werk van een kunstenaar die nauw verbonden is met Antwerpen. Dit kan iemand zijn die er geboren en getogen is, of op een manier sterk betrokken was of is bij de stad.
 
 Deze opdracht combineert tekst, beeld en een nauwkeurige lay-out op basis van een raster. Kies een kunstenaar, onderzoek het werk en presenteer je resultaten op een professionele, creatieve manier, volgens de opgegeven richtlijnen.
 
