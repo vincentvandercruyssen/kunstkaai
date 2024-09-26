@@ -449,6 +449,11 @@ Flexbox is een CSS lay-outmodel dat een efficiëntere manier biedt om ruimte tus
 
 In het flexbox lay-outmodel kunnen de kinderen van een flex-container in elke richting worden opgesteld.
 
+| | |
+|-|-|
+|{{< svg src="img/web/cursus-css-flex_container-1.svg">}}|{{< svg src="img/web/cursus-css-flex_items-1.svg">}}|
+|Een element wordt een flex-container door de eigenschap `display: flex;` toe te wijzen.|Alle direct onderliggende elementen worden nu beschouwd als flex-items.|
+
 #### Kolommen met Flexbox
 
 {{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/KKeyWQj" height="580" >}}
