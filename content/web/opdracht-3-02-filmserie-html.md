@@ -1,5 +1,5 @@
 +++
-title = 'Opdracht: Film of Serie'
+title = 'Opdracht: Film of Serie (HTML)'
 date = 2024-09-25T08:00:00-07:00
 draft = false
 +++

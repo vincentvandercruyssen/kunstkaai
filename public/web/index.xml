@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 25 Sep 2024 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Opdracht: Film of Serie</title>
-      <link>http://localhost:1313/web/opdracht-3-02-filmserie/</link>
+      <title>Opdracht: Film of Serie (HTML)</title>
+      <link>http://localhost:1313/web/opdracht-3-02-filmserie-html/</link>
       <pubDate>Wed, 25 Sep 2024 08:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/web/opdracht-3-02-filmserie/</guid>
+      <guid>http://localhost:1313/web/opdracht-3-02-filmserie-html/</guid>
       <description>Opgave In deze opdracht leer je informatie te presenteren door een correct HTML-document te maken. Je kiest een film of serie en verzamelt informatie die je op een gestructureerde manier gaat indelen in een HTML-pagina. Het doel is om de basisstructuur van HTML toe te passen op een webpagina.&#xA;Kies een film of serie Kies een film of serie die je interessant vindt. Verzamel informatie en organiseer deze in vier onderdelen (section):</description>
     </item>
     <item>
