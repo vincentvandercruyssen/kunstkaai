@@ -6,8 +6,15 @@
     <description>Recent content in Home on Kunstkaai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Sep 2024 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2024 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Over mij (CSS)</title>
+      <link>http://localhost:1313/web/opdracht-4-03-overmij-css/</link>
+      <pubDate>Mon, 30 Sep 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-4-03-overmij-css/</guid>
+      <description>Omschrijving Je gaat jouw &amp;ldquo;Over mij&amp;rdquo;-pagina vormgeven met behulp van CSS. In deze opdracht leer je hoe je externe stijlen en CSS-selectors kunt gebruiken om een goed gestructureerde en aantrekkelijk vormgegeven webpagina te maken.&#xA;Je maakt gebruik van sections om de verschillende onderdelen van je pagina te structureren. Minstens één section moet je anders vormgeven met behulp van een id-selector en het id-attribuut in HTML.&#xA;Stappenplan Dit stappenplan begeleidt je stap voor stap bij het vormgeven van jouw &amp;ldquo;Over mij&amp;rdquo;-pagina met CSS.</description>
+    </item>
     <item>
       <title>Opdracht: Film of Serie (HTML)</title>
       <link>http://localhost:1313/web/opdracht-3-02-filmserie-html/</link>
@@ -66,9 +73,9 @@
     </item>
     <item>
       <title>Opdracht: Over mij (HTML)</title>
-      <link>http://localhost:1313/web/opdracht-4-01-overmij-html/</link>
+      <link>http://localhost:1313/web/opdracht-4-02-overmij-html/</link>
       <pubDate>Wed, 11 Sep 2024 08:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/web/opdracht-4-01-overmij-html/</guid>
+      <guid>http://localhost:1313/web/opdracht-4-02-overmij-html/</guid>
       <description>Omschrijving In deze opdracht schrijf je een persoonlijke tekst over jezelf en structureer je deze met HTML. Het doel is om je basisvaardigheden in HTML te ontwikkelen en een eenvoudige webpagina te maken met een afbeelding, een link en een lijst om de inhoud aantrekkelijk en informatief te maken.&#xA;Uiteindelijk lever je je werk in als een gezipte map via Google Classroom.&#xA;Stappenplan Introductie: Wie ben je, wat zijn je interesses, en waarom heb je voor grafische technieken gekozen?</description>
     </item>
     <item>

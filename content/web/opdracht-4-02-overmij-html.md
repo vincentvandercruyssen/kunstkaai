@@ -1,5 +1,5 @@
 +++
-title = "Opdracht: Over mij (HTML)"
+title = 'Opdracht: Over mij (HTML)'
 date = 2024-09-11T08:00:00-07:00
 draft = false
 +++
@@ -63,7 +63,7 @@ Binnen het `<body>`-element bouw je je webpagina op:
 Aan het einde van de les lever je de volgende bestanden in:
 
 1. **index.html**.
-2. De afbeelding in de map **images**.
+2. De afbeeldingen in de map **images**.
 3. Organiseer alles in één map.
 4. Maak een gezipte map van je **overmij**-map.
 5. Log in op **Google Classroom**.
