@@ -47,17 +47,30 @@ Met deze informatie maak je een database aan in Excel of Google Sheets. Uiteinde
 
 {{< img src="/img/data/opdracht-01-datamerging-brochure-vb_1.png" width="1200" >}}
 
-### Product kiezen en gegevens verzamelen
+### Productgegevens verzamelen
 
 1. **Kies een product** om in de brochure te presenteren (bijvoorbeeld auto's, telefoons, kleding).
 2. **Verzamel informatie** over minimaal vijftien producten binnen deze categorie (productnaam, beschrijving, prijs, afbeelding, logo en drie andere kenmerken).
 3. **Maak een gegevensbestand** in Excel of Google Sheets. Elke rij vertegenwoordigt een product, elke kolom een veld (zoals productnaam, prijs, afbeelding). Zorg dat het afbeeldingspad correct is en gebruik het @-symbool voor de afbeeldingsvelden (bijv. @image). *Gebruik het @-symbool om aan te geven dat de kolom een afbeeldingspad bevat, bijvoorbeeld @image.* 
 
-### Template ontwerp in InDesign
+{{< img src="/img/data/opdracht-01-datamerging-sheet-1.png" width="1400" >}}
+{{< img src="/img/data/opdracht-01-datamerging-folder-1.png" width="360" >}}
 
-1. **Open InDesign** en maak een nieuw document (bijv. A5, staand).
-2. **Ontwerp een sjabloon** voor één product met ruimte voor naam, beschrijving, prijs en afbeelding. Gebruik tekstframes voor tekst en een rechthoekig frame voor afbeeldingen.
-3. Houd het sjabloon eenvoudig en herhaalbaar. Zorg ervoor dat er **één product per pagina** wordt weergegeven, waarbij de productinformatie bijvoorbeeld wordt gestructureerd in de volgorde: afbeelding boven, productnaam, logo en beschrijving eronder, gevolgd door de prijs en andere kenmerken.
+### Template Ontwerp in InDesign
+
+Ontwerp een document waarin **InDesign** automatisch 15 producten op één blad plaatst. Hierbij moet je goed nadenken over de indeling en rekening houden met de afmetingen van de productkaarten.
+
+1. Ontwerp een sjabloon voor één product in InDesign.
+2. Gebruik tekstframes en afbeeldingsframes die nauwkeurig in de kolommen passen.
+3. Met behulp van **Data Merge** zal InDesign vervolgens automatisch de 15 producten plaatsen.
+
+- **Formaat**: A4 (210 x 297 mm) of een ander formaat, met minimaal 5 mm marges rondom.
+- **Indeling**: Denk aan een verdeling van bijvoorbeeld 5 kolommen en 3 rijen. 
+- **Kolombreedte**: Bereken de breedte, bijvoorbeeld **53,4 mm** per kolom, met 5 mm tussenruimte.
+- **Layoutstructuur**: Afbeelding, productnaam en logo, beschrijving, prijs en kenmerken.
+
+{{< img src="/img/data/opdracht-01-datamerging-voorbeeld_product-1.png" width="240" >}}
+{{< img src="/img/data/opdracht-01-datamerging-voorbeeld_product-2.png" width="1440" >}}
 
 ### Data Merge voorbereiden en koppelen
 
@@ -70,11 +83,8 @@ Met deze informatie maak je een database aan in Excel of Google Sheets. Uiteinde
 1. **Genereer de brochure** door op "Create Merged Document" te klikken. Zorg ervoor dat er meerdere producten per pagina staan.
 2. Controleer of alle informatie en afbeeldingen correct zijn ingeladen en de lay-out netjes blijft, ongeacht de lengte van de tekst.
 3. Pas indien nodig de lay-out of gegevens aan.
-
-### Eindcontrole en presentatie
-
-1. **Corrigeer eventuele fouten** in het sjabloon, de gegevens of de koppelingen.
-2. Exporteer de brochure als PDF. Zorg ervoor dat alle afbeeldingen een hoge resolutie hebben (minimaal 300 DPI voor print) en dat ze in een geschikt formaat staan, zoals JPEG of PNG.
+4. **Corrigeer eventuele fouten** in het sjabloon, de gegevens of de koppelingen.
+5. Exporteer de brochure als PDF. Zorg ervoor dat alle afbeeldingen een hoge resolutie hebben (minimaal 300 DPI voor print) en dat ze in een geschikt formaat staan, zoals JPEG of PNG.
 
 ## Leerdoelen en beoordeling
 
