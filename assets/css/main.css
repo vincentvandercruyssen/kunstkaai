@@ -53,8 +53,13 @@ object,
 table,
 div:has(iframe),
 iframe,
-hr {
+hr,
+details {
   margin-bottom: 1.5rem;
+}
+
+details:last-of-type {
+  margin-bottom: 0;
 }
 
 ul,
@@ -126,10 +131,11 @@ table th:has(strong) {
 }
 
 table td {
-  padding-bottom: 1rem;
-  word-break: break-word;
-  padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  vertical-align: baseline;
+  word-break: break-word;
 }
 
 table tr:last-child td {
@@ -145,6 +151,11 @@ table video {
 
 pre {
   white-space: pre-wrap;
+}
+
+summary {
+  cursor: pointer;
+  user-select: none;
 }
 
 header,

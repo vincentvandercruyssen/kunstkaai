@@ -449,10 +449,29 @@ Flexbox is een CSS lay-outmodel dat een efficiëntere manier biedt om ruimte tus
 
 In het flexbox lay-outmodel kunnen de kinderen van een flex-container in elke richting worden opgesteld.
 
+{{< table_layoutfixed >}}
 | | |
 |-|-|
 |{{< svg src="img/web/cursus-css-flex_container-1.svg">}}|{{< svg src="img/web/cursus-css-flex_items-1.svg">}}|
 |Een element wordt een flex-container door de eigenschap `display: flex;` toe te wijzen.|Alle direct onderliggende elementen worden nu beschouwd als flex-items.|
+|{{< details summary="justify-content" >}}
+{{< svg src="/img/web/cursus-css-flex-justify-content-1.svg" >}}
+Bepaalt hoe flex-items worden uitgelijnd langs de hoofdas van de container. {{< /details >}} {{< details summary="align-items" >}}
+{{< svg src="/img/web/cursus-css-flex-align-items-1.svg" >}}
+Bepaalt hoe flex-items worden uitgelijnd langs de dwarsas van de container. {{< /details >}} {{< details summary="flex-wrap" >}}
+{{< svg src="/img/web/cursus-css-flex-flex-wrap-1.svg" >}}
+Bepaalt of flex-items al dan niet op een nieuwe regel moeten worden geplaatst wanneer ze de beschikbare ruimte van de container overschrijden. {{< /details >}} {{< details summary="gap" >}}
+{{< svg src="/img/web/cursus-css-flex-gap-1.svg" >}}
+Een eigenschap die de afstand tussen de flex-items bepaalt binnen de flex-container.
+{{< /details >}} | {{< details summary="flex" >}} {{< svg src="/img/web/cursus-css-flex-grow-1.svg" >}}
+Specificeert hoe flex-items zich moeten verhouden tot elkaar en de beschikbare ruimte in de container innemen.
+{{< /details >}} {{< details summary="order" >}} {{< svg src="/img/web/cursus-css-flex-order-1.svg" >}}
+Standaard staan flex-items in de volgorde van de HTML-code. Je kunt de volgorde waarin ze in de flex-container verschijnen aanpassen.
+{{< /details >}} {{< details summary="align-self" >}} {{< svg src="/img/web/cursus-css-flex-align-self-1.svg" >}}
+Dit kan de uitlijning op de dwarsas overschrijven voor individuele flex-items.
+{{< /details >}}|
+
+Bronnen: {{< a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" text="CSS Flexbox Layout Guide (CSS-Tricks)" >}}, {{< a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" text="CSS Layout: Flexbox (MDN)" >}} 
 
 #### Kolommen met Flexbox
 
