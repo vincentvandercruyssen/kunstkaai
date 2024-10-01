@@ -450,6 +450,7 @@ Flexbox is een CSS lay-outmodel dat een efficiëntere manier biedt om ruimte tus
 In het flexbox lay-outmodel kunnen de kinderen van een flex-container in elke richting worden opgesteld.
 
 {{< table_layoutfixed >}}
+{{< table_baseline >}}
 | | |
 |-|-|
 |{{< svg src="img/web/cursus-css-flex_container-1.svg">}}|{{< svg src="img/web/cursus-css-flex_items-1.svg">}}|
