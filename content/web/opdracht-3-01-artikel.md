@@ -85,22 +85,14 @@ Integreer relevante afbeeldingen en links. Plaats de afbeeldingen in de juiste m
 
 ## Puntenverdeling
 
-| Structuur (09)                             | HTML basis (11)                                  |
-|--------------------------------------------|-------------------------------------------------|
-| **Folderstructuur en bestandsnamen (01)**  | **Elementen inhoudsstroom (06)**                |
-| • voornaam artikel.zip met index.html      | • h1, h2,…                                      |
-|   en images/afbeelding.jpg,…               | • img                                           |
-|                                            | • p                                             |
-| **Elementen document (05)**                | • a                                             |
-| • html                                     | • ul of ol met li                               |
-| • head                                     |                                                 |
-| • meta                                     | **Attributes (kenmerken) (05)**                 |
-| • title (aangepast)                        | • id                                            |
-| • body                                     | • src                                           |
-|                                            | • alt                                           |
-| **Elementen inhoudsverdeling (03)**        | • width                                         |
-| • header                                   | • href                                          |
-| • main met section(s)                      |                                                 |
+{{< table_layoutfixed >}}
+| Structuur (08)                                            | HTML basis (10)                              |
+|-----------------------------------------------------------|----------------------------------------------|
+| **Folderstructuur en bestandsnamen (03)**                 | **Elementen inhoudsstroom (06)**             |
+| • voornaam artikel.zip:                                   | • h1, h2,... • img • p • a • ul of ol met li |
+| index.html en images/afbeelding.jpg (hernoemen bestanden) |                                              |
+| **Elementen document (05)**                               | **Attributes (kenmerken) (04)**              |
+| • html • head • meta • title (aangepast) • body           | • id • src • width • href                    |
 
 ## Veelvoorkomende fouten
 
