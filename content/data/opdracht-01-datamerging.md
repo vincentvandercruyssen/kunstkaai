@@ -41,7 +41,7 @@ Belangrijke stappen in het Data Merge-proces:
 
 Je opent binnenkort jouw eigen speciaalzaak en wilt je klanten een stijlvolle, overzichtelijke productbrochure aanbieden. Een professionele brochure is de perfecte manier om je producten te presenteren!
 
-Je kiest een productcategorie die jouw winkel gaat aanbieden. Denk aan schoenen, boeken, meubels, of nog veel meer. Vervolgens ga je op zoek naar minimaal 15 verschillende producten binnen die categorie, bijvoorbeeld op websites zoals {{< a href="https://www.bol.com/" text="bol.com" >}}. Voor elk product verzamel je de productnaam, beschrijving, prijs, een afbeelding, het logomerk en minimaal **drie** andere interessante kenmerken (zoals afmetingen, gewicht of speciale functies).
+Je kiest een productcategorie die jouw winkel gaat aanbieden. Denk aan schoenen, boeken, meubels, of nog veel meer. Vervolgens ga je op zoek naar minimaal 15 verschillende producten binnen die categorie, bijvoorbeeld op websites zoals {{< a href="https://www.bol.com/" text="bol.com" >}}. Voor elk product verzamel je de productnaam, beschrijving, prijs, een afbeelding, het logomerk (of tweede afbeelding) en minimaal **drie** andere interessante kenmerken (zoals afmetingen, gewicht of speciale functies).
 
 Met deze informatie maak je een database aan in Excel of Google Sheets. Uiteindelijk ga je deze database koppelen aan een sjabloon in **Adobe InDesign** met behulp van de Data Merge-functie.
 
@@ -50,7 +50,7 @@ Met deze informatie maak je een database aan in Excel of Google Sheets. Uiteinde
 ### Productgegevens verzamelen
 
 1. **Kies een product** om in de brochure te presenteren (bijvoorbeeld auto's, telefoons, kleding).
-2. **Verzamel informatie** over minimaal vijftien producten binnen deze categorie (productnaam, beschrijving, prijs, afbeelding, logo en drie andere kenmerken).
+2. **Verzamel informatie** over minimaal vijftien producten binnen deze categorie (productnaam, beschrijving, prijs, afbeelding, logo/tweede afbeelding en drie andere kenmerken).
 3. **Maak een gegevensbestand** in Excel of Google Sheets. Elke rij vertegenwoordigt een product, elke kolom een veld (zoals productnaam, prijs, afbeelding). Zorg dat het afbeeldingspad correct is en gebruik het @-symbool voor de afbeeldingsvelden (bijv. @image). *Gebruik het @-symbool om aan te geven dat de kolom een afbeeldingspad bevat, bijvoorbeeld @image.* 
 
 {{< img src="/img/data/opdracht-01-datamerging-sheet-1.png" width="1400" >}}
