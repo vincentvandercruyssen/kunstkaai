@@ -69,9 +69,23 @@ Aan het einde van de les lever je de volgende bestanden in:
 5. Log in op **Google Classroom**.
 6. Upload de gezipte map bij de opdracht in **4GT Webontwikkeling**.
 
-## Te bereiken competenties
+## Puntenverdeling
 
-- Valide HTML5-code schrijven.
-- Tekst structureren en opmaken met HTML-elementen.
-- Afbeeldingen, links en lijsten toevoegen in HTML.
-- Bestanden correct opslaan en uploaden naar Google Classroom.
+{{< table_layoutfixed >}}
+| Structuur (08)                                  | HTML basis (12)                                     |
+|-------------------------------------------------|-----------------------------------------------------|
+| **Folderstructuur en bestandsnamen (03)**       | **Elementen inhoud (07)**                           |
+| • voornaam overmij.zip:                         | • main • h1, h2,... • img • p • a • ul of ol met li |
+| index.html en afbeeldingen in de juiste map     |                                                     |
+| **Elementen document (05)**                     | **Attributes (kenmerken) (05)**                     |
+| • html • head • meta • title (aangepast) • body | • id • src • alt • width • href                     |
+
+## Veelvoorkomende fouten
+
+1. Geen aparte map voor afbeeldingen.
+2. Incorrect afsluiten van een element of verkeerd nesten.
+3. Geen aanpassing van het title-element.
+4. Het body-element is verplaatst naar een verkeerde plek of verkeerd genest.
+5. Doorlopende tekst in h1, h2-elementen.
+6. Een leeg alt-attribute voor het img-element.
+7. Afbeelding src verwijst niet naar een lokale afbeelding in de map met afbeeldingen.

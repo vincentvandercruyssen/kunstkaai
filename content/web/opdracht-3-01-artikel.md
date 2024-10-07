@@ -101,7 +101,5 @@ Integreer relevante afbeeldingen en links. Plaats de afbeeldingen in de juiste m
 3. Geen aanpassing van het title-element.
 4. Het body-element is verplaatst naar een verkeerde plek of verkeerd genest.
 5. Doorlopende tekst in h1, h2-elementen.
-6. Een section-element zonder id-attribute.
-7. Inhoud die zich buiten een section-element bevindt.
-8. Een leeg alt-attribute voor het img-element.
-9. Afbeelding src verwijst niet naar een lokale afbeelding in de map met afbeeldingen.
+6. Een leeg alt-attribute voor het img-element.
+7. Afbeelding src verwijst niet naar een lokale afbeelding in de map met afbeeldingen.
