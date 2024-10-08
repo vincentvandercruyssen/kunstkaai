@@ -53,10 +53,10 @@ Binnen het `<body>`-element bouw je je webpagina op:
 
 1. Voeg een `<main>`-element toe.
 2. Binnen het `<main>`-element plaats je een `<h1>`-element met de tekst **"Over mij"**.
-3. Schrijf je tekst in één of meerdere `<p>`-elementen.
-4. Voeg een afbeelding toe met het `<img>`-element (afbeelding opgeslagen in de map **images**).
+3. Schrijf je tekst in meerdere `<p>`-elementen, zorg dat je minimaal drie `<h2>`-elementen gebruikt voor tussentitels.
+4. Voeg een afbeelding toe met het `<img>`-element (afbeelding opgeslagen in de map **images**), vul het `alt`-kenmerk aan, gebruik `width` om de afbeelding te vergroten of verkleinen.
 5. Voeg een hyperlink toe naar een interessante website met het `<a>`-element.
-6. Voeg een lijstje toe van hobby's of favoriete tools met `<ul>` of `<ol>`.
+6. Voeg een lijstje toe van hobby's of dergelijk met `<ul>` of `<ol>` en `<li>`-elementen.
 
 ## Inleveren
 
