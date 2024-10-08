@@ -53,10 +53,10 @@ Binnen het `<body>`-element bouw je je webpagina op:
 
 1. Voeg een `<main>`-element toe.
 2. Binnen het `<main>`-element plaats je een `<h1>`-element met de tekst **"Over mij"**.
-3. Schrijf je tekst in één of meerdere `<p>`-elementen.
-4. Voeg een afbeelding toe met het `<img>`-element (afbeelding opgeslagen in de map **images**).
+3. Schrijf je tekst in meerdere `<p>`-elementen, zorg dat je minimaal drie `<h2>`-elementen gebruikt voor tussentitels.
+4. Voeg een afbeelding toe met het `<img>`-element (afbeelding opgeslagen in de map **images**), vul het `alt`-kenmerk aan, gebruik `width` om de afbeelding te vergroten of verkleinen.
 5. Voeg een hyperlink toe naar een interessante website met het `<a>`-element.
-6. Voeg een lijstje toe van hobby's of favoriete tools met `<ul>` of `<ol>`.
+6. Voeg een lijstje toe van hobby's of dergelijk met `<ul>` of `<ol>` en `<li>`-elementen.
 
 ## Inleveren
 
@@ -69,9 +69,23 @@ Aan het einde van de les lever je de volgende bestanden in:
 5. Log in op **Google Classroom**.
 6. Upload de gezipte map bij de opdracht in **4GT Webontwikkeling**.
 
-## Te bereiken competenties
+## Puntenverdeling
 
-- Valide HTML5-code schrijven.
-- Tekst structureren en opmaken met HTML-elementen.
-- Afbeeldingen, links en lijsten toevoegen in HTML.
-- Bestanden correct opslaan en uploaden naar Google Classroom.
+{{< table_layoutfixed >}}
+| Structuur (08)                                  | HTML basis (11)                                     |
+|-------------------------------------------------|-----------------------------------------------------|
+| **Folderstructuur en bestandsnamen (03)**       | **Elementen inhoud (07)**                           |
+| • voornaam overmij.zip:                         | • main • h1, h2,... • img • p • a • ul of ol met li |
+| index.html en afbeeldingen in de juiste map     |                                                     |
+| **Elementen document (05)**                     | **Attributes (kenmerken) (04)**                     |
+| • html • head • meta • title (aangepast) • body | • src • alt • width • href                     |
+
+## Veelvoorkomende fouten
+
+1. Geen aparte map voor afbeeldingen.
+2. Incorrect afsluiten van een element of verkeerd nesten.
+3. Geen aanpassing van het title-element.
+4. Het body-element is verplaatst naar een verkeerde plek of verkeerd genest.
+5. Doorlopende tekst in h1, h2-elementen.
+6. Een leeg alt-attribute voor het img-element.
+7. Afbeelding src verwijst niet naar een lokale afbeelding in de map met afbeeldingen.
