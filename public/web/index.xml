@@ -4,65 +4,72 @@
     <title>Webs on Kunstkaai</title>
     <link>http://localhost:1313/web/</link>
     <description>Recent content in Webs on Kunstkaai</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Sep 2024 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2024 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Film of Serie (CSS)</title>
+      <link>http://localhost:1313/web/opdracht-3-03-filmserie-css/</link>
+      <pubDate>Thu, 10 Oct 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-3-03-filmserie-css/</guid>
+      <description>&lt;h2 id=&#34;omschrijving&#34;&gt;Omschrijving&lt;/h2&gt;&#xA;&lt;p&gt;Je gaat de webpagina die je hebt gemaakt voor de opdracht &lt;strong&gt;Film of Serie (HTML)&lt;/strong&gt; vormgeven met behulp van &lt;strong&gt;CSS&lt;/strong&gt;. In deze opdracht leer je hoe je externe stijlen en CSS-selectors kunt gebruiken om een goed gestructureerde en aantrekkelijk vormgegeven webpagina te maken.&lt;/p&gt;&#xA;&lt;p&gt;Je maakte gebruik van &lt;strong&gt;sections&lt;/strong&gt; om de verschillende onderdelen van je pagina te structureren. Je moet minimaal één section op een unieke manier vormgeven met behulp van &lt;strong&gt;id-selectors&lt;/strong&gt; en het &lt;strong&gt;id-attribute&lt;/strong&gt; in HTML.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Opdracht: Over mij (CSS)</title>
       <link>http://localhost:1313/web/opdracht-4-03-overmij-css/</link>
       <pubDate>Mon, 30 Sep 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/opdracht-4-03-overmij-css/</guid>
-      <description>Omschrijving Je gaat jouw &amp;ldquo;Over mij&amp;rdquo;-pagina vormgeven met behulp van CSS. In deze opdracht leer je hoe je externe stijlen en CSS-selectors kunt gebruiken om een goed gestructureerde en aantrekkelijk vormgegeven webpagina te maken.&#xA;Je maakt gebruik van sections om de verschillende onderdelen van je pagina te structureren. Minstens één section moet je anders vormgeven met behulp van een id-selector en het id-attribuut in HTML.&#xA;Stappenplan Dit stappenplan begeleidt je stap voor stap bij het vormgeven van jouw &amp;ldquo;Over mij&amp;rdquo;-pagina met CSS.</description>
+      <description>&lt;h2 id=&#34;omschrijving&#34;&gt;Omschrijving&lt;/h2&gt;&#xA;&lt;p&gt;Je gaat jouw &amp;ldquo;Over mij&amp;rdquo;-pagina vormgeven met behulp van &lt;strong&gt;CSS&lt;/strong&gt;. In deze opdracht leer je hoe je externe stijlen en CSS-selectors kunt gebruiken om een goed gestructureerde en aantrekkelijk vormgegeven webpagina te maken.&lt;/p&gt;&#xA;&lt;p&gt;Je maakt gebruik van &lt;strong&gt;sections&lt;/strong&gt; om de verschillende onderdelen van je pagina te structureren. Minstens één section moet je anders vormgeven met behulp van een &lt;strong&gt;id-selector&lt;/strong&gt; en het &lt;strong&gt;id-attribuut&lt;/strong&gt; in HTML.&lt;/p&gt;&#xA;&lt;h2 id=&#34;stappenplan&#34;&gt;Stappenplan&lt;/h2&gt;&#xA;&lt;p&gt;Dit stappenplan begeleidt je stap voor stap bij het vormgeven van jouw &amp;ldquo;Over mij&amp;rdquo;-pagina met CSS. Je leert hoe je een externe stylesheet koppelt, stijlen toepast op HTML-elementen, en hoe je jouw werk correct inlevert.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Opdracht: Film of Serie (HTML)</title>
       <link>http://localhost:1313/web/opdracht-3-02-filmserie-html/</link>
       <pubDate>Wed, 25 Sep 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/opdracht-3-02-filmserie-html/</guid>
-      <description>Opgave In deze opdracht leer je informatie te presenteren door een correct HTML-document te maken. Je kiest een film of serie en verzamelt informatie die je op een gestructureerde manier gaat indelen in een HTML-pagina. Het doel is om de basisstructuur van HTML toe te passen op een webpagina.&#xA;Kies een film of serie Kies een film of serie die je interessant vindt. Verzamel informatie en organiseer deze in vier onderdelen (section):</description>
+      <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;In deze opdracht leer je informatie te presenteren door een correct HTML-document te maken. Je kiest een film of serie en verzamelt informatie die je op een gestructureerde manier gaat indelen in een HTML-pagina. Het doel is om de basisstructuur van HTML toe te passen op een webpagina.&lt;/p&gt;&#xA;&lt;h3 id=&#34;kies-een-film-of-serie&#34;&gt;Kies een film of serie&lt;/h3&gt;&#xA;&lt;p&gt;Kies een film of serie die je interessant vindt. Verzamel informatie en organiseer deze in vier onderdelen (&lt;code&gt;section&lt;/code&gt;):&lt;/p&gt;</description>
     </item>
     <item>
       <title>Opdracht: Artikel</title>
       <link>http://localhost:1313/web/opdracht-3-01-artikel/</link>
       <pubDate>Wed, 11 Sep 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/opdracht-3-01-artikel/</guid>
-      <description>Opgave In deze opdracht leer je om gestructureerde informatie te presenteren door een correct HTML-document te maken met behulp van ChatGPT. Je kiest een onderwerp uit de geschiedenis van het internet en stelt gerichte vragen aan ChatGPT om relevante informatie te verzamelen. Vervolgens organiseer je de verzamelde gegevens in een HTML-bestand en maak je een map voor afbeeldingen. Het doel is om je te helpen de basisstructuur van HTML te begrijpen en deze toe te passen op een webpagina.</description>
+      <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;In deze opdracht leer je om gestructureerde informatie te presenteren door een correct HTML-document te maken met behulp van ChatGPT. Je kiest een onderwerp uit de geschiedenis van het internet en stelt gerichte vragen aan ChatGPT om relevante informatie te verzamelen. Vervolgens organiseer je de verzamelde gegevens in een HTML-bestand en maak je een map voor afbeeldingen. Het doel is om je te helpen de basisstructuur van HTML te begrijpen en deze toe te passen op een webpagina.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Opdracht: Over mij (HTML)</title>
       <link>http://localhost:1313/web/opdracht-4-02-overmij-html/</link>
       <pubDate>Wed, 11 Sep 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/opdracht-4-02-overmij-html/</guid>
-      <description>Omschrijving In deze opdracht schrijf je een persoonlijke tekst over jezelf en structureer je deze met HTML. Het doel is om je basisvaardigheden in HTML te ontwikkelen en een eenvoudige webpagina te maken met een afbeelding, een link en een lijst om de inhoud aantrekkelijk en informatief te maken.&#xA;Uiteindelijk lever je je werk in als een gezipte map via Google Classroom.&#xA;Stappenplan Introductie: Wie ben je, wat zijn je interesses, en waarom heb je voor grafische technieken gekozen?</description>
+      <description>&lt;h2 id=&#34;omschrijving&#34;&gt;Omschrijving&lt;/h2&gt;&#xA;&lt;p&gt;In deze opdracht schrijf je een persoonlijke tekst over jezelf en structureer je deze met HTML. Het doel is om je basisvaardigheden in HTML te ontwikkelen en een eenvoudige webpagina te maken met een afbeelding, een link en een lijst om de inhoud aantrekkelijk en informatief te maken.&lt;/p&gt;&#xA;&lt;p&gt;Uiteindelijk lever je je werk in als een gezipte map via Google Classroom.&lt;/p&gt;&#xA;&lt;h2 id=&#34;stappenplan&#34;&gt;Stappenplan&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Introductie&lt;/strong&gt;: Wie ben je, wat zijn je interesses, en waarom heb je voor grafische technieken gekozen?&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hobby&amp;rsquo;s en ambities&lt;/strong&gt;: Vertel iets over je hobby&amp;rsquo;s, ambities en favoriete projecten.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lengte&lt;/strong&gt;: Houd de tekst kort, ongeveer 150-200 woorden.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&#xA;&#xA;&#xA; &#xA; &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;    &#xA;        &lt;a href=&#34;https://chatgpt.com/&#34; target=&#34;_blank&#34; style=&#34;display: flex; align-items: center; flex-direction:column;&#34;&gt;&#xA;    &#xA;    &lt;img src=&#34;http://localhost:1313/img/web/chatgpt-logo.svg&#34; width=&#34;100&#34; alt=&#34;chatgpt-logo&#34; loading=&#34;lazy&#34; &gt;&#xA;    &#xA;        &lt;p&gt;ChatGPT&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cursus: CSS</title>
       <link>http://localhost:1313/web/cursus-css/</link>
       <pubDate>Tue, 10 Sep 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/cursus-css/</guid>
-      <description>Cascading Style Sheets Alle HTML-elementen hebben standaard stijlkenmerken. Wanneer je een eigen website maakt, kun je deze stijlkenmerken aanpassen met CSS. Je kunt dan informatie toevoegen aan HTML-elementen, zoals kleur, lettertype, afstand en achtergrond. Dit kan binnen het document zelf (als attribute van ieders element of met een &amp;lt;style&amp;gt;-element) of, nog veel beter, in een extern CSS-bestand aan de hand van het &amp;lt;link&amp;gt;-element.&#xA;&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;style.css&amp;#34;&amp;gt;&#xD;CSS staat voor Cascading Style Sheets.</description>
+      <description>&lt;h2 id=&#34;cascading-style-sheets&#34;&gt;Cascading Style Sheets&lt;/h2&gt;&#xA;&lt;p&gt;Alle HTML-elementen hebben standaard stijlkenmerken. Wanneer je een eigen website maakt, kun je deze stijlkenmerken aanpassen met CSS. Je kunt dan informatie toevoegen aan HTML-elementen, zoals kleur, lettertype, afstand en achtergrond. Dit kan binnen het document zelf (als attribute van ieders element of met een &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt;-element) of, nog veel beter, in een extern CSS-bestand aan de hand van het &lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt;-element.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;style.css&amp;#34;&amp;gt;&#xA;&#xA;&lt;/code&gt;&lt;/pr</description>
     </item>
     <item>
       <title>Cursus: HTML</title>
       <link>http://localhost:1313/web/cursus-html/</link>
       <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/cursus-html/</guid>
-      <description>HyperText Markup Language HTML (HyperText Markup Language) is de meest elementaire bouwsteen van het web. Het is de standaard opmaaktaal voor documenten die zijn ontworpen om in een webbrowser te worden weergegeven. Het geeft webcontent (inhoud) weer in een bepaalde structuur. Naast HTML worden ook andere technologieën gebruikt om het uiterlijk (CSS) of de functionaliteit (JavaScript) van een webpagina te veranderen.&#xA;HyperText verwijst naar links die webpagina&amp;rsquo;s met elkaar verbinden, zowel binnen één website als tussen verschillende websites.</description>
+      <description>&lt;h2 id=&#34;hypertext-markup-language&#34;&gt;HyperText Markup Language&lt;/h2&gt;&#xA;&lt;p&gt;HTML (HyperText Markup Language) is de meest elementaire bouwsteen van het web. Het is de standaard opmaaktaal voor documenten die zijn ontworpen om in een webbrowser te worden weergegeven. Het geeft webcontent (inhoud) weer in een bepaalde structuur. Naast HTML worden ook andere technologieën gebruikt om het uiterlijk (CSS) of de functionaliteit (JavaScript) van een webpagina te veranderen.&lt;/p&gt;&#xA;&lt;p&gt;HyperText verwijst naar links die webpagina&amp;rsquo;s met elkaar verbinden, zowel binnen één website als tussen verschillende websites. Links zijn een fundamenteel aspect van het web.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Opdracht: freeCodeCamp HTML</title>
       <link>http://localhost:1313/web/opdracht-4-01-freecodecamp/</link>
       <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/opdracht-4-01-freecodecamp/</guid>
-      <description>Bouw een Cat Photo App In deze opdracht onderzoeken we de basis van HTML en leren we door samen een deel van de freeCodeCamp-cursus &amp;ldquo;Learn HTML by Building a Cat Photo App&amp;rdquo; te volgen. Deze opdracht is ideaal om je kennis op te frissen, maar ook voor HTML voor het eerst te ontdekken.&#xA;We maken een deel van de &amp;lsquo;Learn HTML by Building a Cat Photo App&amp;rsquo; in freeCodeCamp klassikaal, waarna je de rest individueel afwerkt.</description>
+      <description>&lt;h2 id=&#34;bouw-een-cat-photo-app&#34;&gt;Bouw een Cat Photo App&lt;/h2&gt;&#xA;&lt;p&gt;In deze opdracht onderzoeken we de basis van HTML en leren we door samen een deel van de freeCodeCamp-cursus &amp;ldquo;Learn HTML by Building a Cat Photo App&amp;rdquo; te volgen. Deze opdracht is ideaal om je kennis op te frissen, maar ook voor HTML voor het eerst te ontdekken.&lt;/p&gt;&#xA;&lt;p&gt;We maken een deel van de &amp;lsquo;Learn HTML by Building a Cat Photo App&amp;rsquo; in freeCodeCamp klassikaal, waarna je de rest individueel afwerkt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cursus: Introductie</title>
       <link>http://localhost:1313/web/cursus-intro/</link>
       <pubDate>Thu, 29 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/cursus-intro/</guid>
-      <description>Fundamenten van Webontwikkeling In het vak Webontwikkeling leer je websites en webapplicaties ontwerpen en ontwikkelen. Gedurende het jaar experimenteer je met code en doorloop je het proces van een ontwerp naar een live website. Je krijgt ook de kans om bestaande websites te analyseren en de principes achter gebruiksvriendelijke omgevingen en optimale gebruikerservaringen te doorgronden.&#xA;Voor het ontwikkelen van deze webomgevingen maak je voornamelijk gebruik van een stevige basis HTML en CSS, aangevuld met doordachte lay-outs die gebruik maken van tekst en afbeeldingen.</description>
+      <description>&lt;h2 id=&#34;fundamenten-van-webontwikkeling&#34;&gt;Fundamenten van Webontwikkeling&lt;/h2&gt;&#xA;&lt;p&gt;In het vak Webontwikkeling leer je websites en webapplicaties ontwerpen en ontwikkelen. Gedurende het jaar experimenteer je met code en doorloop je het proces van een ontwerp naar een live website. Je krijgt ook de kans om bestaande websites te analyseren en de principes achter gebruiksvriendelijke omgevingen en optimale gebruikerservaringen te doorgronden.&lt;/p&gt;&#xA;&lt;p&gt;Voor het ontwikkelen van deze webomgevingen maak je voornamelijk gebruik van een stevige basis HTML en CSS, aangevuld met doordachte lay-outs die gebruik maken van tekst en afbeeldingen.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

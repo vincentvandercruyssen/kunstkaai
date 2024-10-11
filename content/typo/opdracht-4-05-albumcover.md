@@ -8,6 +8,8 @@ draft = false
 
 In deze opdracht ga je een albumcover ontwerpen aan de hand van een album naar keuze. Het ontwerp wordt volledig met typografie vormgegeven. Je gebruikt maximaal 2 verschillende lettertypes of één lettertype met twee verschillende gewichten. Daarnaast beperk je je tot één kleur. Je leert de relatie tussen tekst, opmaak en compositie te begrijpen en hoe je hiermee een boeiend visueel ontwerp kunt maken.
 
+{{< pinboard >}}
+
 ### Vereisten voor de tekst
 De cover moet de volgende informatie bevatten:
 - Artiestennaam

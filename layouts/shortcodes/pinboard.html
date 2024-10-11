@@ -1,0 +1,38 @@
+<style>
+    span {
+        border: none !important;
+        border-radius: 0 !important;
+    }
+
+    span[style*="width"] {
+        display: block !important;
+        width: calc(100% + 1rem) !important;
+        margin-bottom: 1.5rem;
+        margin-left: -0.5rem;
+    }
+
+    span:first-of-type>span:first-child {
+        display: none;
+    }
+
+    span:last-of-type>span:last-child {
+        display: none;
+    }
+
+    span[style*="width"]>span:nth-child(2) {
+        padding: 0px !important;
+    }
+
+    span[style*="width"]>span:nth-child(2)>span>span {
+        padding: 0 0.5rem !important;
+    }
+
+    span[style*="width"]>span:nth-child(2)>span>span>span[style*="background-image"] {
+        display: block !important;
+        margin-bottom: 1rem !important;
+    }
+</style>
+
+<a data-pin-do="embedBoard" href="https://www.pinterest.com/vincentvandercruyssen/typo-album-cover/"
+    data-pin-scale-width="160" data-pin-scale-height="640" data-pin-board-width="640"></a>
+<script async defer type="text/javascript" src="https://assets.pinterest.com/js/pinit.js"></script>
