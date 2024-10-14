@@ -138,9 +138,7 @@ Inhoudsverdeling, *sectioning content*, verdeelt of segmenteert alle inhoud binn
 1. **`<header>...</header>`** Bevat de introductie van de inhoud, zoals navigatie en logo.
 2. **`<nav>...</nav>`** Voor navigatie tussen secties binnen of buiten de pagina.
 3. **`<main>...</main>`** Hoofdinhoud van het document.
-4. **`<section>...</section>`** Onderverdelingen van het hoofdonderwerp binnen `<
-
-main>`.
+4. **`<section>...</section>`** Onderverdelingen van het hoofdonderwerp binnen `<main>`.
 5. **`<footer>...</footer>`** Voettekst met informatie zoals copyright en links.
 
 ### Kopteksten
