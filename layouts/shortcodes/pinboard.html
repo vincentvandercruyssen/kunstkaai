@@ -1,3 +1,7 @@
+{{ $width := .Get "width" | default "640" | int }}
+{{ $cols := .Get "cols" | default "3" | int }}
+{{ $calcCols := div $width $cols }}
+
 <style>
     .pinboard span {
         border: none !important;
@@ -32,8 +36,14 @@
         margin-bottom: 1rem !important;
     }
 </style>
+
 <div class="pinboard">
-    <a data-pin-do="embedBoard" href="https://www.pinterest.com/vincentvandercruyssen/typo-album-cover/"
-        data-pin-scale-width="160" data-pin-scale-height="640" data-pin-board-width="640"></a>
+    <a data-pin-do="embedBoard" 
+        href="{{ .Get "url" }}"
+        data-pin-scale-width="{{ $calcCols }}"
+        data-pin-scale-height="{{ .Get "height" | default "640" }}"
+        data-pin-board-width="{{ $width }}">
+    </a>
 </div>
+<p style="text-align: center;"><a href="{{ .Get "url" }}" target="_blank">Bekijk board op Pinterest.</a></p>
 <script async defer type="text/javascript" src="https://assets.pinterest.com/js/pinit.js"></script>
