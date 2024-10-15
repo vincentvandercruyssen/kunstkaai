@@ -19,13 +19,9 @@ De cover moet de volgende informatie bevatten:
 - Minstens drie medewerkers van het album en hun functies (dit kunnen ook bandleden zijn)
 
 ### Formaat en indeling
-Maak een document van 120 x 120 mm (12 x 12 cm) in Adobe InDesign. Verdeel dit document met behulp van hulplijnen op een van de volgende manieren:
-- In vier gelijke vierkanten door horizontaal en verticaal in tweeën te verdelen
-- In negen gelijke stukken door horizontaal en verticaal in drieën te verdelen
+Maak een document van 120 x 120 mm (12 x 12 cm) in Adobe InDesign. Verdeel dit document met behulp van hulplijnen in negen gelijke stukken door horizontaal en verticaal in drieën te verdelen.
 
-|   |   |
-|---|---|
-|{{< img src="/img/typo/opdracht-4-05-albumcover-gidslayout_2x2-1.png" >}}|{{< img src="/img/typo/opdracht-4-05-albumcover-gidslayout_3x3-1.png" >}}|
+{{< img src="/img/typo/opdracht-4-05-albumcover-gidslayout_3x3-1.png" width="360" >}}
 
 ### Ontwerpregels
 Bij het ontwerpen van de albumcover moet je rekening houden met de volgende regels:
@@ -50,10 +46,10 @@ Je levert een aantal studies in, waarbij je verschillende opmaakopties onderzoek
 Maak een nieuw document van 120 x 120 mm in Adobe InDesign. 
 
 ### Stap 2: Hulplijnen toevoegen
-Verdeel je document in vier of negen gelijke delen met behulp van de functie **Create Guides** in het Layoutmenu.
+Verdeel je document in negen gelijke delen met behulp van de functie **Create Guides** in het Layoutmenu.
 
 ### Stap 3: Tekst plaatsen
-Verdeel de tekst (artiestennaam, albumnaam, liedjes, platenlabel en medewerkers) over de vier of negen gelijke delen van het document. Gebruik hiervoor tekstkaders en pas de typografie aan volgens de beperkingen (maximaal 2 lettertypes of 1 lettertype met 2 gewichten).
+Verdeel de tekst (artiestennaam, albumnaam, liedjes, platenlabel en medewerkers) over de negen gelijke delen van het document. Gebruik hiervoor tekstkaders en pas de typografie aan volgens de beperkingen (maximaal 2 lettertypes of 1 lettertype met 2 gewichten).
 
 ### Stap 4: Compositie en rotatie
 Experimenteer met de compositie door delen van de tekst te roteren en witruimte slim te gebruiken. Trek extra hulplijnen indien nodig om de tekst uit te lijnen.
