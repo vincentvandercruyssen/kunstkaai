@@ -144,7 +144,7 @@ Webontwikkeling
         
 
         
-        <li><a href="#elementen-nestelen">1.4 Elementen nestelen</a></li>
+        <li><a href="#elementen-nesten">1.4 Elementen nesten</a></li>
       
     
 
@@ -612,7 +612,7 @@ Webontwikkeling
 <p>HyperText verwijst naar links die webpagina&rsquo;s met elkaar verbinden, zowel binnen één website als tussen verschillende websites. Links zijn een fundamenteel aspect van het web.</p>
 <p>HTML gebruikt opmaaktaal (of Markup) om tekst, afbeeldingen en andere inhoud te structureren voor weergave in een webbrowser. Het is de codetaal die de inhoud van een document structureert. Inhoud kan bijvoorbeeld worden gestructureerd in de vorm van alinea&rsquo;s, lijsten met opsommingstekens, afbeeldingen enzovoort. HTML-opmaak omvat speciale elementen of tags zoals <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> en vele anderen.</p>
 <p>Een HTML-element wordt van andere tekst in een document gescheiden door &rsquo;tags&rsquo;. Deze tags bestaan uit de elementnaam omringd door &ldquo;&lt;&rdquo; en &ldquo;&gt;&rdquo;. Het is een afspraak om tags in kleine letters te schrijven.</p>
-<p>HTML is dus een opmaaktaal die de structuur en inhoud van een webpagina bepaalt. Het bestaat uit een reeks elementen die gebruikt worden om inhoud te omkaderen of te nestelen, waardoor deze een specifieke vormgeving krijgt of op een bepaalde manier functioneert.</p>
+<p>HTML is dus een opmaaktaal die de structuur en inhoud van een webpagina bepaalt. Het bestaat uit een reeks elementen die gebruikt worden om inhoud te omkaderen of te nesten, waardoor deze een specifieke vormgeving krijgt of op een bepaalde manier functioneert.</p>
 <p>Neem bijvoorbeeld de volgende zin:</p>
 <p>Ik ben blij.</p>
 <p>Als we willen dat deze zin op zichzelf staat, kunnen we aangeven dat het een alinea (of paragraph) is door deze tussen openende en sluitende alinea-tags te plaatsen:</p>
@@ -629,36 +629,36 @@ Webontwikkeling
 
 
 
-  <img src="http://localhost:1313/img/web/cursus-html-browser-1_huf7df6fcfd81c241d42aba89e2cad0b84_29976_1200x0_resize_q90_h2_lanczos_3.webp" alt="cursus-html-browser-1" loading="lazy" >
+  <img src="http://localhost:1313/img/web/cursus-html-browser-1_hu2047398748841860676.webp" alt="cursus-html-browser-1" loading="lazy" >
   
 
 <h3 id="anatomie-van-een-html-element">Anatomie van een HTML-element</h3>
 <p>Laten we het alinea-element nog wat verder onderzoeken.</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>element</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>openende tag</td>
-<td></td>
-<td>sluitende tag</td>
-</tr>
-<tr>
-<td><code>&lt;p&gt;</code></td>
-<td>Ik ben blij.</td>
-<td><code>&lt;/p&gt;</code></td>
-</tr>
-<tr>
-<td></td>
-<td>↑ inhoud ↑</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left">element</th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">openende tag</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">sluitende tag</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&lt;p&gt;</code></td>
+          <td style="text-align: left">Ik ben blij.</td>
+          <td style="text-align: left"><code>&lt;/p&gt;</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">↑ inhoud ↑</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="de-belangrijkste-onderdelen-van-een-element">De belangrijkste onderdelen van een element</h3>
 <ol>
@@ -674,12 +674,12 @@ Webontwikkeling
 
 </code></pre>
 <p>Attributen geven extra informatie over het element die je niet direct in de inhoud wilt tonen. In het bovenstaande voorbeeld verwijst het attribuut <code>href</code> naar een URL, <code>id</code> geeft een unieke identificatie voor het element en <code>src</code> verwijst naar het pad van een afbeelding.</p>
-<h3 id="elementen-nestelen">Elementen nestelen</h3>
-<p>Je kunt elementen binnen andere elementen plaatsen. Dit heet &rsquo;nestelen&rsquo; (of nesting).</p>
+<h3 id="elementen-nesten">Elementen nesten</h3>
+<p>Je kunt elementen binnen andere elementen plaatsen. Dit heet &rsquo;nesten&rsquo; (of nesting).</p>
 <p><code>&lt;p&gt;Ik ben &lt;strong&gt;zeer&lt;/strong&gt; blij.&lt;/p&gt;</code></p>
 <p>Dit wordt:</p>
 <p>Ik ben <strong>zeer</strong> blij.</p>
-<p>Het is belangrijk om ervoor te zorgen dat de elementen correct genesteld zijn. In het gegeven voorbeeld hebben we eerst het <code>&lt;p&gt;</code>-element geopend en daarna het <code>&lt;strong&gt;</code>-element. Daarom moeten we eerst het <code>&lt;/strong&gt;</code>-element sluiten en daarna het <code>&lt;/p&gt;</code>-element.</p>
+<p>Het is belangrijk om ervoor te zorgen dat de elementen correct genest zijn. In het gegeven voorbeeld hebben we eerst het <code>&lt;p&gt;</code>-element geopend en daarna het <code>&lt;strong&gt;</code>-element. Daarom moeten we eerst het <code>&lt;/strong&gt;</code>-element sluiten en daarna het <code>&lt;/p&gt;</code>-element.</p>
 <p>Zorg ervoor dat de elementen correct openen en sluiten, zodat ze duidelijk binnen of buiten elkaar vallen.</p>
 <h3 id="lege-elementen">Lege elementen</h3>
 <p>Bepaalde HTML-elementen maken geen tekstuele inhoud op en worden daarom &rsquo;lege elementen&rsquo; genoemd. Neem bijvoorbeeld het <code>&lt;img&gt;</code>-element: het heeft typisch attributen zoals <code>src</code> en <code>alt</code>, maar er is <em>geen</em> afsluitende <code>&lt;img&gt;</code>-tag nodig.</p>
@@ -801,34 +801,34 @@ Dit wordt:</p>
 <h3 id="invoerelement">Invoerelement</h3>
 <p>Het <code>&lt;input&gt;</code>-element creëert interactieve elementen voor gebruikersinvoer.</p>
 <table>
-<thead>
-<tr>
-<th>Element</th>
-<th>Voorbeeld</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;input type=&quot;text&quot;&gt;</code></td>
-<td>Tekstveld</td>
-</tr>
-<tr>
-<td><code>&lt;input type=&quot;number&quot;&gt;</code></td>
-<td>Numeriek veld</td>
-</tr>
-<tr>
-<td><code>&lt;input type=&quot;password&quot;&gt;</code></td>
-<td>Wachtwoordveld</td>
-</tr>
-<tr>
-<td><code>&lt;input type=&quot;checkbox&quot;&gt;</code></td>
-<td>Selectievakjes</td>
-</tr>
-<tr>
-<td><code>&lt;input type=&quot;radio&quot;&gt;</code></td>
-<td>Keuzevakjes</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Element</th>
+          <th style="text-align: left">Voorbeeld</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>&lt;input type=&quot;text&quot;&gt;</code></td>
+          <td style="text-align: left">Tekstveld</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&lt;input type=&quot;number&quot;&gt;</code></td>
+          <td style="text-align: left">Numeriek veld</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&lt;input type=&quot;password&quot;&gt;</code></td>
+          <td style="text-align: left">Wachtwoordveld</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&lt;input type=&quot;checkbox&quot;&gt;</code></td>
+          <td style="text-align: left">Selectievakjes</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&lt;input type=&quot;radio&quot;&gt;</code></td>
+          <td style="text-align: left">Keuzevakjes</td>
+      </tr>
+  </tbody>
 </table>
 <h3 id="tekstvak">Tekstvak</h3>
 <p>Het <code>&lt;textarea&gt;</code>-element creëert een groter invoerveld voor tekst.</p>

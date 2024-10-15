@@ -14,7 +14,7 @@ HTML gebruikt opmaaktaal (of Markup) om tekst, afbeeldingen en andere inhoud te 
 
 Een HTML-element wordt van andere tekst in een document gescheiden door 'tags'. Deze tags bestaan uit de elementnaam omringd door "<" en ">". Het is een afspraak om tags in kleine letters te schrijven.
 
-HTML is dus een opmaaktaal die de structuur en inhoud van een webpagina bepaalt. Het bestaat uit een reeks elementen die gebruikt worden om inhoud te omkaderen of te nestelen, waardoor deze een specifieke vormgeving krijgt of op een bepaalde manier functioneert.
+HTML is dus een opmaaktaal die de structuur en inhoud van een webpagina bepaalt. Het bestaat uit een reeks elementen die gebruikt worden om inhoud te omkaderen of te nesten, waardoor deze een specifieke vormgeving krijgt of op een bepaalde manier functioneert.
 
 Neem bijvoorbeeld de volgende zin:
 
@@ -59,9 +59,9 @@ Elementen kunnen ook attributen bevatten. Deze zien er als volgt uit:
 
 Attributen geven extra informatie over het element die je niet direct in de inhoud wilt tonen. In het bovenstaande voorbeeld verwijst het attribuut `href` naar een URL, `id` geeft een unieke identificatie voor het element en `src` verwijst naar het pad van een afbeelding.
 
-### Elementen nestelen
+### Elementen nesten
 
-Je kunt elementen binnen andere elementen plaatsen. Dit heet 'nestelen' (of nesting).
+Je kunt elementen binnen andere elementen plaatsen. Dit heet 'nesten' (of nesting).
 
 `<p>Ik ben <strong>zeer</strong> blij.</p>`
 
@@ -69,7 +69,7 @@ Dit wordt:
 
 Ik ben **zeer** blij.
 
-Het is belangrijk om ervoor te zorgen dat de elementen correct genesteld zijn. In het gegeven voorbeeld hebben we eerst het `<p>`-element geopend en daarna het `<strong>`-element. Daarom moeten we eerst het `</strong>`-element sluiten en daarna het `</p>`-element.
+Het is belangrijk om ervoor te zorgen dat de elementen correct genest zijn. In het gegeven voorbeeld hebben we eerst het `<p>`-element geopend en daarna het `<strong>`-element. Daarom moeten we eerst het `</strong>`-element sluiten en daarna het `</p>`-element.
 
 Zorg ervoor dat de elementen correct openen en sluiten, zodat ze duidelijk binnen of buiten elkaar vallen.
 
