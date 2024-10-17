@@ -26,13 +26,13 @@ Dit stappenplan begeleidt je stap voor stap bij het vormgeven van jouw film of s
 ### CSS toevoegen
 
 1. Open het **style.css**-bestand.
-2. Schakel indien nodig **split view** in, zodat je tegelijkertijd de HTML- en CSS-code kunt bekijken.
-3. Gebruik in je HTML de elementen: `<body>`, `<header>`, `<h1>`, `<h2>`, `<p>`, `<section>`, `<img>`, en `<ul>`.
-4. Geef deze elementen een passende kleur en stijl met CSS.
+2. Schakel **split view** in, zodat je tegelijkertijd de HTML- en CSS-code kunt bekijken.
+3. Je hebt in je HTML de volgende elementen gebruikt: `<body>`, `<header>`, `<h1>`, `<h2>`, `<p>`, `<section>`, `<img>`, en `<ul>`.
+4. Je kunt deze nu een passende stijl met CSS geven.
 
 ### Stijlen toepassen
 
-Selecteer het `body`-element en geef het een passende achtergrondkleur met een kleurnaam of hexadecimale kleurwaarde. Stel een nieuwe `font-family` in en `color` in.
+Selecteer het `body`-element en geef het een achtergrondkleur met een kleurnaam of hexadecimale kleurwaarde. Stel een nieuwe `font-family` en `color` in.
 
 {{< showcode >}}body {
     background-color: #f4e4f4;
@@ -61,7 +61,7 @@ Padding gebruik je om de inhoud van een element meer ruimte te geven binnen de r
 
 {{< img src="/img/web/cursus-css-box-model-1.png" width="1800" >}}
 
-### Afbeeldingen en lay-out
+### Afbeeldingen
 
 Selecteer het `img`-element en zorg ervoor dat de afbeeldingen netjes worden weergegeven door de breedte te specificeren en marges toe te voegen.
 
