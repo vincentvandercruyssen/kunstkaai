@@ -280,32 +280,42 @@ Webontwikkeling
 <li>Geef deze elementen een passende kleur en stijl met CSS.</li>
 </ol>
 <h3 id="stijlen-toepassen">Stijlen toepassen</h3>
-<p>Selecteer het <code>body</code>-element en geef het een passende achtergrondkleur met een kleurnaam of hexadecimale kleurwaarde. Stel een nieuwe <code>font-family</code> in en zet de <code>margin</code> op 0.</p>
+<p>Selecteer het <code>body</code>-element en geef het een passende achtergrondkleur met een kleurnaam of hexadecimale kleurwaarde. Stel een nieuwe <code>font-family</code> in en <code>color</code> in.</p>
 <pre><code>body {
-    background-color: #f4f4f4;
-    font-family: &#39;Arial&#39;, sans-serif;
-    margin: 0;
+    background-color: #f4e4f4;
 }
 
 </code></pre>
-<p>Selecteer het <code>h1</code>-element en geef het een kleur. Pas hetzelfde toe voor <code>h2</code>-elementen.</p>
+<p>Selecteer het <code>h1</code>-element en geef het een kleur. Pas het ook toe voor <code>h2</code>-elementen.</p>
 <pre><code>h1 {
     color: #333333;
 }
 
 </code></pre>
-<p>Gebruik <strong>id-selectors</strong> om elke <code>section</code> in jouw pagina anders te stylen. Voeg id-attributen toe in je HTML, bijvoorbeeld: <code>&lt;section id=&quot;cast&quot;&gt;</code>. In je <strong>style.css</strong>-bestand kun je deze sectie als volgt stylen:</p>
+<p>Geef de <code>section</code>-elementen een achtergrondkleur. Gebruik <strong>id-selectors</strong> om een <code>section</code> in jouw pagina anders te stylen. Voeg id-attributen toe in je HTML, bijvoorbeeld: <code>&lt;section id=&quot;cast&quot;&gt;</code>. In je <strong>style.css</strong>-bestand kun je deze sectie als volgt stylen:</p>
 <pre><code>#cast {
     background-color: #e0f7fa;
     padding: 20px;
 }
 
 </code></pre>
+<p>Padding gebruik je om de inhoud van een element meer ruimte te geven binnen de rand, terwijl je margin gebruikt om afstand te creëren tussen het element en andere elementen op de pagina.</p>
+
+
+
+ 
+ 
+
+
+
+
+  <img src="http://localhost:1313/img/web/cursus-css-box-model-1_hud93d68ef1ce03ce41341b519119d6e02_12842_1800x0_resize_q90_h2_lanczos_3.webp" alt="cursus-css-box-model-1" loading="lazy" >
+  
+
 <h3 id="afbeeldingen-en-lay-out">Afbeeldingen en lay-out</h3>
 <p>Selecteer het <code>img</code>-element en zorg ervoor dat de afbeeldingen netjes worden weergegeven door de breedte te specificeren en marges toe te voegen.</p>
 <pre><code>img {
-    width: 100%;
-    max-width: 300px;
+    width: 300px;
     margin-bottom: 10px;
 }
 
@@ -314,48 +324,20 @@ Webontwikkeling
 <p>Je levert de volgende bestanden in:</p>
 <ol>
 <li><strong>index.html</strong> en <strong>style.css</strong>.</li>
-<li>Afbeeldingen in de map <strong>images</strong>.</li>
+<li>Afbeeldingen in een aparte map.</li>
 <li>Organiseer alles in één map.</li>
 <li>Maak een zip-bestand van je map en hernoem het naar <strong>voornaam_filmofserie.zip</strong>.</li>
 <li>Log in op <strong>Google Classroom</strong>.</li>
 <li>Upload de gezipte map bij de opdracht in <strong>3GT Webontwikkeling</strong>.</li>
 </ol>
 <h2 id="puntenverdeling">Puntenverdeling</h2>
-<div class="table_layoutfixed"></div>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Folderstructuur en bestandsnamen (02)</strong></td>
-<td><strong>CSS Selectors (06)</strong></td>
-</tr>
-<tr>
-<td>• voornaam_filmofserie.zip met index.html en style.css</td>
-<td>• body • h1 • h2 • p • section • id-selector</td>
-</tr>
-<tr>
-<td><strong>Elementen document (04)</strong></td>
-<td><strong>CSS Properties (06)</strong></td>
-</tr>
-<tr>
-<td>• html • head • link-element naar CSS • body</td>
-<td>• background-color • color • font-family • margin • padding</td>
-</tr>
-<tr>
-<td><strong>Elementen inhoudsverdeling (04)</strong></td>
-<td><strong>Afbeelding stijl (02)</strong></td>
-</tr>
-<tr>
-<td>• header • main met section(s) en id-selectors</td>
-<td>• img-styling • padding/margin rond afbeeldingen</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li><strong>Folderstructuur en bestandsnamen (05)</strong> | voornaam_filmofserie.zip met index.html, style.css en map met afbeeldingen</li>
+<li><strong>Elementen document (04)</strong> | html | head met title | link-element naar CSS | body</li>
+<li><strong>Elementen inhoudsverdeling (07)</strong> | header | main met section(s) en id-selectors</li>
+<li><strong>CSS Selectors (05)</strong> | body | h1 | h2 | section | id-selector</li>
+<li><strong>CSS Properties (05)</strong> | background-color | color | font-family | margin | padding</li>
+</ul>
 <h2 id="veelvoorkomende-fouten">Veelvoorkomende fouten</h2>
 <ol>
 <li>Geen externe CSS correct gekoppeld.</li>

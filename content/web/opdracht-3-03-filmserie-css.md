@@ -32,17 +32,15 @@ Dit stappenplan begeleidt je stap voor stap bij het vormgeven van jouw film of s
 
 ### Stijlen toepassen
 
-Selecteer het `body`-element en geef het een passende achtergrondkleur met een kleurnaam of hexadecimale kleurwaarde. Stel een nieuwe `font-family` in en zet de `margin` op 0.
+Selecteer het `body`-element en geef het een passende achtergrondkleur met een kleurnaam of hexadecimale kleurwaarde. Stel een nieuwe `font-family` in en `color` in.
 
 {{< showcode >}}body {
-    background-color: #f4f4f4;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
+    background-color: #f4e4f4;
 }
 
 {{< /showcode >}}
 
-Selecteer het `h1`-element en geef het een kleur. Pas hetzelfde toe voor `h2`-elementen.
+Selecteer het `h1`-element en geef het een kleur. Pas het ook toe voor `h2`-elementen.
 
 {{< showcode >}}h1 {
     color: #333333;
@@ -50,7 +48,7 @@ Selecteer het `h1`-element en geef het een kleur. Pas hetzelfde toe voor `h2`-el
 
 {{< /showcode >}}
 
-Gebruik **id-selectors** om elke `section` in jouw pagina anders te stylen. Voeg id-attributen toe in je HTML, bijvoorbeeld: `<section id="cast">`. In je **style.css**-bestand kun je deze sectie als volgt stylen:
+Geef de `section`-elementen een achtergrondkleur. Gebruik **id-selectors** om een `section` in jouw pagina anders te stylen. Voeg id-attributen toe in je HTML, bijvoorbeeld: `<section id="cast">`. In je **style.css**-bestand kun je deze sectie als volgt stylen:
 
 {{< showcode >}}#cast {
     background-color: #e0f7fa;
@@ -59,13 +57,16 @@ Gebruik **id-selectors** om elke `section` in jouw pagina anders te stylen. Voeg
 
 {{< /showcode >}}
 
+Padding gebruik je om de inhoud van een element meer ruimte te geven binnen de rand, terwijl je margin gebruikt om afstand te creëren tussen het element en andere elementen op de pagina.
+
+{{< img src="/img/web/cursus-css-box-model-1.png" width="1800" >}}
+
 ### Afbeeldingen en lay-out
 
 Selecteer het `img`-element en zorg ervoor dat de afbeeldingen netjes worden weergegeven door de breedte te specificeren en marges toe te voegen.
 
 {{< showcode >}}img {
-    width: 100%;
-    max-width: 300px;
+    width: 300px;
     margin-bottom: 10px;
 }
 
@@ -76,7 +77,7 @@ Selecteer het `img`-element en zorg ervoor dat de afbeeldingen netjes worden wee
 Je levert de volgende bestanden in:
 
 1. **index.html** en **style.css**.
-2. Afbeeldingen in de map **images**.
+2. Afbeeldingen in een aparte map.
 3. Organiseer alles in één map.
 4. Maak een zip-bestand van je map en hernoem het naar **voornaam_filmofserie.zip**.
 5. Log in op **Google Classroom**.
@@ -84,15 +85,11 @@ Je levert de volgende bestanden in:
 
 ## Puntenverdeling
 
-{{< table_layoutfixed >}}
-|                                                    |                                                             |
-|----------------------------------------------------|-------------------------------------------------------------|
-| **Folderstructuur en bestandsnamen (02)**          | **CSS Selectors (06)**                                      |
-| • voornaam_filmofserie.zip met index.html en style.css | • body • h1 • h2 • p • section • id-selector                |
-| **Elementen document (04)**                        | **CSS Properties (06)**                                     |
-| • html • head • link-element naar CSS • body       | • background-color • color • font-family • margin • padding |
-| **Elementen inhoudsverdeling (04)**                | **Afbeelding stijl (02)**                                   |
-| • header • main met section(s) en id-selectors     | • img-styling • padding/margin rond afbeeldingen            |
+- **Folderstructuur en bestandsnamen (05)** | voornaam_filmofserie.zip met index.html, style.css en map met afbeeldingen
+- **Elementen document (04)** | html | head met title | link-element naar CSS | body
+- **Elementen inhoudsverdeling (07)** | header | main met section(s) en id-selectors
+- **CSS Selectors (05)** | body | h1 | h2 | section | id-selector
+- **CSS Properties (05)** | background-color | color | font-family | margin | padding
 
 ## Veelvoorkomende fouten
 
