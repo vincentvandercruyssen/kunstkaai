@@ -44,15 +44,11 @@ Zorg ervoor dat de afbeeldingen in een aparte map worden geplaatst en dat de `sr
 
 ## Puntenverdeling
 
-{{< table_layoutfixed >}}
-|                                                                 |                                             |
-|-----------------------------------------------------------------|---------------------------------------------|
-| **Folderstructuur en bestandsnamen (04)**                       | **Elementen inhoudsstroom (07)**            |
-| • voornaam film.zip met index.html en images/afbeelding.jpg,... | • h1 • h2,... • img • p • a • ul of ol • li |
-| **Elementen document (05)**                                     | **Kenmerken (02)**                          |
-| • html • head • meta • title (aangepast) • body                 | • src • alt of width                        |
-| **Elementen inhoudsverdeling (06)**                             |                                             |
-| • header • main • min. 4 sections                               |                                             |
+- **Structuur (04)** | voornaam_film.zip met index.html en images/afbeelding.jpg,...
+- **Elementen document (05)** | html | head | meta | title (aangepast) | body
+- **Elementen inhoudsverdeling (06)** | header | main | min. 4 sections
+- **Elementen inhoudsstroom (07)** | h1 | h2,... | img | p | a | ul of ol | li
+- **Kenmerken (02)** | src | alt of width
 
 ## Veelvoorkomende fouten
 
