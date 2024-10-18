@@ -71,14 +71,10 @@ Aan het einde van de les lever je de volgende bestanden in:
 
 ## Puntenverdeling
 
-{{< table_layoutfixed >}}
-| Structuur (08)                                  | HTML basis (11)                                     |
-|-------------------------------------------------|-----------------------------------------------------|
-| **Folderstructuur en bestandsnamen (03)**       | **Elementen inhoud (07)**                           |
-| • voornaam overmij.zip:                         | • main • h1, h2,... • img • p • a • ul of ol met li |
-| index.html en afbeeldingen in de juiste map     |                                                     |
-| **Elementen document (05)**                     | **Attributes (kenmerken) (04)**                     |
-| • html • head • meta • title (aangepast) • body | • src • alt • width • href                     |
+- **Structuur (03)** | voornaam overmij.zip met index.html en afbeeldingen in de juiste map
+- **Elementen document (05)** | html | head | meta | title (aangepast) | body
+- **Elementen inhoud (07)** | main | h1, h2,... | img | p | a | ul of ol met li                                                   
+- **Kenmerken (04)** | src | alt | width | href
 
 ## Veelvoorkomende fouten
 

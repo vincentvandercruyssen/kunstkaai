@@ -88,15 +88,11 @@ Je levert de volgende bestanden in:
 
 ## Puntenverdeling
 
-{{< table_layoutfixed >}}
-|                                                    |                                                             |
-|----------------------------------------------------|-------------------------------------------------------------|
-| **Folderstructuur en bestandsnamen (02)**          | **CSS Selectors (06)**                                      |
-| • voornaam_overmij.zip met index.html en style.css | • body • h1 • h2 • p • section • id-selector                |
-| **Elementen document (04)**                        | **CSS Properties (06)**                                     |
-| • html • head • link-element naar CSS • body       | • background-color • color • font-family • margin • padding |
-| **Elementen inhoudsverdeling (04)**                | **Afbeelding stijl (02)**                                   |
-| • header • main met section(s) en min. één met id  | • img-styling • padding/margin rond afbeeldingen            |
+- **Structuur (05)** | voornaam_overmij.zip met index.html, style.css en map met afbeeldingen
+- **Elementen document (04)** | html | head met title | link-element naar CSS | body
+- **Elementen inhoudsverdeling (06)** | header | main met section(s) en min. één met id
+- **CSS selectors (05)** | body | header | h1 of h2 | section | id-selector
+- **CSS properties (05)** | background-color | color | font-family | margin | padding
 
 ## Veelvoorkomende fouten
 
@@ -107,12 +103,3 @@ Je levert de volgende bestanden in:
 5. Geen onderscheid tussen verschillende sections met CSS.
 6. Zipbestand niet correct ingeleverd of verkeerd benoemd.
 7. Verkeerd gebruik van margins en padding voor visuele opmaak.
-
-## Te bereiken competenties
-
-- Valide HTML5-code schrijven.
-- Valide CSS-code schrijven.
-- Kleur en opmaak toekennen aan HTML-elementen met CSS.
-- Een map kunnen zippen.
-- Bestanden kunnen uploaden naar Google Classroom.
-- ...
