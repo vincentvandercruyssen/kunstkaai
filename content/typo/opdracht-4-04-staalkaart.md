@@ -85,7 +85,7 @@ Activeer de laag **Tekst uitleg**. Maak een tekstkader en stel de tekstkaderinst
 ### Kopiëren van beschrijvingen
 Maak kopieën van het tekstkader met *Command/Control + C* en *Command/Control + V* en plaats ze op de juiste plek. Pas de beschrijvingen voor elk lettertype aan.
 
-### Pakket maken en inleveren
+### Pakket maken en indienen
 Maak een *package* van het project in InDesign. 
 
 {{< img src="/img/typo/opdracht-4-04-staalkaart-stap11-1.png" width="220" >}}
@@ -95,3 +95,10 @@ Maak een *package* van het project in InDesign.
 - Zip map via Finder en upload het in de daarvoor bestemde map.
 - Exporteer het bestand ook als "voornaam_naam-staalkaart.PDF" (Portable Document Format).
 - Upload beide bestanden via de uploadmap.
+
+## Puntenverdeling
+
+- **Naamgeving bestanden en afmetingen (04)** A4, Export van een bestandspakket (InDesign-package met PDF) met correcte bestandsnaam (voornaam en opdrachtbenaming).
+- **Documentopbouw en organisatie (12)** Instellingen van het document (marges), Gebruik van lagen (min. drie), Nauwkeurige plaatsing van hulplijnen (min. zeven).
+- **Acht lettersoorten (08)**
+- **Typografische presentatie en Technische correctheid (40)** Twintig letters, Twintig omschrijvingen, Nauwkeurigheid in plaatsing van tekstkaders en letters, Lettertypes en beschrijvingen consistent in gelijkmatige tekstkaders toegepast.

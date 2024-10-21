@@ -25,7 +25,7 @@ Ontwerp een spread (dubbele pagina) voor een toeristische brochure over Domaine 
 |-|-|-|
 |{{< img src="/img/typo/opdracht-5-05-brochure_stavelot-logo-longpre-1.jpg" width="1200" >}}|{{< img src="/img/typo/opdracht-5-05-brochure_stavelot-logo-huski-1.jpg" width="1200" >}}|{{< img src="/img/typo/opdracht-5-05-brochure_stavelot-logo-huski-2.jpg" width="1200" >}}
 
-Fonts gebruikt op de website Domaine Long Pré: Monststerrat en Anton.
+Fonts gebruikt op de website Domaine Long Pré: **Monststerrat** en **Anton**. De beide lettertypes die op de website van het Domaine Long Pré worden gebruikt kun je downloaden via Adobe Fonts.
 
 - **Kleurvlakken en typografie**: Gebruik CMYK-kleuren voor drukwerk. 
 
@@ -45,8 +45,8 @@ Zorg voor een duidelijke typografische hiërarchie en werk met lagen voor de ver
 - **Rasters en lay-out**: Gebruik een raster van 3- of 4-kolommen per pagina en werk nauwkeurig volgens de hulplijnen. Zorg voor een goede balans tussen tekst en beeld.
 - **Exporteren**: Exporteer je werk als PDF met bleed en snijlijnen. Sla het bestand ook op als InDesign-pakket met alle bijbehorende afbeeldingen en lettertypes.
 
-## Bestandsnaamgeving en indienen
+## Indienen
 
 Gebruik de volgende naamgeving bij het indienen via Google Classroom:
 - Ontwerp in pakket gezipt: `voornaam_achternaam-stavelot.zip` (InDesign-bestand + afbeeldingen/lettertypes).
-- Exporteer naar PDF, inclusief bleed en snijlijnen, en noem het bestand: `voornaam_achternaam-stavelot.pdf`.
+- Exporteer naar PDF als spread, inclusief bleed en snijlijnen, en noem het bestand: `voornaam_achternaam-stavelot.pdf`.

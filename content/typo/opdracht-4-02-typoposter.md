@@ -33,13 +33,13 @@ De woorden kunnen betrekking hebben op:
 - Muzieksmaak
 - ...
 
-## Versie 1: Voorontwerp
+### Versie 1: Voorontwerp
 
 Plaats alle woorden op één A4-pagina. Dit mag in je schetsboek of op een los blad papier. Vul de pagina goed; hoeveel witruimte je laat, bepaal je zelf, maar zorg voor een gebalanceerd geheel.
 
 ⚖️😌🙏
 
-## Versie 2: Netontwerp
+### Versie 2: Netontwerp
 
 Maak vervolgens op een nieuwe pagina je definitieve typoposter in Adobe Illustrator. Je mag zelf kiezen of je het ontwerp staand of liggend maakt.
 
@@ -62,3 +62,10 @@ Ga je voor een strak design met rechte lijnen, of kies je voor een speelse graff
 - Dien zowel een **.ai**-bestand (Adobe Illustrator) als een **.pdf**-bestand in via Google Classroom.
 - Gebruik de volgende bestandsnamen: **voornaam_achternaam-typoposter.ai** en **voornaam_achternaam-typoposter.pdf**.
 - Breng ook je schetsen mee naar de les. Deze kunnen ingeleverd worden of getoond in je schetsboek.
+
+## Puntenverdeling
+
+- **Naamgeving bestanden en afmetingen (04)** A4, 2 maal voornaam en opdrachtbenaming, ai-bestand, pdf-bestand. 
+- **Lettertype-stijlen en typografie (08)** Gebruik serif, sans-serif, script en handwritten, Passende toepassing van stijlen die de inhoud versterken.
+- **Teksthiërarchie en lay-out (04)** Naam staat centraal, Beschrijvende woorden, Gebalanceerd gebruik van witruimte.
+- **Verbeelding en inventiviteit (04)** Origineel en persoonlijk ontwerp, Gebruik van woorden die relevant zijn voor de leerling.

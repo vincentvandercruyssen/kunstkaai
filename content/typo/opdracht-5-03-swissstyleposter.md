@@ -4,7 +4,7 @@ date = 2024-09-14T08:00:00-07:00
 draft = false
 +++
 
-## Adobe Illustrator: Swiss Style Poster 
+## Poster voor film of serie
 
 |   |   |   |
 |---|---|---|
@@ -46,7 +46,7 @@ Kortom, de International Typographic Style/Swiss Style draait om eenvoud, functi
 - Zet alle typografie om naar **letteromtrekken** (*Create Outlines*).
 - Splits overlappende tekst en vormen eventueel met de *Divide Pathfinder*.
 
-### Indienen
+## Indienen
 
 - Bewaar het bestand als "SwissStyle_voornaam_naam.AI" (Illustrator-werkbestand).
 - Bewaar het bestand ook als "SwissStyle_voornaam_naam.PDF" (Portable Document Format).
@@ -62,3 +62,12 @@ Kortom, de International Typographic Style/Swiss Style draait om eenvoud, functi
 - {{< a href="https://www.printmag.com/featured/swiss-style-principles-typefaces-designers/" >}}
 - {{< a href="https://issuu.com/mary_carnes/docs/book_mary_carnes" >}}
 - Ontwerpers: {{< a href="https://en.wikipedia.org/wiki/Armin_Hofmann" text="Armin Hofmann" >}}, {{< a href="https://en.wikipedia.org/wiki/Emil_Ruder" text="Emil Ruder" >}}, {{< a href="https://en.wikipedia.org/wiki/Karl_Gerstner" text="Karl Gerstner" >}},  {{< a href="https://en.wikipedia.org/wiki/Adrian_Frutiger" text="Adrian Frutiger" >}}, {{< a href="https://en.wikipedia.org/wiki/Hans_Neuburg" text="Hans Neuburg" >}}, {{< a href="https://en.wikipedia.org/wiki/Wim_Crouwel" text="Wim Crouwel" >}}, {{< a href="https://en.wikipedia.org/wiki/Otl_Aicher" text="Otl Aicher" >}}, {{< a href="https://en.wikipedia.org/wiki/Rosmarie_Tissi" text="Rosmarie Tissi" >}}, {{< a href="https://en.wikipedia.org/wiki/Jacqueline_Casey" text="Jacqueline Casey" >}}
+
+## Puntenverdeling
+
+- **Naamgeving bestanden en afmetingen (04)** A4, 2 maal voornaam en opdrachtbenaming, ai-bestand, pdf-bestand. 
+- **Vier relevante voorbeelden (04)**
+- **Gebruik van rasters en lay-out (08)** Effectief gebruik van een grid, Asymmetrische compositie, duidelijke hiërarchie en minimalistische lay-out
+- **Typografie (04)** Schreefloos lettertype, creatieve en functionele toepassing van typografie.
+- **Vormgeving en minimalisme (04)** Gebruik van geometrische vormen en vermijden van details, Beperkt en effectief kleurgebruik.
+- **Verbeelding en inventiviteit (04)** Originaliteit en creatief gebruik van de Swiss Style principes.

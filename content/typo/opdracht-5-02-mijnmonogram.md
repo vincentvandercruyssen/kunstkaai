@@ -4,9 +4,9 @@ date = 2024-09-14T08:00:00-07:00
 draft = false
 +++
 
-## Adobe Illustrator: Mijn Monogram
+## Persoonlijk monogram
 
-Een monogram is een symbool dat is opgebouwd uit twee of meer letters. In deze opdracht ga je een monogram ontwerpen met je eigen initialen (de eerste letters van je voor- en achterna(a)m(en)).
+Een monogram is een symbool dat is opgebouwd uit twee of meer letters. In deze opdracht ga je een monogram ontwerpen met je eigen initialen (de eerste letters van je voor- en achterna(a)m(en)) aan de hand van **Adobe Illustrator**.
 
 ### Gebruikte Technieken
 
@@ -37,7 +37,7 @@ Een monogram is een symbool dat is opgebouwd uit twee of meer letters. In deze o
 - Zorg ervoor dat het monogram **precies in het midden** van het blad staat.
 - Gebruik **gidslijnen** (*guides*) om de plaatsing nauwkeurig te maken. Zet deze gidslijnen in een **aparte laag**.
 
-### Indienen
+## Indienen
 
 - Bewaar als "monogram_voornaam_naam.AI" (Illustrator werkbestand).
 - Bewaar ook als "monogram_voornaam_naam.PDF" (Portable Document Format).
@@ -48,3 +48,10 @@ Een monogram is een symbool dat is opgebouwd uit twee of meer letters. In deze o
 |---|---|---|
 |{{< img src="/img/typo/opdracht-5-02-mijnmonogram-vblln-1.jpg" >}}|{{< img src="/img/typo/opdracht-5-02-mijnmonogram-vblln-2.jpg" >}}|{{< img src="/img/typo/opdracht-5-02-mijnmonogram-vblln-3.jpg" >}}|
 |{{< img src="/img/typo/opdracht-5-02-mijnmonogram-vblln-4.jpg" >}}|{{< img src="/img/typo/opdracht-5-02-mijnmonogram-vblln-5.jpg" >}}|{{< img src="/img/typo/opdracht-5-02-mijnmonogram-vblln-6.jpg" >}}|
+
+## Puntenverdeling
+
+- **Naamgeving bestanden en afmetingen (04)** 15 x 15 cm, 2 maal voornaam en opdrachtbenaming, ai-bestand, pdf-bestand. 
+- **Voorontwerpen op papier (04)**
+- **Bladschikking en gebruik marges (06)**
+- **Creativiteit en technische vindingrijkheid ontwerpen met initialen (10)**

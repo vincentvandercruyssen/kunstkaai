@@ -48,7 +48,7 @@ Deze opdracht combineert tekst, beeld en een nauwkeurige lay-out op basis van ee
 - Geef elk element een aparte laag en benoem deze duidelijk.
 - Exporteer het document naar een **PDF** met bleed en snijlijnen.
 
-## Bestandsnaamgeving en indienen
+## Indienen
 
 Gebruik de volgende naamgeving bij het indienen via Google Classroom:
 - Ontwerp in pakket gezipt: `voornaam_achternaam-kunstenaar.zip` (InDesign-bestand + afbeeldingen/lettertypes).
@@ -158,3 +158,11 @@ Onderstaande lijst biedt een selectie van kunstenaars die nauw verbonden zijn me
 |Balthasar Paul Ommeganck|Louise De Hem|Eugeen Van Mieghem|
 |{{< img src="/img/typo/opdracht-5-04-dekunstenaar-marthe_donas-1.jpg" >}}|{{< img src="/img/typo/opdracht-5-04-dekunstenaar-panamarenko-1.jpg" >}}|{{< img src="/img/typo/opdracht-5-04-dekunstenaar-luc_tuymans-1.jpg" >}}|
 |Marthe Donas|Panamarenko|Luc Tuymans|
+
+## Puntenverdeling
+
+- **Naamgeving bestanden en afmetingen (04)** Dubbele A4, 2 maal voornaam en opdrachtbenaming, zip-bestand met indd-bestand, pdf-bestand als spread. 
+- **Bestandsinstellingen (03)** Bleed/afloop, marges en kolommengrid.
+- **Lagen (02)** Aparte lagen voor tekst en afbeeldingen. 
+- **Tekst (02)** Gekozen kunstenaar, min. 500 woorden.
+- **Vormgeving en presentatie (10)** Teksthiërarchie, leesbaarheid, sfeer, afbeeldingen, afwerking en uitlijning.

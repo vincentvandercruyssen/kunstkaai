@@ -4,9 +4,9 @@ date = 2024-08-30T08:00:00-07:00
 draft = false
 +++
 
-## Adobe Illustrator: Typofiguren
+## Typofiguren
 
-In deze opdracht ontwerp je vijf figuren in Adobe Illustrator, waarbij je uitsluitend typografie gebruikt. Elk figuur moet uit één specifiek lettertype bestaan, zoals een serif, sans serif, script, display of gothic lettertype. Gebruik verschillende tekens om menselijke, dierlijke of robotachtige figuren samen te stellen, zonder de letters te vervormen, en lever het werk zowel als .AI- als .PDF-bestand in.
+In deze opdracht ontwerp je vijf figuren in **Adobe Illustrator**, waarbij je uitsluitend typografie gebruikt. Elk figuur moet uit één specifiek lettertype bestaan, zoals een serif, sans serif, script, display of gothic lettertype. Gebruik verschillende tekens om menselijke, dierlijke of robotachtige figuren samen te stellen, zonder de letters te vervormen, en lever het werk zowel als .AI- als .PDF-bestand in.
 
 ### Gebruikte technieken
 
@@ -42,7 +42,7 @@ In deze opdracht ontwerp je vijf figuren in Adobe Illustrator, waarbij je uitslu
 - Plaats al je figuren in een **evenwichtige bladschikking samen op een liggende A4**.
 - Zet uiteindelijk alle typo om naar **letteromtrekken!**
 
-### Indienen
+## Indienen
 
 - Bewaar als "typofiguren-voornaam_naam.AI". (Illustrator werkbestand)
 - Bewaar eveneens als "typofiguren-voornaam_naam.PDF". (Portable Document Format)
@@ -61,3 +61,10 @@ In deze opdracht ontwerp je vijf figuren in Adobe Illustrator, waarbij je uitslu
 |---|---|---|
 |{{< img src="/img/typo/opdracht-5-01-typoart-1.jpg" >}}|{{< img src="/img/typo/opdracht-5-01-typoart-2.jpg" >}}|{{< img src="/img/typo/opdracht-5-01-typoart-3.jpg" >}}|
 |{{< img src="/img/typo/opdracht-5-01-typoart-4.jpg" >}}|{{< img src="/img/typo/opdracht-5-01-typoart-5.jpg" >}}|{{< img src="/img/typo/opdracht-5-01-typoart-6.png" >}}|
+
+## Puntenverdeling
+
+- **Naamgeving bestanden en afmetingen (04)** A4, 2 maal voornaam en opdrachtbenaming, ai-bestand, pdf-bestand. 
+- **Gebruik vijf lettersoorten (05)** Schreef, Schreefloos, Script/Handwritten, Display, Gothic.
+- **Bladschikking: vijf figuren, vijf namen (10)**
+- **Creativiteit en technische vindingrijkheid illustreren met glyphs (15)**

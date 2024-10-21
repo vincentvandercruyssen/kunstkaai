@@ -72,7 +72,7 @@ Selecteer het `img`-element en zorg ervoor dat de afbeeldingen netjes worden wee
 
 {{< /showcode >}}
 
-### Inleveren
+## Indienen
 
 Je levert de volgende bestanden in:
 

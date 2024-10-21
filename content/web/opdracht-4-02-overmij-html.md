@@ -58,7 +58,7 @@ Binnen het `<body>`-element bouw je je webpagina op:
 5. Voeg een hyperlink toe naar een interessante website met het `<a>`-element.
 6. Voeg een lijstje toe van hobby's of dergelijk met `<ul>` of `<ol>` en `<li>`-elementen.
 
-## Inleveren
+## Indienen
 
 Aan het einde van de les lever je de volgende bestanden in:
 

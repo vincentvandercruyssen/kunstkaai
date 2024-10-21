@@ -6,8 +6,22 @@
     <description>Recent content in Home on Kunstkaai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Oct 2024 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Oct 2024 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Dierenpartij</title>
+      <link>http://localhost:1313/typo/opdracht-5-06-dierpartij/</link>
+      <pubDate>Sun, 20 Oct 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/typo/opdracht-5-06-dierpartij/</guid>
+      <description>Verkiezingsfolder Bedenk een politieke partij voor een diersoort en ontwikkel een partijprogramma. Vervolgens ontwerp je een verkiezingsfolder met een voorpagina, een midden en een achterkant, waarbij je werkt met een logo, slogans, en beelden van kandidaten. Gebruik Character Styles om kernwoorden bijvoorbeeld vetgedrukt te maken, en pas Paragraph Styles toe met &amp;ldquo;Space after&amp;rdquo; voor paragrafen zonder extra witregels. De folder wordt ingediend als een gecomprimeerd pakket (.zip) met het InDesign-bestand (.</description>
+    </item>
+    <item>
+      <title>Opdracht: Recept (CSS)</title>
+      <link>http://localhost:1313/web/opdracht-4-05-recept-css/</link>
+      <pubDate>Sun, 20 Oct 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-4-05-recept-css/</guid>
+      <description>Opgave In deze opdracht ga CSS toepassen op de HTML-pagina van het recept dat je eerder hebt aangemaakt, om het zo vorm te geven. Het doel is om basiskennis van CSS-selectors en eigenschappen toe te passen om de opmaak van de pagina te verbeteren.&#xA;Organiseer je project Voeg een CSS-bestand toe: Binnen dezelfde projectmap waar je eerder het bestand index.html hebt gemaakt, maak je een nieuw bestand aan genaamd style.css. Link naar CSS: Voeg in de &amp;lt;head&amp;gt; van je index.</description>
+    </item>
     <item>
       <title>Opdracht: Brochure Stavelot</title>
       <link>http://localhost:1313/typo/opdracht-5-05-brochure_stavelot/</link>
@@ -90,14 +104,14 @@
       <link>http://localhost:1313/typo/opdracht-5-02-mijnmonogram/</link>
       <pubDate>Sat, 14 Sep 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/typo/opdracht-5-02-mijnmonogram/</guid>
-      <description>Adobe Illustrator: Mijn Monogram Een monogram is een symbool dat is opgebouwd uit twee of meer letters. In deze opdracht ga je een monogram ontwerpen met je eigen initialen (de eerste letters van je voor- en achterna(a)m(en)).&#xA;Gebruikte Technieken Objecten selecteren. Objecten transformeren: verplaatsen, schalen, draaien en spiegelen. Werken met het deelvenster lagen. Werken met het tekstgereedschap. Letteromtrekken maken (Type &amp;gt; Create Outlines). Objecten samenvoegen (Pathfinder &amp;gt; Shape Modes &amp;gt; Unite).</description>
+      <description>Persoonlijk monogram Een monogram is een symbool dat is opgebouwd uit twee of meer letters. In deze opdracht ga je een monogram ontwerpen met je eigen initialen (de eerste letters van je voor- en achterna(a)m(en)) aan de hand van Adobe Illustrator.&#xA;Gebruikte Technieken Objecten selecteren. Objecten transformeren: verplaatsen, schalen, draaien en spiegelen. Werken met het deelvenster lagen. Werken met het tekstgereedschap. Letteromtrekken maken (Type &amp;gt; Create Outlines). Objecten samenvoegen (Pathfinder &amp;gt; Shape Modes &amp;gt; Unite).</description>
     </item>
     <item>
       <title>Opdracht: Swiss Style Poster</title>
       <link>http://localhost:1313/typo/opdracht-5-03-swissstyleposter/</link>
       <pubDate>Sat, 14 Sep 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/typo/opdracht-5-03-swissstyleposter/</guid>
-      <description>Adobe Illustrator: Swiss Style Poster Your browser does not support the video tag.&#xD;De Internationale Typografische Stijl, ook wel Swiss Style genoemd, is een grafische stijl die werd ontwikkeld door Zwitserse designers in de jaren 1950. De nadruk ligt op eenvoud, leesbaarheid, asymmetrische bladschikking op basis van een grid (raster), schreefloze lettertypes (zoals Helvetica), primaire kleuren en geometrische vormen. Josef Müller-Brockmann (1914-1996) was een van de meest invloedrijke designers binnen deze stijl.</description>
+      <description>Poster voor film of serie Your browser does not support the video tag.&#xD;De Internationale Typografische Stijl, ook wel Swiss Style genoemd, is een grafische stijl die werd ontwikkeld door Zwitserse designers in de jaren 1950. De nadruk ligt op eenvoud, leesbaarheid, asymmetrische bladschikking op basis van een grid (raster), schreefloze lettertypes (zoals Helvetica), primaire kleuren en geometrische vormen. Josef Müller-Brockmann (1914-1996) was een van de meest invloedrijke designers binnen deze stijl.</description>
     </item>
     <item>
       <title>Opdracht: Artikel</title>
@@ -195,7 +209,7 @@
       <link>http://localhost:1313/typo/opdracht-5-01-typofiguren/</link>
       <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/typo/opdracht-5-01-typofiguren/</guid>
-      <description>Adobe Illustrator: Typofiguren In deze opdracht ontwerp je vijf figuren in Adobe Illustrator, waarbij je uitsluitend typografie gebruikt. Elk figuur moet uit één specifiek lettertype bestaan, zoals een serif, sans serif, script, display of gothic lettertype. Gebruik verschillende tekens om menselijke, dierlijke of robotachtige figuren samen te stellen, zonder de letters te vervormen, en lever het werk zowel als .AI- als .PDF-bestand in.&#xA;Gebruikte technieken Objecten selecteren. Objecten transformeren: verplaatsen, schalen, draaien en spiegelen.</description>
+      <description>Typofiguren In deze opdracht ontwerp je vijf figuren in Adobe Illustrator, waarbij je uitsluitend typografie gebruikt. Elk figuur moet uit één specifiek lettertype bestaan, zoals een serif, sans serif, script, display of gothic lettertype. Gebruik verschillende tekens om menselijke, dierlijke of robotachtige figuren samen te stellen, zonder de letters te vervormen, en lever het werk zowel als .AI- als .PDF-bestand in.&#xA;Gebruikte technieken Objecten selecteren. Objecten transformeren: verplaatsen, schalen, draaien en spiegelen.</description>
     </item>
     <item>
       <title>Cursus: Introductie</title>

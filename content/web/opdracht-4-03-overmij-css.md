@@ -75,7 +75,7 @@ Gebruik een **id-selector** om een specifieke `section` anders vorm te geven. Vo
 
 {{< img src="/img/web/cursus-css-box-model-1.png" width="1800" >}}
 
-### Inleveren
+## Indienen
 
 Je levert de volgende bestanden in:
 

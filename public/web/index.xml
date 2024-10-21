@@ -6,8 +6,15 @@
     <description>Recent content in Webs on Kunstkaai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Oct 2024 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Oct 2024 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Recept (CSS)</title>
+      <link>http://localhost:1313/web/opdracht-4-05-recept-css/</link>
+      <pubDate>Sun, 20 Oct 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-4-05-recept-css/</guid>
+      <description>Opgave In deze opdracht ga CSS toepassen op de HTML-pagina van het recept dat je eerder hebt aangemaakt, om het zo vorm te geven. Het doel is om basiskennis van CSS-selectors en eigenschappen toe te passen om de opmaak van de pagina te verbeteren.&#xA;Organiseer je project Voeg een CSS-bestand toe: Binnen dezelfde projectmap waar je eerder het bestand index.html hebt gemaakt, maak je een nieuw bestand aan genaamd style.css. Link naar CSS: Voeg in de &amp;lt;head&amp;gt; van je index.</description>
+    </item>
     <item>
       <title>Opdracht: Recept (HTML)</title>
       <link>http://localhost:1313/web/opdracht-4-04-recept-html/</link>
