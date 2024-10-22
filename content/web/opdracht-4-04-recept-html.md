@@ -60,19 +60,11 @@ Binnen het `<main>`-element maak je drie `<section>`-elementen aan:
 
 ## Puntenverdeling
 
-{{< table_layoutfixed >}}
-|                                                                                 |
-|---------------------------------------------------------------------------------|
-| **Folderstructuur en bestandsnamen (03)**                                       |
-| - Correcte mapstructuur met `index.html` en `images`-map ingeleverd als een zip |
-| **Elementen document (04)**                                                     |
-| - `<html>`, `<head>`, aangepast `<title>`, `<body>`                             |
-| **Elementen inhoudsverdeling (05)**                                             |
-| - `<header>`, `<main>`, `<section>`                                             |
-| **Elementen inhoudsstroom (08)**                                                |
-| - `<h1>`, `<h2>`, `<p>`, `<a>`, `<img>`, `<ul>` met `<li>`, `<ol>` met `<li>`   |
-| **Kenmerken (04)**                                                              |
-| - `src`, `alt`, `width`, `href`                                                 |
+- **Structuur (03)** `voornaam gerecht.zip` met daarin `index.html` en map met afbeeldingen. 
+- **Elementen document (04)** `html`, `head`, aangepaste `title`, `body`                             
+- **Elementen inhoudsverdeling (05)** `header`, `main`, `section`                                             
+- **Elementen inhoudsstroom (08)** `h1`, `h2`, `p`, `a`, `img`, `ul` met `li`, `ol` met `li`   
+- **Kenmerken (04)** `src`, `alt`, `width`, `href`                                                 
 
 ## Veelvoorkomende fouten
 

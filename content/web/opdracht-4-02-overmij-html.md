@@ -71,10 +71,10 @@ Aan het einde van de les lever je de volgende bestanden in:
 
 ## Puntenverdeling
 
-- **Structuur (03)** | voornaam overmij.zip met index.html en afbeeldingen in de juiste map
-- **Elementen document (05)** | html | head | meta | title (aangepast) | body
-- **Elementen inhoud (07)** | main | h1, h2,... | img | p | a | ul of ol met li                                                   
-- **Kenmerken (04)** | src | alt | width | href
+- **Structuur (03)** `voornaam overmij.zip` met `index.html` en map met afbeeldingen.
+- **Elementen document (05)** `html`, `head`, `meta`, `title` (aangepast), `body`
+- **Elementen inhoud (07)** `main`, `h1`, `h2`,..., `img`, `p`, `a`, `ul` of `ol` met `li`                                                   
+- **Kenmerken (04)** `src`, `alt`, `width`, `href`
 
 ## Veelvoorkomende fouten
 

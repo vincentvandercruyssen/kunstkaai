@@ -88,11 +88,11 @@ Je levert de volgende bestanden in:
 
 ## Puntenverdeling
 
-- **Structuur (05)** | voornaam_overmij.zip met index.html, style.css en map met afbeeldingen
-- **Elementen document (04)** | html | head met title | link-element naar CSS | body
-- **Elementen inhoudsverdeling (06)** | header | main met section(s) en min. één met id
-- **CSS selectors (05)** | body | header | h1 of h2 | section | id-selector
-- **CSS properties (05)** | background-color | color | font-family | margin | padding
+- **Structuur (05)** `voornaam_overmij.zip` met `index.html`, `style.css` en map met afbeeldingen. 
+- **Elementen document (04)** `html`, `head` met `title`, `link`-element naar CSS-bestand, `body`
+- **Elementen inhoudsverdeling (06)** `header`, `main` met min. drie `section`-elementen en min. één met `id`-kenmerk
+- **CSS selectors (05)** `body`, `header`, `h1` of `h2`, `section`, `id`-selector
+- **CSS properties (05)** `background-color`, `color`, `font-family`, `margin`, `padding`
 
 ## Veelvoorkomende fouten
 

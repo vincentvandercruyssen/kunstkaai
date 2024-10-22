@@ -85,14 +85,10 @@ Integreer relevante afbeeldingen en links. Plaats de afbeeldingen in de juiste m
 
 ## Puntenverdeling
 
-{{< table_layoutfixed >}}
-| Structuur (08)                                            | HTML basis (10)                              |
-|-----------------------------------------------------------|----------------------------------------------|
-| **Folderstructuur en bestandsnamen (03)**                 | **Elementen inhoudsstroom (06)**             |
-| • voornaam artikel.zip:                                   | • h1, h2,... • img • p • a • ul of ol met li |
-| index.html en images/afbeelding.jpg (hernoemen bestanden) |                                              |
-| **Elementen document (05)**                               | **Attributes (kenmerken) (04)**              |
-| • html • head • meta • title (aangepast) • body           | • id • src • width • href                    |
+**Structuur (03)** | voornaam artikel.zip: index.html en images/afbeelding.jpg (hernoemen bestanden)
+**Elementen document (05)** | html | head | meta | title (aangepast) | body          
+**Elementen inhoudsstroom (06)** | h1, h2,... | img | p | a | ul of ol met li                                              
+**Attributes (kenmerken) (04)** | id | src | width | href                    
 
 ## Veelvoorkomende fouten
 

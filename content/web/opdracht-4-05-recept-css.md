@@ -46,11 +46,11 @@ Je levert de volgende bestanden in:
 
 ## Puntenverdeling
 
-- **Structuur (05)** | `voornaam gerecht.zip` met `index.html`, `style.css` en een map met afbeeldingen
-- **Elementen document (04)** | html | head met title en link-element naar CSS | body
-- **Elementen inhoudsverdeling (06)** | header | main met section(s) en min. één met id
-- **CSS selectors (07)** | body | header | h1 of h2 | section | id-selector | a | :hover
-- **CSS eigenschappen (06)** | background-color | color | font-family | margin | padding | text-decoration
+- **Structuur (05)** `voornaam gerecht.zip` met `index.html`, `style.css` en één map met afbeeldingen.
+- **Elementen document (04)** `html`, `head` met `title` en `link` naar CSS-bestand, `body`.
+- **Elementen inhoudsverdeling (06)** `header`, `main` met min. drie `section`-elementen, min. één `section` met `id`-kenmerk.
+- **CSS selectors (07)** `body`, `header`, `h1` of `h2`, `section`, `id`-selector, `a`, `:hover`.
+- **CSS eigenschappen (06)** `background-color`, `color`, `font-family`, `margin`, `padding`, `text-decoration`.
 
 ## Veelvoorkomende fouten
 
