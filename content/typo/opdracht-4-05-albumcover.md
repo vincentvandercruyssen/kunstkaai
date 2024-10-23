@@ -58,7 +58,7 @@ Experimenteer met de compositie door delen van de tekst te roteren en witruimte 
 Voeg kleur toe aan de tekst, maar zorg dat je slechts één kleur gebruikt in je ontwerp.
 
 ### Stap 6: Studies maken
-Maak meerdere versies van je ontwerp (minimaal drie verschillende composities). Bewaar deze studies in je InDesign-document.
+Maak meerdere versies van je ontwerp (minimaal vier verschillende composities). Bewaar deze studies in je InDesign-document.
 
 ### Stap 7: Definitief ontwerp
 Kies één van je studies als definitief ontwerp en werk deze volledig uit.
