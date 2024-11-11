@@ -56,6 +56,12 @@ Met deze informatie maak je een database aan in Excel of Google Sheets. Uiteinde
 {{< img src="/img/data/opdracht-01-datamerging-sheet-1.png" width="1400" >}}
 {{< img src="/img/data/opdracht-01-datamerging-folder-1.png" width="360" >}}
 
+#### Indienen
+
+- Rekenblad als koppeling (Google Spreadsheet of Microsoft Excel) of xlsx-bestand.
+- Zip-bestand met al je afbeeldingen.
+- Zorg dat je voornaam en opdrachtbenaming aanwezig is in de bestandsbenaming. 
+
 ### Template Ontwerp in InDesign
 
 Ontwerp een document waarin **InDesign** automatisch 15 producten op één blad plaatst. Hierbij moet je goed nadenken over de indeling en rekening houden met de afmetingen van de productkaarten.
@@ -72,19 +78,32 @@ Ontwerp een document waarin **InDesign** automatisch 15 producten op één blad 
 {{< img src="/img/data/opdracht-01-datamerging-voorbeeld_product-1.png" width="240" >}}
 {{< img src="/img/data/opdracht-01-datamerging-voorbeeld_product-2.png" width="1440" >}}
 
-### Data Merge voorbereiden en koppelen
+#### Indienen
 
-1. **Importeer je CSV- of TXT-bestand** in InDesign via het Data Merge-paneel (Window > Utilities > Data Merge).
+- Indesign document (indd-bestand).
+- Zorg dat je voornaam en opdrachtbenaming aanwezig is in de bestandsbenaming. 
+
+### Voorbereiden, koppelen en aanmaken
+
+Bereid je databestand zorgvuldig voor en koppel het aan je InDesign-sjabloon via Data Merge. Importeer je gegevens, voeg velden toe aan je ontwerp en genereer automatisch je productbrochure. Controleer het eindresultaat en verbeter indien nodig je sjabloon!
+
+1. **Importeer je CSV-bestand** in InDesign via het Data Merge-paneel (Window > Utilities > Data Merge).
 2. **Koppel de velden** uit het databestand aan het sjabloon door de tekst- en afbeeldingsframes te selecteren en de juiste veldnamen toe te voegen.
 3. **Controleer de koppeling** met de previewfunctie in het Data Merge-paneel om te zien hoe de gegevens in het sjabloon worden ingevuld.
+4. **Genereer de brochure** door op "Create Merged Document" te klikken. Zorg ervoor dat er meerdere producten per pagina staan.
+5. Controleer of alle informatie en afbeeldingen correct zijn ingeladen en de lay-out netjes blijft, ongeacht de lengte van de tekst.
+6. Pas indien nodig de lay-out of gegevens aan.
+7. **Corrigeer eventuele fouten** in het sjabloon, de gegevens of de koppelingen.
+8. Exporteer de brochure als PDF. Zorg ervoor dat alle afbeeldingen een hoge resolutie hebben (minimaal 300 DPI voor print) en dat ze in een geschikt formaat staan, zoals JPEG of PNG.
 
-### Brochurepagina aanmaken
+#### Indienen
 
-1. **Genereer de brochure** door op "Create Merged Document" te klikken. Zorg ervoor dat er meerdere producten per pagina staan.
-2. Controleer of alle informatie en afbeeldingen correct zijn ingeladen en de lay-out netjes blijft, ongeacht de lengte van de tekst.
-3. Pas indien nodig de lay-out of gegevens aan.
-4. **Corrigeer eventuele fouten** in het sjabloon, de gegevens of de koppelingen.
-5. Exporteer de brochure als PDF. Zorg ervoor dat alle afbeeldingen een hoge resolutie hebben (minimaal 300 DPI voor print) en dat ze in een geschikt formaat staan, zoals JPEG of PNG.
+Dien één zip-bestand in (met je voornaam en de opdrachtbenaming in de bestandsnaam) dat de volgende onderdelen bevat:
+
+- Het InDesign-bestand (.indd) met gekoppelde gegevens.
+- Het geëxporteerde CSV-bestand.
+- De geëxporteerde brochure als PDF-bestand met hoge resolutie-afbeeldingen.
+- Een map met de bijbehorende afbeeldingen.
 
 ## Leerdoelen en beoordeling
 
