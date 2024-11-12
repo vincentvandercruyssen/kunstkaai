@@ -100,10 +100,13 @@ Bereid je databestand zorgvuldig voor en koppel het aan je InDesign-sjabloon via
 
 Dien één zip-bestand in (met je voornaam en de opdrachtbenaming in de bestandsnaam) dat de volgende onderdelen bevat:
 
-- Het InDesign-bestand (.indd) met gekoppelde gegevens.
-- Het geëxporteerde CSV-bestand.
-- De geëxporteerde brochure als PDF-bestand met hoge resolutie-afbeeldingen.
-- Een map met de bijbehorende afbeeldingen.
+- InDesign-sjabloondocument met gekoppelde gegevens: Het werkbestand dat is gebruikt om de brochure te genereren.
+- Geëxporteerde CSV-bestand: Het bestand waarin je de productgegevens hebt vastgelegd en dat je hebt gebruikt voor de Data Merge.
+- InDesign-document met gegenereerde data: Het InDesign-bestand dat is gegenereerd na de Data Merge, waarin de gegevens zijn ingevoegd.
+- PDF-bestand met hoge resolutie-afbeeldingen: Het eindresultaat, een PDF van de complete productbrochure, met afbeeldingen in hoge resolutie (minimaal 300 DPI voor printkwaliteit).
+- Map met de bijbehorende afbeeldingen: Alle gebruikte afbeeldingen die in de Data Merge gekoppeld zijn aan het InDesign-bestand.
+
+Geen onnodige bestanden toevoegen die onduidelijkheid scheppen. Zorg ervoor dat alle bestanden correct benoemd en georganiseerd zijn in de zip-map, zodat de koppelingen in InDesign behouden blijven en de bestanden zonder fouten kunnen geopend worden.
 
 ## Leerdoelen en beoordeling
 
