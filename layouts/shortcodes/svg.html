@@ -13,7 +13,7 @@
 
 {{ if $svg }}
     {{ if $href }}
-        <a href="{{ $href }}" target="_blank" style="display: flex; align-items: center; flex-direction:column;">
+        <a href="{{ $href }}" target="_blank" style="display: flex; align-items: center; flex-direction: column; justify-content: space-between;">
     {{ end }}
     <img src="{{ $svg.Permalink }}" width="{{ $width }}" alt="{{ $fileNameWithoutExt }}" loading="lazy" >
     {{ if $text }}

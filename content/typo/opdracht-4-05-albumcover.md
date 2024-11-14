@@ -42,25 +42,25 @@ Je levert een aantal studies in, waarbij je verschillende opmaakopties onderzoek
 
 ## Stappenplan
 
-### Stap 1: Nieuw document aanmaken
+### Nieuw document aanmaken
 Maak een nieuw document van 120 x 120 mm in Adobe InDesign. 
 
-### Stap 2: Hulplijnen toevoegen
+### Hulplijnen toevoegen
 Verdeel je document in negen gelijke delen met behulp van de functie **Create Guides** in het Layoutmenu.
 
-### Stap 3: Tekst plaatsen
+### Tekst plaatsen
 Verdeel de tekst (artiestennaam, albumnaam, liedjes, platenlabel en medewerkers) over de negen gelijke delen van het document. Gebruik hiervoor tekstkaders en pas de typografie aan volgens de beperkingen (maximaal 2 lettertypes of 1 lettertype met 2 gewichten).
 
-### Stap 4: Compositie en rotatie
+### Compositie en rotatie
 Experimenteer met de compositie door delen van de tekst te roteren en witruimte slim te gebruiken. Trek extra hulplijnen indien nodig om de tekst uit te lijnen.
 
-### Stap 5: Kleur toevoegen
+### Kleur toevoegen
 Voeg kleur toe aan de tekst, maar zorg dat je slechts één kleur gebruikt in je ontwerp.
 
-### Stap 6: Studies maken
+### Studies maken
 Maak meerdere versies van je ontwerp (minimaal vier verschillende composities). Bewaar deze studies in je InDesign-document.
 
-### Stap 7: Definitief ontwerp
+### Definitief ontwerp
 Kies één van je studies als definitief ontwerp en werk deze volledig uit.
 
 ## Indienen

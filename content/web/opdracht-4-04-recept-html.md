@@ -21,7 +21,7 @@ In deze opdracht leer je hoe je een HTML-pagina maakt op basis van een online ge
 
 ### Bouw de basis HTML-structuur
 
-- **Gebruik Emmet**: Open `index.html` in je Visual Studio Code en gebruik de Emmet-shortcut `!` om de basisstructuur van een HTML-pagina te genereren.
+- **Gebruik Emmet**: Open `index.html` in je Visual Studio Code en gebruik de Emmet-shortcut `!` (het uitroepteken) om de basisstructuur van een HTML-pagina te genereren.
 - **Pas het `title`-element aan**: In het `<title>`-element in het `<head>`-element, beschrijf je de naam van het gerecht.
 
 ### Structuur van de pagina
