@@ -55,7 +55,7 @@ Maak aan de hand van **Adobe InDesign** een groot document op formaat A2. Verdee
 
 ### Specificaties
 - Elk vak bevat een tekstkader van 12 cm x 12 cm.
-- Gebruik {{< a href="https://www.lipsum.com/" text="Lorem Ipsum" >}} als tekst.
+- Gebruik Tekst > Opvullen met plaatsaanduidingstekst (Type > Fill with Placeholder Text) (of via {{< a href="https://www.lipsum.com/" text="lipsum.com" >}}) als tekst.
 - Experimenteer met lettertypes, corpsgroottes, interlinie, en kleuren.
 - Voeg bijschriften toe onder elk vak met de gebruikte typografische instellingen (lettertype, puntgrootte, interlinie en kleuren).
 
