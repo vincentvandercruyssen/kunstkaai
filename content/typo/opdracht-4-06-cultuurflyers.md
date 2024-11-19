@@ -14,7 +14,7 @@ Maak drie flyers, waarbij alleen de voorzijde (recto) wordt ontworpen. De flyers
 
 ### Vormgeving
 
-1. (Abstracte) achtergrondfoto.
+1. (Abstracte) achtergrondfoto, te vinden via {{< a href="https://unsplash.com/s/photos/abstract-ink" text="unsplash" >}}.
 2. Twee duidelijke kleuren.
 3. Tekst in wit of één van de twee andere kleuren.
 4. Grafische elementen in wit of één van de twee andere kleuren.
@@ -43,14 +43,15 @@ Elke flyer moet de volgende informatie bevatten:
 
 Een duotoonafbeelding is een grijswaardenafbeelding die wordt afgedrukt met twee kleuren. Hiermee vergroot je het toonbereik van een afbeelding.
 
-1. Open een abstracte afbeelding in Photoshop.
-2. Kies twee kleuren met voldoende contrast voor een sterk effect.
-3. Zet de afbeelding om in grijswaarden: ga naar **Afbeelding > Modus > Grijswaarden** (of **Image > Mode > Grayscale**).
-4. Zet de afbeelding om in duotoon: ga naar **Afbeelding > Modus > Duotoon** (of **Image > Mode > Duotone**).
-5. Kies je kleuren: selecteer een donkere en een lichtere kleur.
-6. Pas de duotooncurve aan voor elke kleur: klik op het curvevak naast het kleurvakje en stel de curves in voor de gewenste inktdichtheid.
-7. Bekijk de voorbeelden van de curve-aanpassingen op de volgende pagina.
-8. Bevestig de instellingen en sla het bestand op als **EPS (Encapsulated PostScript)**.
+- Zoek via {{< a href="https://unsplash.com/s/photos/abstract-ink" text="unsplash" >}} naar een afbeelding met de sleutelwoorden abstract en ink. 
+- Download deze afbeelding in de hoogste kwaliteit (Original Size) en open de afbeelding vervolgens in Photoshop.
+- Kies twee kleuren met voldoende contrast voor een sterk effect.
+- Zet de afbeelding om in grijswaarden: ga naar **Afbeelding > Modus > Grijswaarden** (of **Image > Mode > Grayscale**).
+- Zet de afbeelding om in duotoon: ga naar **Afbeelding > Modus > Duotoon** (of **Image > Mode > Duotone**).
+- Kies je kleuren: selecteer een donkere en een lichtere kleur.
+- Pas de duotooncurve aan voor elke kleur: klik op het curvevak naast het kleurvakje en stel de curves in voor de gewenste inktdichtheid.
+- Bekijk de voorbeelden van de curve-aanpassingen op de volgende pagina.
+- Bevestig de instellingen en sla het bestand op als **EPS (Encapsulated PostScript)**.
 
 | | |
 |-|-|
