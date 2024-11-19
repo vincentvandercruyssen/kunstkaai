@@ -24,7 +24,7 @@ In dit derde deel van de opdracht bouw je een receptenboek met meerdere recepten
 
 **Recept 1, 2 en 3**
 
-- Voeg aan elke pagina een `<h2>` toe met de naam van het recept.
+- Voeg aan elke pagina een `<h2>` toe met de naam van het recept, doe dit bovenaan het eerste `section`-element van elke receptpagina.
 - Volg voor de rest dezelfde indeling en opbouw als in deel 1: drie `section`-elementen met beschrijving, ingrediënten, en instructies.
 
 **Hoofdpagina (`index.html`)**

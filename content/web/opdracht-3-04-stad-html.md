@@ -22,7 +22,7 @@ In deze opdracht leer je hoe je een HTML-pagina maakt over een stad in een land 
 ### Bouw de basis HTML-structuur
 
 - **Gebruik Emmet**: Open `index.html` in Visual Studio Code en gebruik de Emmet-shortcut `!` (het uitroepteken) om de basisstructuur van een HTML-pagina te genereren.
-- **Pas het `<title>`-element aan**: Verander in het `<head>`-element het `<title>` naar de naam van het land en de stad (bijvoorbeeld `Nederland - Rotterdam`).
+- **Pas het `<title>`-element aan**: Verander in het `<head>`-element het `<title>`-element naar de naam van het land en de stad (bijvoorbeeld `Nederland - Rotterdam`).
 
 ### Structuur van de pagina
 
