@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/web/opdracht-3-05-stad-css/</loc>
+    <lastmod>2024-11-20T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/web/</loc>
+    <lastmod>2024-11-20T08:00:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/typo/opdracht-5-08-leesbaarheid/</loc>
     <lastmod>2024-11-18T08:00:00-07:00</lastmod>
   </url><url>
@@ -12,9 +18,6 @@
     <lastmod>2024-11-13T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/web/opdracht-3-04-stad-html/</loc>
-    <lastmod>2024-11-13T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/web/</loc>
     <lastmod>2024-11-13T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/digitaal/</loc>

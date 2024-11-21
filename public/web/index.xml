@@ -6,8 +6,15 @@
     <description>Recent content in Webs on Kunstkaai</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Nov 2024 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2024 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Stad (CSS)</title>
+      <link>http://localhost:1313/web/opdracht-3-05-stad-css/</link>
+      <pubDate>Wed, 20 Nov 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-3-05-stad-css/</guid>
+      <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;Deze opdracht leert je hoe je CSS kunt gebruiken om je HTML-pagina over een stad visueel aantrekkelijk te maken. Je oefent het toepassen van basis CSS-selectors en eigenschappen om de opmaak van je website te verbeteren.&lt;/p&gt;&#xA;&lt;h3 id=&#34;organiseer-je-project&#34;&gt;Organiseer je project&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Voeg een CSS-bestand toe&lt;/strong&gt;: Maak binnen dezelfde map als je HTML-bestand een nieuw bestand aan genaamd &lt;code&gt;style.css&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Link CSS aan HTML&lt;/strong&gt;: Voeg in het &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;-element van je &lt;code&gt;index.html&lt;/code&gt; een &lt;code&gt;&amp;lt;link&amp;gt;&lt;/code&gt;-element toe dat verwijst naar het CSS-bestand.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;basisopmaak&#34;&gt;Basisopmaak&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Stel voor de &lt;code&gt;body&lt;/code&gt; een achtergrondkleur en tekstkleur in met &lt;code&gt;background-color&lt;/code&gt; en &lt;code&gt;color&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Gebruik de eigenschap &lt;code&gt;font-family&lt;/code&gt; om een lettertype te kiezen voor de hele pagina.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Bijvoorbeeld:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Opdracht: Stad (HTML)</title>
       <link>http://localhost:1313/web/opdracht-3-04-stad-html/</link>
