@@ -48,6 +48,8 @@ Je kan ook:
 - **Lijsten**: Gebruik `list-style-type` om het type opsommingstekens aan te passen (bijvoorbeeld `circle` of `square`).
 - ...
 
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/ExqqyzZ" height="320" >}}
+
 ## Indienen
 
 - **Bestanden organiseren**: Zorg dat je een correcte mapstructuur hebt: - Een `index.html` in de hoofdmap. - Een `style.css` in de hoofdmap. - Afbeeldingen in de map `images`.
