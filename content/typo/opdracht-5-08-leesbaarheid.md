@@ -53,12 +53,6 @@ Maak aan de hand van **Adobe InDesign** een groot document op formaat A2. Verdee
 3. **Derde rij:** Voorbeelden van **goede teksthiërarchie**.
 4. **Vierde rij:** Voorbeelden van **slechte teksthiërarchie**.
 
-### Specificaties
-- Elk vak bevat een tekstkader van 12 cm x 12 cm.
-- Gebruik Tekst > Opvullen met plaatsaanduidingstekst (Type > Fill with Placeholder Text) (of via {{< a href="https://www.lipsum.com/" text="lipsum.com" >}}) als tekst.
-- Experimenteer met lettertypes, corpsgroottes, interlinie, en kleuren.
-- Voeg bijschriften toe onder elk vak met de gebruikte typografische instellingen (lettertype, puntgrootte, interlinie en kleuren).
-
 ### Documentinstellingen
 
 Gebruik een rasterindeling om consistentie te waarborgen:
@@ -68,6 +62,15 @@ Gebruik een rasterindeling om consistentie te waarborgen:
 | | |
 |-|-|
 |{{< img src="/img/typo/opdracht-5-08-leesbaarheid-nieuw_1.jpg" >}}|{{< img src="/img/typo/opdracht-5-08-leesbaarheid-gidslayout_1.jpg" >}}|
+
+### Specificaties
+- Elk vak bevat een tekstkader van 12 cm x 12 cm.
+- Gebruik Tekst > Opvullen met plaatsaanduidingstekst (Type > Fill with Placeholder Text) (of via {{< a href="https://www.lipsum.com/" text="lipsum.com" >}}) als tekst.
+- Experimenteer met lettertypes, corpsgroottes, interlinie, en kleuren.
+- Voeg bijschriften toe onder elk vak met de gebruikte typografische instellingen (lettertype, puntgrootte, interlinie en kleuren).
+
+| | |
+|-|-|
 |{{< img src="/img/typo/opdracht-5-08-leesbaarheid-vbindeling_1.png" >}}|{{< img src="/img/typo/opdracht-5-08-leesbaarheid-vbindeling_2.png" >}}|
 
 ## Indienen

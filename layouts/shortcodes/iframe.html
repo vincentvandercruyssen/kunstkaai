@@ -1,1 +1,1 @@
-<iframe src="{{ .Get "src" }}" frameborder="0" style="width: 100%;" height="{{ .Get "height" }}"></iframe>
+<iframe src="{{ .Get "src" }}" frameborder="0" style="width: 100%; aspect-ratio: {{ .Get "aspect-ratio" | safeCSS }};" height="{{ .Get "height" }}"></iframe>

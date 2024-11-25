@@ -1,5 +1,6 @@
 {{ $href := .Get "href" }}
 {{ $text := .Get "text" | default $href }}
 {{ $target := .Get "target" | default "_blank" }}
+{{ $p := .Get "p" | default "false" }}
 
-<a href="{{ $href }}" target="{{ $target }}">{{ $text }}</a>
+{{ if eq $p "true" }}<p>{{ end }}<a href="{{ $href }}" target="{{ $target }}">{{ $text }}</a>{{ if eq $p "true" }}</p>{{ end }}

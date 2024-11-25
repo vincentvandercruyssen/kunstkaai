@@ -256,4 +256,16 @@ In het kort, **macrotypografie** draait om de algemene visuele indeling van teks
 Zowel macro- als microtypografie spelen een cruciale rol in het waarborgen van de hiërarchie, ordening en visuele aantrekkingskracht van het eindproduct. Samen zorgen ze voor een evenwichtig en professioneel ogend ontwerp.
 
 ## Bronnen
-- {{< a href="https://looka.com/blog/types-of-fonts/" >}}
+- {{< a href="https://looka.com/blog/types-of-fonts/" text="Types of Fonts: The Ultimate Guide to Fonts Styles | Looka" >}}
+
+- {{< a href="https://www.youtube.com/playlist?list=PLCDS7OiwRmWKfoW0Yh5iiEArNKslilG1N" text="Youtube Playlist: InDesign - Basic" >}}
+
+{{< iframe src="https://www.youtube.com/embed/videoseries?si=mz9_IelLUyH0N2O2&amp;list=PLCDS7OiwRmWKfoW0Yh5iiEArNKslilG1N" aspect-ratio="16/9" >}}
+
+- {{< a href="https://www.youtube.com/playlist?list=PLCDS7OiwRmWJNUhI8wdA13lTwDSLDqmqj" text="Youtube Playlist: InDesign - Advanced" >}}
+
+{{< iframe src="https://www.youtube.com/embed/videoseries?si=R3bo7YUvnrCb66BE&amp;list=PLCDS7OiwRmWJNUhI8wdA13lTwDSLDqmqj" aspect-ratio="16/9" >}}
+
+- {{< a href="https://www.youtube.com/playlist?list=PLCDS7OiwRmWKDx2o8Lpn2uUteMhaKzYro" text="Youtube Playlist: InDesign - Expert" >}}
+
+{{< iframe src="https://www.youtube.com/embed/videoseries?si=y71g2q9Vw09kJH_7&amp;list=PLCDS7OiwRmWKDx2o8Lpn2uUteMhaKzYro" aspect-ratio="16/9" >}}

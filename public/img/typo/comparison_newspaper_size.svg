@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-4 -4 604 604">
+ <title>Comparison of some newspaper sizes</title>
+ <desc>Comparison of some newspaper sizes by CMG Lee. Approximate nominal dimensions in millimeters were obtained from their respective articles. Rectangles are rounded for clarity.</desc>
+ <style type="text/css">
+text { filter:url(#filter_glow); }
+.a   { filter:url(#filter_outline); fill:#000000; opacity:0.25; }
+ </style>
+ <defs>
+  <filter id="filter_glow">
+   <feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
+   <feMorphology operator="dilate" radius="0.1"/>
+   <feColorMatrix type="matrix" values="0,0,0,0,1 0,0,0,0,1 0,0,0,0,1 0,0,0,4,0"/>
+   <feBlend in="SourceGraphic"/>
+   <feBlend in="SourceGraphic"/>
+  </filter>
+  <filter id="filter_outline">
+   <feGaussianBlur stdDeviation="8"/>
+   <feComposite operator="out" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g font-family="Helvetica,Arial,sans-serif" font-size="15" text-anchor="start" stroke="none" stroke-linecap="round" fill="none">
+  <text x="375" y="596" fill="#cc00cc">&#8211;British broadsheet (375&#215;597)</text>
+  <rect width="375" height="597" x="0" y="0" rx="5" ry="5" stroke="#cc00cc"/>
+  <text x="410" y="581" fill="#009900">&#8211;South&#8202;African&#8202;b/s&#8202;(410&#215;578)</text>
+  <rect width="410" height="578" x="0" y="0" rx="5" ry="5" stroke="#009900"/>
+  <text x="305" y="566" fill="#006699">&#8211;Wall Street Journal (305&#215;578)</text>
+  <rect width="305" height="578" x="0" y="0" rx="5" ry="5" stroke="#006699" stroke-width="3" stroke-dasharray="0.1,5"/>
+  <text x="305" y="551" fill="#000099">&#8211;New York Times (305&#215;559)</text>
+  <rect width="305" height="559" x="0" y="0" rx="5" ry="5" stroke="#000099"/>
+  <text x="381" y="536" fill="#0000ff">&#8211;US broadsheet (381&#215;578)</text>
+  <rect width="381" height="578" x="0" y="0" rx="5" ry="5" stroke="#0000ff" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="521" fill="#cc9900">&#8211;Nordisch (400&#215;570)</text>
+  <rect width="400" height="570" x="0" y="0" rx="5" ry="5" stroke="#cc9900"/>
+  <text x="350" y="506" fill="#999900">&#8211;Rhenish (350&#215;520)</text>
+  <rect width="350" height="520" x="0" y="0" rx="5" ry="5" stroke="#999900" stroke-width="3" stroke-dasharray="0.1,5"/>
+  <text x="350" y="491" fill="#990000">&#8211;Ciner Format (350&#215;500)</text>
+  <rect width="350" height="500" x="0" y="0" rx="5" ry="5" stroke="#990000"/>
+  <text x="320" y="470" fill="#cc0000">&#8211;Swiss/Neue Z&#252;rcher Zeitung (320&#215;475)</text>
+  <rect width="320" height="475" x="0" y="0" rx="5" ry="5" stroke="#cc0000"/>
+  <text x="315" y="450" fill="#000000">&#8211;Berliner/midi (315&#215;470)</text>
+  <rect width="315" height="470" x="0" y="0" rx="5" ry="5" stroke="#000000"/>
+  <text x="280" y="430" fill="#cc00cc">&#8211;British tabloid/compact (280&#215;430)</text>
+  <rect width="280" height="430" x="0" y="0" rx="5" ry="5" stroke="#cc00cc" stroke-width="3" stroke-dasharray="0.1,5"/>
+  <text x="280" y="400" fill="#000099">&#8211;Norwegian tabloid (280&#215;400)</text>
+  <rect width="280" height="400" x="0" y="0" rx="5" ry="5" stroke="#000099"/>
+  <text x="260" y="380" fill="#ff0000">&#8211;Canadian tall tab (260&#215;413)</text>
+  <rect width="260" height="413" x="0" y="0" rx="5" ry="5" stroke="#ff0000" stroke-width="3" stroke-dasharray="0.1,5"/>
+  <text x="260" y="360" fill="#ff0000">&#8211;Canadian tabloid (260&#215;368)</text>
+  <rect width="260" height="368" x="0" y="0" rx="5" ry="5" stroke="#ff0000"/>
+  <g fill="#000000">
+   <text x="420" y="300">&#8211;A2 &amp; Australian/NZ</text>
+   <text x="420" y="315">&#160; broadsheet (420&#215;594)</text>
+   <rect class="a" width="420" height="594" x="0" y="0" rx="5" ry="5"/>
+   <text x="353" y="240">&#8211;B3 (353&#215;500)</text>
+   <rect class="a" width="353" height="500" x="0" y="0" rx="5" ry="5"/>
+   <text x="324" y="220">&#8211;C3 (324&#215;458)</text>
+   <rect class="a" width="324" height="458" x="0" y="0" rx="5" ry="5"/>
+   <text x="297" y="200">&#8211;A3 (297&#215;420)</text>
+   <rect class="a" width="297" height="420" x="0" y="0" rx="5" ry="5"/>
+   <text x="250" y="140">&#8211;B4 (250&#215;353)</text>
+   <rect class="a" width="250" height="353" x="0" y="0" rx="5" ry="5"/>
+   <text x="229" y="120">&#8211;C4 (229&#215;324)</text>
+   <rect class="a" width="229" height="324" x="0" y="0" rx="5" ry="5"/>
+   <text x="210" y="100">&#8211;A4 (210&#215;297)</text>
+   <rect class="a" width="210" height="297" x="0" y="0" rx="5" ry="5"/>
+  </g>
+ </g>
+</svg>
