@@ -64,5 +64,12 @@ Maak meerdere versies van je ontwerp (minimaal vier verschillende composities). 
 Kies één van je studies als definitief ontwerp en werk deze volledig uit.
 
 ## Indienen
-- Exporteer je definitieve ontwerp als PDF en noem het: "voornaam_naam-albumcover.PDF".
-- Zip zowel het InDesign-bestand als de PDF en upload beide bestanden in de daarvoor bestemde map.
+- Exporteer je definitieve ontwerp als een enkele pagina naar PDF met de naam: `voornaam_albumcover.pdf`.  
+- Sla je InDesign-bestand op met de naam: `voornaam_albumcover.indd`.  
+- Upload beide bestanden in de juiste map.  
+
+## Puntenverdeling
+
+- **Naamgeving en bestandsbeheer (02)** Correcte naamgeving van bestanden: voornaam_albumcover.pdf (één pagina), voornaam_albumcover.indd.
+- **Formaat en indeling (02)** Gebruik van het formaat 120 x 120 mm, toepassen van een 3x3 raster met hulplijnen.
+- **Ontwerpregels (06)**
