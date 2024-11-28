@@ -6,8 +6,15 @@
     <description>Recent content in Home on Kunstkaai</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Nov 2024 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 27 Nov 2024 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Stadsgids</title>
+      <link>http://localhost:1313/web/opdracht-3-06-stadsgids/</link>
+      <pubDate>Wed, 27 Nov 2024 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-3-06-stadsgids/</guid>
+      <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;In deze opdracht maak je een toeristengids over drie steden in een land naar keuze, behalve België. Je hebt al één pagina over één stad gemaakt. Nu leer je hoe je een project met meerdere pagina’s organiseert. Ook ontdek je hoe je navigatie toevoegt, zodat gebruikers eenvoudig tussen alle pagina’s kunnen klikken. Met CSS zorg je ervoor dat alle pagina’s er netjes en samenhangend uitzien door één stijlbestand te gebruiken.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Opdracht: Masker</title>
       <link>http://localhost:1313/digitaal/opdracht-06-masker/</link>
