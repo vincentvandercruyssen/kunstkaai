@@ -100,9 +100,8 @@ Voeg grafische elementen toe, zoals lijnen, vormen of patronen, om het ontwerp d
 
 ## Indienen
 
-- Exporteer als PDF: "voornaam-cultuurflyers.PDF".
-- Maak een pakket, zip het aangemaakte mapje en upload in de juiste opdracht.
-- Voornaam en opdrachtbenaming zijn telkens aanwezig in ingeleverde bestanden.
+- Maak een pakket (bevat het InDesign-document, de PDF en de drie gebruikte EPS-bestanden). Zip de aangemaakte map en upload deze in de juiste opdracht.  
+- Zorg ervoor dat zowel je voornaam als de opdrachtnaam duidelijk vermeld zijn in de ingeleverde bestanden.
 
 ## Voorbeelden
 
