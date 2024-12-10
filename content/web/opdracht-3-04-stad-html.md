@@ -64,11 +64,11 @@ Daaronder voeg je een `<main>`-element toe met drie verschillende `<section>`-el
 
 ## Puntenverdeling
 
-- **Structuur (03)**: Gezipte map met `index.html` en afbeeldingenmap.
-- **Elementen document (04)**: Correct gebruik van `html`, `head`, aangepaste `title`, en `body`.
-- **Elementen inhoudsverdeling (05)**: Gebruik van `header`, `main`, en `section`.
-- **Elementen inhoudsstroom (07)**: Gebruik van `h1`, `h2`, `h3`, `p`, `img`, `ul` met `li`.
-- **Kenmerken (03)**: Correct gebruik van `src`, `alt`, en `width`.
+- **Structuur (03)** Gezipte map met `index.html` en afbeeldingenmap.
+- **Elementen document (04)** Correct gebruik van `html`, `head`, aangepaste `title`, en `body`.
+- **Elementen inhoudsverdeling (05)** Gebruik van `header`, `main`, en drie `section`-elementen.
+- **Elementen inhoudsstroom (07)** Gebruik van `h1`, `h2`, `h3`, `p`, `img`, `ul` met `li`.
+- **Kenmerken (03)** Correct gebruik van `src`, `alt`, en `width`.
 
 ## Veelvoorkomende fouten
 

@@ -88,8 +88,8 @@ Je levert de volgende bestanden in:
 - **Structuur (05)** `voornaam filmofserie.zip` met `index.html`, `style.css` en map met afbeeldingen.
 - **Elementen document (04)** `html`, `head` met `title`, `link`-element naar CSS-bestand, `body`
 - **Elementen inhoudsverdeling (07)** `header`, `main` met min. vier `section`-elementen, en min. één `id`-kenmerk
-- **CSS Selectors (05)** `body`, `h1` en/of `h2`, `section`, `id`-selector
-- **CSS Properties (05)** `background-color`, `color`, `font-family`, `margin`, `padding`
+- **CSS selectors (05)** `body`, `h1` en/of `h2`, `section`, `id`-selector
+- **CSS eigenschappen (05)** `background-color`, `color`, `font-family`, `margin`, `padding`
 
 ## Veelvoorkomende fouten
 

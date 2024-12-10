@@ -51,10 +51,9 @@ In dit derde deel van de opdracht bouw je een receptenboek met meerdere recepten
 
 ## Puntenverdeling
 
-- **Structuur (05)** correcte map met index.html, recept_1.html, recept_2.html, recept_3.html, en style.css.
-- **Navigatie (06)** werkende links op elke pagina die leiden naar elk recept en terug naar de hoofdpagina.
-- **Samenhang (05)** gelijke header- en linkstijlen op elke pagina.
-- **Inhoud en opmaak (08)** volledige receptopbouw op elke pagina met correcte sectie-indeling, stijlen voor headers, en gebruik van CSS-eigenschappen zoals margin en padding.
+- **Structuur (08)** Correcte zip-map met index.html, recept_1.html, recept_2.html, recept_3.html, style.css en één map met afbeeldingen met duidelijke benamingen.
+- **Header en navigatie (08)** Dezelfde header-vormgeving op elke pagina, werkende links op elke pagina die leiden naar elk recept en terug naar de hoofdpagina.
+- **Inhoud en opmaak (08)** Volledige recepten op elke pagina met een correcte indeling, samenhangende vormgeving en gebruik van de eerder gevraagde CSS-eigenschappen.
 
 ## Veelvoorkomende fouten
 

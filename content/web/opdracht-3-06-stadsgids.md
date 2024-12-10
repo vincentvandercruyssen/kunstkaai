@@ -90,10 +90,10 @@ Lever het zip-bestand in via Google Classroom.
 
 ## Beoordeling
 
-- **Structuur (07)**: Correcte mapstructuur en bestandsnamen.
-- **Navigatie (04)**: Werkende links op alle pagina’s.
-- **Inhoud (04)**: Informatieve teksten en afbeeldingen verwerkt in de gevraagde onderdelen. 
-- **CSS-styling (08)**: Samenhang en toepassing van basiseigenschappen zoals kleur, lettertypes, marges, padding.
+- **Structuur (07)** Correcte mapstructuur en bestandsnamen.
+- **Navigatie (04)** Werkende links op alle pagina’s.
+- **Inhoud (04)** Informatieve teksten en afbeeldingen verwerkt in de gevraagde onderdelen. 
+- **CSS-styling (08)** Samenhang en toepassing van basiseigenschappen zoals kleur, lettertypes, marges, padding.
 
 ## Veelvoorkomende fouten
 
