@@ -72,6 +72,7 @@ Kies één van je studies als definitief ontwerp en werk deze volledig uit.
 
 - **Naamgeving en bestandsbeheer (02)** Correcte naamgeving van bestanden: voornaam_albumcover.pdf (één pagina), voornaam_albumcover.indd.
 - **Formaat en indeling (02)** Gebruik van het formaat 120 x 120 mm, toepassen van een 3x3 raster met hulplijnen.
+- **Inhoud (05)** Artiestennaam, albumnaam, liedjes, platenlabel en medewerkers.
 - **Ontwerpregels (06)** Gebruik van maximaal twee lettertypes of één lettertype met twee gewichten, Beperking tot een duotone kleurenpalet, Hiërarchie en leesbaarheid.
-- **Inventiviteit en typografische technieken (04)** Originele en spannende composities, inclusief experimenteren met rotatie en witruimte, Gebruik van verschillende typografische technieken, zoals tekstkaders en padtekst.
+- **Typografische technieken (04)** Originele en spannende composities, inclusief experimenteren met rotatie en witruimte, Gebruik van verschillende typografische technieken, zoals tekstkaders en padtekst.
 - **Studies en definitief ontwerp (05)** Minimaal vier studies in het InDesign-document, Keuze en uitwerking van een definitief ontwerp.
