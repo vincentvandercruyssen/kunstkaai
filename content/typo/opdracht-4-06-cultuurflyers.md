@@ -108,3 +108,10 @@ Voeg grafische elementen toe, zoals lijnen, vormen of patronen, om het ontwerp d
 | | | |
 |-|-|-|
 |{{< img src="/img/typo/opdracht-4-06-cultuurflyers-llnvb_1.png" >}}|{{< img src="/img/typo/opdracht-4-06-cultuurflyers-llnvb_2.png" >}}|{{< img src="/img/typo/opdracht-4-06-cultuurflyers-llnvb_3.png" >}}|
+
+## Puntenverdeling
+
+- **Naamgeving en bestandsbeheer (09)** Naamgeving van bestanden: voornaam_cultuurflyers.zip (pakket met InDesign-document, PDF en EPS-bestanden), Benaming en correct gebruik van lagen.
+- **Formaat en raster (06)** Gebruik van het juiste formaat (A5), correcte marges (10 mm) en bleed (3 mm), Toepassing van een raster met hulplijnen.
+- **Inhoud (21)** Titel evenement, Drie kernwoorden, Datum in het juiste formaat, Locatie (naam en volledig adres), Tickets en website-informatie, Tijdschema, Logo in vectorformaat.
+- **Vormgeving en ontwerpregels (15)** Aflopende bewerkte achtergrond met een duotoonafbeelding, Juiste keuze van lettertypes passend bij het evenement, Beperking kleurenpalet, Gebruik van tekst en grafische elementen, Visuele samenhang.
