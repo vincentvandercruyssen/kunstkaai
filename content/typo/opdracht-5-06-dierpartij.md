@@ -76,3 +76,10 @@ Bedenk minstens vier programmapunten voor jouw dierenpartij. Verduidelijk elk pr
 - In de zip: "voornaam dierenpartij.INDD" (InDesign werkbestand) 
 - In de zip: "voornaam dierenpartij.PDF" (Portable Document Format) 
 - **Upload je werk** via Google Classroom.
+
+## Puntenverdeling
+
+- **Naamgeving en bestandsbeheer (14/2)** Zip-bestand met indd-bestand, pdf-bestand, gebruikte afbeeldingen (min. 11). 
+- **Bestandsinstellingen (10)** Vier A5-pagina's (naast elkaar, startend bij 1), afloop (3mm), marges (5mm - 10mm) en kolommengrid met tussenruimte. Benaming en correct gebruik van aparte lagen. 
+- **Inhoud (32/2)** Duidelijke keuze diersoort, bijbehorende eigenschappen verwerkt in het partijconcept. Pakkende slogan en zorgvuldige huisstijlkleur(en). Voorpagina met slogan, logo en afbeelding van de partijleider. Middenpagina met minstens vier uitgewerkte programmapunten, elk voorzien van een titel, een korte paragraaf en passende afbeeldingen. De achterkant bevat een kieslijst met minimaal zes kandidaten, aangevuld met foto’s en een herhaling van het logo. De woordenschat is samenhangend, en de titels en tussentitels zijn helder geformuleerd.
+- **Vormgeving en presentatie (14)** Juiste toepassing van het logo. Typografische hiërarchie duidelijk aangebracht (koppen, tussenkopjes, broodtekst). Leesbaarheid en balans tussen tekst en beeld. Passende sfeer, goed kleurgebruik en samenhangende vormgeving. Correcte toepassing van Character Styles (bijv. vet voor kernwoorden) en Paragraph Styles (gebruik van "Space after" i.p.v. extra witregels). Goede uitlijning, samenhangende marges, en opmaak. 

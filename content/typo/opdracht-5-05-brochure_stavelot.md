@@ -50,3 +50,11 @@ Zorg voor een duidelijke typografische hiërarchie en werk met lagen voor de ver
 Gebruik de volgende naamgeving bij het indienen via Google Classroom:
 - Ontwerp in pakket gezipt: `voornaam_achternaam-stavelot.zip` (InDesign-bestand + afbeeldingen/lettertypes).
 - Exporteer naar PDF als spread, inclusief bleed en snijlijnen, en noem het bestand: `voornaam_achternaam-stavelot.pdf`.
+
+## Puntenverdeling
+
+- **Naamgeving en bestandsbeheer (10)** Zip-bestand met indd-bestand, pdf-bestand als spread, logo's en afbeeldingen. 
+- **Bestandsinstellingen (04)** Dubbele pagina, afloop (3mm), marges (10mm - 20mm) en kolommengrid met tussenruimte.
+- **Lagen (02)** Benaming en correct gebruik van aparte lagen. 
+- **Inhoud (10)** Beschrijving domein, omliggende attracties, minimaal drie activiteiten, doelgroepgerichte informatie, contactgegevens. Duidelijke woordenschat met titels en tussentitels.
+- **Vormgeving en presentatie (12)** Typografische hiërarchie, leesbaarheid, balans tussen tekst en beeld, sfeer, gebruik van foto's, afwerking (zoals uitlijning en samenhang). Correct gebruik van logo’s, kleurvlakken, plaatsing van contactgegevens (telefoon, adres, email/website), kaartje.

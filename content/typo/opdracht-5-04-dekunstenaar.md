@@ -161,8 +161,8 @@ Onderstaande lijst biedt een selectie van kunstenaars die nauw verbonden zijn me
 
 ## Puntenverdeling
 
-- **Naamgeving bestanden en afmetingen (04)** Dubbele A4, 2 maal voornaam en opdrachtbenaming, zip-bestand met indd-bestand, pdf-bestand als spread. 
-- **Bestandsinstellingen (03)** Bleed/afloop, marges en kolommengrid.
+- **Naamgeving en bestandsbeheer (09)** Zip-bestand met indd-bestand, pdf-bestand als spread, minimaal zes afbeeldingen. 
+- **Bestandsinstellingen (04)** Dubbele A4, afloop (3mm), marges (10mm - 20mm) en kolommengrid met tussenruimte.
 - **Lagen (02)** Aparte lagen voor tekst en afbeeldingen. 
-- **Tekst (02)** Gekozen kunstenaar, min. 500 woorden.
-- **Vormgeving en presentatie (10)** Teksthiërarchie, leesbaarheid, sfeer, afbeeldingen, afwerking en uitlijning.
+- **Inhoud (08)** Gekozen kunstenaar, min. 500 woorden, Titels en tussentitels.
+- **Vormgeving en presentatie (10)** Teksthiërarchie, leesbaarheid, sfeer, afbeeldingen (min. één aflopend), afwerking en uitlijning.
