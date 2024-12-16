@@ -50,3 +50,10 @@ Gebruik twee opgegeven mengkleuren en gradaties van één kleur:
 
 - "voornaam jazzfestival.AI" (Illustrator werkbestand) en "voornaam jazzfestival.PDF" (Portable Document Format).
 - **Upload je werk** via Google Classroom.
+
+## Puntenverdeling
+
+- **Naamgeving en bestandsbeheer (02)** Een correct benoemd ai-bestand en pdf-bestand.
+- **Bestandsinstellingen (05)** Minimaal drie tekengebieden 14 cm x 17 cm, 3 mm afloop, CMYK. 
+- **Inhoud (03)** “Jazz” en “Seizoen 2024-2025”.
+- **Typografie, kleur en compositie (10)** Enkel typografie, sans-serif, letters horizontaal en verticaal, overlapping, twee mengkleuren (gradatie, witte accenten), heldere compositie, netheid, minimaal drie duidelijk verschillende ontwerpen.  

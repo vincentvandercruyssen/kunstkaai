@@ -36,7 +36,7 @@ Kijk en zoek allereerst naar voorbeelden van voorpagina's van papieren kranten.
 - **Logo**: Ontwerp een logo met de naam van jouw krant. 
 - **Datum**: Vermeld de dag waarop je de inhoud verzamelt (vaak boven of onder het logo). 
 - **Eye catcher boven of onder het logo**: Voeg een opvallend element toe met een quote, een naam, en een foto. 
-- **Hoofdartikel**: Eén groot artikel met een prominente kop en inleiding, minstens verdeeld in drie paragrafen gescheiden met tussentitels. 
+- **Hoofdartikel**: Eén groot artikel met een prominente kop en inleiding, afbeelding, tekst minstens verdeeld in drie paragrafen gescheiden met tussentitels. 
 - **Minimaal twee kleinere artikelen**: Elk met een eigen kop, korte tekst en een afbeelding. 
 - **Advertentie**: Ontwerp een advertentie voor een culturele of toeristische activiteit. 
 - **Redactie-informatie**: Voeg contactinformatie, een redactieadres en eventueel een slogan toe onderaan de pagina. 
@@ -111,3 +111,11 @@ Een gecomprimeerd pakket (`voornaam_voorkrant.zip`) met:
 **Upload je werk via Google Classroom.**
 
 {{< svg src="/img/typo/comparison_newspaper_size.svg" >}}
+
+## Puntenverdeling
+
+- **Naamgeving en bestandsbeheer (06)** Zip-bestand met InDesign-bestand, PDF-bestand en gebruikte afbeeldingen (minimaal drie). Correcte naamgeving van bestanden en geordende mappenstructuur.
+- **Bestandsinstellingen (08)** Document 280 mm x 400 mm, vijf kolommen en 4 mm kolomafstand, 10 mm marges, 3 mm afloop. Juiste gebruik van lagen voor verschillende elementen (tekst, afbeeldingen, achtergrond).
+- **Inhoud (16)** Volledigheid en samenhang van alle gevraagde elementen: Logo en krantnaam, Datum, Eye catcher, Hoofdartikel met titel, inleiding, afbeelding en minimaal drie paragrafen en tussentitels, Twee kleinere artikelen met afbeeldingen en korte teksten, Advertentie voor culturele/toeristische activiteit, Redactie-informatie met contactgegevens.
+- **Typografie (10)** Correct gebruik van typografische hiërarchie: Juiste grootte, stijl en uitlijning van koppen, teksten en bijschriften, Duidelijk onderscheid tussen koppen, inleidingen en tekst, Regelafstand consistent en uitgevulde tekst (niet verplicht).
+- **Vormgeving en stijlen (18)** Gebruik van samenhangende opmaak: Tekstkaders verbonden voor samenhangende tekst (3), Consequent gebruik van Alineastijlen voor alle teksten (minimaal zes), Gebruik Ruimte na, Gebruik van Tekenstijlen voor afwijkende tekstdetails (minimaal één), Leesbaarheid, typografische hiërarchie en balans tussen tekst en beeld, Passende sfeer en samenhangende vormgeving, Uitlijning, Gebruik van visuele details zoals lijnen en kaders.
