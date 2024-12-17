@@ -47,7 +47,7 @@ Met deze informatie maak je een database aan in Excel of Google Sheets. Uiteinde
 
 {{< img src="/img/data/opdracht-01-datamerging-brochure-vb_1.png" width="1200" >}}
 
-### Productgegevens verzamelen
+## Deel 1: Productgegevens verzamelen
 
 1. **Kies een product** om in de brochure te presenteren (bijvoorbeeld auto's, telefoons, kleding).
 2. **Verzamel informatie** over minimaal vijftien producten binnen deze categorie (productnaam, beschrijving, prijs, afbeelding, logo/tweede afbeelding en drie andere kenmerken).
@@ -56,13 +56,21 @@ Met deze informatie maak je een database aan in Excel of Google Sheets. Uiteinde
 {{< img src="/img/data/opdracht-01-datamerging-sheet-1.png" width="1400" >}}
 {{< img src="/img/data/opdracht-01-datamerging-folder-1.png" width="360" >}}
 
-#### Indienen
+### Indienen
 
 - Rekenblad als koppeling (Google Spreadsheet of Microsoft Excel) of xlsx-bestand.
 - Zip-bestand met al je afbeeldingen.
 - Zorg dat je voornaam en opdrachtbenaming aanwezig is in de bestandsbenaming. 
 
-### Template Ontwerp in InDesign
+### Puntenverdeling
+
+- Naamgeving bestanden. (02)
+- Blad: Drie gekregen kenmerken. (48)
+- Blad: Drie eigen kenmerken. (48)
+- Blad: Twee afbeeldingen. (32)
+- Zip: Dertig afbeeldingen. (30)
+
+## Deel 2: Sjabloonontwerp
 
 Ontwerp een document waarin **InDesign** automatisch 15 producten op één blad plaatst. Hierbij moet je goed nadenken over de indeling en rekening houden met de afmetingen van de productkaarten.
 
@@ -78,12 +86,18 @@ Ontwerp een document waarin **InDesign** automatisch 15 producten op één blad 
 {{< img src="/img/data/opdracht-01-datamerging-voorbeeld_product-1.png" width="240" >}}
 {{< img src="/img/data/opdracht-01-datamerging-voorbeeld_product-2.png" width="1440" >}}
 
-#### Indienen
+### Indienen
 
 - Indesign document (indd-bestand).
 - Zorg dat je voornaam en opdrachtbenaming aanwezig is in de bestandsbenaming. 
 
-### Voorbereiden, koppelen en aanmaken
+### Puntenverdeling
+
+- Naamgeving en bestandsbeheer. (01)
+- Bestandsinstellingen. (04)
+- Inhoud. (08)
+
+## Deel 3: Koppelen en aanmaken
 
 Bereid je databestand zorgvuldig voor en koppel het aan je InDesign-sjabloon via Data Merge. Importeer je gegevens, voeg velden toe aan je ontwerp en genereer automatisch je productbrochure. Controleer het eindresultaat en verbeter indien nodig je sjabloon!
 
@@ -96,7 +110,7 @@ Bereid je databestand zorgvuldig voor en koppel het aan je InDesign-sjabloon via
 7. **Corrigeer eventuele fouten** in het sjabloon, de gegevens of de koppelingen.
 8. Exporteer de brochure als PDF. Zorg ervoor dat alle afbeeldingen een hoge resolutie hebben (minimaal 300 DPI voor print) en dat ze in een geschikt formaat staan, zoals JPEG of PNG.
 
-#### Indienen
+### Indienen
 
 Dien één zip-bestand in (met je voornaam en de opdrachtbenaming in de bestandsnaam) dat de volgende onderdelen bevat:
 
@@ -108,6 +122,15 @@ Dien één zip-bestand in (met je voornaam en de opdrachtbenaming in de bestands
 
 Geen onnodige bestanden toevoegen die onduidelijkheid scheppen. Zorg ervoor dat alle bestanden correct benoemd en georganiseerd zijn in de zip-map, zodat de koppelingen in InDesign behouden blijven en de bestanden zonder fouten kunnen geopend worden.
 
+### Puntenverdeling
+
+- Een zip-bestand met voornaam en opdrachtbenaming. (02)
+- InDesign-sjabloondocument met werkende gekoppelde gegevens, zonder overlopende tekstkaders. (08)
+- Geëxporteerd CSV-bestand met zes kenmerken en twee afbeeldingen, vijftien producten. (04)
+- InDesign-document met gegenereerde gegevens en PDF-bestand met hoge resolutie-afbeeldingen. (02)
+- Correcte map met de bijbehorende afbeeldingen. (02)
+- Alle bestanden correct benoemd en georganiseerd. Geen onnodige bestanden en/of mappen toegevoegd die onduidelijkheid scheppen. (02)
+
 ## Leerdoelen en beoordeling
 
 - Gegevens verzamelen en beheren in Excel of Google Sheets.
@@ -116,12 +139,7 @@ Geen onnodige bestanden toevoegen die onduidelijkheid scheppen. Zorg ervoor dat 
 - Inzicht krijgen in de voordelen en beperkingen van data-gedreven ontwerpen.
 - Correct gebruik van Data Merge in InDesign.
 - Netheid en consistentie van het sjabloon.
+- Velden correct koppelen en gegevens correct weergegeven.
 - Compleetheid van de productinformatie en correcte koppeling van afbeeldingen.
+- Afbeeldingen van hoge kwaliteit en correct ingeladen.
 - Creativiteit en presentatie van de brochure.
-
-### Beoordelingscriteria
-
-- **Ontwerp**: Is de lay-out van de brochure consistent en professioneel?
-- **Data Merge**: Zijn de velden correct gekoppeld en worden alle gegevens correct weergegeven?
-- **Afbeeldingen**: Zijn de afbeeldingen van hoge kwaliteit en goed ingeladen in de brochure?
-- **Creativiteit**: Is de brochure aantrekkelijk en creatief gepresenteerd?

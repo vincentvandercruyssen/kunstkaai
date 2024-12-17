@@ -81,3 +81,11 @@ Gebruik een rasterindeling om consistentie te waarborgen:
 - **Upload je werk via Google Classroom.**
 
 {{< img src="/img/typo/opdracht-5-08-leesbaarheid-leesbaarheid_1.png" >}}
+
+## Puntenverdeling
+
+- **Naamgeving en bestandsbeheer (04)** Zip-bestand met InDesign-bestand, PDF-bestand en Document fonts. Correcte naamgeving van bestanden en geordende mappenstructuur.
+- **Bestandsinstellingen (04)** Document formaat A2, Bladverdeling 4 rijen en 3 kolommen met 10 mm tussenruimte. 
+- **Bijschriften (02)** Toegevoegde bijschriften onder elk vak.
+- **Voorbeelden goede leesbaarheid en teksthiërarchie. (08)** 
+- **Voorbeelden slechte leesbaarheid en teksthiërarchie. (02)** 
