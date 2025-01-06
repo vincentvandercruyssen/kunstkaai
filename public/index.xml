@@ -13,7 +13,7 @@
       <link>http://localhost:1313/web/opdracht-4-07-mijnmuseum/</link>
       <pubDate>Sun, 05 Jan 2025 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/opdracht-4-07-mijnmuseum/</guid>
-      <description>Opgave In deze opdracht maak je een website genaamd Mijn museum, waarin je drie persoonlijke thema&amp;rsquo;s tentoonstelt. Elk thema of object krijgt een eigen pagina met beschrijvingen, media en een galerij.&#xA;Je herhaalt wat je geleerd hebt over HTML, CSS, navigatie en structuur, terwijl je nieuwe moderne layouttechnieken toepast. Succes met het bouwen van jouw digitale museum!&#xA;Voorbereiding Maak een nieuwe map aan op je computer, genaamd voornaam museum. Open deze map in Visual Studio Code: Klik in VSC op File &amp;gt; Open Folder en selecteer jouw map.</description>
+      <description>Opgave In deze opdracht maak je een website genaamd Mijn museum, waarin je drie persoonlijke thema&amp;rsquo;s (kunstwerken, technologie, historische items, muziek, films, favoriete boeken,&amp;hellip;) tentoonstelt. Elk thema of object krijgt een eigen pagina met beschrijvingen, media en een galerij.&#xA;Elke pagina bevat informatie over één object of thema, en alle pagina&amp;rsquo;s zijn gekoppeld via dezelfde navigatiebalk.&#xA;Je herhaalt wat je geleerd hebt over HTML, CSS, navigatie en structuur, terwijl je nieuwe moderne layouttechnieken toepast.</description>
     </item>
     <item>
       <title>Opdracht: Productcatalogus</title>
