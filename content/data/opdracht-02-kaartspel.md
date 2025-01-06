@@ -4,13 +4,13 @@ date = 2024-08-30T08:00:00-07:00
 draft = false
 +++
 
-Je gaat een uniek kaartspel ontwikkelen met **Adobe InDesign** en data merge. Het project bestaat uit twee delen: eerst maak je een **Google Spreadsheet** met alle kaartgegevens, daarna een **InDesign-document** waarin deze data automatisch wordt verwerkt. Je leert werken met nauwkeurige documentinstellingen, lagen, rasters en het effectief gebruik van tekstkaders.
+Je gaat een kaartspel ontwikkelen met **Adobe InDesign** en data merge. Het project bestaat uit twee delen: eerst maak je een **Google Spreadsheet** met alle kaartgegevens, daarna een **InDesign-document** waarin deze gegevens automatisch worden verwerkt. Je leert werken met nauwkeurige documentinstellingen, lagen, rasters en het effectief gebruik van tekstkaders.
 
-Het eindresultaat wordt een volledig speelbaar kaartspel met 18 unieke karakters, elk met eigen kenmerken en effecten.
+Het eindresultaat wordt een volledig speelbaar kaartspel met 18 unieke personages, elk met eigen kenmerken en effecten.
 
 ## Deel 1
 
-In dit eerste deel ga je aan de slag met het voorbereiden van de data voor je kaartspel. Je maakt een gestructureerde Google Spreadsheet waarin je alle informatie van de kaarten netjes organiseert - van de namen en types tot de statistieken en effecten. Deze voorbereiding is cruciaal voor een vlotte verwerking in InDesign later. Je leert ook meteen hoe je bestanden en mappen overzichtelijk kunt structureren.
+In dit eerste deel ga je aan de slag met het voorbereiden van de gegevens voor je kaartspel. Je maakt een gestructureerde Google Spreadsheet waarin je alle informatie van de kaarten netjes organiseert - van de namen en types tot de statistieken en effecten. Deze voorbereiding is cruciaal voor een vlotte verwerking later binnen InDesign. Je leert ook meteen hoe je bestanden en mappen overzichtelijk kunt structureren.
 
 ### Mapstructuur
 
@@ -18,6 +18,8 @@ Maak een duidelijke mapstructuur, een projectmap in je map voor Datamanagement g
 
 - InDesign-bestand en CSV-bestand.
 - Een map genaamd **Links** met alle benodigde PDF-bestanden (voorkant, kost, aanval, verdediging), afbeeldingen personages, PSD-bestand achterkant.
+
+{{< a href="/zip/Kaartspel-Links.zip" text="Hier vind je een link naar het zip-bestand met de benodigdheden. " >}} Hierin vind je: illustraties van de personages, Voorkant.ai (de voorkant en symbolen zul je hieruit exporteren voor je ontwerp in InDesign) en Achterkant.psd.
 
 {{< img src="/img/data/opdracht-02-kaartspel-finder_links.png" width="400" >}}
 
@@ -32,11 +34,17 @@ Je hebt 12 kolommen nodig:
 - Waardekolommen: Kost, Aanval, Verdediging
 - Afbeeldingskolommen (met `'@`): '@Illustratie, '@Kost symbool, '@Aanval symbool, '@Verdediging symbool, '@Kaart Voorkant, '@Kaart Achterkant
 
-De kolommen met `'@` vooraan zijn kolommen met afbeeldingen. Elke speelkaart heeft een unieke illustratie. Niet alle speelkaarten hebben een kost of een aanval, laat de cellen voor de tekst en afbeeldingen in dit geval leeg. De voorkant en de symbolen zullen PDF-bestanden zijn. De achterkant is een PSD-bestand. Voor -en achterkant zijn voor alle kaarten dezelfde. 
+De kolommen met `'@` vooraan zijn kolommen met afbeeldingen. Elke speelkaart heeft een unieke illustratie (bv. `Personage.png`). 
 
-Vergeet niet voor elke bestandsnaam `"Links/"` toe te voegen, in deze submap zullen namelijk al je afbeeldingen zitten. Let goed op bestandstype. 
+De symbolen die op de kaarten achter Kost, Aanval en Verdediging afgebeeld staan noemen respectievelijk: `Kost.pdf`, `Aanval.pdf` en `Verdediging.pdf`. Niet alle speelkaarten hebben een kost of een aanval, laat de cellen voor de tekst en afbeeldingen in dit geval leeg. 
 
-{{< img src="/img/data/opdracht-02-kaartspel-sheets_ingevuld.png" width="1200" >}}
+De Voorkant noemt `Voorkant.pdf`. De achterkant is een PSD-bestand genaamd `Achterkant.psd`. Voor -en achterkant zijn voor alle kaarten dezelfde. 
+
+Vergeet niet voor elke bestandsnaam `"Links/"` toe te voegen, in deze submap zullen namelijk al je afbeeldingen zitten. Let goed op de bestandstypes. 
+
+{{< img src="/img/data/opdracht-02-kaartspel-sheets_ingevuld.png" width="1400" >}}
+
+Hieronder staan alle tekstgegevens van de gevraagde personages/kaarten:
 
 {{< table_layoutfixed >}}
 | | |
@@ -50,8 +58,6 @@ Vergeet niet voor elke bestandsnaam `"Links/"` toe te voegen, in deze submap zul
 | **Magnus** (Soldaat) {{< br >}} Kost: 7, Aanval: 4, Verdediging: 5 {{< br >}} Effect: Als er 2 andere geallieerde soldaten in het spel zijn, krijg je +3 Aanval. | **Nilus** (Soldaat) {{< br >}} Kost: 5, Aanval: 6, Verdediging: 2 {{< br >}} Effect: Wanneer gespeeld, vernietig een vijandige kaart met een kost van 3 of lager. |
 | **Russ** (Soldaat) {{< br >}} Kost: 2, Aanval: 3, Verdediging: 1 {{< br >}} Effect: Wanneer vernietigd, breng 2 Schade toe aan de kaart die hem elimineerde. | **Serj** (Soldaat) {{< br >}} Kost: 5, Aanval: 3, Verdediging: 5 {{< br >}} Effect: Kan een vijandige kaart blokkeren van aanvallen in de volgende beurt. |
 | **Tim** (Soldaat) {{< br >}} Kost: 4, Aanval: 4, Verdediging: 3 {{< br >}} Effect: Wanneer gespeeld, krijgt een andere geallieerde kaart +1 Aanval tot de volgende beurt. | **Smith** (Wetenschapper) {{< br >}} Kost: 2, Aanval: Geen, Verdediging: 2 {{< br >}} Effect: +1 Verdediging voor alle geallieerden. |
-
-- Download de spreadsheet als CSV en plaats het bestand in je map `Voornaam Kaartspel`.
 
 ### Indienen
 
@@ -70,6 +76,8 @@ Lever de link in van je Google Sheets.
 ## Deel 2
 
 Nu je data klaarstaat, duiken we in het ontwerp van je kaartspel met Adobe InDesign. Je gaat een professioneel document opzetten met de juiste specificaties voor speelkaarten. Met behulp van lagen, rasters en data merge ga je alle kaartinformatie automatisch in een strak design gieten. Het resultaat wordt een speelklaar kaartspel met een consistente uitstraling.
+
+- Download de spreadsheet als CSV en plaats het bestand in je map `Voornaam Kaartspel`.
 
 ### InDesign-document aanmaken
 
