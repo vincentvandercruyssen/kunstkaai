@@ -1,4 +1,4 @@
-{{ $href := .Get "href" | relURL }}
+{{ $href := .Get "href" }}
 {{ $text := .Get "text" | default $href }}
 {{ $target := .Get "target" | default "_blank" }}
 {{ $p := .Get "p" | default "false" }}
