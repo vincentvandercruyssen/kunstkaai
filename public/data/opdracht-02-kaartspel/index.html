@@ -318,7 +318,7 @@ Datamanagement
 Datamanagement
  <br> Opdracht: Kaartspel</h1>
 
-<p>Je gaat een kaartspel ontwikkelen met <strong>Adobe InDesign</strong> en data merge. Het project bestaat uit twee delen: eerst maak je een <strong>Google Spreadsheet</strong> met alle kaartgegevens, daarna een <strong>InDesign-document</strong> waarin deze gegevens automatisch worden verwerkt. Je leert werken met nauwkeurige documentinstellingen, lagen, rasters en het effectief gebruik van tekstkaders.</p>
+<p>Je gaat een kaartspel ontwikkelen met <strong>Adobe InDesign</strong> en data merge. Het project bestaat uit twee delen: eerst maak je een <strong>Google Spreadsheet</strong> met alle kaartgegevens, daarna een <strong>InDesign-document</strong> waarin deze gegevens automatisch worden verwerkt. Je leert werken met verschillende bestanden, bestandspaden, nauwkeurige documentinstellingen, lagen, rasters en het effectief gebruik van tekstkaders.</p>
 <p>Het eindresultaat wordt een volledig speelbaar kaartspel met 18 unieke personages, elk met eigen kenmerken en effecten.</p>
 <h2 id="deel-1">Deel 1</h2>
 <p>In dit eerste deel ga je aan de slag met het voorbereiden van de gegevens voor je kaartspel. Je maakt een gestructureerde Google Spreadsheet waarin je alle informatie van de kaarten netjes organiseert - van de namen en types tot de statistieken en effecten. Deze voorbereiding is cruciaal voor een vlotte verwerking later binnen InDesign. Je leert ook meteen hoe je bestanden en mappen overzichtelijk kunt structureren.</p>
@@ -360,10 +360,10 @@ Datamanagement
 <ul>
 <li>Tekstkolommen: Benaming, Type, Effect</li>
 <li>Waardekolommen: Kost, Aanval, Verdediging</li>
-<li>Afbeeldingskolommen (met <code>'@</code>): &lsquo;@Illustratie, &lsquo;@Kost symbool, &lsquo;@Aanval symbool, &lsquo;@Verdediging symbool, &lsquo;@Kaart Voorkant, &lsquo;@Kaart Achterkant</li>
+<li>Afbeeldingskolommen (met vooraan <code>'@</code>): &lsquo;@Illustratie, &lsquo;@Kost symbool, &lsquo;@Aanval symbool, &lsquo;@Verdediging symbool, &lsquo;@Kaart Voorkant, &lsquo;@Kaart Achterkant</li>
 </ul>
-<p>De kolommen met <code>'@</code> vooraan zijn kolommen met afbeeldingen. Elke speelkaart heeft een unieke illustratie (bv. <code>Personage.png</code>).</p>
-<p>De symbolen die op de kaarten achter Kost, Aanval en Verdediging afgebeeld staan noemen respectievelijk: <code>Kost.pdf</code>, <code>Aanval.pdf</code> en <code>Verdediging.pdf</code>. Niet alle speelkaarten hebben een kost of een aanval, laat de cellen voor de tekst en afbeeldingen in dit geval leeg.</p>
+<p>De kolommen met <code>'@</code> vooraan zijn kolommen met afbeeldingen, dit symbool gebruikt InDesign om te weten dat de gegevens in deze kolom geen tekst zijn. Elke speelkaart heeft een unieke illustratie (bv. <code>Personage.png</code>).</p>
+<p>De symbolen op de kaarten achter Kost, Aanval en Verdediging worden respectievelijk aangeduid als: <code>Kost.pdf</code>, <code>Aanval.pdf</code> en <code>Verdediging.pdf</code>. Voor speelkaarten zonder kost of aanval laat je de cellen voor de bijbehorende tekst en afbeeldingen leeg.</p>
 <p>De Voorkant noemt <code>Voorkant.pdf</code>. De achterkant is een PSD-bestand genaamd <code>Achterkant.psd</code>. Voor -en achterkant zijn voor alle kaarten dezelfde.</p>
 <p>Vergeet niet voor elke bestandsnaam <code>&quot;Links/&quot;</code> toe te voegen, in deze submap zullen namelijk al je afbeeldingen zitten. Let goed op de bestandstypes.</p>
 
@@ -378,6 +378,7 @@ Datamanagement
   <img src="http://localhost:1313/img/data/opdracht-02-kaartspel-sheets_ingevuld_hu4381880451b3086eefb26d5b2abdf7a6_127695_1400x0_resize_q90_h2_lanczos_3.webp" alt="opdracht-02-kaartspel-sheets_ingevuld" loading="lazy" >
   
 
+<h4 id="lijst-kaarten">Lijst kaarten</h4>
 <p>Hieronder staan alle tekstgegevens van de gevraagde personages/kaarten:</p>
 <div class="table_layoutfixed"></div>
 <table>
@@ -426,6 +427,34 @@ Datamanagement
 </tr>
 </tbody>
 </table>
+<h4 id="vastzetten-rij-en-kolom">Vastzetten rij en kolom</h4>
+<p>Zet je eerste rij en eerste kolom vast. Dit maakt het gemakkelijker om gegevens overzichtelijk te houden terwijl je door de rest van het document navigeert.</p>
+
+
+
+ 
+ 
+
+
+
+
+  <img src="http://localhost:1313/img/data/opdracht-02-kaartspel-sheets_vastzetten1_hu05ea36cc4d1f05c627e072ea0455c1ae_188813_1200x0_resize_q90_h2_lanczos_3.webp" alt="opdracht-02-kaartspel-sheets_vastzetten1" loading="lazy" >
+  
+
+<h4 id="afwisselende-kleuren">Afwisselende kleuren</h4>
+<p>Ga naar Opmaak en selecteer Afwisselende kleuren om je tabel overzichtelijker te maken. Hiermee worden rijen automatisch in verschillende kleuren weergegeven, wat het lezen en interpreteren van gegevens eenvoudiger maakt.</p>
+
+
+
+ 
+ 
+
+
+
+
+  <img src="http://localhost:1313/img/data/opdracht-02-kaartspel-sheets_kleuren1_hu4588f24c715a5e1c53eba190715e73d1_397234_1200x0_resize_q90_h2_lanczos_3.webp" alt="opdracht-02-kaartspel-sheets_kleuren1" loading="lazy" >
+  
+
 <h3 id="indienen">Indienen</h3>
 <p>Lever de link in van je Google Sheets.</p>
 <table>
@@ -469,6 +498,7 @@ Datamanagement
 <li>Naamgeving bestand. (02)</li>
 <li>12 Kolommen: Zes voor tekst, zes voor afbeeldingen. (06)</li>
 <li>Correct ingegeven gegevens voor 18 verschillende kaarten/personages. (18)</li>
+<li>Vastzetten rij en kolom, afwisselende kleuren. (02)</li>
 </ul>
 <h2 id="deel-2">Deel 2</h2>
 <p>Nu je data klaarstaat, duiken we in het ontwerp van je kaartspel met Adobe InDesign. Je gaat een professioneel document opzetten met de juiste specificaties voor speelkaarten. Met behulp van lagen, rasters en data merge ga je alle kaartinformatie automatisch in een strak design gieten. Het resultaat wordt een speelklaar kaartspel met een consistente uitstraling.</p>

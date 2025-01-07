@@ -4,7 +4,7 @@ date = 2024-08-30T08:00:00-07:00
 draft = false
 +++
 
-Je gaat een kaartspel ontwikkelen met **Adobe InDesign** en data merge. Het project bestaat uit twee delen: eerst maak je een **Google Spreadsheet** met alle kaartgegevens, daarna een **InDesign-document** waarin deze gegevens automatisch worden verwerkt. Je leert werken met nauwkeurige documentinstellingen, lagen, rasters en het effectief gebruik van tekstkaders.
+Je gaat een kaartspel ontwikkelen met **Adobe InDesign** en data merge. Het project bestaat uit twee delen: eerst maak je een **Google Spreadsheet** met alle kaartgegevens, daarna een **InDesign-document** waarin deze gegevens automatisch worden verwerkt. Je leert werken met verschillende bestanden, bestandspaden, nauwkeurige documentinstellingen, lagen, rasters en het effectief gebruik van tekstkaders.
 
 Het eindresultaat wordt een volledig speelbaar kaartspel met 18 unieke personages, elk met eigen kenmerken en effecten.
 
@@ -32,17 +32,19 @@ Maar eerst...
 Je hebt 12 kolommen nodig:
 - Tekstkolommen: Benaming, Type, Effect
 - Waardekolommen: Kost, Aanval, Verdediging
-- Afbeeldingskolommen (met `'@`): '@Illustratie, '@Kost symbool, '@Aanval symbool, '@Verdediging symbool, '@Kaart Voorkant, '@Kaart Achterkant
+- Afbeeldingskolommen (met vooraan `'@`): '@Illustratie, '@Kost symbool, '@Aanval symbool, '@Verdediging symbool, '@Kaart Voorkant, '@Kaart Achterkant
 
-De kolommen met `'@` vooraan zijn kolommen met afbeeldingen. Elke speelkaart heeft een unieke illustratie (bv. `Personage.png`). 
+De kolommen met `'@` vooraan zijn kolommen met afbeeldingen, dit symbool gebruikt InDesign om te weten dat de gegevens in deze kolom geen tekst zijn. Elke speelkaart heeft een unieke illustratie (bv. `Personage.png`). 
 
-De symbolen die op de kaarten achter Kost, Aanval en Verdediging afgebeeld staan noemen respectievelijk: `Kost.pdf`, `Aanval.pdf` en `Verdediging.pdf`. Niet alle speelkaarten hebben een kost of een aanval, laat de cellen voor de tekst en afbeeldingen in dit geval leeg. 
+De symbolen op de kaarten achter Kost, Aanval en Verdediging worden respectievelijk aangeduid als: `Kost.pdf`, `Aanval.pdf` en `Verdediging.pdf`. Voor speelkaarten zonder kost of aanval laat je de cellen voor de bijbehorende tekst en afbeeldingen leeg. 
 
 De Voorkant noemt `Voorkant.pdf`. De achterkant is een PSD-bestand genaamd `Achterkant.psd`. Voor -en achterkant zijn voor alle kaarten dezelfde. 
 
 Vergeet niet voor elke bestandsnaam `"Links/"` toe te voegen, in deze submap zullen namelijk al je afbeeldingen zitten. Let goed op de bestandstypes. 
 
 {{< img src="/img/data/opdracht-02-kaartspel-sheets_ingevuld.png" width="1400" >}}
+
+#### Lijst kaarten
 
 Hieronder staan alle tekstgegevens van de gevraagde personages/kaarten:
 
@@ -59,6 +61,18 @@ Hieronder staan alle tekstgegevens van de gevraagde personages/kaarten:
 | **Russ** (Soldaat) {{< br >}} Kost: 2, Aanval: 3, Verdediging: 1 {{< br >}} Effect: Wanneer vernietigd, breng 2 Schade toe aan de kaart die hem elimineerde. | **Serj** (Soldaat) {{< br >}} Kost: 5, Aanval: 3, Verdediging: 5 {{< br >}} Effect: Kan een vijandige kaart blokkeren van aanvallen in de volgende beurt. |
 | **Tim** (Soldaat) {{< br >}} Kost: 4, Aanval: 4, Verdediging: 3 {{< br >}} Effect: Wanneer gespeeld, krijgt een andere geallieerde kaart +1 Aanval tot de volgende beurt. | **Smith** (Wetenschapper) {{< br >}} Kost: 2, Aanval: Geen, Verdediging: 2 {{< br >}} Effect: +1 Verdediging voor alle geallieerden. |
 
+#### Vastzetten rij en kolom
+
+Zet je eerste rij en eerste kolom vast. Dit maakt het gemakkelijker om gegevens overzichtelijk te houden terwijl je door de rest van het document navigeert. 
+
+{{< img src="/img/data/opdracht-02-kaartspel-sheets_vastzetten1.png" width="1200" >}}
+
+#### Afwisselende kleuren
+
+Ga naar Opmaak en selecteer Afwisselende kleuren om je tabel overzichtelijker te maken. Hiermee worden rijen automatisch in verschillende kleuren weergegeven, wat het lezen en interpreteren van gegevens eenvoudiger maakt. 
+
+{{< img src="/img/data/opdracht-02-kaartspel-sheets_kleuren1.png" width="1200" >}}
+
 ### Indienen
 
 Lever de link in van je Google Sheets. 
@@ -72,6 +86,7 @@ Lever de link in van je Google Sheets.
 - Naamgeving bestand. (02)
 - 12 Kolommen: Zes voor tekst, zes voor afbeeldingen. (06)
 - Correct ingegeven gegevens voor 18 verschillende kaarten/personages. (18)
+- Vastzetten rij en kolom, afwisselende kleuren. (02)
 
 ## Deel 2
 
