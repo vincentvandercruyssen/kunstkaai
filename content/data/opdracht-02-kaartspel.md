@@ -19,7 +19,7 @@ Maak een duidelijke mapstructuur, een projectmap in je map voor Datamanagement g
 - InDesign-bestand en CSV-bestand.
 - Een map genaamd **Links** met alle benodigde PDF-bestanden (voorkant, kost, aanval, verdediging), afbeeldingen personages, PSD-bestand achterkant.
 
-{{< a href="/./zip/Kaartspel-Links.zip" text="Hier vind je een link naar het zip-bestand met de benodigdheden. " >}} Hierin vind je: illustraties van de personages, Voorkant.ai (de voorkant en symbolen zul je hieruit exporteren voor je ontwerp in InDesign) en Achterkant.psd.
+{{< a href="../zip/Kaartspel-Links.zip" text="Hier vind je een link naar het zip-bestand met de benodigdheden. " >}} Hierin vind je: illustraties van de personages, Voorkant.ai (de voorkant en symbolen zul je hieruit exporteren voor je ontwerp in InDesign) en Achterkant.psd.
 
 {{< img src="/img/data/opdracht-02-kaartspel-finder_links.png" width="400" >}}
 
