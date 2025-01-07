@@ -6,7 +6,7 @@ draft = false
 
 Je maakt de voor- en achterpagina en vier spreads van de **STIHL 2025 Catalogus** 1-op-1 na aan de hand van **Adobe InDesign**. Dit project combineert alle geleerde vaardigheden, waaronder het gebruik van alinea- en tekenstijlen, tekstkaders, het doorlopen van tekst, en het consistent toepassen van een typografische hiërarchie. Ook leer je werken met Tabs en Paragraafregels. 
 
-{{< a href="https://www.stihl.nl/content/dam/stihl/vu/be/nl/download-files/pdf-files/STIHL_Catalogus_2025_BENL.pdf" text="Klik hier voor het PDF-bestand STIHL_Catalogus_2025_BENL.pdf" >}}, het STIHL logo in SVG-formaat, het benodigde fotomateriaal. 
+De benodigde bestanden vind je als ZIP-bestand in de Google Classroom opdracht met daarin het PDF-bestand van de catalogus ({{< a href="https://www.stihl.nl/content/dam/stihl/vu/be/nl/download-files/pdf-files/STIHL_Catalogus_2025_BENL.pdf" text="STIHL_Catalogus_2025_BENL.pdf" >}} ), het STIHL logo in SVG-formaat en het benodigde fotomateriaal. 
 
 Font: {{< a href="https://fonts.adobe.com/fonts/quasimoda" text="Quasimoda via Adobe Fonts" >}} (vergelijkbaar genoeg met STIHL Contraface Text).
 
