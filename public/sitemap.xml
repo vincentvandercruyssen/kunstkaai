@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/digitaal/</loc>
+    <lastmod>2025-01-07T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/digitaal/opdracht-07-mijndroomplek/</loc>
+    <lastmod>2025-01-07T08:00:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/web/opdracht-4-07-mijnmuseum/</loc>
     <lastmod>2025-01-05T08:00:00-07:00</lastmod>
   </url><url>
@@ -16,9 +22,6 @@
   </url><url>
     <loc>http://localhost:1313/web/opdracht-3-06-stadsgids/</loc>
     <lastmod>2024-11-27T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/digitaal/</loc>
-    <lastmod>2024-11-26T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/digitaal/opdracht-06-masker/</loc>
     <lastmod>2024-11-26T08:00:00-07:00</lastmod>
