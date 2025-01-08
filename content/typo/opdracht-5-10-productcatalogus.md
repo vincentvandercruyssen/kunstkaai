@@ -40,11 +40,11 @@ Volg onderstaande richtlijnen voor elke pagina en spread:
 
 #### Voorpagina
 
-- Foto, logo en één tekstkader. Gebruik Tekstkader opties (Inset Spacing), Glyphs voor het streepje en ruimte na voor de afstand tussen het streepje en "NL".
+- Foto, logo in vectoren en één tekstkader. Gebruik Tekstkader opties (Inset Spacing), Glyphs voor het streepje en Ruimte na voor de afstand tussen het streepje en "NL".
 
 #### Spread 2
 
-- Linkerpagina: Eén tekstkader met een titel en tekst.  Eén tekstkader met drie kolommen namen en functies.
+- Linkerpagina: Eén tekstkader met een titel en drie alinea's tekst (zo accuraat mogelijk, gebruik Ruimte na).  Eén tekstkader met drie kolommen namen en functies. Gebruik Alinea Stijlen. 
 - Rechterpagina: Foto over de volledige pagina.
 
 #### Spread 4
