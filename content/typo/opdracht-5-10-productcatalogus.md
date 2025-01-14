@@ -52,6 +52,29 @@ Volg onderstaande richtlijnen voor elke pagina en spread:
 - Linkerpagina: Foto en één tekstkader voor titel en ondertitel.  
 - Spread: Twee aaneengesloten tekstkaders met telkens twee kolommen. Gebruik tabs voor nummering en een paragraafregel voor onderlijning.
 
+##### Tabs
+
+Tabs worden gebruikt om tekst op specifieke horizontale posities uit te lijnen. 
+
+- Plaats voor elk cijfer (paginanummer) een tabtoets. 
+- Open het Tabs-paneel via Type > Tabs.
+- Kies het gewenste type tab (links-, rechts-, centreren of decimaal uitgelijnd).
+- Sleep de tabstop naar de gewenste positie op de liniaal. Je kan de horizontale positie ook ingeven bij X: in millimeter. 
+- Zorg voor een consistente uitlijning door tabs in je alinea-opmaakstijl op te nemen.
+
+{{< img src="/img/typo/opdracht-5-10-productcatalogus-tabs1.png" width="1200" >}}
+
+##### Paragraafregel voor onderlijning
+
+Een Paragraafregel is een lijn die boven of onder een alinea kan worden geplaatst, ideaal voor het benadrukken van titels of het visueel scheiden van informatie.
+
+- Selecteer de gewenste tekst.
+- Ga naar het menu Paragraph Rules via het Paragraph paneel...
+- Kies Rule Below (of Rule Above, afhankelijk van de situatie).
+- Stel de dikte, kleur, tint (opacity) en positie van de lijn in. 
+
+{{< img src="/img/typo/opdracht-5-10-productcatalogus-paragraphrules1.png" width="1200" >}}
+
 #### Spread 5
 
 - Titel en ondertitel in één tekstkader.  
