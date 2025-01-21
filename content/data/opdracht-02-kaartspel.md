@@ -90,7 +90,7 @@ Lever de link in van je Google Sheets.
 
 ## Deel 2
 
-Nu je data klaarstaat, duiken we in het ontwerp van je kaartspel met Adobe InDesign. Je gaat een professioneel document opzetten met de juiste specificaties voor speelkaarten. Met behulp van lagen, rasters en data merge ga je alle kaartinformatie automatisch in een strak design gieten. Het resultaat wordt een speelklaar kaartspel met een consistente uitstraling.
+Nu je gegevens klaarstaan, duik je in het ontwerp van je kaartspel met Adobe InDesign. Je gaat een document opzetten met de juiste specificaties voor deze speelkaarten. Met behulp van lagen, rasters en data merge ga je alle kaartinformatie automatisch in een strak design gieten. Het resultaat wordt een speelklaar kaartspel met een consistente uitstraling.
 
 - Download de spreadsheet als CSV en plaats het bestand in je map `Voornaam Kaartspel`.
 
@@ -101,25 +101,25 @@ Nu je data klaarstaat, duiken we in het ontwerp van je kaartspel met Adobe InDes
 - **Bleed**: 3 mm.
 - **Marges**: 7 mm (boven, links, rechts), 6 mm (onder).
 - **Pagina-instelling**: Twee pagina’s onder elkaar.
-- **Raster**: 5 mm met 10 subdivisies (horizontaal en verticaal).
+- **Raster**: 5 mm met 10 subdivisies (horizontaal en verticaal). Het raster zal het eenvoudiger maken de tekst- en afbeeldingskaders correct te plaatsen.
 
 | | |
 |-|-|
 |{{< img src="/img/data/opdracht-02-kaartspel-indesign_doc.png" width="250" >}}|{{< img src="/img/data/opdracht-02-kaartspel-indesign_grid.png" >}}|
 
-- Maak een laag voor de tekeningen en een laag voor de tekstkaders. 
+Maak een laag voor de tekeningen en een laag voor de tekstkaders. 
 
 {{< img src="/img/data/opdracht-02-kaartspel-indesign_new.png" width="1200" >}}
 
 ### Exporteren uit Adobe Illustrator
 
-- Open het gekregen Illustrator-bestand.
+Open het gekregen Illustrator-bestand.
 
 {{< img src="/img/data/opdracht-02-kaartspel-illustrator_open.png" width="1200" >}}
 
 Gebruik **Export for Screens**:
-- Formaat: PDF
-- Inclusief bleed
+- Formaat: PDF.
+- Inclusief bleed!
 - Exporteer de artboards.
 - Sla de geëxporteerde bestanden op in de map **Links**.
 
@@ -137,16 +137,52 @@ Via Adobe Fonts, zorg dat je bent aangemeld met je Adobe account en druk op de k
 
 ### InDesign-document ontwerpen
 
-- **Gegevens samenvoegen**: Importeer het CSV-bestand. 
-- **Frames voor afbeeldingen**. 
+**Gegevens samenvoegen**: Importeer het CSV-bestand. 
+
+**Afbeeldingskaders**. In totaal zullen er zes afbeeldingskaders nodig zijn. Plaats het referentiepunt voor het transformeren in de linkerbovenhoek. 
+
+{{< img src="/img/data/opdracht-02-kaartspel-indesign_referentiepunt1.png" width="200" >}}
+
+Koppel zodra je een kader tekent meteen de juiste gegevens eraan en zet de voorvertoning aan. Dan weet je direct of je gegevens correct zijn gekoppeld.
+
+{{< img src="/img/data/opdracht-02-kaartspel-indesign_datamergevoorvertoning1.png" width="160" >}}
+
+De posities en groottes van elk afbeeldingskader zijn:
+
+- **Illustratie** X: 4,5 mm, Y: 3 mm, W: 55 mm, H: 55 mm
+- **Voorkant** X: -3 mm, Y: -3 mm, W: 70 mm, H: 94 mm
+- **Kost** X: 3,5 mm, Y: 3,5 mm, W: 15 mm, H: 15 mm
+- **Aanval** X: 3,5 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm
+- **Verdediging** X: 46 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm
 
 {{< img src="/img/data/opdracht-02-kaartspel-indesign_symbolen.png" width="460" >}}
 
-- **Tekstkaders**: Plaats alle tekstkaders op de aparte laag en op de juiste posities.
-- **Toepassen van text frame options**: Gebruik **inset spacing** voor een nette plaatsing van tekst.
-- Controleer via **Preview** of de gegevens correct worden geplaatst.
+**Tekstkaders**: Plaats alle tekstkaders op de aparte laag en op de juiste posities.
 
-{{< img src="/img/data/opdracht-02-kaartspel-indesign_datamergevb1.png" width="1280" >}}
+De posities, groottes, lettertype en tekengrootte van elk tekstkader zijn:
+
+- **Kaartbenaming** X: 14,5 mm, Y: 54,5 mm, W: 35 mm, H: 8,5 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 18 pt
+- **Kaarttype** X: 19 mm, Y: 64 mm, W: 26 mm, H: 5 mm, Font: Field Gothic (No.32 Reg XCond), Tekengrootte: 10 pt
+- **Effect** X: 8,5 mm, Y: 69 mm, W: 47 mm, H: 13 mm, Font: Big Caslon (Medium), Tekengrootte: 6 pt
+- **Kost** X: 3,5 mm, Y: 3,5 mm, W: 15 mm, H: 13 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 25 pt
+- **Aanval** X: 3,5 mm, Y: 56 mm, W: 14,5 mm, Y: 12 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 25 pt
+- **Verdediging** X: 46 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 25 pt
+
+Gebruik bij tekstkaderopties (text frame options) inzetafstand (inset spacing) voor een nette plaatsing van tekst. Verschuif waar nodig de basislijn (Baseline shift) om de tekst netjes verticaal te centreren. 
+
+| | |
+|-|-|
+|{{< img src="/img/data/opdracht-02-kaartspel-indesign_inzetafstand1.png" width="1400" >}}|{{< img src="/img/data/opdracht-02-kaartspel-indesign_basislijn1.png" width="1400" >}}|
+
+Controleer via Voorvertoning (Preview) in het Gegevenssamenvoeging (Data Merge) paneel of de gegevens correct worden geplaatst.
+
+| | |
+|-|-|
+|{{< img src="/img/data/opdracht-02-kaartspel-indesign_datamergevb1.png" width="1500" >}}|{{< img src="/img/data/opdracht-02-kaartspel-indesign_tekeningen1.png" width="850" >}}|
+
+Zorg ervoor dat de achterkant op pagina twee ook correct ingeladen wordt. 
+
+{{< img src="/img/data/opdracht-02-kaartspel-indesign_acherkant1.png" width="1200" >}}
 
 ### Indienen
 
@@ -165,3 +201,14 @@ Geen onnodige bestanden toevoegen die onduidelijkheid scheppen. Zorg ervoor dat 
 - Geëxporteerd CSV-bestand met zes kenmerken en twee afbeeldingen, vijftien producten. (04)
 - Correcte map met de bijbehorende afbeeldingen. (02)
 - Alle bestanden correct benoemd en georganiseerd. Geen onnodige bestanden en/of mappen toegevoegd die onduidelijkheid scheppen. (02)
+
+## Bronnen
+
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/create-documents.html" text="Adobe Help Center: Documenten maken" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/data-merge.html" text="Adobe Help Center: Gegevenssamenvoeging" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/laying-out-frames-pages.html" text="Adobe Help Center: Kaders en pagina's opmaken">}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/transforming-objects.html" text="Adobe Help Center: Objecten transformeren" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/creating-text-text-frames.html" text="Adobe Help Center: Tekst en tekstkaders maken" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-text.html" text="Adobe Help Center: Tekst opmaken" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-characters.html" text="Adobe Help Center: Tekens opmaken" >}}
+- {{< a href="https://assetstore.unity.com/packages/3d/environments/sci-fi/polygon-sci-fi-space-low-poly-3d-art-by-synty-138857" text="Unity Asset Store: Low Poly 3D Art by Synty" >}}

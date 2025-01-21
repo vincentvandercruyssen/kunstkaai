@@ -42,12 +42,12 @@ Volg onderstaande richtlijnen voor elke pagina en spread:
 
 - Foto, logo in vectoren en één tekstkader. Gebruik Tekstkader opties (Inset Spacing), Glyphs voor het streepje en Ruimte na voor de afstand tussen het streepje en "NL".
 
-#### Spread 2
+#### Spread 2 (voorwoord)
 
 - Linkerpagina: Eén tekstkader met een titel en drie alinea's tekst (zo accuraat mogelijk, gebruik Ruimte na).  Eén tekstkader met drie kolommen namen en functies. Gebruik Alinea Stijlen. 
 - Rechterpagina: Foto over de volledige pagina.
 
-#### Spread 4
+#### Spread 4 (overzicht nieuwigheden)
 
 - Linkerpagina: Foto en één tekstkader voor titel en ondertitel.  
 - Spread: Twee aaneengesloten tekstkaders met telkens twee kolommen. Gebruik tabs voor nummering en een paragraafregel voor onderlijning.
@@ -75,7 +75,7 @@ Een Paragraafregel is een lijn die boven of onder een alinea kan worden geplaats
 
 {{< img src="/img/typo/opdracht-5-10-productcatalogus-paragraphrules1.png" width="1200" >}}
 
-#### Spread 5
+#### Spread 5 (nieuwigheden highlights)
 
 - Titel en ondertitel in één tekstkader.  
 - Twee aaneengesloten tekstkaders over de spread.  
