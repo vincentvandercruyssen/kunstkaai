@@ -6,8 +6,15 @@
     <description>Recent content in Typoes on Kunstkaai</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jan 2025 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jan 2025 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/typo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Inhoudstafel Spread</title>
+      <link>http://localhost:1313/typo/opdracht-4-07-inhoudstafel/</link>
+      <pubDate>Mon, 20 Jan 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/typo/opdracht-4-07-inhoudstafel/</guid>
+      <description>&lt;h2 id=&#34;omschrijving&#34;&gt;Omschrijving&lt;/h2&gt;&#xA;&lt;p&gt;Abcdef&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;style&gt;&#xA;    .pinboard span {&#xA;        border: none !important;&#xA;        border-radius: 0 !important;&#xA;    }&#xA;&#xA;    .pinboard span[style*=&#34;width&#34;] {&#xA;        display: block !important;&#xA;        width: calc(100% + 1rem) !important;&#xA;        margin-bottom: 1.5rem;&#xA;        margin-left: -0.5rem;&#xA;    }&#xA;&#xA;    .pinboard span:first-of-type&gt;span:first-child {&#xA;        display: none;&#xA;    }&#xA;&#xA;    .pinboard span:last-of-type&gt;span:last-child {&#xA;        display: none;&#xA;    }&#xA;&#xA;    .pinboard span[style*=&#34;width&#34;]&gt;span:nth-child(2) {&#xA;        padding: 0px !important;&#xA;    }&#xA;&#xA;    .pinboard span[style*=&#34;width&#34;]&gt;span:nth-child(2)&gt;span&gt;span {&#xA;        padding: 0 0.5rem !important;&#xA;    }&#xA;&#xA;    .pinboard span[style*=&#34;width&#34;]&gt;span:nth-child(2)&gt;span&gt;span&gt;span[style*=&#34;background-image&#34;] {&#xA;        display: block !important;&#xA;        margin-bottom: 1rem !important;&#xA;    }&#xA;&lt;/style&gt;&#xA;&#xA;&lt;div class=&#34;pinboard&#34;&gt;&#xA;    &lt;a data-pin-do=&#34;embedBoard&#34; &#xA;        href=&#34;https://nl.pinterest.com/vincentvandercruyssen/inhoudstafel-spread/&#34;&#xA;        data-pin-scale-width=&#34;213&#34;&#xA;        data-pin-scale-height=&#34;640&#34;&#xA;        data-pin-board-width=&#34;640&#34;&gt;&#xA;    &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;p style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;https://nl.pinterest.com/vincentvandercruyssen/inhoudstafel-spread/&#34; target=&#34;_blank&#34;&gt;Bekijk board op Pinterest.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Opdracht: Productcatalogus</title>
       <link>http://localhost:1313/typo/opdracht-5-10-productcatalogus/</link>

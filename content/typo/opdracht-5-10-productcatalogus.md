@@ -11,20 +11,18 @@ De benodigde bestanden vind je als ZIP-bestand in de Google Classroom opdracht m
 Font: {{< a href="https://fonts.adobe.com/fonts/quasimoda" text="Quasimoda via Adobe Fonts" >}} (vergelijkbaar genoeg met STIHL Contraface Text).
 
 
-## Stappenplan
-
-### Analyseer de catalogus
+## Analyseer de catalogus
 
 Bekijk het PDF-bestand in **Adobe Acrobat** om het formaat en de opmaak van de catalogus te analyseren.
 
-### Instellen document in InDesign
+## Instellen document InDesign
 
 - Kies het juiste formaat op basis van je analyse.
 - Stel marges, kolommen en afloop in volgens de catalogusopmaak.
 
-### Plaatsen van de PDF als referentie
+## Plaatsen van de PDF als referentie
 
-- Gebruik **Cmd + D** om de PDF te plaatsen in InDesign.  
+Gebruik **Cmd + D** om de PDF te plaatsen in InDesign.  
 - Vink "Import Options" aan zodat je specifieke pagina's kunt selecteren.  
 
 Laad de volgende pagina’s in een aparte laag voor een 1-op-1 overtekening: 
@@ -34,25 +32,27 @@ Laad de volgende pagina’s in een aparte laag voor een 1-op-1 overtekening:
 
 Zet de PDF op een aparte laag die je later kunt uitvinken.
 
-### Uitwerken van de opmaak
+## Uitwerken van de opmaak
 
-Volg onderstaande richtlijnen voor elke pagina en spread:
+Volg onderstaande richtlijnen voor elke pagina en spread.
 
-#### Voorpagina
+### Voorpagina
 
 - Foto, logo in vectoren en één tekstkader. Gebruik Tekstkader opties (Inset Spacing), Glyphs voor het streepje en Ruimte na voor de afstand tussen het streepje en "NL".
 
-#### Spread 2 (voorwoord)
+### Spread 2 (voorwoord)
 
 - Linkerpagina: Eén tekstkader met een titel en drie alinea's tekst (zo accuraat mogelijk, gebruik Ruimte na).  Eén tekstkader met drie kolommen namen en functies. Gebruik Alinea Stijlen. 
 - Rechterpagina: Foto over de volledige pagina.
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/paragraph-character-styles.html" text="Adobe Help Center: Basisbeginselen van alinea- en tekenstijlen" >}}
 
-#### Spread 4 (overzicht nieuwigheden)
+### Spread 4 (overzicht nieuwigheden)
 
 - Linkerpagina: Foto en één tekstkader voor titel en ondertitel.  
 - Spread: Twee aaneengesloten tekstkaders met telkens twee kolommen. Gebruik tabs voor nummering en een paragraafregel voor onderlijning.
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/threading-text.html" text="Adobe Help Center: Tekst met verbindingen" >}}
 
-##### Tabs
+#### Tabs
 
 Tabs worden gebruikt om tekst op specifieke horizontale posities uit te lijnen. 
 
@@ -64,7 +64,9 @@ Tabs worden gebruikt om tekst op specifieke horizontale posities uit te lijnen.
 
 {{< img src="/img/typo/opdracht-5-10-productcatalogus-tabs1.png" width="1200" >}}
 
-##### Paragraafregel voor onderlijning
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/tabs-indents.html" text="Adobe Help Center: Tabs en inspringingen" >}}
+
+#### Paragraafregel voor onderlijning
 
 Een Paragraafregel is een lijn die boven of onder een alinea kan worden geplaatst, ideaal voor het benadrukken van titels of het visueel scheiden van informatie.
 
@@ -75,17 +77,19 @@ Een Paragraafregel is een lijn die boven of onder een alinea kan worden geplaats
 
 {{< img src="/img/typo/opdracht-5-10-productcatalogus-paragraphrules1.png" width="1200" >}}
 
-#### Spread 5 (nieuwigheden highlights)
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-paragraphs.html" text="Adobe Help Center: Alinea's opmaken (Lijnen voor of na alinea's toevoegen)" >}}
+
+### Spread 5 (nieuwigheden highlights)
 
 - Titel en ondertitel in één tekstkader.  
 - Twee aaneengesloten tekstkaders over de spread.  
 - Afbeeldingen. 
 
-#### Spread naar keuze
+### Spread naar keuze
 
 - Zorg voor een nauwkeurige en consistente overtekening.
 
-#### Achterpagina
+### Achterpagina
 
 - Foto en twee tekstkaders.
 
@@ -99,7 +103,29 @@ Lever je werk in via Google Classroom.
 
 ## Puntenverdeling
 
-- **Naamgeving en bestandsbeheer (05):** Correcte bestandsstructuur en naamgeving.
-- **Documentinstellingen (05):** Juiste afmetingen, marges, kolommen en afloop.
-- **Inhoud en typografie (15):** Correct gebruik van alinea- en tekenstijlen, leesbaarheid en hiërarchie.
-- **Lay-out en visuele elementen (15):** 
+- **Naamgeving en bestandsbeheer (05)** Correcte bestandsstructuur en naamgeving.
+- **Documentinstellingen (05)** Juiste afmetingen, marges, kolommen en afloop.
+- **Inhoud en typografie (15)** Correct gebruik van alinea- en tekenstijlen, leesbaarheid en hiërarchie.
+- **Lay-out en visuele elementen (15)** 
+
+## Bronnen
+
+- {{< a href="https://www.stihl.nl/nl" text="STIHL Officiële Website" >}}
+- {{< a href="https://commons.wikimedia.org/wiki/File:Stihl-logo.svg" text="Wikimedia: Stihl-logo.svg" >}}
+- {{< a href="https://www.s-v.de/de/projekte/stihl-brand-design/" text="STIHL's herontwerp van het bedrijfsdesign" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/create-documents.html" text="Adobe Help Center: Documenten maken" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/pages-spreads.html" text="Adobe Help Center: Pagina's en spreads" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/laying-out-frames-pages.html" text="Adobe Help Center: Kaders en pagina's opmaken">}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/creating-text-text-frames.html" text="Adobe Help Center: Tekst en tekstkaders maken" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-text.html" text="Adobe Help Center: Tekst opmaken" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-characters.html" text="Adobe Help Center: Tekens opmaken" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/paragraph-character-styles.html" text="Adobe Help Center: Basisbeginselen van alinea- en tekenstijlen" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/threading-text.html" text="Adobe Help Center: Tekst met verbindingen" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/tabs-indents.html" text="Adobe Help Center: Tabs en inspringingen" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-paragraphs.html" text="Adobe Help Center: Alinea's opmaken" >}}
+
+{{< youtube -4zaUrZ0CKo >}}
+
+| | |
+|-|-|
+|{{< youtube TC74BqWHjiE >}}|{{< youtube 8pAxi8ly5BM >}}|
