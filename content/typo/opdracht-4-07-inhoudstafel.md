@@ -1,31 +1,95 @@
 +++
-title = 'Opdracht: Inhoudstafel Spread'
+title = 'Opdracht: Inhoudstafel'
 date = 2025-01-20T08:00:00-07:00
 draft = false
 +++
 
 ## Omschrijving
 
-Abcdef
+Voor deze opdracht maak je een inhoudstafel op een A4-spread voor jouw magazine. De spread bevat zowel tekst- als afbeeldingskaders en is opgebouwd volgens een gidslayout. Voeg inhoud toe die jouw magazine een unieke en aantrekkelijke uitstraling geeft.
 
 {{< pinboard url="https://nl.pinterest.com/vincentvandercruyssen/inhoudstafel-spread/" >}}
 
 ## Stappenplan
 
-### Abcdef
+### Thema en inhoud
 
-Abcdef
+Bedenk zelf de inhoud, denk aan één of meerdere onderwerpen of thema's waarmee je zelf een magazine zou willen vullen. Bijvoorbeeld: 
+
+- **Reizen:** Artikelen over bijzondere bestemmingen, interviews met reizigers, reistips.
+- **Koken:** Recepten, interviews met chefs, food-fotografie.
+- **Kunst & design:** Besprekingen van tentoonstellingen, interviews met kunstenaars, creatieve tips.
+- **Muziek:** Albumrecensies, interviews met artiesten, concertoverzichten.
+- ...
+
+### Document
+
+- **Formaat:** A4 spread (2 pagina’s naast elkaar).
+- **Marges:** 13 mm.
+- **Afloop:** 3 mm.
+- **Gidslayout:** Minimaal drie rijen en minimaal drie kolommen.
+- **Lagenstructuur:** Zorg voor aparte lagen voor tekst en afbeeldingen.
+
+### Inhoud
+
+#### Titel, ondertitel en magazine-informatie
+
+Zorg voor een grote titel en ondertitel passend bij het thema van jouw magazine. Boven de titel staat extra informatie (bijvoorbeeld nummer van de uitgave, maand, jaartal).
+
+Deze tekst moet gebruik maken van drie alineastijlen: Magazine-informatie, Magazine-titel en Magazine-ondertitel.
+
+Plaats een afbeelding als achtergrond of ondersteuning van de tekst.
+
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/paragraph-character-styles.html" text="Adobe Help Center: Basisbeginselen van alinea- en tekenstijlen" >}}
+
+#### Inhoudstafel (min. 6 items)
+
+Minimaal zes verwijzingen naar artikelen, interviews of andere inhoud in het magazine. Telkens met een zeer duidelijke paginanummer. 
+
+Gebruik zes afzonderlijke tekstkaders met telkens de volgende originele inhoud:
+- Paginanummer
+- Titel van het artikel/interview
+- Korte inhoud of een quote
+
+Ook hier moet je gebruik maken van drie alineastijlen: Paginanummer, Titel, Samenvatting.
+
+Voeg 6 afbeeldingskaders toe, passend bij de inhoud van de artikelen. De afbeeldingen moeten visueel ondersteunen wat in de inhoudstafel staat.
+
+Elk item moet duidelijk, samenhangend en aantrekkelijk gepresenteerd worden.
+
+### Afwerking
+- Zorg dat alle inhoud netjes uitgelijnd is volgens de gidslayout.
+- Gebruik een professioneel kleurenschema en typografische keuzes.
+- Eindig met het maken van een pakket in Adobe InDesign (Bestand > Pakket maken) om alle gekoppelde bestanden, lettertypen en de InDesign-bestanden samen te bundelen.
+
+### Tips
+
+- Zorg dat je typografie de visuele hiërarchie ondersteunt (bijvoorbeeld door contrast in lettergrootte, gewicht, of kleur).
+- Experimenteer met de positionering van afbeeldingen om een dynamisch ontwerp te maken.
+- Controleer dat paginanummers en titels goed leesbaar en visueel aantrekkelijk zijn.
 
 ## Indienen
 
-- Maak een pakket (bevat het InDesign-document, de PDF en de drie gebruikte EPS-bestanden). Zip de aangemaakte map en upload deze in de juiste opdracht.  
+- Maak een pakket (bevat het InDesign-document, de PDF en de gebruikte bestanden). Zip de aangemaakte map en upload deze in de juiste opdracht.  
 - Zorg ervoor dat zowel je voornaam als de opdrachtnaam duidelijk vermeld zijn in de ingeleverde bestanden.
 
-## Voorbeelden
+## Voorbeeld
+
+{{< img src="/img/typo/opdracht-4-07-inhoudstafel-vb1.png" width="1300" >}}
 
 ## Puntenverdeling
 
-- **Naamgeving en bestandsbeheer (09)** Naamgeving van bestanden: voornaam_cultuurflyers.zip (pakket met InDesign-document, PDF en EPS-bestanden), Benaming en correct gebruik van lagen.
-- **Formaat en raster (06)** Gebruik van het juiste formaat (A5), correcte marges (10 mm) en bleed (3 mm), Toepassing van een raster met hulplijnen.
-- **Inhoud (21)** Titel evenement, Drie kernwoorden, Datum in het juiste formaat, Locatie (naam en volledig adres), Tickets en website-informatie, Tijdschema, Logo in vectorformaat.
-- **Vormgeving en ontwerpregels (15)** Aflopende bewerkte achtergrond met een duotoonafbeelding, Juiste keuze van lettertypes passend bij het evenement, Beperking kleurenpalet, Gebruik van tekst en grafische elementen, Visuele samenhang.
+- **Naamgeving en bestandsbeheer (04)** Naamgeving van bestanden: `voornaam inhoudstafel.zip` (pakket met InDesign-document, mapje Links met afbeeldingen en PDFbestand), Benaming en correct gebruik van lagen.
+- **Formaat en raster (06)** Gebruik van het juiste formaat (A4), correcte marges (13 mm) en bleed (3 mm), Toepassing van een raster met hulplijnen.
+- **Inhoud (18)**
+- **Vormgeving (15)**
+
+## Bronnen
+
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/create-documents.html" text="Adobe Help Center: Documenten maken" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/pages-spreads.html" text="Adobe Help Center: Pagina's en spreads" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/laying-out-frames-pages.html" text="Adobe Help Center: Kaders en pagina's opmaken">}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/creating-text-text-frames.html" text="Adobe Help Center: Tekst en tekstkaders maken" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-text.html" text="Adobe Help Center: Tekst opmaken" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-paragraphs.html" text="Adobe Help Center: Alinea's opmaken" >}}
+- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/paragraph-character-styles.html" text="Adobe Help Center: Basisbeginselen van alinea- en tekenstijlen" >}}
