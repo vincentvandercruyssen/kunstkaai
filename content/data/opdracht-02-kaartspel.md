@@ -83,10 +83,10 @@ Lever de link in van je Google Sheets.
 
 ### Puntenverdeling
 
-- Naamgeving bestand. (02)
+- Naamgeving, Google Spreadsheet. (02)
 - 12 Kolommen: Zes voor tekst, zes voor afbeeldingen. (06)
-- Correct ingegeven gegevens voor 18 verschillende kaarten/personages. (18)
-- Vastzetten rij en kolom, afwisselende kleuren. (02)
+- Correct ingegeven gegevens voor 18 verschillende kaarten/personages. (09)
+- Vastzetten rij en kolom, afwisselende kleuren. (04)
 
 ## Deel 2
 
