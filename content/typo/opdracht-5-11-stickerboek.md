@@ -13,7 +13,7 @@ In deze opdracht maak je, in **duotone** (variaties van bv. cyaan in combinatie 
 Open InDesign en maak een spread met de instellingen hieronder.
 Noem dit document "voornaam stickerboek".
 
-{{< img src="/img/typo/opdracht-5-11-stickerboek-indesign1.png" width="320" >}}
+{{< img src="/img/typo/opdracht-5-11-stickerboek-indesign1.jpg" width="320" >}}
 
 Het thema van de spread uit je stickerboek is een voetbalploeg, een film, een ... (Je mag een ander thema voorstellen. Je leraar beslist of je dat mag gebruiken.)
 
@@ -32,7 +32,7 @@ Het thema van de spread uit je stickerboek is een voetbalploeg, een film, een ..
 
 - De spread wordt uitgevoerd als een **duotone**. Dit betekent dat je **enkel magenta, cyaan of geel** mag gebruiken (één van de drie!), in combinatie met **zwart** (de tweede tone) en het **wit** van je blad. *Voeg tinten van je kleur toe aan je stalen (swatches). Zorg dat je alleen de CMYK-percentages van jouw kleur en van het zwart aanpast. In de afbeelding hieronder zie je een voorbeeld van een duotone met cyaan.*
 
-{{< img src="/img/typo/opdracht-5-11-stickerboek-indesign_kleur1.png" width="460" >}}
+{{< img src="/img/typo/opdracht-5-11-stickerboek-indesign_kleur1.jpg" width="460" >}}
 
 - Om een **afbeelding naar duotone** om te zetten, open je ze eerst in **Photoshop**. Daar zet je de afbeelding om naar **grijswaarden** (menu Image > Mode > Grayscale). Plaats daarna de afbeelding in je InDesign-document, selecteer ze met het de zwarte pijl, open het stalen-venster en kies je **(spot-)kleur** als vulling.
 
@@ -41,18 +41,18 @@ Het thema van de spread uit je stickerboek is een voetbalploeg, een film, een ..
 Maak een derde pagina aan van **170 mm x 285 mm**. Zorg voor gidslijnen van vijf rijen en twee kolommen. 
 
 - In dit document plaats je je 10 stickers. Ze passen er netjes in, terwijl je aan elke zijde een witte marge van 0,5 cm overhoudt.
-- Je stickers zijn in kleur.
-- Plaats een dunne zwarte rand rond elke afbeelding (snijlijnen).
+- Je stickers zijn in **kleur**.
+- Plaats een **dunne zwarte rand** rond elke afbeelding (snijlijnen).
 
 TIP: plaats de foto's die je gebruikt, in een aparte laag, ook in je spread (op de juiste plaats natuurlijk). Anders kan je erg moeilijk inschatten wat de impact van de kleurenfoto's is op de totale compositie van je spread (layout/bladspiegel).
 
 ## Indienen
 
-- Bewaar als "voornaam stickerboek.INDD" (InDesign werkbestand)
-- Bewaar als een pakket/package genaamd "voornaam stickerboek".
-- Zorg dat er een PDF-bestand aanwezig is genaamd "voornaam stickerboek.PDF" (Portable Document Format)
+- Bewaar als `voornaam stickerboek.indd` (InDesign werkbestand).
+- Bewaar als een pakket/package genaamd `voornaam stickerboek`.
+- Zorg dat er een PDF-bestand aanwezig is genaamd `voornaam stickerboek.pdf` (Portable Document Format).
 
-Upload je werk als ZIP-archief (volledig pakket/package met InDesign-document, Links, Document fonts en PDF-bestand).
+**Upload je werk als ZIP-archief** (volledig pakket/package met InDesign-document, Links, Document fonts en PDF-bestand).
 
 | | | |
 |-|-|-|
