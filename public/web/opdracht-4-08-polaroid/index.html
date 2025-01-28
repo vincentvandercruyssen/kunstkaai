@@ -334,8 +334,8 @@ Webontwikkeling
  <br> Opdracht: Polaroid</h1>
 
 <h2 id="opgave">Opgave</h2>
-<p>Lang voordat digitale fotografie werd uitgevonden, was het Polaroid-fototoestel één van de manieren om het resultaat van een foto direct te zien.</p>
-<p>In deze opdracht ga je een webpagina maken die een verzameling Polaroid-foto&rsquo;s weergeeft. Elke Polaroid heeft een vierkante afbeelding, omringd door de kenmerkende witte rand en een onderzijde waar je tekst op toegevoegd. De Polaroid-foto&rsquo;s positioneer je op een levendige manier op de pagina.</p>
+<p>Lang voordat digitale fotografie werd uitgevonden, was het Polaroid-fototoestel één van de manieren om het resultaat van een foto meteen te kunnen zien.</p>
+<p>In deze opdracht ga je een webpagina maken die een verzameling Polaroid-foto&rsquo;s weergeeft. Elke Polaroid heeft een vierkante afbeelding, omringd door de kenmerkende witte rand en een onderzijde waar je tekst op toegevoegd. De Polaroid-foto&rsquo;s (minimaal negen) positioneer je op een levendige manier op de pagina. Je doet dit aan de hand van <code>position: absolute</code>.</p>
 
 
 
@@ -412,7 +412,62 @@ Webontwikkeling
 
 
 
-<a href="https://fonts.adobe.com/" target="_blank">Adobe Fonts</a>, waarbij je een lettertype zoekt en vervolgens op de pagina van het lettertype op de knop Add to Web Project klikt.</p>
+<a href="https://fonts.adobe.com/" target="_blank">Adobe Fonts</a>. Zoek een lettertype en klik op de knop <strong>Add to Web Project</strong> op de pagina van je gekozen lettertype.</p>
+
+
+
+ 
+ 
+
+
+
+
+  <img src="http://localhost:1313/img/web/opdracht-4-08-polaroid-adobefonts1_hu2881330565309538394.webp" alt="opdracht-4-08-polaroid-adobefonts1" loading="lazy" >
+  
+
+<p>In het venster dat verschijnt, maak je een nieuw project aan. Kopieer vervolgens de <code>@import</code>-regel en plak deze bovenaan in je CSS-bestand. Nu kun je de <code>font-family</code> gebruiken welke je ook in hetzelfde venster aantreft.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">
+
+
+ 
+ 
+
+
+
+
+  <img src="http://localhost:1313/img/web/opdracht-4-08-polaroid-adobefonts2_hu5490560055665709786.webp" alt="opdracht-4-08-polaroid-adobefonts2" loading="lazy" >
+  
+</td>
+          <td style="text-align: left">
+
+
+ 
+ 
+
+
+
+
+  <img src="http://localhost:1313/img/web/opdracht-4-08-polaroid-adobefonts3_hu10095781871083430021.webp" alt="opdracht-4-08-polaroid-adobefonts3" loading="lazy" >
+  
+</td>
+      </tr>
+  </tbody>
+</table>
+<p>Een andere optie is een lettertype te downloaden en gebruik te maken van de regel <code>@font-face</code>. Meer informatie daarover 
+
+
+
+
+<a href="https://www.w3schools.com/cssref/atrule_font-face.php" target="_blank">vind je hier</a>. Zorg er dan wel voor dat je het lettertype in een aparte map opslaat.</p>
 <h3 id="box-sizing">Box-sizing</h3>
 <p>Stel de box-sizing in voor alle elementen met border-box. Dit zal er voor zorgen dat de padding geen invloed heeft op de breedte van onze Polaroid&rsquo;s.</p>
 <pre><code>* {
@@ -424,61 +479,61 @@ Webontwikkeling
 <h3 id="achtergrond">Achtergrond</h3>
 <p>Style de body met:</p>
 <ul>
-<li>Een relatieve positie</li>
-<li>Minimale hoogte van 100vh</li>
-<li>Een achtergrondafbeelding die het hele scherm bedekt</li>
-<li>Het geïmporteerde lettertype</li>
+<li>Een relatieve positie.</li>
+<li>Minimale hoogte van 100vh.</li>
+<li>Een achtergrondafbeelding die het hele scherm bedekt.</li>
+<li>Het geïmporteerde lettertype.</li>
 </ul>
 <iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" frameborder="0" style="width: 100%; aspect-ratio: ;" height="440"></iframe>
 <h3 id="polaroid">Polaroid</h3>
 <p>Maak een .polaroid class met:</p>
 <ul>
-<li>Absolute positionering</li>
-<li>Vaste breedte (bv. 200px)</li>
-<li>Gebroken witte achtergrond met subtiele schaduw</li>
-<li>Padding voor de Polaroid-rand</li>
-<li>Gecentreerde tekst</li>
+<li>Absolute positionering.</li>
+<li>Vaste breedte (bv. 200px).</li>
+<li>Gebroken witte achtergrond met subtiele schaduw.</li>
+<li>Padding voor de Polaroid-rand.</li>
+<li>Gecentreerde tekst.</li>
 </ul>
 <p>Style de afbeeldingen binnen de Polaroids met:</p>
 <ul>
-<li>100% breedte</li>
-<li>1:1 aspect ratio</li>
-<li>Object-fit en object-position voor de juiste uitsnede</li>
-<li>Filtereffecten voor een vintage look</li>
+<li>100% breedte.</li>
+<li>1:1 aspect ratio.</li>
+<li>Object-fit en object-position voor de juiste uitsnede.</li>
+<li>Filtereffecten voor een vintage look.</li>
 </ul>
 <h3 id="positionering">Positionering</h3>
 <p>Geef elk Polaroid-element een unieke positie met:</p>
 <ul>
-<li>Verschillende top en left waarden (in percentages)</li>
-<li>Een subtiele rotatie via transform: rotate()</li>
-<li>Overlappende z-indices waar nodig</li>
+<li>Verschillende top en left waarden (in percentages).</li>
+<li>Een subtiele rotatie via transform: rotate().</li>
+<li>Overlappende z-indices waar nodig.</li>
 </ul>
 <h2 id="indienen">Indienen</h2>
 <p>Mapnaam: <code>voornaam polaroid</code> met de volgende bestanden:</p>
 <ul>
 <li><code>index.html</code></li>
 <li><code>style.css</code></li>
-<li>Map <code>images</code> met alle gebruikte afbeeldingen
-Maak één zip-bestand van de map. Lever in via Google Classroom.</li>
+<li>Map <code>images</code> met alle gebruikte afbeeldingen.</li>
 </ul>
+<p>Maak één zip-bestand van de map. Lever in via Google Classroom.</p>
 <h2 id="puntenverdeling">Puntenverdeling</h2>
 <ul>
-<li><strong>Structuur (05)</strong>: Correcte bestandsnamen en mapstructuur</li>
-<li><strong>HTML (05)</strong>: Correct gebruik van elementen en attributen</li>
-<li><strong>CSS Basis (05)</strong>: Import, algemene styling en box model</li>
-<li><strong>CSS Polaroid (10)</strong>: Styling van de Polaroid-elementen</li>
-<li><strong>Positionering (10)</strong>: Correcte plaatsing en rotatie van Polaroids</li>
-<li><strong>Afbeeldingen (05)</strong>: Juiste verwerking en styling van foto&rsquo;s</li>
+<li><strong>Structuur (05)</strong>: Correcte bestandsnamen en mapstructuur.</li>
+<li><strong>HTML (05)</strong>: Correct gebruik van elementen en attributen.</li>
+<li><strong>CSS Basis (05)</strong>: Import, algemene styling en box model.</li>
+<li><strong>CSS Polaroid (10)</strong>: Styling van de Polaroid-elementen.</li>
+<li><strong>Positionering (10)</strong>: Correcte plaatsing en rotatie van Polaroids.</li>
+<li><strong>Afbeeldingen (05)</strong>: Juiste verwerking en styling van foto&rsquo;s.</li>
 </ul>
 <h2 id="veelvoorkomende-fouten">Veelvoorkomende fouten</h2>
 <ul>
-<li>Foutieve HTML-nesting</li>
-<li>Niet werkende navigatielinks</li>
-<li>Onjuiste mapstructuur of mediapaden</li>
-<li>Verkeerde aspect ratio van afbeeldingen</li>
-<li>Onjuiste positionering van Polaroids</li>
-<li>Ontbrekende transformaties of schaduweffecten</li>
-<li>Niet-werkende lettertype-import</li>
+<li>Foutieve HTML-nesting.</li>
+<li>Niet werkende navigatielinks.</li>
+<li>Onjuiste mapstructuur of mediapaden.</li>
+<li>Verkeerde aspect ratio van afbeeldingen.</li>
+<li>Onjuiste positionering van Polaroids.</li>
+<li>Ontbrekende transformaties of schaduweffecten.</li>
+<li>Niet-werkende lettertype-import.</li>
 </ul>
 
 
