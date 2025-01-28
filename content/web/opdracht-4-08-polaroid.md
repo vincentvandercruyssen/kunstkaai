@@ -1,6 +1,6 @@
 +++
 title = 'Opdracht: Polaroid'
-date = 2025-01-05T08:00:00-07:00
+date = 2025-01-27T08:00:00-07:00
 draft = false
 +++
 
@@ -8,7 +8,7 @@ draft = false
 
 Lang voordat digitale fotografie werd uitgevonden, was het Polaroid-fototoestel één van de manieren om het resultaat van een foto meteen te kunnen zien. 
 
-In deze opdracht ga je een webpagina maken die een verzameling Polaroid-foto's weergeeft. Elke Polaroid heeft een vierkante afbeelding, omringd door de kenmerkende witte rand en een onderzijde waar je tekst op toegevoegd. De Polaroid-foto's (minimaal negen) positioneer je op een levendige manier op de pagina. Je doet dit aan de hand van `position: absolute`.
+In deze opdracht ga je een webpagina maken die een verzameling Polaroid-foto's weergeeft. Elke Polaroid heeft een vierkante afbeelding, omringd door de kenmerkende witte rand en een onderzijde waar je tekst op toevoegt. De Polaroid-foto's (minimaal negen) positioneer je op een levendige manier op de pagina. Je doet dit aan de hand van `position: absolute`.
 
 {{< pinboard url="https://www.pinterest.com/vincentvandercruyssen/polaroid-css/" >}}
 

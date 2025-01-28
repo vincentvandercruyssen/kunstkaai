@@ -6,8 +6,22 @@
     <description>Recent content in Home on Kunstkaai</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jan 2025 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2025 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Polaroid</title>
+      <link>http://localhost:1313/web/opdracht-4-08-polaroid/</link>
+      <pubDate>Mon, 27 Jan 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-4-08-polaroid/</guid>
+      <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;Lang voordat digitale fotografie werd uitgevonden, was het Polaroid-fototoestel één van de manieren om het resultaat van een foto meteen te kunnen zien.&lt;/p&gt;&#xA;&lt;p&gt;In deze opdracht ga je een webpagina maken die een verzameling Polaroid-foto&amp;rsquo;s weergeeft. Elke Polaroid heeft een vierkante afbeelding, omringd door de kenmerkende witte rand en een onderzijde waar je tekst op toevoegt. De Polaroid-foto&amp;rsquo;s (minimaal negen) positioneer je op een levendige manier op de pagina. Je doet dit aan de hand van &lt;code&gt;position: absolute&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Opdracht: Stickerboek</title>
+      <link>http://localhost:1313/typo/opdracht-5-11-stickerboek/</link>
+      <pubDate>Mon, 27 Jan 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/typo/opdracht-5-11-stickerboek/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Panini-stickerboeken&lt;/strong&gt; zijn albums waarin je stickers kunt plakken die je verzamelt. Panini is een Italiaans bedrijf dat wereldwijd bekend is geworden door het uitgeven van deze stickerboeken. Het bekendst zijn hun boeken over voetbal (bv. het WK Voetbal), maar ze maken evengoed stickerboeken over films en series, muziek of educatieve thema&amp;rsquo;s (bv. wilde dieren of dinosaurussen).&lt;/p&gt;&#xA;&lt;p&gt;In deze opdracht maak je, in &lt;strong&gt;duotone&lt;/strong&gt; (variaties van bv. cyaan in combinatie met zwart) een &lt;strong&gt;&amp;lsquo;blanco&amp;rsquo; spread&lt;/strong&gt; voor zo&amp;rsquo;n stickerboek (een spread zonder de stickers). Daarnaast maak je ook een &lt;strong&gt;vel met de stickers in kleur&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Opdracht: Inhoudstafel</title>
       <link>http://localhost:1313/typo/opdracht-4-07-inhoudstafel/</link>
@@ -28,13 +42,6 @@
       <pubDate>Sun, 05 Jan 2025 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/opdracht-4-07-mijnmuseum/</guid>
       <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;In deze opdracht maak je een website genaamd &lt;strong&gt;Mijn museum&lt;/strong&gt;, waarin je drie persoonlijke thema&amp;rsquo;s (kunstwerken, technologie, historische items, muziek, films, favoriete boeken,&amp;hellip;) tentoonstelt. Elk thema of object krijgt een eigen pagina met beschrijvingen, media en een galerij.&lt;/p&gt;&#xA;&lt;p&gt;Elke pagina bevat informatie over één object of thema, en alle pagina&amp;rsquo;s zijn gekoppeld via dezelfde navigatiebalk.&lt;/p&gt;&#xA;&lt;p&gt;Je herhaalt wat je geleerd hebt over HTML, CSS, navigatie en structuur, terwijl je nieuwe moderne layouttechnieken toepast. Succes met het bouwen van jouw digitale museum!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Opdracht: Polaroid</title>
-      <link>http://localhost:1313/web/opdracht-4-08-polaroid/</link>
-      <pubDate>Sun, 05 Jan 2025 08:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/web/opdracht-4-08-polaroid/</guid>
-      <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;Lang voordat digitale fotografie werd uitgevonden, was het Polaroid-fototoestel één van de manieren om het resultaat van een foto meteen te kunnen zien.&lt;/p&gt;&#xA;&lt;p&gt;In deze opdracht ga je een webpagina maken die een verzameling Polaroid-foto&amp;rsquo;s weergeeft. Elke Polaroid heeft een vierkante afbeelding, omringd door de kenmerkende witte rand en een onderzijde waar je tekst op toegevoegd. De Polaroid-foto&amp;rsquo;s (minimaal negen) positioneer je op een levendige manier op de pagina. Je doet dit aan de hand van &lt;code&gt;position: absolute&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Opdracht: Productcatalogus</title>

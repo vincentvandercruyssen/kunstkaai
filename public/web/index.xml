@@ -6,21 +6,21 @@
     <description>Recent content in Webs on Kunstkaai</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jan 2025 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2025 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Polaroid</title>
+      <link>http://localhost:1313/web/opdracht-4-08-polaroid/</link>
+      <pubDate>Mon, 27 Jan 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-4-08-polaroid/</guid>
+      <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;Lang voordat digitale fotografie werd uitgevonden, was het Polaroid-fototoestel één van de manieren om het resultaat van een foto meteen te kunnen zien.&lt;/p&gt;&#xA;&lt;p&gt;In deze opdracht ga je een webpagina maken die een verzameling Polaroid-foto&amp;rsquo;s weergeeft. Elke Polaroid heeft een vierkante afbeelding, omringd door de kenmerkende witte rand en een onderzijde waar je tekst op toevoegt. De Polaroid-foto&amp;rsquo;s (minimaal negen) positioneer je op een levendige manier op de pagina. Je doet dit aan de hand van &lt;code&gt;position: absolute&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Opdracht: Mijn museum</title>
       <link>http://localhost:1313/web/opdracht-4-07-mijnmuseum/</link>
       <pubDate>Sun, 05 Jan 2025 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/opdracht-4-07-mijnmuseum/</guid>
       <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;In deze opdracht maak je een website genaamd &lt;strong&gt;Mijn museum&lt;/strong&gt;, waarin je drie persoonlijke thema&amp;rsquo;s (kunstwerken, technologie, historische items, muziek, films, favoriete boeken,&amp;hellip;) tentoonstelt. Elk thema of object krijgt een eigen pagina met beschrijvingen, media en een galerij.&lt;/p&gt;&#xA;&lt;p&gt;Elke pagina bevat informatie over één object of thema, en alle pagina&amp;rsquo;s zijn gekoppeld via dezelfde navigatiebalk.&lt;/p&gt;&#xA;&lt;p&gt;Je herhaalt wat je geleerd hebt over HTML, CSS, navigatie en structuur, terwijl je nieuwe moderne layouttechnieken toepast. Succes met het bouwen van jouw digitale museum!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Opdracht: Polaroid</title>
-      <link>http://localhost:1313/web/opdracht-4-08-polaroid/</link>
-      <pubDate>Sun, 05 Jan 2025 08:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/web/opdracht-4-08-polaroid/</guid>
-      <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;Lang voordat digitale fotografie werd uitgevonden, was het Polaroid-fototoestel één van de manieren om het resultaat van een foto meteen te kunnen zien.&lt;/p&gt;&#xA;&lt;p&gt;In deze opdracht ga je een webpagina maken die een verzameling Polaroid-foto&amp;rsquo;s weergeeft. Elke Polaroid heeft een vierkante afbeelding, omringd door de kenmerkende witte rand en een onderzijde waar je tekst op toegevoegd. De Polaroid-foto&amp;rsquo;s (minimaal negen) positioneer je op een levendige manier op de pagina. Je doet dit aan de hand van &lt;code&gt;position: absolute&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Opdracht: Stadsgids</title>

@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/typo/opdracht-4-07-inhoudstafel/</loc>
-    <lastmod>2025-01-20T08:00:00-07:00</lastmod>
+    <loc>http://localhost:1313/web/opdracht-4-08-polaroid/</loc>
+    <lastmod>2025-01-27T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/typo/opdracht-5-11-stickerboek/</loc>
+    <lastmod>2025-01-27T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/typo/</loc>
+    <lastmod>2025-01-27T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/web/</loc>
+    <lastmod>2025-01-27T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/typo/opdracht-4-07-inhoudstafel/</loc>
     <lastmod>2025-01-20T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/digitaal/</loc>
@@ -17,13 +26,7 @@
     <loc>http://localhost:1313/web/opdracht-4-07-mijnmuseum/</loc>
     <lastmod>2025-01-05T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/web/opdracht-4-08-polaroid/</loc>
-    <lastmod>2025-01-05T08:00:00-07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/typo/opdracht-5-10-productcatalogus/</loc>
-    <lastmod>2025-01-05T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/web/</loc>
     <lastmod>2025-01-05T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/web/opdracht-3-06-stadsgids/</loc>
