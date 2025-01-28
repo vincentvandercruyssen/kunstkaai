@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Opdracht: Polaroid | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+<link rel="icon" type="image/svg" href="/favicon.svg">
+
+
+</head>
+<body>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+Webontwikkeling
+<br>
+    Opdracht: Polaroid
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#opgave">1. Opgave</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#voorbereiding">2. Voorbereiding</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#bouw-de-hoofdpagina">3. Bouw de hoofdpagina</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#css-styling">4. CSS styling</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#lettertype">4.1 Lettertype</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#box-sizing">4.2 Box-sizing</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#achtergrond">4.3 Achtergrond</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#polaroid">4.4 Polaroid</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#positionering">4.5 Positionering</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#indienen">5. Indienen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#puntenverdeling">6. Puntenverdeling</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#veelvoorkomende-fouten">7. Veelvoorkomende fouten</a>
+
+      
+      
+    
+
+    
+    </li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+Webontwikkeling
+ <br> Opdracht: Polaroid</h1>
+
+<h2 id="opgave">Opgave</h2>
+<p>Lang voordat digitale fotografie werd uitgevonden, was het Polaroid-fototoestel één van de manieren om het resultaat van een foto direct te zien.</p>
+<p>In deze opdracht ga je een webpagina maken die een verzameling Polaroid-foto&rsquo;s weergeeft. Elke Polaroid heeft een vierkante afbeelding, omringd door de kenmerkende witte rand en een onderzijde waar je tekst op toegevoegd. De Polaroid-foto&rsquo;s positioneer je op een levendige manier op de pagina.</p>
+
+
+
+
+<style>
+    .pinboard span {
+        border: none !important;
+        border-radius: 0 !important;
+    }
+
+    .pinboard span[style*="width"] {
+        display: block !important;
+        width: calc(100% + 1rem) !important;
+        margin-bottom: 1.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .pinboard span:first-of-type>span:first-child {
+        display: none;
+    }
+
+    .pinboard span:last-of-type>span:last-child {
+        display: none;
+    }
+
+    .pinboard span[style*="width"]>span:nth-child(2) {
+        padding: 0px !important;
+    }
+
+    .pinboard span[style*="width"]>span:nth-child(2)>span>span {
+        padding: 0 0.5rem !important;
+    }
+
+    .pinboard span[style*="width"]>span:nth-child(2)>span>span>span[style*="background-image"] {
+        display: block !important;
+        margin-bottom: 1rem !important;
+    }
+</style>
+
+<div class="pinboard">
+    <a data-pin-do="embedBoard" 
+        href="https://www.pinterest.com/vincentvandercruyssen/polaroid-css/"
+        data-pin-scale-width="213"
+        data-pin-scale-height="640"
+        data-pin-board-width="640">
+    </a>
+</div>
+<p style="text-align: center;"><a href="https://www.pinterest.com/vincentvandercruyssen/polaroid-css/" target="_blank">Bekijk board op Pinterest.</a></p>
+<script async defer type="text/javascript" src="https://assets.pinterest.com/js/pinit.js"></script>
+<h2 id="voorbereiding">Voorbereiding</h2>
+<p>Maak een nieuwe map aan op je computer in de map voor webontwikkeling, genaamd <code>voornaam polaroid</code>. Open deze map in Visual Studio Code: Klik in Visual Studio Code op <em>File &gt; Open Folder</em> en selecteer jouw map.</p>
+<p>Maak in de map de volgende bestanden aan:</p>
+<ul>
+<li><code>index.html</code></li>
+<li><code>style.css</code></li>
+</ul>
+<p>Maak ook een nieuwe map aan, genaamd <code>images</code>. Hierin sla je alle afbeeldingen op die je wilt gebruiken, waaronder:</p>
+<ul>
+<li>Een textuur voor de achtergrond (<code>textuur-achtergrond.jpg</code>).</li>
+<li>Minimaal 9 foto&rsquo;s voor je Polaroids (<code>foto01.jpg</code> t/m <code>foto09.jpg</code>).</li>
+</ul>
+<h2 id="bouw-de-hoofdpagina">Bouw de hoofdpagina</h2>
+<p>Open <code>index.html</code> in Visual Studio Code. Maak de basis HTML-structuur aan met Emmet aan de hand van <code>!</code> (uitroepteken). Vergeet niet de link naar je stylesheet en het <code>&lt;title&gt;</code>-element aan te passen met een passende titel.</p>
+<p>Voor elke Polaroid-foto maak je een div-element met de class &ldquo;polaroid&rdquo; en een unieke ID (bijvoorbeeld &ldquo;polaroid_01&rdquo;).</p>
+<p>In deze div-elementen plaats je telkens:</p>
+<ul>
+<li>Een <code>&lt;img&gt;</code>-element met de foto (de grootte zul je aanpassen via CSS).</li>
+<li>Een <code>&lt;h3&gt;</code>-element met een titel of beschrijving.</li>
+</ul>
+<h2 id="css-styling">CSS styling</h2>
+<h3 id="lettertype">Lettertype</h3>
+<p>Begin met het importeren van een handgeschreven lettertype. Dit kan aan de hand van 
+
+
+
+
+<a href="https://fonts.adobe.com/" target="_blank">Adobe Fonts</a>, waarbij je een lettertype zoekt en vervolgens op de pagina van het lettertype op de knop Add to Web Project klikt.</p>
+<h3 id="box-sizing">Box-sizing</h3>
+<p>Stel de box-sizing in voor alle elementen met border-box. Dit zal er voor zorgen dat de padding geen invloed heeft op de breedte van onze Polaroid&rsquo;s.</p>
+<pre><code>* {
+    box-sizing: border-box;
+}
+
+</code></pre>
+<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/rNYBwXP" frameborder="0" style="width: 100%; aspect-ratio: ;" height="548"></iframe>
+<h3 id="achtergrond">Achtergrond</h3>
+<p>Style de body met:</p>
+<ul>
+<li>Een relatieve positie</li>
+<li>Minimale hoogte van 100vh</li>
+<li>Een achtergrondafbeelding die het hele scherm bedekt</li>
+<li>Het geïmporteerde lettertype</li>
+</ul>
+<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" frameborder="0" style="width: 100%; aspect-ratio: ;" height="440"></iframe>
+<h3 id="polaroid">Polaroid</h3>
+<p>Maak een .polaroid class met:</p>
+<ul>
+<li>Absolute positionering</li>
+<li>Vaste breedte (bv. 200px)</li>
+<li>Gebroken witte achtergrond met subtiele schaduw</li>
+<li>Padding voor de Polaroid-rand</li>
+<li>Gecentreerde tekst</li>
+</ul>
+<p>Style de afbeeldingen binnen de Polaroids met:</p>
+<ul>
+<li>100% breedte</li>
+<li>1:1 aspect ratio</li>
+<li>Object-fit en object-position voor de juiste uitsnede</li>
+<li>Filtereffecten voor een vintage look</li>
+</ul>
+<h3 id="positionering">Positionering</h3>
+<p>Geef elk Polaroid-element een unieke positie met:</p>
+<ul>
+<li>Verschillende top en left waarden (in percentages)</li>
+<li>Een subtiele rotatie via transform: rotate()</li>
+<li>Overlappende z-indices waar nodig</li>
+</ul>
+<h2 id="indienen">Indienen</h2>
+<p>Mapnaam: <code>voornaam polaroid</code> met de volgende bestanden:</p>
+<ul>
+<li><code>index.html</code></li>
+<li><code>style.css</code></li>
+<li>Map <code>images</code> met alle gebruikte afbeeldingen
+Maak één zip-bestand van de map. Lever in via Google Classroom.</li>
+</ul>
+<h2 id="puntenverdeling">Puntenverdeling</h2>
+<ul>
+<li><strong>Structuur (05)</strong>: Correcte bestandsnamen en mapstructuur</li>
+<li><strong>HTML (05)</strong>: Correct gebruik van elementen en attributen</li>
+<li><strong>CSS Basis (05)</strong>: Import, algemene styling en box model</li>
+<li><strong>CSS Polaroid (10)</strong>: Styling van de Polaroid-elementen</li>
+<li><strong>Positionering (10)</strong>: Correcte plaatsing en rotatie van Polaroids</li>
+<li><strong>Afbeeldingen (05)</strong>: Juiste verwerking en styling van foto&rsquo;s</li>
+</ul>
+<h2 id="veelvoorkomende-fouten">Veelvoorkomende fouten</h2>
+<ul>
+<li>Foutieve HTML-nesting</li>
+<li>Niet werkende navigatielinks</li>
+<li>Onjuiste mapstructuur of mediapaden</li>
+<li>Verkeerde aspect ratio van afbeeldingen</li>
+<li>Onjuiste positionering van Polaroids</li>
+<li>Ontbrekende transformaties of schaduweffecten</li>
+<li>Niet-werkende lettertype-import</li>
+</ul>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/js/main.js"></script>
+
+  </footer>
+</body>
+</html>

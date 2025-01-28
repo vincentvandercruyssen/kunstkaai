@@ -188,7 +188,7 @@ De eigenschap `background-image` stelt één of meer achtergrondafbeeldingen in 
 
 #### background-image eigenschappen
 
-{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" height="420" >}}
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" height="440" >}}
 
 ### color
 
