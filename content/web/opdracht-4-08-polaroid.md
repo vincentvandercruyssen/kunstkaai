@@ -37,6 +37,13 @@ In deze div-elementen plaats je telkens:
 
 ## CSS styling
 
+### Polaroid breedte
+
+Momenteel worden je verschillende polaroid-kaders allemaal onder elkaar weergegeven. Afhankelijk van de grootte van je foto's ook erg groot. 
+
+Het eerste wat we gaan toepassen is een vaste breedte aan je polaroid-class. Je spreekt deze class in je CSS aan met `.polaroid`, de eerste eigenschap die je toevoegt is `width` en geeft deze een waarde van `200px`. 
+
+
 ### Lettertype
 
 Begin met het importeren van een handgeschreven lettertype. Dit kan aan de hand van {{< a href="https://fonts.adobe.com/" text="Adobe Fonts" >}}. Zoek een lettertype en klik op de knop **Add to Web Project** op de pagina van je gekozen lettertype.
