@@ -30,7 +30,7 @@ Op deze manier weet de browser dat deze tekst als een aparte alinea of paragraaf
 
 Een webbrowser is een programma dat toegang geeft tot het internet. Het doel van een webbrowser is het tonen van webpagina's. Een webbrowser maakt gebruik van het HyperText Transfer Protocol (HTTP) om pagina’s op te halen van webservers. Enkele voorbeelden van webbrowsers zijn Mozilla Firefox, Google Chrome, Microsoft Edge, Opera en Apple Safari. Deze browsers lezen HTML-documenten en tonen deze als webpagina's. Een browser geeft de broncode van een HTML-document niet weer, maar toont de opmaak van het document en geeft zo de inhoud weer.
 
-{{< img src="img/web/cursus-html-browser-1.png" width="1200" >}}
+{{< img src="img/web/cursus-html-browser-1.png" >}}
 
 ### Anatomie van een HTML-element
 

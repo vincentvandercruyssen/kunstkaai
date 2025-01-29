@@ -197,7 +197,7 @@ Webontwikkeling
         
 
         
-        <li><a href="#box-sizing">4.3 Box-sizing</a></li>
+        <li><a href="#positionering">4.3 Positionering</a></li>
       
     
 
@@ -241,7 +241,7 @@ Webontwikkeling
         
 
         
-        <li><a href="#polaroid">4.5 Polaroid</a></li>
+        <li><a href="#polaroid-stijl">4.5 Polaroid stijl</a></li>
       
     
 
@@ -263,7 +263,7 @@ Webontwikkeling
         
 
         
-        <li><a href="#positionering">4.6 Positionering</a></li>
+        <li><a href="#box-sizing">4.6 Box-sizing</a></li>
       
     
 
@@ -356,8 +356,9 @@ Webontwikkeling
  <br> Opdracht: Polaroid</h1>
 
 <h2 id="opgave">Opgave</h2>
-<p>Lang voordat digitale fotografie werd uitgevonden, was het Polaroid-fototoestel één van de manieren om het resultaat van een foto meteen te kunnen zien.</p>
+<p>Lang voordat de digitale fotografie werd uitgevonden, was het Polaroid-fototoestel één van de manieren om het resultaat van een foto meteen te kunnen zien.</p>
 <p>In deze opdracht ga je een webpagina maken die een verzameling Polaroid-foto&rsquo;s weergeeft. Elke Polaroid heeft een vierkante afbeelding, omringd door de kenmerkende witte rand en een onderzijde waar je tekst op toevoegt. De Polaroid-foto&rsquo;s (minimaal negen) positioneer je op een levendige manier op de pagina. Je doet dit aan de hand van <code>position: absolute</code>.</p>
+<p>Je Polaroid-kaders stel je tentoon op een unieke achtergrond.</p>
 
 
 
@@ -408,36 +409,62 @@ Webontwikkeling
 <p style="text-align: center;"><a href="https://www.pinterest.com/vincentvandercruyssen/polaroid-css/" target="_blank">Bekijk board op Pinterest.</a></p>
 <script async defer type="text/javascript" src="https://assets.pinterest.com/js/pinit.js"></script>
 <h2 id="voorbereiding">Voorbereiding</h2>
-<p>Maak een nieuwe map aan op je computer in de map voor webontwikkeling, genaamd <code>voornaam polaroid</code>. Open deze map in Visual Studio Code: Klik in Visual Studio Code op <em>File &gt; Open Folder</em> en selecteer jouw map.</p>
+<p>Maak een nieuwe map aan in je map voor webontwikkeling, genaamd <code>voornaam polaroid</code>. Open deze map in Visual Studio Code, klik in Visual Studio Code op <em>File &gt; Open Folder</em> en selecteer jouw map.</p>
 <p>Maak in de map de volgende bestanden aan:</p>
 <ul>
 <li><code>index.html</code></li>
 <li><code>style.css</code></li>
 </ul>
-<p>Maak ook een nieuwe map aan, genaamd <code>images</code>. Hierin sla je alle afbeeldingen op die je wilt gebruiken, waaronder:</p>
+<p>Maak ook een nieuwe map aan, genaamd <code>images</code>. In deze map sla je alle afbeeldingen op die je gaat gebruiken:</p>
 <ul>
+<li>Minimaal 9 foto&rsquo;s voor je Polaroid-kaders (<code>foto01.jpg</code> t/m <code>foto09.jpg</code>).</li>
 <li>Een textuur voor de achtergrond (<code>textuur-achtergrond.jpg</code>).</li>
-<li>Minimaal 9 foto&rsquo;s voor je Polaroids (<code>foto01.jpg</code> t/m <code>foto09.jpg</code>).</li>
 </ul>
 <h2 id="bouw-de-hoofdpagina">Bouw de hoofdpagina</h2>
-<p>Open <code>index.html</code> in Visual Studio Code. Maak de basis HTML-structuur aan met Emmet aan de hand van <code>!</code> (uitroepteken). Vergeet niet de link naar je stylesheet en het <code>&lt;title&gt;</code>-element aan te passen met een passende titel.</p>
-<p>Voor elke Polaroid-foto maak je een div-element met de class &ldquo;polaroid&rdquo; en een unieke ID (bijvoorbeeld &ldquo;polaroid_01&rdquo;).</p>
+<p>Open <code>index.html</code> in Visual Studio Code. Maak de basis HTML-structuur aan met Emmet aan de hand van <code>!</code> (uitroepteken).</p>
+<p>Pas het <code>&lt;title&gt;</code>-element aan met een treffende titel. Voeg de link naar je stylesheet toe.</p>
+<p>Tussen de <code>body</code> maak je voor elke Polaroid-foto een div-element met de klasse &ldquo;polaroid&rdquo; en een uniek ID (bijvoorbeeld <code>polaroid_01</code>, <code>polaroid_02</code>, <code>polaroid_03</code>,&hellip;).</p>
 <p>In deze div-elementen plaats je telkens:</p>
 <ul>
-<li>Een <code>&lt;img&gt;</code>-element met de foto (de grootte zul je aanpassen via CSS).</li>
+<li>Een <code>&lt;img&gt;</code>-element met een originele foto, de grootte hiervan zul je aanpassen met CSS.</li>
 <li>Een <code>&lt;h3&gt;</code>-element met een titel of beschrijving.</li>
 </ul>
+<p>Emmet-shortcut: <code>(.polaroid#polaroid_$$&gt;img+h3)*9</code></p>
 <h2 id="css-styling">CSS styling</h2>
 <h3 id="polaroid-breedte">Polaroid breedte</h3>
-<p>Momenteel worden je verschillende polaroid-kaders allemaal onder elkaar weergegeven. Afhankelijk van de grootte van je foto&rsquo;s ook erg groot.</p>
-<p>Het eerste wat we gaan toepassen is een vaste breedte aan je polaroid-class. Je spreekt deze class in je CSS aan met <code>.polaroid</code>, de eerste eigenschap die je toevoegt is <code>width</code> en geeft deze een waarde van <code>200px</code>.</p>
+<p>Momenteel worden de polaroid-kaders onder elkaar weergegeven met afbeeldingen in verschillende formaten. Om dit aan te passen, begin je met het instellen van een vaste breedte voor de polaroid-klasse.</p>
+<p>Open je CSS-bestand en selecteer de polaroid-klasse aan de hand van <code>.polaroid {}</code>. Voeg vervolgens de eigenschap <code>width</code> toe en stel deze in op <code>200px</code>.</p>
+<p>Er lijkt momenteel nog niets te veranderen, dit komt doordat de afbeeldingen uit de polaroid-kaders weten te ontsnappen.</p>
+
+
+
+ 
+ 
+
+
+
+
+<div style="width: 55%;">
+
+
+
+
+<img src="http://localhost:1313/img/web/opdracht-4-08-polaroid-breedte1_hu81b8216d976b491621936ba823549761_1210175_1200x0_resize_q90_h2_lanczos_3.webp" alt="opdracht-4-08-polaroid-breedte1" loading="lazy">
+
+
+
+
+</div>
+
+<p>Selecteer de afbeeldingen met <code>.polaroid img {}</code>. Laat de afbeeldingen de volledige breedte van de polaroid-kaders innemen door de eigenschap <code>width</code> in te stellen op <code>100%</code>.</p>
 <h3 id="lettertype">Lettertype</h3>
-<p>Begin met het importeren van een handgeschreven lettertype. Dit kan aan de hand van 
+<p>Onder elke Polaroid-foto hoort natuurlijk een tekstje, je immiteert de handgeschreven stijl door een gepast lettertype te zoeken.</p>
+<p>Dit doe je bijvoorbeeld door gebruik te maken van 
 
 
 
 
-<a href="https://fonts.adobe.com/" target="_blank">Adobe Fonts</a>. Zoek een lettertype en klik op de knop <strong>Add to Web Project</strong> op de pagina van je gekozen lettertype.</p>
+<a href="https://fonts.adobe.com/" target="_blank">Adobe Fonts</a>. Daar kun je gemakkelijk lettertypes sorteren op Handgeschreven (Handwritten).</p>
 
 
 
@@ -447,20 +474,52 @@ Webontwikkeling
 
 
 
-  <img src="http://localhost:1313/img/web/opdracht-4-08-polaroid-adobefonts1_hu2881330565309538394.webp" alt="opdracht-4-08-polaroid-adobefonts1" loading="lazy" >
-  
+<div style="width: 50%;">
 
-<p>In het venster dat verschijnt, maak je een nieuw project aan. Kopieer vervolgens de <code>@import</code>-regel en plak deze bovenaan in je CSS-bestand. Nu kun je de <code>font-family</code> gebruiken welke je ook in hetzelfde venster aantreft.</p>
+
+
+
+<img src="http://localhost:1313/img/web/opdracht-4-08-polaroid-font1_hu19aef3f92d4589979f0addfd7ffd69db_18017_1200x0_resize_q90_h2_lanczos_3.webp" alt="opdracht-4-08-polaroid-font1" loading="lazy">
+
+
+
+
+</div>
+
+<p>Zoek een lettertype dat je inspireert. Klik bovenaan de pagina van je gekozen lettertype op de knop <strong>Add to Web Project</strong>.</p>
+
+
+
+ 
+ 
+
+
+
+
+<div style="width: 80%;">
+
+
+
+
+<img src="http://localhost:1313/img/web/opdracht-4-08-polaroid-adobefonts1_hu2644bab334fbf58a9cec88b84c8c366b_393683_1200x0_resize_q90_h2_lanczos_3.webp" alt="opdracht-4-08-polaroid-adobefonts1" loading="lazy">
+
+
+
+
+</div>
+
+<p>In het venster dat verschijnt, maak je een nieuw project aan met het dropdown-menu.</p>
+<p>Kopieer vervolgens de <code>@import</code>-regel en plak deze bovenaan in je CSS-bestand.</p>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"></th>
-          <th style="text-align: left"></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
 
 
  
@@ -469,10 +528,15 @@ Webontwikkeling
 
 
 
-  <img src="http://localhost:1313/img/web/opdracht-4-08-polaroid-adobefonts2_hu5490560055665709786.webp" alt="opdracht-4-08-polaroid-adobefonts2" loading="lazy" >
-  
+
+
+
+<img src="http://localhost:1313/img/web/opdracht-4-08-polaroid-adobefonts2_hubeffe36cca95e7cec2837b854d2988b2_137817_1400x0_resize_q90_h2_lanczos_3.webp" alt="opdracht-4-08-polaroid-adobefonts2" loading="lazy">
+
+
+
 </td>
-          <td style="text-align: left">
+<td>
 
 
  
@@ -481,58 +545,103 @@ Webontwikkeling
 
 
 
-  <img src="http://localhost:1313/img/web/opdracht-4-08-polaroid-adobefonts3_hu10095781871083430021.webp" alt="opdracht-4-08-polaroid-adobefonts3" loading="lazy" >
-  
+
+
+
+<img src="http://localhost:1313/img/web/opdracht-4-08-polaroid-adobefonts3_hu1d03185af5a0faca1be6d36f6ff9acfc_222764_1400x0_resize_q90_h2_lanczos_3.webp" alt="opdracht-4-08-polaroid-adobefonts3" loading="lazy">
+
+
+
 </td>
-      </tr>
-  </tbody>
+</tr>
+</tbody>
 </table>
+<p>Nu kun je de <code>font-family</code> eigenschap met bijbehorend lettertype kopiëren. Dit plak je uiteraard in de selector voor je <code>body {}</code>, zo verander je het lettertype over je gehele webpagina.</p>
 <p>Een andere optie is een lettertype te downloaden en gebruik te maken van de regel <code>@font-face</code>. Meer informatie daarover 
 
 
 
 
-<a href="https://www.w3schools.com/cssref/atrule_font-face.php" target="_blank">vind je hier</a>. Zorg er dan wel voor dat je het lettertype in een aparte map opslaat.</p>
-<h3 id="box-sizing">Box-sizing</h3>
-<p>Stel de box-sizing in voor alle elementen met border-box. Dit zal er voor zorgen dat de padding geen invloed heeft op de breedte van onze Polaroid&rsquo;s.</p>
-<pre><code>* {
-    box-sizing: border-box;
-}
-
-</code></pre>
-<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/rNYBwXP" frameborder="0" style="width: 100%; aspect-ratio: ;" height="548"></iframe>
-<h3 id="achtergrond">Achtergrond</h3>
-<p>Style de body met:</p>
+<a href="https://www.w3schools.com/cssref/atrule_font-face.php" target="_blank">vind je hier</a>, of vraag het aan je favoriete chatbot. Zorg er dan wel voor dat je het lettertype in een aparte map opslaat (bijvoorbeeld <code>fonts</code>).</p>
+<h3 id="positionering">Positionering</h3>
+<p>Uiteraard wil je nu de individuele plaatsen van de verschillende polaroid-kaders veranderen. In de selector die je eerder aanmaakte voor je polaroid-kaders <code>.polaroid {}</code> gebruik je de eigenschap <code>position</code> en stel je deze in op <code>absolute</code>.</p>
+<p>Geef elke Polaroid-kader een unieke positie. Je spreekt de unieke identiteiten aan met bijvoorbeeld <code>#polaroid_01 {}</code>.</p>
 <ul>
-<li>Een relatieve positie.</li>
-<li>Minimale hoogte van 100vh.</li>
-<li>Een achtergrondafbeelding die het hele scherm bedekt.</li>
-<li>Het geïmporteerde lettertype.</li>
+<li>Voeg de eigenschappen <code>top</code> en <code>left</code> toe en geef ze verscheidene waarden in percentages.</li>
+<li>Roteer aan de hand van de eigenschap <code>rotate</code> met een waarde in <code>deg</code>.</li>
+<li>Verander eventueel de eigenschap <code>z-index</code>, door een waarde hoger dan <code>0</code> in te stellen kun je ervoor zorgen dat een element boven een ander element op de pagina wordt weergegeven.</li>
 </ul>
-<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" frameborder="0" style="width: 100%; aspect-ratio: ;" height="440"></iframe>
-<h3 id="polaroid">Polaroid</h3>
-<p>Maak een .polaroid class met:</p>
+<p>Bronnen via MDN: 
+
+
+
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">position</a>, 
+
+
+
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/rotate" target="_blank">rotate</a>, 
+
+
+
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index" target="_blank">z-index</a>.</p>
+<h3 id="achtergrond">Achtergrond</h3>
+<p>Style de body met een achtergrondafbeelding die het hele scherm bedekt. Gebruik hiervoor:</p>
 <ul>
-<li>Absolute positionering.</li>
-<li>Vaste breedte (bv. 200px).</li>
+<li><code>background-image: url(&quot;images/...&quot;);</code></li>
+<li><code>background-size: cover;</code></li>
+</ul>
+<p>Centreren doe je aan de hand van <code>background-position: center;</code>.</p>
+<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" frameborder="0" style="width: 100%; aspect-ratio: ;" height="440"></iframe>
+<h3 id="polaroid-stijl">Polaroid stijl</h3>
+<p>Extra eigenschappen voor de <code>.polaroid</code> klasse:</p>
+<ul>
 <li>Gebroken witte achtergrond met subtiele schaduw.</li>
 <li>Padding voor de Polaroid-rand.</li>
 <li>Gecentreerde tekst.</li>
 </ul>
 <p>Style de afbeeldingen binnen de Polaroids met:</p>
 <ul>
-<li>100% breedte.</li>
 <li>1:1 aspect ratio.</li>
 <li>Object-fit en object-position voor de juiste uitsnede.</li>
 <li>Filtereffecten voor een vintage look.</li>
 </ul>
-<h3 id="positionering">Positionering</h3>
-<p>Geef elk Polaroid-element een unieke positie met:</p>
-<ul>
-<li>Verschillende top en left waarden (in percentages).</li>
-<li>Een subtiele rotatie via transform: rotate().</li>
-<li>Overlappende z-indices waar nodig.</li>
-</ul>
+<p>Bronnen via MDN: 
+
+
+
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" target="_blank">box-shadow</a>, 
+
+
+
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" target="_blank">aspect-ratio</a>, 
+
+
+
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" target="_blank">object-fit</a>, 
+
+
+
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-position" target="_blank">object-position</a>, 
+
+
+
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" target="_blank">filter</a>.</p>
+<h3 id="box-sizing">Box-sizing</h3>
+<p>Stel de box-sizing in voor alle elementen met border-box. Dit zal er voor zorgen dat de padding geen invloed heeft op de breedte van je Polaroid-kaders.</p>
+<pre><code>* {
+    box-sizing: border-box;
+}
+
+</code></pre>
+<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/rNYBwXP" frameborder="0" style="width: 100%; aspect-ratio: ;" height="548"></iframe>
 <h2 id="indienen">Indienen</h2>
 <p>Mapnaam: <code>voornaam polaroid</code> met de volgende bestanden:</p>
 <ul>
@@ -543,12 +652,12 @@ Webontwikkeling
 <p>Maak één zip-bestand van de map. Lever in via Google Classroom.</p>
 <h2 id="puntenverdeling">Puntenverdeling</h2>
 <ul>
-<li><strong>Structuur (05)</strong>: Correcte bestandsnamen en mapstructuur.</li>
-<li><strong>HTML (05)</strong>: Correct gebruik van elementen en attributen.</li>
-<li><strong>CSS Basis (05)</strong>: Import, algemene styling en box model.</li>
+<li><strong>Structuur (04)</strong>: Correcte bestandsnamen en mapstructuur.</li>
+<li><strong>HTML (12)</strong>: Correct gebruik van elementen en attributen.</li>
+<li><strong>CSS Basis (05)</strong>: Import, algemene styling.</li>
 <li><strong>CSS Polaroid (10)</strong>: Styling van de Polaroid-elementen.</li>
 <li><strong>Positionering (10)</strong>: Correcte plaatsing en rotatie van Polaroids.</li>
-<li><strong>Afbeeldingen (05)</strong>: Juiste verwerking en styling van foto&rsquo;s.</li>
+<li><strong>Afbeeldingen (04)</strong>: Juiste verwerking en styling van foto&rsquo;s.</li>
 </ul>
 <h2 id="veelvoorkomende-fouten">Veelvoorkomende fouten</h2>
 <ul>

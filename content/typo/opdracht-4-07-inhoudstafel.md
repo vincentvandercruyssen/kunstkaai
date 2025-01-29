@@ -22,6 +22,12 @@ Bedenk zelf de inhoud, denk aan één of meerdere onderwerpen of thema's waarmee
 - **Muziek:** Albumrecensies, interviews met artiesten, concertoverzichten.
 - ...
 
+Bedenk een magazine-titel (met informatie en ondertitel), en welke zes artikels je op de spread zult toelichten. 
+
+### Schets
+
+Maak een schets op A4-papier van je spread, met de verdeling van tekst en afbeeldingen. Dit helpt je bij het bepalen van de lay-out en het correct instellen van de hulplijnen (gids-layout). 
+
 ### Document
 
 - **Formaat:** A4 spread (2 pagina’s naast elkaar).
@@ -58,6 +64,7 @@ Voeg 6 afbeeldingskaders toe, passend bij de inhoud van de artikelen. De afbeeld
 Elk item moet duidelijk, samenhangend en aantrekkelijk gepresenteerd worden.
 
 ### Afwerking
+
 - Zorg dat alle inhoud netjes uitgelijnd is volgens de gidslayout.
 - Gebruik een professioneel kleurenschema en typografische keuzes.
 - Eindig met het maken van een pakket in Adobe InDesign (Bestand > Pakket maken) om alle gekoppelde bestanden, lettertypen en de InDesign-bestanden samen te bundelen.
@@ -75,7 +82,7 @@ Elk item moet duidelijk, samenhangend en aantrekkelijk gepresenteerd worden.
 
 ## Voorbeeld
 
-{{< img src="/img/typo/opdracht-4-07-inhoudstafel-vb1.png" width="1300" >}}
+{{< img src="/img/typo/opdracht-4-07-inhoudstafel-vb1.png" >}}
 
 ## Puntenverdeling
 

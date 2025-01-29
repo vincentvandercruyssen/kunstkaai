@@ -253,3 +253,24 @@ footer {
   margin: 2rem 0; */
   grid-column: 2;
 }
+
+@media (max-width: 900px) {
+  body {
+    display: block;
+    max-width: 100%;
+  }
+
+  header {
+    display: none;
+  }
+
+  main {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  div:has(img) {
+    width: 100% !important;
+  }
+}

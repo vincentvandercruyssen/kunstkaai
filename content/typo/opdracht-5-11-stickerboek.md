@@ -13,7 +13,7 @@ In deze opdracht maak je, in **duotone** (variaties van bv. cyaan in combinatie 
 Open InDesign en maak een spread met de instellingen hieronder.
 Noem dit document "voornaam stickerboek".
 
-{{< img src="/img/typo/opdracht-5-11-stickerboek-indesign1.jpg" width="320" >}}
+{{< img src="/img/typo/opdracht-5-11-stickerboek-indesign1.jpg" percent="45" >}}
 
 Het thema van de spread uit je stickerboek is een voetbalploeg, een film, een ... (Je mag een ander thema voorstellen. Je leraar beslist of je dat mag gebruiken.)
 
@@ -29,10 +29,9 @@ Het thema van de spread uit je stickerboek is een voetbalploeg, een film, een ..
 
 {{< svg src="/img/typo/logo-panini.svg" width="320" >}}
 
-
 - De spread wordt uitgevoerd als een **duotone**. Dit betekent dat je **enkel magenta, cyaan of geel** mag gebruiken (één van de drie!), in combinatie met **zwart** (de tweede tone) en het **wit** van je blad. *Voeg tinten van je kleur toe aan je stalen (swatches). Zorg dat je alleen de CMYK-percentages van jouw kleur en van het zwart aanpast. In de afbeelding hieronder zie je een voorbeeld van een duotone met cyaan.*
 
-{{< img src="/img/typo/opdracht-5-11-stickerboek-indesign_kleur1.jpg" width="460" >}}
+{{< img src="/img/typo/opdracht-5-11-stickerboek-indesign_kleur1.jpg" percent="65" >}}
 
 - Om een **afbeelding naar duotone** om te zetten, open je ze eerst in **Photoshop**. Daar zet je de afbeelding om naar **grijswaarden** (menu Image > Mode > Grayscale). Plaats daarna de afbeelding in je InDesign-document, selecteer ze met het de zwarte pijl, open het stalen-venster en kies je **(spot-)kleur** als vulling.
 
@@ -56,6 +55,6 @@ TIP: plaats de foto's die je gebruikt, in een aparte laag, ook in je spread (op 
 
 | | | |
 |-|-|-|
-|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb1.jpg" width="1200" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb2.jpg" width="1200" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb3.jpg" width="1200" >}}|
-|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb4.jpg" width="1200" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb5.jpg" width="1200" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb6.jpg" width="1200" >}}|
-|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb7.jpg" width="1200" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb8.jpg" width="1200" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb9.jpg" width="1200" >}}|
+|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb1.jpg" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb2.jpg" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb3.jpg" >}}|
+|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb4.jpg" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb5.jpg" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb6.jpg" >}}|
+|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb7.jpg" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb8.jpg" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb9.jpg" >}}|

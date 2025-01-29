@@ -23,7 +23,7 @@ Ontwerp een spread (dubbele pagina) voor een toeristische brochure over Domaine 
 
 | | | |
 |-|-|-|
-|{{< img src="/img/typo/opdracht-5-05-brochure_stavelot-logo-longpre-1.jpg" width="1200" >}}|{{< img src="/img/typo/opdracht-5-05-brochure_stavelot-logo-huski-1.jpg" width="1200" >}}|{{< img src="/img/typo/opdracht-5-05-brochure_stavelot-logo-huski-2.jpg" width="1200" >}}
+|{{< img src="/img/typo/opdracht-5-05-brochure_stavelot-logo-longpre-1.jpg" >}}|{{< img src="/img/typo/opdracht-5-05-brochure_stavelot-logo-huski-1.jpg" >}}|{{< img src="/img/typo/opdracht-5-05-brochure_stavelot-logo-huski-2.jpg" >}}
 
 Fonts gebruikt op de website Domaine Long Pré: **Monststerrat** en **Anton**. De beide lettertypes die op de website van het Domaine Long Pré worden gebruikt kun je downloaden via Adobe Fonts.
 

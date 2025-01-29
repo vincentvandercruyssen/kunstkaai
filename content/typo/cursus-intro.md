@@ -160,7 +160,7 @@ Daarnaast zijn er de denkbeeldige lijnen die de proporties van de letters aangev
 
 |   |   |
 |---|---|
-|{{< img src="/img/typo/cursus-negativespace-1_a.jpg" width="1200" >}}|{{< img src="/img/typo/cursus-negativespace-1_b.jpg" width="1200" >}}|
+|{{< img src="/img/typo/cursus-negativespace-1_a.jpg" >}}|{{< img src="/img/typo/cursus-negativespace-1_b.jpg" >}}|
 
 - **Alignment**: Zorg voor consistente uitlijning voor visuele orde.
 
@@ -172,8 +172,8 @@ Daarnaast zijn er de denkbeeldige lijnen die de proporties van de letters aangev
 
 |   |   |
 |---|---|
-|{{< img src="/img/typo/cursus-contrast-1_a.jpg" width="1200" >}}|{{< img src="/img/typo/cursus-contrast-1_b.jpg" width="1200" >}}|
-|{{< img src="/img/typo/cursus-contrast-1_c.jpg" width="1200" >}}|{{< img src="/img/typo/cursus-contrast-1_d.jpg" width="1200" >}}|
+|{{< img src="/img/typo/cursus-contrast-1_a.jpg" >}}|{{< img src="/img/typo/cursus-contrast-1_b.jpg" >}}|
+|{{< img src="/img/typo/cursus-contrast-1_c.jpg" >}}|{{< img src="/img/typo/cursus-contrast-1_d.jpg" >}}|
 
 - **Repetition**: Herhaal stijlen voor consistentie en herkenbaarheid.
 
@@ -217,7 +217,7 @@ Vaardigheden die je leert:
 - Lay-outs ontwerpen met grid-systemen
 - Beelden en illustraties integreren in typografische ontwerpen
 
-{{< img src="/img/typo/cursus-welke_tool-1.webp" width="1200" >}}
+{{< img src="/img/typo/cursus-welke_tool-1.webp" >}}
 
 ### Typografie en hiërarchie in ontwerpen
 

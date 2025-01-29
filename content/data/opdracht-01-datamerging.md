@@ -45,7 +45,7 @@ Je kiest een productcategorie die jouw winkel gaat aanbieden. Denk aan schoenen,
 
 Met deze informatie maak je een database aan in Excel of Google Sheets. Uiteindelijk ga je deze database koppelen aan een sjabloon in **Adobe InDesign** met behulp van de Data Merge-functie.
 
-{{< img src="/img/data/opdracht-01-datamerging-brochure-vb_1.png" width="1200" >}}
+{{< img src="/img/data/opdracht-01-datamerging-brochure-vb_1.png" >}}
 
 ## Deel 1: Productgegevens verzamelen
 

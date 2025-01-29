@@ -1,16 +1,25 @@
 {{ $image := resources.Get (.Get "src") }}
-{{ $width := .Get "width" | default "800" }}
+{{ $width := .Get "width" | default "1200" }}
 {{ $resized := $image.Resize (print $width "x webp") }}
 {{ $fileName := path.Base (.Get "src") }} <!-- Ensure correct file name retrieval -->
 {{ $fileNameWithoutExt := replace $fileName (path.Ext $fileName) "" }} <!-- Remove extension -->
 {{ $center := .Get "center" }}
+{{ $percent := .Get "percent" }}
 
-{{ if $center }}
-  <div style="display: flex; justify-content: center;">
+{{ if $percent }}
+<div style="width: {{ $percent }}%;">
 {{ end }}
 
-  <img src="{{ $resized.Permalink }}" alt="{{ $fileNameWithoutExt }}" loading="lazy" >
-  
 {{ if $center }}
+<div style="display: flex; justify-content: center;">
+{{ end }}
+
+<img src="{{ $resized.Permalink }}" alt="{{ $fileNameWithoutExt }}" loading="lazy">
+
+{{ if $center }}
+</div>
+{{ end }}
+
+{{ if $percent }}
 </div>
 {{ end }}

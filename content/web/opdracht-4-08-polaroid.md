@@ -6,61 +6,119 @@ draft = false
 
 ## Opgave
 
-Lang voordat digitale fotografie werd uitgevonden, was het Polaroid-fototoestel één van de manieren om het resultaat van een foto meteen te kunnen zien. 
+Lang voordat de digitale fotografie werd uitgevonden, was het Polaroid-fototoestel één van de manieren om het resultaat van een foto meteen te kunnen zien. 
 
-In deze opdracht ga je een webpagina maken die een verzameling Polaroid-foto's weergeeft. Elke Polaroid heeft een vierkante afbeelding, omringd door de kenmerkende witte rand en een onderzijde waar je tekst op toevoegt. De Polaroid-foto's (minimaal negen) positioneer je op een levendige manier op de pagina. Je doet dit aan de hand van `position: absolute`.
+In deze opdracht ga je een webpagina maken die een verzameling Polaroid-foto's weergeeft. Elke Polaroid heeft een vierkante afbeelding, omringd door de kenmerkende witte rand en een onderzijde waar je tekst op toevoegt. De Polaroid-foto's (minimaal negen) positioneer je op een levendige manier op de pagina. Je doet dit aan de hand van `position: absolute`. 
+
+Je Polaroid-kaders stel je tentoon op een unieke achtergrond. 
 
 {{< pinboard url="https://www.pinterest.com/vincentvandercruyssen/polaroid-css/" >}}
 
 ## Voorbereiding
 
-Maak een nieuwe map aan op je computer in de map voor webontwikkeling, genaamd `voornaam polaroid`. Open deze map in Visual Studio Code: Klik in Visual Studio Code op *File > Open Folder* en selecteer jouw map.
+Maak een nieuwe map aan in je map voor webontwikkeling, genaamd `voornaam polaroid`. Open deze map in Visual Studio Code, klik in Visual Studio Code op *File > Open Folder* en selecteer jouw map.
 
 Maak in de map de volgende bestanden aan:
 - `index.html`
 - `style.css`
 
-Maak ook een nieuwe map aan, genaamd `images`. Hierin sla je alle afbeeldingen op die je wilt gebruiken, waaronder:
+Maak ook een nieuwe map aan, genaamd `images`. In deze map sla je alle afbeeldingen op die je gaat gebruiken:
+
+- Minimaal 9 foto's voor je Polaroid-kaders (`foto01.jpg` t/m `foto09.jpg`).
 - Een textuur voor de achtergrond (`textuur-achtergrond.jpg`).
-- Minimaal 9 foto's voor je Polaroids (`foto01.jpg` t/m `foto09.jpg`).
 
 ## Bouw de hoofdpagina
 
-Open `index.html` in Visual Studio Code. Maak de basis HTML-structuur aan met Emmet aan de hand van `!` (uitroepteken). Vergeet niet de link naar je stylesheet en het `<title>`-element aan te passen met een passende titel. 
+Open `index.html` in Visual Studio Code. Maak de basis HTML-structuur aan met Emmet aan de hand van `!` (uitroepteken). 
 
-Voor elke Polaroid-foto maak je een div-element met de class "polaroid" en een unieke ID (bijvoorbeeld "polaroid_01"). 
+Pas het `<title>`-element aan met een treffende titel. Voeg de link naar je stylesheet toe. 
+
+Tussen de `body` maak je voor elke Polaroid-foto een div-element met de klasse "polaroid" en een uniek ID (bijvoorbeeld `polaroid_01`, `polaroid_02`, `polaroid_03`,...). 
 
 In deze div-elementen plaats je telkens:
 
-- Een `<img>`-element met de foto (de grootte zul je aanpassen via CSS).
+- Een `<img>`-element met een originele foto, de grootte hiervan zul je aanpassen met CSS.
 - Een `<h3>`-element met een titel of beschrijving. 
+
+Emmet-shortcut: `(.polaroid#polaroid_$$>img+h3)*9`
 
 ## CSS styling
 
 ### Polaroid breedte
 
-Momenteel worden je verschillende polaroid-kaders allemaal onder elkaar weergegeven. Afhankelijk van de grootte van je foto's ook erg groot. 
+Momenteel worden de polaroid-kaders onder elkaar weergegeven met afbeeldingen in verschillende formaten. Om dit aan te passen, begin je met het instellen van een vaste breedte voor de polaroid-klasse.
 
-Het eerste wat we gaan toepassen is een vaste breedte aan je polaroid-class. Je spreekt deze class in je CSS aan met `.polaroid`, de eerste eigenschap die je toevoegt is `width` en geeft deze een waarde van `200px`. 
+Open je CSS-bestand en selecteer de polaroid-klasse aan de hand van `.polaroid {}`. Voeg vervolgens de eigenschap `width` toe en stel deze in op `200px`. 
 
+Er lijkt momenteel nog niets te veranderen, dit komt doordat de afbeeldingen uit de polaroid-kaders weten te ontsnappen. 
+
+{{< img src="/img/web/opdracht-4-08-polaroid-breedte1.png" percent="55" >}}
+
+Selecteer de afbeeldingen met `.polaroid img {}`. Laat de afbeeldingen de volledige breedte van de polaroid-kaders innemen door de eigenschap `width` in te stellen op `100%`. 
 
 ### Lettertype
 
-Begin met het importeren van een handgeschreven lettertype. Dit kan aan de hand van {{< a href="https://fonts.adobe.com/" text="Adobe Fonts" >}}. Zoek een lettertype en klik op de knop **Add to Web Project** op de pagina van je gekozen lettertype.
+Onder elke Polaroid-foto hoort natuurlijk een tekstje, je immiteert de handgeschreven stijl door een gepast lettertype te zoeken. 
 
-{{< img src="/img/web/opdracht-4-08-polaroid-adobefonts1.png" width="520" >}}
+Dit doe je bijvoorbeeld door gebruik te maken van {{< a href="https://fonts.adobe.com/" text="Adobe Fonts" >}}. Daar kun je gemakkelijk lettertypes sorteren op Handgeschreven (Handwritten). 
 
-In het venster dat verschijnt, maak je een nieuw project aan. Kopieer vervolgens de `@import`-regel en plak deze bovenaan in je CSS-bestand. Nu kun je de `font-family` gebruiken welke je ook in hetzelfde venster aantreft. 
+{{< img src="/img/web/opdracht-4-08-polaroid-font1.png" percent="50" >}}
+
+Zoek een lettertype dat je inspireert. Klik bovenaan de pagina van je gekozen lettertype op de knop **Add to Web Project**.
+
+{{< img src="/img/web/opdracht-4-08-polaroid-adobefonts1.png" percent="80" >}}
+
+In het venster dat verschijnt, maak je een nieuw project aan met het dropdown-menu. 
+
+Kopieer vervolgens de `@import`-regel en plak deze bovenaan in je CSS-bestand. 
 
 | | |
 |-|-|
 |{{< img src="/img/web/opdracht-4-08-polaroid-adobefonts2.png" width="1400" >}}|{{< img src="/img/web/opdracht-4-08-polaroid-adobefonts3.png" width="1400" >}}|
 
-Een andere optie is een lettertype te downloaden en gebruik te maken van de regel `@font-face`. Meer informatie daarover {{< a href="https://www.w3schools.com/cssref/atrule_font-face.php" text="vind je hier" >}}. Zorg er dan wel voor dat je het lettertype in een aparte map opslaat. 
+Nu kun je de `font-family` eigenschap met bijbehorend lettertype kopiëren. Dit plak je uiteraard in de selector voor je `body {}`, zo verander je het lettertype over je gehele webpagina. 
+
+Een andere optie is een lettertype te downloaden en gebruik te maken van de regel `@font-face`. Meer informatie daarover {{< a href="https://www.w3schools.com/cssref/atrule_font-face.php" text="vind je hier" >}}, of vraag het aan je favoriete chatbot. Zorg er dan wel voor dat je het lettertype in een aparte map opslaat (bijvoorbeeld `fonts`). 
+
+### Positionering
+
+Uiteraard wil je nu de individuele plaatsen van de verschillende polaroid-kaders veranderen. In de selector die je eerder aanmaakte voor je polaroid-kaders `.polaroid {}` gebruik je de eigenschap `position` en stel je deze in op `absolute`. 
+
+Geef elke Polaroid-kader een unieke positie. Je spreekt de unieke identiteiten aan met bijvoorbeeld `#polaroid_01 {}`. 
+- Voeg de eigenschappen `top` en `left` toe en geef ze verscheidene waarden in percentages. 
+- Roteer aan de hand van de eigenschap `rotate` met een waarde in `deg`. 
+- Verander eventueel de eigenschap `z-index`, door een waarde hoger dan `0` in te stellen kun je ervoor zorgen dat een element boven een ander element op de pagina wordt weergegeven. 
+
+Bronnen via MDN: {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" text="position">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/rotate" text="rotate">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index" text="z-index">}}.
+
+### Achtergrond
+
+Style de body met een achtergrondafbeelding die het hele scherm bedekt. Gebruik hiervoor:
+
+- `background-image: url("images/...");`
+- `background-size: cover;`
+
+Centreren doe je aan de hand van `background-position: center;`. 
+
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" height="440" >}}
+
+### Polaroid stijl
+
+Extra eigenschappen voor de `.polaroid` klasse:
+- Gebroken witte achtergrond met subtiele schaduw.
+- Padding voor de Polaroid-rand.
+- Gecentreerde tekst.
+
+Style de afbeeldingen binnen de Polaroids met:
+- 1:1 aspect ratio.
+- Object-fit en object-position voor de juiste uitsnede.
+- Filtereffecten voor een vintage look. 
+
+Bronnen via MDN: {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" text="box-shadow">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" text="aspect-ratio">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" text="object-fit">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-position" text="object-position">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" text="filter">}}. 
 
 ### Box-sizing
 
-Stel de box-sizing in voor alle elementen met border-box. Dit zal er voor zorgen dat de padding geen invloed heeft op de breedte van onze Polaroid's. 
+Stel de box-sizing in voor alle elementen met border-box. Dit zal er voor zorgen dat de padding geen invloed heeft op de breedte van je Polaroid-kaders. 
 
 {{< showcode >}}* {
     box-sizing: border-box;
@@ -69,38 +127,6 @@ Stel de box-sizing in voor alle elementen met border-box. Dit zal er voor zorgen
 {{< /showcode >}}
 
 {{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/rNYBwXP" height="548" >}}
-
-### Achtergrond
-
-Style de body met:
-- Een relatieve positie.
-- Minimale hoogte van 100vh.
-- Een achtergrondafbeelding die het hele scherm bedekt.
-- Het geïmporteerde lettertype.
-
-{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" height="440" >}}
-
-### Polaroid
-
-Maak een .polaroid class met:
-- Absolute positionering.
-- Vaste breedte (bv. 200px).
-- Gebroken witte achtergrond met subtiele schaduw.
-- Padding voor de Polaroid-rand.
-- Gecentreerde tekst.
-
-Style de afbeeldingen binnen de Polaroids met:
-- 100% breedte.
-- 1:1 aspect ratio.
-- Object-fit en object-position voor de juiste uitsnede.
-- Filtereffecten voor een vintage look.
-
-### Positionering
-
-Geef elk Polaroid-element een unieke positie met:
-- Verschillende top en left waarden (in percentages).
-- Een subtiele rotatie via transform: rotate().
-- Overlappende z-indices waar nodig.
 
 ## Indienen
 
@@ -113,12 +139,12 @@ Maak één zip-bestand van de map. Lever in via Google Classroom.
 
 ## Puntenverdeling
 
-- **Structuur (05)**: Correcte bestandsnamen en mapstructuur.
-- **HTML (05)**: Correct gebruik van elementen en attributen.
-- **CSS Basis (05)**: Import, algemene styling en box model.
+- **Structuur (04)**: Correcte bestandsnamen en mapstructuur.
+- **HTML (12)**: Correct gebruik van elementen en attributen.
+- **CSS Basis (05)**: Import, algemene styling. 
 - **CSS Polaroid (10)**: Styling van de Polaroid-elementen.
 - **Positionering (10)**: Correcte plaatsing en rotatie van Polaroids.
-- **Afbeeldingen (05)**: Juiste verwerking en styling van foto's.
+- **Afbeeldingen (04)**: Juiste verwerking en styling van foto's.
 
 ## Veelvoorkomende fouten
 

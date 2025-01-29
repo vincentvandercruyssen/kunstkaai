@@ -62,7 +62,7 @@ Tabs worden gebruikt om tekst op specifieke horizontale posities uit te lijnen.
 - Sleep de tabstop naar de gewenste positie op de liniaal. Je kan de horizontale positie ook ingeven bij X: in millimeter. 
 - Zorg voor een consistente uitlijning door tabs in je alinea-opmaakstijl op te nemen.
 
-{{< img src="/img/typo/opdracht-5-10-productcatalogus-tabs1.png" width="1200" >}}
+{{< img src="/img/typo/opdracht-5-10-productcatalogus-tabs1.png" >}}
 
 - {{< a href="https://helpx.adobe.com/be_nl/indesign/using/tabs-indents.html" text="Adobe Help Center: Tabs en inspringingen" >}}
 
@@ -75,7 +75,7 @@ Een Paragraafregel is een lijn die boven of onder een alinea kan worden geplaats
 - Kies Rule Below (of Rule Above, afhankelijk van de situatie).
 - Stel de dikte, kleur, tint (opacity) en positie van de lijn in. 
 
-{{< img src="/img/typo/opdracht-5-10-productcatalogus-paragraphrules1.png" width="1200" >}}
+{{< img src="/img/typo/opdracht-5-10-productcatalogus-paragraphrules1.png" >}}
 
 - {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-paragraphs.html" text="Adobe Help Center: Alinea's opmaken (Lijnen voor of na alinea's toevoegen)" >}}
 

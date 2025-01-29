@@ -6,7 +6,7 @@ draft = false
 
 In deze eerste les van Adobe Illustrator gaan we een creatieve oefening doen waarbij je een mindmap maakt over jezelf. Dit is een geweldige manier om vertrouwd te raken met de basis van het programma terwijl je een persoonlijk project maakt.
 
-{{< img src="img/digitaal/opdracht-01-pentool.png" width="1200" >}}
+{{< img src="img/digitaal/opdracht-01-pentool.png" >}}
 
 ## Wat zullen we leren
 
@@ -22,7 +22,7 @@ In deze eerste les van Adobe Illustrator gaan we een creatieve oefening doen waa
 1. Start Adobe Illustrator op.
 2. Creëer een nieuw document in A4-formaat.
 
-{{< img src="/img/digitaal/opdracht-nieuw_document-a4-1.png" width="1200" >}}
+{{< img src="/img/digitaal/opdracht-nieuw_document-a4-1.png" >}}
 
 ### Mindmap Structuur
 

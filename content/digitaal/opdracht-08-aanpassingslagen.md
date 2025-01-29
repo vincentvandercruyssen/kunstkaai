@@ -17,9 +17,9 @@ Ontdek hoe je met aanpassingslagen, zoals ‘Kleurtoon/Verzadiging’ en ‘Curv
 
 Kies foto’s om mee te werken. Deze dienen als basis voor je experimenten met aanpassingslagen. Voor mooie foto’s, bezoek je {{< a href="https://unsplash.com/" >}} en klik download. Unsplash is een website waar je gratis hogekwaliteits foto’s kunt vinden. 
 
-{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-unsplash1.png" width="1200" >}}
+{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-unsplash1.png" >}}
 
-{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-unsplash2.png" width="300" >}}
+{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-unsplash2.png" percent="42" >}}
 
 ### Hue/Saturation
 
@@ -27,7 +27,7 @@ Open je foto rechtstreeks in Photoshop via Bestand > Openen, zodat alle informat
 
 | | |
 |-|-|
-|{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-laag1.png" width="600" >}}|{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-huesat1.png" width="1200" >}}|
+|{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-laag1.png" width="600" >}}|{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-huesat1.png" >}}|
 
 Voeg een ‘Kleurtoon/Verzadiging’ (‘Hue/Saturation’) aanpassingslaag toe en speel met de schuifregelaars om de kleurintensiteit en tint te veranderen.
 
@@ -35,7 +35,7 @@ Voeg een ‘Kleurtoon/Verzadiging’ (‘Hue/Saturation’) aanpassingslaag toe 
 
 Merk op dat je de tint, verzadiging, en lichtheid kunt aanpassen. Als je specifieke kleuren wilt aanpassen kan dit ook door het hand-icoontje te gebruiken en vervolgens een kleur op de foto aan te klikken.
 
-{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-huesat3.png" width="240" >}}
+{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-huesat3.png" percent="34" >}}
 
 Wanneer je bijvoorbeeld op de blauwe tint van de terreinwagen klikt worden enkel de ‘Cyans’ of lichtblauwe tinten aangeduid. 
 
@@ -53,7 +53,7 @@ De gemakkelijkste oplossing is om dus het masker van de aanpassingslaag aan te p
 
 | | |
 |-|-|
-|{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-objectsel1.png" width="600" >}}|{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-objectsel2.png" width="1200" >}}|
+|{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-objectsel1.png" width="600" >}}|{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-objectsel2.png" >}}|
 
 Je kan het gereedschap Object selecteren gebruiken om een selectie te maken van het onderwerp waarop je de aanpassing wilt toepassen. En nu is het kwestie van deze selectie toe te passen op het masker.
 
@@ -65,13 +65,13 @@ Je verwijdert het huidige masker rechterklik op het maskericoontje > delete mask
 
 | | |
 |-|-|
-|{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-maskopt1a.png" width="1600" >}}|{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-maskopt1b.png" width="1200" >}}|
+|{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-maskopt1a.png" width="1600" >}}|{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-maskopt1b.png" >}}|
 
 #### Maskeren optie 2
 
 Een andere optie is de de selectie te verwijderen van het huidige laagmasker (Backspace). Maar nu merk je dat het onderwerp net niet aangepast wordt, je moet dus het masker omdraaien. Je deselcteert (Selecteren > Deselecteren of Cmd + D) eerst, en dan inverteer je de kleuren van het masker (Cmd + I). 
 
-{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-maskopt2.png" width="1200" >}}
+{{< img src="/img/digitaal/opdracht-08-aanpassingslagen-maskopt2.png" >}}
 
 Je ziet dat nu enkel de terreinwagen geel gekleurd is, de rest van de afbeelding blijft gespaard. 
 

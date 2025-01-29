@@ -8,7 +8,7 @@ draft = false
 
 |   |   |
 |---|---|
-|{{< img src="/img/typo/opdracht-4-typoposter-vb_1.jpg" width="1200" >}}|{{< img src="/img/typo/opdracht-4-typoposter-vb_2.jpg" width="1200" >}}|
+|{{< img src="/img/typo/opdracht-4-typoposter-vb_1.jpg" >}}|{{< img src="/img/typo/opdracht-4-typoposter-vb_2.jpg" >}}|
 
 Tijdens de lessen typografische vormgeving leer je over verschillende aspecten van vormgeving en lay-out, met een focus op typografie. Bekijk eventueel de {{< a href="../cursus-intro/" text="cursus" >}} nog eens.
 
@@ -43,7 +43,7 @@ Plaats alle woorden op één A4-pagina. Dit mag in je schetsboek of op een los b
 
 Maak vervolgens op een nieuwe pagina je definitieve typoposter in Adobe Illustrator. Je mag zelf kiezen of je het ontwerp staand of liggend maakt.
 
-{{< img src="/img/digitaal/opdracht-nieuw_document-a4-1.png" width="1200" >}}
+{{< img src="/img/digitaal/opdracht-nieuw_document-a4-1.png" >}}
 
 Zorg ervoor dat de vier besproken lettertype-stijlen in je ontwerp worden verwerkt.
 
@@ -53,9 +53,9 @@ Ga je voor een strak design met rechte lijnen, of kies je voor een speelse graff
 
 |   |   |
 |---|---|
-|{{< img src="/img/typo/opdracht-4-typoposter-vb_4.jpg" width="1200" >}}|{{< img src="/img/typo/opdracht-4-typoposter-vb_3.jpg" width="1200" >}}
+|{{< img src="/img/typo/opdracht-4-typoposter-vb_4.jpg" >}}|{{< img src="/img/typo/opdracht-4-typoposter-vb_3.jpg" >}}
 
-{{< img src="/img/typo/opdracht-4-typoposter-vb_5.jpg" width="1200" >}}
+{{< img src="/img/typo/opdracht-4-typoposter-vb_5.jpg" >}}
 
 ## Indienen
 

@@ -21,7 +21,7 @@ Maak een duidelijke mapstructuur, een projectmap in je map voor Datamanagement g
 
 {{< a href="../../zip/Kaartspel-Links.zip" text="Hier vind je een link naar het zip-bestand met de benodigdheden. " >}} Hierin vind je: illustraties van de personages, Voorkant.ai (de voorkant en symbolen zul je hieruit exporteren voor je ontwerp in InDesign) en Achterkant.psd.
 
-{{< img src="/img/data/opdracht-02-kaartspel-finder_links.png" width="400" >}}
+{{< img src="/img/data/opdracht-02-kaartspel-finder_links.png" percent="55" >}}
 
 ### Google Sheets
 
@@ -65,13 +65,13 @@ Hieronder staan alle tekstgegevens van de gevraagde personages/kaarten:
 
 Zet je eerste rij en eerste kolom vast. Dit maakt het gemakkelijker om gegevens overzichtelijk te houden terwijl je door de rest van het document navigeert. 
 
-{{< img src="/img/data/opdracht-02-kaartspel-sheets_vastzetten1.png" width="1200" >}}
+{{< img src="/img/data/opdracht-02-kaartspel-sheets_vastzetten1.png" >}}
 
 #### Afwisselende kleuren
 
 Ga naar Opmaak en selecteer Afwisselende kleuren om je tabel overzichtelijker te maken. Hiermee worden rijen automatisch in verschillende kleuren weergegeven, wat het lezen en interpreteren van gegevens eenvoudiger maakt. 
 
-{{< img src="/img/data/opdracht-02-kaartspel-sheets_kleuren1.png" width="1200" >}}
+{{< img src="/img/data/opdracht-02-kaartspel-sheets_kleuren1.png" >}}
 
 ### Indienen
 
@@ -109,13 +109,13 @@ Nu je gegevens klaarstaan, duik je in het ontwerp van je kaartspel met Adobe InD
 
 Maak een laag voor de tekeningen en een laag voor de tekstkaders. 
 
-{{< img src="/img/data/opdracht-02-kaartspel-indesign_new.png" width="1200" >}}
+{{< img src="/img/data/opdracht-02-kaartspel-indesign_new.png" >}}
 
 ### Exporteren uit Adobe Illustrator
 
 Open het gekregen Illustrator-bestand.
 
-{{< img src="/img/data/opdracht-02-kaartspel-illustrator_open.png" width="1200" >}}
+{{< img src="/img/data/opdracht-02-kaartspel-illustrator_open.png" >}}
 
 Gebruik **Export for Screens**:
 - Formaat: PDF.
@@ -125,9 +125,9 @@ Gebruik **Export for Screens**:
 
 | | |
 |-|-|
-|{{< img src="/img/data/opdracht-02-kaartspel-illustrator_export1.png" width="460" >}}|{{< img src="/img/data/opdracht-02-kaartspel-illustrator_export.png" width="1200" >}}|
+|{{< img src="/img/data/opdracht-02-kaartspel-illustrator_export1.png" width="460" >}}|{{< img src="/img/data/opdracht-02-kaartspel-illustrator_export.png" >}}|
 
-{{< img src="/img/data/opdracht-02-kaartspel-finder_links.png" width="1200" >}}
+{{< img src="/img/data/opdracht-02-kaartspel-finder_links.png" >}}
 
 ### Fonts installeren
 
@@ -141,11 +141,11 @@ Via Adobe Fonts, zorg dat je bent aangemeld met je Adobe account en druk op de k
 
 **Afbeeldingskaders**. In totaal zullen er zes afbeeldingskaders nodig zijn. Plaats het referentiepunt voor het transformeren in de linkerbovenhoek. 
 
-{{< img src="/img/data/opdracht-02-kaartspel-indesign_referentiepunt1.png" width="200" >}}
+{{< img src="/img/data/opdracht-02-kaartspel-indesign_referentiepunt1.png" percent="30" >}}
 
 Koppel zodra je een kader tekent meteen de juiste gegevens eraan en zet de voorvertoning aan. Dan weet je direct of je gegevens correct zijn gekoppeld.
 
-{{< img src="/img/data/opdracht-02-kaartspel-indesign_datamergevoorvertoning1.png" width="160" >}}
+{{< img src="/img/data/opdracht-02-kaartspel-indesign_datamergevoorvertoning1.png" percent="30" >}}
 
 De posities en groottes van elk afbeeldingskader zijn:
 
@@ -155,7 +155,7 @@ De posities en groottes van elk afbeeldingskader zijn:
 - **Aanval** X: 3,5 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm
 - **Verdediging** X: 46 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm
 
-{{< img src="/img/data/opdracht-02-kaartspel-indesign_symbolen.png" width="460" >}}
+{{< img src="/img/data/opdracht-02-kaartspel-indesign_symbolen.png" percent="65" >}}
 
 **Tekstkaders**: Plaats alle tekstkaders op de aparte laag en op de juiste posities.
 
@@ -182,7 +182,7 @@ Controleer via Voorvertoning (Preview) in het Gegevenssamenvoeging (Data Merge) 
 
 Zorg ervoor dat de achterkant op pagina twee ook correct ingeladen wordt. 
 
-{{< img src="/img/data/opdracht-02-kaartspel-indesign_acherkant1.png" width="1200" >}}
+{{< img src="/img/data/opdracht-02-kaartspel-indesign_acherkant1.png" >}}
 
 ### Indienen
 

@@ -14,7 +14,7 @@ Ontdek Adobe Illustrator in dit digitale atelier. We focussen met deze opdracht 
 - Curves creëren door te klikken en te slepen.
 - Ankerpunten (anchor points) selecteren en aanpassen.
 
-{{< img src="img/digitaal/opdracht-01-pentool.png" width="1200" >}}
+{{< img src="img/digitaal/opdracht-01-pentool.png" >}}
 
 ## Stap-voor-stap
 
@@ -38,7 +38,7 @@ Dit zijn visuele hulplijnen die gebruikers helpen bij het uitlijnen, positionere
 1. Ga dan naar "View" in de bovenste menubalk.
 2. Kies "Smart Guides" of gebruik de sneltoets Cmd/Ctrl + U.
 
-{{< img src="img/digitaal/opdracht-01-smartguides.png" width="1200" >}}
+{{< img src="img/digitaal/opdracht-01-smartguides.png" >}}
 
 ### Grid (rasterlijnen)
 
@@ -55,7 +55,7 @@ Je kan het Grid ook instellen naar je eigen goesting.
 
 Nu ka je bij `View` (Beeld) in de bovenste menubalk `Snap to Grid` (Aan raster uitlijnen) aanzetten. Als je het grid en de Snap to Grid-functie hebt ingeschakeld, zal de pentool automatisch ankerpunten op het grid plaatsen, wat het tekenen van nauwkeurige en uniforme vormen veel gemakkelijker maakt. Onthoud dat, hoewel het raster nuttig kan zijn, het soms beperkend kan aanvoelen als je meer organische vormen of lijnen wilt tekenen.
 
-{{< img src="img/digitaal/opdracht-01-grid.png" width="1200" >}}
+{{< img src="img/digitaal/opdracht-01-grid.png" >}}
 
 ### **Oefening: Lijnstukken Creëren**
 

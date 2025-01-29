@@ -243,7 +243,7 @@ Additieve kleuren zijn kleuren die door licht te combineren worden gevormd. Het 
 
 |   |   |
 | - | - |
-| {{< svg src="img/web/colors-additive-rgb.svg" width="1200" >}} | {{< svg src="img/web/colors-subtractive-cmyk.svg" width="1200" >}} |
+| {{< svg src="img/web/colors-additive-rgb.svg" >}} | {{< svg src="img/web/colors-subtractive-cmyk.svg" >}} |
 | RGB Additieve kleurmenging | CMYK Subtractieve kleurmenging |
 
 #### Kleurenkiezer in VSC
