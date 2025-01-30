@@ -5,6 +5,7 @@
 
 :root {
   --sidebar-width: 20rem;
+  --text: #222;
 }
 
 * {
@@ -21,7 +22,7 @@ main {
 
 body {
   background-color: #eee;
-  color: #222;
+  color: var(--text);
   font-family: "Noto Serif";
   line-height: 1.61803;
   display: grid;
@@ -55,7 +56,8 @@ table,
 div:has(iframe),
 iframe,
 hr,
-details {
+details,
+.highlight {
   margin-bottom: 1.5rem;
 }
 
@@ -246,6 +248,11 @@ main ol li::before {
 
 main ol li:nth-child(n + 10)::before {
   content: counter(item) ". ";
+}
+
+.highlight * {
+  background-color: #fff !important;
+  color: var(--text) !important;
 }
 
 footer {

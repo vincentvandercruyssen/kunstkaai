@@ -6,8 +6,15 @@
     <description>Recent content in Webs on Kunstkaai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jan 2025 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jan 2025 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Insta</title>
+      <link>http://localhost:1313/web/opdracht-3-07-insta/</link>
+      <pubDate>Wed, 29 Jan 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-3-07-insta/</guid>
+      <description>Opgave Sociale media zoals Instagram tonen foto&amp;rsquo;s in een overzichtelijke feed, met likes en bijschriften. In deze opdracht bouw je een eenvoudige Instagram-feed met HTML en CSS. Je plaatst verschillende posts in een overzicht, waarbij elke post bestaat uit een afbeelding, een like-knop, een gebruikersnaam en een beschrijving.&#xA;Je gebruikt een vaste breedte voor de feed en zorgt ervoor dat afbeeldingen mooi binnen het ontwerp passen. De stijl wordt sober en minimalistisch gehouden, geïnspireerd door de echte Instagram-layout.</description>
+    </item>
     <item>
       <title>Opdracht: Polaroid</title>
       <link>http://localhost:1313/web/opdracht-4-08-polaroid/</link>
