@@ -37,7 +37,7 @@ Het thema van de spread uit je stickerboek is een voetbalploeg, een film, een ..
 
 ## Stickervel
 
-Maak een derde pagina aan van **305 mm x 175 mm**. Zorg voor gidslijnen van twee rijen en vijf kolommen. 
+Maak een derde pagina aan van **285 mm x 170 mm**, of omgekeerd. Zorg voor gidslijnen van twee rijen en vijf kolommen. 
 
 - In dit document plaats je je 10 stickers. Ze passen er netjes in, terwijl je aan elke zijde een witte marge van 0,5 cm overhoudt.
 - Je stickers zijn in **kleur**.

@@ -184,13 +184,31 @@ Zorg ervoor dat de achterkant op pagina twee ook correct ingeladen wordt.
 
 {{< img src="/img/data/opdracht-02-kaartspel-indesign_acherkant1.png" >}}
 
+### Samengevoegd document maken
+
+Wanneer je op de knop **Samengevoegd document maken** (*Create Merged Document*) klikt, verschijnt een venster waarin je kunt kiezen hoe het samengevoegde document wordt gegenereerd. Je kunt instellen of het een enkel bestand met meerdere pagina's wordt of afzonderlijke documenten per record. 
+
+{{< img src="/img/data/opdracht-02-kaartspel-indd_create1.png" percent="26" >}}
+
+In dit geval wil je alle gegevens (records) op afzonderlijke pagina's. 
+
+| | |
+|-|-|
+|{{< img src="/img/data/opdracht-02-kaartspel-indd_create2.png" >}}|{{< img src="/img/data/opdracht-02-kaartspel-indd_create3.png" >}}|
+
+Sla dit nieuwe bestand op als `voornaam kaartspel samengevoegd.indd`. Maak hiervan ook een PDF-bestand met dezelfde naamgeving. 
+
+Los eventuele fouten op. 
+
 ### Indienen
 
 Dien één zip-bestand in (met je voornaam en de opdrachtbenaming in de bestandsnaam) dat de volgende onderdelen bevat:
 
 - InDesign-sjabloondocument met gekoppelde gegevens. 
-- Geëxporteerde CSV-bestand.
-- Map met de bijbehorende afbeeldingen.
+- Geëxporteerde CSV-bestand. 
+- Map met de bijbehorende afbeeldingen (png, pdf, psd). 
+- InDesign-document met samengevoegde gegevens. 
+- PDF-bestand met samengevoegde gegevens (in printkwaliteit). 
 
 Geen onnodige bestanden toevoegen die onduidelijkheid scheppen. Zorg ervoor dat alle bestanden correct benoemd en georganiseerd zijn in de zip-map, zodat de koppelingen in InDesign behouden blijven en de bestanden zonder fouten kunnen geopend worden.
 
@@ -200,6 +218,7 @@ Geen onnodige bestanden toevoegen die onduidelijkheid scheppen. Zorg ervoor dat 
 - InDesign-sjabloondocument met werkende gekoppelde gegevens. (08)
 - Geëxporteerd CSV-bestand met zes kenmerken en twee afbeeldingen, vijftien producten. (04)
 - Correcte map met de bijbehorende afbeeldingen. (02)
+- Samengevoegde gegevens InDesign-document en PDF-bestand. (02)
 - Alle bestanden correct benoemd en georganiseerd. Geen onnodige bestanden en/of mappen toegevoegd die onduidelijkheid scheppen. (02)
 
 ## Bronnen
