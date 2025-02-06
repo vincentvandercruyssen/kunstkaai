@@ -110,10 +110,10 @@ Lever je werk in via Google Classroom.
 
 ## Puntenverdeling Deel 1
 
-- `voornaam product.zip` met `voornaam product.indd`, `voornaam product.pdf`, Links (met min. 2 afbeeldingen). (05)
-- Instellingen document: Afmetingen (210 mm x 297 mm), marges, afloop, lagen (min. twee), pagina + spread. (06)
-- Voorpagina: Foto, logo in vectoren, inhoud, één tekstkader (met inzetafstand, Glyphs, Ruimte na). (08)
-- Spread 2 (voorwoord): 1 tekstkader (titel + ruimte na + alinea stijl, 3 alinea's + ruimte na + alinea stijl), 1 tekstkader (3 kolommen + namen + alinea stijl, functies + alinea stijl), Foto over volledige pagina. (12)
+- **Naamgeving en bestandsbeheer (05)** `voornaam product.zip` met `voornaam product.indd`, `voornaam product.pdf`, Links (met min. 2 afbeeldingen). 
+- **Bestandsinstellingen (06)** Afmetingen (210 mm x 297 mm), marges, afloop, lagen (min. twee), pagina + spread. 
+- **Voorpagina (08)** Foto, logo in vectoren, inhoud, één tekstkader (met inzetafstand, Glyphs, Ruimte na). 
+- **Spread 2, voorwoord (12)** 1 tekstkader (titel + ruimte na + alinea stijl, 3 alinea's + ruimte na + alinea stijl), 1 tekstkader (3 kolommen + namen + alinea stijl, functies + alinea stijl), Foto over volledige pagina. 
 
 ## Bronnen
 
