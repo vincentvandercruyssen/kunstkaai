@@ -108,6 +108,13 @@ Lever je werk in via Google Classroom.
 - **Inhoud en typografie (15)** Correct gebruik van alinea- en tekenstijlen, leesbaarheid en hiërarchie.
 - **Lay-out en visuele elementen (15)** 
 
+## Puntenverdeling Deel 1
+
+- `voornaam product.zip` met `voornaam product.indd`, `voornaam product.pdf`, Links (met min. 2 afbeeldingen). (05)
+- Instellingen document: Afmetingen (210 mm x 297 mm), marges, afloop, lagen (min. twee), pagina + spread. (06)
+- Voorpagina: Foto, logo in vectoren, inhoud, één tekstkader (met inzetafstand, Glyphs, Ruimte na). (08)
+- Spread 2 (voorwoord): 1 tekstkader (titel + ruimte na + alinea stijl, 3 alinea's + ruimte na + alinea stijl), 1 tekstkader (3 kolommen + namen + alinea stijl, functies + alinea stijl), Foto over volledige pagina. (12)
+
 ## Bronnen
 
 - {{< a href="https://www.stihl.nl/nl" text="STIHL Officiële Website" >}}
