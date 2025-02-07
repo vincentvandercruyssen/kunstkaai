@@ -110,7 +110,7 @@ Lever je werk in via Google Classroom.
 
 ## Puntenverdeling Deel 1
 
-- **Naamgeving en bestandsbeheer (06)** `voornaam product.zip` met `voornaam product.indd`, `voornaam product.pdf`, Links (met min. 2 afbeeldingen). 
+- **Naamgeving en bestandsbeheer (06)** `voornaam productcatalogus.zip` met `voornaam productcatalogus.indd`, `voornaam productcatalogus.pdf`, Links (met min. 2 afbeeldingen). 
 - **Bestandsinstellingen (06)** Afmetingen (210 mm x 297 mm), marges, afloop, lagen (min. twee), pagina + spread. 
 - **Voorpagina (08)** Foto, logo in vectoren, inhoud, één tekstkader (met inzetafstand, Glyphs, Ruimte na). 
 - **Spread 2, voorwoord (12)** 1 tekstkader (titel + ruimte na + alinea stijl, 3 alinea's + ruimte na + alinea stijl), 1 tekstkader (3 kolommen + namen + alinea stijl, functies + alinea stijl), Foto over volledige pagina. 
