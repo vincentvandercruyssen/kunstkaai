@@ -165,7 +165,7 @@ De posities, groottes, lettertype en tekengrootte van elk **tekstkader** zijn:
 - **Kaarttype** X: 19 mm, Y: 64 mm, W: 26 mm, H: 5 mm, Font: Field Gothic (No.32 Reg XCond), Tekengrootte: 10 pt
 - **Effect** X: 8,5 mm, Y: 69 mm, W: 47 mm, H: 13 mm, Font: Big Caslon (Medium), Tekengrootte: 6 pt
 - **Kost** X: 3,5 mm, Y: 3,5 mm, W: 15 mm, H: 13 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 25 pt
-- **Aanval** X: 3,5 mm, Y: 56 mm, W: 14,5 mm, Y: 12 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 25 pt
+- **Aanval** X: 3,5 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 25 pt
 - **Verdediging** X: 46 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 25 pt
 
 Gebruik bij tekstkaderopties (text frame options) inzetafstand (inset spacing) voor een nette plaatsing van tekst. Verschuif waar nodig de basislijn (Baseline shift) om de tekst netjes verticaal te centreren. 
