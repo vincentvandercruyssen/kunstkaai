@@ -147,11 +147,11 @@ Koppel zodra je een kader tekent meteen de juiste gegevens eraan en zet de voorv
 
 {{< img src="/img/data/opdracht-02-kaartspel-indesign_datamergevoorvertoning1.png" percent="30" >}}
 
-De posities en groottes van elk afbeeldingskader zijn:
+De posities en groottes van elk **afbeeldingskader** zijn:
 
 - **Illustratie** X: 4,5 mm, Y: 3 mm, W: 55 mm, H: 55 mm
 - **Voorkant** X: -3 mm, Y: -3 mm, W: 70 mm, H: 94 mm
-- **Kost** X: 3,5 mm, Y: 3,5 mm, W: 15 mm, H: 15 mm
+- **Kost** X: 3,5 mm, Y: 3,5 mm, W: 15 mm, H: 13 mm
 - **Aanval** X: 3,5 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm
 - **Verdediging** X: 46 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm
 
@@ -159,7 +159,7 @@ De posities en groottes van elk afbeeldingskader zijn:
 
 **Tekstkaders**: Plaats alle tekstkaders op de aparte laag en op de juiste posities.
 
-De posities, groottes, lettertype en tekengrootte van elk tekstkader zijn:
+De posities, groottes, lettertype en tekengrootte van elk **tekstkader** zijn:
 
 - **Kaartbenaming** X: 14,5 mm, Y: 54,5 mm, W: 35 mm, H: 8,5 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 18 pt
 - **Kaarttype** X: 19 mm, Y: 64 mm, W: 26 mm, H: 5 mm, Font: Field Gothic (No.32 Reg XCond), Tekengrootte: 10 pt
