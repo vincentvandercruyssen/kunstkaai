@@ -93,7 +93,8 @@ Een Paragraafregel is een lijn die boven of onder een alinea kan worden geplaats
 
 ### Achterpagina
 
-- Foto en twee tekstkaders.
+- Foto, symbool en twee tekstkaders. 
+- Gebruik inzetafstand. 
 
 **Paginanummering** is optioneel, maar moet consistent worden toegepast als je dit toevoegt.
 
