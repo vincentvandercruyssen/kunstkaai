@@ -82,7 +82,9 @@ Een Paragraafregel is een lijn die boven of onder een alinea kan worden geplaats
 ### Spread 5 (nieuwigheden highlights)
 
 - Titel en ondertitel in één tekstkader.  
-- Twee aaneengesloten tekstkaders over de spread.  
+- Twee aaneengesloten tekstkaders met kolommen over de spread. 
+- Een teksktader met witte achtergrond en inzetafstand. 
+- Alinea- en tekenstijlen waar nodig. Gebruik ruimte voor en/of na. 
 - Afbeeldingen. 
 
 ### Spread naar keuze
