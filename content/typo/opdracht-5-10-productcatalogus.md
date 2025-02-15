@@ -101,19 +101,20 @@ Een gezipt pakket (package) `voornaam productcatalogus.zip` met daarin: het InDe
 
 Lever je werk in via Google Classroom.
 
-## Puntenverdeling
-
-- **Naamgeving en bestandsbeheer (05)** Correcte bestandsstructuur en naamgeving.
-- **Documentinstellingen (05)** Juiste afmetingen, marges, kolommen en afloop.
-- **Inhoud en typografie (15)** Correct gebruik van alinea- en tekenstijlen, leesbaarheid en hiërarchie.
-- **Lay-out en visuele elementen (15)** 
-
 ## Puntenverdeling Deel 1
 
-- **Naamgeving en bestandsbeheer (06)** `voornaam productcatalogus.zip` met `voornaam productcatalogus.indd`, `voornaam productcatalogus.pdf`, Links (met min. 2 afbeeldingen). 
-- **Bestandsinstellingen (06)** Afmetingen (210 mm x 297 mm), marges, afloop, lagen (min. twee), pagina + spread. 
+- **Naamgeving en bestandsbeheer (06)** `voornaam productcatalogus.zip` met `voornaam productcatalogus.indd`, `voornaam productcatalogus.pdf`, `Links` (met min. twee afbeeldingen). 
+- **Bestandsinstellingen (06)** Afmetingen (210 mm x 297 mm), marges, afloop, min. twee lagen, pagina + spread. 
 - **Voorpagina (08)** Foto, logo in vectoren, inhoud, één tekstkader (met inzetafstand, Glyphs, Ruimte na). 
-- **Spread 2, voorwoord (12)** 1 tekstkader (titel + ruimte na + alinea stijl, 3 alinea's + ruimte na + alinea stijl), 1 tekstkader (3 kolommen + namen + alinea stijl, functies + alinea stijl), Foto over volledige pagina. 
+- **Spread 2, voorwoord (12)** Tekstkader (titel + ruimte na + alineastijl, 3 alinea's + ruimte na + alineastijl), Tekstkader (3 kolommen + namen + alineastijl, functies + alineastijl), Foto over volledige pagina. 
+
+## Puntenverdeling Deel 2
+
+- **Naamgeving en bestandsbeheer (04)** `voornaam productcatalogus.zip` met `voornaam productcatalogus.indd`, `voornaam productcatalogus.pdf`, `Links` (met min. zeven afbeeldingen). 
+- **Bestandsinstellingen (04)** Afmetingen (210 mm x 297 mm), marges, afloop, min. twee lagen, twee spreads + pagina. 
+- **Spread 4, overzicht (12)** Afbeelding, Tekstkader (titel + ondertitel met alineastijl), Twee aaneengesloten tekstkaders met telkens twee kolommen, Tabs voor nummering, Paragraafregel voor onderlijning, Drie alineastijlen en één tekenstijl. 
+- **Spread 5, highlights (12)** Afbeelding, Tekstkader (titel + ondertitel met alineastijl), Twee aaneengesloten tekstkaders met telkens twee kolommen, Vier alineastijlen en één tekenstijl, Teksktader met witte achtergrond en inzetafstand, Afbeeldingen. 
+- **Achterpagina (04)** Foto, Twee tekstkaders, Symbool. 
 
 ## Bronnen
 
