@@ -81,19 +81,18 @@ Alle HTML-documenten koppelen naar hetzelfde CSS-bestand.
 
 ## Indienen
 
-
 Maak een zip-bestand van je map, zorg voor de correcte benaming (`voornaam_land.zip`), met daarin:
 - `index.html`, `stad_1.html`, `stad_2.html`, `stad_3.html` en `style.css`
 - Een submap `images` met alle gebruikte afbeeldingen.
 
 Lever het zip-bestand in via Google Classroom.
 
-## Beoordeling
+## Puntenverdeling
 
-- **Structuur (07)** Correcte mapstructuur en bestandsnamen.
-- **Navigatie (04)** Werkende links op alle pagina’s.
-- **Inhoud (04)** Informatieve teksten en afbeeldingen verwerkt in de gevraagde onderdelen. 
-- **CSS-styling (08)** Samenhang en toepassing van basiseigenschappen zoals kleur, lettertypes, marges, padding.
+- **Structuur (08)** Correcte mapstructuur en bestandsnamen. `index.html`, drie steden, `style.css`, map met afbeeldingen (min. 15). 
+- **Navigatie (08)** Dezelfde werkende links op alle pagina’s.
+- **Inhoud (24)** Duidelijke hoofdpagina. Informatieve teksten en afbeeldingen (min. vijf per pagina) verwerkt in de gevraagde onderdelen (min. drie per pagina). 
+- **CSS-styling (10)** Samenhang en toepassing van basiseigenschappen zoals achtergrondkleur, kleur, lettertypes, marges, padding, flex, gap. Minimaal zes selectors. 
 
 ## Veelvoorkomende fouten
 
