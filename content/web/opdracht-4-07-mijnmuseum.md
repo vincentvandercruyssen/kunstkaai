@@ -135,7 +135,7 @@ Maak één zip-bestand van de map. Lever in via Google Classroom.
 
 ## Puntenverdeling
 
-- **Structuur (06)**: Correcte bestandsnamen en mapstructuur. `index.html`, drie thema's, `style.css`, map met afbeeldingen (min. 12).
+- **Structuur (08)**: Correcte bestandsnamen en mapstructuur. `index.html`, drie thema's, `style.css`, map met afbeeldingen (min. 12).
 - **Navigatie (08)**: Werkende navigatielinks en dezelfde header op elke pagina.
 - **HTML (20)**: Correct gebruik van header, main, footer, section, h1-6, p, img/iframe en div met class voor de galerij.
 - **CSS (20)**: Gebruik van flexbox, grid en consistentie in stijlen. Minimaal acht selectors, eigenschappen (background-color, color, font-family, margin, padding, width, display:flex, display:grid, grid-template-columns, gap). 
