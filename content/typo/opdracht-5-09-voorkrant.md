@@ -41,7 +41,7 @@ Kijk en zoek allereerst naar voorbeelden van voorpagina's van papieren kranten.
 - **Advertentie**: Ontwerp een advertentie voor een culturele of toeristische activiteit. 
 - **Redactie-informatie**: Voeg contactinformatie, een redactieadres en eventueel een slogan toe onderaan de pagina. 
 
-{{< img src="/img/typo/opdracht-5-09-voorkrant-indesign_doc-1.png" width="360" center="true" >}}
+{{< img src="/img/typo/opdracht-5-09-voorkrant-indesign_doc-1.png" percent="45" center="true" >}}
 
 ### Opmaak (tekstkaders en stijlen)
 

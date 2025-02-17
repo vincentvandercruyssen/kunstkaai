@@ -6,8 +6,15 @@
     <description>Recent content in Webs on Kunstkaai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jan 2025 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2025 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Reservatie</title>
+      <link>http://localhost:1313/web/opdracht-4-09-reservatie/</link>
+      <pubDate>Sun, 16 Feb 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-4-09-reservatie/</guid>
+      <description>Opgave In deze opdracht ga je een reservatie-formulier maken voor een fictief bedrijf. Het formulier moet gebruiksvriendelijk en visueel aantrekkelijk zijn, met een moderne uitstraling. Het formulier bevat verschillende invoervelden, waaronder tekstvelden, een e-mailveld, een datum- en tijdselector, een tekstarea en een verzendknop. Het formulier moet ook validatie bevatten om ervoor te zorgen dat gebruikers alle vereiste informatie invullen.&#xA;Je gaat het formulier stylen met CSS.&#xA;Daarnaast ga je het formulier functioneel maken met behulp van Formspree, een service die het mogelijk maakt om formuliergegevens via e-mail te ontvangen zonder dat je backend-code hoeft te schrijven.</description>
+    </item>
     <item>
       <title>Opdracht: Insta</title>
       <link>http://localhost:1313/web/opdracht-3-07-insta/</link>

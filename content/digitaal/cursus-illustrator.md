@@ -29,7 +29,7 @@ Wanneer je een nieuw Illustrator-document aanmaakt, begin je meestal met de pres
 
 {{< img src="/img/digitaal/cursus-newdoc-1.png" >}}
 
-{{< img src="/img/digitaal/cursus-artboards-1.png" width="280" center="true" >}}
+{{< img src="/img/digitaal/cursus-artboards-1.png" percent="35" center="true" >}}
 
 ### Control bar (Bedieningsbalk)
 
@@ -43,7 +43,7 @@ Niet alle werkruimten hebben de bedieningsbalk (of "control bar"). Aangezien de 
 
 De toolbar (of gereedschapsbalk) bevat verschillende tools om te tekenen, vormen te maken en te bewerken.
 
-{{< img src="/img/digitaal/cursus-tool_bar-1.png" width="80" center="true" >}}
+{{< img src="/img/digitaal/cursus-tool_bar-1.png" percent="8" center="true" >}}
 
 Hier is een eenvoudige uitleg voor sommige van de meest gebruikte tools:
 

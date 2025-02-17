@@ -6,20 +6,20 @@
 {{ $center := .Get "center" }}
 {{ $percent := .Get "percent" }}
 
-{{ if $percent }}
-<div style="width: {{ $percent }}%;">
-{{ end }}
-
 {{ if $center }}
 <div style="display: flex; justify-content: center;">
 {{ end }}
 
+{{ if $percent }}
+<div style="width: {{ $percent }}%;">
+{{ end }}
+
 <img src="{{ $resized.Permalink }}" alt="{{ $fileNameWithoutExt }}" loading="lazy">
 
-{{ if $center }}
+{{ if $percent }}
 </div>
 {{ end }}
 
-{{ if $percent }}
+{{ if $center }}
 </div>
 {{ end }}

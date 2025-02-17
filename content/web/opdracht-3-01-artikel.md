@@ -18,7 +18,7 @@ In de {{< a href="../cursus-intro/" text="inleidende cursus" >}} vind je een ove
 
 {{< a href="https://chatgpt.com/" text="ChatGPT" >}} maakt gebruik van geavanceerde machine learning-technieken om menselijke taal te begrijpen. Het is een computerprogramma ontworpen om op een natuurlijke en logische manier te communiceren, vragen te beantwoorden en informatie te geven.
 
-{{< img src="/img/web/opdracht-3-01-chatgpt_1.png" width="540" center="true" >}}
+{{< img src="/img/web/opdracht-3-01-chatgpt_1.png" percent="70" center="true" >}}
 
 Het model is getraind op miljarden woorden en teksten uit boeken, artikelen en websites. Zo heeft het geleerd hoe taal werkt. ChatGPT kan daardoor diepgaande en contextueel relevante antwoorden bieden op gestelde vragen of instructies. Het kan eenvoudige vragen beantwoorden tot het helpen bij het opstellen van teksten, programmeren en het genereren van creatieve ideeën.
 
