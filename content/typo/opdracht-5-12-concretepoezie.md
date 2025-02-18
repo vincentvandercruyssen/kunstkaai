@@ -58,8 +58,8 @@ Het boekje bevat:
 ## Bronnen
 
 - {{< a href="https://nl.wikipedia.org/wiki/Concrete_po%C3%ABzie" text="Concrete poëzie - Wikipedia" >}}
-- {{ a href="https://nl.wikipedia.org/wiki/Kalligram" text="Kalligram - Wikipedia" }}
+- {{< a href="https://nl.wikipedia.org/wiki/Kalligram" text="Kalligram - Wikipedia" >}}
 - {{< a href="https://pt.wikipedia.org/wiki/Noigandres" text="Noigandres – Wikipédia, a enciclopédia livre" >}}
 - {{< a href="https://pt.wikipedia.org/wiki/Poesia_concreta" text="Poesia concreta – Wikipédia, a enciclopédia livre" >}}
-- {{ a href="https://nl.wikipedia.org/wiki/Paul_van_Ostaijen" text="Paul van Ostaijen" }}
+- {{< a href="https://nl.wikipedia.org/wiki/Paul_van_Ostaijen" text="Paul van Ostaijen" >}}
 - {{< a href="https://www.theatlantic.com/technology/archive/2014/01/the-lost-ancestors-of-ascii-art/283445/" text="The Lost Ancestors of ASCII Art - The Atlantic" >}}

@@ -1,8 +1,8 @@
 {{ $width := .Get "width" | default "100%" }}
+{{ $controls := .Get "controls" | default "false" }}
 
 {{ $video := resources.Get (.Get "src") }}
-<video autoplay muted loop width="{{ $width }}">
+<video autoplay muted loop width="{{ $width }}" {{ if eq $controls "true" }}controls{{ end }}>
   <source src="{{ $video.Permalink }}" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-

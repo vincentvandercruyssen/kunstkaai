@@ -8,7 +8,6 @@ In deze Photoshop-opdracht creëer je een afbeelding die je persoonlijke droom- 
 
 {{< pinboard url="https://www.pinterest.com/vincentvandercruyssen/mijn-droomplek/" >}}
 
-
 ## Stap-voor-stap
 
 ### Schets maken
