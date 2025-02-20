@@ -26,8 +26,6 @@ Open `index.html` en maak de basis HTML-structuur aan met Emmet (`!`).
 
 Voeg een passend `<title>`-element toe en link naar je CSS-bestand.
 
-
-
 ### Header
 
 Binnen de `<body>` plaats je een `<header>` met een `<h1>` die de titel van je pagina bevat.
@@ -84,12 +82,6 @@ Bronnen via MDN: {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/bo
 ### Afbeeldingen
 
 De afbeeldingen moeten de volledige breedte van de post innemen en vierkant blijven. Je doet dit door de eigenschap `width` in te stellen op `100%`. 
-
-Aan de hand van de eigenschap `aspect-ratio` kun je de beeldverhoudingen van de afbeeldingen veranderen. Deze eigenschap verwacht een verhouding van breedte tot hoogte. Bijvoorbeeld, `aspect-ratio: 1 / 1` zorgt ervoor dat de afbeelding vierkant blijft. 
-
-Als je afbeeldingen nu allemaal platgeduwt worden kun je `object-fit: cover;` gebruiken om te zorgen dat de afbeeldingen niet vervormen en de juiste verhoudingen behouden. Het zorgt er wel mogelijk voor dat de afbeeldingen worden bijgesneden. 
-
-Bronnen via MDN: {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" text="aspect-ratio">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" text="object-fit">}}. 
 
 ### De tekst
 
