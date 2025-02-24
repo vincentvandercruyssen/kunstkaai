@@ -10,13 +10,13 @@ In deze opdracht leer je om gestructureerde informatie te presenteren door een c
 
 ### Kies een onderwerp
 
-In de {{< a href="../cursus-intro/" text="inleidende cursus" >}} vind je een overzicht van sleutelwoorden en belangrijke mijlpalen, gepresenteerd in chronologische volgorde. Dit kan gaan over thema's als de opkomst van e-mail, de ontwikkeling van webbrowsers of de geschiedenis van sociale media, enzovoorts.
+In de [inleidende cursus](../cursus-intro/) vind je een overzicht van sleutelwoorden en belangrijke mijlpalen, gepresenteerd in chronologische volgorde. Dit kan gaan over thema's als de opkomst van e-mail, de ontwikkeling van webbrowsers of de geschiedenis van sociale media, enzovoorts.
 
 ### Stel een vraag aan ChatGPT
 
 {{< svg src="img/web/chatgpt-logo.svg" width="100" href="https://chatgpt.com/" text="ChatGPT" >}}
 
-{{< a href="https://chatgpt.com/" text="ChatGPT" >}} maakt gebruik van geavanceerde machine learning-technieken om menselijke taal te begrijpen. Het is een computerprogramma ontworpen om op een natuurlijke en logische manier te communiceren, vragen te beantwoorden en informatie te geven.
+[ChatGPT](https://chatgpt.com/) maakt gebruik van geavanceerde machine learning-technieken om menselijke taal te begrijpen. Het is een computerprogramma ontworpen om op een natuurlijke en logische manier te communiceren, vragen te beantwoorden en informatie te geven.
 
 {{< img src="/img/web/opdracht-3-01-chatgpt_1.png" percent="70" center="true" >}}
 
@@ -36,7 +36,7 @@ Creëer een nieuwe map waarin je een HTML-document (genaamd `index.html`) en een
 
 Gebruik `<h1>` voor de hoofdtitel, `<h2>` voor tussentitels, `<p>` voor tekst, `<img>` voor afbeeldingen, en `<ul>` en `<li>` voor opsommingen.
 
-Bekijk ook nog eens {{< a href="../cursus-html/" text="de cursus HTML" >}}.
+Bekijk ook nog eens [de cursus HTML](../cursus-html/).
 
 ### Voeg afbeeldingen en links toe
 

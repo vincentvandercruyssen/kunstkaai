@@ -19,7 +19,7 @@ Maak een duidelijke mapstructuur, een projectmap in je map voor Datamanagement g
 - InDesign-bestand en CSV-bestand.
 - Een map genaamd **Links** met alle benodigde PDF-bestanden (voorkant, kost, aanval, verdediging), afbeeldingen personages, PSD-bestand achterkant.
 
-{{< a href="../../zip/Kaartspel-Links.zip" text="Hier vind je een link naar het zip-bestand met de benodigdheden. " >}} Hierin vind je: illustraties van de personages, Voorkant.ai (de voorkant en symbolen zul je hieruit exporteren voor je ontwerp in InDesign) en Achterkant.psd.
+[Hier vind je een link naar het zip-bestand met de benodigdheden.](../../zip/Kaartspel-Links.zip) Hierin vind je: illustraties van de personages, Voorkant.ai (de voorkant en symbolen zul je hieruit exporteren voor je ontwerp in InDesign) en Achterkant.psd.
 
 {{< img src="/img/data/opdracht-02-kaartspel-finder_links.png" percent="55" >}}
 
@@ -27,7 +27,7 @@ Maak een duidelijke mapstructuur, een projectmap in je map voor Datamanagement g
 
 Maar eerst...
 
-- Ga naar {{< a href="https://sheets.new" text="sheets.new" >}} in je internetbrowser, dit maakt een nieuw Google Spreadsheet bestand aan. 
+- Ga naar [sheets.new](https://sheets.new) in je internetbrowser, dit maakt een nieuw Google Spreadsheet bestand aan. 
 
 Je hebt 12 kolommen nodig:
 - Tekstkolommen: Benaming, Type, Effect
@@ -132,8 +132,8 @@ Gebruik **Export for Screens**:
 ### Fonts installeren
 
 Via Adobe Fonts, zorg dat je bent aangemeld met je Adobe account en druk op de knop Add Family.
-- {{< a href="https://fonts.adobe.com/fonts/field-gothic-narrow" text="Field Gothic Narrow" >}} : Voor kosten, aanval, verdediging, kaartbenaming en kaarttype.
-- {{< a href="https://fonts.adobe.com/fonts/big-caslon" text="Big Caslon" >}} : Voor effecten.
+- [Field Gothic Narrow](https://fonts.adobe.com/fonts/field-gothic-narrow): Voor kosten, aanval, verdediging, kaartbenaming en kaarttype.
+- [Big Caslon](https://fonts.adobe.com/fonts/big-caslon): Voor effecten.
 
 ### InDesign-document ontwerpen
 
@@ -223,11 +223,11 @@ Geen onnodige bestanden toevoegen die onduidelijkheid scheppen. Zorg ervoor dat 
 
 ## Bronnen
 
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/create-documents.html" text="Adobe Help Center: Documenten maken" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/data-merge.html" text="Adobe Help Center: Gegevenssamenvoeging" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/laying-out-frames-pages.html" text="Adobe Help Center: Kaders en pagina's opmaken">}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/transforming-objects.html" text="Adobe Help Center: Objecten transformeren" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/creating-text-text-frames.html" text="Adobe Help Center: Tekst en tekstkaders maken" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-text.html" text="Adobe Help Center: Tekst opmaken" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-characters.html" text="Adobe Help Center: Tekens opmaken" >}}
-- {{< a href="https://assetstore.unity.com/packages/3d/environments/sci-fi/polygon-sci-fi-space-low-poly-3d-art-by-synty-138857" text="Unity Asset Store: Low Poly 3D Art by Synty" >}}
+- [Adobe Help Center: Documenten maken](https://helpx.adobe.com/be_nl/indesign/using/create-documents.html)
+- [Adobe Help Center: Gegevenssamenvoeging](https://helpx.adobe.com/be_nl/indesign/using/data-merge.html)
+- [Adobe Help Center: Kaders en pagina's opmaken](https://helpx.adobe.com/be_nl/indesign/using/laying-out-frames-pages.html)
+- [Adobe Help Center: Objecten transformeren](https://helpx.adobe.com/be_nl/indesign/using/transforming-objects.html)
+- [Adobe Help Center: Tekst en tekstkaders maken](https://helpx.adobe.com/be_nl/indesign/using/creating-text-text-frames.html)
+- [Adobe Help Center: Tekst opmaken](https://helpx.adobe.com/be_nl/indesign/using/formatting-text.html)
+- [Adobe Help Center: Tekens opmaken](https://helpx.adobe.com/be_nl/indesign/using/formatting-characters.html)
+- [Unity Asset Store: Low Poly 3D Art by Synty](https://assetstore.unity.com/packages/3d/environments/sci-fi/polygon-sci-fi-space-low-poly-3d-art-by-synty-138857)

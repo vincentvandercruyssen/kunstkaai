@@ -10,7 +10,7 @@ In deze opdracht onderzoeken we de basis van HTML en leren we door samen een dee
 
 We maken een deel van de 'Learn HTML by Building a Cat Photo App' in freeCodeCamp klassikaal, waarna je de rest individueel afwerkt.
 
-Ga naar {{< a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" >}}, meld je aan en volg de eerste reeks opdrachten.
+Ga naar [FreeCodeCamp](https://www.freecodecamp.org/learn/2022/responsive-web-design/), meld je aan en volg de eerste reeks opdrachten.
 
 ### Werkwijze
 - **Klassikaal gedeelte:** We beginnen samen, stap voor stap. Leerlingen die al bekend zijn met HTML kunnen dit gebruiken als opfrissing, terwijl nieuwkomers een goede start maken.

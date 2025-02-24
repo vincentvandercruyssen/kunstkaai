@@ -14,7 +14,7 @@ Maak drie flyers, waarbij alleen de voorzijde (recto) wordt ontworpen. De flyers
 
 ### Vormgeving
 
-1. (Abstracte) achtergrondfoto, te vinden via {{< a href="https://unsplash.com/s/photos/abstract-ink" text="unsplash" >}}.
+1. (Abstracte) achtergrondfoto, te vinden via [unsplash](https://unsplash.com/s/photos/abstract-ink).
 2. Twee duidelijke kleuren.
 3. Tekst in wit of één van de twee andere kleuren.
 4. Grafische elementen in wit of één van de twee andere kleuren.
@@ -29,7 +29,7 @@ Elke flyer moet de volgende informatie bevatten:
 - Drie kernwoorden.
 - Datum (in DD maand YYYY, bv. 18 augustus 2023).
 - Locatie (Naam van de locatie en volledig adres, bv. Stadsschouwburg Antwerpen - Theaterplein 1 - 2000 Antwerpen).
-- Tickets en website-informatie (bv. Koop tickets - {{< a href="https://apps.ticketmatic.com/" >}} - Vanaf €23 - Zitplaatsen).
+- Tickets en website-informatie (bv. Koop tickets - [https://apps.ticketmatic.com/](https://apps.ticketmatic.com/) - Vanaf €23 - Zitplaatsen).
 - Tijdschema (bv. 19:15 deuren - 20:00 voorstelling).
 - Logo van de organisator (in vectoren).
 
@@ -43,7 +43,7 @@ Elke flyer moet de volgende informatie bevatten:
 
 Een duotoonafbeelding is een grijswaardenafbeelding die wordt afgedrukt met twee kleuren. Hiermee vergroot je het toonbereik van een afbeelding.
 
-- Zoek via {{< a href="https://unsplash.com/s/photos/abstract-ink" text="unsplash" >}} naar een afbeelding met de sleutelwoorden abstract en ink. 
+- Zoek via [unsplash](https://unsplash.com/s/photos/abstract-ink) naar een afbeelding met de sleutelwoorden abstract en ink. 
 - Download deze afbeelding in de hoogste kwaliteit (Original Size) en open de afbeelding vervolgens in Photoshop.
 - Kies twee kleuren met voldoende contrast voor een sterk effect.
 - Zet de afbeelding om in grijswaarden: ga naar **Afbeelding > Modus > Grijswaarden** (of **Image > Mode > Grayscale**).

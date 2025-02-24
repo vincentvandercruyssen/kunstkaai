@@ -14,7 +14,7 @@ Je gaat een gegevensbestand koppelen aan een door jou ontworpen sjabloon in InDe
 
 ### InDesign
 
-**InDesign** is een krachtig {{< a href="https://nl.wikipedia.org/wiki/Desktoppublishing" text="desktop publishing" >}} programma voor het ontwerpen en opmaken van gedrukte en digitale publicaties, zoals brochures, boeken, tijdschriften en flyers. Het programma biedt veel tools voor het creëren van lay-outs. Een handige functie van InDesign is **Data Merge**, waarmee je gegevens uit externe bestanden kunt integreren in een sjabloon, wat het ontwerpproces kan versnellen.
+**InDesign** is een krachtig [desktop publishing](https://nl.wikipedia.org/wiki/Desktoppublishing) programma voor het ontwerpen en opmaken van gedrukte en digitale publicaties, zoals brochures, boeken, tijdschriften en flyers. Het programma biedt veel tools voor het creëren van lay-outs. Een handige functie van InDesign is **Data Merge**, waarmee je gegevens uit externe bestanden kunt integreren in een sjabloon, wat het ontwerpproces kan versnellen.
 
 {{< svg src="/img/typo/indesign-logo.svg" width="100" href="https://www.adobe.com/nl/products/indesign/" text="Adobe Indesign" >}}
 
@@ -41,7 +41,7 @@ Belangrijke stappen in het Data Merge-proces:
 
 Je opent binnenkort jouw eigen speciaalzaak en wilt je klanten een stijlvolle, overzichtelijke productbrochure aanbieden. Een professionele brochure is de perfecte manier om je producten te presenteren!
 
-Je kiest een productcategorie die jouw winkel gaat aanbieden. Denk aan schoenen, boeken, meubels, of nog veel meer. Vervolgens ga je op zoek naar minimaal 15 verschillende producten binnen die categorie, bijvoorbeeld op websites zoals {{< a href="https://www.bol.com/" text="bol.com" >}}. Voor elk product verzamel je de productnaam, beschrijving, prijs, een afbeelding, het logomerk (of tweede afbeelding) en minimaal **drie** andere interessante kenmerken (zoals afmetingen, gewicht of speciale functies).
+Je kiest een productcategorie die jouw winkel gaat aanbieden. Denk aan schoenen, boeken, meubels, of nog veel meer. Vervolgens ga je op zoek naar minimaal 15 verschillende producten binnen die categorie, bijvoorbeeld op websites zoals [bol.com](https://www.bol.com/). Voor elk product verzamel je de productnaam, beschrijving, prijs, een afbeelding, het logomerk (of tweede afbeelding) en minimaal **drie** andere interessante kenmerken (zoals afmetingen, gewicht of speciale functies).
 
 Met deze informatie maak je een database aan in Excel of Google Sheets. Uiteindelijk ga je deze database koppelen aan een sjabloon in **Adobe InDesign** met behulp van de Data Merge-functie.
 

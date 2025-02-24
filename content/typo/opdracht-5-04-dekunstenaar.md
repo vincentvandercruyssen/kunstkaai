@@ -62,93 +62,93 @@ Onderstaande lijst biedt een selectie van kunstenaars die nauw verbonden zijn me
 
 ### Vlaamse Primitieven (15e-16e eeuw)
 
-- {{< a href="https://nl.wikipedia.org/wiki/Quinten_Massijs_(I)" text="Quinten Massijs (I)" >}} (1478-1532)  (1466-1530) - Portretten en religieuze taferelen.
-- {{< a href="https://nl.wikipedia.org/wiki/Jan_Gossaert" text="Jan Gossaert" >}} (1478-1532) - Religieuze en mythologische werken.
-- {{< a href="https://nl.wikipedia.org/wiki/Joachim_Patinir" text="Joachim Patinir" >}} (1480-1524) - Landschappen en religieuze schilderijen.
-- {{< a href="https://nl.wikipedia.org/wiki/Joos_van_Cleve" text="Joos van Cleve" >}} (1485-1540) - Portretten en religieuze kunstwerken.
+- [Quinten Massijs (I)](https://nl.wikipedia.org/wiki/Quinten_Massijs_(I)) (1478-1532) (1466-1530) - Portretten en religieuze taferelen.
+- [Jan Gossaert](https://nl.wikipedia.org/wiki/Jan_Gossaert) (1478-1532) - Religieuze en mythologische werken.
+- [Joachim Patinir](https://nl.wikipedia.org/wiki/Joachim_Patinir) (1480-1524) - Landschappen en religieuze schilderijen.
+- [Joos van Cleve](https://nl.wikipedia.org/wiki/Joos_van_Cleve) (1485-1540) - Portretten en religieuze kunstwerken.
 
 ### Renaissance (16e eeuw)
 
-- {{< a href="https://nl.wikipedia.org/wiki/Jan_Massijs" text="Jan Massijs" >}} (1509-1573) - Religieuze en mythologische taferelen.
-- {{< a href="https://nl.wikipedia.org/wiki/Frans_Floris_I" text="Frans Floris I" >}} (1519-1570) - Beïnvloed door de Italiaanse stijl.
-- {{< a href="https://nl.wikipedia.org/wiki/Jacob_Grimmer" text="Jacob Grimmer" >}} (1525-1590) - Landschappen en seizoensgebonden taferelen.
-- {{< a href="https://nl.wikipedia.org/wiki/Caterina_van_Hemessen" text="Caterina van Hemessen" >}} (1528-1587) - Vlaamse Renaissance, zelfportretten.
-- {{< a href="https://nl.wikipedia.org/wiki/Maerten_de_Vos" text="Maerten de Vos" >}} (1532-1603) - Religieuze en historische taferelen.
-- {{< a href="https://nl.wikipedia.org/wiki/Joachim_Beuckelaer" text="Joachim Beuckelaer" >}} (1534-1574) - Markt- en keukenstillevens.
-- {{< a href="https://nl.wikipedia.org/wiki/Gillis_Coignet" text="Gillis Coignet" >}} (1542-1599) - Schilder van landschappen en portretten.
-- {{< a href="https://nl.wikipedia.org/wiki/Paul_Bril" text="Paul Bril" >}} (1554-1626) - Landschapschilder, vaak met mythologische elementen.
-- {{< a href="https://nl.wikipedia.org/wiki/Pieter_Brueghel_de_Jonge" text="Pieter Brueghel de Jonge" >}} (1564-1638) - Genreschilderijen en dorpsscènes.
-- {{< a href="https://nl.wikipedia.org/wiki/Jan_Brueghel_de_Oude" text="Jan Brueghel de Oude" >}} (1568-1625) - Allegorische schilderijen.
+- [Jan Massijs](https://nl.wikipedia.org/wiki/Jan_Massijs) (1509-1573) - Religieuze en mythologische taferelen.
+- [Frans Floris I](https://nl.wikipedia.org/wiki/Frans_Floris_I) (1519-1570) - Beïnvloed door de Italiaanse stijl.
+- [Jacob Grimmer](https://nl.wikipedia.org/wiki/Jacob_Grimmer) (1525-1590) - Landschappen en seizoensgebonden taferelen.
+- [Caterina van Hemessen](https://nl.wikipedia.org/wiki/Caterina_van_Hemessen) (1528-1587) - Vlaamse Renaissance, zelfportretten.
+- [Maerten de Vos](https://nl.wikipedia.org/wiki/Maerten_de_Vos) (1532-1603) - Religieuze en historische taferelen.
+- [Joachim Beuckelaer](https://nl.wikipedia.org/wiki/Joachim_Beuckelaer) (1534-1574) - Markt- en keukenstillevens.
+- [Gillis Coignet](https://nl.wikipedia.org/wiki/Gillis_Coignet) (1542-1599) - Schilder van landschappen en portretten.
+- [Paul Bril](https://nl.wikipedia.org/wiki/Paul_Bril) (1554-1626) - Landschapschilder, vaak met mythologische elementen.
+- [Pieter Brueghel de Jonge](https://nl.wikipedia.org/wiki/Pieter_Brueghel_de_Jonge) (1564-1638) - Genreschilderijen en dorpsscènes.
+- [Jan Brueghel de Oude](https://nl.wikipedia.org/wiki/Jan_Brueghel_de_Oude) (1568-1625) - Allegorische schilderijen.
 
 ### Barok (17e eeuw)
 
-- {{< a href="https://nl.wikipedia.org/wiki/Peter_Paul_Rubens" text="Peter Paul Rubens" >}} (1577-1640) - Mythologische en religieuze taferelen.
-- {{< a href="https://nl.wikipedia.org/wiki/Frans_Snyders" text="Frans Snyders" >}} (1579-1657) - Stillevens en dieren in jachtcontext.
-- {{< a href="https://nl.wikipedia.org/wiki/David_Teniers_I" text="David Teniers I" >}} (1582-1649) - Genrescènes en historische taferelen.
-- {{< a href="https://nl.wikipedia.org/wiki/Cornelis_de_Vos" text="Cornelis de Vos" >}} (1584-1651) - Portretten van aristocraten en kinderen.
-- {{< a href="https://nl.wikipedia.org/wiki/Gaspar_de_Crayer" text="Gaspar de Crayer" >}} (1584-1669) - Religieuze en historische taferelen.
-- {{< a href="https://nl.wikipedia.org/wiki/Daniël_Seghers" text="Daniël Seghers" >}} (1590-1661) - Bloemstillevens.
-- {{< a href="https://nl.wikipedia.org/wiki/Jacob_Jordaens" text="Jacob Jordaens" >}} (1593-1678) - Levendige schilderijen van dagelijks leven.
-- {{< a href="https://nl.wikipedia.org/wiki/Paul_de_Vos" text="Paul de Vos" >}} (1595-1678) - Dieren, jachtscènes en stillevens.
-- {{< a href="https://nl.wikipedia.org/wiki/Cornelis_Schut" text="Cornelis Schut" >}} (1597-1655) - Religieuze en historische taferelen.
-- {{< a href="https://nl.wikipedia.org/wiki/Antoon_van_Dyck" text="Antoon van Dyck" >}} (1599-1641) - Meester in portretten.
-- {{< a href="https://nl.wikipedia.org/wiki/Adriaen_van_Utrecht" text="Adriaen van Utrecht" >}} (1599-1652) - Stillevens met fruit, wild en marktscènes.
-- {{< a href="https://nl.wikipedia.org/wiki/Erasmus_Quellinus_II" text="Erasmus Quellinus II" >}} (1607-1678) - Schilder en graveur.
-- {{< a href="https://nl.wikipedia.org/wiki/David_Teniers_II" text="David Teniers II" >}} (1610-1690) - Genretaferelen, alledaagse scènes.
-- {{< a href="https://nl.wikipedia.org/wiki/Jan_Fijt" text="Jan Fijt" >}} (1611-1661) - Stillevens, dieren en jachttaferelen.
-- {{< a href="https://nl.wikipedia.org/wiki/Thomas_Willeboirts_Bosschaert" text="Thomas Willeboirts Bosschaert" >}} (1613-1654) - Religieuze taferelen.
-- {{< a href="https://nl.wikipedia.org/wiki/Gonzales_Coques" text="Gonzales Coques" >}} (1614-1684) - Portretschilder.
-- {{< a href="https://nl.wikipedia.org/wiki/Pieter_Verbruggen_(I)" text="Pieter Verbruggen (I)" >}} (1615-1686) - Beeldhouwer uit de barokperiode.
-- {{< a href="https://nl.wikipedia.org/wiki/Theodoor_Boeyermans" text="Theodoor Boeyermans" >}} (1620-1678) - Allegorische en mythologische werken.
-- {{< a href="https://nl.wikipedia.org/wiki/Jan_Erasmus_Quellinus" text="Jan Erasmus Quellinus" >}} (1634-1715) - Werkte in Italië.
-- {{< a href="https://nl.wikipedia.org/wiki/Pieter_Verbruggen_(II)" text="Pieter Verbruggen (II)" >}} (1648-1691) - Beeldhouwer in barokstijl.
-- {{< a href="https://nl.wikipedia.org/wiki/Godfried_Maes" text="Godfried Maes" >}} (1649-1700) - Voornamelijk religieuze werken.
+- [Peter Paul Rubens](https://nl.wikipedia.org/wiki/Peter_Paul_Rubens) (1577-1640) - Mythologische en religieuze taferelen.
+- [Frans Snyders](https://nl.wikipedia.org/wiki/Frans_Snyders) (1579-1657) - Stillevens en dieren in jachtcontext.
+- [David Teniers I](https://nl.wikipedia.org/wiki/David_Teniers_I) (1582-1649) - Genrescènes en historische taferelen.
+- [Cornelis de Vos](https://nl.wikipedia.org/wiki/Cornelis_de_Vos) (1584-1651) - Portretten van aristocraten en kinderen.
+- [Gaspar de Crayer](https://nl.wikipedia.org/wiki/Gaspar_de_Crayer) (1584-1669) - Religieuze en historische taferelen.
+- [Daniël Seghers](https://nl.wikipedia.org/wiki/Daniël_Seghers) (1590-1661) - Bloemstillevens.
+- [Jacob Jordaens](https://nl.wikipedia.org/wiki/Jacob_Jordaens) (1593-1678) - Levendige schilderijen van dagelijks leven.
+- [Paul de Vos](https://nl.wikipedia.org/wiki/Paul_de_Vos) (1595-1678) - Dieren, jachtscènes en stillevens.
+- [Cornelis Schut](https://nl.wikipedia.org/wiki/Cornelis_Schut) (1597-1655) - Religieuze en historische taferelen.
+- [Antoon van Dyck](https://nl.wikipedia.org/wiki/Antoon_van_Dyck) (1599-1641) - Meester in portretten.
+- [Adriaen van Utrecht](https://nl.wikipedia.org/wiki/Adriaen_van_Utrecht) (1599-1652) - Stillevens met fruit, wild en marktscènes.
+- [Erasmus Quellinus II](https://nl.wikipedia.org/wiki/Erasmus_Quellinus_II) (1607-1678) - Schilder en graveur.
+- [David Teniers II](https://nl.wikipedia.org/wiki/David_Teniers_II) (1610-1690) - Genretaferelen, alledaagse scènes.
+- [Jan Fijt](https://nl.wikipedia.org/wiki/Jan_Fijt) (1611-1661) - Stillevens, dieren en jachttaferelen.
+- [Thomas Willeboirts Bosschaert](https://nl.wikipedia.org/wiki/Thomas_Willeboirts_Bosschaert) (1613-1654) - Religieuze taferelen.
+- [Gonzales Coques](https://nl.wikipedia.org/wiki/Gonzales_Coques) (1614-1684) - Portretschilder.
+- [Pieter Verbruggen (I)](https://nl.wikipedia.org/wiki/Pieter_Verbruggen_(I)) (1615-1686) - Beeldhouwer uit de barokperiode.
+- [Theodoor Boeyermans](https://nl.wikipedia.org/wiki/Theodoor_Boeyermans) (1620-1678) - Allegorische en mythologische werken.
+- [Jan Erasmus Quellinus](https://nl.wikipedia.org/wiki/Jan_Erasmus_Quellinus) (1634-1715) - Werkte in Italië.
+- [Pieter Verbruggen (II)](https://nl.wikipedia.org/wiki/Pieter_Verbruggen_(II)) (1648-1691) - Beeldhouwer in barokstijl.
+- [Godfried Maes](https://nl.wikipedia.org/wiki/Godfried_Maes) (1649-1700) - Voornamelijk religieuze werken.
 
 ### Rococo / Classicisme (18e eeuw)
 
-- {{< a href="https://en.wikipedia.org/wiki/Jan_Baptist_Huysmans" text="Jan Baptist Huysmans" >}} (1654-1716) - Landschapschilder en tapijtontwerper.
-- {{< a href="https://nl.wikipedia.org/wiki/Norbert_van_Bloemen" text="Norbert van Bloemen" >}} (1670-1746) - Genreschilder, in Antwerpen en Rome.
-- {{< a href="https://nl.wikipedia.org/wiki/Willem_Ignatius_Kerricx" text="Willem Ignatius Kerricx" >}} (1682-1745) - Beeldhouwer en architect.
+- [Jan Baptist Huysmans](https://en.wikipedia.org/wiki/Jan_Baptist_Huysmans) (1654-1716) - Landschapschilder en tapijtontwerper.
+- [Norbert van Bloemen](https://nl.wikipedia.org/wiki/Norbert_van_Bloemen) (1670-1746) - Genreschilder, in Antwerpen en Rome.
+- [Willem Ignatius Kerricx](https://nl.wikipedia.org/wiki/Willem_Ignatius_Kerricx) (1682-1745) - Beeldhouwer en architect.
 
 ### Romantiek en Academisme (19e eeuw)
 
-- {{< a href="https://nl.wikipedia.org/wiki/Balthasar_Paul_Ommeganck" text="Balthasar Paul Ommeganck" >}} (1755-1826) - Schilder van landschappen en dieren.
-- {{< a href="https://nl.wikipedia.org/wiki/Nicaise_De_Keyser" text="Nicaise De Keyser" >}} (1813-1887) - Historische scènes en portretten, academisme.
-- {{< a href="https://nl.wikipedia.org/wiki/Hendrik_Leys" text="Hendrik Leys" >}} (1815-1869) - Historische en genreschilderijen, academisme.
+- [Balthasar Paul Ommeganck](https://nl.wikipedia.org/wiki/Balthasar_Paul_Ommeganck) (1755-1826) - Schilder van landschappen en dieren.
+- [Nicaise De Keyser](https://nl.wikipedia.org/wiki/Nicaise_De_Keyser) (1813-1887) - Historische scènes en portretten, academisme.
+- [Hendrik Leys](https://nl.wikipedia.org/wiki/Hendrik_Leys) (1815-1869) - Historische en genreschilderijen, academisme.
 
 ### Symbolisme en Avant-garde (19e-20e eeuw)
 
-- {{< a href="https://nl.wikipedia.org/wiki/Jan_Van_Beers_(kunstschilder)   " text="Jan van Beers" >}} (1852-1927) - Symbolisme, historische scènes en portretten.
-- {{< a href="https://nl.wikipedia.org/wiki/James_Ensor" text="James Ensor" >}} (1860-1949) - Symbolisme en expressionisme, macabere scènes.
-- {{< a href="https://nl.wikipedia.org/wiki/Charles_Mertens" text="Charles Mertens" >}} (1865-1919) - Symbolisme, vaak sociaal-politieke thema's.
-- {{< a href="https://nl.wikipedia.org/wiki/Alice_Eckermans" text="Alice Eckermans" >}} (1866-1921) - Portretten en stillevens in realistische stijl.
-- {{< a href="https://nl.wikipedia.org/wiki/Louise_De_Hem" text="Louise De Hem" >}} (1866-1922) - Realistische schilderijen van mensen.
-- {{< a href="https://nl.wikipedia.org/wiki/Eugeen_Van_Mieghem" text="Eugeen Van Mieghem" >}} (1875-1930) - Havenleven, sociaal realisme.
-- {{< a href="https://nl.wikipedia.org/wiki/Léon_Spilliaert" text="Léon Spilliaert" >}} (1881-1946) - Symbolisme, vaak melancholisch.
-- {{< a href="https://nl.wikipedia.org/wiki/Gustave_Van_de_Woestyne" text="Gustave Van de Woestyne" >}} (1881-1947) - Symbolisme, religieus en mystiek.
-- {{< a href="https://nl.wikipedia.org/wiki/Rik_Wouters_(kunstenaar)" text="Rik Wouters" >}} (1882-1916) - Modernisme, felle kleuren en dynamische figuren.
-- {{< a href="https://nl.wikipedia.org/wiki/Jules_Schmalzigaug" text="Jules Schmalzigaug" >}} (1882-1917) - Futurisme, beweging en dynamiek.
-- {{< a href="https://nl.wikipedia.org/wiki/Walter_Vaes" text="Walter Vaes" >}} (1882-1958) - Realistische stillevens en interieurs.
+- [Jan van Beers](https://nl.wikipedia.org/wiki/Jan_Van_Beers_(kunstschilder)) (1852-1927) - Symbolisme, historische scènes en portretten.
+- [James Ensor](https://nl.wikipedia.org/wiki/James_Ensor) (1860-1949) - Symbolisme en expressionisme, macabere scènes.
+- [Charles Mertens](https://nl.wikipedia.org/wiki/Charles_Mertens) (1865-1919) - Symbolisme, vaak sociaal-politieke thema's.
+- [Alice Eckermans](https://nl.wikipedia.org/wiki/Alice_Eckermans) (1866-1921) - Portretten en stillevens in realistische stijl.
+- [Louise De Hem](https://nl.wikipedia.org/wiki/Louise_De_Hem) (1866-1922) - Realistische schilderijen van mensen.
+- [Eugeen Van Mieghem](https://nl.wikipedia.org/wiki/Eugeen_Van_Mieghem) (1875-1930) - Havenleven, sociaal realisme.
+- [Léon Spilliaert](https://nl.wikipedia.org/wiki/Léon_Spilliaert) (1881-1946) - Symbolisme, vaak melancholisch.
+- [Gustave Van de Woestyne](https://nl.wikipedia.org/wiki/Gustave_Van_de_Woestyne) (1881-1947) - Symbolisme, religieus en mystiek.
+- [Rik Wouters](https://nl.wikipedia.org/wiki/Rik_Wouters_(kunstenaar)) (1882-1916) - Modernisme, felle kleuren en dynamische figuren.
+- [Jules Schmalzigaug](https://nl.wikipedia.org/wiki/Jules_Schmalzigaug) (1882-1917) - Futurisme, beweging en dynamiek.
+- [Walter Vaes](https://nl.wikipedia.org/wiki/Walter_Vaes) (1882-1958) - Realistische stillevens en interieurs.
 
 ### Modernisme en Hedendaagse Kunst (20e eeuw)
 
-- {{< a href="https://nl.wikipedia.org/wiki/Marthe_Donas" text="Marthe Donas" >}} (1885-1967) - Abstracte kunst en kubisme.
-- {{< a href="https://nl.wikipedia.org/wiki/Constant_Permeke" text="Constant Permeke" >}} (1886-1952) - Expressionisme, krachtige vormen.
-- {{< a href="https://nl.wikipedia.org/wiki/Oscar_Jespers" text="Oscar Jespers" >}} (1887-1970) - Beeldhouwer en modernist.
-- {{< a href="https://nl.wikipedia.org/wiki/Jozef_Peeters_(kunstenaar)" text="Jozef Peeters" >}} (1895-1960) - Abstracte kunst, Belgische avant-garde.
-- {{< a href="https://nl.wikipedia.org/wiki/Panamarenko" text="Panamarenko" >}} (1940-2019) - Kunstenaar en uitvinder, constructies.
-- {{< a href="https://nl.wikipedia.org/wiki/Fred_Bervoets" text="Fred Bervoets" >}} (1942) - Expressieve schilderijen en grafiek.
-- {{< a href="https://nl.wikipedia.org/wiki/Guillaume_Bijl" text="Guillaume Bijl" >}} (1946) - Conceptuele kunstenaar, sociaal commentaar.
-- {{< a href="https://nl.wikipedia.org/wiki/Guy_Rombouts" text="Guy Rombouts" >}} (1949) - Conceptueel, typografie en installaties.
-- {{< a href="https://nl.wikipedia.org/wiki/Anne-Mie_Van_Kerckhoven" text="Anne-Mie Van Kerckhoven" >}} (1951) - Schilderkunst, tekenkunst en videokunst.
-- {{< a href="https://nl.wikipedia.org/wiki/Jan_Fabre" text="Jan Fabre" >}} (1958) - Hedendaags, multidisciplinair kunstenaar.
-- {{< a href="https://nl.wikipedia.org/wiki/Luc_Tuymans" text="Luc Tuymans" >}} (1958) - Schilderkunst, vage kleuren en historische onderwerpen.
-- {{< a href="https://nl.wikipedia.org/wiki/Ilse_D%27Hollander" text="Ilse D'Hollander" >}} (1968-1997) - Abstracte landschappen en stillevens.
-- {{< a href="https://nl.wikipedia.org/wiki/Koen_van_den_Broek" text="Koen van den Broek" >}} (1973) - Abstracte landschappen en architectuur.
-- {{< a href="https://nl.wikipedia.org/wiki/Vaast_Colson" text="Vaast Colson" >}} (1977) - Performancekunst en installaties.
-- {{< a href="https://nl.wikipedia.org/wiki/Dennis_Tyfus" text="Dennis Tyfus" >}} (1979) - Multidisciplinair kunstenaar, muziek en grafiek.
-- {{< a href="https://nl.wikipedia.org/wiki/Rinus_Van_de_Velde" text="Rinus Van de Velde" >}} (1983) - Hyperrealistische houtskooltekeningen.
-- {{< a href="https://bennyvandenmeulengracht-vrancx.be/" text="Benny Van den Meulengracht-Vrancx" >}} (1989) - Conceptueel, installaties.
+- [Marthe Donas](https://nl.wikipedia.org/wiki/Marthe_Donas) (1885-1967) - Abstracte kunst en kubisme.
+- [Constant Permeke](https://nl.wikipedia.org/wiki/Constant_Permeke) (1886-1952) - Expressionisme, krachtige vormen.
+- [Oscar Jespers](https://nl.wikipedia.org/wiki/Oscar_Jespers) (1887-1970) - Beeldhouwer en modernist.
+- [Jozef Peeters](https://nl.wikipedia.org/wiki/Jozef_Peeters_(kunstenaar)) (1895-1960) - Abstracte kunst, Belgische avant-garde.
+- [Panamarenko](https://nl.wikipedia.org/wiki/Panamarenko) (1940-2019) - Kunstenaar en uitvinder, constructies.
+- [Fred Bervoets](https://nl.wikipedia.org/wiki/Fred_Bervoets) (1942) - Expressieve schilderijen en grafiek.
+- [Guillaume Bijl](https://nl.wikipedia.org/wiki/Guillaume_Bijl) (1946) - Conceptuele kunstenaar, sociaal commentaar.
+- [Guy Rombouts](https://nl.wikipedia.org/wiki/Guy_Rombouts) (1949) - Conceptueel, typografie en installaties.
+- [Anne-Mie Van Kerckhoven](https://nl.wikipedia.org/wiki/Anne-Mie_Van_Kerckhoven) (1951) - Schilderkunst, tekenkunst en videokunst.
+- [Jan Fabre](https://nl.wikipedia.org/wiki/Jan_Fabre) (1958) - Hedendaags, multidisciplinair kunstenaar.
+- [Luc Tuymans](https://nl.wikipedia.org/wiki/Luc_Tuymans) (1958) - Schilderkunst, vage kleuren en historische onderwerpen.
+- [Ilse D'Hollander](https://nl.wikipedia.org/wiki/Ilse_D%27Hollander) (1968-1997) - Abstracte landschappen en stillevens.
+- [Koen van den Broek](https://nl.wikipedia.org/wiki/Koen_van_den_Broek) (1973) - Abstracte landschappen en architectuur.
+- [Vaast Colson](https://nl.wikipedia.org/wiki/Vaast_Colson) (1977) - Performancekunst en installaties.
+- [Dennis Tyfus](https://nl.wikipedia.org/wiki/Dennis_Tyfus) (1979) - Multidisciplinair kunstenaar, muziek en grafiek.
+- [Rinus Van de Velde](https://nl.wikipedia.org/wiki/Rinus_Van_de_Velde) (1983) - Hyperrealistische houtskooltekeningen.
+- [Benny Van den Meulengracht-Vrancx](https://bennyvandenmeulengracht-vrancx.be/) (1989) - Conceptueel, installaties.
 
 | | | |
 |-|-|-|

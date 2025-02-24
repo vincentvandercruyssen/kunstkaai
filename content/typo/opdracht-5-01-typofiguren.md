@@ -36,7 +36,7 @@ In deze opdracht ontwerp je vijf figuren in **Adobe Illustrator**, waarbij je ui
 
 - Je **vermeldt** bij elk figuurtje het gebruikte lettertype (zie voorbeelden).
 - Gebruik het venster **Glyphs** om minder gebruikelijke tekens te selecteren.
-- Installeer eventueel extra lettertypes via **{{< a href="https://fonts.adobe.com/fonts" text="Adobe Fonts" >}}**.
+- Installeer eventueel extra lettertypes via **[Adobe Fonts](https://fonts.adobe.com/fonts)**.
 - Alle letters en symbolen moeten **herkenbaar** blijven.
 - Je mag de letters of symbolen **niet vervormen** (platdrukken of uitrekken).
 - Plaats al je figuren in een **evenwichtige bladschikking samen op een liggende A4**.

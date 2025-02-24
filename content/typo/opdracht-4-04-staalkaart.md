@@ -10,7 +10,7 @@ Deze opdracht laat je kennismaken met het filteren van lettertypes en het werken
 
 ### Classificatie van lettertypes
 
-Voordat we beginnen, is het handig om de verschillende soorten lettertypes en hun eigenschappen te begrijpen. Bekijk eventueel de {{< a href="../cursus-intro/" text="cursus" >}} nog eens.
+Voordat we beginnen, is het handig om de verschillende soorten lettertypes en hun eigenschappen te begrijpen. Bekijk eventueel de [cursus](../cursus-intro/) nog eens.
 
 Hier zijn enkele van de belangrijkste classificaties:
 

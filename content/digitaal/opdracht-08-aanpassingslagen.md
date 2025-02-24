@@ -15,7 +15,7 @@ Ontdek hoe je met aanpassingslagen, zoals ‘Kleurtoon/Verzadiging’ en ‘Curv
 
 ### Foto’s kiezen
 
-Kies foto’s om mee te werken. Deze dienen als basis voor je experimenten met aanpassingslagen. Voor mooie foto’s, bezoek je {{< a href="https://unsplash.com/" >}} en klik download. Unsplash is een website waar je gratis hogekwaliteits foto’s kunt vinden. 
+Kies foto’s om mee te werken. Deze dienen als basis voor je experimenten met aanpassingslagen. Voor mooie foto’s, bezoek je [https://unsplash.com/](https://unsplash.com/) en klik download. Unsplash is een website waar je gratis hogekwaliteits foto’s kunt vinden. 
 
 {{< img src="/img/digitaal/opdracht-08-aanpassingslagen-unsplash1.png" >}}
 
@@ -92,4 +92,4 @@ Combineer meerdere adjustment layers om een uniek effect te creëren. Experiment
 
 ## Bronnen
 
-- {{< a href="https://helpx.adobe.com/be_nl/photoshop/using/adjustment-fill-layers.html" >}}
+- [Aanpassings- en vullagen in Photoshop](https://helpx.adobe.com/be_nl/photoshop/using/adjustment-fill-layers.html)

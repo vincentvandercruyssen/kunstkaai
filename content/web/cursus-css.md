@@ -52,7 +52,7 @@ Veranderingen aan CSS eigenschappen eindigen altijd met een puntkomma en declara
 
 ## CSS Selectors
 
-- {{< a href="https://www.w3schools.com/CSSref/trysel.asp" >}}
+- [W3Schools CSS Reference](https://www.w3schools.com/CSSref/trysel.asp).
 
 Met CSS maak je gebruik van verschillende selectors. Hiermee selecteer je de elementen waarop je stijl wilt toepassen. De selectors kunnen verschillende vormen aannemen, afhankelijk van de elementen waarop je wilt selecteren.
 
@@ -192,7 +192,7 @@ De eigenschap `background-image` stelt één of meer achtergrondafbeeldingen in 
 
 ### color
 
-De `color` eigenschap bepaalt de kleur van de tekst in een element. De kleur kan worden opgegeven als een hexadecimaal getal, RGB- of HSL-waarde, of een naam van {{< a href="https://www.w3schools.com/colors/colors_names.asp" text="een standaard kleur" >}}.
+De `color` eigenschap bepaalt de kleur van de tekst in een element. De kleur kan worden opgegeven als een hexadecimaal getal, RGB- of HSL-waarde, of een naam van [een standaard kleur](https://www.w3schools.com/colors/colors_names.asp).
 
 {{< showcode >}}p {
   color: red;
@@ -205,7 +205,7 @@ De `color` eigenschap bepaalt de kleur van de tekst in een element. De kleur kan
 
 #### Standaardkleuren
 
-Alle moderne browsers ondersteunen 140 standaard kleurnamen. {{< a href="https://www.w3schools.com/colors/colors_names.asp" text="Je kan de lijst onder andere terugvinden op w3schools..." >}}
+Alle moderne browsers ondersteunen 140 standaard kleurnamen. [Je kan de lijst onder andere terugvinden op w3schools...](https://www.w3schools.com/colors/colors_names.asp)
 
 {{< showcode >}}color: firebrick;
 
@@ -304,8 +304,8 @@ Een proportioneel lettertype is een lettertype waarbij de letters verschillende 
 
 Een CDN, *content delivery network*, is een netwerk van servers die gebruikt worden om inhoud te leveren aan gebruikers over de hele wereld. CDN fonts zijn lettertypes die via zo een netwerk worden geleverd.
 
-- {{< a href="https://fonts.adobe.com/" text="Adobe Fonts" >}}
-- {{< a href="https://fonts.google.com/" text="Google Fonts" >}}
+- [Adobe Fonts](https://fonts.adobe.com/)
+- [Google Fonts](https://fonts.google.com/)
 
 ### @font-face
 
@@ -472,7 +472,7 @@ Standaard staan flex-items in de volgorde van de HTML-code. Je kunt de volgorde 
 Dit kan de uitlijning op de dwarsas overschrijven voor individuele flex-items.
 {{< /details >}}|
 
-Bronnen: {{< a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" text="CSS Flexbox Layout Guide (CSS-Tricks)" >}}, {{< a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" text="CSS Layout: Flexbox (MDN)" >}} 
+Bronnen: [CSS Flexbox Layout Guide (CSS-Tricks)](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), [CSS Layout: Flexbox (MDN)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox).
 
 #### Kolommen met Flexbox
 
@@ -490,39 +490,39 @@ Bronnen: {{< a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" te
 
 #### Icoontjes
 
-- {{< a href="https://www.svgrepo.com/" >}}
+- [SVG Repo](https://www.svgrepo.com/)
 
 #### Fotografie
 
-- {{< a href="https://unsplash.com/" >}}
+- [Unsplash](https://unsplash.com/)
 
 #### Typografie
 
-- {{< a href="https://fonts.adobe.com/" >}}
-- {{< a href="https://fonts.google.com/" >}}
+- [Adobe Fonts](https://fonts.adobe.com/)
+- [Google Fonts](https://fonts.google.com/)
 
 #### Kleuren
 
-- {{< a href="https://color.adobe.com/create/color-wheel" >}}
+- [Adobe Color](https://color.adobe.com/create/color-wheel)
 
 #### Cheat sheets & tools
 
-- {{< a href="https://www.w3schools.com/cssref/trysel.asp" >}}
-- {{< a href="https://css-tricks.com/almanac/" >}}
-- {{< a href="https://flexboxsheet.com/" >}}
-- {{< a href="https://monsido.com/tools/contrast-checker" >}}
-- {{< a href="https://www.w3schools.com/html/html5_semantic_elements.asp" >}}
-- {{< a href="https://caniuse.com/" >}}
-- {{< a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" >}}
+- [W3Schools CSS Reference](https://www.w3schools.com/cssref/trysel.asp)
+- [CSS Tricks Almanac](https://css-tricks.com/almanac/)
+- [Flexbox Cheat Sheet](https://flexboxsheet.com/)
+- [Contrast Checker](https://monsido.com/tools/contrast-checker)
+- [HTML5 Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
+- [Can I Use](https://caniuse.com/)
+- [A Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 #### Meer leren
 
-- {{< a href="https://www.freecodecamp.org/learn/" >}}
-- {{< a href="https://www.youtube.com/kepowob/" >}}
-- {{< a href="https://developer.mozilla.org/en-US/docs/Web/HTML" >}}
-- {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS" >}}
+- [FreeCodeCamp](https://www.freecodecamp.org/learn/)
+- [Kepowob YouTube Channel](https://www.youtube.com/kepowob/)
+- [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [MDN Web Docs - CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 #### Inspiratie
 
-- {{< a href="https://www.siteinspire.com/" >}}
-- {{< a href="https://www.awwwards.com/" >}}
+- [Site Inspire](https://www.siteinspire.com/)
+- [Awwwards](https://www.awwwards.com/)

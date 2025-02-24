@@ -79,5 +79,5 @@ En voilà! Je hebt nu een simpele dubbele belichting gecreëerd in Photoshop. Ex
 
 ## Bronnen
 
-- {{< a href="https://helpx.adobe.com/be_nl/photoshop/using/adjustment-fill-layers.html" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/photoshop/using/blending-modes.html" >}}
+- [Aanpassings- en vullagen in Photoshop](https://helpx.adobe.com/be_nl/photoshop/using/adjustment-fill-layers.html)
+- [Overvloeimodi in Photoshop](https://helpx.adobe.com/be_nl/photoshop/using/blending-modes.html)

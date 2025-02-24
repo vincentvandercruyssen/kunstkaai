@@ -18,7 +18,7 @@ Uiteindelijk lever je je werk in als een gezipte map via Google Classroom.
 
 {{< svg src="img/web/chatgpt-logo.svg" width="100" href="https://chatgpt.com/" text="ChatGPT" >}}
 
-Je kunt {{< a href="https://chatgpt.com/" text="ChatGPT" >}} gebruiken om hulp te krijgen bij het schrijven van je "Over mij"-tekst. Stel vragen zoals: "Hoe stel ik mezelf kort en bondig voor?" of "Hoe kan ik mijn hobby’s en ambities creatief beschrijven?"
+Je kunt [ChatGPT](https://chatgpt.com/) gebruiken om hulp te krijgen bij het schrijven van je "Over mij"-tekst. Stel vragen zoals: "Hoe stel ik mezelf kort en bondig voor?" of "Hoe kan ik mijn hobby’s en ambities creatief beschrijven?"
 
 Je webpagina moet uiteindelijk de volgende elementen bevatten:
 - Eén titel.

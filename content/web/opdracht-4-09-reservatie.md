@@ -10,7 +10,7 @@ In deze opdracht ga je een reservatie-formulier maken voor een fictief bedrijf. 
 
 Je gaat het formulier stylen met CSS. 
 
-Daarnaast ga je het formulier functioneel maken met behulp van {{< a href="https://formspree.io/" text="Formspree" >}}, een service die het mogelijk maakt om formuliergegevens via e-mail te ontvangen zonder dat je backend-code hoeft te schrijven.
+Daarnaast ga je het formulier functioneel maken met behulp van [Formspree](https://formspree.io/), een service die het mogelijk maakt om formuliergegevens via e-mail te ontvangen zonder dat je backend-code hoeft te schrijven.
 
 {{< img src="/img/web/opdracht-4-09-reservatie-vb-01.png" percent="50" center="true" >}}
 

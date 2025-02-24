@@ -148,7 +148,7 @@ In de vroege jaren '70 bestonden er reeds talrijke computernetwerken, maar deze 
 
 #### DNS: het telefoonboek van het internet
 
-DNS (Domain Name System) is een systeem dat mensvriendelijke domeinnamen, zoals {{< a href="https://www.google.com/" text="google.com" >}}, vertaalt naar bijbehorende IP-adressen, zoals "192.168.1.1". Het fungeert als een 'telefoonboek' voor het internet, zodat computers gemakkelijk met elkaar kunnen communiceren.
+DNS (Domain Name System) is een systeem dat mensvriendelijke domeinnamen, zoals [google.com](https://www.google.com/), vertaalt naar bijbehorende IP-adressen, zoals "192.168.1.1". Het fungeert als een 'telefoonboek' voor het internet, zodat computers gemakkelijk met elkaar kunnen communiceren.
 
 ### De uitvinding van het World Wide Web
 
@@ -340,7 +340,7 @@ Visual Studio Code is een gratis programma dat ontwikkelaars helpt bij het maken
 
 #### Installatie van VSC op macOS
 
-1. Ga naar {{< a href="https://code.visualstudio.com/" text="Visual Studio Code website" >}}.
+1. Ga naar [Visual Studio Code website](https://code.visualstudio.com/).
 2. Klik op de knop "Download Mac Universal".
 3. Na het downloaden, dubbelklik het .zip-bestand.
 4. Sleep de Visual Studio Code-app naar de Applications-map op uw Mac.
@@ -368,7 +368,7 @@ Google Drive is een online cloudopslagdienst waarmee je bestanden kunt opslaan, 
 
 #### Installatie van Google Drive op macOS
 
-1. Ga naar {{< a href="https://www.google.com/drive/download/" text="Google Drive downloadpagina" >}}.
+1. Ga naar [Google Drive downloadpagina](https://www.google.com/drive/download/).
 2. Klik op "Download Drive for desktop".
 3. Open het .dmg bestand en vervolgens het .pkg bestand.
 4. Volg de installatie-instructies op het scherm, je hebt beheerdersrechten nodig om dit programma te installeren.
@@ -407,11 +407,11 @@ Nu je Visual Studio Code en Google Drive op je Mac hebt, kun je efficiënt werke
 
 ## Handige bronnen
 
-- Typografie {{< a href="https://fonts.google.com/" >}}
-- Icoontjes {{< a href="https://www.svgrepo.com/" >}}
-- Kleurenpaletten {{< a href="https://color.adobe.com/create" >}}
-- Stock fotografie {{< a href="https://unsplash.com/" >}}
-- Webdesign inspiratie {{< a href="https://www.siteinspire.com/" >}} {{< a href="https://www.awwwards.com/" >}}
-- Platform voor softwareontwikkeling en versiebeheer {{< a href="https://github.com/" >}}
-- MDN Web docs (EN) {{< a href="https://developer.mozilla.org/en-US/docs/Web/HTML" text="HTML" >}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS" text="CSS" >}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" text="JS" >}}
-- Leerplatform voor HTML, CSS, JS, Python,… {{< a href="https://www.freecodecamp.org/learn/" >}}
+- Typografie [Google Fonts](https://fonts.google.com/)
+- Icoontjes [SVG Repo](https://www.svgrepo.com/)
+- Kleurenpaletten [Adobe Color](https://color.adobe.com/create)
+- Stock fotografie [Unsplash](https://unsplash.com/)
+- Webdesign inspiratie [Site Inspire](https://www.siteinspire.com/) [Awwwards](https://www.awwwards.com/)
+- Platform voor softwareontwikkeling en versiebeheer [GitHub](https://github.com/)
+- MDN Web docs (EN) [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- Leerplatform voor HTML, CSS, JS, Python,… [FreeCodeCamp](https://www.freecodecamp.org/learn/)

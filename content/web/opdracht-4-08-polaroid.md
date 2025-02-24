@@ -60,7 +60,7 @@ Selecteer de afbeeldingen met `.polaroid img {}`. Laat de afbeeldingen de volled
 
 Onder elke Polaroid-foto hoort natuurlijk een tekstje, je immiteert de handgeschreven stijl door een gepast lettertype te zoeken. 
 
-Dit doe je bijvoorbeeld door gebruik te maken van {{< a href="https://fonts.adobe.com/" text="Adobe Fonts" >}}. Daar kun je gemakkelijk lettertypes sorteren op Handgeschreven (Handwritten). 
+Dit doe je bijvoorbeeld door gebruik te maken van [Adobe Fonts](https://fonts.adobe.com/). Daar kun je gemakkelijk lettertypes sorteren op Handgeschreven (Handwritten).
 
 {{< img src="/img/web/opdracht-4-08-polaroid-font1.png" percent="50" >}}
 
@@ -78,7 +78,7 @@ Kopieer vervolgens de `@import`-regel en plak deze bovenaan in je CSS-bestand.
 
 Nu kun je de `font-family` eigenschap met bijbehorend lettertype kopiëren. Dit plak je uiteraard in de selector voor je `body {}`, zo verander je het lettertype over je gehele webpagina. 
 
-Een andere optie is een lettertype te downloaden en gebruik te maken van de regel `@font-face`. Meer informatie daarover {{< a href="https://www.w3schools.com/cssref/atrule_font-face.php" text="vind je hier" >}}, of vraag het aan je favoriete chatbot. Zorg er dan wel voor dat je het lettertype in een aparte map opslaat (bijvoorbeeld `fonts`). 
+Een andere optie is een lettertype te downloaden en gebruik te maken van de regel `@font-face`. Meer informatie daarover [vind je hier](https://www.w3schools.com/cssref/atrule_font-face.php), of vraag het aan je favoriete chatbot. Zorg er dan wel voor dat je het lettertype in een aparte map opslaat (bijvoorbeeld `fonts`).
 
 ### Positionering
 
@@ -89,7 +89,7 @@ Geef elke Polaroid-kader een unieke positie. Je spreekt de unieke identiteiten a
 - Roteer aan de hand van de eigenschap `rotate` met een waarde in `deg`. 
 - Verander eventueel de eigenschap `z-index`, door een waarde hoger dan `0` in te stellen kun je ervoor zorgen dat een element boven een ander element op de pagina wordt weergegeven. 
 
-Bronnen via MDN: {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" text="position">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/rotate" text="rotate">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index" text="z-index">}}.
+Bronnen via MDN: [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position), [rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/rotate), [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index).
 
 ### Achtergrond
 
@@ -114,7 +114,7 @@ Style de afbeeldingen binnen de Polaroids met:
 - Object-fit en object-position voor de juiste uitsnede.
 - Filtereffecten voor een vintage look. 
 
-Bronnen via MDN: {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" text="box-shadow">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" text="aspect-ratio">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" text="object-fit">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-position" text="object-position">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" text="filter">}}. 
+Bronnen via MDN: [box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow), [aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio), [object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit), [object-position](https://developer.mozilla.org/en-US/docs/Web/CSS/object-position), [filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter).
 
 ### Box-sizing
 

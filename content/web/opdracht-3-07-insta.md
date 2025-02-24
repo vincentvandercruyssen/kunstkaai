@@ -65,7 +65,7 @@ De `header` geef je ook een unieke vormgeving:
 - Verander de achtergrondkleur. 
 - Centreer de tekst. 
 
-Bronnen via MDN: {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" text="box-shadow">}}.
+Bronnen via MDN: [box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow).
 
 ### Feed-opmaak
 
@@ -77,7 +77,7 @@ Je kan de gehele feed (of `main`) centreren aan de hand van de eigenschap `margi
 
 Geef elke post een witte achtergrond, afgeronde hoeken (`border-radius`) en een subtiele rand (`border`). Geef ook al deze posts een beetje `margin-bottom`. 
 
-Bronnen via MDN: {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" text="border-radius">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" text="border">}}.
+Bronnen via MDN: [border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius), [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border).
 
 ### Afbeeldingen
 
@@ -104,7 +104,7 @@ button:hover {
 }
 ```
 
-Bronnen via MDN: {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover" text=":hover">}}, {{< a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" text="transition">}}. 
+Bronnen via MDN: [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover), [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition).
 
 ## Indienen
 

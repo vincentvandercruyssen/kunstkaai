@@ -10,7 +10,7 @@ draft = false
 |---|---|
 |{{< img src="/img/typo/opdracht-4-typoposter-vb_1.jpg" >}}|{{< img src="/img/typo/opdracht-4-typoposter-vb_2.jpg" >}}|
 
-Tijdens de lessen typografische vormgeving leer je over verschillende aspecten van vormgeving en lay-out, met een focus op typografie. Bekijk eventueel de {{< a href="../cursus-intro/" text="cursus" >}} nog eens.
+Tijdens de lessen typografische vormgeving leer je over verschillende aspecten van vormgeving en lay-out, met een focus op typografie. Bekijk eventueel de [cursus](../cursus-intro/) nog eens.
 
 Hoewel er veel meer stijlen zijn, en kunnen lettertypes in nog vele categorieën verdeeld worden, behandelen we de volgende vier:
 

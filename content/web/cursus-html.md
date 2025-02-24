@@ -284,4 +284,4 @@ Interactieve elementen zijn specifiek ontworpen voor gebruikersinteractie.
 
 ## Bronnen
 
-- {{< a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" >}}
+287: - [MDN Web Docs - HTML Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)

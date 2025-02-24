@@ -6,10 +6,9 @@ draft = false
 
 Je maakt de voor- en achterpagina en vier spreads van de **STIHL 2025 Catalogus** 1-op-1 na aan de hand van **Adobe InDesign**. Dit project combineert alle geleerde vaardigheden, waaronder het gebruik van alinea- en tekenstijlen, tekstkaders, het doorlopen van tekst, en het consistent toepassen van een typografische hiërarchie. Ook leer je werken met Tabs en Paragraafregels. 
 
-De benodigde bestanden vind je als ZIP-bestand in de Google Classroom opdracht met daarin het PDF-bestand van de catalogus ({{< a href="https://www.stihl.nl/content/dam/stihl/vu/be/nl/download-files/pdf-files/STIHL_Catalogus_2025_BENL.pdf" text="STIHL_Catalogus_2025_BENL.pdf" >}} ), het STIHL logo in SVG-formaat en het benodigde fotomateriaal. 
+De benodigde bestanden vind je als ZIP-bestand in de Google Classroom opdracht met daarin het PDF-bestand van de catalogus ([STIHL_Catalogus_2025_BENL.pdf](https://www.stihl.nl/content/dam/stihl/vu/be/nl/download-files/pdf-files/STIHL_Catalogus_2025_BENL.pdf)), het STIHL logo in SVG-formaat en het benodigde fotomateriaal.
 
-Font: {{< a href="https://fonts.adobe.com/fonts/quasimoda" text="Quasimoda via Adobe Fonts" >}} (vergelijkbaar genoeg met STIHL Contraface Text).
-
+Font: [Quasimoda via Adobe Fonts](https://fonts.adobe.com/fonts/quasimoda) (vergelijkbaar genoeg met STIHL Contraface Text).
 
 ## Analyseer de catalogus
 
@@ -44,13 +43,13 @@ Volg onderstaande richtlijnen voor elke pagina en spread.
 
 - Linkerpagina: Eén tekstkader met een titel en drie alinea's tekst (zo accuraat mogelijk, gebruik Ruimte na).  Eén tekstkader met drie kolommen namen en functies. Gebruik Alinea Stijlen. 
 - Rechterpagina: Foto over de volledige pagina.
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/paragraph-character-styles.html" text="Adobe Help Center: Basisbeginselen van alinea- en tekenstijlen" >}}
+- [Adobe Help Center: Basisbeginselen van alinea- en tekenstijlen](https://helpx.adobe.com/be_nl/indesign/using/paragraph-character-styles.html).
 
 ### Spread 4 (overzicht nieuwigheden)
 
 - Linkerpagina: Foto en één tekstkader voor titel en ondertitel.  
 - Spread: Twee aaneengesloten tekstkaders met telkens twee kolommen. Gebruik tabs voor nummering en een paragraafregel voor onderlijning.
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/threading-text.html" text="Adobe Help Center: Tekst met verbindingen" >}}
+- [Adobe Help Center: Tekst met verbindingen](https://helpx.adobe.com/be_nl/indesign/using/threading-text.html).
 
 #### Tabs
 
@@ -64,7 +63,7 @@ Tabs worden gebruikt om tekst op specifieke horizontale posities uit te lijnen.
 
 {{< img src="/img/typo/opdracht-5-10-productcatalogus-tabs1.png" >}}
 
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/tabs-indents.html" text="Adobe Help Center: Tabs en inspringingen" >}}
+- [Adobe Help Center: Tabs en inspringingen](https://helpx.adobe.com/be_nl/indesign/using/tabs-indents.html).
 
 #### Paragraafregel voor onderlijning
 
@@ -77,7 +76,7 @@ Een Paragraafregel is een lijn die boven of onder een alinea kan worden geplaats
 
 {{< img src="/img/typo/opdracht-5-10-productcatalogus-paragraphrules1.png" >}}
 
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-paragraphs.html" text="Adobe Help Center: Alinea's opmaken (Lijnen voor of na alinea's toevoegen)" >}}
+- [Adobe Help Center: Alinea's opmaken (Lijnen voor of na alinea's toevoegen)](https://helpx.adobe.com/be_nl/indesign/using/formatting-paragraphs.html).
 
 ### Spread 5 (nieuwigheden highlights)
 
@@ -121,19 +120,19 @@ Lever je werk in via Google Classroom.
 
 ## Bronnen
 
-- {{< a href="https://www.stihl.nl/nl" text="STIHL Officiële Website" >}}
-- {{< a href="https://commons.wikimedia.org/wiki/File:Stihl-logo.svg" text="Wikimedia: Stihl-logo.svg" >}}
-- {{< a href="https://www.s-v.de/de/projekte/stihl-brand-design/" text="STIHL's herontwerp van het bedrijfsdesign" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/create-documents.html" text="Adobe Help Center: Documenten maken" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/pages-spreads.html" text="Adobe Help Center: Pagina's en spreads" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/laying-out-frames-pages.html" text="Adobe Help Center: Kaders en pagina's opmaken">}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/creating-text-text-frames.html" text="Adobe Help Center: Tekst en tekstkaders maken" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-text.html" text="Adobe Help Center: Tekst opmaken" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-characters.html" text="Adobe Help Center: Tekens opmaken" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/paragraph-character-styles.html" text="Adobe Help Center: Basisbeginselen van alinea- en tekenstijlen" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/threading-text.html" text="Adobe Help Center: Tekst met verbindingen" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/tabs-indents.html" text="Adobe Help Center: Tabs en inspringingen" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-paragraphs.html" text="Adobe Help Center: Alinea's opmaken" >}}
+- [STIHL Officiële Website](https://www.stihl.nl/nl)
+- [Wikimedia: Stihl-logo.svg](https://commons.wikimedia.org/wiki/File:Stihl-logo.svg)
+- [STIHL's herontwerp van het bedrijfsdesign](https://www.s-v.de/de/projekte/stihl-brand-design/)
+- [Adobe Help Center: Documenten maken](https://helpx.adobe.com/be_nl/indesign/using/create-documents.html)
+- [Adobe Help Center: Pagina's en spreads](https://helpx.adobe.com/be_nl/indesign/using/pages-spreads.html)
+- [Adobe Help Center: Kaders en pagina's opmaken](https://helpx.adobe.com/be_nl/indesign/using/laying-out-frames-pages.html)
+- [Adobe Help Center: Tekst en tekstkaders maken](https://helpx.adobe.com/be_nl/indesign/using/creating-text-text-frames.html)
+- [Adobe Help Center: Tekst opmaken](https://helpx.adobe.com/be_nl/indesign/using/formatting-text.html)
+- [Adobe Help Center: Tekens opmaken](https://helpx.adobe.com/be_nl/indesign/using/formatting-characters.html)
+- [Adobe Help Center: Basisbeginselen van alinea- en tekenstijlen](https://helpx.adobe.com/be_nl/indesign/using/paragraph-character-styles.html)
+- [Adobe Help Center: Tekst met verbindingen](https://helpx.adobe.com/be_nl/indesign/using/threading-text.html)
+- [Adobe Help Center: Tabs en inspringingen](https://helpx.adobe.com/be_nl/indesign/using/tabs-indents.html)
+- [Adobe Help Center: Alinea's opmaken](https://helpx.adobe.com/be_nl/indesign/using/formatting-paragraphs.html)
 
 {{< youtube -4zaUrZ0CKo >}}
 

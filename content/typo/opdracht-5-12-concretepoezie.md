@@ -4,9 +4,9 @@ date = 2025-02-02T08:00:00-07:00
 draft = false
 +++
 
-{{< a href="https://nl.wikipedia.org/wiki/Concrete_po%C3%ABzie" text="Concrete poëzie" >}} is een vorm van visuele poëzie waarbij de typografische vorm en de ordening van woorden minstens even belangrijk zijn als hun betekenis. Woorden en letters worden niet enkel als taal, maar ook als visuele objecten gebruikt. Deze poëtische vorm ontstond in de jaren 1950 en werd gepopulariseerd door dichters als Eugen Gomringer en de Braziliaanse Noigandres-groep. 
+[Concrete poëzie](https://nl.wikipedia.org/wiki/Concrete_po%C3%ABzie) is een vorm van visuele poëzie waarbij de typografische vorm en de ordening van woorden minstens even belangrijk zijn als hun betekenis. Woorden en letters worden niet enkel als taal, maar ook als visuele objecten gebruikt. Deze poëtische vorm ontstond in de jaren 1950 en werd gepopulariseerd door dichters als Eugen Gomringer en de Braziliaanse Noigandres-groep.
 
-Toch gaat visuele poëzie veel verder terug. In de oudheid bestonden al {{< a href="https://nl.wikipedia.org/wiki/Figuurgedicht" text="figuurgedichten" >}}, waarin de tekst de vorm van een object aannam. Ook in de middeleeuwen gebruikte men carmina figurata waarin religieuze en literaire teksten grafisch werden vormgegeven. 
+Toch gaat visuele poëzie veel verder terug. In de oudheid bestonden al [figuurgedichten](https://nl.wikipedia.org/wiki/Figuurgedicht), waarin de tekst de vorm van een object aannam. Ook in de middeleeuwen gebruikte men carmina figurata waarin religieuze en literaire teksten grafisch werden vormgegeven.
 
 Dichter bij huis is **Paul van Ostaijen** (°1896 Antwerpen), die met de grafische kracht van taal experimenteerde. In zijn bundel *Bezette Stad (1921)* speelt hij met typografie, lettergroottes en woordplaatsing om extra betekenis en ritme te creëren. Zijn werk sluit aan bij het idee dat poëzie niet alleen gelezen, maar ook gezien kan worden. 
 
@@ -57,9 +57,9 @@ Het boekje bevat:
 
 ## Bronnen
 
-- {{< a href="https://nl.wikipedia.org/wiki/Concrete_po%C3%ABzie" text="Concrete poëzie - Wikipedia" >}}
-- {{< a href="https://nl.wikipedia.org/wiki/Kalligram" text="Kalligram - Wikipedia" >}}
-- {{< a href="https://pt.wikipedia.org/wiki/Noigandres" text="Noigandres – Wikipédia, a enciclopédia livre" >}}
-- {{< a href="https://pt.wikipedia.org/wiki/Poesia_concreta" text="Poesia concreta – Wikipédia, a enciclopédia livre" >}}
-- {{< a href="https://nl.wikipedia.org/wiki/Paul_van_Ostaijen" text="Paul van Ostaijen" >}}
-- {{< a href="https://www.theatlantic.com/technology/archive/2014/01/the-lost-ancestors-of-ascii-art/283445/" text="The Lost Ancestors of ASCII Art - The Atlantic" >}}
+- [Concrete poëzie - Wikipedia](https://nl.wikipedia.org/wiki/Concrete_po%C3%ABzie)
+- [Kalligram - Wikipedia](https://nl.wikipedia.org/wiki/Kalligram)
+- [Noigandres - Wikipedia](https://pt.wikipedia.org/wiki/Noigandres)
+- [Poesia concreta - Wikipedia](https://pt.wikipedia.org/wiki/Poesia_concreta)
+- [Paul van Ostaijen - Wikipedia](https://nl.wikipedia.org/wiki/Paul_van_Ostaijen)
+- [The Lost Ancestors of ASCII Art - The Atlantic](https://www.theatlantic.com/technology/archive/2014/01/the-lost-ancestors-of-ascii-art/283445/)

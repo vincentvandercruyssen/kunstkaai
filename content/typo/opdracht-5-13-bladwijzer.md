@@ -25,7 +25,7 @@ Vormgeving ten dienste van het gedicht:
 - Gedicht (inclusief titel en auteur) in **één tekstvak** plaatsen.
 - **Beperkt kleurgebruik** en **sobere afbeeldingen** (bv. transparant watermerk).
 
-Meer info over bladwijzers via {{< a href="https://nl.pixartprinting.be/blog/bladwijzer/" text="Pixartprinting" >}}.
+Meer info over bladwijzers via [Pixartprinting](https://nl.pixartprinting.be/blog/bladwijzer/).
 
 ## Spread dichtbundel
 

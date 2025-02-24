@@ -10,7 +10,7 @@ draft = false
 |---|---|---|
 |{{< img src="/img/typo/opdracht-5-03-swissstyleposter-vb-1.jpg" >}}|{{< video src="/img/typo/opdracht-5-03-swissstyleposter-vb-2b.mp4" >}}|{{< img src="/img/typo/opdracht-5-03-swissstyleposter-vb-3.jpg" >}}|
 
-{{< a href="https://en.wikipedia.org/wiki/International_Typographic_Style" text="De Internationale Typografische Stijl" >}}, ook wel {{< a href="https://en.wikipedia.org/wiki/Swiss_Style_(design)" text="Swiss Style " >}} genoemd, is een grafische stijl die werd ontwikkeld door Zwitserse designers in de jaren 1950. De nadruk ligt op eenvoud, leesbaarheid, asymmetrische bladschikking op basis van een grid (raster), schreefloze lettertypes (zoals Helvetica), primaire kleuren en geometrische vormen. {{< a href="https://en.wikipedia.org/wiki/Josef_M%C3%BCller-Brockmann" text="Josef Müller-Brockmann" >}} (1914-1996) was een van de meest invloedrijke designers binnen deze stijl.
+De [Internationale Typografische Stijl](https://en.wikipedia.org/wiki/International_Typographic_Style), ook wel [Swiss Style](https://en.wikipedia.org/wiki/Swiss_Style_(design)) genoemd, is een grafische stijl die werd ontwikkeld door Zwitserse designers in de jaren 1950. De nadruk ligt op eenvoud, leesbaarheid, asymmetrische bladschikking op basis van een grid (raster), schreefloze lettertypes (zoals Helvetica), primaire kleuren en geometrische vormen. [Josef Müller-Brockmann](https://en.wikipedia.org/wiki/Josef_M%C3%BCller-Brockmann) (1914-1996) was een van de meest invloedrijke designers binnen deze stijl.
 
 1. **Rasterstructuur:** Een van de meest opvallende kenmerken is het gebruik van een strak, geometrisch raster. 
 2. **Gebruik van sans-serif lettertypen:** De voorkeur gaat uit naar eenvoudige, schreefloze lettertypen zoals Helvetica en Univers. Deze lettertypen worden gekozen om hun moderne en strakke uitstraling.
@@ -58,10 +58,21 @@ Kortom, de International Typographic Style/Swiss Style draait om eenvoud, functi
 |{{< img src="/img/typo/opdracht-5-03-swissstyleposter-vblln-4.jpg" >}}|{{< img src="/img/typo/opdracht-5-03-swissstyleposter-vblln-5.png" >}}|{{< img src="/img/typo/opdracht-5-03-swissstyleposter-vblln-6.png" >}}|
 
 ## Bronnen
-- {{< a href="https://www.grapheine.com/en/graphic-design-en/graphic-designer-muller-brockmann-swiss-style" >}}
-- {{< a href="https://www.printmag.com/featured/swiss-style-principles-typefaces-designers/" >}}
-- {{< a href="https://issuu.com/mary_carnes/docs/book_mary_carnes" >}}
-- Ontwerpers: {{< a href="https://en.wikipedia.org/wiki/Armin_Hofmann" text="Armin Hofmann" >}}, {{< a href="https://en.wikipedia.org/wiki/Emil_Ruder" text="Emil Ruder" >}}, {{< a href="https://en.wikipedia.org/wiki/Karl_Gerstner" text="Karl Gerstner" >}},  {{< a href="https://en.wikipedia.org/wiki/Adrian_Frutiger" text="Adrian Frutiger" >}}, {{< a href="https://en.wikipedia.org/wiki/Hans_Neuburg" text="Hans Neuburg" >}}, {{< a href="https://en.wikipedia.org/wiki/Wim_Crouwel" text="Wim Crouwel" >}}, {{< a href="https://en.wikipedia.org/wiki/Otl_Aicher" text="Otl Aicher" >}}, {{< a href="https://en.wikipedia.org/wiki/Rosmarie_Tissi" text="Rosmarie Tissi" >}}, {{< a href="https://en.wikipedia.org/wiki/Jacqueline_Casey" text="Jacqueline Casey" >}}
+
+- [Grapheine: Graphic Designer Müller-Brockmann & Swiss Style](https://www.grapheine.com/en/graphic-design-en/graphic-designer-muller-brockmann-swiss-style)
+- [Print Mag: Swiss Style Principles, Typefaces & Designers](https://www.printmag.com/featured/swiss-style-principles-typefaces-designers/)
+- [Issuu: Book by Mary Carnes](https://issuu.com/mary_carnes/docs/book_mary_carnes)
+
+Ontwerpers: 
+- [Armin Hofmann](https://en.wikipedia.org/wiki/Armin_Hofmann)
+- [Emil Ruder](https://en.wikipedia.org/wiki/Emil_Ruder)
+- [Karl Gerstner](https://en.wikipedia.org/wiki/Karl_Gerstner)
+- [Adrian Frutiger](https://en.wikipedia.org/wiki/Adrian_Frutiger)
+- [Hans Neuburg](https://en.wikipedia.org/wiki/Hans_Neuburg)
+- [Wim Crouwel](https://en.wikipedia.org/wiki/Wim_Crouwel)
+- [Otl Aicher](https://en.wikipedia.org/wiki/Otl_Aicher)
+- [Rosmarie Tissi](https://en.wikipedia.org/wiki/Rosmarie_Tissi)
+- [Jacqueline Casey](https://en.wikipedia.org/wiki/Jacqueline_Casey)
 
 ## Puntenverdeling
 

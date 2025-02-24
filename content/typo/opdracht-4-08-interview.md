@@ -48,7 +48,7 @@ Voor deze opdracht maak je een interviewpagina op voor je eigen fictieve tijdsch
 
 {{< youtube -4zaUrZ0CKo >}}
 
-- {{< a href="https://helpx.adobe.com/nl/indesign/using/threading-text.html" text="Adobe help: Tekst laten doorlopen in kaders in Adobe InDesign" >}}
+- [Adobe help: Tekst laten doorlopen in kaders in Adobe InDesign](https://helpx.adobe.com/nl/indesign/using/threading-text.html)
 
 ### Typografie en stijlen
 
@@ -70,7 +70,7 @@ Alineastijlen zorgen voor consistentie in de opmaak van je tekst (koppen, inleid
 |-|-|
 |{{< youtube TC74BqWHjiE >}}|{{< youtube 8pAxi8ly5BM >}}|
 
-- {{< a href="https://helpx.adobe.com/nl/indesign/using/paragraph-character-styles.html" text="Adobe help: Basisbeginselen van alinea- en tekenstijlen" >}}
+- [Adobe help: Basisbeginselen van alinea- en tekenstijlen](https://helpx.adobe.com/nl/indesign/using/paragraph-character-styles.html)
 
 ## Indienen
 
@@ -86,10 +86,10 @@ Alineastijlen zorgen voor consistentie in de opmaak van je tekst (koppen, inleid
 
 ## Bronnen
 
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/create-documents.html" text="Adobe Help Center: Documenten maken" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/pages-spreads.html" text="Adobe Help Center: Pagina's en spreads" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/laying-out-frames-pages.html" text="Adobe Help Center: Kaders en pagina's opmaken">}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/creating-text-text-frames.html" text="Adobe Help Center: Tekst en tekstkaders maken" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-text.html" text="Adobe Help Center: Tekst opmaken" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-paragraphs.html" text="Adobe Help Center: Alinea's opmaken" >}}
-- {{< a href="https://helpx.adobe.com/be_nl/indesign/using/paragraph-character-styles.html" text="Adobe Help Center: Basisbeginselen van alinea- en tekenstijlen" >}}
+- [Adobe Help Center: Documenten maken](https://helpx.adobe.com/be_nl/indesign/using/create-documents.html)
+- [Adobe Help Center: Pagina's en spreads](https://helpx.adobe.com/be_nl/indesign/using/pages-spreads.html)
+- [Adobe Help Center: Kaders en pagina's opmaken](https://helpx.adobe.com/be_nl/indesign/using/laying-out-frames-pages.html)
+- [Adobe Help Center: Tekst en tekstkaders maken](https://helpx.adobe.com/be_nl/indesign/using/creating-text-text-frames.html)
+- [Adobe Help Center: Tekst opmaken](https://helpx.adobe.com/be_nl/indesign/using/formatting-text.html)
+- [Adobe Help Center: Alinea's opmaken](https://helpx.adobe.com/be_nl/indesign/using/formatting-paragraphs.html)
+- [Adobe Help Center: Basisbeginselen van alinea- en tekenstijlen](https://helpx.adobe.com/be_nl/indesign/using/paragraph-character-styles.html)

@@ -8,7 +8,7 @@ In deze opdracht ontwerp je een eigen voorpagina van een krant. Je kiest inhoud 
 
 ## De voorpagina van een krant
 
-Begin met het verzamelen van inhoud van een bestaande nieuwswebsite (bv. {{< a href="https://www.demorgen.be/" text="De Morgen" >}}, {{< a href="https://www.standaard.be/" text="De Standaard" >}}, {{< a href="https://www.tijd.be/" text="De Tijd" >}}, {{< a href="https://www.vrt.be/vrtnws/nl/" text="VRT NWS" >}}, {{< a href="https://www.nrc.nl/" text="NRC" >}}, {{< a href="https://www.trouw.nl/" text="Trouw" >}}). Vervolgens schets je een lay-out voor de voorpagina om een visueel plan te maken. 
+Begin met het verzamelen van inhoud van een bestaande nieuwswebsite (bv. [De Morgen](https://www.demorgen.be/), [De Standaard](https://www.standaard.be/), [De Tijd](https://www.tijd.be/), [VRT NWS](https://www.vrt.be/vrtnws/nl/), [NRC](https://www.nrc.nl/), [Trouw](https://www.trouw.nl/)). Vervolgens schets je een lay-out voor de voorpagina om een visueel plan te maken.
 
 | | |
 |-|-|
@@ -45,13 +45,13 @@ Kijk en zoek allereerst naar voorbeelden van voorpagina's van papieren kranten.
 
 ### Opmaak (tekstkaders en stijlen)
 
-{{< a href="https://helpx.adobe.com/nl/indesign/using/editing-text.html#view_hidden_nonprinting_characters" text="Geef verborgen tekens weer" >}} (Tekst > Verborgen tekens tonen). Gebruik geen Alinea-einde's om meer ruimte te maken, gebruik hiervoor de optie {{< a href="https://helpx.adobe.com/nl/indesign/using/formatting-paragraphs.html" text="ruimte na" >}}. Een zachte return (regeleinde) doe je door de toetsencombinatie Shift + Enter. 
+[Geef verborgen tekens weer](https://helpx.adobe.com/nl/indesign/using/editing-text.html#view_hidden_nonprinting_characters) (Tekst > Verborgen tekens tonen). Gebruik geen Alinea-einde's om meer ruimte te maken, gebruik hiervoor de optie [ruimte na](https://helpx.adobe.com/nl/indesign/using/formatting-paragraphs.html). Een zachte return (regeleinde) doe je door de toetsencombinatie Shift + Enter.
 
 {{< img src="/img/typo/opdracht-5-09-voorkrant-ruimte_na-1.png" width="240" >}}
 
 #### Tekstkaders
 
-{{< a href="https://helpx.adobe.com/nl/indesign/using/threading-text.html" text="Adobe help: Tekst laten doorlopen in kaders in Adobe InDesign" p="true" >}}
+[Adobe help: Tekst laten doorlopen in kaders in Adobe InDesign](https://helpx.adobe.com/nl/indesign/using/threading-text.html).
 
 Bij het opmaken van tekst is het belangrijk om tekstkaders met elkaar te verbinden, zodat tekst automatisch doorloopt naar de volgende kolom of pagina wanneer een kader vol is. 
 
@@ -63,7 +63,7 @@ Bij het opmaken van tekst is het belangrijk om tekstkaders met elkaar te verbind
 
 #### Alineastijlen
 
-{{< a href="https://helpx.adobe.com/nl/indesign/using/paragraph-character-styles.html" text="Adobe help: Basisbeginselen van alinea- en tekenstijlen" p="true" >}}
+[Adobe help: Basisbeginselen van alinea- en tekenstijlen](https://helpx.adobe.com/nl/indesign/using/paragraph-character-styles.html).
 
 Alineastijlen zorgen voor consistentie in de opmaak van je tekst (koppen, inleidingen, artikelteksten, advertenties, bijschriften). Ze slaan opmaakinstellingen op, zoals lettertype, grootte, regelafstand en uitlijning.
 
