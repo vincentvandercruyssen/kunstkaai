@@ -4,7 +4,7 @@ date = 2025-02-23T08:00:00-07:00
 draft = false
 +++
 
-In deze opdracht leer je werken met **Adobe Bridge Workflow** en **Bridge Output** om bestanden te beheren, te hernoemen, te resizen en een PDF-contactsheet te maken. Je slaat alle bestanden correct op en deelt je werk via OneDrive.  
+In deze opdracht leer je efficiënt werken met **Adobe Bridge Workflow** en **Bridge Output** om bestanden te beheren, te hernoemen, te resizen en een PDF-contactsheet te maken. Je slaat alle bestanden correct op en deelt je werk via OneDrive.  
 
 ## Voorbereiding
 
@@ -18,69 +18,110 @@ In deze opdracht leer je werken met **Adobe Bridge Workflow** en **Bridge Output
 
 ### Afbeeldingen verzamelen
 - Ga naar **[unsplash.com](https://unsplash.com/)**.  
-- Zoek **16 afbeeldingen** met als zoekterm **je voornaam of een relevant sleutelwoord**.  
-- Download de afbeeldingen in de **hoogste kwaliteit**.  
-- Sla de afbeeldingen op in de map **"Voornaam Bridge Workflow"**.  
+- Zoek **16 afbeeldingen** met als zoekterm **je voornaam of een relevant sleutelwoord**.
+- Download de afbeeldingen in de **hoogste kwaliteit**, de download-knop op de thumbnail zorgt hier automatisch voor.
+- Sla de afbeeldingen op in de map **"Voornaam Bridge Workflow"**.
+- Afbeeldingen aangeduid met `"+"` zijn niet gratis beschikbaar.
+
+{{< img src="/img/data/opdracht-03-bridge_workflow-unsplash_1.png" >}}
 
 ## Bridge Workflow
 
 ### Nieuwe workflow aanmaken
-- Open **Adobe Bridge** en ga naar de map **"Voornaam Bridge Workflow"**.  
-- Open het **Workflow-paneel** (Venster → Workflow).  
+- Open **Adobe Bridge** en ga naar de map **"Voornaam Bridge Workflow"**.
+- Open de **Workflow-workspace** (Venster → Werkruimte → Workflow).
 - Klik op **Nieuwe Workflow** en geef deze de naam: **`Voornaam Workflow 1`**.
-- Klik op **Opslaan (Save)**.  
+- Klik op **Opslaan (Save)**.
+
+{{< img src="/img/data/opdracht-03-bridge_workflow-new_1.png" >}}
 
 ### Batch Rename instellen
-- Voeg een **Batch Rename**-stap toe.  
+- Voeg een **Batch Rename**-stap toe.
+
+{{< img src="/img/data/opdracht-03-bridge_workflow-batchrename_1.png" >}}
 
 Pas de instellingen aan:  
 
 **Naam veranderen:**  
-- Vervang **"Project_"** door **"Voornaam_"** (bijvoorbeeld *Sofie_01*).  
+- Vervang **"Project_"** door **"Voornaam_"**.
 - **Verwijder** de opties "Datum" en "_" (underscore).  
-- Zorg dat het **volgnummer** uit **twee digits (cijfers)** bestaat (01, 02, 03,...).  
+- Zorg dat het **volgnummer** uit **twee digits (cijfers)** bestaat (01, 02, 03,...).
+
+| | |
+|-|-|
+|{{< img src="/img/data/opdracht-03-bridge_workflow-batchrename_2.png" >}}|{{< img src="/img/data/opdracht-03-bridge_workflow-batchrename_3.png" >}}|
 
 **Preset opslaan**: 
-- Klik op **Save Preset** en geef deze de naam: **"Voornaam_##"**.
+- Klik op **Save Preset** en geef deze de naam: **"Voornaam_##"**. Wanneer je dit niet doet worden de instellingen gereset.
+
+{{< img src="/img/data/opdracht-03-bridge_workflow-batchrename_4.png" >}}
 
 ### Batch Resize instellen
 - Voeg een **Batch Resize**-stap toe.  
 - Stel in: **Langste zijde op 10 cm** (Fit long edge: 10 cm).  
 
+{{< img src="/img/data/opdracht-03-bridge_workflow-resize_1.png" percent="30" >}}
+
+| | |
+|-|-|
+|{{< img src="/img/data/opdracht-03-bridge_workflow-resize_2.png" >}}|{{< img src="/img/data/opdracht-03-bridge_workflow-resize_3.png" >}}|
+
 ### Workflow opslaan en uitvoeren
 - Klik op **Save Workflow** om de instellingen te bewaren.  
 - Sleep de **16 afbeeldingen** naar de workflow en klik op **Start Workflow**.  
-- De nieuwe bestanden worden opgeslagen in een submap **"Workflow"** binnen je map.  
+- De nieuwe bestanden worden opgeslagen in een submap **"Workflow"** binnen je map.
+
+| | |
+|-|-|
+|{{< img src="/img/data/opdracht-03-bridge_workflow-save_1.png" >}}|{{< img src="/img/data/opdracht-03-bridge_workflow-save_2.png" >}}|
+|{{< img src="/img/data/opdracht-03-bridge_workflow-save_3.png" >}}|{{< img src="/img/data/opdracht-03-bridge_workflow-save_4.png" >}}|
 
 ## PDF met Bridge Output
 
-### Output-tab openen en bestanden laden
+### Output-workspace
 
-- Open de map **"Workflow"** in Bridge.  
+- Open de nieuwe map **"Workflow"** in Bridge.
 - Ga naar de tab **Output (Uitvoer)**.  
-- Selecteer alle **16 afbeeldingen** en sleep ze naar het contactblad.  
+- Selecteer alle **16 afbeeldingen** en sleep ze naar het contactblad.
+
+| | |
+|-|-|
+|{{< img src="/img/data/opdracht-03-bridge_workflow-output_1.png" >}}|{{< img src="/img/data/opdracht-03-bridge_workflow-output_2.png" >}}|
 
 ### Instellingen voor de contactsheet
 
+#### Document
+
 - **Miniaturen roteren:** Vink **Rotate Thumbnail for Best Fit (Miniatuurvoorvertoning roteren voor beste pasvorm)** aan.  
 
-**Raster en marges:** 
+{{< img src="/img/data/opdracht-03-bridge_workflow-output_3.png" percent="40" >}}
+
+#### Raster en marges
 
 - Open het menu **Grid and Margins (Raster en marges)**.  
 - Stel het raster in op **4 x 4** (4 rijen, 4 kolommen).  
 - Zet **Auto Spacing** aan.  
 - Pas de marges aan: **Boven:** 0,5 cm en **onder, links, rechts:** 1 cm.
 
-### Koptekst toevoegen
+{{< img src="/img/data/opdracht-03-bridge_workflow-output_4.png" >}}
 
-- Open het menu **Header & Footer**.  
-- Vul in bij **Header Text**: **Voornaam Bridge Workflow**.  
+### Koptekst
+
+- Open het menu **Header and Footer (Koptekst en voettekst)**.  
+- Vink Include Header (Inclusief koptekst) aan.
+- Vul in bij **Text (Tekst)**: **Voornaam Bridge Workflow**.  
 - **Uitlijning:** Centreren.  
-- **Header size (Grootte koptekst):** 1 cm.  
+- **Header size (Grootte koptekst):** 1 cm.
+
+{{< img src="/img/data/opdracht-03-bridge_workflow-output_5.png" >}}
 
 ### PDF exporteren
 
 - Klik op **Export PDF** en sla het bestand op als: **"Voornaam Bridge Workflow.pdf"** in de originele map **"Voornaam Bridge Workflow"**.
+
+| | |
+|-|-|
+|{{< img src="/img/data/opdracht-03-bridge_workflow-export_1.png" width="500" >}}|{{< img src="/img/data/opdracht-03-bridge_workflow-export_2.png" >}}|
 
 ## Indienen
 
@@ -92,9 +133,21 @@ Pas de instellingen aan:
 - Kopieer de link van je **OneDrive-map Datamanagement** en plak deze in **Google Classroom** bij de opdracht.
 - Klik op **Indienen**.
 
-### Beoordeling
+{{< img src="/img/data/opdracht-03-bridge_workflow-onedrive_1.png" >}}
+
+| | |
+|-|-|
+|{{< img src="/img/data/opdracht-03-bridge_workflow-upload_1.png" width="500" >}}|{{< img src="/img/data/opdracht-03-bridge_workflow-upload_2.png" >}}|
+
+## Beoordeling
 Je wordt geëvalueerd op:  
 ✔ Correcte naamgeving en mappenstructuur.  
 ✔ Correct ingestelde en opgeslagen **Workflow**.  
 ✔ Correcte export van afbeeldingen en **contactsheet** in Bridge Output.  
 ✔ Correct indienen aan de hand van OneDrive-link.
+
+## Bronnen
+
+- [Adobe Bridge-werkruimte](https://helpx.adobe.com/be_nl/bridge/using/adobe-bridge-workspace.html)
+- [Workflow maken](https://helpx.adobe.com/be_nl/bridge/using/workflow-builder.html)
+- [PDF-contactbladen maken in de werkruimte Uitvoer](https://helpx.adobe.com/be_nl/bridge/using/output-module-pdf-contact-sheet.html)
