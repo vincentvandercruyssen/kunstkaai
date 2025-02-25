@@ -57,4 +57,4 @@ Maak minimaal één tekenstijl om bijvoorbeeld enkele sleutelwoorden in het vet 
 
 ## Indienen
 
-- Pakket als ZIP-archief doorsturen via Smartschool berichten.
+- Pakket als ZIP-archief indienen via Google Classroom.
