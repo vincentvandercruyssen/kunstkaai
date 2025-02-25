@@ -29,6 +29,8 @@ Maak een A4 spread (2 pagina's) in Adobe InDesign met een Wikipedia-artikel als 
 - Kopieer en plak de tekst uit het Wikipedia-artikel (vanaf de hoofdtitel, tussentitels, doorlopende tekst).
 - De bronverwijzingen (cijfertjes tussen vierkante haakjes) mogen zichtbaar blijven in je tekst.
 
+{{< youtube -4zaUrZ0CKo >}}
+
 ### Typografie
 
 Zorg dat de tekst verdeeld wordt, verwijder nutteloze alinea-eindes.
@@ -41,6 +43,12 @@ Gebruik minimaal **vier alineastijlen:**
 - **Doorlopende tekst**
 
 Gebruik **voor- en/of na-afstanden** in alineastijlen. **Geen extra enters** tussen alinea's!
+
+| | |
+|-|-|
+|{{< youtube TC74BqWHjiE >}}|{{< youtube 8pAxi8ly5BM >}}|
+
+Maak minimaal één tekenstijl om bijvoorbeeld enkele sleutelwoorden in het vet aan te duiden.
 
 ### Tekstbeheer
 
