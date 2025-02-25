@@ -10,9 +10,9 @@ Dubbele belichting is een techniek waarbij twee verschillende afbeeldingen over 
 
 {{< img src="/img/digitaal/opdracht-09-dubbele-belichting-filmpje.png" >}}
 
-Dubbele belichting is een techniek uit de analoge fotografie waarbij twee verschillende beelden op één stuk film worden belicht. Dit ontstond per ongeluk wanneer fotografen vergaten de film door te draaien, waardoor twee opnames over elkaar heen werden geplaatst. Later werd dit uniek effect bewust gebruikt voor creatieve doeleinden, zoals het combineren van portretten met landschappen of texturen, om zo een dromerige of surrealistische sfeer te creëren.
+Dubbele belichting is een techniek uit de analoge fotografie waarbij twee verschillende beelden op één stuk film worden belicht. Dit ontstond per ongeluk wanneer een filmstrook bleef hangen in de camera en opnieuw belicht werd. Later werd dit unieke effect bewust gebruikt voor creatieve doeleinden, zoals het combineren van portretten met landschappen of texturen, om zo een dromerige of surrealistische sfeer te creëren.
 
-Combineer twee of meer foto’s in één beeld om een dubbele belichtingseffect te creëren. Experimenteer met aanpassingslagen, blend modes en maskers.
+Gebruik een zelfportret als basis en combineer dit met een andere foto om een dubbele belichtingseffect te creëren. Experimenteer met aanpassingslagen, blend modes en maskers.
 
 {{< pinboard url="https://www.pinterest.com/vincentvandercruyssen/dubbele-belichting/" >}}
 
@@ -24,7 +24,7 @@ Deze techniek wordt in het Engels ‘double exposure’ genoemd. Je kunt ook vee
 
 ### Selecteer het onderwerp
 
-1. Open Photoshop en laad de foto waarop je de dubbele belichting wilt toepassen.
+1. Open Photoshop en laad een zelfportret waarop je de dubbele belichting wilt toepassen.
 2. Kies het Snelle Selectiegereedschap uit de gereedschapsbalk.
 3. Klik op Onderwerp Selecteren in de optiebalk.
 
@@ -40,7 +40,7 @@ Deze techniek wordt in het Engels ‘double exposure’ genoemd. Je kunt ook vee
 
 ### Voeg de tweede foto toe
 
-1. Selecteer de laag van het onderwerp (het portret).
+1. Selecteer de laag van het onderwerp (het zelfportret).
 2. Sleep de tweede foto die je wilt gebruiken bovenop de laag van het onderwerp.
 3. Pas de richting of grootte van de tweede foto aan naar je eigen voorkeur. Druk op Enter of Return.
 
@@ -57,7 +57,7 @@ Deze techniek wordt in het Engels ‘double exposure’ genoemd. Je kunt ook vee
 
 ### Pas Curven aan
 
-1. Selecteer de laag van het onderwerp (het portret) opnieuw.
+1. Selecteer de laag van het onderwerp (het zelfportret) opnieuw.
 2. Klik op het Aanpassingslagenicoon en kies voor Curven.
 3. Verplaats de uiterst rechtse schuifregelaar naar links om de lichtpunten aan te passen.
 4. Verplaats de uiterst linkse schuifregelaar een beetje naar rechts om te voorkomen dat de schaduwen te veel vervagen.
