@@ -18,6 +18,7 @@ Voor deze opdracht maak je een interviewpagina op voor je eigen fictieve tijdsch
 
 - **Onderwerp kiezen**  Kies een persoon voor het interview en zoek een bestaand interview met hen online.
 - **Materiaal verzamelen**  Zoek een hoge resolutie foto van je geïnterviewde en bewaar deze in een materialenmap.
+- Je kunt kiezen om één interview over beide pagina’s te verspreiden of om twee verschillende interviews per pagina te maken.
 
 ### Nieuw document maken
 
@@ -35,12 +36,14 @@ Voor deze opdracht maak je een interviewpagina op voor je eigen fictieve tijdsch
 
 ### Tekstkaders koppelen
 
-- Teken en positioneer tekstkaders nauwkeurig via coördinaten.  
-- Koppel tekstkaders zodat de tekst correct doorloopt.
+- Teken en positioneer tekstkaders nauwkeurig.
+- Koppel tekstkaders zodat de tekst correct doorloopt. Je kunt lege tekstkaders OF reeds gevulde tekstkaders met elkaar verbinden. 
 
-{{< img src="/img/typo/opdracht-4-08-interview-ontwerp_2.png" >}}
+{{< img src="/img/typo/opdracht-4-08-interview-tekstkaders_0.png" >}}
 
-{{< img src="/img/typo/opdracht-4-08-interview-ontwerp_5.png" >}}
+| | |
+|-|-|
+|{{< img src="/img/typo/opdracht-4-08-interview-tekstkaders_1.png" >}}|{{< img src="/img/typo/opdracht-4-08-interview-tekstkaders_2.png" >}}|
 
 - Selecteer het tekstkader dat je wilt verbinden.
 - Klik op het **uitvoerpoortje** (het kleine vierkantje rechtsonder het kader) en sleep naar een nieuw of het volgende tekstkader om een verbinding te maken.
@@ -50,10 +53,28 @@ Voor deze opdracht maak je een interviewpagina op voor je eigen fictieve tijdsch
 
 - [Adobe help: Tekst laten doorlopen in kaders in Adobe InDesign](https://helpx.adobe.com/nl/indesign/using/threading-text.html)
 
-### Typografie en stijlen
+### Tekstkaders stijl
 
-- Pas alinea- en tekenstijlen toe voor consistente opmaak.
-- Voor elke tekststijl maak je een alineastijl, voor een afwijkende stijl (bv. tekst in vet, andere kleur) maak je een tekenstijl. 
+Je gaat je tekstkaders kleur en inzetafstand geven.
+
+Bij het ontwerpen hoef je geen rechthoek achter de tekstkaders te plaatsen. In plaats daarvan kun je de uitstraling van je tekstkaders volledig vormgeven met behulp van de beschikbare opties en kleuren.
+
+- Geef je tekstkaders een achtergrondkleur door de tekstkaders te selecteren en een gewenste kleur te kiezen.
+- Verander de doorzichtigheid van de achtergrondkleur. Zorg ervoor dat je dit niet toepast op je hele object, maar enkel op de vulkleur. 
+
+| | |
+|-|-|
+|{{< img src="/img/typo/opdracht-4-08-interview-tekstkaders_3.png" >}}|{{< img src="/img/typo/opdracht-4-08-interview-tekstkaders_4.png" >}}|
+
+{{< img src="/img/typo/opdracht-4-08-interview-tekstkaders_5.png" >}}
+
+Pas de inzetafstand aan om de leesbaarheid van de tekst te verbeteren en een aantrekkelijke lay-out te creëren. Experimenteer met verschillende waarden voor de inzetafstand om de ideale balans tussen tekst en ruimte te vinden.
+
+- Selecteer alle tekstkaders, rechterklik op één van de kaders en ga naar Tekstkader opties (Cmd + B).
+
+{{< img src="/img/typo/opdracht-4-08-interview-tekstkaders_6.png" >}}
+
+### Typografie en stijlen
 
 Alineastijlen zorgen voor consistentie in de opmaak van je tekst (koppen, inleidingen, artikelteksten, advertenties, bijschriften). Ze slaan opmaakinstellingen op, zoals lettertype, grootte, regelafstand en uitlijning.
 
@@ -66,9 +87,8 @@ Alineastijlen zorgen voor consistentie in de opmaak van je tekst (koppen, inleid
 
 {{< img src="/img/typo/opdracht-4-08-interview-ontwerp_8.png" percent="40" >}}
 
-| | |
-|-|-|
-|{{< youtube TC74BqWHjiE >}}|{{< youtube 8pAxi8ly5BM >}}|
+{{< youtube TC74BqWHjiE >}}
+{{< youtube 8pAxi8ly5BM >}}
 
 - [Adobe help: Basisbeginselen van alinea- en tekenstijlen](https://helpx.adobe.com/nl/indesign/using/paragraph-character-styles.html)
 
