@@ -58,3 +58,10 @@ TIP: plaats de foto's die je gebruikt, in een aparte laag, ook in je spread (op 
 |{{< img src="/img/typo/opdracht-5-11-stickerboek-vb1.jpg" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb2.jpg" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb3.jpg" >}}|
 |{{< img src="/img/typo/opdracht-5-11-stickerboek-vb4.jpg" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb5.jpg" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb6.jpg" >}}|
 |{{< img src="/img/typo/opdracht-5-11-stickerboek-vb7.jpg" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb8.jpg" >}}|{{< img src="/img/typo/opdracht-5-11-stickerboek-vb9.jpg" >}}|
+
+## Puntenverdeling
+
+- **Naamgeving en bestandsbeheer (05)** Volledig ZIP-pakket met correcte bestandsnamen (`voornaam stickerboek.zip`, `voornaam stickerboek.indd`, `voornaam stickerboek.pdf`, Links, Document fonts).
+- **Bestandsinstellingen (05)** Juiste documentformaten (spread en stickervel), Correcte gidslijnen en marges ingesteld, Correct gebruik van lagen.
+- **Inhoud (20)** Tien kaders voor stickers (in juiste formaat), Correct gebruik van 'dubbele afbeelding', Minstens één afwijkende oriëntatie van een sticker, Onderschriften bij elk kader, Paginatitel en genummerde kaders aanwezig, Plaatsing en gebruik van Panini-logo.
+- **Typografie en Vormgeving (20)** Consistente en leesbare typografie, Correct gebruik van lettergroottes en typografische hiërarchie, Typografische keuzes passen bij het thema, Aantrekkelijke en coherente lay-out, Creatief gebruik van duotone, Stickervel in kleur, met snijlijnen en witte marges, Goede compositie van afbeeldingen en tekst. 
