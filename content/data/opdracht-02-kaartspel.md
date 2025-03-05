@@ -215,7 +215,7 @@ Geen onnodige bestanden toevoegen die onduidelijkheid scheppen. Zorg ervoor dat 
 ### Puntenverdeling
 
 - **Zip-bestand (02)** Eén zip-bestand met voornaam en opdrachtbenaming (`voornaam kaartspel.zip`).
-- **Sjabloon (12)** InDesign-sjabloondocument (`voornaam kaartspel.indd`) met werkende gekoppelde gegevens.
+- **Sjabloon (24)** InDesign-sjabloondocument (`voornaam kaartspel.indd`) twee pagina's met werkende gekoppelde gegevens, Correct gebruik van lagen, Plaatsing kaders, Twee gevraagde lettertypes, Afwerking.
 - **CSV (02)** Geëxporteerd CSV-bestand met zes kolommen voor tekst en zes voor afbeeldingen, Correct ingegeven gegevens voor 18 verschillende kaarten/personages.
 - **Links (02)** Correcte map (`Links`) met de bijbehorende afbeeldingen (png, pdf, psd).
 - **Samengevoegd (02)** Samengevoegd InDesign-document (`voornaam kaartspel samengevoegd.indd`) en PDF-bestand (`voornaam kaartspel samengevoegd.pdf`).
