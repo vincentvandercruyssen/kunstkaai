@@ -6,9 +6,63 @@
 :root {
   --sidebar-width: 20rem;
   --text: #222;
+  --anchor: #19f;
+  --bgcbg: #eee;
+  --bgcfg: #fffe;
+  --bgcredits: #fff;
+  --bghighlight: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #eee;
+    --anchor: #19f;
+    --bgcbg: #222;
+    --bgcfg: #0003;
+    --bgcredits: #0003;
+    --bghighlight: #0000;
+  }
+}
+
+html {
+  color-scheme: dark light;
+}
+
+#theme {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  background-color: var(--bgcredits);
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  filter: grayscale(1) brightness(0.9) contrast(1.2);
+}
+
+:root:has(#theme [value="☀️"]:checked) {
+  color-scheme: light;
+  --text: #222;
+  --anchor: #19f;
+  --bgcbg: #eee;
+  --bgcfg: #fffe;
+  --bgcredits: #fff;
+  --bghighlight: #fff;
+}
+
+:root:has(#theme [value="🌙"]:checked) {
+  color-scheme: dark;
+  --text: #eee;
+  --anchor: #19f;
+  --bgcbg: #222;
+  --bgcfg: #0003;
+  --bgcredits: #0003;
+  --bghighlight: #0000;
 }
 
 * {
+  transition: all 100ms;
   margin: 0;
   box-sizing: border-box;
   padding: 0;
@@ -21,7 +75,7 @@ main {
 }
 
 body {
-  background-color: #eee;
+  background-color: var(--bgcbg);
   color: var(--text);
   font-family: "Noto Serif";
   line-height: 1.61803;
@@ -38,7 +92,7 @@ body::after {
   padding: 0.2rem 1ch 0 1ch;
   height: 1.2rem;
   content: "Kunstkaai - V. Vander Cruyssen";
-  background-color: #fff;
+  background-color: var(--bgcredits);
   font-size: 0.6rem;
 }
 
@@ -72,6 +126,8 @@ ol {
 
 h1 {
   font-size: 2.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 h2 {
@@ -101,7 +157,7 @@ li {
 } */
 
 a {
-  color: #19f;
+  color: var(--anchor);
   text-decoration: none;
 }
 
@@ -181,7 +237,7 @@ summary {
 header,
 main {
   padding: 0;
-  background-color: #fffe;
+  background-color: var(--bgcfg);
 }
 
 header>* {
@@ -251,7 +307,7 @@ main ol li:nth-child(n + 10)::before {
 }
 
 .highlight * {
-  background-color: #fff !important;
+  background-color: var(--bghighlight) !important;
   color: var(--text) !important;
 }
 
