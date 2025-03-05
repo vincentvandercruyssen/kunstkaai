@@ -214,12 +214,12 @@ Geen onnodige bestanden toevoegen die onduidelijkheid scheppen. Zorg ervoor dat 
 
 ### Puntenverdeling
 
-- Een zip-bestand met voornaam en opdrachtbenaming. (02)
-- InDesign-sjabloondocument met werkende gekoppelde gegevens. (08)
-- Geëxporteerd CSV-bestand met zes kenmerken en twee afbeeldingen, vijftien producten. (04)
-- Correcte map met de bijbehorende afbeeldingen. (02)
-- Samengevoegde gegevens InDesign-document en PDF-bestand. (02)
-- Alle bestanden correct benoemd en georganiseerd. Geen onnodige bestanden en/of mappen toegevoegd die onduidelijkheid scheppen. (02)
+- **Zip-bestand (02)** Eén zip-bestand met voornaam en opdrachtbenaming (`voornaam kaartspel.zip`).
+- **Sjabloon (12)** InDesign-sjabloondocument (`voornaam kaartspel.indd`) met werkende gekoppelde gegevens.
+- **CSV (02)** Geëxporteerd CSV-bestand met zes kolommen voor tekst en zes voor afbeeldingen, Correct ingegeven gegevens voor 18 verschillende kaarten/personages.
+- **Links (02)** Correcte map (`Links`) met de bijbehorende afbeeldingen (png, pdf, psd).
+- **Samengevoegd (02)** Samengevoegd InDesign-document (`voornaam kaartspel samengevoegd.indd`) en PDF-bestand (`voornaam kaartspel samengevoegd.pdf`).
+- **Structuur (02)** Alle bestanden correct benoemd en georganiseerd. Geen onnodige bestanden en/of mappen toegevoegd die onduidelijkheid scheppen.
 
 ## Bronnen
 
