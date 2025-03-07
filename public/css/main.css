@@ -87,13 +87,14 @@ body {
 
 body::after {
   position: fixed;
-  bottom: 0;
-  right: 0;
-  padding: 0.2rem 1ch 0 1ch;
-  height: 1.2rem;
+  bottom: 50vh;
+  right: calc(-3rem - 2px);
+  padding: 1rem 2ch;
   content: "Kunstkaai - V. Vander Cruyssen";
   background-color: var(--bgcredits);
   font-size: 0.6rem;
+  rotate: 90deg;
+  line-height: 0;
 }
 
 h1,

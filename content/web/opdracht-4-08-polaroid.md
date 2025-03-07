@@ -139,12 +139,12 @@ Maak één zip-bestand van de map. Lever in via Google Classroom.
 
 ## Puntenverdeling
 
-- **Structuur (04)**: Correcte bestandsnamen en mapstructuur.
-- **HTML (12)**: Correct gebruik van elementen en attributen.
-- **CSS Basis (05)**: Import, algemene styling. 
-- **CSS Polaroid (10)**: Styling van de Polaroid-elementen.
-- **Positionering (10)**: Correcte plaatsing en rotatie van Polaroids.
-- **Afbeeldingen (04)**: Juiste verwerking en styling van foto's.
+- **Structuur (05)**: Correcte bestandsnamen en mapstructuur, `voornaam polaroid.zip`, `index.html`, `style.css`, map met hernoemde afbeeldingen.
+- **HTML (12)**: Correct gebruik van elementen en kenmerken, `html`, `title` en `link`, `body`, 9 x `div`, `img`, `h#`, `class`, `id`, `src`.
+- **CSS Basis (05)**: Extern lettertype, algemene styling, `body`, `background-image`, `background-size`, `font-family`.
+- **CSS Polaroid (07)**: Styling van de Polaroid-elementen, `.polaroid`, `position`, `width`, `background-color`, `padding`, `box-shadow`, `text-align`.
+- **CSS Positionering (09)**: Plaatsing en rotatie van minimaal negen Polaroids met id-selector.
+- **CSS Afbeeldingen (05)**: Juiste verwerking en styling van foto's met specifieke selector, `width`, `aspect-ratio`, `object-fit`, `filter`.
 
 ## Veelvoorkomende fouten
 
