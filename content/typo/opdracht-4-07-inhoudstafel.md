@@ -86,10 +86,12 @@ Elk item moet duidelijk, samenhangend en aantrekkelijk gepresenteerd worden.
 
 ## Puntenverdeling
 
-- **Naamgeving en bestandsbeheer (04)** Naamgeving van bestanden: `voornaam inhoudstafel.zip` (pakket met InDesign-document, mapje Links met afbeeldingen en PDFbestand), Benaming en correct gebruik van lagen.
-- **Formaat en raster (06)** Gebruik van het juiste formaat (A4), correcte marges (13 mm) en bleed (3 mm), Toepassing van een raster met hulplijnen.
-- **Inhoud (18)**
-- **Vormgeving (15)**
+- **Naamgeving en bestandsbeheer (04)** Naamgeving van bestanden: `voornaam inhoudstafel.zip` (pakket met InDesign-document, mapje Links met afbeeldingen en PDF-bestand).
+- **Schets (02)**
+- **Formaat en raster (06)** Gebruik van het juiste formaat (2 x A4), correcte marges (13 mm) en bleed (3 mm), Toepassing van een raster met hulplijnen, Benaming en correct gebruik van lagen.
+- **Inhoud (09)** Titel, ondertitel en magazine-informatie, 6 x Paginanummer, Titel, Samenvatting.
+- **Alinea stijlen (06)** Titel, ondertitel en magazine-informatie, Paginanummer, Titel, Samenvatting.
+- **Vormgeving en afwerking (04)**
 
 ## Bronnen
 
