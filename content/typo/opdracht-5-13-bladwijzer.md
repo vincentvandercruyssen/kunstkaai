@@ -48,3 +48,11 @@ Op de tweede en derde pagina ontwerp je een **spread** in dezelfde stijl als je 
 - Bewaar als **voornaam bladwijzer.pdf** (Portable Document Format).
 - Bewaar als **pakket/package** genaamd **voornaam bladwijzer**.
 - **Upload als ZIP-archief** (volledig pakket met fonts, afbeeldingen en PDF’s).
+
+## Puntenverdeling
+
+- **Naamgeving en bestandsbeheer (04)** Volledig pakket met duidelijke bestandsnamen (`voornaam bladwijzer.zip`, `voornaam bladwijzer.indd`, `voornaam bladwijzer.pdf`).
+- **Bestandsinstellingen (04)** Juiste documentformaat (55 x 210 mm, A5 spread), Marges min. 4 mm, Efficiënt gebruik van lagen.
+- **Vormgeving bladwijzer (06)** Leesbaarheid van het gedicht (lettertype, grootte, interlinie, letterafstand), Correcte uitlijning en woordafbrekingen, Eén tekstvak (titel, gedicht en auteur), Beperkt kleurgebruik, Eventueel versterkende afbeeldingen.
+- **Vormgeving spread (04)** Consistente stijl met de bladwijzer, Correcte plaatsing van het gedicht in één tekstvak, Versterkende afbeelding.
+- **Creativiteit en concept (05)** Originele en passende vertaling van het gedicht naar beeld, Versterking van de toon van het gedicht door vormgeving en beeldkeuze.
