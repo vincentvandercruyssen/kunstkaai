@@ -55,6 +55,14 @@ Het boekje bevat:
 - Lever een gedrukt exemplaar van je boekje in.
 - Upload een ZIP-bestand met de bronbestanden en de eind-PDF.
 
+## Puntenverdeling
+
+- **Naamgeving en bestandsbeheer (04)** Volledig pakket met duidelijke bestandsnamen (`voornaam poezie.zip`, `voornaam poezie.indd`, `voornaam poezie.pdf`, Links, Document fonts).
+- **Bestandsinstellingen (03)** Juiste documentformaat (A5 spread), Marges, Efficiënt gebruik van lagen.
+- **Illustraties (05)** Minstens vijf uitgewerkte concrete gedichten, waarvan minstens twee manueel uitgewerkt.
+- **Vormgeving en ontwerp (08)** Voor- en achterblad, Introductie, Kwaliteit van de bladschikking in het boekje, Effectief gebruik van witruimte en compositie, Zorgvuldige afwerking en presentatie.
+- **Creativiteit en technische vindingrijkheid (10)** Variatie in technieken, Balans tussen visuele impact en leesbaarheid, Originaliteit en experimentatie met typografie en vorm, Aandacht voor detail.
+
 ## Bronnen
 
 - [Concrete poëzie - Wikipedia](https://nl.wikipedia.org/wiki/Concrete_po%C3%ABzie)
