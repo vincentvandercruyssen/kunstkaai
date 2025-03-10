@@ -113,13 +113,12 @@ Mapnaam: `voornaam insta` met de volgende bestanden:
 - `style.css`
 - Map `images` met alle gebruikte afbeeldingen.
 
-Maak één zip-bestand van de map en lever in via Google Classroom.
+Verzamel alle bestanden in de juiste map en zorg dat alles netjes geordend is. Lever het werk in door je Webontwikkeling-map te delen via een OneDrive-koppeling.
 
 ## Puntenverdeling
 
-- **Structuur (04)**: Correcte bestandsnamen en mapstructuur.
-- **HTML (12)**: Correct gebruik van elementen en kenmerken.
-- **CSS Basis (05)**: Basisstijl correct toegepast.
-- **CSS Layout (05)**: Feed correct gecentreerd, posts correct weergegeven.
-- **Interactie (04)**: Like-knop werkt visueel.
-- **Afbeeldingen (02)**: Correct gebruik van aspect-ratio en object-fit.
+- **Structuur (04)**: Correcte bestandsnamen en mapstructuur, `voornaam insta`, `index.html`, `style.css`, `images`.
+- **HTML (12)**: Correct gebruik van elementen en kenmerken, `html`, `title` en `link`, `header` met `h`-koptekst, `main` met 9 x `section`, `img`, `div` met `button`, `h`-koptekst, `p`.
+- **CSS Basis (05)**: Basisstijl correct toegepast, `body` met `margin`, `background-color`, `color` en `font-family`.
+- **CSS Layout (08)**: Feed correct gecentreerd, `main` met `max-width` en `margin`, posts correct weergegeven, `section` met `margin` en `background-color`, `section div` met `padding`.
+- **Afbeeldingen (02)**: Afbeelding op 100% breedte, `img` met `width: 100%;`.
