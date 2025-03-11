@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/digitaal/</loc>
+    <lastmod>2025-03-10T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/digitaal/opdracht-10-sprookjesbeest/</loc>
+    <lastmod>2025-03-10T08:00:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/typo/opdracht-5-15-indesign_herhaling/</loc>
     <lastmod>2025-02-24T08:00:00-07:00</lastmod>
   </url><url>
@@ -22,9 +28,6 @@
   </url><url>
     <loc>http://localhost:1313/web/</loc>
     <lastmod>2025-02-19T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/digitaal/</loc>
-    <lastmod>2025-02-17T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/typo/opdracht-5-13-bladwijzer/</loc>
     <lastmod>2025-02-17T08:00:00-07:00</lastmod>
