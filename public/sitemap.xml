@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/typo/</loc>
+    <lastmod>2025-03-18T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/typo/opdracht-5-16-kookboek-buffed/</loc>
+    <lastmod>2025-03-17T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/typo/opdracht-4-09-songtekst/</loc>
+    <lastmod>2025-03-17T08:00:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/web/opdracht-4-10-tijdlijn/</loc>
     <lastmod>2025-03-16T08:00:00-07:00</lastmod>
   </url><url>
@@ -15,9 +24,6 @@
     <lastmod>2025-03-10T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/typo/opdracht-5-15-indesign_herhaling/</loc>
-    <lastmod>2025-02-24T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/typo/</loc>
     <lastmod>2025-02-24T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/data/</loc>
