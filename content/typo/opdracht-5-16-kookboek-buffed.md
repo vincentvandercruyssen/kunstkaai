@@ -42,6 +42,8 @@ Gebruik alineastijlen voor:
 - Categorie of deel
 - ...
 
+[Adobe help: Basisbeginselen van alinea- en tekenstijlen.](https://helpx.adobe.com/be_nl/indesign/using/paragraph-character-styles.html)
+
 ### Afbeelding
 - Minimaal één kwaliteitsvolle foto per gerecht (via [Unsplash](https://unsplash.com/) of [Pexels](https://www.pexels.com/)).
 
@@ -54,6 +56,8 @@ Plaats paginanummers op de stramienpagina. Bij toepassing op documentpagina’s 
 3. Bij naast elkaar liggende pagina’s maak je aparte tekstkaders voor de linker- en rechterstramienpagina.
 4. Kies *Tekst > Speciaal teken invoegen > Markeringen > Huidig paginanummer*.  
 5. Pas de stramienpagina toe op de documentpagina’s.
+
+[Adobe help: Paginanummers toevoegen en opmaken.](https://helpx.adobe.com/be_nl/indesign/using/layout-design-9.html)
 
 ### Technische vereisten
 
