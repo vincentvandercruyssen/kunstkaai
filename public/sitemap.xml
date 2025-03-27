@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/data/</loc>
+    <lastmod>2025-03-26T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/data/opdracht-03-photoshop_actions/</loc>
+    <lastmod>2025-03-26T08:00:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/digitaal/</loc>
     <lastmod>2025-03-24T08:00:00-07:00</lastmod>
   </url><url>
@@ -37,9 +43,6 @@
   </url><url>
     <loc>http://localhost:1313/typo/opdracht-5-15-indesign_herhaling/</loc>
     <lastmod>2025-02-24T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/data/</loc>
-    <lastmod>2025-02-23T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/data/opdracht-03-bridge_workflow/</loc>
     <lastmod>2025-02-23T08:00:00-07:00</lastmod>

@@ -6,8 +6,15 @@
     <description>Recent content in Home on Kunstkaai</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Mar 2025 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 26 Mar 2025 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Photoshop Actions</title>
+      <link>http://localhost:1313/data/opdracht-03-photoshop_actions/</link>
+      <pubDate>Wed, 26 Mar 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/data/opdracht-03-photoshop_actions/</guid>
+      <description>&lt;p&gt;In deze opdracht leer je hoe je &lt;strong&gt;Photoshop Actions&lt;/strong&gt; gebruikt om een reeks foto&amp;rsquo;s automatisch te bewerken en op te slaan met een nieuwe bestandsnaam. Je maakt een action (handeling) aan, past minimaal twee aanpassingslagen toe en voert een batchverwerking uit om dezelfde handelingen automatisch op meerdere foto&amp;rsquo;s toe te passen.&lt;/p&gt;&#xA;&lt;p&gt;Je organiseert de bestanden correct in een mappenstructuur. Aan het einde van deze opdracht heb je een action (handeling) gemaakt en toegepast op een reeks foto&amp;rsquo;s. Je bewaart je resultaten en deelt ze via &lt;strong&gt;OneDrive&lt;/strong&gt; en &lt;strong&gt;Google Classroom&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Opdracht: Popart</title>
       <link>http://localhost:1313/digitaal/opdracht-11-popart/</link>
