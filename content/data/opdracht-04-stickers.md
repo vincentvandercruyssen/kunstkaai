@@ -42,7 +42,7 @@ In je handeling neem je volgende stappen op...
 
 ### Stijl
 
-- Voeg aan de foto een **Bevel & Emboss** toe via **Laagstijl** (Layer Style). 
+- Voeg aan de tekst een **Bevel & Emboss** toe via **Laagstijl** (Layer Style). 
  ➜ Je mag hier **overdrijven**: het mag visueel knallen.
 
  {{< img src="/img/data/opdracht-04-stickers-bevel1.png" >}}
