@@ -9,6 +9,13 @@
     <lastBuildDate>Wed, 02 Apr 2025 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Opdracht: Absolutely</title>
+      <link>http://localhost:1313/web/opdracht-3-10-absolutely/</link>
+      <pubDate>Wed, 02 Apr 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-3-10-absolutely/</guid>
+      <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;Je maakt in deze opdracht een interactieve webpagina met HTML en CSS. De pagina krijgt een achtergrondafbeelding die het hele scherm bedekt, en toont verschillende objecten (bijvoorbeeld dieren, voertuigen, bloemen, snoepjes&amp;hellip;) op diverse posities. De tekst en titels worden gecentreerd met flexbox, zodat ze mooi in het midden van het scherm staan.&lt;/p&gt;&#xA;&lt;p&gt;De objecten worden gepositioneerd met &lt;code&gt;position: absolute&lt;/code&gt; en de kenmerken &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;right&lt;/code&gt;, &lt;code&gt;bottom&lt;/code&gt;, &lt;code&gt;left&lt;/code&gt;. Daarnaast voeg je animaties toe: de objecten bewegen of knipperen met CSS-animaties.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Opdracht: Stickers</title>
       <link>http://localhost:1313/data/opdracht-04-stickers/</link>
       <pubDate>Wed, 02 Apr 2025 08:00:00 -0700</pubDate>
