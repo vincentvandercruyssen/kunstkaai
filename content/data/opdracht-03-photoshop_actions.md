@@ -31,6 +31,7 @@ Pak het zip-bestand uit en plaats de foto's in de map **Originelen**.
 
 ### Venster Handelingen openen
 
+- Open één van de foto's.
 - Open **Photoshop** en ga naar **Window → Actions (Venster → Handelingen)**.
 - Klik op het **+ icoon** om een nieuwe action (handeling) te maken.
 - Geef de action (handeling) een naam, bijvoorbeeld **Aanpassingslagen Effect**.
