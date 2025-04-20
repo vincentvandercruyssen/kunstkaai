@@ -139,12 +139,12 @@ Pas de instellingen aan:
 |-|-|
 |{{< img src="/img/data/opdracht-03-bridge_workflow-upload_1.png" width="500" >}}|{{< img src="/img/data/opdracht-03-bridge_workflow-upload_2.png" >}}|
 
-## Beoordeling
-Je wordt geëvalueerd op:  
-✔ Correcte naamgeving en mappenstructuur.  
-✔ Correct ingestelde en opgeslagen **Workflow**.  
-✔ Correcte export van afbeeldingen en **contactsheet** in Bridge Output.  
-✔ Correct indienen aan de hand van OneDrive-link.
+## Puntenverdeling
+
+- **Naamgeving en mappenstructuur (05)** `Voornaam Bridge Workflow` met 16 originele JPG-afbeeldingen, mapje `Workflow` met 16 hernoemde JPG-afbeeldingen, `Voornaam Bridge Workflow.pdf`.
+- **Workflow (04)** 16 verkleinde afbeeldingen (langste zijde 10cm).
+- **Contactblad (04)** PDF-bestand volgens de gevraagde instellingen.
+- **OneDrive-koppeling (01)** naar gehele map `Datamanagement`.
 
 ## Bronnen
 

@@ -126,7 +126,7 @@ Ga naar **OneDrive** en kopieer de **link naar je volledige map `Datamanagement`
 
 Dien deze koppeling in via **Google Classroom** bij de opdracht **Stickers**.
 
-## Beoordeling
+## Puntenverdeling
 
 - Mapstructuur en naamgeving (02)
 - Correcte Photoshop Action (06)
