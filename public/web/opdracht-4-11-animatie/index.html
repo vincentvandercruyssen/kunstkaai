@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Opdracht: Animatie | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+<link rel="icon" type="image/svg" href="/favicon.svg">
+
+
+</head>
+<body>
+  <select data-theme-picker name="themepicker" id="theme">
+    <option value="🖥️">🖥️</option>
+    <option value="☀️">☀️</option>
+    <option value="🌙">🌙</option>
+  </select>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+Webontwikkeling
+<br>
+    Opdracht: Animatie
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#opgave">1. Opgave</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#voorbereiding">2. Voorbereiding</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#structuur-van-je-html">3. Structuur van je HTML</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#achtergrond">4. Achtergrond</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#bewegende-container">5. Bewegende container</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#animation-eigenschap">5.1 animation-eigenschap</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#keyframes-regel">5.2 @keyframes-regel</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#figuur-beweegt-apart">6. Figuur beweegt apart</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#extra-optioneel">7. Extra (optioneel)</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#indienen">8. Indienen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#puntenverdeling">9. Puntenverdeling</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#veelvoorkomende-fouten">10. Veelvoorkomende fouten</a>
+
+      
+      
+    
+
+    
+    </li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+Webontwikkeling
+ <br> Opdracht: Animatie</h1>
+
+<h2 id="opgave">Opgave</h2>
+<p>Maak een geanimeerde webpagina waarin een figuur zich beweegt over een achtergrond die het volledige beeldscherm vult. De figuur zit in een container die beweegt over het scherm, terwijl de figuur zelf ook een kleine beweging uitvoert (bijvoorbeeld springen of draaien). Je creëert dus een animatie <em>binnen</em> een animatie. Voeg eventueel meerdere elementen toe die ook bewegen.</p>
+<p>In CSS werk je met animaties door twee zaken te combineren:</p>
+<ol>
+<li>De <strong><code>animation</code>-eigenschap</strong>: hiermee geef je een HTML-element een animatie, met instellingen zoals de duur, snelheid, naam van de animatie en hoe vaak ze herhaald wordt.</li>
+<li>De <strong><code>@keyframes</code>-regel</strong>: hierin beschrijf je hoe die animatie precies verloopt, bijvoorbeeld van links naar rechts, van klein naar groot, van rood naar groen, enzoverder.</li>
+</ol>
+<p>Je gebruikt dus <code>animation</code> op het element zelf, en <code>@keyframes</code> om te zeggen wat er verandert tijdens de animatie.</p>
+<h2 id="voorbereiding">Voorbereiding</h2>
+<p>Maak een nieuwe map aan, genaamd <code>voornaam animatie</code>, binnen je map voor <code>Webontwikkeling</code> in je OneDrive. Open de map in Visual Studio Code.</p>
+<p>Maak in deze nieuwe map de volgende bestanden aan:</p>
+<ul>
+<li><code>index.html</code></li>
+<li><code>style.css</code></li>
+<li>Een map <code>images</code> waarin je de figuur en de achtergrond plaatst.</li>
+</ul>
+<p>Gebruik zelfgekozen afbeeldingen (een personage of object, en een passende achtergrond). De figuur moet mogelijk worden uitgesneden en als PNG-bestand met transparante achtergrond worden opgeslagen.</p>
+<h2 id="structuur-van-je-html">Structuur van je HTML</h2>
+<p>Gebruik de standaard HTML-basisstructuur (de Emmet-sneltoets uitroepteken <code>!</code>). Verander het <code>title</code>-element en voeg een koppeling naar je CSS-bestand toe.</p>
+<p>In de <code>&lt;body&gt;</code> plaats je één <code>main</code>-element. Binnen deze <code>main</code> komt een <code>div</code>-element met een duidelijke klasse (bijvoorbeeld <code>figuur-container</code>). Dit element is de container die je zult laten bewegen over het scherm, bijvoorbeeld horizontaal van links naar rechts.</p>
+<p>In deze figuur-container komt een <code>img</code>-element voor de figuur zelf (bijvoorbeeld een wandelend diertje, robot, ridder,&hellip;). Kies een afbeelding die geschikt is om te laten bewegen.</p>
+<h2 id="achtergrond">Achtergrond</h2>
+<p>Stel in CSS een afbeelding in als achtergrond van je gehele pagina (<code>body</code>-selector). De achtergrond moet het volledige scherm opvullen. Je kunt deze eventueel anders positioneren. Gebruik hiervoor de eigenschappen <code>background-image</code>, <code>background-size</code> en <code>background-position</code>.</p>
+<h2 id="bewegende-container">Bewegende container</h2>
+<p>De container waarin de figuur zit, wordt absoluut gepositioneerd ten opzichte van het scherm. Je geeft deze vervolgens een vaste positie (bijvoorbeeld op 2/3 van het scherm), dit doe je met <code>top</code>, <code>bottom</code>, <code>left</code> of <code>right</code> gebruikmakend van de procent-eenheid.</p>
+<p>De container geef je een vaste breedte, hier kun je wel het best pixels gebruiken.</p>
+<p>Laat de container bijvoorbeeld horizontaal van links naar rechts bewegen. De container krijgt hiervoor een <code>animation</code>-eigenschap. Je definieert onder je container-selector een <code>@keyframes</code>-regel voor de beweging.</p>
+<p>Let op:</p>
+<ul>
+<li>Begin de animatie buiten het scherm (je kunt hiervoor de grootte van de container gebruiken, maar dan negatief). Als je de container op <code>width: 200px</code> hebt ingesteld gebruik je dus <code>left: -200px;</code>.</li>
+<li>Laat de container eindigen buiten het scherm. Door bijvoorbeeld <code>left: 100%;</code> te gebruiken zal de container bij het laatste frame buiten het scherm getekend worden.</li>
+<li>Gebruik een animatie die oneindig doorgaat (<code>infinite</code>) en best in een vast tempo (<code>linear</code>).</li>
+</ul>
+<h3 id="animation-eigenschap">animation-eigenschap</h3>
+<p>De eigenschap <code>animation</code> combineert verschillende animatie-instellingen in één regel. De gebruikelijke volgorde is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">animation</span><span style="color:#f92672">:</span> <span style="color:#f92672">benaming</span> <span style="color:#f92672">duurtijd</span> <span style="color:#f92672">timing-function</span> <span style="color:#f92672">iteration-count</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div><p>Bijvoorbeeld:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">animation</span><span style="color:#f92672">:</span> <span style="color:#f92672">beweeg</span> <span style="color:#f92672">5s</span> <span style="color:#f92672">linear</span> <span style="color:#f92672">infinite</span><span style="color:#f92672">;</span>
+</span></span></code></pre></div><p>Dit betekent: gebruik de animatie <code>beweeg</code>, laat ze 5 seconden duren, met een gelijkmatig tempo (<code>linear</code>), en herhaal ze oneindig (<code>infinite</code>).</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation" target="_blank" rel="noopener noreferrer">MDN: animation</a></p>
+<h3 id="keyframes-regel">@keyframes-regel</h3>
+<p>Met <code>@keyframes</code> beschrijf je welke stappen een animatie doorloopt. Je geeft een naam aan de animatie en definieert wat er op bepaalde tijdstippen gebeurt (bijvoorbeeld bij <code>0%</code> en <code>100%</code>, hetzelfde als <code>from</code> en <code>to</code>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">beweeg</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">0</span><span style="color:#f92672">%</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">-200</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">100</span><span style="color:#f92672">%</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>De animatie <code>beweeg</code> start in dit voorbeeld buiten het scherm links (<code>-200px</code>) en eindigt helemaal rechts van het scherm (<code>100vw</code>).</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes" target="_blank" rel="noopener noreferrer">MDN: @keyframes</a></p>
+<h2 id="figuur-beweegt-apart">Figuur beweegt apart</h2>
+<p>De figuur moet allereerst de volledige grootte van de figuur-container innemen. Dit doe je eenvoudig met <code>width: 100%;</code>.</p>
+<p>De figuur in de container krijgt ook een eigen animatie. Deze animatie werkt onafhankelijk van de beweging van de container. Denk aan een kleine sprong, een schommelende beweging of een lichte draai. Deze animatie herhaalt snel en zorgt voor een levendig effect.</p>
+<p>Denk na over:</p>
+<ul>
+<li>De richting van de beweging (op en neer, heen en weer, draaien,…).</li>
+<li>De duur en het ritme van de animatie.</li>
+<li>De combinatie van beweging en eventueel rotatie (gebruik <code>transform</code>).</li>
+</ul>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank" rel="noopener noreferrer">MDN: transform</a></p>
+<h2 id="extra-optioneel">Extra (optioneel)</h2>
+<ul>
+<li>Voeg meerdere figuren toe die op verschillende plaatsen bewegen.</li>
+<li>Laat de achtergrond subtiel meebewegen (<a href="https://nl.wikipedia.org/wiki/Parallax" target="_blank" rel="noopener noreferrer">parallax</a>).</li>
+<li>Voorzie achtergrondobjecten (zoals wolken of insecten) die ook geanimeerd zijn.</li>
+<li>&hellip;</li>
+</ul>
+<h2 id="indienen">Indienen</h2>
+<p>Mapnaam: <code>voornaam animatie</code> met volgende inhoud:</p>
+<ul>
+<li><code>index.html</code></li>
+<li><code>style.css</code></li>
+<li>Map <code>images</code> met daarin de figuur en achtergrond.</li>
+</ul>
+<p>Voeg de koppeling naar je volledige OneDrive-map <code>webontwikkeling</code> toe in de opdracht in Google Classroom.</p>
+<h2 id="puntenverdeling">Puntenverdeling</h2>
+<ul>
+<li><strong>Structuur (04)</strong>: Correcte mappen en bestandsnamen.</li>
+<li><strong>HTML (08)</strong>: Heldere en semantische structuur.</li>
+<li><strong>CSS Basis (04)</strong>: Volledige achtergrond en opmaak van de pagina.</li>
+<li><strong>Beweging container (10)</strong>: Animatie van de container correct en vloeiend.</li>
+<li><strong>Beweging figuur (10)</strong>: Afzonderlijke animatie van de figuur werkt goed.</li>
+</ul>
+<h2 id="veelvoorkomende-fouten">Veelvoorkomende fouten</h2>
+<ul>
+<li>Geen correcte link tussen HTML en CSS-bestand.</li>
+<li>Figuur beweegt niet apart van container.</li>
+<li>Afbeeldingen zijn verkeerd geschaald of vervormd.</li>
+<li>Te snelle of slordige animaties.</li>
+<li>Onleesbare bestandsnamen of map niet gedeeld via OneDrive.</li>
+</ul>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/js/main.js"></script>
+
+  </footer>
+</body>
+</html>

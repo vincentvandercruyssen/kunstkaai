@@ -6,8 +6,15 @@
     <description>Recent content in Webs on Kunstkaai</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Apr 2025 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Apr 2025 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Animatie</title>
+      <link>http://localhost:1313/web/opdracht-4-11-animatie/</link>
+      <pubDate>Sun, 20 Apr 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-4-11-animatie/</guid>
+      <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;Maak een geanimeerde webpagina waarin een figuur zich beweegt over een achtergrond die het volledige beeldscherm vult. De figuur zit in een container die beweegt over het scherm, terwijl de figuur zelf ook een kleine beweging uitvoert (bijvoorbeeld springen of draaien). Je creëert dus een animatie &lt;em&gt;binnen&lt;/em&gt; een animatie. Voeg eventueel meerdere elementen toe die ook bewegen.&lt;/p&gt;&#xA;&lt;p&gt;In CSS werk je met animaties door twee zaken te combineren:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Opdracht: Absolutely</title>
       <link>http://localhost:1313/web/opdracht-3-10-absolutely/</link>
