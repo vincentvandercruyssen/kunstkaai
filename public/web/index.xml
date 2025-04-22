@@ -13,7 +13,7 @@
       <link>http://localhost:1313/web/opdracht-4-11-animatie/</link>
       <pubDate>Sun, 20 Apr 2025 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/opdracht-4-11-animatie/</guid>
-      <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;Maak een geanimeerde webpagina waarin een figuur zich beweegt over een achtergrond die het volledige beeldscherm vult. De figuur zit in een container die beweegt over het scherm, terwijl de figuur zelf ook een kleine beweging uitvoert (bijvoorbeeld springen of draaien). Je creëert dus een animatie &lt;em&gt;binnen&lt;/em&gt; een animatie. Voeg eventueel meerdere elementen toe die ook bewegen.&lt;/p&gt;&#xA;&lt;p&gt;In CSS werk je met animaties door twee zaken te combineren:&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;Maak een geanimeerde webpagina waarin een figuur zich beweegt over een achtergrond die het volledige beeldscherm vult. De figuur zit in een container die beweegt over het scherm, terwijl de figuur zelf ook een kleine beweging uitvoert (bijvoorbeeld springen of draaien). Je creëert dus een animatie &lt;em&gt;binnen&lt;/em&gt; een animatie. Voeg eventueel meerdere elementen toe die ook bewegen.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;video autoplay muted loop width=&#34;100%&#34; &gt;&#xA;  &lt;source src=&#34;http://localhost:1313/img/web/opdracht-4-11-animatie-vb_1.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;  Your browser does not support the video tag.&#xA;&lt;/video&gt;&#xA;&#xA;&lt;p&gt;In CSS werk je met animaties door twee zaken te combineren:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Opdracht: Absolutely</title>

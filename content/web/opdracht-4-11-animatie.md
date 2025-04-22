@@ -8,6 +8,8 @@ draft = false
 
 Maak een geanimeerde webpagina waarin een figuur zich beweegt over een achtergrond die het volledige beeldscherm vult. De figuur zit in een container die beweegt over het scherm, terwijl de figuur zelf ook een kleine beweging uitvoert (bijvoorbeeld springen of draaien). Je creëert dus een animatie *binnen* een animatie. Voeg eventueel meerdere elementen toe die ook bewegen.
 
+{{< video src="/img/web/opdracht-4-11-animatie-vb_1.mp4" >}}
+
 In CSS werk je met animaties door twee zaken te combineren:
 
 1. De **`animation`-eigenschap**: hiermee geef je een HTML-element een animatie, met instellingen zoals de duur, snelheid, naam van de animatie en hoe vaak ze herhaald wordt.
