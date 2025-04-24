@@ -6,8 +6,15 @@
     <description>Recent content in Home on Kunstkaai</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Apr 2025 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 23 Apr 2025 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Live share</title>
+      <link>http://localhost:1313/web/opdracht-3-11-live_share/</link>
+      <pubDate>Wed, 23 Apr 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/web/opdracht-3-11-live_share/</guid>
+      <description>&lt;p&gt;⚠️ Experimentele opdracht!&lt;/p&gt;&#xA;&lt;p&gt;Met dank aan Amine en LLeyton…&lt;/p&gt;&#xA;&lt;h2 id=&#34;opgave&#34;&gt;Opgave&lt;/h2&gt;&#xA;&lt;p&gt;In deze opdracht werk je in duo aan een website. Jullie kiezen samen een thema en bouwen elk &lt;strong&gt;één individuele HTML-pagina&lt;/strong&gt;. Deze pagina’s worden samengebracht in &lt;strong&gt;één gedeeld project&lt;/strong&gt;, met een &lt;strong&gt;gezamenlijk gemaakte hoofdpagina&lt;/strong&gt; (&lt;code&gt;index.html&lt;/code&gt;).&lt;/p&gt;&#xA;&lt;p&gt;Jullie gebruiken &lt;strong&gt;Live Share in Visual Studio Code&lt;/strong&gt; om samen in realtime aan het project te werken.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA; &#xA; &#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div style=&#34;width: 20%;&#34;&gt;&#xA;&#xA;&#xA;&lt;img src=&#34;http://localhost:1313/img/web/opdracht-3-11-live_share-icon_1_hu15519513952007376506.webp&#34; alt=&#34;opdracht-3-11-live_share-icon_1&#34; loading=&#34;lazy&#34;&gt;&#xA;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&lt;h3 id=&#34;belangrijk&#34;&gt;Belangrijk&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Eén gedeelde index-pagina (&lt;code&gt;index.html&lt;/code&gt;)&lt;/strong&gt;: samen gemaakt, bevat een korte introductie over de site.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Twee individuele HTML-pagina’s&lt;/strong&gt;: elk van jullie maakt één pagina met eigen inhoud.&lt;/li&gt;&#xA;&lt;li&gt;Alle HTML-pagina’s (inclusief de index) hebben &lt;strong&gt;dezelfde header en navigatie&lt;/strong&gt;, met dezelfde klasse-indeling.&lt;/li&gt;&#xA;&lt;li&gt;Alle pagina’s hebben een &lt;strong&gt;gelijke structuur en vormgeving&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;In de &lt;strong&gt;footer van elke individuele pagina staat de voornaam van de maker&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;In de &lt;strong&gt;footer van de index-pagina staan beide voornamen&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;structuur&#34;&gt;Structuur&lt;/h3&gt;&#xA;&lt;p&gt;Maak in je OneDrive-map voor Webontwikkeling een map genaamd &lt;code&gt;Live share&lt;/code&gt;. Deel en werk samen in deze map met je partner aan de hand van Liva Share (VSC Extensions).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Opdracht: Soundtrack</title>
       <link>http://localhost:1313/typo/opdracht-5-18-soundtrack/</link>
