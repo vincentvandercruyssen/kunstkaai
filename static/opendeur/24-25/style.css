@@ -39,10 +39,6 @@ main {
     padding: 2rem;
 }
 
-.leerling {
-    grid-column: 1 / 4;
-}
-
 section {
     position: relative;
     border-radius: 0.3rem;
@@ -101,17 +97,17 @@ iframe {
     overflow: hidden;
 }
 
-#fullscreen-overlay iframe {
-    flex-grow: 1;
-    border: none;
-    width: 100%;
-}
-
 .fullscreen-titlebar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+}
+
+#fullscreen-overlay iframe {
+    flex-grow: 1;
+    border: none;
+    width: 100%;
 }
 
 #close-fullscreen {
@@ -131,4 +127,19 @@ iframe {
 
 #close-fullscreen:hover {
     filter: invert(1);
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    #fullscreen-overlay {
+        top: 2rem;
+        left: 2rem;
+        width: calc(100% - 4rem);
+        height: calc(100% - 4rem);
+    }
 }

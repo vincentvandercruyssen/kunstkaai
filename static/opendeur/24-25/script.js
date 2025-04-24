@@ -1,3 +1,36 @@
+function laadPresentaties(dataArray) {
+    const main = document.getElementById("content");
+
+    dataArray.forEach(({ titel, leerling, pad }) => {
+        const section = document.createElement("section");
+        section.innerHTML = `
+    <h4>${titel} (${leerling})</h4>
+    <div class="iframe-wrapper">
+        <iframe src="${pad}"></iframe>
+        <button class="fullscreen-btn" onclick="openFullscreen(this)">
+            <img src="../img/plus_5.svg" />
+        </button>
+    </div>
+    `;
+        main.appendChild(section);
+    });
+
+    shuffleSections();
+}
+
+function shuffleSections() {
+    const main = document.getElementById("content");
+    const sections = Array.from(main.querySelectorAll("section"));
+
+    for (let i = sections.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [sections[i], sections[j]] = [sections[j], sections[i]];
+    }
+
+    // Herplaatsen in DOM
+    sections.forEach(section => main.appendChild(section));
+}
+
 function openFullscreen(button) {
     const iframe = button.previousElementSibling;
     const section = button.closest('section');
@@ -20,18 +53,6 @@ function closeFullscreen() {
     overlay.style.display = 'none';
 }
 
-function shuffleSections() {
-    const main = document.querySelector("main");
-    const sections = Array.from(main.querySelectorAll("section"));
-
-    for (let i = sections.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [sections[i], sections[j]] = [sections[j], sections[i]];
-    }
-
-    sections.forEach(section => main.appendChild(section));
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    shuffleSections();
+window.addEventListener("DOMContentLoaded", () => {
+    laadPresentaties(presentaties);
 });

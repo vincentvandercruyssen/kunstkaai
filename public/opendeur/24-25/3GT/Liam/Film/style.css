@@ -19,3 +19,7 @@ section{
 #cast{
     background-color: rgb(184, 96, 162);
 }
+
+img {
+    max-width: 100%;
+}
