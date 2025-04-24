@@ -1,0 +1,80 @@
+html,
+body,
+main {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: blue;
+    background-image: url(images/shot-by-cerqueira-0o_GEzyargo-unsplash.jpg);
+    background-size: 100vw 100vh;
+    font-family: monospace;
+}
+
+main {
+    color: rgb(255, 255, 255);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+.planeet {
+    position: absolute;
+    width: 300px;
+}
+
+.saturn {
+    top: 20%;
+    left: 10%;
+    animation: orbit1 1500ms infinite ; 
+}
+
+.lavaplaneet {
+    top: 65%;
+    right: 10%;
+    animation: orbit1 1250ms infinite ;
+}
+
+.ster-1 {
+    width: 10%;
+    top: 15%;
+    left: 80%;
+    animation: twinkle 1s infinite alternate;
+}
+
+.ster-2 {
+    width: 10%;
+    bottom: 15%;
+    left: 10%;
+    animation: twinkle 1s infinite alternate;
+}
+
+@keyframes orbit1 {
+    from {
+        transform: rotate(0deg) translateX(30px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(30px) rotate(-360deg);
+    }
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

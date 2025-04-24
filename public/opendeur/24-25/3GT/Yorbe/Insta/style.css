@@ -1,0 +1,100 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dbd6d6;
+    color: #333;
+}
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.post {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.post img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.post div {
+    padding: 10px;
+}
+button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+button:hover {
+    color: #ed4956;
+}
+h4 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 14px;
+    color: #000000;
+    margin: 5px 0;
+}
+.profiel{ background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
+}
+.profiel p{
+    margin-top: 20px;
+}
+.profielfoto{border-radius: 50%;
+  aspect-ratio: 1;
+  width: 100px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+ .statistiek{
+
+display: flex
+;
+justify-content: space-evenly;
+padding: 10px;
+ }
+.grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+gap: 5px;
+border: 1px solid #ddd;
+margin-bottom: 20px; 
+padding: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.grid img{
+aspect-ratio: 1/1;
+object-fit: cover;
+height: 150px;
+width: 150px;
+}
+a{color: aqua;}
+a:hover{color: #ed4956;}
+

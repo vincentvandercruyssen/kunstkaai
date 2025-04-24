@@ -1,0 +1,23 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color:  rgb(222, 152, 86);}
+
+header {
+    background-color: rgb(225, 240, 140);
+    text-align: center;
+}
+
+h2, h3, img  {
+    text-align: center;
+}
+
+section {
+    background-color: rgb(249, 178, 155);
+    padding: 5px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}

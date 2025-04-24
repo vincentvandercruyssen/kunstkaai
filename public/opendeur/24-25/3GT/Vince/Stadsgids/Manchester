@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatie over Manchester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Manchester</h1>
+    </header>
+
+    <nav>
+        <nav>
+            <a href="#Liverpool">Liverpool</a>
+            <a href="#Manchester">Manchester</a>
+            <a href="#Londen">Londen</a>
+        </nav>
+    </nav>
+
+    <section id="overzicht">
+        <h2>Overzicht</h2>
+        <p>Manchester is een grote stad in het noordwesten van Engeland, bekend om zijn rijke industriële geschiedenis en invloed op de muziek, cultuur en sport. De stad heeft zich de laatste decennia herontwikkeld en is nu een belangrijke internationale stad met een bloeiende economie, cultuur en een dynamisch nachtleven.</p>
+    </section>
+
+    <section id="geografie">
+        <h2>Geografie</h2>
+        <p>Manchester ligt in het noordwesten van Engeland, aan de rivier de Irwell. De stad heeft een gematigd zeeklimaat, met milde winters en koele zomers. Manchester ligt ongeveer 160 kilometer ten noordwesten van Londen.</p>
+        <ul>
+            <li><strong>Oppervlakte:</strong> 115,6 vierkante kilometer</li>
+            <li><strong>Bevolking:</strong> Ongeveer 550.000 inwoners (stad) / 2,8 miljoen (metropolitan gebied)</li>
+            <li><strong>Ligging:</strong> Noordwest Engeland, nabij de Pennines</li>
+            <li><strong>Gemiddelde temperatuur:</strong> 9°C</li>
+        </ul>
+    </section>
+
+    <section id="geschiedenis">
+        <h2>Geschiedenis</h2>
+        <p>Manchester heeft een rijke industriële geschiedenis en speelde een cruciale rol in de Industriële Revolutie. Het werd een van de eerste steden ter wereld die grootschalige fabrieken bouwde voor textielproductie. Manchester stond ook aan de wieg van de arbeidersbeweging in het VK en was het centrum van de Engelse katoenindustrie in de 19e eeuw.</p>
+        <ul>
+            <li><strong>1800s:</strong> Manchester wordt het centrum van de industriële revolutie in Groot-Brittannië.</li>
+            <li><strong>1819:</strong> De Peterloo Massacre, een belangrijke gebeurtenis in de Engelse geschiedenis waar honderden demonstranten werden gedood tijdens een protest voor politieke hervormingen.</li>
+            <li><strong>20e eeuw:</strong> Na de tweede wereldoorlog herstelde Manchester zich als een belangrijk centrum voor industrie en handel.</li>
+            <li><strong>21e eeuw:</strong> Manchester is nu bekend om zijn technologie, media-industrie, en cultuur.</li>
+        </ul>
+    </section>
+
+    <section id="cultuur">
+        <h2>Cultuur</h2>
+        <p>Manchester heeft een levendige cultuur, met een bloeiende muziekscene, kunstgalerijen en een divers aanbod aan theaters. De stad is beroemd om haar bijdrage aan de muziekwereld, met iconen zoals Oasis, The Smiths en Joy Division.</p>
+        <ul>
+            <li><strong>Muziek:</strong> Oasis, The Smiths, The Stone Roses, Joy Division</li>
+            <li><strong>Galerijen en musea:</strong> Manchester Art Gallery, Museum of Science and Industry, The Whitworth</li>
+            <li><strong>Teatroperaties:</strong> Royal Exchange Theatre, The Lowry</li>
+            <li><strong>Populaire festivals:</strong> Manchester International Festival, Parklife Festival</li>
+        </ul>
+    </section>
+
+    <section id="politiek">
+        <h2>Politiek</h2>
+        <p>Manchester is onderdeel van de Greater Manchester-regio, met een gekozen burgemeester en een stadsbestuur dat verantwoordelijk is voor lokale wetgeving en beleid. De stad heeft een diverse politieke geschiedenis, met een sterke arbeidersbeweging en politieke activisme.</p>
+        <ul>
+            <li><strong>Politieke structuur:</strong> Gekozen burgemeester en stadsbestuur</li>
+            <li><strong>Belangrijke politieke thema's:</strong> Huisvesting, werkgelegenheid, onderwijs, en duurzaamheid</li>
+            <li><strong>Partijen:</strong> Labour Party, Conservative Party, Liberal Democrats</li>
+        </ul>
+    </section>
+
+    <section id="toerisme">
+        <h2>Toerisme</h2>
+        <p>Manchester is een populaire bestemming voor toeristen, vooral vanwege zijn rijke industriële geschiedenis, culturele bezienswaardigheden, en sportevenementen. De stad trekt jaarlijks miljoenen bezoekers voor zowel zakelijke als recreatieve doeleinden.</p>
+        <ul>
+            <li><strong>Populaire bestemmingen:</strong> Manchester Museum, The John Rylands Library, National Football Museum</li>
+            <li><strong>Activiteiten:</strong> Shoppen in de Arndale Shopping Centre, bezoek de Northern Quarter voor kunst en cultuur, wandel door de prachtige Heaton Park</li>
+            <li><strong>Sport:</strong> Manchester is de thuisstad van de wereldberoemde voetbalclubs Manchester United en Manchester City.</li>
+        </ul>
+    </section>
+
+    <section id="bezienswaardigheden">
+        <h2>Bezienswaardigheden</h2>
+        <ul>
+            <li><strong>Old Trafford:</strong> Het iconische stadion van Manchester United, een van de beroemdste stadions ter wereld.</li>
+            <li><strong>Etihad Stadium:</strong> Het huis van Manchester City, een topvoetbalstadion met een indrukwekkende architectuur.</li>
+            <li><strong>The Lowry:</strong> Een kunst- en cultuurcentrum met galerijen, theaters en theatershows.</li>
+            <li><strong>Science and Industry Museum:</strong> Een museum dat de industriële revolutie en de wetenschappelijke vooruitgang van Manchester en Groot-Brittannië viert.</li>
+            <li><strong>Manchester Cathedral:</strong> Een middeleeuwse kathedraal met prachtige gotische architectuur en een rijke geschiedenis.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Informatie over Manchester</p>
+    </footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Profiel - M.Amineeeuh</title>
+</head>
+<body>
+    <header>
+        <h1>M.Amineeeuh</h1>
+        <a href="index.html">For You</a>
+    </header>
+    <main>
+        <section id="profiel">
+            <img src="Afbeeldingen Profiel/Foto_PFP.jpeg" alt="PFP" class="profielfoto">
+            <h4>@M.Amineeeuh</h4>
+            <p>Just doing me.</p>
+        </section>
+
+        <section>
+            <div class="statistieken">
+                <a href="#">15 Posts</a>
+                <a href="#">25 Volgers</a>
+                <a href="#">36 Volgend</a>
+            </div>
+        </section>
+
+        <section id="posts">
+            <div class="grid">
+                <img src="Afbeeldingen Profiel/Afbeelding_1.jpeg" alt="Afbeelding 1" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_2.jpeg" alt="Afbeelding 2" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_3.jpeg" alt="Afbeelding 3" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_4.jpeg" alt="Afbeelding 4" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_5.jpeg" alt="Afbeelding 5" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_6.jpeg" alt="afbeelding 6" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_7.jpeg" alt="Afbeelding 7" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_8.jpeg" alt="Afbeelding 8" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_9.jpeg" alt="Afbeelding 9" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_10.jpeg" alt="Afbeelding 10" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_11.jpeg" alt="Afbeelding 11" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_12.jpeg" alt="Afbeelding 12" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_13.jpeg" alt="Afbeelding 13" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_14.jpeg" alt="Afbeelding 14" onclick="vergrootAfbeelding(this)">
+                <img src="Afbeeldingen Profiel/Afbeelding_15.jpeg" alt="Afbeelding 15" onclick="vergrootAfbeelding(this)">
+            </div>
+        </section>
+    </main>
+
+
+    <div class="overlay" id="imageOverlay" onclick="sluitAfbeelding()">
+        <img id="vergroteAfbeelding" src="" alt="Vergrote afbeelding">
+    </div>
+
+    <script>
+        function vergrootAfbeelding(element) {
+            const overlay = document.getElementById('imageOverlay');
+            const vergroteAfbeelding = document.getElementById('vergroteAfbeelding');
+            vergroteAfbeelding.src = element.src;
+            overlay.classList.add('active');
+        }
+
+        function sluitAfbeelding() {
+            const overlay = document.getElementById('imageOverlay');
+            overlay.classList.remove('active');
+        }
+    </script>
+
+</body>
+
+</html>

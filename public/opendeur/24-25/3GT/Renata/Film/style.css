@@ -1,0 +1,14 @@
+body {
+background-color: rgb(86, 106, 146);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: black;
+}
+h2 {
+    text-align: center;
+}
+section {background-color: rgb(136, 169, 195);
+padding: 25px;
+}
+#cast {
+    background-color: rgb(147, 196, 242);
+}

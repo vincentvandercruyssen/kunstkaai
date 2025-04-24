@@ -1,0 +1,23 @@
+body {
+    background-color:rgba(230, 0, 0, 0.863);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black
+}
+
+h2 {
+text-align: center;
+}
+section {background-color: rgb(128, 8, 8);
+    padding: 30px;
+}
+#cast {
+background-color: rgb(155, 37, 37);
+}
+main {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+img{
+    width: 100%;
+}
