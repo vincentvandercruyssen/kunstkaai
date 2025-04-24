@@ -1,3 +1,6 @@
+img {
+   max-width: 100%;
+}
 
 * {
    margin: 0;
@@ -15,14 +18,18 @@ body {
    font-size: 15px;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
    color: #2a2a2a;
    font-weight: bold;
    margin-top: 20px;
    margin-bottom: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
    color: #003366;
    font-family: 'Arial', sans-serif;
 }
@@ -140,7 +147,8 @@ table {
    margin-top: 20px;
 }
 
-table th, table td {
+table th,
+table td {
    padding: 10px;
    text-align: left;
    border-bottom: 1px solid #ddd;
@@ -176,20 +184,20 @@ footer a:hover {
 
 @media (max-width: 768px) {
    body {
-       padding: 10px;
+      padding: 10px;
    }
-   
+
    section {
-       padding: 10px;
+      padding: 10px;
    }
-   
+
    #local-activities article {
-       flex-direction: column;
-       align-items: center;
+      flex-direction: column;
+      align-items: center;
    }
 
    #local-activities article img {
-       width: 100%;
-       height: auto;
+      width: 100%;
+      height: auto;
    }
 }

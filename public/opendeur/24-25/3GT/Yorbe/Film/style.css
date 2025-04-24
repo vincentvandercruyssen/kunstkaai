@@ -66,3 +66,7 @@ a {
 #cast {
     background-color: #0400ff;
 }
+
+img {
+    max-width: 100%;
+}

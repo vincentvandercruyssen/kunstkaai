@@ -38,3 +38,8 @@ a{  background-color: rgb(214, 244, 242);
     margin: 10px;
     align-items: center;
 }
+
+
+img {
+    max-width: 100%;
+}

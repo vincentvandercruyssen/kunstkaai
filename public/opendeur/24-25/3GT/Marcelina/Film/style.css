@@ -42,3 +42,7 @@ h2{
 }
 h1 {background-color: rgb(108, 25, 25);
 color: rgb(74, 12, 12);}
+
+img {
+    max-width: 100%;
+}

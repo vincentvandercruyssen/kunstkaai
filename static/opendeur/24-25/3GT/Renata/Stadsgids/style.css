@@ -27,5 +27,6 @@ section {
 }
 
 img {
+    max-width: 100%;
     border: 5px solid rgb(47, 44, 65);
 }
