@@ -1,0 +1,189 @@
+
+/* Algemene stijlen */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0275d8;
+}
+
+a:hover {
+    color: #d9534f;
+}
+
+
+header {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 a {
+    font-size: 36px;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    font-size: 20px;
+    color: white;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    margin: 30px;
+    padding: 20px;
+}
+
+
+.overview {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.overview h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.overview p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.city-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.basic-info {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.basic-info h3 {
+    font-size: 28px;
+    color: #333;
+}
+
+.basic-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.basic-info ul li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.historical-sights {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.historical-sights h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.historical-sights ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.historical-sights ul li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.local-activities {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.local-activities h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.activity {
+    margin-bottom: 20px;
+}
+
+.activity img {
+    width: 75%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+.food-drinks {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.food-drinks p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.shopping-nightlife {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.shopping-nightlife h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.shopping-nightlife h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+footer {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
