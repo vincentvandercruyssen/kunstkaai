@@ -1,0 +1,37 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: rgb(242, 226, 205);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    height: 80px;
+    background-color: rgb(255, 242, 224);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+main{
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+}
+
+.tijdlijn-container{
+    display: flex;
+    gap: 20px;
+    scroll-snap-type: x proximity;
+    overflow-x: auto;
+}
+
+.tijdlijn-item{
+    background-color: rgb(255, 242, 224);
+    padding: 35px;
+    border-radius: 30px;
+    min-width: 38ch;
+    scroll-snap-align: strat;
+}

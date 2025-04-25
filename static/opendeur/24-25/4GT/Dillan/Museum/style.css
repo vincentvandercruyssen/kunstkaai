@@ -1,0 +1,24 @@
+body {
+background-color: rgb(110, 107, 107);
+}
+header {
+    padding: 3% 6%;
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    padding: 10px;
+    background-color: #746f6f;
+}
+section {
+    background-color: #ffffff;
+}
+img {
+    width: 50%;
+    
+}

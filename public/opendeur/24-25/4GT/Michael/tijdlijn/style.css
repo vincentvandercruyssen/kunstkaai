@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(40, 180, 185);
+
+}
+
+header{
+    height: 100% -10px;
+    text-align: center;
+    background-color: white;
+    padding: 5%;
+}
+
+main {
+    align-items: center;
+    height: calc(100% - 120px);
+    padding: 20px;
+}               
+
+.tijdlijn-container {
+    display:flex;
+    gap: 20px;
+    overflow-x: auto;
+    background-color: #6DB8FA;
+    
+}
+
+.tijdlijn-container {
+    scroll-snap-type: x proximity;
+    overflow-x: auto;
+}
+
+.tijdlijn-item {
+    scroll-snap-align: start;
+    min-width: 60ch;
+    background-color: #6DB8FA;
+    padding: 1%;
+}
+
+img {
+    width: 100%;
+}

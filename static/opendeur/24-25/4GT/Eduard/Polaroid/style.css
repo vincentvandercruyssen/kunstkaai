@@ -1,0 +1,60 @@
+body{font-family: "tomboy-lp", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-size: cover;
+    background-image: url("images/Background.jpg")
+    ;
+}
+.paloroid{
+    position: absolute;
+    width: 200px;
+    background-color: blanchedalmond;
+    padding: 20px;
+    text-align: center;
+    filter: contrast(95%);
+    filter: brightness(90%);
+    filter: grayscale(10%);
+}
+
+.paloroid img {
+    width: 100%;
+     
+   
+}
+#paloroid_01{
+    left: 400px; top: 30px;
+    transform: rotate(5deg);
+    
+}
+#paloroid_02{
+    left: 400px; top: 700px;
+    transform: rotate(-5deg);
+}
+#paloroid_03{
+    left: 100px; top: 300px;
+    transform: rotate(-2deg);
+}
+#paloroid_04{
+    left: 30px; top: 750px;
+    transform: rotate(-1deg);
+}
+#paloroid_05{
+    left: 650px; top: 200px;;
+    transform: rotate(-0.5deg);
+}
+#paloroid_06{
+    left: 800px; top: 600px ;
+    transform: rotate(-3deg);
+}
+#paloroid_07{
+    left: 1300px; top: 200px;
+    transform: rotate(-2deg);
+}
+#paloroid_08{
+    left: 1000px; top: 250px;
+    transform: rotate(5deg);
+}
+#paloroid_09{
+    left: 1100px; top: 700px;
+    transform: rotate(1deg);
+}

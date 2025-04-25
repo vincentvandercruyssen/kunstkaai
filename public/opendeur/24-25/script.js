@@ -6,7 +6,7 @@ function laadPresentaties(dataArray) {
         section.innerHTML = `
     <h4>${titel} (${leerling})</h4>
     <div class="iframe-wrapper">
-        <iframe src="${pad}"></iframe>
+        <iframe src="${leerling}/${titel}${pad}"></iframe>
         <button class="fullscreen-btn" onclick="openFullscreen(this)">
             <img src="../img/plus_5.svg" />
         </button>

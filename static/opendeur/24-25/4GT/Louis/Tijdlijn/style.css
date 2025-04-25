@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+video {
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    filter: blur(8px); 
+}
+
+header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    box-shadow: 0 10px;
+    color: #ff5c5c;
+}
+
+main {
+    height: calc(100% - 120px);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.tijdlijn-container {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+}
+
+.tijdlijn-item {
+    opacity: 1;
+ 
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 40ch;
+    scroll-snap-align: start;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, opacity 0.3s;
+ 
+    opacity: 0.9;
+}
+
+.tijdlijn-item:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+.tijdlijn-item h2 {
+    font-size: 2.8rem;
+    margin-top: 0;
+    color: #ff5c5c;
+    box-shadow: 0 10px
+}
+
+.tijdlijn-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ff5858;
+    
+}
+
+.tijdlijn-item img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.tijdlijn-item p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #ff6767;
+    background-color: transparent;
+    text-shadow: 
+        -1px -1px 0 #ffffff,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}

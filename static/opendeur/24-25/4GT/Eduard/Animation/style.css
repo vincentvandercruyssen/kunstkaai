@@ -1,0 +1,30 @@
+body {
+    background-image: url(images/MacBook\ wallpaper.jpeg);
+    background-size: cover;          
+   background-position: initial;   
+}
+.figuur-container {
+    position: fixed;
+    top: 12%;
+    left: 0;
+    width: 150px;
+    pointer-events: none;
+    z-index: 9999;
+    animation: floatHorizontal 10s linear infinite alternate,
+    floatBounce 2s ease-in-out infinite;
+    }
+    
+    .floating-image img {
+    width: 130%;
+    height: auto;
+    }
+    
+    @keyframes floatHorizontal {
+    0% { left: 0; }
+    100% { left: calc(100% - 150px); }
+    }
+    
+    @keyframes floatBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    }

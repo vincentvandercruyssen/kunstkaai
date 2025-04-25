@@ -1,0 +1,76 @@
+@import url("https://use.typekit.net/rjg8eto.css");
+
+body{
+    font-family: "edu-qld-beginner", sans-serif;
+    background-color:wheat ;
+}
+
+.polaroid {
+    position: absolute;
+    width:200px;
+    background-color: whitesmoke;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(53, 51, 51, 0.793);
+}
+
+.polaroid img{
+    width:100% ;
+    aspect-ratio:1/1 ;
+    object-fit: cover;
+    filter: contrast(0.54) invert(0.15) brightness(1.3);
+    
+}
+
+#polaroid_01{
+    left: 40%;
+    top: 30%; ;
+    rotate: 6deg;
+}
+#polaroid_02{
+    left: 55%;
+    top: 50%;
+    rotate: -3deg;
+}
+#polaroid_03{
+    left: 30%;
+    top: 8%;
+    rotate: -4deg;
+}
+#polaroid_04{
+    left: 30%;
+    top: 53%;
+    rotate: 5deg;
+}
+#polaroid_05{
+    left: 53%;
+    top: 7%;
+    rotate: 3deg;
+
+}
+#polaroid_06{
+    left: 51%;
+    top: 29%;
+    rotate: -7deg;
+
+}
+#polaroid_07{
+    left: 43%;
+    top: 52%;
+    rotate: 1;
+
+}
+#polaroid_08{
+    left: 41%;
+    top: 7%;
+    rotate: -3deg;
+}
+#polaroid_09{
+    left: 29%;
+    top: 31%;
+    rotate: -7deg;
+}
+body{
+    background-image: url(images/laken.avif);
+    background-size: cover;
+}

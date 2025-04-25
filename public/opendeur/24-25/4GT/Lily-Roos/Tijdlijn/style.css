@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: rgb(194, 205, 215);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    height: 100px;
+    background-color:rgb(229, 243, 255) ;
+    color: rgb(107, 128, 146);
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+main {
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+}
+
+.tijdlijn-container{
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+}
+
+.tijdlijn-item{
+    background-color: rgb(229, 243, 255);
+    padding: 25px;
+    border-radius: 20px;
+    min-width: 40ch;
+    scroll-snap-align: start;
+    color: rgb(107, 128, 146);
+}
+
+img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

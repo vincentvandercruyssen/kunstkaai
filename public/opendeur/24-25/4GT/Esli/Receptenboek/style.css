@@ -1,0 +1,43 @@
+body {
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 20px;
+}
+header {
+    padding: 20px;
+    font-size: small;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: larger;
+    }
+
+    header{
+    background-color: rgb(199, 169, 130);
+    font-family: fantasy;
+    border-radius: 20px;
+    text-align: center;
+    font-size: larger;
+    }
+    p{
+    text-align: center;
+    }
+    h2{
+    background-color: rgb(203, 180, 150);
+    border-radius: 20px;
+    text-align: center;
+    font-size: larger;
+    }
+    header a:hover{
+    color: rgb(126, 74, 74);
+    }
+
+    nav a{
+        margin: 0 15px;
+        
+    }
+    a:hover{
+        background-color: rgb(189, 160, 101);
+    }

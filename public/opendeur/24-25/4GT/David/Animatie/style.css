@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("img/park.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.figuur-container {
+    position: absolute;
+    bottom: 20%;
+    width: 250px;
+    left: -250px;
+    animation: linksnaarrechts 10s linear infinite;
+}
+
+.figuur-container img {
+    width: 100%;
+    animation: jump 1s linear infinite;
+}
+  
+@keyframes linksnaarrechts {
+    0% {
+      left: -250px;
+    }
+    100% {
+      left: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: rotate(-0.01turn);
+    }
+    50% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(-0.01turn);
+    }
+}

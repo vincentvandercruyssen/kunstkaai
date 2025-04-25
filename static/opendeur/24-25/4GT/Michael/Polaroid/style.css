@@ -1,0 +1,83 @@
+@import url("https://use.typekit.net/vpo8hqd.css");
+
+body{
+    font-family: "mansalva", sans-serif;
+    background-color: cornflowerblue;
+}
+
+.polaroid{
+    position: absolute;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+    box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.614);
+    text-align: center;
+}
+
+.polaroid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    filter: invert(0.2) brightness(1.4) opacity(1000%) contrast(0.8) saturate(0.9); 
+}
+
+#polaroid_01 {
+ left: 40%;
+ top: 30%;
+ rotate: -25deg;
+}
+
+#polaroid_02 {
+    left: 10%;
+    top: 40%;
+    rotate: 5deg;
+}
+
+#polaroid_03 {
+    left: 70%;
+    top: 5%;
+    rotate: -22deg;
+}
+
+#polaroid_04 {
+    left: 0%;
+    top: 0%;
+    rotate: -3deg;
+}
+
+#polaroid_05 {
+    left: 85%;
+    top: 40%;
+    rotate: -7deg;
+}
+
+#polaroid_06 {
+    left: 45%;
+    top: 70%;
+    rotate: 3deg;
+}
+
+#polaroid_07 {
+    left: 20%;
+    top: 70%;
+    rotate: -10deg;
+}
+
+#polaroid_08 {
+    left: 80%;
+    top: 70%;
+    rotate: 3deg;
+}
+
+#polaroid_09 {
+    left: 45%;
+    top: 70;
+    rotate: 3deg;
+}
+
+body {
+    background-image: url(images/textuur.jpg);
+    background-size: cover;
+    background-position: center;
+}
+

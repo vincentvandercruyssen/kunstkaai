@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+ 
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mijn museum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <header>
+    <h1>
+     <a href="index.html">Mijn museum</a>
+    </h1>
+   <nav>
+     <a href="thema1.html">Voetbal</a>
+     <a href="thema2.html">Muziek</a>
+     <a href="thema3.html">Films</a>
+     <a href="Filmpjes">Trailers</a>
+    </nav>
+   </header>
+   <main><section><h2>Welkom in mijn filmmuseum</h2></section></main>
+   <div class="galerij"> 
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/umvFBoLOOgo?si=YBFX1JTbc4JvzhAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/0yCoLNmhJWM?si=SSFeeqi4VgZCa4Ui" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/bPsedLjDAcw?si=UJ5LvezBQ5z-aQAN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/sLgCCdLbQNc?si=lfkm66OOqtLjkiVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/oOMuHaF6ZXs?si=eHagmZ8p8Srg5hnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/UaVTIH8mujA?si=5ru6dWXEl9n19Jt_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>

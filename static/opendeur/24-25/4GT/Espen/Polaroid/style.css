@@ -1,0 +1,74 @@
+.polaroid {
+    width: 200px;
+    position: absolute;
+    background-color: aliceblue;
+    padding: 1%;
+    border-radius: 3px;
+    box-shadow: 1px 3px 30px black;
+    text-align: center;
+}
+
+body {
+    background-image: url(https://d1ioghyrwc6upe.cloudfront.net/cdn/ff/HiGR8obAATk6saFQ5pff59g3MNGS43vDgvjevBvpArc/1700795262/public/inline-images/Arctic_icebergs.jpg);
+    background-size: cover;
+    font-family: fantasy;
+}
+
+.polaroid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    filter: invert(15%);
+}
+
+#maroonpolaroid {
+    top: 20%;
+    left: 25%;
+}
+
+#penguin1 {
+    top: 10%;
+    left: 68%;
+    rotate: -13deg;
+}
+
+#penguin2 {
+    top: 15%;
+    left: 410;
+    rotate: -49deg;
+}
+
+#penguin-madagascar {
+    top: -5%;
+    left: 30%;
+    rotate: 23deg;
+}
+
+#karate-penguin {
+    top: 34%;
+    left: 4%;
+    rotate: 62deg;
+}
+
+#captain-skipper {
+    top: 33%;
+    left: 38%;
+    rotate: -26deg;
+}
+
+#the-penguins {
+    top: 29%;
+    left: 69%;
+}
+
+#penguinos-des-madagascar {
+    top: 53%;
+    left: 36%;
+    rotate: 20deg;
+}
+
+#skippos {
+    top: 9%;
+    left: 2%;
+    rotate: 2deg;
+}

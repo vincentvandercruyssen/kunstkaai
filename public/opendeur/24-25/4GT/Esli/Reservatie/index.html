@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservatie</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <main>
+        <h2>
+            Reservatie
+        </h2>
+            <!-- modify this form HTML and place wherever you want your form -->
+<form
+action="https://formspree.io/f/mqaevwpb"
+method="POST"
+>
+<!-- your other form fields go here -->
+<label for="naam">Naam *</label>
+    <input type="text" id="naam" name="naam" required>
+    <label for="naam">Voornaam *</label>
+    <input type="text" id="naam" name="naam" required>
+    <label>E-mail *<input type="email" name="email">
+        <label for="telefoon">Telefoonnummer</label>
+        <input type="tel" id="telefoon" name="telefoon">
+    
+   
+    <label>Bericht:<textarea name="message" id="message"></textarea>
+     
+    <label for="onderwerp">Datum en tijd *</label>
+    <input type="date" name="datum" id="datum" required>
+    <input type="time" name="tijd" id="tijd" required>
+    
+    
+    <button type="submit">Send</button>
+
+</form> 
+
+
+    </main>
+  
+</body>
+</html>
