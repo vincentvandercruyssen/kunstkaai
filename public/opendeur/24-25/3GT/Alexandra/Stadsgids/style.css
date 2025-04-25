@@ -1,0 +1,31 @@
+body{
+    background-color: #fdfdfde0;
+    color: rgb(31, 31, 70);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgba(77, 72, 125, 0.545);
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(112, 118, 145, 0.545);
+    padding: 20px;
+    
+}
+h2{
+    background-color: rgba(114, 101, 148, 0.47);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h3 {
+    background-color: rgba(56, 90, 132, 0.47);
+    padding: 20px;
+    border-radius: 15px
+}
+
+img {
+    max-width: 100%;
+}
