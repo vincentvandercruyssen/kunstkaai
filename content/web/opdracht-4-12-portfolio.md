@@ -8,7 +8,7 @@ draft = false
 
 Je bouwt een persoonlijke portfolio van dit schooljaar - en als je wil, ook met werk uit vorige jaren. Dit wordt jouw plek om te laten zien waar je trots op bent. De site maak je helemaal zelf, met HTML en CSS.
 
-Je verzamelt werk uit **vier praktijkvakken** en minstens **één atelier** naar keuze. Jij bepaalt hoe je dat in beeld brengt.
+Je verzamelt werk uit **vier praktijkvakken** en minstens **één atelier** naar keuze. Jij bepaalt hoe je dat in beeld brengt. Voor de navigatie gebruik je de icoontjes die je maakte bij het vak 'Vectorieel tekenen'. 
 
 ### Vakken
 
@@ -66,6 +66,7 @@ Elke pagina gebruikt dezelfde vaste structuur in `<body>`. Zo oogt je site samen
 </footer>
 ```
 
+- Pas telkens de `<title>` aan in `<head>`
 - Je **navigatie (`<nav>`) staat altijd in de `<header>`**
 - Elke pagina heeft **dezelfde header en navigatiebalk**
 - In de **`<footer>` zet je minimaal je eigen naam**
@@ -94,7 +95,7 @@ Elke pagina gebruikt dezelfde vaste structuur in `<body>`. Zo oogt je site samen
 ### Vakpagina’s (bijv. `typografie.html`)
 
 - Toon **minstens drie werken** per vak
-- Per werk: afbeelding, titel, korte uitleg
+- Per werk: minstens één afbeelding, een titel en een korte uitleg
 - Gebruik een raster- of kolomlayout voor de opbouw
 
 ## Afbeeldingen
