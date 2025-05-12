@@ -47,8 +47,8 @@ Gebruik alineastijlen voor:
 
 ## Puntenverdeling
 
-- **Bestandsnamen, formaat, lagenstructuur, pakket (04)**: Professionele afwerking en overzicht
-- **Typografie, lay-out en hiërarchie (04)**: De uitstraling en toon van het kookboek omslag
-- **Stijlconsistentie (04)**: De visuele stijl moet consistent zijn met de spreads
-- **Beeldgebruik (02)**: Kwaliteitsvolle afbeelding die goed integreert in de omslag
-- **Achterkant en rug (04)**: Correcte positionering van inhoud, barcode en ISBN-nummer
+- **Bestandsnamen, formaat, lagenstructuur, pakket (04)** Professionele afwerking en overzicht
+- **Typografie, lay-out en hiërarchie (04)** De uitstraling en toon van het kookboek omslag
+- **Stijlconsistentie (04)** De visuele stijl moet consistent zijn met de spreads
+- **Beeldgebruik (02)** Kwaliteitsvolle afbeelding die goed integreert in de omslag
+- **Achterkant en rug (04)** Correcte positionering van inhoud, barcode en ISBN-nummer

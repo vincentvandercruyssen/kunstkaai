@@ -71,10 +71,10 @@ Plaats paginanummers op de stramienpagina. Bij toepassing op documentpagina’s 
 
 ## Puntenverdeling
 
-- **Bestandsnamen, formaat, lagenstructuur, pakket (04)**: Professionele afwerking en overzicht
-- **Lay-out, bladverdeling en hiërarchie (08)**: Visuele balans en logische leesstructuur
-- **Typografie en sfeer (04)**: De uitstraling en toon van het kookboek
-- **Inhoudstafel (02)**: Duidelijke en goed gestructureerde inhoudsopgave
-- **Voorblad (02)**: Aantrekkelijke en passende ontwerp voor het kookboek
-- **Beeldgebruik (04)**: Kwaliteitsvolle foto’s die goed geïntegreerd zijn in de vormgeving
-- **Alineastijlen en paginanummering (04)**: Gebruik stramienpagina, technisch inzicht en zorgt voor consistentie
+- **Bestandsnamen, formaat, lagenstructuur, pakket (04)** Professionele afwerking en overzicht
+- **Lay-out, bladverdeling en hiërarchie (08)** Visuele balans en logische leesstructuur
+- **Typografie en sfeer (04)** De uitstraling en toon van het kookboek
+- **Inhoudstafel (02)** Duidelijke en goed gestructureerde inhoudsopgave
+- **Voorblad (02)** Aantrekkelijke en passende ontwerp voor het kookboek
+- **Beeldgebruik (04)** Kwaliteitsvolle foto’s die goed geïntegreerd zijn in de vormgeving
+- **Alineastijlen en paginanummering (04)** Gebruik stramienpagina, technisch inzicht en zorgt voor consistentie
