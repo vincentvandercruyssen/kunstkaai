@@ -6,8 +6,15 @@
     <description>Recent content in Home on Kunstkaai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 May 2025 08:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 12 May 2025 08:00:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Opdracht: Visitekaartjes</title>
+      <link>http://localhost:1313/data/opdracht-04-visitekaartjes/</link>
+      <pubDate>Mon, 12 May 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/data/opdracht-04-visitekaartjes/</guid>
+      <description>In deze korte afsluitopdracht ontwerp je een eigen visitekaartje en genereer je een reeks kaartjes met behulp van Data Merge in InDesign. Je werkt met een eigen sjabloon en een lijst van contactgegevens.&#xA;In bovenstaand voorbeeld wordt ook een afbeelding gebruikt. Dit is in deze opdracht optioneel.&#xA;Wat moet erop? Een visitekaartje bevat minimaal:&#xA;Naam Functie Bedrijfsnaam (of logo) Telefoonnummer E-mailadres Optioneel: website, sociale media, adres, icoon of beeldmerk Wat ga je doen?</description>
+    </item>
     <item>
       <title>Opdracht: Huisstijlhandboek</title>
       <link>http://localhost:1313/typo/opdracht-4-11-huisstijlhandboek/</link>
@@ -261,6 +268,13 @@
       <description>Je maakt de voor- en achterpagina en vier spreads van de STIHL 2025 Catalogus 1-op-1 na aan de hand van Adobe InDesign. Dit project combineert alle geleerde vaardigheden, waaronder het gebruik van alinea- en tekenstijlen, tekstkaders, het doorlopen van tekst, en het consistent toepassen van een typografische hiërarchie. Ook leer je werken met Tabs en Paragraafregels.&#xA;De benodigde bestanden vind je als ZIP-bestand in de Google Classroom opdracht met daarin het PDF-bestand van de catalogus (STIHL_Catalogus_2025_BENL.</description>
     </item>
     <item>
+      <title>Opdracht: Kaartspel</title>
+      <link>http://localhost:1313/data/opdracht-02-kaartspel/</link>
+      <pubDate>Wed, 01 Jan 2025 08:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/data/opdracht-02-kaartspel/</guid>
+      <description>Je gaat een kaartspel ontwikkelen met Adobe InDesign en data merge. Het project bestaat uit twee delen: eerst maak je een Google Spreadsheet met alle kaartgegevens, daarna een InDesign-document waarin deze gegevens automatisch worden verwerkt. Je leert werken met verschillende bestanden, bestandspaden, nauwkeurige documentinstellingen, lagen, rasters en het effectief gebruik van tekstkaders.&#xA;Het eindresultaat wordt een volledig speelbaar kaartspel met 18 unieke personages, elk met eigen kenmerken en effecten.&#xA;Deel 1 In dit eerste deel ga je aan de slag met het voorbereiden van de gegevens voor je kaartspel.</description>
+    </item>
+    <item>
       <title>Opdracht: Stadsgids</title>
       <link>http://localhost:1313/web/opdracht-3-06-stadsgids/</link>
       <pubDate>Wed, 27 Nov 2024 08:00:00 -0700</pubDate>
@@ -511,13 +525,6 @@
       <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
       <guid>http://localhost:1313/web/opdracht-4-01-freecodecamp/</guid>
       <description>Bouw een Cat Photo App In deze opdracht onderzoeken we de basis van HTML en leren we door samen een deel van de freeCodeCamp-cursus &amp;ldquo;Learn HTML by Building a Cat Photo App&amp;rdquo; te volgen. Deze opdracht is ideaal om je kennis op te frissen, maar ook voor HTML voor het eerst te ontdekken.&#xA;We maken een deel van de &amp;lsquo;Learn HTML by Building a Cat Photo App&amp;rsquo; in freeCodeCamp klassikaal, waarna je de rest individueel afwerkt.</description>
-    </item>
-    <item>
-      <title>Opdracht: Kaartspel</title>
-      <link>http://localhost:1313/data/opdracht-02-kaartspel/</link>
-      <pubDate>Fri, 30 Aug 2024 08:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/data/opdracht-02-kaartspel/</guid>
-      <description>Je gaat een kaartspel ontwikkelen met Adobe InDesign en data merge. Het project bestaat uit twee delen: eerst maak je een Google Spreadsheet met alle kaartgegevens, daarna een InDesign-document waarin deze gegevens automatisch worden verwerkt. Je leert werken met verschillende bestanden, bestandspaden, nauwkeurige documentinstellingen, lagen, rasters en het effectief gebruik van tekstkaders.&#xA;Het eindresultaat wordt een volledig speelbaar kaartspel met 18 unieke personages, elk met eigen kenmerken en effecten.&#xA;Deel 1 In dit eerste deel ga je aan de slag met het voorbereiden van de gegevens voor je kaartspel.</description>
     </item>
     <item>
       <title>Opdracht: Mindmap</title>
