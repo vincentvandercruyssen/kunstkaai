@@ -44,3 +44,11 @@ Gebruik alineastijlen voor:
 ## Indienen
 
 - **InDesign-pakket** (inclusief gebruikte lettertypes en afbeeldingen, PDF)
+
+## Puntenverdeling
+
+- **Bestandsnamen, formaat, lagenstructuur, pakket (04)** Professionele afwerking en overzicht
+- **Lay-out, bladverdeling en hiërarchie (08)** Visuele balans en logische leesstructuur
+- **Typografie en sfeer (04)** De uitstraling en toon van het kookboek-recept
+- **Beeldgebruik (02)** Kwaliteitsvolle foto’s die goed geïntegreerd zijn in de vormgeving
+- **Alineastijlen (02)** Technisch inzicht en zorgt voor consistentie
