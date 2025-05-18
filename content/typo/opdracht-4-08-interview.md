@@ -99,10 +99,11 @@ Alineastijlen zorgen voor consistentie in de opmaak van je tekst (koppen, inleid
 
 ## Puntenverdeling
 
-- **Bestandsbeheer (04)** Correcte naamgeving en mappenstructuur.
-- **Indeling en raster (06)** Correcte marges, afloop en hulplijnen.
-- **Inhoud en typografie (18)** Goed opgezette tekst en juiste stijlen.
-- **Vormgeving (15)** Evenwichtige lay-out en professioneel kleurgebruik.
+- **Bestandsbeheer, opmaak en lagenstructuur (06)** Correcte naamgeving, pakket, spreadformaat, marges, afloop en ordelijke lagenstructuur
+- **Tekstkaders, inzet en koppelingen (08)** Correct gebruik van gekoppelde tekstkaders, inzetafstand, doorzichtige achtergrond en nauwkeurige positionering
+- **Beeldintegratie en kwaliteit (04)** Kwaliteitsvolle afbeelding, proportioneel geplaatst en visueel passend binnen de lay-out
+- **Typografie, leesbaarheid, vormgeving en kleurgebruik, afwerking (04)** Professionele typografische keuzes, goede bladverdeling, kleurgebruik en verzorgde afwerking
+- **Alineastijlen (02)** Correct gebruik en toepassing van alineastijlen voor verschillende tekstsoorten
 
 ## Bronnen
 
