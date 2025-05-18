@@ -138,12 +138,11 @@ Maak één zip-bestand van de map. Lever in via Google Classroom.
 
 ## Puntenverdeling
 
-- **Structuur (04)**: Correcte bestandsnamen en mapstructuur.
-- **HTML (12)**: Correct gebruik van elementen en attributen.
-- **CSS Basis (04)**: Algemene styling en box-sizing.
-- **CSS Formulier (10)**: Styling van het formulier en invoervelden.
-- **CSS Knop (04)**: Styling van de verzendknop.
-- **Formspree (04)**: Correcte integratie van Formspree en werkend formulier.
+- **Structuur (04)** Correcte bestandsnamen en mapstructuur.
+- **HTML (14)** Correct gebruik van elementen en attributen, `<title>`, `<main>`, `h`-kop, `<form>`, `action`, `method`, zeven formulier-elementen met specifieke kenmerken. 
+- **CSS Basis (04)** Algemene styling, `body`, `background-color`, `color`, `font-family`.
+- **CSS Formulier (10)** Styling van het formulier, invoervelden en knop.
+- **Formspree (02)** Correcte integratie van Formspree en werkend formulier (via schermafbeelding).
 
 ## Veelvoorkomende fouten
 
