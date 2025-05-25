@@ -112,6 +112,13 @@ Controleer of de volgende bestanden aanwezig zijn:
 
 Deel de link naar je gehele **Datamanagement OneDrive-map** via **Google Classroom**.
 
+## Puntenverdeling
+
+- **Naamgeving en mappenstructuur (05)** `Voornaam Photoshop Actions` met `Originelen`-map (35 originele JPG-afbeeldingen), `Batch`-map (35 bewerkt en correct hernoemd), .ATN-bestand (action).
+- **Photoshop Action (04)** bevat minimaal twee aanpassingslagen en correcte opslaginstellingen.
+- **Batchverwerking (04)** alle foto's automatisch bewerkt en correct opgeslagen met `*_bewerkt`-suffix.
+- **OneDrive-koppeling (01)** naar volledige map `Datamanagement`.
+
 ## Bronnen
 
 - [Handelingen en het deelvenster Handelingen](https://helpx.adobe.com/be_nl/photoshop/using/actions-actions-panel.html)
