@@ -12,13 +12,13 @@ Deze opdracht sluit aan bij het project FRAMED, waarin je onderzoekt hoe je jeze
 
 ## Stap-voor-stap
 
-### Research en inspiratie
+### Onderzoek en inspiratie
 
 - Kies bestaande albumcovers die je visueel sterk vindt.
 - Onderzoek: wat maakt ze goed? Hoe is de afbeelding opgebouwd?
 - Bepaal je eigen richting: wil je een dromerige, ruwe, minimalistische of net heel expressieve stijl?
 
-### Voorstudie op papier
+### Schets op papier
 
 - Schets je coveridee op papier: compositie, typografie.
 - Bepaal welke foto(’s) je nodig hebt.
@@ -35,7 +35,7 @@ Open Photoshop en maak een nieuw document aan:
 
 - Naam: `voornaam albumcover.psd`
 - Formaat: 12 cm x 12 cm
-- Resolutie: 300 dpi
+- Resolutie: 300 Pixels/Inch
 
 Werk je idee digitaal uit. Denk aan:
 
@@ -48,13 +48,13 @@ Werk je idee digitaal uit. Denk aan:
 
 Dien de volgende bestanden in via Google Classroom:
 
-- Foto van je voorstudie
+- Foto van je schets
 - Photoshopbestand: `voornaam albumcover.psd`
 - JPG-versie: `voornaam albumcover.jpg`
 
 ## Puntenverdeling
 
-- Voorstudie met duidelijke opbouw en idee
+- Schets met duidelijke opbouw en idee
 - Technische uitvoering in Photoshop (selecties, bewerkingen, typografie)
 - Zelfrepresentatie: creativiteit in hoe je jezelf toont
 - Grafische samenhang en stijl
