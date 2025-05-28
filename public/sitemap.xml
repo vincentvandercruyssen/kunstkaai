@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/digitaal/</loc>
+    <lastmod>2025-05-27T08:00:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/digitaal/opdracht-13-albumcover/</loc>
+    <lastmod>2025-05-27T08:00:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/typo/opdracht-4-12-zeefdruk/</loc>
     <lastmod>2025-05-27T08:00:00-07:00</lastmod>
   </url><url>
@@ -46,9 +52,6 @@
   </url><url>
     <loc>http://localhost:1313/data/opdracht-04-stickers/</loc>
     <lastmod>2025-04-02T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/digitaal/</loc>
-    <lastmod>2025-03-31T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/digitaal/opdracht-12-strippagina/</loc>
     <lastmod>2025-03-31T08:00:00-07:00</lastmod>
