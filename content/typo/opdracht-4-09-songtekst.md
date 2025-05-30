@@ -89,12 +89,11 @@ Gebruik een QR-code om vanuit je lay-out snel naar het YouTube-nummer te linken.
 
 ## Puntenverdeling
 
-- **Bestandsbeheer (04)** Correcte naamgeving en mappenstructuur.
-- **Formaat en raster (06)** Gebruik van het juiste formaat (A4), correcte marges (10 mm), Toepassing van een raster met hulplijnen, Benaming en correct gebruik van lagen.
-- **Kleurthema (02)**
-- **Inhoud en typografie (05)**
-- **Alinea- en tekenstijlen (10)**
-- **Vormgeving (10)**
+- **Bestandsbeheer, opmaak en lagenstructuur (06)** Correcte naamgeving, pakket, formaat, marges en ordelijke lagenstructuur
+- **Beeldintegratie en kleurthema (04)** Kwaliteitsvolle afbeelding, kleurenthema uit foto, visueel passend
+- **Alinea- en tekenstijlen (06)** Correct gebruik van stijlen voor verschillende tekstsoorten en accenten
+- **QR-code (02)** Correct gegenereerd, vormgegeven en bruikbaar binnen de lay-out
+- **Typografie, leesbaarheid, vormgeving en afwerking (06)** Professionele typografie, goede bladverdeling, passende sfeer en verzorgde lay-out
 
 ## Bronnen
 
