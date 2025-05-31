@@ -128,9 +128,8 @@ Dien deze koppeling in via **Google Classroom** bij de opdracht **Stickers**.
 
 ## Puntenverdeling
 
-- Mapstructuur en naamgeving (02)
-- Correcte Photoshop Action (06)
-- Effecten en lagen juist toegepast (04)
-- Batch correct toegepast op 32 beelden (04)
-- Contactblad in PDF met juiste instellingen (02)
-- Handeling opgeslagen als ATN-bestand (02)
+- **Naamgeving en mappenstructuur (05)** `Voornaam Stickers` met submappen `Originelen` (32 zelfverzamelde JPG's rond één thema), `Batch` (32 bewerkte stickers), PDF-bestand en .ATN-bestand correct bewaard.
+- **Photoshop Action-bestand (06)** bevat beeldverkleining, uitgelijnde tekstlaag met stijl, minimaal twee aanpassingslagen, correcte opslaginstellingen.
+- **Effecten en visuele stijl (02)** tekst goed leesbaar en opvallend, aanpassingslagen duidelijk zichtbaar, totaalbeeld consistent en visueel krachtig.
+- **Batchverwerking (02)** alle 32 beelden automatisch bewerkt en correct hernoemd (`Voornaam Sticker_01.jpg` tot `Voornaam Sticker_32.jpg`).
+- **PDF-contactblad (02)** correct opgemaakt: 4x4 raster, juiste marges, header met naam, max. twee pagina's.
