@@ -77,8 +77,8 @@ Lever de map in als een zip-bestand via Google Classroom.
 
 ## Puntenverdeling
 
-- **Structuur (04)**: Correcte bestandsnamen en mapstructuur, `voornaam insta` met `profiel.html`, `style.css`, `images`.
-- **HTML (15)**: Correct gebruik van elementen en kenmerken, `html`, `title` en `link`, `header` met `h`-koptekst, `main` met `section id="profiel"` met `img class="profielfoto"`, `h4`, `p`, `div class="statistieken"`, 3 x `a` en `section id="posts"` met `div class="grid"` en 9 x `img`.
-- **CSS Basis (05)**: Basisstijl correct toegepast.  
-- **CSS Layout (05)**: Profiel en posts correct weergegeven.  
-- **Afbeeldingen (04)**: Correct gebruik van aspect-ratio en grid-indeling.  
+- **Structuur (04)** Correcte bestandsnamen en mapstructuur, `voornaam insta` met `profiel.html`, `style.css`, `images`.
+- **HTML (15)** Correct gebruik van elementen en kenmerken, `html`, `title` en `link`, `header` met `h`-koptekst, `main` met `section id="profiel"` met `img class="profielfoto"`, `h4`, `p`, `div class="statistieken"`, 3 x `a` en `section id="posts"` met `div class="grid"` en 9 x `img`.
+- **CSS Basis (05)** Basisstijl correct toegepast, `body` met `margin`, `background-color`, `color` en `font-family`.
+- **CSS Layout (05)** Profiel en posts correct weergegeven met de gevraagde CSS-instellingen.
+- **Afbeeldingen (04)** Correct gebruik van aspect-ratio en grid-indeling.
