@@ -145,12 +145,6 @@ Zorg ervoor dat je map `Webontwikkeling` gedeeld wordt, maak een koppeling aan e
 
 ## Puntenverdeling
 
-- **Structuur (04)**: Correcte bestandsnamen en mapstructuur.
-- **HTML (10)**: Correct gebruik van HTML-elementen.
-- **CSS Basis (04)**: Basisstyling van de pagina.
-- **CSS Objecten (10)**: Correcte plaatsing van de objecten.
-- **Animaties (08)**: Correcte werking van de animaties.
-
 - **Structuur (04)** Correcte bestandsnamen en mapstructuur, `voornaam absolutely`, `index.html`, `style.css`, `images`.
 - **HTML (10)** Correct gebruik van elementen en kenmerken, `html`, `title` en `link`, `main` met `h1`, `p`, afbeeldingen met gemeenschappelijke en unieke klassen.
 - **CSS Basis (08)** Basisstijl correct toegepast, `html` en `body` met `height`, `body` met `margin`, `background-image`, `background-size`, `font-family`, `color`.
