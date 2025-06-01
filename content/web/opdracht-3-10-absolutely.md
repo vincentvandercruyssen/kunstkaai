@@ -151,6 +151,12 @@ Zorg ervoor dat je map `Webontwikkeling` gedeeld wordt, maak een koppeling aan e
 - **CSS Objecten (10)**: Correcte plaatsing van de objecten.
 - **Animaties (08)**: Correcte werking van de animaties.
 
+- **Structuur (04)** Correcte bestandsnamen en mapstructuur, `voornaam absolutely`, `index.html`, `style.css`, `images`.
+- **HTML (10)** Correct gebruik van elementen en kenmerken, `html`, `title` en `link`, `main` met `h1`, `p`, afbeeldingen met gemeenschappelijke en unieke klassen.
+- **CSS Basis (08)** Basisstijl correct toegepast, `html` en `body` met `height`, `body` met `margin`, `background-image`, `background-size`, `font-family`, `color`.
+- **CSS Layout (05)** Flexbox correct toegepast op `main`, met `display`, `flex-direction`, `justify-content`, `align-items`, tekst correct gecentreerd (`h1`, `p`).
+- **CSS Objecten en animatie (14)** Objecten correct gepositioneerd met `position: absolute`, gebruik van gemeenschappelijke en unieke klassen (minimaal vier) met `width` en positionering-eigenschappen, correcte werking van minimaal twee `@keyframes`-regels, animatie toegepast op de objecten.
+
 ## Veelvoorkomende fouten
 
 - Verkeerde mapstructuur of foutieve bestandsnamen.
