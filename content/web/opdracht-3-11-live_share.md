@@ -81,11 +81,12 @@ Deze map bevat:
 
 ## Puntenverdeling
 
-- **Live Share (04)**: samenwerking en gedeelde projectstructuur
-- **HTML-structuur (08)**: juiste opbouw en consistente opmaak
-- **CSS-styling (08)**: verzorgde en consequente vormgeving
-- **Inhoud (06)**: creativiteit, logica, volledigheid
-- **Footer-handtekening (04)**: duidelijke vermelding wie wat maakte
+- **Structuur en samenwerking (06)** Correcte mappen en bestandsnamen, gedeeld via Live Share, samenwerking zichtbaar in één gedeeld project.
+- **HTML (12)** Correcte opbouw van alle pagina’s met `header`, `main`, `section`-elementen, `footer`.
+- **Navigatie (06)** Consistente navigatie op alle pagina’s.
+- **Inhoud (08)** Gekozen thema uitgewerkt op alle pagina’s met logische structuur, duidelijke tekst, afbeeldingen en visueel verzorgde inhoud.
+- **Footer en identificatie (02)** Duidelijke vermelding van wie welke pagina maakte, correcte voornamen in elke footer.
+- **CSS (10)** Eén gedeeld stijlblad met verzorgde en consequente vormgeving: marges, lettertypes, kleuren, leesbaarheid.
 
 ## Veelvoorkomende fouten
 
