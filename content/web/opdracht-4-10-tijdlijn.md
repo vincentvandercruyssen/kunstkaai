@@ -122,12 +122,14 @@ Zorg ervoor dat je map `Webontwikkeling` gedeeld wordt, maak een koppeling aan e
 
 ## Puntenverdeling
 
-- **Structuur (04)**: Correcte bestandsnamen en mapstructuur.
-- **HTML (12)**: Correct gebruik van HTML-elementen voor de tijdlijn.
-- **CSS Basis (04)**: Basisstyling van de pagina.
-- **CSS Tijdlijncontainer (10)**: Stijl van de tijdlijn en horizontaal scrollen.
-- **CSS Tijdlijnitems (08)**: Styling van de tijdlijnitems.
-- **Afbeeldingen (02)**: Verantwoord gebruik van afbeeldingen.
+- **Structuur (04)** Correcte bestandsnamen en mapstructuur, `voornaam tijdlijn`, `index.html`, `style.css`, map `images`.
+- **HTML (14)** Correct gebruik van HTML-elementen en kenmerken: `html` en `body`, `head` met `title` en `link`, `header` met `h1`, `main`, `div`'s met klassen `tijdlijn-container` en `tijdlijn-item`, elk item met `h2`, `h3`, `img`, `p`.
+- **Inhoud (05)** Minimaal 10 items in chronologische volgorde.
+- **CSS Basis (04)** `html`, `body` met `height: 100%`, achtergrondkleur, lettertype.
+- **CSS Layout (06)** `header` met vaste hoogte (`height`), `main` met `height: calc(100% - header)`, `display: flex`, `align-items: center` voor verticale centrering van de tijdlijncontainer.
+- **CSS Tijdlijncontainer (05)** `display: flex`, `gap`, `overflow-x: auto`, `scroll-snap-type`, correcte horizontale opbouw, geen foutieve wrapping.
+- **CSS Tijdlijnitems (05)** `min-width`, achtergrond, padding, `scroll-snap-align`, visuele eenheid tussen items.
+- **CSS Afbeeldingen (02)** Afbeeldingen responsive binnen tijdlijnitem, zonder vervorming.
 
 ## Veelvoorkomende fouten
 
