@@ -123,11 +123,11 @@ Voeg de koppeling naar je volledige OneDrive-map `webontwikkeling` toe in de opd
 
 ## Puntenverdeling
 
-- **Structuur (04)**: Correcte mappen en bestandsnamen.
-- **HTML (08)**: Heldere en semantische structuur.
-- **CSS Basis (04)**: Volledige achtergrond en opmaak van de pagina.
-- **Beweging container (10)**: Animatie van de container correct en vloeiend.
-- **Beweging figuur (10)**: Afzonderlijke animatie van de figuur werkt goed.
+* **Structuur (04)** Correcte bestandsnamen en mapstructuur: `voornaam animatie`, `index.html`, `style.css`, map `images` met figuur en achtergrond.
+* **HTML (05)** Correct gebruik van HTML-elementen en kenmerken: basisstructuur met `html`, `head` met `title` en `link`, `body` met `main`, `div` met duidelijke klasse voor container, `img` voor figuur.
+* **CSS Basis (03)** Achtergrond ingesteld via `body` met `background-image`, `background-size`, eventueel `background-position`. 
+* **CSS Beweging container (10)** Container correct gepositioneerd met `position: absolute`, vaste breedte, animatie met `@keyframes` buiten het scherm startend en eindigend. Animatie werkt vloeiend, lineair en oneindig adhv `animation`-eigenschap.
+* **CSS Beweging figuur (05)** `img` vult container volledig (`width: 100%`), figuur heeft eigen animatie (zoals springen of draaien), onafhankelijk van containerbeweging, zorgt voor levendig effect.
 
 ## Veelvoorkomende fouten
 
