@@ -44,3 +44,11 @@ Klaar met de vijf gevraagde decennia? Voeg extra spreads toe voor andere periode
 - **InDesign-pakket** (INDD-document, PDF-bestand, gebruikte fonts en afbeeldingen)  
 
 Upload het volledige pakket als ZIP-archief in de juiste opdracht in Google Classroom.
+
+## Puntenverdeling
+
+- **Bestandsbeheer, formaat, afloop en pakket (05)** Correcte naamgeving, 315 × 315 mm, 3 mm afloop, ordelijke lagenstructuur, ZIP-pakket met alle bestanden
+- **Lay-out en vaste bladverdeling (05)** Consistente en heldere structuur over alle vijf spreads, vaste opbouw voor voor- en achterkant
+- **Typografie en sfeer per decennium (05)** Gepaste sfeer per tijdperk via typografie, kleuren, beeldkeuze
+- **Tracklists en achterkant (05)** Overzichtelijke opmaak van A/B-kant, correcte info per nummer, fictieve barcode
+- **Afwerking en samenhang van de reeks (05)** Eenheid door vaste structuur, variatie in sfeer, zorgvuldige afwerking
