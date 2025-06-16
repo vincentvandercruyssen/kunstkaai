@@ -77,3 +77,12 @@ Gebruik optioneel ook Teken stijlen voor specifieke woorden of accenten binnen e
 - **InDesign-pakket** (INDD-document, PDF-bestand, gebruikte fonts en afbeeldingen).
 
 Upload het volledige pakket als ZIP-archief in de juiste opdracht in Google Classroom.
+
+## Puntenverdeling
+
+* **Bestandsbeheer, formaat en pakket (05)** Correcte naamgeving, A5-formaat, afloop, ordelijke lagenstructuur, ZIP-pakket met alle onderdelen
+* **Lay-out en structuur (06)** Voor- en achterkant, minstens twee spreads, duidelijke kolommen en marges
+* **Typografie en sfeer (05)** Passend lettergebruik, duidelijk onderscheid tussen titels, tussentitels en bodytekst, aansluitend bij het gekozen thema
+* **Baseline grid en uitlijning (05)** Correct ingesteld grid, alle tekst uitgelijnd op de basislijn
+* **Inhoud en beeldgebruik (05)** Minstens drie artikels met tussentitels, minstens drie beelden/illustraties, opvallend citaat of losse regel
+* **Gebruik van stijlen (04)** Correct gebruik van alineastijlen (body, tussentitel, citaat, bijschrift), eventueel tekenstijlen voor accenten
