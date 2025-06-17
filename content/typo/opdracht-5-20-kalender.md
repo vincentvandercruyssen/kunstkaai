@@ -104,3 +104,12 @@ Gebruik waar nodig **Cmd+Shift (Mac) / Ctrl+Shift (Windows)** om elementen los t
 - **Pakketmap**: `voornaam kalender` (bevat INDD, PDF, gebruikte fonts en afbeeldingen)
 
 Maak een ZIP-bestand van je volledige pakket en upload dit in de juiste opdracht op **Google Classroom**.
+
+## Puntenverdeling
+
+- **Bestandsbeheer, formaat en pakket (05)** Correcte naamgeving, A4-formaat, afloop ingesteld, ordelijke lagenstructuur, ZIP-pakket met INDD, PDF, fonts en gekoppelde bestanden
+- **Voorpagina (04)** Bevat titel, jaartal en passend sfeerbeeld of grafisch ontwerp, in lijn met het gekozen thema
+- **Master page en kalenderopbouw (05)** Correct gebruik van stramienpagina’s, raster van 6×7, weeknummers, maandnaam en dagen van de week
+- **Lay-out en thema per maand (06)** 12 unieke maandpagina’s met correcte dag- en weeknummering, telkens een beeld dat inhoudelijk en visueel aansluit bij het gekozen thema
+- **Typografie en sfeer (04)** Samenhang tussen typografie, kleuren en grafiek, afgestemd op het thema
+- **Techniek en afwerking (04)** Gebruik van hulplijnen, verdeelopties, tabellen of raster, uitlijning en afwerking van de kalender
