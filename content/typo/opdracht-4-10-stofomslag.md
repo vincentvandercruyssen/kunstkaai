@@ -82,12 +82,12 @@ Hier is een tutorial met een goed voorbeeld. Let wel op: deze gebruikt inches, i
 
 ## Puntenverdeling
 
-- **Bestandsbeheer (04)** Correcte naamgeving en mappenstructuur.
-- **Formaat en raster (06)** Correcte afmetingen en gebruik van hulplijnen.
-- **Kleur en typografie (06)** Sterke combinatie van lettertypes en kleurgebruik.
-- **Inhoud en compositie (06)** Duidelijke hiërarchie en samenhang in het ontwerp.
-- **Alinea- en tekenstijlen (08)** Correct gebruik van stijlen.
-- **Vormgeving (10)** Esthetische en functionele vormgeving.
+* **Bestandsbeheer en documentopbouw (07)** Correcte naamgeving, formaat inclusief rug en flappen, afloop, marges, ordelijke lagenstructuur, gidslayout, pakket en ZIP-bestand
+* **Inhoud (12)** Juiste inhoud per zone (flappen, rug, voor-/achterkant)
+* **Lay-out en compositie (05)** Esthetische en functionele vormgeving met duidelijke structuur, heldere compositie, evenwichtige bladspiegel
+* **Typografie en kleurgebruik (05)** Gepaste en contrasterende lettertypes, doordacht kleurgebruik, en aandacht voor sfeer, leesbaarheid en detaillering
+* **Stijlen (04)** Correct en consequent gebruik van alineastijlen voor elk gevraagd teksttype en tekenstijlen voor accenten
+* **Techniek, leesbaarheid en afwerking (05)** Eenheid door consistente opbouw, goede leesbaarheid en zorgvuldige afwerking
 
 ## Bronnen
 
