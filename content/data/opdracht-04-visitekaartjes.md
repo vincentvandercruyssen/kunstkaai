@@ -59,8 +59,8 @@ Of gebruik dit voorbeeld:
 
 ## Puntenverdeling
 
-- Eigen ontwerp, verzorgd en leesbaar (6)  
-- Correct CSV-bestand met 12 namen (4)  
-- Correct gekoppelde Data Merge (4)  
-- PDF met nette kaartjes (2)  
-- Bestanden correct benoemd en geordend (2)
+- **Naamgeving en mappenstructuur (05)** Bestanden correct benoemd en geordend: InDesign-sjabloon, Gegevensbestand, Samengevoegd InDesign-document, Samengevoegde PDF. Geen onnodige bestanden of mappen die onduidelijkheid scheppen.
+- **Ontwerp en leesbaarheid (05)** Eigen ontwerp, verzorgd en leesbaar, met minstens vier verschillende gegevenstypes.
+- **Correct CSV-bestand (05)** 12 verschillende gegevens, minstens vier verschillende gegevenstypes.
+- **Data Merge sjabloon (06)** Sjabloon, correct gekoppelde gegevens, geen overset text.
+- **Samenvoeging (02)** Correct INDD-document en PDF-bestand met minstens 12 pagina's.
