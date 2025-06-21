@@ -70,3 +70,10 @@ Je maakt twee ontwerpen die volledig binnen een gekozen huisstijl passen. Deze m
 
 - Pakket (InDesign-document + links + fonts + PDF) als zip-bestand per ontwerp.
 - Naamgeving: `voornaam huisstijl 1` en `voornaam huisstijl 2`
+
+## Puntenverdeling
+
+- **Invulopdracht en onderzoek (05)** Volledig ingevuld formulier met correcte begrippen, logo-keuze, onderbouwde mening en volledig onderzoek van het gekozen huisstijlhandboek, voornamelijk geschreven in volzinnen
+- **Bestandsbeheer en structuur (06)** Correcte naamgeving, ordelijke mapstructuur, pakketten als ZIP-bestand per ontwerp met InDesign-bestand, duidelijke lagenstructuur, gekoppelde links, gebruikte lettertypes, PDF
+- **Toepassing huisstijl 1 (Flyer/poster) (15)** Vormgeving volledig volgens het huisstijlhandboek, met correcte kleuren, typografie, opmaak, grafische elementen, marges, compositie, verdeling en een verzorgde lay-out
+- **Toepassing huisstijl 2 (Visitekaartje) (10)** Vormgeving volledig volgens het huisstijlhandboek, met correcte kleuren, typografie, opmaak, grafische elementen, marges, compositie, verdeling en een verzorgde lay-out
