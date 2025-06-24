@@ -117,13 +117,14 @@ Let op kwaliteit en bestandsgrootte. Slordige beelden doen afbreuk aan je werk.
 
 ## Puntenverdeling
 
-- Mappenstructuur & naamgeving (10)
-- HTML index + header/nav structuur (4)
-- HTML index met thumbnails/links (5)
-- HTML vakpagina’s met galerijen (20)
-- Correcte afbeeldingsformaten (5)
-- CSS: juiste selectors (8)
-- CSS: eigenschappen en layout (12)
+- **Structuur (05)** Correcte mappenstructuur en bestandsnamen: `voornaam portfolio`, `index.html`, `about.html`, vakpagina’s (x5), `style.css`, map `images`.
+- **Optimalisatie afbeeldingen (05)** Correcte bestandsformaten, maximale grootte gerespecteerd, duidelijke en verzorgde beelden. 
+- **HTML (06)** Correct gebruik van HTML-elementen en kenmerken: `<head>` met `<title>` en `<link>`, `<header>`, `<nav>`, `<main>`, `<section>`, `h`-elementen, `<p>`, `<img>`, `<a>` en `<footer>` op alle portfolio-pagina’s (minstens 7). 
+- **Navigatie (07)** Dezelfde navigatiebalk komt op de minstens 7 pagina's exact terug, visueel herkenbaar, correcte structuur.
+- **Inhoud (07)** Introductie op hoofdpagina, duidelijke about-pagina, vier vakpagina’s met elk minstens drie werken, één atelierpagina met werk, telkens beschrijvingen en afbeeldingen per werk.
+- **CSS Basis (05)** Eén centraal stylesheet (`style.css`), correcte koppeling, consistente styling van `body`, kleuren, typografie, witruimte.
+- **CSS Lay-out (05)** Gebruik van duidelijke selectors en klassen, de nodige eigenschappen voor visuele eenheid tussen pagina’s, overzichtelijke lay-out.
+- **Presentatie en vormgeving (05)** Algemeen verzorgde en samenhangende vormgeving, leesbaarheid, structuur, kleuren- en typografiekeuzes passen bij portfolio.
 
 ## Veelvoorkomende fouten
 
