@@ -167,8 +167,8 @@ Deze map bevat:
 
 ## Puntenverdeling
 
-* **HTML-structuur (08)**: juiste elementen, semantische opbouw
-* **Header (06)**: goed gebruik van flexbox of grid
-* **CSS-styling (06)**: verzorgde vormgeving
-* **Detailpagina (06)**: duidelijke info over één item
-* **Consistentie (04)**: zelfde structuur op beide pagina’s
+- **Structuur (04)** Correcte bestandsnamen en mapstructuur: `webshop` met `index.html`, `style.css` en een `images`-map.
+- **HTML (15)** Correct gebruik van HTML-elementen en kenmerken: `<head>` met `<title>` en `<link>`, opbouw met `<header>` met `<div>`, `<input>` en `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`, gebruik van `<img>`, `<a>`, `h`-elementen en consistente structuur.
+- **CSS Basis (05)** Eén CSS-bestand correct gekoppeld, met verzorgde styling voor `body`, typografie, kleuren en witruimte.
+- **CSS Layout (10)** Gebruik van Flexbox en Grid voor de opbouw van de header, navigatie en minishop-items. Goede plaatsing van elementen, overzichtelijke layout. Gebruikte eigenschappen: `width`, `padding`, `display`, `justify-content` en `grid-template-columns`.
+- **Extra (10)** Bonuspunt voor een uitgewerkte detailpagina (`item1.html`) met duidelijke structuur, grotere afbeelding, beschrijving en terugkoppeling naar de hoofdpagina.
