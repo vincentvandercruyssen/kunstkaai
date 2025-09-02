@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
   <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <rect width="512" height="512" fill="white" />
   <g>
     <g id="Layer_1">
       <g id="Layer_1-2" data-name="Layer_1">
         <g id="Layer_1-2">
-          <path d="M149.08,144.86h-28.58v252.86h-33.01V114.27h87.37l67.24,253.26h27.38l67.65-253.26h87.37v283.46h-33.01v-252.86h-28.58l-67.24,252.86h-79.32l-67.25-252.86h-.03v-.02Z"/>
+          <path d="M149.08,144.86h-28.58v252.86h-33.01V114.27h87.37l67.24,253.26h27.38l67.65-253.26h87.37v283.46h-33.01v-252.86h-28.58l-67.24,252.86h-79.32l-67.25-252.86h-.03v-.02Z" />
         </g>
       </g>
     </g>

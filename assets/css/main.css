@@ -3,6 +3,17 @@
   src: url("../fonts/NotoSerif-VariableFont_wdth,wght.ttf");
 }
 
+@font-face {
+  font-family: "Grandview";
+  src: url("../fonts/Grandview_Regular.ttf");
+}
+
+@font-face {
+  font-family: "Grandview";
+  font-weight: 500;
+  src: url("../fonts/Grandview_Bold.ttf");
+}
+
 :root {
   --sidebar-width: 20rem;
   --text: #222;
@@ -78,6 +89,7 @@ body {
   background-color: var(--bgcbg);
   color: var(--text);
   font-family: "Noto Serif";
+  font-family: "Grandview";
   line-height: 1.61803;
   display: grid;
   grid-template-columns: var(--sidebar-width) 1fr;

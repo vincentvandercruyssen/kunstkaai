@@ -2,11 +2,15 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Kunstkaai'
 theme = 'kunstkaai'
-disableKinds = ["taxonomy", "term"]
+
+disableKinds = ["RSS", "taxonomy", "term"]
+
 [params]
   sectionNames = { web = "Webontwikkeling", typo = "Typografische Vormgeving", digitaal = "Digitaal atelier", data = "Datamanagement" , doelen = "Doelen GO! Navigator"}
+
 [imaging]
   quality = 90
   resampleFilter = 'Lanczos'
+
 [build]
   cleanDestinationDir = true

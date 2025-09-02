@@ -1,3 +1,15 @@
-{{ $section := .Section }}
-{{ $sectionName := index .Site.Params.sectionNames $section | default $section }}
-{{ $sectionName }}
+{{/* vind een ‘sectie-sleutel’ die in .Site.Params.sectionNames zit */}}
+{{ $s := newScratch }}
+{{ $s.Set "key" (or .Params.sectionKey .Type .Section) }}
+
+{{/* loop door de URL-segmenten en pak de eerste die matcht met een key in sectionNames */}}
+{{ $segs := split (trim .RelPermalink "/") "/" }}
+{{ range $segs }}
+  {{ if index $.Site.Params.sectionNames . }}
+    {{ $s.Set "key" . }}
+  {{ end }}
+{{ end }}
+
+{{ $key := $s.Get "key" }}
+{{ $label := index .Site.Params.sectionNames $key | default $key }}
+{{ $label }}
