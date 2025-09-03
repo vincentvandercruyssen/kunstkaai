@@ -6,7 +6,7 @@ theme = 'kunstkaai'
 disableKinds = ["RSS", "taxonomy", "term"]
 
 [params]
-  sectionNames = { web = "Webontwikkeling", typo = "Typografische Vormgeving", digitaal = "Digitaal atelier", data = "Datamanagement" , doelen = "Doelen GO! Navigator"}
+  sectionNames = { web = "Webontwikkeling", typo = "Typografische Vormgeving", digitaal = "Digitaal atelier", data = "Datamanagement", weborientatie ="Weboriëntatie", doelen = "Doelen GO! Navigator"}
 
 [imaging]
   quality = 90

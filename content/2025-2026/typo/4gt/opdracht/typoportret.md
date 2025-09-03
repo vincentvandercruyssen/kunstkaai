@@ -10,7 +10,7 @@ draft = false
 
 Maak een typografische poster over **iemand in de klas**. Zo leer je elkaar beter kennen én oefen je typografie op een speelse manier.
 
-- Werk in duo’s
+- Werk in duo’s.
 - Praat met je buur en ontdek elkaars hobby’s, huisdieren, familie, favoriete plek, lievelingseten, eigenschappen...
 - Neem allebei een vel **A3**.
 - Zet **de naam van je buur groot in het midden** van het blad. Welke lettersoort kies je?
