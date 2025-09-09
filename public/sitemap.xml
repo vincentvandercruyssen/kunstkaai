@@ -41,10 +41,10 @@
     <loc>http://localhost:1313/web/</loc>
     <lastmod>2025-05-15T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/data/</loc>
+    <loc>http://localhost:1313/2024-2025/</loc>
     <lastmod>2025-05-12T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/data/opdracht-04-visitekaartjes/</loc>
+    <loc>http://localhost:1313/2024-2025/data/5gm/opdracht/visitekaartjes/</loc>
     <lastmod>2025-05-12T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/typo/opdracht-4-11-huisstijlhandboek/</loc>
@@ -68,13 +68,13 @@
     <loc>http://localhost:1313/web/opdracht-3-10-absolutely/</loc>
     <lastmod>2025-04-02T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/data/opdracht-04-stickers/</loc>
+    <loc>http://localhost:1313/2024-2025/data/5gm/opdracht/stickers/</loc>
     <lastmod>2025-04-02T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/digitaal/opdracht-12-strippagina/</loc>
     <lastmod>2025-03-31T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/data/opdracht-03-photoshop_actions/</loc>
+    <loc>http://localhost:1313/2024-2025/data/5gm/opdracht/photoshop_actions/</loc>
     <lastmod>2025-03-26T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/digitaal/opdracht-11-popart/</loc>
@@ -104,7 +104,7 @@
     <loc>http://localhost:1313/typo/opdracht-5-15-indesign_herhaling/</loc>
     <lastmod>2025-02-24T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/data/opdracht-03-bridge_workflow/</loc>
+    <loc>http://localhost:1313/2024-2025/data/5gm/opdracht/bridge_workflow/</loc>
     <lastmod>2025-02-23T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/typo/opdracht-5-14-kookboek/</loc>
@@ -155,7 +155,7 @@
     <loc>http://localhost:1313/typo/opdracht-5-10-productcatalogus/</loc>
     <lastmod>2025-01-05T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/data/opdracht-02-kaartspel/</loc>
+    <loc>http://localhost:1313/2024-2025/data/5gm/opdracht/kaartspel/</loc>
     <lastmod>2025-01-01T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/web/opdracht-3-06-stadsgids/</loc>
@@ -251,13 +251,13 @@
     <loc>http://localhost:1313/digitaal/cursus-illustrator/</loc>
     <lastmod>2024-08-30T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/data/cursus-intro/</loc>
+    <loc>http://localhost:1313/2024-2025/data/5gm/cursus/intro/</loc>
     <lastmod>2024-08-30T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/typo/cursus-intro/</loc>
     <lastmod>2024-08-30T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/data/opdracht-01-datamerging/</loc>
+    <loc>http://localhost:1313/2024-2025/data/5gm/opdracht/datamerging/</loc>
     <lastmod>2024-08-30T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/typo/opdracht-4-01-filmpjes/</loc>

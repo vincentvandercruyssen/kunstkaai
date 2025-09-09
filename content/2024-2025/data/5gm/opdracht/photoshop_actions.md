@@ -2,6 +2,7 @@
 title = 'Opdracht: Photoshop Actions'
 date = 2025-03-26T08:00:00-07:00
 draft = false
+aliases = ["/data/opdracht-03-photoshop_actions/"]
 +++
 
 In deze opdracht leer je hoe je **Photoshop Actions** gebruikt om een reeks foto's automatisch te bewerken en op te slaan met een nieuwe bestandsnaam. Je maakt een action (handeling) aan, past minimaal twee aanpassingslagen toe en voert een batchverwerking uit om dezelfde handelingen automatisch op meerdere foto's toe te passen. 

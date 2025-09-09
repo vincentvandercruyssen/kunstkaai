@@ -2,6 +2,7 @@
 title = 'Opdracht: Stickers'
 date = 2025-04-02T08:00:00-07:00
 draft = false
+aliases = ["/data/opdracht-04-stickers/"]
 +++
 
 In deze opdracht maak je een reeks **grafische stickers** aan. Je combineert je **voornaam of bijnaam** met een opvallend grafisch effect op een serie foto's. Je werkt met **Photoshop Actions**, **Adjustment Layers** en de **Output-functie in Bridge**. Het eindresultaat is een consistente reeks beelden in jouw stijl, gebundeld in een overzichtelijk **PDF-contactblad**. Zo oefen je zowel technische als visuele vaardigheden op een gestructureerde manier.

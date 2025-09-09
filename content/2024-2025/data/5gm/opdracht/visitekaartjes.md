@@ -2,6 +2,7 @@
 title = 'Opdracht: Visitekaartjes'
 date = 2025-05-12T08:00:00-07:00
 draft = false
+aliases = ["/data/opdracht-04-visitekaartjes/"]
 +++
 
 In deze korte afsluitopdracht ontwerp je een **eigen visitekaartje** en genereer je een reeks kaartjes met behulp van **Data Merge in InDesign**. Je werkt met een eigen sjabloon en een lijst van contactgegevens.

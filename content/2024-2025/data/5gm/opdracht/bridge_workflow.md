@@ -2,6 +2,7 @@
 title = 'Opdracht: Bridge Workflow'
 date = 2025-02-23T08:00:00-07:00
 draft = false
+aliases = ["/data/opdracht-03-bridge_workflow/"]
 +++
 
 In deze opdracht leer je efficiënt werken met **Adobe Bridge Workflow** en **Bridge Output** om bestanden te beheren, te hernoemen, te resizen en een PDF-contactsheet te maken. Je slaat alle bestanden correct op en deelt je werk via OneDrive.  

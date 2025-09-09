@@ -2,6 +2,7 @@
 title = 'Cursus: Introductie'
 date = 2024-08-30T08:00:00-07:00
 draft = false
+aliases = ["/data/cursus-intro/"]
 +++
 
 In het vak datamanagement verkennen we **automatisering binnen de grafische sector** met als doel sommige werkprocessen slimmer en efficiënter te maken. Het idee is om tools en technieken te gebruiken die je werkstroom vereenvoudigen, zodat je meer tijd overhoudt voor het creatieve proces.

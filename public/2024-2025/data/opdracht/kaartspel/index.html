@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Opdracht: Kaartspel | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+<link rel="icon" type="image/svg" href="/favicon.svg">
+
+
+</head>
+<body>
+  <select data-theme-picker name="themepicker" id="theme">
+    <option value="🖥️">🖥️</option>
+    <option value="☀️">☀️</option>
+    <option value="🌙">🌙</option>
+  </select>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+
+
+
+Datamanagement
+<br>
+    Opdracht: Kaartspel
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#deel-1">1. Deel 1</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#mapstructuur">1.1 Mapstructuur</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#google-sheets">1.2 Google Sheets</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#indienen">1.3 Indienen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#puntenverdeling">1.4 Puntenverdeling</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#deel-2">2. Deel 2</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#indesign-document-aanmaken">2.1 InDesign-document aanmaken</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#exporteren-uit-adobe-illustrator">2.2 Exporteren uit Adobe Illustrator</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#fonts-installeren">2.3 Fonts installeren</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#indesign-document-ontwerpen">2.4 InDesign-document ontwerpen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#samengevoegd-document-maken">2.5 Samengevoegd document maken</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#indienen-1">2.6 Indienen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#puntenverdeling-1">2.7 Puntenverdeling</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#bronnen">3. Bronnen</a>
+
+      
+      
+    
+
+    
+    </li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+
+
+
+Datamanagement
+ <br> Opdracht: Kaartspel</h1>
+
+<p>Je gaat een kaartspel ontwikkelen met <strong>Adobe InDesign</strong> en data merge. Het project bestaat uit twee delen: eerst maak je een <strong>Google Spreadsheet</strong> met alle kaartgegevens, daarna een <strong>InDesign-document</strong> waarin deze gegevens automatisch worden verwerkt. Je leert werken met verschillende bestanden, bestandspaden, nauwkeurige documentinstellingen, lagen, rasters en het effectief gebruik van tekstkaders.</p>
+<p>Het eindresultaat wordt een volledig speelbaar kaartspel met 18 unieke personages, elk met eigen kenmerken en effecten.</p>
+<h2 id="deel-1">Deel 1</h2>
+<p>In dit eerste deel ga je aan de slag met het voorbereiden van de gegevens voor je kaartspel. Je maakt een gestructureerde Google Spreadsheet waarin je alle informatie van de kaarten netjes organiseert - van de namen en types tot de statistieken en effecten. Deze voorbereiding is cruciaal voor een vlotte verwerking later binnen InDesign. Je leert ook meteen hoe je bestanden en mappen overzichtelijk kunt structureren.</p>
+<h3 id="mapstructuur">Mapstructuur</h3>
+<p>Maak een duidelijke mapstructuur, een projectmap in je map voor Datamanagement genaamd <strong>Voornaam Kaartspel</strong> waar je het volgende zult in verwerken:</p>
+<ul>
+<li>InDesign-bestand en CSV-bestand.</li>
+<li>Een map genaamd <strong>Links</strong> met alle benodigde PDF-bestanden (voorkant, kost, aanval, verdediging), afbeeldingen personages, PSD-bestand achterkant.</li>
+</ul>
+<p><a href="../../zip/Kaartspel-Links.zip" target="_blank" rel="noopener noreferrer">Hier vind je een link naar het zip-bestand met de benodigdheden.</a> Hierin vind je: illustraties van de personages, Voorkant.ai (de voorkant en symbolen zul je hieruit exporteren voor je ontwerp in InDesign) en Achterkant.psd.</p>
+
+
+
+ 
+ 
+
+
+
+
+
+
+<div style="width: 55%;">
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-finder_links_hu_20b0168f6455f9f0.webp" alt="opdracht-02-kaartspel-finder_links" loading="lazy">
+
+
+</div>
+
+
+
+<h3 id="google-sheets">Google Sheets</h3>
+<p>Maar eerst&hellip;</p>
+<ul>
+<li>Ga naar <a href="https://sheets.new" target="_blank" rel="noopener noreferrer">sheets.new</a> in je internetbrowser, dit maakt een nieuw Google Spreadsheet bestand aan.</li>
+</ul>
+<p>Je hebt 12 kolommen nodig:</p>
+<ul>
+<li>Tekstkolommen: Benaming, Type, Effect</li>
+<li>Waardekolommen: Kost, Aanval, Verdediging</li>
+<li>Afbeeldingskolommen (met vooraan <code>'@</code>): &lsquo;@Illustratie, &lsquo;@Kost symbool, &lsquo;@Aanval symbool, &lsquo;@Verdediging symbool, &lsquo;@Kaart Voorkant, &lsquo;@Kaart Achterkant</li>
+</ul>
+<p>De kolommen met <code>'@</code> vooraan zijn kolommen met afbeeldingen, dit symbool gebruikt InDesign om te weten dat de gegevens in deze kolom geen tekst zijn. Elke speelkaart heeft een unieke illustratie (bv. <code>Personage.png</code>).</p>
+<p>De symbolen op de kaarten achter Kost, Aanval en Verdediging worden respectievelijk aangeduid als: <code>Kost.pdf</code>, <code>Aanval.pdf</code> en <code>Verdediging.pdf</code>. Voor speelkaarten zonder kost of aanval laat je de cellen voor de bijbehorende tekst en afbeeldingen leeg.</p>
+<p>De Voorkant noemt <code>Voorkant.pdf</code>. De achterkant is een PSD-bestand genaamd <code>Achterkant.psd</code>. Voor -en achterkant zijn voor alle kaarten dezelfde.</p>
+<p>Vergeet niet voor elke bestandsnaam <code>&quot;Links/&quot;</code> toe te voegen, in deze submap zullen namelijk al je afbeeldingen zitten. Let goed op de bestandstypes.</p>
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-sheets_ingevuld_hu_af7b05e793c7e543.webp" alt="opdracht-02-kaartspel-sheets_ingevuld" loading="lazy">
+
+
+
+
+<h4 id="lijst-kaarten">Lijst kaarten</h4>
+<p>Hieronder staan alle tekstgegevens van de gevraagde personages/kaarten:</p>
+<div class="table_layoutfixed"></div>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Elegard</strong> (Bemanning) <br> Kost: 1, Aanval: 1, Verdediging: 2 <br> Effect: Kan een vijandige aanval blokkeren als er minstens 1 geallieerde Bemanning in het spel is.</td>
+          <td><strong>Finton</strong> (Bemanning) <br> Kost: 2, Aanval: 2, Verdediging: Geen <br> Effect: Krijgt +1 Aanval wanneer een andere geallieerde kaart wordt gespeeld.</td>
+      </tr>
+      <tr>
+          <td><strong>Nereus</strong> (Bemanning) <br> Kost: 5, Aanval: Geen, Verdediging: 1 <br> Effect: +2 Verdediging voor alle geallieerden. Kan niet worden aangevallen als geallieerden in het spel zijn.</td>
+          <td><strong>Rosha</strong> (Bemanning) <br> Kost: Geen, Aanval: 1, Verdediging: 1 <br> Effect: Kan voor 4 Kost een vijandige kaart neutraliseren tot de volgende beurt.</td>
+      </tr>
+      <tr>
+          <td><strong>Skadi</strong> (Bemanning) <br> Kost: 2, Aanval: 1, Verdediging: 1 <br> Effect: Kan twee keer aanvallen.</td>
+          <td><strong>Kapitein Connelly</strong> (Leider) <br> Kost: 5, Aanval: 2, Verdediging: 4 <br> Effect: +1 Aanval voor alle geallieerde Bemanningen.</td>
+      </tr>
+      <tr>
+          <td><strong>Harold</strong> (Monteur) <br> Kost: 2, Aanval: Geen, Verdediging: 4 <br> Effect: Wanneer gespeeld, herstel 1 Schade van een geallieerde kaart.</td>
+          <td><strong>Haley</strong> (Premiejager) <br> Kost: 3, Aanval: 3, Verdediging: 2 <br> Effect: Kan onmiddellijk aanvallen.</td>
+      </tr>
+      <tr>
+          <td><strong>Morrigan</strong> (Premiejager) <br> Kost: 3, Aanval: 2, Verdediging: 3 <br> Effect: Wanneer gespeeld, breng 2 Schade toe aan een vijandige kaart.</td>
+          <td><strong>Davy</strong> (Soldaat) <br> Kost: 5, Aanval: 5, Verdediging: 2 <br> Effect: Bij het aanvallen, breng ook 2 Schade toe aan een nabijgelegen vijandelijke kaart.</td>
+      </tr>
+      <tr>
+          <td><strong>Eon</strong> (Soldaat) <br> Kost: 9, Aanval: 7, Verdediging: 6 <br> Effect: Immuun voor schade van kaarten met een Kost van 4 of lager.</td>
+          <td><strong>Freya</strong> (Soldaat) <br> Kost: 3, Aanval: 3, Verdediging: 4 <br> Effect: Wanneer gespeeld, herstel 1 Verdediging van alle geallieerde kaarten.</td>
+      </tr>
+      <tr>
+          <td><strong>Magnus</strong> (Soldaat) <br> Kost: 7, Aanval: 4, Verdediging: 5 <br> Effect: Als er 2 andere geallieerde soldaten in het spel zijn, krijg je +3 Aanval.</td>
+          <td><strong>Nilus</strong> (Soldaat) <br> Kost: 5, Aanval: 6, Verdediging: 2 <br> Effect: Wanneer gespeeld, vernietig een vijandige kaart met een kost van 3 of lager.</td>
+      </tr>
+      <tr>
+          <td><strong>Russ</strong> (Soldaat) <br> Kost: 2, Aanval: 3, Verdediging: 1 <br> Effect: Wanneer vernietigd, breng 2 Schade toe aan de kaart die hem elimineerde.</td>
+          <td><strong>Serj</strong> (Soldaat) <br> Kost: 5, Aanval: 3, Verdediging: 5 <br> Effect: Kan een vijandige kaart blokkeren van aanvallen in de volgende beurt.</td>
+      </tr>
+      <tr>
+          <td><strong>Tim</strong> (Soldaat) <br> Kost: 4, Aanval: 4, Verdediging: 3 <br> Effect: Wanneer gespeeld, krijgt een andere geallieerde kaart +1 Aanval tot de volgende beurt.</td>
+          <td><strong>Smith</strong> (Wetenschapper) <br> Kost: 2, Aanval: Geen, Verdediging: 2 <br> Effect: +1 Verdediging voor alle geallieerden.</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="vastzetten-rij-en-kolom">Vastzetten rij en kolom</h4>
+<p>Zet je eerste rij en eerste kolom vast. Dit maakt het gemakkelijker om gegevens overzichtelijk te houden terwijl je door de rest van het document navigeert.</p>
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-sheets_vastzetten1_hu_e55ecb499cea5908.webp" alt="opdracht-02-kaartspel-sheets_vastzetten1" loading="lazy">
+
+
+
+
+<h4 id="afwisselende-kleuren">Afwisselende kleuren</h4>
+<p>Ga naar Opmaak en selecteer Afwisselende kleuren om je tabel overzichtelijker te maken. Hiermee worden rijen automatisch in verschillende kleuren weergegeven, wat het lezen en interpreteren van gegevens eenvoudiger maakt.</p>
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-sheets_kleuren1_hu_7147a6d5a3a38c63.webp" alt="opdracht-02-kaartspel-sheets_kleuren1" loading="lazy">
+
+
+
+
+<h3 id="indienen">Indienen</h3>
+<p>Lever de link in van je Google Sheets.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-sheets_delen1_hu_5b898a7b16d53ca4.webp" alt="opdracht-02-kaartspel-sheets_delen1" loading="lazy">
+
+
+
+</td>
+          <td>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-sheets_delen2_hu_8a97717cc598251f.webp" alt="opdracht-02-kaartspel-sheets_delen2" loading="lazy">
+
+
+
+</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="puntenverdeling">Puntenverdeling</h3>
+<ul>
+<li>Naamgeving, Google Spreadsheet. (02)</li>
+<li>12 Kolommen: Zes voor tekst, zes voor afbeeldingen. (06)</li>
+<li>Correct ingegeven gegevens voor 18 verschillende kaarten/personages. (09)</li>
+<li>Vastzetten rij en kolom, afwisselende kleuren. (04)</li>
+</ul>
+<h2 id="deel-2">Deel 2</h2>
+<p>Nu je gegevens klaarstaan, duik je in het ontwerp van je kaartspel met Adobe InDesign. Je gaat een document opzetten met de juiste specificaties voor deze speelkaarten. Met behulp van lagen, rasters en data merge ga je alle kaartinformatie automatisch in een strak design gieten. Het resultaat wordt een speelklaar kaartspel met een consistente uitstraling.</p>
+<ul>
+<li>Download de spreadsheet als CSV en plaats het bestand in je map <code>Voornaam Kaartspel</code>.</li>
+</ul>
+<h3 id="indesign-document-aanmaken">InDesign-document aanmaken</h3>
+<ul>
+<li><strong>Bestandsnaam</strong>: <code>Voornaam Kaartspel</code>.</li>
+<li><strong>Afmetingen</strong>: 64 x 88 mm.</li>
+<li><strong>Bleed</strong>: 3 mm.</li>
+<li><strong>Marges</strong>: 7 mm (boven, links, rechts), 6 mm (onder).</li>
+<li><strong>Pagina-instelling</strong>: Twee pagina’s onder elkaar.</li>
+<li><strong>Raster</strong>: 5 mm met 10 subdivisies (horizontaal en verticaal). Het raster zal het eenvoudiger maken de tekst- en afbeeldingskaders correct te plaatsen.</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indesign_doc_hu_f820fea6a6daf7df.webp" alt="opdracht-02-kaartspel-indesign_doc" loading="lazy">
+
+
+
+</td>
+          <td>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indesign_grid_hu_f16f200a3d92d144.webp" alt="opdracht-02-kaartspel-indesign_grid" loading="lazy">
+
+
+
+</td>
+      </tr>
+  </tbody>
+</table>
+<p>Maak een laag voor de tekeningen en een laag voor de tekstkaders.</p>
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indesign_new_hu_e2afdb636e7077d7.webp" alt="opdracht-02-kaartspel-indesign_new" loading="lazy">
+
+
+
+
+<h3 id="exporteren-uit-adobe-illustrator">Exporteren uit Adobe Illustrator</h3>
+<p>Open het gekregen Illustrator-bestand.</p>
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-illustrator_open_hu_21d36dcc2b612236.webp" alt="opdracht-02-kaartspel-illustrator_open" loading="lazy">
+
+
+
+
+<p>Gebruik <strong>Export for Screens</strong>:</p>
+<ul>
+<li>Formaat: PDF.</li>
+<li>Inclusief bleed!</li>
+<li>Exporteer de artboards.</li>
+<li>Sla de geëxporteerde bestanden op in de map <strong>Links</strong>.</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-illustrator_export1_hu_8379c9d8626de612.webp" alt="opdracht-02-kaartspel-illustrator_export1" loading="lazy">
+
+
+
+</td>
+          <td>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-illustrator_export_hu_e8668663e85ff1f4.webp" alt="opdracht-02-kaartspel-illustrator_export" loading="lazy">
+
+
+
+</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-finder_links_hu_20b0168f6455f9f0.webp" alt="opdracht-02-kaartspel-finder_links" loading="lazy">
+
+
+
+
+<h3 id="fonts-installeren">Fonts installeren</h3>
+<p>Via Adobe Fonts, zorg dat je bent aangemeld met je Adobe account en druk op de knop Add Family.</p>
+<ul>
+<li><a href="https://fonts.adobe.com/fonts/field-gothic-narrow" target="_blank" rel="noopener noreferrer">Field Gothic Narrow</a>: Voor kosten, aanval, verdediging, kaartbenaming en kaarttype.</li>
+<li><a href="https://fonts.adobe.com/fonts/big-caslon" target="_blank" rel="noopener noreferrer">Big Caslon</a>: Voor effecten.</li>
+</ul>
+<h3 id="indesign-document-ontwerpen">InDesign-document ontwerpen</h3>
+<p><strong>Gegevens samenvoegen</strong>: Importeer het CSV-bestand.</p>
+<p><strong>Afbeeldingskaders</strong>. In totaal zullen er zes afbeeldingskaders nodig zijn. Plaats het referentiepunt voor het transformeren in de linkerbovenhoek.</p>
+
+
+
+ 
+ 
+
+
+
+
+
+
+<div style="width: 30%;">
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indesign_referentiepunt1_hu_38a91b4a8bf0fb6b.webp" alt="opdracht-02-kaartspel-indesign_referentiepunt1" loading="lazy">
+
+
+</div>
+
+
+
+<p>Koppel zodra je een kader tekent meteen de juiste gegevens eraan en zet de voorvertoning aan. Dan weet je direct of je gegevens correct zijn gekoppeld.</p>
+
+
+
+ 
+ 
+
+
+
+
+
+
+<div style="width: 30%;">
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indesign_datamergevoorvertoning1_hu_218895832540a4be.webp" alt="opdracht-02-kaartspel-indesign_datamergevoorvertoning1" loading="lazy">
+
+
+</div>
+
+
+
+<p>De posities en groottes van elk <strong>afbeeldingskader</strong> zijn:</p>
+<ul>
+<li><strong>Illustratie</strong> X: 4,5 mm, Y: 3 mm, W: 55 mm, H: 55 mm</li>
+<li><strong>Voorkant</strong> X: -3 mm, Y: -3 mm, W: 70 mm, H: 94 mm</li>
+<li><strong>Kost</strong> X: 3,5 mm, Y: 3,5 mm, W: 15 mm, H: 13 mm</li>
+<li><strong>Aanval</strong> X: 3,5 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm</li>
+<li><strong>Verdediging</strong> X: 46 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm</li>
+</ul>
+
+
+
+ 
+ 
+
+
+
+
+
+
+<div style="width: 65%;">
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indesign_symbolen_hu_2f74f6a843deebdc.webp" alt="opdracht-02-kaartspel-indesign_symbolen" loading="lazy">
+
+
+</div>
+
+
+
+<p><strong>Tekstkaders</strong>: Plaats alle tekstkaders op de aparte laag en op de juiste posities.</p>
+<p>De posities, groottes, lettertype en tekengrootte van elk <strong>tekstkader</strong> zijn:</p>
+<ul>
+<li><strong>Kaartbenaming</strong> X: 14,5 mm, Y: 54,5 mm, W: 35 mm, H: 8,5 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 18 pt</li>
+<li><strong>Kaarttype</strong> X: 19 mm, Y: 64 mm, W: 26 mm, H: 5 mm, Font: Field Gothic (No.32 Reg XCond), Tekengrootte: 10 pt</li>
+<li><strong>Effect</strong> X: 8,5 mm, Y: 69 mm, W: 47 mm, H: 13 mm, Font: Big Caslon (Medium), Tekengrootte: 6 pt</li>
+<li><strong>Kost</strong> X: 3,5 mm, Y: 3,5 mm, W: 15 mm, H: 13 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 25 pt</li>
+<li><strong>Aanval</strong> X: 3,5 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 25 pt</li>
+<li><strong>Verdediging</strong> X: 46 mm, Y: 56 mm, W: 14,5 mm, H: 12 mm, Font: Field Gothic (No.34 Demi XCond), Tekengrootte: 25 pt</li>
+</ul>
+<p>Gebruik bij tekstkaderopties (text frame options) inzetafstand (inset spacing) voor een nette plaatsing van tekst. Verschuif waar nodig de basislijn (Baseline shift) om de tekst netjes verticaal te centreren.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indesign_inzetafstand1_hu_23ab1f92638b09ca.webp" alt="opdracht-02-kaartspel-indesign_inzetafstand1" loading="lazy">
+
+
+
+</td>
+          <td>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indesign_basislijn1_hu_1e633ec867c67ff0.webp" alt="opdracht-02-kaartspel-indesign_basislijn1" loading="lazy">
+
+
+
+</td>
+      </tr>
+  </tbody>
+</table>
+<p>Controleer via Voorvertoning (Preview) in het Gegevenssamenvoeging (Data Merge) paneel of de gegevens correct worden geplaatst.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indesign_datamergevb1_hu_a89e9214c904b103.webp" alt="opdracht-02-kaartspel-indesign_datamergevb1" loading="lazy">
+
+
+
+</td>
+          <td>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indesign_tekeningen1_hu_7265bab03f45f731.webp" alt="opdracht-02-kaartspel-indesign_tekeningen1" loading="lazy">
+
+
+
+</td>
+      </tr>
+  </tbody>
+</table>
+<p>Zorg ervoor dat de achterkant op pagina twee ook correct ingeladen wordt.</p>
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indesign_acherkant1_hu_7e881f8deb5a0a4b.webp" alt="opdracht-02-kaartspel-indesign_acherkant1" loading="lazy">
+
+
+
+
+<h3 id="samengevoegd-document-maken">Samengevoegd document maken</h3>
+<p>Wanneer je op de knop <strong>Samengevoegd document maken</strong> (<em>Create Merged Document</em>) klikt, verschijnt een venster waarin je kunt kiezen hoe het samengevoegde document wordt gegenereerd. Je kunt instellen of het een enkel bestand met meerdere pagina&rsquo;s wordt of afzonderlijke documenten per record.</p>
+
+
+
+ 
+ 
+
+
+
+
+
+
+<div style="width: 26%;">
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indd_create1_hu_6e46ca6f38d7b6eb.webp" alt="opdracht-02-kaartspel-indd_create1" loading="lazy">
+
+
+</div>
+
+
+
+<p>In dit geval wil je alle gegevens (records) op afzonderlijke pagina&rsquo;s.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indd_create2_hu_f4bb64913d304855.webp" alt="opdracht-02-kaartspel-indd_create2" loading="lazy">
+
+
+
+</td>
+          <td>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/img/data/opdracht-02-kaartspel-indd_create3_hu_953f2052d45b6a4f.webp" alt="opdracht-02-kaartspel-indd_create3" loading="lazy">
+
+
+
+</td>
+      </tr>
+  </tbody>
+</table>
+<p>Sla dit nieuwe bestand op als <code>voornaam kaartspel samengevoegd.indd</code>. Maak hiervan ook een PDF-bestand met dezelfde naamgeving.</p>
+<p>Los eventuele fouten op.</p>
+<h3 id="indienen-1">Indienen</h3>
+<p>Dien één zip-bestand in (met je voornaam en de opdrachtbenaming in de bestandsnaam) dat de volgende onderdelen bevat:</p>
+<ul>
+<li>InDesign-sjabloondocument met gekoppelde gegevens.</li>
+<li>Geëxporteerde CSV-bestand.</li>
+<li>Map met de bijbehorende afbeeldingen (png, pdf, psd).</li>
+<li>InDesign-document met samengevoegde gegevens.</li>
+<li>PDF-bestand met samengevoegde gegevens (in printkwaliteit).</li>
+</ul>
+<p>Geen onnodige bestanden toevoegen die onduidelijkheid scheppen. Zorg ervoor dat alle bestanden correct benoemd en georganiseerd zijn in de zip-map, zodat de koppelingen in InDesign behouden blijven en de bestanden zonder fouten kunnen geopend worden.</p>
+<h3 id="puntenverdeling-1">Puntenverdeling</h3>
+<ul>
+<li><strong>Zip-bestand (02)</strong> Eén zip-bestand met voornaam en opdrachtbenaming (<code>voornaam kaartspel.zip</code>).</li>
+<li><strong>Sjabloon (24)</strong> InDesign-sjabloondocument (<code>voornaam kaartspel.indd</code>) twee pagina&rsquo;s met werkende gekoppelde gegevens, Correct gebruik van lagen, Plaatsing kaders, Twee gevraagde lettertypes, Afwerking.</li>
+<li><strong>CSV (02)</strong> Geëxporteerd CSV-bestand met zes kolommen voor tekst en zes voor afbeeldingen, Correct ingegeven gegevens voor 18 verschillende kaarten/personages.</li>
+<li><strong>Links (02)</strong> Correcte map (<code>Links</code>) met de bijbehorende afbeeldingen (png, pdf, psd).</li>
+<li><strong>Samengevoegd (02)</strong> Samengevoegd InDesign-document (<code>voornaam kaartspel samengevoegd.indd</code>) en PDF-bestand (<code>voornaam kaartspel samengevoegd.pdf</code>).</li>
+<li><strong>Structuur (02)</strong> Alle bestanden correct benoemd en georganiseerd. Geen onnodige bestanden en/of mappen toegevoegd die onduidelijkheid scheppen.</li>
+</ul>
+<h2 id="bronnen">Bronnen</h2>
+<ul>
+<li><a href="https://helpx.adobe.com/be_nl/indesign/using/create-documents.html" target="_blank" rel="noopener noreferrer">Adobe Help Center: Documenten maken</a></li>
+<li><a href="https://helpx.adobe.com/be_nl/indesign/using/data-merge.html" target="_blank" rel="noopener noreferrer">Adobe Help Center: Gegevenssamenvoeging</a></li>
+<li><a href="https://helpx.adobe.com/be_nl/indesign/using/laying-out-frames-pages.html" target="_blank" rel="noopener noreferrer">Adobe Help Center: Kaders en pagina&rsquo;s opmaken</a></li>
+<li><a href="https://helpx.adobe.com/be_nl/indesign/using/transforming-objects.html" target="_blank" rel="noopener noreferrer">Adobe Help Center: Objecten transformeren</a></li>
+<li><a href="https://helpx.adobe.com/be_nl/indesign/using/creating-text-text-frames.html" target="_blank" rel="noopener noreferrer">Adobe Help Center: Tekst en tekstkaders maken</a></li>
+<li><a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-text.html" target="_blank" rel="noopener noreferrer">Adobe Help Center: Tekst opmaken</a></li>
+<li><a href="https://helpx.adobe.com/be_nl/indesign/using/formatting-characters.html" target="_blank" rel="noopener noreferrer">Adobe Help Center: Tekens opmaken</a></li>
+<li><a href="https://assetstore.unity.com/packages/3d/environments/sci-fi/polygon-sci-fi-space-low-poly-3d-art-by-synty-138857" target="_blank" rel="noopener noreferrer">Unity Asset Store: Low Poly 3D Art by Synty</a></li>
+</ul>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/js/main.js"></script>
+
+  </footer>
+</body>
+</html>

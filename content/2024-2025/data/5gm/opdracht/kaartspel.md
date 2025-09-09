@@ -2,6 +2,7 @@
 title = 'Opdracht: Kaartspel'
 date = 2025-01-01T08:00:00-07:00
 draft = false
+aliases = ["/data/opdracht-02-kaartspel/"]
 +++
 
 Je gaat een kaartspel ontwikkelen met **Adobe InDesign** en data merge. Het project bestaat uit twee delen: eerst maak je een **Google Spreadsheet** met alle kaartgegevens, daarna een **InDesign-document** waarin deze gegevens automatisch worden verwerkt. Je leert werken met verschillende bestanden, bestandspaden, nauwkeurige documentinstellingen, lagen, rasters en het effectief gebruik van tekstkaders.
