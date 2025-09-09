@@ -2,6 +2,7 @@
 title = 'Opdracht: Albumcover'
 date = 2025-05-27T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-13-albumcover/"]
 +++
 
 Je ontwerpt een albumcover waarin je jezelf afbeeldt als muzikale artiest. Laat je inspireren door bestaande albumcovers en speel met beeldtaal, stijl en sfeer. De albumcover is vierkant en digitaal ontworpen in Photoshop. Je gebruikt eigen foto's en bewerkt die tot een samenhangend, grafisch ontwerp.

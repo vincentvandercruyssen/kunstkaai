@@ -2,6 +2,7 @@
 title = 'Opdracht: Strippagina'
 date = 2025-03-31T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-12-strippagina/"]
 +++
 
 Je ontwerpt een mini-strip van 1 pagina in retrostijl. Eerst werk je een storyboard uit op papier. Daarna maak je de digitale versie in Photoshop. Je gebruikt foto's (zelfgemaakt of gevonden) en bewerkt ze volgens de stijl van de vorige oefening.

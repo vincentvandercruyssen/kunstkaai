@@ -2,6 +2,7 @@
 title = 'Opdracht: Masker'
 date = 2024-11-26T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-06-masker/"]
 +++
 
 In deze opdracht gaan we een vrije illustratie creëren op een masker, geïnspireerd door James Ensor. Je leert technieken om expressieve illustraties te maken en combineert creativiteit met vaardigheden in Adobe Illustrator. Het maskerontwerp wordt gebaseerd op een afbeelding die je via Pinterest vindt en dit dient als basis voor je eigen unieke stijl.

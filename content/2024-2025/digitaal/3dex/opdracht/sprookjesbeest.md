@@ -2,6 +2,7 @@
 title = 'Opdracht: Sprookjesbeest'
 date = 2025-03-10T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-10-sprookjesbeest/"]
 +++
 
 Een sprookjesbeest is een fantasierijk wezen, opgebouwd uit verschillende dieren. Door meerdere afbeeldingen te combineren en te bewerken, creëer je een uniek en magisch effect.

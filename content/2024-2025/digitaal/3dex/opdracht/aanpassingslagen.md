@@ -2,6 +2,7 @@
 title = 'Opdracht: Aanpassingslagen'
 date = 2025-01-28T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-08-aanpassingslagen/"]
 +++
 
 Aanpassingslagen in Photoshop stellen je in staat om de kleuren, contrast, helderheid en nog veel meer aan te passen. Je kunt deze aanpassingen zolang je het Photoshop document bewaard achteraf veranderen zonder dat dit ten koste gaat van de kwaliteit. Aanpassingslagen maken het makkelijker en effectiever om je foto’s te verbeteren en met verschillende effecten te experimenteren.

@@ -2,6 +2,7 @@
 title = 'Opdracht: City Skyline'
 date = 2024-09-16T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-03-cityskyline/"]
 +++
 
 In deze les van Adobe Illustrator gaan we een skyline creëren. Dit is een geweldige oefening om vertrouwd te raken met de pentool en basisvormen in Illustrator terwijl je een interessant en creatief stadsbeeld ontwerpt.

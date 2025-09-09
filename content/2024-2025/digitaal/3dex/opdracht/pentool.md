@@ -2,6 +2,7 @@
 title = 'Opdracht: Pentool'
 date = 2024-08-30T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-02-pentool/"]
 +++
 
 Ontdek Adobe Illustrator in dit digitale atelier. We focussen met deze opdracht op de pentool, een essentiële tool voor nauwkeurige en professionele tekeningen. Eigenlijk gaat deze tool telkens terugkomen...

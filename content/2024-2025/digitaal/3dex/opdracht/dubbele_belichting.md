@@ -2,6 +2,7 @@
 title = 'Opdracht: Dubbele belichting'
 date = 2025-02-17T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-09-dubbele-belichting/"]
 +++
 
 ## Aanpassingslagen en overvloeien

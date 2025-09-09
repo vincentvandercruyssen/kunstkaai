@@ -2,6 +2,7 @@
 title = 'Opdracht: Fruitschaal'
 date = 2024-09-30T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-04-fruitschaal/"]
 +++
 
 In deze opdracht voor Adobe Illustrator gaan we een stilleven maken met een fruitschaal als onderwerp. Dit is een perfecte oefening om je kennis van basisvormen en kleuren verder te ontwikkelen.

@@ -2,6 +2,7 @@
 title = 'Opdracht: Popart'
 date = 2025-03-24T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-11-popart/"]
 +++
 
 Popart is een kunststroming met vaak felle kleuren, sterke contrasten en grafische effecten. Je gaat een bestaand portret omzetten naar een popartstijl door filters en effecten toe te passen.

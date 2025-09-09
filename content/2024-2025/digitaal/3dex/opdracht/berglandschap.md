@@ -2,6 +2,7 @@
 title = 'Opdracht: Berglandschap'
 date = 2024-11-12T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-05-berglandschap/"]
 +++
 
 In deze opdracht voor Adobe Illustrator gaan we een berglandschap creëren. Dit is een ideale oefening om je vaardigheden in laagbeheer, basisvormen, en kleurgebruik verder te ontwikkelen.

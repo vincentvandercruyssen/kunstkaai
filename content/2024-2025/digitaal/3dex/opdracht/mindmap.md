@@ -2,6 +2,7 @@
 title = 'Opdracht: Mindmap'
 date = 2024-08-30T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-01-mindmap/"]
 +++
 
 In deze eerste les van Adobe Illustrator gaan we een creatieve oefening doen waarbij je een mindmap maakt over jezelf. Dit is een geweldige manier om vertrouwd te raken met de basis van het programma terwijl je een persoonlijk project maakt.

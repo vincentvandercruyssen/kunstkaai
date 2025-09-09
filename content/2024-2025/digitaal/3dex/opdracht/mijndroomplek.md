@@ -2,6 +2,7 @@
 title = 'Opdracht: Mijn Droomplek'
 date = 2025-01-07T08:00:00-07:00
 draft = false
+aliases = ["/digitaal/opdracht-07-mijndroomplek/"]
 +++
 
 In deze Photoshop-opdracht creëer je een afbeelding die je persoonlijke droom- of fantasieplek illustreert. Maak eerst een zelfportret (dat kan passen in een fantasieomgeving) en zoek verschillende achtergrondafbeeldingen om je unieke wereld vorm te geven. Gebruik je Photoshop-vaardigheden om jezelf in deze omgeving te brengen, waarbij je let op grootte, kleur en licht. Deze opdracht is een kans om zowel je creativiteit als je technische vaardigheden in Photoshop te tonen.
