@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Opdracht: Portfolio | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+<link rel="icon" type="image/svg" href="/favicon.svg">
+
+
+</head>
+<body>
+  <select data-theme-picker name="themepicker" id="theme">
+    <option value="🖥️">🖥️</option>
+    <option value="☀️">☀️</option>
+    <option value="🌙">🌙</option>
+  </select>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Webontwikkeling
+<br>
+    Opdracht: Portfolio
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#opgave">1. Opgave</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#vakken">1.1 Vakken</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#ateliers">1.2 Ateliers</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#structuur">2. Structuur</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#mappenstructuur">2.1 Mappenstructuur</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#html-opbouw">3. HTML-opbouw</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#css-opbouw">4. CSS-opbouw</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#inhoud-van-de-paginas">5. Inhoud van de pagina’s</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#afbeeldingen">6. Afbeeldingen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#indienen">7. Indienen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#puntenverdeling">8. Puntenverdeling</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#veelvoorkomende-fouten">9. Veelvoorkomende fouten</a>
+
+      
+      
+    
+
+    
+    </li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Webontwikkeling
+ <br> Opdracht: Portfolio</h1>
+
+<h2 id="opgave">Opgave</h2>
+<p>Je bouwt een persoonlijke portfolio van dit schooljaar - en als je wil, ook met werk uit vorige jaren. Dit wordt jouw plek om te laten zien waar je trots op bent. De site maak je helemaal zelf, met HTML en CSS.</p>
+<p>Je verzamelt werk uit <strong>vier praktijkvakken</strong> en minstens <strong>één atelier</strong> naar keuze. Jij bepaalt hoe je dat in beeld brengt. Voor de navigatie gebruik je de icoontjes die je maakte bij het vak &lsquo;Vectorieel tekenen&rsquo;.</p>
+<h3 id="vakken">Vakken</h3>
+<ul>
+<li>Beeldverwerking</li>
+<li>Typografische vormgeving</li>
+<li>Vectorieel tekenen</li>
+<li>Webontwikkeling</li>
+</ul>
+<h3 id="ateliers">Ateliers</h3>
+<ul>
+<li>Grafisch atelier</li>
+<li>Manueel atelier</li>
+<li>Audiovisueel atelier</li>
+<li>Printatelier</li>
+</ul>
+<h2 id="structuur">Structuur</h2>
+<p>Je portfolio bestaat uit <strong>minstens 5 pagina’s</strong>:</p>
+<ul>
+<li><code>index.html</code>: je startpagina, met overzicht</li>
+<li><code>about.html</code>: een korte bio over jezelf</li>
+<li>vier vakpagina’s + minimaal één atelierpagina</li>
+</ul>
+<h3 id="mappenstructuur">Mappenstructuur</h3>
+<p>Je houdt alles netjes en overzichtelijk in één map:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>portfolio/
+</span></span><span style="display:flex;"><span>├── index.html
+</span></span><span style="display:flex;"><span>├── about.html
+</span></span><span style="display:flex;"><span>├── beeldverwerking.html
+</span></span><span style="display:flex;"><span>├── typografie.html
+</span></span><span style="display:flex;"><span>├── ...
+</span></span><span style="display:flex;"><span>├── style.css
+</span></span><span style="display:flex;"><span>└── images/...
+</span></span></code></pre></div><h2 id="html-opbouw">HTML-opbouw</h2>
+<p>Elke pagina gebruikt dezelfde vaste structuur in <code>&lt;body&gt;</code>. Zo oogt je site samenhangend:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">nav</span>&gt;...&lt;/<span style="color:#f92672">nav</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;...&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">main</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">section</span>&gt;...&lt;/<span style="color:#f92672">section</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">main</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">footer</span>&gt;
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">footer</span>&gt;
+</span></span></code></pre></div><ul>
+<li>Pas telkens de <code>&lt;title&gt;</code> aan in <code>&lt;head&gt;</code></li>
+<li>Je <strong>navigatie (<code>&lt;nav&gt;</code>) staat altijd in de <code>&lt;header&gt;</code></strong></li>
+<li>Elke pagina heeft <strong>dezelfde header en navigatiebalk</strong></li>
+<li>In de <strong><code>&lt;footer&gt;</code> zet je minimaal je eigen naam</strong></li>
+</ul>
+<h2 id="css-opbouw">CSS-opbouw</h2>
+<ul>
+<li>Je werkt met <strong>één enkel CSS-bestand</strong>: <code>style.css</code></li>
+<li>Voor de layout gebruik je <strong>Flexbox of Grid</strong></li>
+<li>Kies duidelijke klassennamen en juiste selectors (<code>body</code>, <code>nav</code>, <code>.vak</code>, <code>#id</code>, &hellip;)</li>
+<li>Werk je pagina’s mooi af met eigen kleuren, typografie en voldoende witruimte (marges en paddings)</li>
+</ul>
+<h2 id="inhoud-van-de-paginas">Inhoud van de pagina’s</h2>
+<h3 id="indexhtml"><code>index.html</code></h3>
+<ul>
+<li>Een raster van thumbnails of pictogrammen</li>
+<li>Elke afbeelding linkt naar een vak- of atelierpagina</li>
+<li>Zet er een titel of korte beschrijving bij</li>
+</ul>
+<h3 id="abouthtml"><code>about.html</code></h3>
+<ul>
+<li>Je voornaam en achternaam</li>
+<li>Eén of twee korte paragrafen over wie je bent</li>
+<li>Voeg een foto of zelfportret toe</li>
+</ul>
+<h3 id="vakpaginas-bijv-typografiehtml">Vakpagina’s (bijv. <code>typografie.html</code>)</h3>
+<ul>
+<li>Toon <strong>minstens drie werken</strong> per vak</li>
+<li>Per werk: minstens één afbeelding, een titel en een korte uitleg</li>
+<li>Gebruik een raster- of kolomlayout voor de opbouw</li>
+</ul>
+<h2 id="afbeeldingen">Afbeeldingen</h2>
+<ul>
+<li>Gebruik <code>.jpg</code> of <code>.webp</code> voor rasterafbeeldingen</li>
+<li>Max. breedte: <strong>1500 px</strong></li>
+<li>Max. bestandsgrootte: <strong>300 KB</strong></li>
+<li>Vectorwerk? Exporteer als <strong><code>.svg</code></strong></li>
+<li>Webpagina’s? Voeg een <strong>screenshot</strong> toe met link of gebruik een <code>&lt;iframe&gt;</code></li>
+</ul>
+<p>Let op kwaliteit en bestandsgrootte. Slordige beelden doen afbreuk aan je werk.</p>
+<h2 id="indienen">Indienen</h2>
+<ul>
+<li>Geef je map de naam: <code>voornaam portfolio</code></li>
+<li>Zorg dat de map alles bevat: HTML-bestanden, je CSS, alle afbeeldingen</li>
+<li>Upload naar je <strong>OneDrive-map <code>Webontwikkeling</code></strong></li>
+<li>Bezorg de link via <strong>Google Classroom</strong></li>
+</ul>
+<h2 id="puntenverdeling">Puntenverdeling</h2>
+<ul>
+<li><strong>Structuur (05)</strong> Correcte mappenstructuur en bestandsnamen: <code>voornaam portfolio</code>, <code>index.html</code>, <code>about.html</code>, vakpagina’s (x5), <code>style.css</code>, map <code>images</code>.</li>
+<li><strong>Optimalisatie afbeeldingen (05)</strong> Correcte bestandsformaten, maximale grootte gerespecteerd, duidelijke en verzorgde beelden.</li>
+<li><strong>HTML (06)</strong> Correct gebruik van HTML-elementen en kenmerken: <code>&lt;head&gt;</code> met <code>&lt;title&gt;</code> en <code>&lt;link&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>h</code>-elementen, <code>&lt;p&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;a&gt;</code> en <code>&lt;footer&gt;</code> op alle portfolio-pagina’s (minstens 7).</li>
+<li><strong>Navigatie (07)</strong> Dezelfde navigatiebalk komt op de minstens 7 pagina&rsquo;s exact terug, visueel herkenbaar, correcte structuur.</li>
+<li><strong>Inhoud (07)</strong> Introductie op hoofdpagina, duidelijke about-pagina, vier vakpagina’s met elk minstens drie werken, één atelierpagina met werk, telkens beschrijvingen en afbeeldingen per werk.</li>
+<li><strong>CSS Basis (05)</strong> Eén centraal stylesheet (<code>style.css</code>), correcte koppeling, consistente styling van <code>body</code>, kleuren, typografie, witruimte.</li>
+<li><strong>CSS Lay-out (05)</strong> Gebruik van duidelijke selectors en klassen, de nodige eigenschappen voor visuele eenheid tussen pagina’s, overzichtelijke lay-out.</li>
+<li><strong>Presentatie en vormgeving (05)</strong> Algemeen verzorgde en samenhangende vormgeving, leesbaarheid, structuur, kleuren- en typografiekeuzes passen bij portfolio.</li>
+</ul>
+<h2 id="veelvoorkomende-fouten">Veelvoorkomende fouten</h2>
+<ul>
+<li>Geen correcte link naar je CSS-bestand</li>
+<li>Warboel aan bestandsnamen of mappen</li>
+<li>Afbeeldingen te groot of vervormd</li>
+<li>Vakpagina’s niet volledig of slordig</li>
+<li>Navigatie die niet werkt of verwarrend is</li>
+</ul>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/js/main.js"></script>
+
+  </footer>
+</body>
+</html>

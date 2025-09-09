@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Opdracht: Recept (HTML) | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+<link rel="icon" type="image/svg" href="/favicon.svg">
+
+
+</head>
+<body>
+  <select data-theme-picker name="themepicker" id="theme">
+    <option value="🖥️">🖥️</option>
+    <option value="☀️">☀️</option>
+    <option value="🌙">🌙</option>
+  </select>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Webontwikkeling
+<br>
+    Opdracht: Recept (HTML)
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#opgave">1. Opgave</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#zoek-een-recept">1.1 Zoek een recept</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#organiseer-je-project">1.2 Organiseer je project</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#bouw-de-basis-html-structuur">1.3 Bouw de basis HTML-structuur</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#structuur-van-de-pagina">1.4 Structuur van de pagina</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#inhoud-toevoegen-in-onderdelen">1.5 Inhoud toevoegen in onderdelen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#controleer-je-document">1.6 Controleer je document</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#puntenverdeling">2. Puntenverdeling</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#veelvoorkomende-fouten">3. Veelvoorkomende fouten</a>
+
+      
+      
+    
+
+    
+    </li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Webontwikkeling
+ <br> Opdracht: Recept (HTML)</h1>
+
+<h2 id="opgave">Opgave</h2>
+<p>In deze opdracht leer je hoe je een HTML-pagina maakt op basis van een online gevonden recept. Het doel is om de HTML-structuur correct toe te passen en informatie op een overzichtelijke manier te presenteren.</p>
+<h3 id="zoek-een-recept">Zoek een recept</h3>
+<ul>
+<li><strong>Vind een recept</strong>: Gebruik Google of een andere bron om een recept te vinden (bijvoorbeeld een gerecht, een gebak, iets dat je graag eet).</li>
+<li><strong>Noteer de bron</strong>: Zorg ervoor dat je de link van de website waar je het recept hebt gevonden bewaart. Je zult deze link later toevoegen aan je HTML-document als bronvermelding.</li>
+</ul>
+<h3 id="organiseer-je-project">Organiseer je project</h3>
+<ul>
+<li><strong>Maak een projectmap aan</strong>: Creëer een nieuwe map met je voornaam en de naam van het gerecht (bijvoorbeeld <code>voornaam_gerecht</code>).</li>
+<li><strong>Creëer het HTML-bestand</strong>: Maak een bestand aan genaamd <code>index.html</code> in de hoofdmap.</li>
+<li><strong>Maak submappen</strong>: Binnen deze nieuwe map maak je een map aan voor je afbeeldingen (bijvoorbeeld <code>images</code>).</li>
+</ul>
+<h3 id="bouw-de-basis-html-structuur">Bouw de basis HTML-structuur</h3>
+<ul>
+<li><strong>Gebruik Emmet</strong>: Open <code>index.html</code> in je Visual Studio Code en gebruik de Emmet-shortcut <code>!</code> (het uitroepteken) om de basisstructuur van een HTML-pagina te genereren.</li>
+<li><strong>Pas het <code>title</code>-element aan</strong>: In het <code>&lt;title&gt;</code>-element in het <code>&lt;head&gt;</code>-element, beschrijf je de naam van het gerecht.</li>
+</ul>
+<h3 id="structuur-van-de-pagina">Structuur van de pagina</h3>
+<ul>
+<li><strong>Voeg een <code>&lt;header&gt;</code> toe</strong>: Binnen de <code>&lt;body&gt;</code>, voeg je een <code>&lt;header&gt;</code>-element toe met een <code>&lt;h1&gt;</code>-element dat de naam van het gerecht bevat.</li>
+<li><strong>Bronvermelding</strong>: Voeg onderaan de <code>header</code>, onder het <code>&lt;h1&gt;</code>-element, een paragraaf toe waarin je de bron vermeldt. Verwijder alles achter .com, .org, .be of dergelijk. Bijvoorbeeld:</li>
+</ul>
+<pre><code>&lt;p&gt;Bron: &lt;a href=&#34;https://voorbeeldsite.com&#34;&gt;voorbeeldsite.com&lt;/a&gt;&lt;/p&gt;
+
+</code></pre>
+<ul>
+<li><strong>Voeg een <code>&lt;main&gt;</code> toe</strong>: Na het <code>&lt;header&gt;</code>-element, voeg je een <code>&lt;main&gt;</code>-element toe. Hierin komt de hoofdinhoud van de pagina.</li>
+</ul>
+<h3 id="inhoud-toevoegen-in-onderdelen">Inhoud toevoegen in onderdelen</h3>
+<p>Binnen het <code>&lt;main&gt;</code>-element maak je drie <code>&lt;section&gt;</code>-elementen aan:</p>
+<p><strong>1. Beschrijving</strong></p>
+<ul>
+<li>Voeg een <code>&lt;h2&gt;</code>-element toe met de titel &ldquo;Beschrijving&rdquo;.</li>
+<li>Schrijf, of kopieer en plak, een paragraaf (<code>&lt;p&gt;</code>) waarin je het gerecht beschrijft.</li>
+<li>Voeg een afbeelding van het gerecht toe met het <code>&lt;img&gt;</code>-element. Zorg dat de afbeelding in de <code>images</code>-map staat en gebruik het <code>src</code>-kenmerk om ernaar te verwijzen. Voeg ook een <code>alt</code>-kenmerk toe met een beschrijving van de afbeelding. Verklein of vergroot de afbeelding met het <code>width</code>-kenmerk tot <code>300</code>.</li>
+</ul>
+<p><strong>2. Ingrediënten</strong></p>
+<ul>
+<li>Voeg een <code>&lt;h2&gt;</code>-element toe met de titel &ldquo;Ingrediënten&rdquo;.</li>
+<li>Maak een ongeordende lijst (<code>&lt;ul&gt;</code>) met <code>&lt;li&gt;</code>-elementen voor elk ingrediënt.</li>
+</ul>
+<p><strong>3. Instructies</strong></p>
+<ul>
+<li>Voeg een <code>&lt;h2&gt;</code>-element toe met de titel &ldquo;Instructies&rdquo;.</li>
+<li>Maak een geordende lijst (<code>&lt;ol&gt;</code>) met <code>&lt;li&gt;</code>-elementen voor elke stap in het recept.</li>
+</ul>
+<h3 id="controleer-je-document">Controleer je document</h3>
+<ul>
+<li><strong>Controleer de structuur</strong>: Zorg dat alle HTML-elementen correct zijn genest en afgesloten.</li>
+<li><strong>Afbeeldingen</strong>: Controleer dat de afbeeldingen correct worden weergegeven en dat het <code>src</code>-kenmerk naar de juiste map verwijst.</li>
+<li><strong>Kenmerken</strong>: Zorg dat alle noodzakelijke kenmerken zijn toegevoegd, zoals <code>alt</code> en <code>width</code> bij afbeeldingen, <code>href</code> bij het <code>&lt;a&gt;</code>-element.</li>
+</ul>
+<h2 id="puntenverdeling">Puntenverdeling</h2>
+<ul>
+<li><strong>Structuur (03)</strong> <code>voornaam gerecht.zip</code> met daarin <code>index.html</code> en map met afbeeldingen.</li>
+<li><strong>Elementen document (04)</strong> <code>html</code>, <code>head</code>, aangepaste <code>title</code>, <code>body</code></li>
+<li><strong>Elementen inhoudsverdeling (05)</strong> <code>header</code>, <code>main</code>, <code>section</code></li>
+<li><strong>Elementen inhoudsstroom (08)</strong> <code>h1</code>, <code>h2</code>, <code>p</code>, <code>a</code>, <code>img</code>, <code>ul</code> met <code>li</code>, <code>ol</code> met <code>li</code></li>
+<li><strong>Kenmerken (04)</strong> <code>src</code>, <code>alt</code>, <code>width</code>, <code>href</code></li>
+</ul>
+<h2 id="veelvoorkomende-fouten">Veelvoorkomende fouten</h2>
+<ol>
+<li>Geen aparte map voor afbeeldingen.</li>
+<li>HTML-elementen die niet correct zijn afgesloten of verkeerd zijn genest.</li>
+<li>Het <code>&lt;title&gt;</code>-element is niet aangepast.</li>
+<li>Het <code>&lt;body&gt;</code>-element staat op de verkeerde plek of is verkeerd genest.</li>
+<li>Lange teksten geplaatst in <code>&lt;h1&gt;</code> of <code>&lt;h2&gt;</code> in plaats van in <code>&lt;p&gt;</code>.</li>
+<li>Inhoud buiten de <code>&lt;section&gt;</code>-elementen geplaatst.</li>
+<li>Ontbrekend of leeg <code>alt</code>-kenmerk bij het <code>&lt;img&gt;</code>-element.</li>
+<li>Het <code>src</code>-kenmerk van de afbeelding verwijst niet naar een lokale afbeelding.</li>
+</ol>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/js/main.js"></script>
+
+  </footer>
+</body>
+</html>
