@@ -5,8 +5,19 @@ theme = 'kunstkaai'
 
 disableKinds = ["RSS", "taxonomy", "term"]
 
+[params.sectionNames]
+  audiovisueel_atelier = "Audiovisueel atelier"
+  data = "Datamanagement"
+  digitaal = "Digitaal atelier"
+  grafisch_atelier = "Grafisch atelier"
+  typo = "Typografische Vormgeving"
+  web = "Webontwikkeling"
+  weborientatie = "Weboriëntatie"
+  doelen = "Doelen GO! Navigator"
+
 [params]
-  sectionNames = { web = "Webontwikkeling", typo = "Typografische Vormgeving", digitaal = "Digitaal atelier", data = "Datamanagement", weborientatie ="Weboriëntatie", doelen = "Doelen GO! Navigator"}
+  dateFormat = "2006-01-02"
+  dateFormatISO = "2006-01-02"
 
 [imaging]
   quality = 90

@@ -32,48 +32,93 @@
   h4 {
     font-size: 1.2rem;
   }
+
+  time.pill {
+    opacity: 0.5;
+    font-size: 0.9rem;
+  }
 </style>
 
-<div class="grid-container">
-  {{ range $folder := (where .Site.Sections "Section" "!=" "") }}
-  <div class="folder">
-    <h3>{{ partial "sectionName.html" $folder }}</h3>
+{{/* Top-level sections = jaren (nieuwste eerst) */}}
+{{ range .Site.Sections.ByTitle.Reverse }}
+  <section class="year">
+    <h2>{{ .Title | default .Section }}</h2>
 
-    <!-- Direct List for 'doelen' Section -->
-    {{ if eq $folder.Section "doelen" }}
-    <ul>
-      {{ range sort $folder.Pages.ByDate "Date" "desc" }}
-      <li><a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a></li>
+    {{/* alle pagina’s onder dit jaar, zonder op sections te vertrouwen */}}
+    {{ $yearPages := .RegularPagesRecursive }}
+    {{ $yearSegs := split (trim .RelPermalink "/") "/" }}
+    {{ $year := index $yearSegs 0 }}
+
+    {{/* unieke vakkeys (2e URL-segment), enkel vakken die je benoemt in params.sectionNames */}}
+    {{ $vakKeys := slice }}
+    {{ range $yearPages }}
+      {{ $s := split (trim .RelPermalink "/") "/" }}
+      {{ if ge (len $s) 2 }}
+        {{ $vak := index $s 1 }}
+        {{ if and (index $.Site.Params.sectionNames $vak) (not (in $vakKeys $vak)) }}
+          {{ $vakKeys = $vakKeys | append $vak }}
+        {{ end }}
       {{ end }}
-    </ul>
-
-    <!-- Cursus and Opdracht Sections for other folders -->
-    {{ else }}
-    <div class="cursus">
-      <h4>Cursusmateriaal</h4>
-      <ul>
-        {{ range sort $folder.Pages.ByDate "Date" "desc" }}
-        {{ if (hasPrefix .File.BaseFileName "cursus") }}
-        <li><a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a></li>
-        {{ end }}
-        {{ end }}
-      </ul>
-    </div>
-
-    <div class="opdracht">
-      <h4>Opdrachten</h4>
-      <ul>
-        {{ range sort $folder.Pages.ByDate "Date" "desc" }}
-        {{ if (hasPrefix .File.BaseFileName "opdracht") }}
-        <li><a href="{{ .Permalink }}" target="_blank">{{ .Title }}</a></li>
-        {{ end }}
-        {{ end }}
-      </ul>
-    </div>
     {{ end }}
+    {{ $vakKeys = sort $vakKeys }}
 
-  </div>
-  {{ end }}
-</div>
+    <div class="grid-container">
+      {{ range $vakKeys }}
+        {{ $vak := . }}
+        <div class="folder">
+          <h3>{{ index $.Site.Params.sectionNames $vak }}</h3>
 
+          {{/* ---------- CURSUS op vakniveau: /jaar/vak/cursus/... ---------- */}}
+          <div class="cursus">
+            <h4>Cursusmateriaal</h4>
+            <ul>
+              {{ $cursusPrefix := printf "/%s/%s/cursus/" $year $vak }}
+              {{ range sort $yearPages "Date" "desc" }}
+                {{ if in .RelPermalink $cursusPrefix }}
+                  <li>
+                    <a href="{{ .Permalink }}" target="_blank">{{ .Title | default .File.BaseFileName }}</a>
+                  </li>
+                {{ end }}
+              {{ end }}
+            </ul>
+          </div>
+
+          {{/* ---------- OPDRACHTEN per KLAS: /jaar/vak/<klas>/opdracht/... ---------- */}}
+          {{/* eerst unieke klassen verzamelen */}}
+          {{ $klassen := slice }}
+          {{ range $yearPages }}
+            {{ if in .RelPermalink "/opdracht/" }}
+              {{ $p := split (trim .RelPermalink "/") "/" }}
+              {{ if and (ge (len $p) 4) (eq (index $p 0) $year) (eq (index $p 1) $vak) }}
+                {{ $klass := index $p 2 }}
+                {{ if not (in $klassen $klass) }}{{ $klassen = $klassen | append $klass }}{{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+          {{ $klassen = sort $klassen }}
+
+          {{ range $klassen }}
+            {{ $klass := . }}
+            <div class="opdracht">
+              <h4>Opdrachten ({{ upper $klass }})</h4>
+              <ul>
+                {{ $klassPrefix := printf "/%s/%s/%s/" $year $vak $klass }}
+                {{ range sort $yearPages "Date" "desc" }}
+                  {{ if and (in .RelPermalink $klassPrefix) (in .RelPermalink "/opdracht/") }}
+                    <li>
+                      <a href="{{ .Permalink }}" target="_blank">
+                        {{ .Title | default .File.BaseFileName }}
+                      </a> <br>
+                      <time datetime="{{ .Date | time.Format $.Site.Params.dateFormatISO }}" class="pill">{{ .Date | time.Format $.Site.Params.dateFormat }}</time>
+                    </li>
+                  {{ end }}
+                {{ end }}
+              </ul>
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
 {{ end }}

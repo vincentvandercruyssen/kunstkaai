@@ -50,7 +50,7 @@ Je vertelt: hoe vertaalde je het ontwerp van je buur naar een digitale versie? W
 
 ## Indienen
 
-- Vakmap **Typografische vormgeving**, via OneDrive-link.
+- Vakmap **Typografische vormgeving**, via OneDrive-link toegevoegd aan de opdracht in **Google Classroom**.
 
 In je vakmap zit:
 

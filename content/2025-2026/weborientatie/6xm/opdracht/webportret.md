@@ -4,7 +4,19 @@ date = 2025-09-03T00:00:00Z
 draft = false
 +++
 
+Om het jaar op te starten maak je een portret van een klasgenoot. Zo leer je elkaar beter kennen én werk je tegelijk aan je webskills.
+
 {{< pinboard url="https://www.pinterest.com/vincentvandercruyssen/webportret/" >}}
+
+## OneDrive-map aanmaken
+
+- Maak in **OneDrive** een map aan voor de klasgroep en het vak **Weboriëntatie**.  
+- Kopieer de link van deze map, zodat je die kunt indienen in **Google Classroom**.  
+
+### Projectmap maken
+
+- Open de map **Weboriëntatie** in OneDrive.  
+- Maak een nieuwe map met de naam: **VoornaamA_Webportret**. 
 
 ## Opdrachtomschrijving
 
@@ -17,7 +29,7 @@ Zo leer je elkaar beter kennen én toon je je webskills.
 - Zet de **naam van je teamgenoot groot en duidelijk op de homepage**.
 - Gebruik tekst, kleur en typografie om het verhaal van je klasgenoot vorm te geven.
 
-## Technische uitdaging
+### Technische uitdaging
 
 - Gebruik correcte HTML: titels, paragrafen, lijstjes, links en eventueel afbeeldingen.
 - Voorzie een nette structuur met `<header>`, `<main>`, `<section>` en `<footer>`.
@@ -41,8 +53,7 @@ Je stelt dus niet jezelf voor, maar je teamgenoot.
 
 ## Indienen
 
-- Dien alle bestanden in via Google Classroom in een **zip-map**.
-- Gebruik deze naam: **VoornaamINITIALENACHTERNAAM_webportret.zip**.
+- Vakmap **Weboriëntatie**, via OneDrive-link toegevoegd aan de opdracht in **Google Classroom**.
 
 ## Puntenverdeling
 
