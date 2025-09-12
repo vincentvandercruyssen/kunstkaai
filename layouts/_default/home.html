@@ -9,21 +9,21 @@
     margin: 0;
     padding: 1rem;
   }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  
+  .opdracht, .cursus {
+    margin-bottom: 1.5rem;
   }
 
-  .folder {
-    max-height: 70vh;
-    overflow-y: scroll;
-    mask-image: linear-gradient(180deg, black 95%, transparent);
+  .kolommen {
+      columns: 4;
+  }
+
+  .kolommen div {
+    break-inside: avoid;
   }
 
   h3 {
     overflow: hidden;
-    max-width: 20ch;
     font-size: 1.5rem;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -63,7 +63,7 @@
     {{ end }}
     {{ $vakKeys = sort $vakKeys }}
 
-    <div class="grid-container">
+    <div class="vak-container">
       {{ range $vakKeys }}
         {{ $vak := . }}
         <div class="folder">
@@ -72,16 +72,19 @@
           {{/* ---------- CURSUS op vakniveau: /jaar/vak/cursus/... ---------- */}}
           <div class="cursus">
             <h4>Cursusmateriaal</h4>
-            <ul>
+            <div class="kolommen">
               {{ $cursusPrefix := printf "/%s/%s/cursus/" $year $vak }}
               {{ range sort $yearPages "Date" "desc" }}
                 {{ if in .RelPermalink $cursusPrefix }}
-                  <li>
-                    <a href="{{ .Permalink }}" target="_blank">{{ .Title | default .File.BaseFileName }}</a>
-                  </li>
+                  <div>
+                    <a href="{{ .Permalink }}" target="_blank">{{ .Title | default .File.BaseFileName }}</a> <br>
+                      <time datetime="{{ .Date | time.Format $.Site.Params.dateFormatISO }}" class="pill">
+                        {{ .Date | time.Format $.Site.Params.dateFormat }}
+                      </time>
+                  </div>
                 {{ end }}
               {{ end }}
-            </ul>
+            </div>
           </div>
 
           {{/* ---------- OPDRACHTEN per KLAS: /jaar/vak/<klas>/opdracht/... ---------- */}}
@@ -102,21 +105,21 @@
             {{ $klas := . }}
             <div class="opdracht">
               <h4>Opdrachten ({{ upper $klas }})</h4>
-              <ul>
+              <div class="kolommen">
                 {{ $klasPrefix := printf "/%s/%s/%s/" $year $vak $klas }}
                 {{ range sort $yearPages "Date" "desc" }}
                   {{ if and (in .RelPermalink $klasPrefix) (in .RelPermalink "/opdracht/") }}
-                    <li>
+                    <div>
                       <a href="{{ .Permalink }}" target="_blank">
                         {{ .Title | default .File.BaseFileName }}
                       </a> <br>
                       <time datetime="{{ .Date | time.Format $.Site.Params.dateFormatISO }}" class="pill">
                         {{ .Date | time.Format $.Site.Params.dateFormat }}
                       </time>
-                    </li>
+                    </div>
                   {{ end }}
                 {{ end }}
-              </ul>
+              </div>
             </div>
           {{ end }}
         </div>
