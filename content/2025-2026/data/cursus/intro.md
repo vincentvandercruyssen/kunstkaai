@@ -1,6 +1,6 @@
 +++
 title = 'Cursus: Introductie'
-date = 2025-09-06T00:00:00Z
+date = 2025-09-01T00:00:00Z
 draft = false
 +++
 

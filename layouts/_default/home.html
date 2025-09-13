@@ -1,118 +1,119 @@
 {{ define "main" }}
-<style>
-  header {
-    display: none;
-  }
+  <style>
+    header {
+      display: none;
+    }
 
-  main {
-    grid-column: 1 / 3;
-    margin: 0;
-    padding: 1rem;
-  }
-  
-  .opdracht, .cursus {
-    margin-bottom: 1.5rem;
-  }
+    main {
+      grid-column: 1 / 3;
+      margin: 0;
+      padding: 1rem;
+    }
 
-  .kolommen {
+    h2 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      overflow: hidden;
+      font-size: 1.5rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    .kolommen {
+      margin-bottom: 1.5rem;
       columns: 4;
-  }
+    }
 
-  .kolommen div {
-    break-inside: avoid;
-  }
+    .kolommen div {
+      break-inside: avoid;
+    }
 
-  h3 {
-    overflow: hidden;
-    font-size: 1.5rem;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
+    a {
+      color: var(--text);
+    }
 
-  h4 {
-    font-size: 1.2rem;
-  }
+    .kolommen a {
+      color: color-mix(in srgb, var(--text) 80%, transparent);
+    }
 
-  time.pill {
-    opacity: 0.5;
-    font-size: 0.9rem;
-  }
-</style>
+    a:hover {
+      color: var(--anchor);
+    }
 
+    time.pill {
+      color: color-mix(in srgb, var(--text) 50%, transparent);
+      font-size: 0.9rem;
+    }
 
-{{/* Top-level sections = jaren (nieuwste eerst) */}}
-{{ range .Site.Sections.ByTitle.Reverse }}
-  <section class="year">
-    <h2><a href="{{ .Title | default .Section }}">{{ .Title | default .Section }}</a></h2>
+    @media (max-width: 900px) {
+      .kolommen {
+        columns: 2;
+      }
+    }
+  </style>
+  {{/* Top-level sections = jaren (nieuwste eerst) */}}
+  {{ range .Site.Sections.ByTitle.Reverse }}
+    <section class="year">
+      <h2><a href="{{ .Title | default .Section }}" target="_blank">{{ .Title | default .Section }}</a></h2>
 
-    {{/* alle pagina’s onder dit jaar, zonder op sections te vertrouwen */}}
-    {{ $yearPages := .RegularPagesRecursive }}
-    {{ $year := .Title | default .Section }}
+      {{/* alle pagina’s onder dit jaar, zonder op sections te vertrouwen */}}
+      {{ $yearPages := .RegularPagesRecursive }}
+      {{ $year := .Title | default .Section }}
 
-    {{/* unieke vakkeys uit URL na /{jaar}/ ; enkel tonen als in params.sectionNames */}}
-    {{ $vakKeys := slice }}
-    {{ range $yearPages }}
-      {{ $afterYear := replaceRE (printf "^.*/%s/" $year) "" .RelPermalink }}
-      {{ $s := split (trim $afterYear "/") "/" }}
-      {{ if ge (len $s) 1 }}
-        {{ $vak := index $s 0 }}
-        {{ if and (index $.Site.Params.sectionNames $vak) (not (in $vakKeys $vak)) }}
-          {{ $vakKeys = $vakKeys | append $vak }}
+      {{/* unieke vakkeys uit URL na /{jaar}/ ; enkel tonen als in params.sectionNames */}}
+      {{/* vakken bepalen (zoals bij jou) */}}
+      {{ $vakKeys := slice }}
+      {{ range $yearPages }}
+        {{ $afterYear := replaceRE (printf "^.*/%s/" $year) "" .RelPermalink }}
+        {{ $s := split (trim $afterYear "/") "/" }}
+        {{ if ge (len $s) 1 }}
+          {{ $vak := index $s 0 }}
+          {{ if and (index $.Site.Params.sectionNames $vak) (not (in $vakKeys $vak)) }}
+            {{ $vakKeys = $vakKeys | append $vak }}
+          {{ end }}
         {{ end }}
       {{ end }}
-    {{ end }}
-    {{ $vakKeys = sort $vakKeys }}
+      {{ $vakKeys = sort $vakKeys }}
 
-    <div class="vak-container">
-      {{ range $vakKeys }}
-        {{ $vak := . }}
-        <div class="folder">
-          <h3><a href="{{ printf "%s/%s/" $year $vak | relURL }}">{{ index $.Site.Params.sectionNames $vak }}</a></h3>
+      {{/* "doelen" vooraan zetten */}}
+      {{ $vakKeysOrdered := slice }}
+      {{ if in $vakKeys "doelen" }}{{ $vakKeysOrdered = $vakKeysOrdered | append "doelen" }}{{ end }}
+      {{ range $vakKeys }}{{ if ne . "doelen" }}{{ $vakKeysOrdered = $vakKeysOrdered | append . }}{{ end }}{{ end }}
 
-          {{/* ---------- CURSUS op vakniveau: /jaar/vak/cursus/... ---------- */}}
-          <div class="cursus">
-            <h4>Cursusmateriaal</h4>
-            <div class="kolommen">
-              {{ $cursusPrefix := printf "/%s/%s/cursus/" $year $vak }}
-              {{ range sort $yearPages "Date" "desc" }}
-                {{ if in .RelPermalink $cursusPrefix }}
-                  <div>
-                    <a href="{{ .Permalink }}" target="_blank">{{ .Title | default .File.BaseFileName }}</a> <br>
-                      <time datetime="{{ .Date | time.Format $.Site.Params.dateFormatISO }}" class="pill">
-                        {{ .Date | time.Format $.Site.Params.dateFormat }}
-                      </time>
-                  </div>
-                {{ end }}
-              {{ end }}
-            </div>
-          </div>
 
-          {{/* ---------- OPDRACHTEN per KLAS: /jaar/vak/<klas>/opdracht/... ---------- */}}
-          {{ $klassen := slice }}
-          {{ range $yearPages }}
-            {{ if and (in .RelPermalink (printf "/%s/%s/" $year $vak)) (in .RelPermalink "/opdracht/") }}
-              {{ $afterVak := replaceRE (printf "^.*/%s/%s/" $year $vak) "" .RelPermalink }}
-              {{ $p := split (trim $afterVak "/") "/" }}
-              {{ if ge (len $p) 1 }}
-                {{ $klas := index $p 0 }}
-                {{ if not (in $klassen $klas) }}{{ $klassen = $klassen | append $klas }}{{ end }}
-              {{ end }}
-            {{ end }}
-          {{ end }}
-          {{ $klassen = sort $klassen }}
+      <div class="vak-container">
+        {{ range $vakKeysOrdered }}
+          {{ $vak := . }}
+          <div class="folder">
+            <h3><a href="{{ (print $year "/" $vak "/") | relURL }}" target="_blank">{{ index $.Site.Params.sectionNames $vak }}</a></h3>
 
-          {{ range $klassen }}
-            {{ $klas := . }}
-            <div class="opdracht">
-              <h4>Opdrachten ({{ upper $klas }})</h4>
+            {{ if eq $vak "doelen" }}
+              {{/* ---- SPECIAAL BLOK: DOELEN onder /jaar/doelen/*.md ---- */}}
               <div class="kolommen">
-                {{ $klasPrefix := printf "/%s/%s/%s/" $year $vak $klas }}
-                {{ range sort $yearPages "Date" "desc" }}
-                  {{ if and (in .RelPermalink $klasPrefix) (in .RelPermalink "/opdracht/") }}
+                {{ $doelenPrefix := printf "/%s/doelen/" $year }}
+                {{ range sort $yearPages "Title" }}
+                  {{ if and (in .RelPermalink $doelenPrefix) (not (in .RelPermalink "/cursus/")) (not (in .RelPermalink "/opdracht/")) }}
                     <div>
-                      <a href="{{ .Permalink }}" target="_blank">
-                        {{ .Title | default .File.BaseFileName }}
-                      </a> <br>
+                      <a href="{{ .Permalink }}" target="_blank">{{ .Title | default .File.BaseFileName }}</a>
+                    </div>
+                  {{ end }}
+                {{ end }}
+              </div>
+            {{ else }}
+              {{/* ---- JOUW BESTAANDE BLOKKEN ---- */}}
+              <h4><a href="{{ (print $year "/" $vak "/cursus/") | relURL }}" target="_blank">Cursusmateriaal</a></h4>
+              <div class="kolommen">
+                {{ $cursusPrefix := printf "/%s/%s/cursus/" $year $vak }}
+                {{ range sort $yearPages "Date" "desc" }}
+                  {{ if in .RelPermalink $cursusPrefix }}
+                    <div>
+                      <a href="{{ .Permalink }}" target="_blank">{{ .Title | default .File.BaseFileName }}</a> <br />
                       <time datetime="{{ .Date | time.Format $.Site.Params.dateFormatISO }}" class="pill">
                         {{ .Date | time.Format $.Site.Params.dateFormat }}
                       </time>
@@ -120,11 +121,42 @@
                   {{ end }}
                 {{ end }}
               </div>
-            </div>
-          {{ end }}
-        </div>
-      {{ end }}
-    </div>
-  </section>
-{{ end }}
+
+              {{/* OPDRACHTEN per klas */}}
+              {{ $klassen := slice }}
+              {{ range $yearPages }}
+                {{ if and (in .RelPermalink (printf "/%s/%s/" $year $vak)) (in .RelPermalink "/opdracht/") }}
+                  {{ $afterVak := replaceRE (printf "^.*/%s/%s/" $year $vak) "" .RelPermalink }}
+                  {{ $p := split (trim $afterVak "/") "/" }}
+                  {{ if ge (len $p) 1 }}
+                    {{ $klas := index $p 0 }}
+                    {{ if not (in $klassen $klas) }}{{ $klassen = $klassen | append $klas }}{{ end }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              {{ $klassen = sort $klassen }}
+
+              {{ range $klassen }}
+                {{ $klas := . }}
+                <h4><a href="{{ (print $year "/" $vak "/" $klas "/opdracht/") | relURL }}" target="_blank">Opdrachten ({{ upper $klas }})</a></h4>
+                <div class="kolommen">
+                  {{ $klasPrefix := printf "/%s/%s/%s/" $year $vak $klas }}
+                  {{ range sort $yearPages "Date" "desc" }}
+                    {{ if and (in .RelPermalink $klasPrefix) (in .RelPermalink "/opdracht/") }}
+                      <div>
+                        <a href="{{ .Permalink }}" target="_blank">{{ .Title | default .File.BaseFileName }}</a><br />
+                        <time datetime="{{ .Date | time.Format $.Site.Params.dateFormatISO }}" class="pill">
+                          {{ .Date | time.Format $.Site.Params.dateFormat }}
+                        </time>
+                      </div>
+                    {{ end }}
+                  {{ end }}
+                </div>
+              {{ end }}
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
 {{ end }}

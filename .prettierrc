@@ -1,0 +1,13 @@
+{
+  "plugins": ["prettier-plugin-go-template"],
+  "printWidth": 280,
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "parser": "go-template",
+        "singleQuote": true
+      }
+    }
+  ]
+}

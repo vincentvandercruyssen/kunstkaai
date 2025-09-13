@@ -8,9 +8,6 @@
     <loc>http://localhost:1313/kunstkaai/2025-2026/typo/4gt/opdracht/typoportret_digitaal/</loc>
     <lastmod>2025-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/kunstkaai/2025-2026/data/cursus/intro/</loc>
-    <lastmod>2025-09-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/kunstkaai/2025-2026/data/5gm/opdracht/bridge_workflow/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
@@ -23,7 +20,61 @@
     <loc>http://localhost:1313/kunstkaai/2025-2026/weborientatie/6xm/opdracht/webportret/</loc>
     <lastmod>2025-09-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/typo/cursus/basis/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/web/cursus/css/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/web/cursus/html/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/data/cursus/intro/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/web/cursus/intro/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/data/cursus/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/typo/cursus/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/weborientatie/cursus/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/data/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/doelen/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/doelen/gm/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/doelen/gt/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/doelen/xm/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/kunstkaai/2025-2026/typo/4gt/opdracht/typoportret/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/data/5gm/opdracht/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/typo/4gt/opdracht/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/web/4gt/opdracht/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/weborientatie/5xm/opdracht/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/weborientatie/6xm/opdracht/</loc>
     <lastmod>2025-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/kunstkaai/2024-2025/digitaal/3dex/opdracht/albumcover/</loc>
@@ -161,13 +212,10 @@
     <loc>http://localhost:1313/kunstkaai/2025-2026/audiovisueel_atelier/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/kunstkaai/2025-2026/typo/cursus/basis/</loc>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/web/cursus/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/kunstkaai/2025-2026/data/5gm/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/kunstkaai/2025-2026/data/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/kunstkaai/2025-2026/grafisch_atelier/</loc>
@@ -269,16 +317,43 @@
     <loc>http://localhost:1313/kunstkaai/2024-2025/web/cursus/css/</loc>
     <lastmod>2024-09-10T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/kunstkaai/2025-2026/web/cursus/css/</loc>
-    <lastmod>2024-09-10T08:00:00-07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/kunstkaai/2024-2025/typo/4gt/opdracht/typoposter/</loc>
     <lastmod>2024-09-09T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/kunstkaai/2024-2025/web/cursus/html/</loc>
-    <lastmod>2024-08-30T08:00:00-07:00</lastmod>
+    <loc>http://localhost:1313/kunstkaai/2024-2025/data/cursus/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/kunstkaai/2025-2026/web/cursus/html/</loc>
+    <loc>http://localhost:1313/kunstkaai/2024-2025/digitaal/cursus/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2024-2025/typo/cursus/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2024-2025/web/cursus/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2024-2025/doelen/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2024-2025/data/5gm/opdracht/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2024-2025/digitaal/3dex/opdracht/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2024-2025/typo/4gt/opdracht/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2024-2025/typo/5gm/opdracht/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2024-2025/web/3gt/opdracht/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2024-2025/web/4gt/opdracht/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2024-2025/web/cursus/html/</loc>
     <lastmod>2024-08-30T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/kunstkaai/2024-2025/digitaal/cursus/illustrator/</loc>
@@ -309,9 +384,6 @@
     <lastmod>2024-08-30T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/kunstkaai/2024-2025/web/cursus/intro/</loc>
-    <lastmod>2024-08-29T08:00:00-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/kunstkaai/2025-2026/web/cursus/intro/</loc>
     <lastmod>2024-08-29T08:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/kunstkaai/2024-2025/doelen/gm/</loc>
