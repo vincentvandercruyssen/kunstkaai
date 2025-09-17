@@ -16,9 +16,16 @@ Maak een typografische poster over **iemand in de klas**. Zo leer je elkaar bete
 - Zet **de naam van je buur groot in het midden** van het blad. Welke lettersoort kies je?
 - Schrijf er rondom allerlei woorden die je buur omschrijven. Welke lettersoorten passen daarbij?
 
+{{< fontshowcase cols="4" >}}
+bodoni-moda-variable,serif:Kunstkaai::200
+museo-sans,sans-serif:Kunstkaai::200
+medusa,cursive:Kunstkaai
+responder-p:Kunstkaai::200
+{{< /fontshowcase >}}
+
+{{< table_layoutfixed >}}
 |   |   |   |   |
 |---|---|---|---|
-|{{< svg src="/img/typo/cursus-types_m-serif-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_m-sans-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_m-script-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_m-handwritten-1.svg" width="800" >}}|
 |Serif {{< br >}} *schreef*|Sans-serif {{< br >}}*schreefloos*|Script {{< br >}}*kalligrafisch*|Handwritten {{< br >}}*handgeschreven*|
 
 ## Typografische uitdaging

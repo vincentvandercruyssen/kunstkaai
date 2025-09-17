@@ -1,45 +1,45 @@
 <style>
-    .checkerboard {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
+  .checkerboard {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 
-    .checkerboard span:nth-child(odd) {
-        background-color: #0001;
-    }
+  .checkerboard span:nth-child(odd) {
+    background-color: color-mix(in srgb, var(--text) 20%, transparent);
+  }
 
-    .checkerboard span:nth-child(even) {
-        background-color: #fff;
-    }
+  .checkerboard span:nth-child(even) {
+    background-color: var(--bgcbg);
+  }
 
-    /* Monospace optie */
-    .monospace {
-        font-family: monospace;
-    }
+  /* Monospace optie */
+  .monospace {
+    font-family: monospace;
+  }
 </style>
 
 <div class="checkerboard {{ if .Get "monospace" }}monospace{{ end }}">
-    {{ .Inner | markdownify }}
+  {{ .Inner | markdownify }}
 </div>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Selecteer alle checkerboard-elementen
-        const elements = document.querySelectorAll('.checkerboard');
-        elements.forEach(function (element) {
-            colorText(element);
-        });
+  document.addEventListener('DOMContentLoaded', function () {
+    // Selecteer alle checkerboard-elementen
+    const elements = document.querySelectorAll('.checkerboard');
+    elements.forEach(function (element) {
+      colorText(element);
     });
+  });
 
-    function colorText(element) {
-        const text = element.textContent.trim(); // Haal de tekst op
-        element.innerHTML = ''; // Maak de originele tekst leeg
+  function colorText(element) {
+    const text = element.textContent.trim(); // Haal de tekst op
+    element.innerHTML = ''; // Maak de originele tekst leeg
 
-        // Wrap elk karakter in een span
-        for (let i = 0; i < text.length; i++) {
-            const span = document.createElement('span');
-            span.textContent = text[i];
-            element.appendChild(span);
-        }
+    // Wrap elk karakter in een span
+    for (let i = 0; i < text.length; i++) {
+      const span = document.createElement('span');
+      span.textContent = text[i];
+      element.appendChild(span);
     }
+  }
 </script>

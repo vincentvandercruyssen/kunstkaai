@@ -16,9 +16,11 @@
 
 :root {
   --sidebar-width: 20rem;
+  --margin-bottom: 1.5rem;
   --text: #222;
   --anchor: #19f;
   --bgcbg: #eee;
+  /* --bgcfg: color-mix(in srgb, var(--bgcbg) 20%, white); */
   --bgcfg: #fffe;
   --bgcredits: #fff;
   --bghighlight: #fff;
@@ -125,7 +127,7 @@ iframe,
 hr,
 details,
 .highlight {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--margin-bottom);
 }
 
 details:last-of-type {

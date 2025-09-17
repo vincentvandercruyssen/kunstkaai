@@ -27,36 +27,43 @@ Als ontwerper kun je natuurlijk ook de gulden middenweg kiezen, waarbij je zowel
 
 ### De belangrijkste soorten lettertypen
 
-|   |   |   |   |
-|---|---|---|---|
-|{{< svg src="/img/typo/cursus-types_serif-1.svg" width="800">}}|{{< svg src="/img/typo/cursus-types_sans-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_display-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_script-1.svg" width="800" >}}|
-|{{< svg src="/img/typo/cursus-types_handwritten-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_monospace-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_gothic-1.svg" width="800" >}}|{{< svg src="/img/typo/cursus-types_yikes-1.svg" width="800" >}}|
+{{< fontshowcase >}}
+bodoni-moda-variable,serif:Serif::200
+museo-sans,sans-serif:Sans serif::200
+rockwell:Slab serif::300
+panel-mono,monospace:Monospace::300
+ff-mach-web-pro:Display::300
+responder-p:Handwritten::200
+medusa,cursive:Script/Cursive
+sabbath-black:Gothic/Blackletter
+papyrus-std:Yikes
+{{< /fontshowcase >}}
 
+* **Serif (schreefletter)** Klassieke, traditionele uitstraling. Serif-lettertypen hebben kleine lijnen of streepjes aan de uiteinden van de letters, zoals Times New Roman. Ze worden vaak gebruikt in gedrukte media zoals boeken en kranten vanwege hun formele en vertrouwde uitstraling.
+* **Sans serif (schreefloze letter)** Moderne, strakke stijl zonder streepjes of lijnen aan de uiteinden van de letters. Sans serif-lettertypen, zoals Arial en Helvetica, worden vaak gebruikt voor digitale weergave op schermen omdat ze leesbaar zijn en een eenvoudige, moderne uitstraling hebben.
 
-- **Serif**: Klassieke, traditionele uitstraling. Serif-lettertypen hebben kleine lijnen of streepjes aan de uiteinden van de letters, zoals Times New Roman. Ze worden vaak gebruikt in gedrukte media zoals boeken en kranten vanwege hun formele en vertrouwde uitstraling.
-- **Sans Serif**: Moderne, strakke stijl zonder streepjes of lijnen aan de uiteinden van de letters. Sans serif-lettertypen, zoals Arial en Helvetica, worden vaak gebruikt voor digitale weergave op schermen omdat ze leesbaar zijn en een eenvoudige, moderne uitstraling hebben.
+{{< svg src="/img/typo/cursus/serifvssans-1.svg" width="260" center="true" >}}
 
-{{< svg src="/img/typo/cursus-serifvssans-1.svg" width="260" center="true" >}}
-
-- **Display**: Deze decoratieve lettertypen zijn bedoeld voor koppen en titels, niet voor grote tekstblokken. Display-lettertypen zijn vaak opvallend en creatief, zoals bij logo's en posters, om de aandacht te trekken.
-- **Script**: Script-lettertypen imiteren handschrift en hebben sierlijke, vloeiende lijnen. Ze worden vaak gebruikt voor decoratieve toepassingen, zoals uitnodigingen of luxe merken.
-- **Handwritten**: Deze lettertypen imiteren handschrift, maar zijn informeler en minder sierlijk dan script-lettertypen. Ze geven een persoonlijke, casual uitstraling en worden vaak gebruikt voor speelse of informele ontwerpen.
-- **Monospace**: Bij monospace-lettertypen nemen alle tekens dezelfde hoeveelheid ruimte in beslag, zoals Courier. Ze zijn populair in programmeercode en tabellen vanwege hun consistente uitlijning van tekens.
-- **Gothic (Blackletter)**: hebben een middeleeuwse, hoekige stijl met zware lijnen. Ze werden veel gebruikt in oude manuscripten en officiële documenten. Vandaag de dag worden ze vooral decoratief ingezet, zoals in logo's of titels, om een historische of gotische sfeer te creëren.
-- **Fonts met ‘baggage’**: Sommige fonts zoals Comic Sans en Papyrus zijn overgebruikt en hebben negatieve associaties. Hoewel ze technisch onder categorieën kunnen vallen zoals 'handwritten' of 'script', hebben ze een eigen reputatie. Wees hier voorzichtig mee…of niet.
+* **Slab serif (egyptienne, mechaan)** Lettertypen met dikke, rechthoekige schreven die vaak even dik zijn als de stammen. Ze ogen stoer en opvallend, en worden vaak gebruikt in koppen en posters. Hun stevige, blokkerige vormen trekken extra de aandacht.
+* **Display (decoratief)** Deze decoratieve lettertypen zijn bedoeld voor koppen en titels, niet voor grote tekstblokken. Display-lettertypen zijn vaak opvallend en creatief, zoals bij logo's en posters, om de aandacht te trekken.
+* **Script (schrijfletter)** Script-lettertypen imiteren kalligrafisch handschrift en hebben sierlijke, vloeiende lijnen. Ze worden vaak gebruikt voor decoratieve toepassingen, zoals uitnodigingen of luxe merken.
+* **Handwritten (handschrift)** Deze lettertypen imiteren handschrift, maar zijn informeler en minder sierlijk dan script-lettertypen. Ze geven een persoonlijke, casual uitstraling en worden vaak gebruikt voor speelse of informele ontwerpen.
+* **Monospace (niet-proportioneel lettertype)** Bij monospace-lettertypen nemen alle tekens dezelfde hoeveelheid ruimte in beslag. Ze zijn populair in programmeercode en tabellen vanwege hun consistente uitlijning van tekens.
+* **Gothic (blackletter, gotisch)** Hebben een middeleeuwse, hoekige stijl met zware lijnen. Ze werden veel gebruikt in oude manuscripten en officiële documenten. Vandaag de dag worden ze vooral decoratief ingezet, zoals in logo's of titels, om een historische of gotische sfeer te creëren.
+* **Fonts met ‘baggage’ (beladen fonts)** Sommige fonts zoals Comic Sans en Papyrus zijn overgebruikt en hebben negatieve associaties. Hoewel ze technisch onder categorieën kunnen vallen zoals 'handwritten' of 'script', hebben ze een eigen reputatie. Wees hier voorzichtig mee... of niet.
 
 **Bekijk eens de website [Comic Sans Criminal](https://comicsanscriminal.com/)**. Los van de ironie wordt er op een speelse manier duidelijk gemaakt waarom bepaalde lettertypes, zoals Comic Sans, niet altijd even geschikt zijn. De keuze van een font beïnvloedt niet alleen de uitstraling van een ontwerp, maar ook of het past bij de context waarin het wordt gebruikt. Sommige lettertypes werken bijvoorbeeld goed voor een verjaardagskaart, terwijl andere beter geschikt zijn voor eerder formele documenten.
 
 ---
 
-{{< p_style style="padding: 0 6rem;" >}}
+{{< p_style style="font-family:bodoni-moda-variable; padding: 0 6rem;" >}}
     Beste Jimmy,
     Je bent uitgenodigd op mijn super-awesome kei kei leuke verjaardagsfeestje!
 {{< /p_style >}}
 
 ---
 
-{{< p_style style="font-family: cursive; padding: 0 6rem;" >}}
+{{< p_style style="font-family: sabbath-black; padding: 0 6rem;" >}}
     Beste James,
     Tot mijn grote spijt moet ik u meedelen dat onze testresultaten uitwijzen dat u ongeneeslijk ziek bent. 
 {{< /p_style >}}
@@ -69,27 +76,27 @@ Tijdens je zoektocht naar verschillende soorten lettertypen kom je waarschijnlij
 
 - **Lettertype (Typeface):** Een lettertype verwijst naar het ontwerp van een set karakters, glyphs en symbolen. Het is in feite een familie of groep van fonts die dezelfde visuele kenmerken delen.
 
-{{< svg src="/img/typo/cursus-lettertypes-1.svg" width="320" center="true">}}
+{{< svg src="/img/typo/cursus/lettertypes-2.svg" width="380" center="true">}}
 
 - **Letterfamilie (Font):** Een font is een specifieke variant of stijl binnen een lettertypefamilie. Bijvoorbeeld, Helvetica Light is een lichtere versie binnen de Helvetica-familie, en verschilt van zijn familieleden door zijn subtiele en lichte ‘gewicht’.
 
-{{< img src="/img/typo/cursus-fonts_letterfamilie-1.png" width="380"  center="true" >}}
+{{< img src="/img/typo/cursus/fonts_letterfamilie-2.png" percent="55" center="true" >}}
 
 - **Gewicht (Weight):** Het gewicht van een font geeft de dikte van de letters aan. Een vet font is dikker en opvallender, terwijl een licht font dunner en subtieler is. Een medium font zit qua dikte tussen deze twee in.
 
-{{< img src="/img/typo/cursus-fonts_letterfamilie-2.jpg" width="380" center="true" >}}
+{{< img src="/img/typo/cursus-fonts_letterfamilie-2.jpg" percent="55" center="true" >}}
 
 - **Interlinie (Leading):** Interlinie verwijst naar de verticale ruimte tussen tekstregels. Te weinig ruimte kan de tekst samenpersen en moeilijk leesbaar maken, terwijl te veel ruimte de tekst fragmentarisch en onsamenhangend kan laten lijken.
 
-{{< svg src="/img/typo/cursus-leading-1.svg" width="320" center="true" >}}
+{{< svg src="/img/typo/cursus/leading-2.svg" width="380" center="true" >}}
 
 - **Spatiëring (Tracking):** Spatiëring verwijst naar de aanpassing van de totale ruimte tussen alle letters in een woord. Een te kleine spatiëring maakt de tekst moeilijk leesbaar door dicht opeengepakte letters, terwijl te veel ruimte de tekst uit elkaar doet vallen. Elk font heeft zijn eigen ideale spatiëring.
 
-{{< svg src="/img/typo/cursus-tracking-1.svg" width="320" center="true" >}}
+{{< svg src="/img/typo/cursus/tracking-2.svg" width="380" center="true" >}}
 
 - **Kerning:** Kerning verwijst naar het aanpassen van de ruimte tussen individuele letters. Dit stelt ons in staat subtiele correcties aan te brengen bij bepaalde lettercombinaties, vooral bij letters die van nature meer of minder ruimte innemen, zoals A, W, V en T. Veel software biedt standaard de opties 'metric' en 'optical', die elk een andere automatische benadering bieden voor kernaanpassing.
 
-{{< svg src="/img/typo/cursus-kerning-1.svg" width="320" center="true" >}}
+{{< svg src="/img/typo/cursus/kerning-2.svg" width="380" center="true" >}}
 
 - Een regel die je op eigen risico kunt breken: gebruik maximaal twee lettertypes per project.
 - Combineer contrasten aan de hand van grootte, gewicht of stijl.
@@ -113,7 +120,7 @@ Monospace-lettertypen geven elk teken dezelfde breedte, ongeacht de vorm. Dit is
 
 De anatomie van typografie bestaat uit verschillende elementen die de structuur van letters definiëren.
 
-{{< img src="/img/typo/cursus-typo_anatomie-1.jpg" width="1600"  center="true" >}}
+{{< img src="/img/typo/cursus/typo_anatomie-2.jpg" width="1600" center="true" >}}
 
 1. **Apex**: Het punt waar twee diagonale lijnen samenkomen, vaak te zien bij de letter "A".
 2. **Arm**: Een horizontale of diagonale lijn die vrij aan één kant van een letter hangt, zoals in de "T" of "E".
@@ -166,7 +173,7 @@ Daarnaast zijn er de denkbeeldige lijnen die de proporties van de letters aangev
 
 |   |   |   |
 |---|---|---|
-|{{< img src="/img/typo/cursus-alignment-1_a.jpg" width="600" >}}|{{< img src="/img/typo/cursus-alignment-1_b.jpg" width="600" >}}|{{< img src="/img/typo/cursus-alignment-1_c.jpg" width="600" >}}|
+|{{< img src="/img/typo/cursus-alignment-1_a.jpg" >}}|{{< img src="/img/typo/cursus-alignment-1_b.jpg" >}}|{{< img src="/img/typo/cursus-alignment-1_c.jpg" >}}|
 
 - **Contrast**: Creëer focus door contrasten in kleur, vorm of grootte te gebruiken.
 
@@ -179,7 +186,7 @@ Daarnaast zijn er de denkbeeldige lijnen die de proporties van de letters aangev
 
 |   |   |   |
 |---|---|---|
-|{{< img src="/img/typo/cursus-repetition-1_a.png" width="600" >}}|{{< img src="/img/typo/cursus-repetition-1_b.png" width="600" >}}|{{< img src="/img/typo/cursus-repetition-1_c.png" width="600" >}}|
+|{{< img src="/img/typo/cursus-repetition-1_a.png" >}}|{{< img src="/img/typo/cursus-repetition-1_b.png" >}}|{{< img src="/img/typo/cursus-repetition-1_c.png" >}}|
 
 #### Lay-out en structuur
 

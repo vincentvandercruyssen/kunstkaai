@@ -1,0 +1,36 @@
+{{- /* layouts/shortcodes/fontshowcase.html */ -}}
+{{- $cols := .Get "cols" | default "3" -}}
+{{- $content := .Inner | replaceRE `\s*\r?\n\s*` "|" -}}
+
+<div class="fontshowcase" style="--cols: {{ $cols }};">
+  {{- range (split $content "|") -}}
+    {{- if . -}}
+      {{- $parts := split . ":" -}}
+      {{- $family   := trim (index $parts 0) " \t\r\n" -}}
+      {{- $label    := cond (ge (len $parts) 2) (trim (index $parts 1) " \t\r\n") "" -}}
+      {{- $sizeRaw  := cond (ge (len $parts) 3) (trim (index $parts 2) " \t\r\n") "" -}}
+      {{- $weightRw := cond (ge (len $parts) 4) (trim (index $parts 3) " \t\r\n") "" -}}
+
+      {{- $hasSize := ne $sizeRaw "" -}}
+      {{- $weight  := cond (ne $weightRw "") $weightRw "400" -}}
+
+      <div class="fontcard"
+           style="font-family: {{ $family }};{{ if $hasSize }}font-size: {{ $sizeRaw }};{{ end }} font-weight: {{ $weight }};">
+        {{ $label }}
+      </div>
+    {{- end -}}
+  {{- end -}}
+</div>
+
+<style>
+  .fontshowcase {
+    display: grid;
+    grid-template-columns: repeat(var(--cols, 4), 1fr);
+    column-gap: 1rem;
+    row-gap: var(--margin-bottom);
+    margin-bottom: var(--margin-bottom);
+  }
+  .fontcard {
+    font-size: 2rem;
+  }
+</style>

@@ -8,8 +8,8 @@
 
     <link rel="stylesheet" href="/kunstkaai/css/main.css">
 
+<link rel="stylesheet" href="https://use.typekit.net/qtj0alg.css">
 <link rel="icon" type="image/svg" href="/kunstkaai/favicon.svg">
-
 
 </head>
 <body>
@@ -1138,99 +1138,99 @@ h1 {
 <h4 id="proportioneel-en-monospace">Proportioneel en monospace</h4>
 <p>Een proportioneel lettertype is een lettertype waarbij de letters verschillende breedtes hebben. Een monospace lettertype is een lettertype waarbij iedere letter evenveel ruimte inneemt.</p>
 <style>
-    .checkerboard {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
+  .checkerboard {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 
-    .checkerboard span:nth-child(odd) {
-        background-color: #0001;
-    }
+  .checkerboard span:nth-child(odd) {
+    background-color: color-mix(in srgb, var(--text) 20%, transparent);
+  }
 
-    .checkerboard span:nth-child(even) {
-        background-color: #fff;
-    }
+  .checkerboard span:nth-child(even) {
+    background-color: var(--bgcbg);
+  }
 
-     
-    .monospace {
-        font-family: monospace;
-    }
+   
+  .monospace {
+    font-family: monospace;
+  }
 </style>
 
 <div class="checkerboard ">
-    <pre><code>Proportioneel: alle schrifttekens hebben steeds een verschillende breedte.
+  <pre><code>Proportioneel: alle schrifttekens hebben steeds een verschillende breedte.
 </code></pre>
 
 </div>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        
-        const elements = document.querySelectorAll('.checkerboard');
-        elements.forEach(function (element) {
-            colorText(element);
-        });
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    const elements = document.querySelectorAll('.checkerboard');
+    elements.forEach(function (element) {
+      colorText(element);
     });
+  });
 
-    function colorText(element) {
-        const text = element.textContent.trim(); 
-        element.innerHTML = ''; 
+  function colorText(element) {
+    const text = element.textContent.trim(); 
+    element.innerHTML = ''; 
 
-        
-        for (let i = 0; i < text.length; i++) {
-            const span = document.createElement('span');
-            span.textContent = text[i];
-            element.appendChild(span);
-        }
+    
+    for (let i = 0; i < text.length; i++) {
+      const span = document.createElement('span');
+      span.textContent = text[i];
+      element.appendChild(span);
     }
+  }
 </script>
 
 <style>
-    .checkerboard {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
+  .checkerboard {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 
-    .checkerboard span:nth-child(odd) {
-        background-color: #0001;
-    }
+  .checkerboard span:nth-child(odd) {
+    background-color: color-mix(in srgb, var(--text) 20%, transparent);
+  }
 
-    .checkerboard span:nth-child(even) {
-        background-color: #fff;
-    }
+  .checkerboard span:nth-child(even) {
+    background-color: var(--bgcbg);
+  }
 
-     
-    .monospace {
-        font-family: monospace;
-    }
+   
+  .monospace {
+    font-family: monospace;
+  }
 </style>
 
 <div class="checkerboard monospace">
-    <pre><code>Monospace: alle schrifttekens hebben telkens dezelfde breedte.
+  <pre><code>Monospace: alle schrifttekens hebben telkens dezelfde breedte.
 </code></pre>
 
 </div>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        
-        const elements = document.querySelectorAll('.checkerboard');
-        elements.forEach(function (element) {
-            colorText(element);
-        });
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    const elements = document.querySelectorAll('.checkerboard');
+    elements.forEach(function (element) {
+      colorText(element);
     });
+  });
 
-    function colorText(element) {
-        const text = element.textContent.trim(); 
-        element.innerHTML = ''; 
+  function colorText(element) {
+    const text = element.textContent.trim(); 
+    element.innerHTML = ''; 
 
-        
-        for (let i = 0; i < text.length; i++) {
-            const span = document.createElement('span');
-            span.textContent = text[i];
-            element.appendChild(span);
-        }
+    
+    for (let i = 0; i < text.length; i++) {
+      const span = document.createElement('span');
+      span.textContent = text[i];
+      element.appendChild(span);
     }
+  }
 </script>
 
 <h4 id="cdn-fonts">CDN Fonts</h4>
