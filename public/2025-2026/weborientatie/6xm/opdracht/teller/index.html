@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/kunstkaai/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=kunstkaai/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Opdracht: Teller | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/kunstkaai/css/main.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/qtj0alg.css">
+<link rel="icon" type="image/svg" href="/kunstkaai/favicon.svg">
+
+</head>
+<body>
+  <select data-theme-picker name="themepicker" id="theme">
+    <option value="🖥️">🖥️</option>
+    <option value="☀️">☀️</option>
+    <option value="🌙">🌙</option>
+  </select>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Weboriëntatie
+<br>
+    Opdracht: Teller
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#wat-je-leert">1. Wat je leert</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#structuur-van-je-project">2. Structuur van je project</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#html-opbouw">3. HTML opbouw</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#logica-bouwen">4. Logica bouwen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#state-variabele-maken">4.1 State-variabele maken</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#dom-elementen-selecteren">4.2 DOM-elementen selecteren</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#click-handler-voor-knoppen">4.3 Click-handler voor knoppen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#welke-knop-geklikt">4.4 Welke knop geklikt?</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#tellerwaarde-aanpassen">4.5 Tellerwaarde aanpassen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#waarde-tonen-in-de-ui">4.6 Waarde tonen in de UI</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#kleur-aanpassen-op-basis-van-waarde">4.7 Kleur aanpassen op basis van waarde</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#css">5. CSS</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#mini-uitbreidingen-optioneel">6. Mini-uitbreidingen (optioneel)</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#indienen">7. Indienen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#puntenverdeling">8. Puntenverdeling</a>
+
+      
+      
+    
+
+    
+    </li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Weboriëntatie
+ <br> Opdracht: Teller</h1>
+
+<p>Je bouwt een eenvoudige <strong>teller</strong> met drie knoppen. Bij <strong>verhogen</strong> en <strong>verlagen</strong> verandert de waarde, bij <strong>beginwaarde</strong> springt de teller terug op nul. De tekstkleur verandert automatisch: <strong>groen</strong> bij positief, <strong>rood</strong> bij negatief en <strong>neutraal</strong> bij nul.</p>
+<p>Zo oefen je nog eens heel belangrijke concepten van JavaScript: <strong>state, DOM-selecties, events, classList, textContent</strong>.</p>
+<h2 id="wat-je-leert">Wat je leert</h2>
+<ul>
+<li>Een <strong>state-variabele</strong> gebruiken (<code>let teller = 0</code>)</li>
+<li>Elementen <strong>selecteren</strong> met <code>querySelector</code> en <code>querySelectorAll</code></li>
+<li>Een <strong>eventhandler</strong> schrijven die werkt voor meerdere knoppen.</li>
+<li>Met <code>event.currentTarget</code> en <code>classList.contains(...)</code> bepalen welke knop aangeklikt is.</li>
+<li>De <strong>tekstinhoud updaten</strong> met <code>textContent</code>.</li>
+<li>De <strong>stijl aanpassen</strong> door CSS-klassen aan te passen of te verwijderen/toevoegen.</li>
+</ul>
+<h2 id="structuur-van-je-project">Structuur van je project</h2>
+<p>De map <strong>VoornaamA_Teller</strong> bevat:</p>
+<ul>
+<li><code>index.html</code></li>
+<li><code>style.css</code></li>
+<li><code>app.js</code></li>
+</ul>
+<h2 id="html-opbouw">HTML opbouw</h2>
+<p>In je <code>index.html</code>:</p>
+<ul>
+<li>Een <code>&lt;span&gt;</code> (of iets dergelijks) met <code>id=&quot;waarde&quot;</code> voor de tellerwaarde.</li>
+<li>Drie knoppen met telkens de algemene klasse <code>.btn</code> en daarnaast één specifieke klasse: <code>.verlaag</code>, <code>.beginwaarde</code> of <code>.verhoog</code></li>
+<li>Vergeet niet om onderaan je <code>&lt;body&gt;</code> je script (met <code>defer</code>) te koppelen:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;app.js&#34;</span> <span style="color:#a6e22e">defer</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p><code>defer</code> zorgt ervoor dat het script pas wordt uitgevoerd wanneer de volledige HTML is ingeladen. Zo bestaan alle elementen al op het moment dat je ze in JavaScript selecteert.</p>
+<h2 id="logica-bouwen">Logica bouwen</h2>
+<h3 id="state-variabele-maken">State-variabele maken</h3>
+<p>Zet bovenaan je <code>app.js</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">teller</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span></code></pre></div><ul>
+<li>De variabele <code>teller</code> is de plek waar je de waarde bijhoudt.</li>
+<li>Je past altijd eerst de waarde in <code>teller</code> aan, en daarna werk je de tekst en kleur bij op het scherm.</li>
+</ul>
+<h3 id="dom-elementen-selecteren">DOM-elementen selecteren</h3>
+<p>Selecteer de tellerwaarde en alle knoppen:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">waardeEl</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#39;#waarde&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">buttons</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#39;.btn&#39;</span>);
+</span></span></code></pre></div><ul>
+<li><code>querySelector</code> geeft één element terug.</li>
+<li><code>querySelectorAll</code> geeft een <strong>NodeList</strong> (lijkt op een array) terug. Een NodeList is géén echte array, maar je kunt er wél met forEach doorheen loopen.</li>
+</ul>
+<h3 id="click-handler-voor-knoppen">Click-handler voor knoppen</h3>
+<p>Doorloop de NodeList en voeg per knop een eventlistener (click-handler) toe:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">btn</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">btn</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">handleClick</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><ul>
+<li>Voordeel: je vermijdt drie keer bijna dezelfde code → overzichtelijk en onderhoudbaar.</li>
+</ul>
+<h3 id="welke-knop-geklikt">Welke knop geklikt?</h3>
+<p>We schrijven één functie <code>handleClick(e)</code> die voor alle knoppen werkt. De <code>e</code> is het <strong>event-object</strong> dat de browser automatisch meestuurt wanneer je op iets klikt, daarin zit o.a. informatie over wélk element is aangeklikt.</p>
+<p>In je <code>handleClick</code>-functie (<code>function handleClick(e) { ... }</code>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">klassen</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">currentTarget</span>.<span style="color:#a6e22e">classList</span>;
+</span></span></code></pre></div><ul>
+<li><code>e.currentTarget</code> = het element waar de listener op zit (de knop zelf)</li>
+<li><code>classList</code> → checkt of die knop een klasse heeft</li>
+</ul>
+<h3 id="tellerwaarde-aanpassen">Tellerwaarde aanpassen</h3>
+<p>De variabele <code>teller</code> moet worden aangepast. Dat doe je met een eenvoudige <strong>als-dan-structuur (conditioneel)</strong>.</p>
+<p>Gebruik een <strong><code>if</code> gevolgd door twee <code>else if</code>-blokken</strong> om te bepalen welke actie wordt uitgevoerd op basis van welke knop is aangeklikt:</p>
+<ul>
+<li>Als de knop de klasse <strong><code>verlaag</code></strong> heeft (<strong><code>if</code></strong>) → verlaag de waarde met één (<strong><code>teller--</code></strong>).</li>
+<li>Als de knop de klasse <strong><code>verhoog</code></strong> heeft (<strong><code>else if</code></strong>) → verhoog de waarde met één (<strong><code>teller++</code></strong>).</li>
+<li>Als de knop de klasse <strong><code>beginwaarde</code></strong> heeft (<strong><code>else if</code></strong>) → zet de waarde terug op nul (<strong><code>teller = 0</code></strong>).</li>
+</ul>
+<p>Denk aan:
+<code>if (klassen.contains(&quot;verlaag&quot;)) { ... }</code></p>
+<h3 id="waarde-tonen-in-de-ui">Waarde tonen in de UI</h3>
+<p>Zet de tekstinhoud van je <code>#waarde</code> element gelijk aan je variabele:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">waardeEl</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">teller</span>;
+</span></span></code></pre></div><ul>
+<li><code>textContent</code> is de manier om tekst op de pagina te tonen</li>
+</ul>
+<h3 id="kleur-aanpassen-op-basis-van-waarde">Kleur aanpassen op basis van waarde</h3>
+<p>De kleur van de tellertekst moet zich aanpassen aan de waarde. Gebruik hiervoor opnieuw een <strong><code>if</code> gevolgd door twee <code>else if</code>-blokken</strong>:</p>
+<ul>
+<li>Als <code>teller</code> <strong>groter dan 0</strong> is → toon de tekst bijvoorbeeld in <strong>groen</strong>.</li>
+<li>Als <code>teller</code> <strong>kleiner dan 0</strong> is → toon de tekst bijvoorbeeld in <strong>rood</strong>.</li>
+<li>Als <code>teller</code> <strong>gelijk aan 0</strong> is → toon de tekst in een <strong>neutrale kleur</strong>.</li>
+</ul>
+<p>Je kunt dit op twee manieren doen:</p>
+<ul>
+<li>door rechtstreeks de <strong><code>style.color</code></strong> van het element aan te passen</li>
+<li>of door eerst alle kleurklassen (zoals <code>.positief</code>, <code>.negatief</code>, <code>.nul</code>) te verwijderen en daarna de juiste <strong>CSS-klasse toe te voegen</strong></li>
+</ul>
+<p>Op die manier krijgt de teller altijd automatisch de juiste kleur bij elke klik.</p>
+<p>Denk aan:
+<code>if (teller &gt; 0) { waardeEl.style.color = &quot;green&quot;; }</code></p>
+<h2 id="css">CSS</h2>
+<p>Je voorziet zelf CSS. Stijl je volledige pagina, de <code>#waarde</code> en de <code>.btn</code>-knoppen.</p>
+<h2 id="mini-uitbreidingen-optioneel">Mini-uitbreidingen (optioneel)</h2>
+<ul>
+<li>Voeg een “+5” en “−5” knop toe met dezelfde aanpak</li>
+<li>Zet de knoppen “Verlagen” of “Verhogen” op <code>disabled</code> bij bepaalde grenzen.</li>
+<li>Sla <code>teller</code> op in <code>localStorage</code> en laad de waarde terug in bij het openen.</li>
+</ul>
+<h2 id="indienen">Indienen</h2>
+<ul>
+<li>Vakmap <strong>Weboriëntatie</strong>, via OneDrive-link toegevoegd aan de opdracht in <strong>Google Classroom</strong>.</li>
+</ul>
+<h2 id="puntenverdeling">Puntenverdeling</h2>
+<ul>
+<li><strong>Structuur &amp; koppeling</strong>: Mappen correct, <code>defer</code> juist gekoppeld.</li>
+<li><strong>State &amp; logica</strong>: <code>teller</code> correct gebruikt en bijgewerkt.</li>
+<li><strong>DOM-selecties</strong>: <code>#waarde</code> en <code>.btn</code> correct geselecteerd.</li>
+<li><strong>Click-handler</strong>: <code>forEach</code>, <code>currentTarget</code>, <code>classList.contains</code> correct.</li>
+<li><strong>UI-update</strong>: <code>textContent</code> wordt correct geüpdatet.</li>
+<li><strong>Kleurwissel</strong>: Juiste kleur via <code>style</code> of klassen.</li>
+<li><strong>Consistentie &amp; netheid</strong>: Duidelijke klassen- en variabelennamen. Indentatie, comments, geen dode code.</li>
+</ul>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/kunstkaai/js/main.js"></script>
+
+  </footer>
+</body>
+</html>
