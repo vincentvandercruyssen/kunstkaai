@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/kunstkaai/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=kunstkaai/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Cursus: JavaScript | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/kunstkaai/css/main.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/qtj0alg.css">
+<link rel="icon" type="image/svg" href="/kunstkaai/favicon.svg">
+
+</head>
+<body>
+  <select data-theme-picker name="themepicker" id="theme">
+    <option value="🖥️">🖥️</option>
+    <option value="☀️">☀️</option>
+    <option value="🌙">🌙</option>
+  </select>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+
+
+
+Weboriëntatie
+<br>
+    Cursus: JavaScript
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#externe-scripts">0.1 Externe scripts</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#variabelen-let">1. Variabelen (let)</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#gegevenstypes">2. Gegevenstypes</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#boodschappen-naar-de-console-sturen">3. Boodschappen naar de console sturen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#wiskundige-bewerkingen">4. Wiskundige bewerkingen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#rekenkundige-operatoren">4.1 Rekenkundige operatoren</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#modulus-of-restwaarde-">4.2 Modulus of restwaarde (%)</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#concatenatie">4.3 Concatenatie</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#nan-not-a-number">4.4 NaN (Not a Number)</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#het-math-object">4.5 Het Math object</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#logische-operatoren--en-">4.6 Logische operatoren (&amp;amp;&amp;amp; en ||)</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#vraagstellingen-en-condities-if">5. Vraagstellingen en condities (if)</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#werken-met-lussen-while-for">6. Werken met lussen (while, for)</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#functies-function">7. Functies (function)</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#de-scope-van-een-variabele">8. De &amp;lsquo;scope&amp;rsquo; van een variabele</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#waarden-toevoegen-op-posities-indexen">9. Waarden toevoegen op posities (indexen)</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#waarden-opvragen">10. Waarden opvragen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#lengte-van-een-array">11. Lengte van een array</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#arrays-bewerken-met-methodes">12. Arrays bewerken met methodes</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#werken-met-strings">13. Werken met Strings</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#werken-met-datums">14. Werken met Datums</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#werken-met-objecten">15. Werken met Objecten</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#object-literal">15.1 Object literal</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#object-constructor">15.2 Object constructor</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#itereren-over-eigenschappen">15.3 Itereren over eigenschappen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#objectkeys-en-objectvalues">15.4 Object.keys() en Object.values()</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#aanspreken-van-dom-elementen">16. Aanspreken van DOM-elementen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#dom-elementen-aanpassen">17. DOM-elementen aanpassen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#tekst-of-html-aanpassen">17.1 Tekst of HTML aanpassen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#css-aanpassen">17.2 CSS aanpassen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#kenmerken-attributen-aanpassen">17.3 Kenmerken (attributen) aanpassen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#dom-elementen-cre%c3%abren">18. DOM-elementen creëren</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#werken-met-onload-events">19. Werken met onload events</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#de-onblur-en-onfocus-events">20. De onblur en onfocus events</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#timers">21. Timers</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#reageren-op-formulier-selecties">22. Reageren op formulier selecties</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#minify">23. Minify</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#installeren-via-npm-nodejs-project">23.1 Installeren via npm (Node.js-project)</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#wanneer-libraries-gebruiken">24. Wanneer libraries gebruiken?</a>
+
+      
+      
+    
+
+    
+    </li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+
+
+
+Weboriëntatie
+ <br> Cursus: JavaScript</h1>
+
+<p>💥 Oké — geen vragen meer, geen pauzes.
+Ik ga nu <strong>alles</strong> van de cursus achter elkaar zetten in <strong>Markdown</strong>, in grote blokken (omdat alles in één bericht niet past).</p>
+<p>📍 Start met blok 1</p>
+<ul>
+<li>Inleiding</li>
+<li>Een korte geschiedenis</li>
+<li>Ken je tools en applicaties</li>
+</ul>
+<p>Hier komt blok 1 ↓</p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Inleiding
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Het komt veel voor dat men JavaScript noemt als één van de drie kerntalen van webpagina’s.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Zo heb je <span style="font-weight:bold">**HTML**</span> (Hyper Text Markup Language) om inhoud en structuur te geven aan een webpagina. Het bevat je paginatitel, hoeveel divisies er in je pagina zijn, hoeveel paragrafen en wat de inhoud is van die paragrafen.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Dan is er <span style="font-weight:bold">**CSS**</span> (Cascading Style Sheet) om de presentatie van je pagina te verzorgen: wat voor lettertype, de achtergrond of de breedte van een divisie, …
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Als derde is er <span style="font-weight:bold">**JavaScript**</span>, de programmeertaal voor gedrag en interactiviteit. Wat gebeurt er wanneer je met je cursor over een menu gaat of wanneer je de verkeerde waarde in een veld in een formulier ingevuld hebt, of hoe lang een foto in een slideshow zichtbaar is, …
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>JavaScript is een programmeertaal die vaak wordt aangezien als scriptingtaal. Soms hoor je van programmeurs dat JavaScript met opzet gelimiteerd is en dat je er daarom geen desktopapplicaties mee kan maken, maar dat is ook de bedoeling! JavaScript werkt enkel in één applicatie: de webbrowser. Althans, dit was vroeger zo; nu kan het ook op de server, op een mobiel toestel, … overal zo een beetje.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>En of dit nu Internet Explorer, Safari, Firefox, Chrome, of Opera is, zij bevatten allemaal een JavaScript-motor die de JavaScripts in je pagina doen werken!
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Het operating system van je computer draait de webbrowser, die bevat je webpagina, en die bevat je JavaScripts.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Een andere eigenschap van JavaScript is dat het geen toegang heeft tot bestanden op je computer. Er is geen manier om bestanden te laden of te bewaren omdat dit een beveiligingsrisico is. Er is geen manier om een database aan te spreken of om USB-poorten te gebruiken. Dit is vreemd voor een doorwinterde programmeur, omdat de meeste programmeertalen vooral gaan over input/output, maar JavaScript niet! JavaScript is niet ontworpen als een algemene programmeertaal.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Het werd ontworpen om webpagina’s te manipuleren en doet dat ook heel goed.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Zoals je weet: wanneer een gebruiker zijn webbrowser opent en een webpagina opvraagt van een server, dan worden HTML en CSS toegezonden als gewone tekst. De browser doet zijn best om alles er netjes uit te laten zien. Zo is het ook met JavaScript.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>JavaScript is een ‘client-side’ taal. Het wordt verstuurd naar de computer van de gebruiker en daar pas uitgevoerd. Dit in tegenstelling tot talen zoals PHP, ASP.NET, Ruby on Rails, … Deze talen voeren hun opdrachten uit op de webserver en sturen de resultaten naar de gebruiker.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Omdat JavaScript zo populair is, wordt het ook gebruikt binnen andere applicaties zoals Adobe Acrobat of Photoshop of Unity3D. Ook server-side wordt deze taal steeds meer gebruikt (Node.js, Google Apps Script), maar daar gaan we niet verder op in.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Een belangrijk aspect van het opsturen en uitvoeren van scripts in de webbrowser van de gebruiker, is dat deze gebruiker ‘JavaScripts uitvoeren’ aan heeft staan. Wanneer dat niet zo is, wordt het script wel opgestuurd, maar niet uitgevoerd. Deze situatie komt echter bijna niet meer voor wat niet wil zeggen dat we ons best moeten doen om onze pagina’s te doen werken met of zonder JavaScript. Natuurlijk zal een website zonder JavaScript veel statischer zijn.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Een ander probleem is het verschil tussen browsers. Zoals je waarschijnlijk al wel weet ziet een website er niet helemaal hetzelfde uit in verschillende browsers met dezelfde meegestuurde CSS. Hetzelfde geldt voor JavaScript en dit is de reden waarom deze taal zo lang een slechte naam heeft gehad. Tot voor kort moest je scripts voorzien van browserdetectie zodat elk script juist uitgevoerd zou worden. Gelukkig is dat nu voorbij! Er zijn nog wel enkele punten waar dit nog steeds zo is, maar voor het fundamentele dat we hier bespreken niet.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">Volgende: Een korte geschiedenis</span>](<span style="color:#a6e22e">#een-korte-geschiedenis</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># Een korte geschiedenis
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>JavaScript werd in 1995 ontwikkeld door Brendan Eich bij Netscape, in amper 10 dagen. De bedoeling was om webpagina’s interactiever te maken. Het kreeg aanvankelijk de naam <span style="font-weight:bold">**Mocha**</span>, werd daarna <span style="font-weight:bold">**LiveScript**</span>, en uiteindelijk <span style="font-weight:bold">**JavaScript**</span> (voor marketingredenen, om mee te surfen op de populariteit van Java).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Microsoft bouwde snel een eigen versie genaamd <span style="font-weight:bold">**JScript**</span> in Internet Explorer. Daardoor ontstond jarenlange chaos omdat de twee versies verschillend werkten.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Later werd de taal gestandaardiseerd onder de naam <span style="font-weight:bold">**ECMAScript**</span> door ECMA International. De moderne JavaScript-versies die we vandaag gebruiken (ES6 en verder) zijn gebaseerd op deze standaard.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Belangrijke mijlpalen:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 1995 — Eerste versie (Mocha → LiveScript → JavaScript)  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 1997 — ECMAScript 1  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 2009 — ECMAScript 5 (strikte modus, JSON)  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 2015 — ECMAScript 6 (let, const, classes, arrow functions, modules, …)  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Nu — Jaarlijks nieuwe versies met extra functies
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">Volgende: Ken je tools en applicaties</span>](<span style="color:#a6e22e">#ken-je-tools-en-applicaties</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># Ken je tools en applicaties
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Om JavaScript te schrijven heb je niet veel nodig:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Een browser
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Je hebt een moderne webbrowser nodig die JavaScript ondersteunt. Bijna alle browsers doen dat: Chrome, Firefox, Safari, Edge, Opera, …
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>De browser bevat ook de <span style="font-weight:bold">**JavaScript-console**</span> waar je foutmeldingen en uitvoer kunt zien. In Chrome en Firefox open je die met <span style="color:#e6db74">`F12`</span> of <span style="color:#e6db74">`Ctrl+Shift+I`</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Een teksteditor
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Eender welke teksteditor kan JavaScript schrijven, maar handig zijn:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> VS Code  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Sublime Text  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Atom  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Notepad++
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Zorg dat je bestanden bewaart met de extensie <span style="color:#e6db74">`.js`</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Een lokale webserver (optioneel)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Voor sommige oefeningen is een lokale webserver handig, vooral als je werkt met modules (<span style="color:#e6db74">`import/export`</span>). Dit kan eenvoudig met:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> VS Code + Live Server-extensie  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Python: <span style="color:#e6db74">`python -m http.server`</span>  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Node.js: <span style="color:#e6db74">`npx serve`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Online playgrounds
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Je kunt ook online oefenen, zonder installatie:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [<span style="color:#f92672">JSFiddle</span>](<span style="color:#a6e22e">https://jsfiddle.net</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [<span style="color:#f92672">CodePen</span>](<span style="color:#a6e22e">https://codepen.io</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [<span style="color:#f92672">JSBin</span>](<span style="color:#a6e22e">https://jsbin.com</span>)  
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> [<span style="color:#f92672">StackBlitz</span>](<span style="color:#a6e22e">https://stackblitz.com</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">Volgende: JavaScript structuur</span>](<span style="color:#a6e22e">#javascript-structuur</span>)
+</span></span></code></pre></div><p>Perfect ⚡
+Hier komt <strong>blok 2</strong> — <strong>JavaScript structuur</strong> met zijn twee subpagina’s:</p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># JavaScript structuur
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Schrijven en Volgorde
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Zoals je ziet wordt JavaScript geschreven als gewone tekst, zoals HTML en CSS. JavaScript is een zogezegd geïnterpreteerde taal, geen gecompileerde taal. Veel andere talen moeten gecompileerd worden: een compiler zet je code om naar machinetaal. Bij JavaScript hoeft dat niet. Je schrijft de code en de browser interpreteert en voert ze meteen uit.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>⚠️ <span style="font-weight:bold">**JavaScript is hoofdlettergevoelig!**</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">JAVASCRIPT IS HOOFDLETTERGEVOELIG !!!
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>
+</span></span><span style="display:flex;"><span>Als je van een programmeertaal komt die dat niet is (zoals Visual Basic, Pascal of HTML), let hier goed op. Als je er niet op let, werkt je script niet. JavaScript raadt niet wat je bedoelt.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>JavaScript-code bestaat uit <span style="font-weight:bold">**statements**</span>: afzonderlijke instructies die stap voor stap zeggen wat er moet gebeuren (bijv. een kleur veranderen, een leeftijd berekenen, een afbeelding verschuiven, een menu tonen of verbergen, een waarschuwing tonen).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Elk statement schrijf je meestal op één lijn.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Je eindigt statements met een <span style="font-weight:bold">**puntkomma `;`**</span> (zoals een punt aan het einde van een zin).
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Je mag meerdere statements op één lijn schrijven (maar dat maakt het onleesbaar).
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Je mag een lang statement over meerdere regels schrijven (het eindigt pas bij de puntkomma).
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>JavaScript is niet gevoelig voor extra spaties of regelafbrekingen, <span style="font-weight:bold">**behalve binnen aanhalingstekens**</span> — daar tellen spaties als gewone tekens in een string.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Plaatsing van het script
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Code wordt uitgevoerd <span style="font-weight:bold">**van boven naar beneden, regel per regel**</span>, vanaf het moment dat de browser het script ziet. Je kunt <span style="color:#e6db74">`&lt;script&gt;`</span>-tags op veel plaatsen zetten: in de <span style="color:#e6db74">`&lt;head&gt;`</span>, in de <span style="color:#e6db74">`&lt;body&gt;`</span>, middenin, of onderaan.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>De positie bepaalt dus <span style="font-weight:bold">**wanneer**</span> de code wordt uitgevoerd. Soms wil je wachten tot de gebruiker iets doet (muisklik, formulier invullen, toets indrukken). Dan bundel je je code in functies en roep je ze pas op bij bepaalde gebeurtenissen.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Inline scripts
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Bij eenvoudige pagina’s mag je inline scripts gebruiken (JavaScript in dezelfde HTML-bestand):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>```html
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Hallo wereld&#34;</span>);
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><h3 id="externe-scripts">Externe scripts</h3>
+<p>Voor grotere projecten is het beter om JavaScript in een apart <code>.js</code>-bestand te zetten. Zo wordt de code herbruikbaar en makkelijker te onderhouden.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mijnscript.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p>De <code>&lt;script&gt;</code>-tag krijgt het attribuut <code>src</code> met de bestandsnaam. De code staat dus niet meer tussen de tags, alleen de verwijzing.</p>
+<p><strong>Best practice</strong>: Zet je <code>&lt;script&gt;</code>-tags <strong>onderaan de <code>&lt;body&gt;</code></strong>, vlak vóór <code>&lt;/body&gt;</code>, zodat de HTML eerst geladen is vóór de scripts starten. CSS zet je juist <strong>bovenaan</strong>, zodat de pagina direct goed vormgegeven is.</p>
+<h3 id="type-attribuut"><code>type</code>-attribuut</h3>
+<p>Sommige voorbeelden tonen dit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mijnscript.js&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p><code>type=&quot;text/javascript&quot;</code> is niet meer verplicht in HTML5, maar mag wel blijven staan (sommige editors voegen het automatisch toe).</p>
+<p><a href="#fundamenten" target="_blank" rel="noopener noreferrer">Volgende: Fundamenten</a></p>
+<pre tabindex="0"><code>
+💥 Nice — hier komt **blok 3: Fundamenten** met **alle subpagina’s** netjes opgeschoond in Markdown.
+
+---
+
+````markdown
+# Fundamenten
+
+## Commentaar
+
+Commentaar wordt niet uitgevoerd. Het is handig om je code leesbaar te houden of tijdelijk uit te schakelen.
+
+**Eenregelige commentaar:**
+```js
+// Dit is commentaar
+console.log(&#34;Hallo&#34;);
+</code></pre><p><strong>Meerdere regels commentaar:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  Dit is
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  meerdere regels
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">  commentaar
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>
+</span></span></code></pre></div><hr>
+<h2 id="variabelen-let">Variabelen (let)</h2>
+<p>Een variabele is een naam voor een stukje data. Je maakt er één met <code>let</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">naam</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sam&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">leeftijd</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">17</span>;
+</span></span></code></pre></div><ul>
+<li><code>let</code> gebruik je als je de waarde later nog wil wijzigen</li>
+<li><code>const</code> gebruik je als de waarde nooit verandert</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">pi</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14</span>;
+</span></span></code></pre></div><hr>
+<h2 id="gegevenstypes">Gegevenstypes</h2>
+<p>Belangrijkste types in JavaScript:</p>
+<ul>
+<li><strong>String</strong> — tekst <code>&quot;Hallo&quot;</code></li>
+<li><strong>Number</strong> — getallen <code>42</code> of <code>3.14</code></li>
+<li><strong>Boolean</strong> — waar/onwaar <code>true</code> of <code>false</code></li>
+<li><strong>Null</strong> — geen waarde</li>
+<li><strong>Undefined</strong> — nog geen waarde toegewezen</li>
+<li><strong>Object</strong> — verzamelstructuur</li>
+<li><strong>Array</strong> — lijst van waarden</li>
+</ul>
+<p>Je kunt met <code>typeof</code> het type checken:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">42</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">x</span>); <span style="color:#75715e">// &#34;number&#34;
+</span></span></span></code></pre></div><hr>
+<h2 id="boodschappen-naar-de-console-sturen">Boodschappen naar de console sturen</h2>
+<p>Met <code>console.log()</code> toon je iets in de console (F12):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Hallo wereld&#34;</span>);
+</span></span></code></pre></div><p>Zo kun je makkelijk testen of je code werkt.</p>
+<hr>
+<h2 id="wiskundige-bewerkingen">Wiskundige bewerkingen</h2>
+<h3 id="rekenkundige-operatoren">Rekenkundige operatoren</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Symbool</th>
+          <th>Betekenis</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>+</code></td>
+          <td>optellen</td>
+      </tr>
+      <tr>
+          <td><code>-</code></td>
+          <td>aftrekken</td>
+      </tr>
+      <tr>
+          <td><code>*</code></td>
+          <td>vermenigvuldigen</td>
+      </tr>
+      <tr>
+          <td><code>/</code></td>
+          <td>delen</td>
+      </tr>
+      <tr>
+          <td><code>**</code></td>
+          <td>machtsverheffen</td>
+      </tr>
+      <tr>
+          <td><code>++</code></td>
+          <td>verhogen met 1</td>
+      </tr>
+      <tr>
+          <td><code>--</code></td>
+          <td>verlagen met 1</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="modulus-of-restwaarde-">Modulus of restwaarde (%)</h3>
+<p>Geeft de rest van een deling:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">10</span> <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span>); <span style="color:#75715e">// 1
+</span></span></span></code></pre></div><h3 id="concatenatie">Concatenatie</h3>
+<p>Strings samenvoegen met <code>+</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">voornaam</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sam&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">naam</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">voornaam</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; Vandercruyssen&#34;</span>;
+</span></span></code></pre></div><p>Sinds ES6 gebruik je vaak template strings:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">naam</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Hallo </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">voornaam</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span></code></pre></div><h3 id="nan-not-a-number">NaN (Not a Number)</h3>
+<p>Als een berekening geen geldig getal oplevert:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#ae81ff">0</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// NaN
+</span></span></span></code></pre></div><h3 id="het-math-object">Het Math object</h3>
+<p><code>Math</code> bevat veel wiskundige functies:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Math.<span style="color:#a6e22e">round</span>(<span style="color:#ae81ff">4.6</span>)); <span style="color:#75715e">// 5
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Math.<span style="color:#a6e22e">random</span>());   <span style="color:#75715e">// willekeurig getal tussen 0 en 1
+</span></span></span></code></pre></div><h3 id="logische-operatoren--en-">Logische operatoren (&amp;&amp; en ||)</h3>
+<ul>
+<li><code>&amp;&amp;</code> = EN</li>
+<li><code>||</code> = OF</li>
+<li><code>!</code> = NIET</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>); <span style="color:#75715e">// true
+</span></span></span></code></pre></div><hr>
+<h2 id="vraagstellingen-en-condities-if">Vraagstellingen en condities (if)</h2>
+<p>Met <code>if</code> voer je code alleen uit als iets waar is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">leeftijd</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">18</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Volwassen&#34;</span>);
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Minderjarig&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="werken-met-lussen-while-for">Werken met lussen (while, for)</h2>
+<p><strong>While-lus</strong>: herhaalt zolang de voorwaarde waar is</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>For-lus</strong>: herhaalt vast aantal keer</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="functies-function">Functies (function)</h2>
+<p>Functies groeperen code en maken ze herbruikbaar:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">begroet</span>(<span style="color:#a6e22e">naam</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Hallo &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">naam</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">begroet</span>(<span style="color:#e6db74">&#34;Sam&#34;</span>);
+</span></span></code></pre></div><p>Of als <strong>arrow function</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">begroet</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">naam</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Hallo </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">naam</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><hr>
+<h2 id="de-scope-van-een-variabele">De &lsquo;scope&rsquo; van een variabele</h2>
+<p><strong>Scope</strong> = waar een variabele geldig is:</p>
+<ul>
+<li><code>let</code> en <code>const</code> hebben <strong>blokscope</strong> → alleen binnen <code>{ }</code></li>
+<li><code>var</code> (oud) heeft <strong>function scope</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span>); <span style="color:#75715e">// 10
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span>); <span style="color:#75715e">// fout: x bestaat hier niet
+</span></span></span></code></pre></div><hr>
+<p><a href="#arrays" target="_blank" rel="noopener noreferrer">Volgende: Arrays</a></p>
+<pre tabindex="0"><code>
+Perfect ⚡
+Hier komt **blok 4: Arrays** — kort maar belangrijk.
+
+---
+
+````markdown
+# Arrays
+
+We hebben tot nu toe variabelen gebruikt met één waarde.  
+Een **array** is een variabele die meerdere waarden kan bevatten.
+
+## Een lege array aanmaken
+
+```js
+let waarden = [];
+// of
+let waarden = new Array();
+</code></pre><h2 id="waarden-toevoegen-op-posities-indexen">Waarden toevoegen op posities (indexen)</h2>
+<p>Indexen beginnen bij <strong>0</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">waarden</span>[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">waarden</span>[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">waarden</span>[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Mouse&#34;</span>;
+</span></span></code></pre></div><h2 id="waarden-opvragen">Waarden opvragen</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">waarden</span>[<span style="color:#ae81ff">1</span>]); <span style="color:#75715e">// 60
+</span></span></span></code></pre></div><h2 id="lengte-van-een-array">Lengte van een array</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">waarden</span>.<span style="color:#a6e22e">length</span>); <span style="color:#75715e">// 3
+</span></span></span></code></pre></div><h2 id="arrays-bewerken-met-methodes">Arrays bewerken met methodes</h2>
+<p>Arrays zijn objecten en hebben ingebouwde functies (methodes):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">omgekeerd</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">waarden</span>.<span style="color:#a6e22e">reverse</span>();
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">omgekeerd</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;, &#34;</span>));
+</span></span></code></pre></div><p>Er bestaan veel nuttige methodes zoals <code>.push()</code>, <code>.pop()</code>, <code>.slice()</code>, <code>.splice()</code>, <code>.map()</code>, <code>.filter()</code>, …</p>
+<hr>
+<p><a href="#objecten" target="_blank" rel="noopener noreferrer">Volgende: Objecten</a></p>
+<pre tabindex="0"><code>
+Perfect 💪
+Hier komt **blok 5: Objecten** met alle subpagina’s erin verwerkt.
+
+---
+
+````markdown
+# Objecten
+
+## Het Object model
+
+Een **object** is een verzameling van eigenschappen (properties) en functies (methodes).  
+Eigenschappen zijn stukjes data, methodes zijn functies die op het object werken.
+
+```js
+let persoon = {
+  naam: &#34;Sam&#34;,
+  leeftijd: 17,
+  spreek: function () {
+    console.log(&#34;Hallo!&#34;);
+  }
+};
+
+console.log(persoon.naam); // Sam
+persoon.spreek(); // Hallo!
+</code></pre><p>Je spreekt eigenschappen aan met <strong>puntnotatie</strong> of <strong>blokhaken</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">persoon</span>[<span style="color:#e6db74">&#34;leeftijd&#34;</span>]);
+</span></span></code></pre></div><p>Je kunt nieuwe eigenschappen toevoegen of wijzigen:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">persoon</span>.<span style="color:#a6e22e">hobby</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;muziek&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">persoon</span>.<span style="color:#a6e22e">leeftijd</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">18</span>;
+</span></span></code></pre></div><hr>
+<h2 id="werken-met-strings">Werken met Strings</h2>
+<p><strong>Strings</strong> zijn tekst. Je kunt ze samenvoegen, splitsen en doorzoeken.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">tekst</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hallo wereld&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">tekst</span>.<span style="color:#a6e22e">length</span>);      <span style="color:#75715e">// 12
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">tekst</span>.<span style="color:#a6e22e">toUpperCase</span>()); <span style="color:#75715e">// &#34;HALLO WERELD&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">tekst</span>.<span style="color:#a6e22e">includes</span>(<span style="color:#e6db74">&#34;wereld&#34;</span>)); <span style="color:#75715e">// true
+</span></span></span></code></pre></div><p><strong>Handige stringmethodes</strong>:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Methode</th>
+          <th>Uitleg</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>.length</code></td>
+          <td>aantal tekens</td>
+      </tr>
+      <tr>
+          <td><code>.toUpperCase()</code></td>
+          <td>alles in hoofdletters</td>
+      </tr>
+      <tr>
+          <td><code>.toLowerCase()</code></td>
+          <td>alles in kleine letters</td>
+      </tr>
+      <tr>
+          <td><code>.trim()</code></td>
+          <td>spaties aan begin/einde weghalen</td>
+      </tr>
+      <tr>
+          <td><code>.slice(begin, eind)</code></td>
+          <td>stuk tekst eruit knippen</td>
+      </tr>
+      <tr>
+          <td><code>.split(&quot; &quot;)</code></td>
+          <td>opsplitsen in een array op spaties</td>
+      </tr>
+      <tr>
+          <td><code>.includes(&quot;...&quot;)</code></td>
+          <td>checkt of tekst voorkomt</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="werken-met-datums">Werken met Datums</h2>
+<p><strong>Date</strong> is een ingebouwd object om met datums en tijden te werken.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nu</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date();
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">nu</span>); <span style="color:#75715e">// huidige datum en tijd
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">nu</span>.<span style="color:#a6e22e">getFullYear</span>()); <span style="color:#75715e">// jaar
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">nu</span>.<span style="color:#a6e22e">getMonth</span>());    <span style="color:#75715e">// maand (0-11)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">nu</span>.<span style="color:#a6e22e">getDate</span>());     <span style="color:#75715e">// dag (1-31)
+</span></span></span></code></pre></div><p>Je kunt ook zelf datums maken:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">verjaardag</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date(<span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">15</span>); <span style="color:#75715e">// 15 mei 2000
+</span></span></span></code></pre></div><p><strong>Handige datummethodes</strong>:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Methode</th>
+          <th>Uitleg</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>.getFullYear()</code></td>
+          <td>jaar</td>
+      </tr>
+      <tr>
+          <td><code>.getMonth()</code></td>
+          <td>maand (0 = januari)</td>
+      </tr>
+      <tr>
+          <td><code>.getDate()</code></td>
+          <td>dag</td>
+      </tr>
+      <tr>
+          <td><code>.getDay()</code></td>
+          <td>weekdag (0 = zondag)</td>
+      </tr>
+      <tr>
+          <td><code>.getHours()</code></td>
+          <td>uur (0–23)</td>
+      </tr>
+      <tr>
+          <td><code>.getMinutes()</code></td>
+          <td>minuten</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="werken-met-objecten">Werken met Objecten</h2>
+<h3 id="object-literal">Object literal</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">auto</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">merk</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Volvo&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">kleur</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;rood&#34;</span>
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h3 id="object-constructor">Object constructor</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Auto</span>(<span style="color:#a6e22e">merk</span>, <span style="color:#a6e22e">kleur</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">merk</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">merk</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">kleur</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">kleur</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mijnAuto</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Auto</span>(<span style="color:#e6db74">&#34;Tesla&#34;</span>, <span style="color:#e6db74">&#34;blauw&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">mijnAuto</span>.<span style="color:#a6e22e">merk</span>);
+</span></span></code></pre></div><h3 id="itereren-over-eigenschappen">Itereren over eigenschappen</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">sleutel</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">mijnAuto</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">sleutel</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">mijnAuto</span>[<span style="color:#a6e22e">sleutel</span>]);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="objectkeys-en-objectvalues">Object.keys() en Object.values()</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">mijnAuto</span>));   <span style="color:#75715e">// [&#34;merk&#34;, &#34;kleur&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(Object.<span style="color:#a6e22e">values</span>(<span style="color:#a6e22e">mijnAuto</span>)); <span style="color:#75715e">// [&#34;Tesla&#34;, &#34;blauw&#34;]
+</span></span></span></code></pre></div><hr>
+<p><a href="#document-object-model" target="_blank" rel="noopener noreferrer">Volgende: Document Object Model</a></p>
+<pre tabindex="0"><code>
+Perfect ⚡
+Hier komt **blok 6: Document Object Model (DOM)** met alle subonderdelen.
+
+---
+
+````markdown
+# Document Object Model
+
+Het **Document Object Model (DOM)** is de structuur waarin je webpagina wordt voorgesteld.  
+JavaScript kan via de DOM elk element op de pagina aanspreken, veranderen, toevoegen of verwijderen.
+
+---
+
+## Wat is de DOM?
+
+De DOM beschrijft een webpagina als een **boomstructuur van objecten (nodes)**.
+
+### Document
+
+De webpagina waar je op dat moment naar kijkt.  
+Het is hetzelfde document, of je nu naar de HTML-bron kijkt of naar de visuele weergave.  
+Voor JavaScript is de HTML-bron belangrijk.
+
+### Object
+
+Een **object** is een element in de HTML (zoals `&lt;h1&gt;`, `&lt;p&gt;`, `&lt;ul&gt;`, `&lt;li&gt;`).  
+Objecten kunnen andere objecten bevatten.
+
+### Model
+
+De HTML wordt weergegeven als een **boomstructuur** van nodes:  
+bijv. document → body → div → p → ul → li
+
+- Elke node kan child-nodes (onderliggende elementen) en parent-nodes (bovenliggende elementen) hebben.
+- De DOM is dus een hiërarchische structuur.
+
+---
+
+## Werken met nodes en elementen
+
+Elke HTML-tag is een node in de DOM.  
+De belangrijkste types:
+
+- **element nodes** — HTML-tags zoals `&lt;p&gt;`, `&lt;div&gt;`, `&lt;ul&gt;`  
+- **text nodes** — de tekst binnen een element  
+- **attribute nodes** — de kenmerken van een element
+
+Je kunt navigeren in de DOM met:
+
+```js
+element.parentNode     // ouder
+element.childNodes     // kinderen
+element.firstChild
+element.lastChild
+element.nextSibling
+element.previousSibling
+</code></pre><hr>
+<h2 id="aanspreken-van-dom-elementen">Aanspreken van DOM-elementen</h2>
+<p>Gebruik deze functies om elementen te selecteren:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;titel&#34;</span>);
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;belangrijk&#34;</span>);
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;#titel&#34;</span>);
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">querySelectorAll</span>(<span style="color:#e6db74">&#34;p.belangrijk&#34;</span>);
+</span></span></code></pre></div><p>Met <code>querySelector</code> kun je CSS-selectors gebruiken — meestal de handigste optie.</p>
+<hr>
+<h2 id="dom-elementen-aanpassen">DOM-elementen aanpassen</h2>
+<h3 id="tekst-of-html-aanpassen">Tekst of HTML aanpassen</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">titel</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;titel&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">titel</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Nieuwe titel&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">titel</span>.<span style="color:#a6e22e">innerHTML</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;em&gt;Nieuwe&lt;/em&gt; titel&#34;</span>;
+</span></span></code></pre></div><h3 id="css-aanpassen">CSS aanpassen</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">titel</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">titel</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">fontSize</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;2em&#34;</span>;
+</span></span></code></pre></div><h3 id="kenmerken-attributen-aanpassen">Kenmerken (attributen) aanpassen</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">link</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;a&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">link</span>.<span style="color:#a6e22e">setAttribute</span>(<span style="color:#e6db74">&#34;href&#34;</span>, <span style="color:#e6db74">&#34;https://example.com&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">link</span>.<span style="color:#a6e22e">getAttribute</span>(<span style="color:#e6db74">&#34;href&#34;</span>);
+</span></span></code></pre></div><hr>
+<h2 id="dom-elementen-creëren">DOM-elementen creëren</h2>
+<p>Nieuwe elementen toevoegen aan de DOM:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">nieuw</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;p&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">nieuw</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hallo wereld&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">nieuw</span>);
+</span></span></code></pre></div><p>Je kunt ook verwijderen:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">removeChild</span>(<span style="color:#a6e22e">nieuw</span>);
+</span></span></code></pre></div><p>Of elders invoegen:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">lijst</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;ul&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">item</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;li&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Nieuw item&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">lijst</span>.<span style="color:#a6e22e">insertBefore</span>(<span style="color:#a6e22e">item</span>, <span style="color:#a6e22e">lijst</span>.<span style="color:#a6e22e">firstChild</span>);
+</span></span></code></pre></div><hr>
+<p><a href="#events" target="_blank" rel="noopener noreferrer">Volgende: Events</a></p>
+<pre tabindex="0"><code>
+Top 🔥
+Hier komt **blok 7: Events** met alle subonderdelen erin.
+
+---
+
+````markdown
+# Events
+
+Met **events** kan je code uitvoeren wanneer de gebruiker iets doet (klikt, typt, beweegt …).  
+Je kunt events koppelen aan HTML-elementen.
+
+---
+
+## Werken met onclick events
+
+`onclick` wordt uitgevoerd als een element wordt aangeklikt:
+
+```html
+&lt;button onclick=&#34;zegHallo()&#34;&gt;Klik mij&lt;/button&gt;
+
+&lt;script&gt;
+function zegHallo() {
+  console.log(&#34;Hallo!&#34;);
+}
+&lt;/script&gt;
+</code></pre><p><strong>Betere manier</strong> (scheidt HTML en JS):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;knop&#34;</span>&gt;Klik mij&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;knop&#34;</span>).<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Hallo!&#34;</span>);
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p>Of met <code>addEventListener</code> (meest gebruikt):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;knop&#34;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Hallo!&#34;</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span></code></pre></div><hr>
+<h2 id="werken-met-onload-events">Werken met onload events</h2>
+<p><code>onload</code> gebeurt als de pagina volledig geladen is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span> <span style="color:#a6e22e">onload</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;init()&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">init</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Pagina geladen&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p>Beter met JS:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>window.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;load&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Pagina geladen&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><hr>
+<h2 id="de-onblur-en-onfocus-events">De onblur en onfocus events</h2>
+<ul>
+<li><code>onfocus</code> → als een invoerveld actief wordt</li>
+<li><code>onblur</code> → als het veld focus verliest</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;naam&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">naam</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;naam&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">naam</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;focus&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Focus!&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">naam</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;blur&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Focus verloren&#34;</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><hr>
+<h2 id="timers">Timers</h2>
+<p>Met <code>setTimeout</code> en <code>setInterval</code> kan je code na een bepaalde tijd uitvoeren.</p>
+<p><strong>setTimeout</strong> — éénmalig na x milliseconden:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">setTimeout</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Hallo na 2 seconden&#34;</span>);
+</span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">2000</span>);
+</span></span></code></pre></div><p><strong>setInterval</strong> — herhaaldelijk elke x milliseconden:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">setInterval</span>(() =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Om de 3 seconden&#34;</span>);
+</span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">3000</span>);
+</span></span></code></pre></div><p>Je kan een interval stoppen met <code>clearInterval(id)</code>.</p>
+<hr>
+<p><a href="#formulieren" target="_blank" rel="noopener noreferrer">Volgende: Formulieren</a></p>
+<pre tabindex="0"><code>
+Perfect ⚡
+Hier komt **blok 8: Formulieren** met de twee subonderdelen.
+
+---
+
+````markdown
+# Formulieren
+
+Formulieren gebruiken events om te reageren op gebruikersinvoer.  
+Met JavaScript kun je formulierverzending tegenhouden, controleren en dynamisch reageren.
+
+---
+
+## Stop submit
+
+Standaard verzendt een formulier zichzelf en herlaadt de pagina.  
+Met `preventDefault()` kun je dat verhinderen:
+
+```html
+&lt;form id=&#34;mijnForm&#34;&gt;
+  &lt;input type=&#34;text&#34; id=&#34;naam&#34; required&gt;
+  &lt;button type=&#34;submit&#34;&gt;Verzend&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;script&gt;
+document.getElementById(&#34;mijnForm&#34;)
+  .addEventListener(&#34;submit&#34;, (e) =&gt; {
+    e.preventDefault(); // voorkomt herladen
+    console.log(&#34;Formulier onderschept&#34;);
+  });
+&lt;/script&gt;
+</code></pre><hr>
+<h2 id="reageren-op-formulier-selecties">Reageren op formulier selecties</h2>
+<p>Je kunt reageren op veranderingen in invoervelden, selecties of checkboxes met <code>change</code> of <code>input</code> events:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">select</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;kleur&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">option</span>&gt;Rood&lt;/<span style="color:#f92672">option</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">option</span>&gt;Blauw&lt;/<span style="color:#f92672">option</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">option</span>&gt;Groen&lt;/<span style="color:#f92672">option</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">select</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;kleur&#34;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;change&#34;</span>, (<span style="color:#a6e22e">e</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Gekozen kleur:&#34;</span>, <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">value</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><p>Ook tekstvelden kunnen reageren:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;naam&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;naam&#34;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;input&#34;</span>, (<span style="color:#a6e22e">e</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Invoer:&#34;</span>, <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">value</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><hr>
+<p><a href="#css-en-javascript" target="_blank" rel="noopener noreferrer">Volgende: CSS en JavaScript</a></p>
+<pre tabindex="0"><code>
+Perfect 💪
+Hier komt **blok 9: CSS en JavaScript** met het onderdeel over animatie.
+
+---
+
+````markdown
+# CSS en JavaScript
+
+Met JavaScript kun je CSS aanpassen, toevoegen of verwijderen.  
+Zo kan je dynamisch stijlen wijzigen of animaties starten/stoppen.
+
+---
+
+## Animatie via JavaScript en CSS
+
+Je kunt CSS-classes toevoegen of verwijderen met `classList` om animaties te starten:
+
+```html
+&lt;style&gt;
+.verberg {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.tonen {
+  opacity: 1;
+  transition: opacity 1s;
+}
+&lt;/style&gt;
+
+&lt;div id=&#34;blok&#34; class=&#34;verberg&#34;&gt;Hallo!&lt;/div&gt;
+&lt;button id=&#34;toon&#34;&gt;Toon&lt;/button&gt;
+&lt;button id=&#34;verberg&#34;&gt;Verberg&lt;/button&gt;
+
+&lt;script&gt;
+const blok = document.getElementById(&#34;blok&#34;);
+document.getElementById(&#34;toon&#34;).addEventListener(&#34;click&#34;, () =&gt; {
+  blok.classList.remove(&#34;verberg&#34;);
+  blok.classList.add(&#34;tonen&#34;);
+});
+document.getElementById(&#34;verberg&#34;).addEventListener(&#34;click&#34;, () =&gt; {
+  blok.classList.remove(&#34;tonen&#34;);
+  blok.classList.add(&#34;verberg&#34;);
+});
+&lt;/script&gt;
+</code></pre><p>Je kunt ook inline stijlen rechtstreeks aanpassen:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">blok</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">transform</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;translateX(100px)&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">blok</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">transition</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;transform 0.5s&#34;</span>;
+</span></span></code></pre></div><p>Maar meestal is werken met CSS-classes netter en overzichtelijker.</p>
+<hr>
+<p><a href="#javascript-beter" target="_blank" rel="noopener noreferrer">Volgende: JavaScript Beter</a></p>
+<pre tabindex="0"><code>
+Perfect ⚡
+Hier komt **blok 10: JavaScript Beter** met de twee subonderdelen.
+
+---
+
+````markdown
+# JavaScript Beter
+
+Hier leer je hoe je code netter en efficiënter schrijft en hoe je bestanden kleiner maakt voor publicatie.
+
+---
+
+## JavaScript stijl
+
+**Schrijf leesbare code**:
+
+- Gebruik duidelijke namen (`let aantalLeerlingen` i.p.v. `let a`)
+- Gebruik inspringing en lege regels
+- Zet accolades `{ }` correct
+- Gebruik `const` waar het kan, `let` waar nodig
+- Zet `;` achter je statements (optioneel, maar consequent doen)
+
+**Voorbeeld (goed):**
+```js
+function telOp(a, b) {
+  return a + b;
+}
+</code></pre><p><strong>Voorbeeld (slecht):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">x</span>(<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>){<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span><span style="color:#f92672">+</span><span style="color:#a6e22e">b</span>}
+</span></span></code></pre></div><p>Gebruik ook <strong>linters</strong> of <strong>formatters</strong> zoals <a href="https://prettier.io/" target="_blank" rel="noopener noreferrer">Prettier</a> of <a href="https://eslint.org/" target="_blank" rel="noopener noreferrer">ESLint</a> om je code automatisch op te schonen.</p>
+<hr>
+<h2 id="minify">Minify</h2>
+<p><strong>Minifyen</strong> = overbodige spaties, enters en comments verwijderen om je bestand kleiner te maken.</p>
+<p>Voorbeeld:</p>
+<p><strong>Voor:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">telOp</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>; <span style="color:#75715e">// telt 2 getallen op
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p><strong>Na:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">telOp</span>(<span style="color:#a6e22e">a</span>,<span style="color:#a6e22e">b</span>){<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span><span style="color:#f92672">+</span><span style="color:#a6e22e">b</span>;}
+</span></span></code></pre></div><p>Minifyen doe je met tools zoals:</p>
+<ul>
+<li><a href="https://skalman.github.io/UglifyJS-online/" target="_blank" rel="noopener noreferrer">UglifyJS</a></li>
+<li><a href="https://terser.org/" target="_blank" rel="noopener noreferrer">Terser</a></li>
+<li><a href="https://javascript-minifier.com/" target="_blank" rel="noopener noreferrer">JavaScript Minifier</a></li>
+</ul>
+<p>⚠️ Let op: gebruik bij voorkeur de <strong>niet-minified versie tijdens het ontwikkelen</strong>
+en enkel de <strong>minified versie bij publicatie</strong>.</p>
+<hr>
+<p><a href="#libraries" target="_blank" rel="noopener noreferrer">Volgende: Libraries</a></p>
+<pre tabindex="0"><code>
+Perfect 💥
+Hier komt **blok 11: Libraries** — de laatste sectie.
+
+---
+
+````markdown
+# Libraries
+
+**Libraries** zijn herbruikbare bundels met JavaScript-code die vaak voorkomende taken makkelijker maken.  
+In plaats van alles zelf te schrijven, gebruik je een library en roep je functies ervan aan.
+
+---
+
+## Voorbeelden van libraries
+
+- **jQuery** — eenvoudige DOM-manipulatie en events  
+- **Lodash** — hulpfuncties voor arrays, objecten, strings, …  
+- **Moment.js / Day.js** — werken met datums en tijden  
+- **Axios** — HTTP-verzoeken (AJAX) doen  
+- **Chart.js** — grafieken en diagrammen  
+- **Three.js** — 3D in de browser  
+- **GSAP** — animaties
+
+---
+
+## Gebruik van een library
+
+### Extern laden via CDN
+
+```html
+&lt;script src=&#34;https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+axios.get(&#34;https://api.example.com/data&#34;)
+  .then(response =&gt; console.log(response.data));
+&lt;/script&gt;
+</code></pre><h3 id="installeren-via-npm-nodejs-project">Installeren via npm (Node.js-project)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install axios
+</span></span></code></pre></div><p>en dan:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">axios</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;axios&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">axios</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;https://api.example.com/data&#34;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">res</span> =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">data</span>));
+</span></span></code></pre></div><hr>
+<h2 id="wanneer-libraries-gebruiken">Wanneer libraries gebruiken?</h2>
+<p>✅ Handig als:</p>
+<ul>
+<li>Je iets wil doen dat veel code vraagt om zelf te schrijven</li>
+<li>Je snel resultaat wil</li>
+<li>De library goed onderhouden en betrouwbaar is</li>
+</ul>
+<p>⚠️ Vermijd libraries als:</p>
+<ul>
+<li>Je het ook eenvoudig zelf kan schrijven</li>
+<li>De library groot is en je site trager maakt</li>
+<li>Je maar één klein onderdeel ervan nodig hebt</li>
+</ul>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/kunstkaai/js/main.js"></script>
+
+  </footer>
+</body>
+</html>
