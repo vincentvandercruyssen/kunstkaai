@@ -323,7 +323,11 @@ main ol li:nth-child(n + 10)::before {
 
 .highlight * {
   background-color: var(--bghighlight) !important;
-  color: var(--text) !important;
+  /* color: var(--text) !important; */
+}
+
+span {
+  color: var(--text);
 }
 
 footer {

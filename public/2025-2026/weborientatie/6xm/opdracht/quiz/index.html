@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/kunstkaai/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=kunstkaai/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Opdracht: Quiz | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/kunstkaai/css/main.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/qtj0alg.css">
+<link rel="icon" type="image/svg" href="/kunstkaai/favicon.svg">
+
+</head>
+<body>
+  <select data-theme-picker name="themepicker" id="theme">
+    <option value="🖥️">🖥️</option>
+    <option value="☀️">☀️</option>
+    <option value="🌙">🌙</option>
+  </select>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Weboriëntatie
+<br>
+    Opdracht: Quiz
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#wat-je-precies-bouwt">1. Wat je precies bouwt</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#kernbegrippen">2. Kernbegrippen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#state-wijzigende-gegevens">2.1 State (wijzigende gegevens)</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#dom-selecties">2.2 DOM-selecties</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#events-per-knop">2.3 Events per knop</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#data-attributes-lezen">2.4 Data-attributes lezen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#if--else">2.5 If / else</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#ui-bijwerken">2.6 UI bijwerken</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#klikken-blokkeren-%c3%a9%c3%a9n-poging-per-vraag">2.7 Klikken blokkeren (één poging per vraag)</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#bouwplan">3. Bouwplan</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#voorbereiden">3.1 Voorbereiden</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#javascript">3.2 JavaScript</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#per-vraag-knoppen-koppelen">3.3 Per vraag: knoppen koppelen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#resetknop">3.4 Resetknop</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#css">4. CSS</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#indienen">5. Indienen</a>
+
+      
+      
+    
+
+    
+    </li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Weboriëntatie
+ <br> Opdracht: Quiz</h1>
+
+<p>Je maakt een persoonlijke <strong>quiz met minimaal 3 meerkeuzevragen</strong>. Je kiest zelf het onderwerp van je quiz. Denk aan iets persoonlijks of iets luchtigs. Een quiz over je favoriete films, muziek of games. Een kennisquiz over een hobby of vakgebied. Enzoverder.</p>
+<p>Elke vraag heeft <strong>3 knoppen (mogelijke antwoorden)</strong>, waarvan <strong>één juist</strong>. Na een klik verschijnt feedback (<strong>Juist/Fout</strong>), worden de knoppen van <strong>die vraag</strong> uitgezet, en wordt ergens duidelijk de <strong>score</strong> getoond als <strong>juist / totaal</strong>.</p>
+<p>Doel: hetzelfde patroon als bij <em>Teller</em> herhalen (<strong>state → event → if/else → UI updaten</strong>), maar nu met <strong>meerdere blokken</strong>.</p>
+<h2 id="wat-je-precies-bouwt">Wat je precies bouwt</h2>
+<p><strong>3 vaste vraagblokken</strong> in de HTML (<code>&lt;section class=&quot;quiz-vraag&quot;&gt;</code>), elk met:</p>
+<ul>
+<li>een element met de <strong>vraag</strong> (bv. <code>&lt;p class=&quot;vraag&quot;&gt;…&lt;/p&gt;</code>)</li>
+<li><strong>3 knoppen</strong> met het mogelijke antwoord → Op <strong>exact 1</strong> knop hang je het kenmerk <code>data-correct=&quot;true&quot;</code>, op de twee andere <code>data-correct=&quot;false&quot;</code>.</li>
+<li>een leeg element waar <strong>feedback</strong> verschijnt a.d.h.v. <code>textContent</code> (bv. <code>&lt;p class=&quot;feedback&quot;&gt;&lt;/p&gt;</code>)</li>
+</ul>
+<p>Eén <strong>score-element</strong> (bv. <code>&lt;p id=&quot;score&quot;&gt;Score: 0 / 3&lt;/p&gt;</code>)
+Eén <strong>resetknop</strong> (bv. <code>&lt;button id=&quot;reset&quot;&gt;Opnieuw&lt;/button&gt;</code>)</p>
+<p>Je script koppel je met <code>defer</code> onderaan de <code>body</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>  &lt;<span style="color:#7ee787">script</span> src<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;app.js&#34;</span> defer&gt;&lt;/<span style="color:#7ee787">script</span>&gt;
+</span></span></code></pre></div><p><em><code>defer</code> zorgt dat de HTML eerst is ingeladen vóór je JS draait.</em></p>
+<h2 id="kernbegrippen">Kernbegrippen</h2>
+<h3 id="state-wijzigende-gegevens">State (wijzigende gegevens)</h3>
+<p>Je houdt bij <strong>hoeveel</strong> vragen juist zijn:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">let</span> juistCount <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">0</span>;
+</span></span></code></pre></div><h3 id="dom-selecties">DOM-selecties</h3>
+<p>Je hebt meerdere vraagblokken nodig tegelijk:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> vragen <span style="color:#ff7b72;font-weight:bold">=</span> document.querySelectorAll(<span style="color:#a5d6ff">&#34;.quiz-vraag&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> totaal <span style="color:#ff7b72;font-weight:bold">=</span> vragen.length;
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> scoreEl <span style="color:#ff7b72;font-weight:bold">=</span> document.getElementById(<span style="color:#a5d6ff">&#34;score&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> resetBtn <span style="color:#ff7b72;font-weight:bold">=</span> document.getElementById(<span style="color:#a5d6ff">&#34;reset&#34;</span>);
+</span></span></code></pre></div><h3 id="events-per-knop">Events per knop</h3>
+<p>In elk vraagblok hang je op <strong>alle knoppen</strong> een click-handler:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>knoppen.forEach((btn) =&gt; { btn.addEventListener(<span style="color:#a5d6ff">&#34;click&#34;</span>, handleClick); });
+</span></span></code></pre></div><h3 id="data-attributes-lezen">Data-attributes lezen</h3>
+<p>Uit de aangeklikte knop haal je of die juist is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> juist <span style="color:#ff7b72;font-weight:bold">=</span> btn.dataset.correct <span style="color:#ff7b72;font-weight:bold">===</span> <span style="color:#a5d6ff">&#34;true&#34;</span>;
+</span></span></code></pre></div><h3 id="if--else">If / else</h3>
+<p>Bepaal feedback en score:</p>
+<ul>
+<li>juist → “Juist!” + <strong>groen</strong> + <code>juistCount++</code></li>
+<li>fout → “Fout!” + <strong>rood</strong></li>
+</ul>
+<h3 id="ui-bijwerken">UI bijwerken</h3>
+<ul>
+<li>feedback tonen: <code>feedbackEl.textContent = &quot;…&quot;</code>;</li>
+<li>kleur zetten: <code>feedbackEl.style.color = &quot;…&quot;</code>;</li>
+<li>score tonen: <code>scoreEl.textContent = \</code>Score: ${juistCount} / ${totaal}`;`</li>
+</ul>
+<h3 id="klikken-blokkeren-één-poging-per-vraag">Klikken blokkeren (één poging per vraag)</h3>
+<p>Na antwoord <strong>alle knoppen</strong> in dat blok uitschakelen:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">for</span> (<span style="color:#ff7b72">const</span> knop <span style="color:#ff7b72">of</span> knoppen) { knop.disabled <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">true</span>; }
+</span></span></code></pre></div><h2 id="bouwplan">Bouwplan</h2>
+<h3 id="voorbereiden">Voorbereiden</h3>
+<ul>
+<li>Zet minimaal <strong>3</strong> <code>&lt;section class=&quot;quiz-vraag&quot;&gt;</code> in je HTML zoals hierboven.</li>
+<li>Vul <strong>zelf je vragen en antwoorden</strong> in.</li>
+<li>Zet bij precies <strong>één</strong> knop <code>data-correct=&quot;true&quot;</code>.</li>
+</ul>
+<h3 id="javascript">JavaScript</h3>
+<p>Gebruik de nodige variabelen en constanten die hierboven beschreven werden.</p>
+<p>Maak meteen een kleine hulpfunctie om de score te tonen:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">function</span> updateScore() {
+</span></span><span style="display:flex;"><span>  scoreEl.textContent <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">`Score: </span><span style="color:#a5d6ff">${</span>juistCount<span style="color:#a5d6ff">}</span><span style="color:#a5d6ff"> / </span><span style="color:#a5d6ff">${</span>totaal<span style="color:#a5d6ff">}</span><span style="color:#a5d6ff">`</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>updateScore(); <span style="color:#8b949e;font-style:italic">// beginstand tonen
+</span></span></span></code></pre></div><h3 id="per-vraag-knoppen-koppelen">Per vraag: knoppen koppelen</h3>
+<p>Ofwel een forEach binnen een forEach.</p>
+<p>Voor <strong>elk</strong> <code>.quiz-vraag</code> blok:</p>
+<ol>
+<li>Selecteer <strong>alle knoppen</strong> en het <strong>feedback-element</strong>.</li>
+<li>Hang op elke knop <strong>éénzelfde</strong> click-handler.</li>
+</ol>
+<p>In die handler doe je, in orde:</p>
+<ol>
+<li>Lees of het antwoord juist is (<code>dataset.correct</code>).</li>
+<li>Zet <strong>feedbacktekst</strong> (“Juist! ✅” of “Fout! ❌”).</li>
+<li>Zet <strong>feedbackkleur</strong> (groen of rood) met <code>style.color</code>.</li>
+<li>Als <strong>juist</strong> → verhoog <code>juistCount</code> met 1.</li>
+<li><strong>Update</strong> de score (roep <code>updateScore()</code> aan).</li>
+<li>Zet <strong>alle knoppen in dit blok</strong> op <code>disabled = true</code>.</li>
+</ol>
+<p>Tip: hou de handler <strong>klein</strong> en in dezelfde volgorde, dan leest het vlotter.</p>
+<h3 id="resetknop">Resetknop</h3>
+<p>Op klik:</p>
+<ul>
+<li>zet <code>juistCount = 0;</code></li>
+<li>roep <code>updateScore()</code> op.</li>
+<li>maak in elk vraagblok de <strong>feedback</strong> leeg</li>
+<li>zet <strong>alle knoppen</strong> terug op <code>disabled = false</code></li>
+</ul>
+<h2 id="css">CSS</h2>
+<p>Vormgeving Vrij te kiezen. De <strong>feedbackkleur</strong> mag je rechtstreeks in JS zetten met <code>style.color</code>.</p>
+<p>Voor knoppen-uitgeschakeld volstaat een specifieke selector <code>button:disabled { ... }</code>.</p>
+<h2 id="indienen">Indienen</h2>
+<ul>
+<li>Map: <code>Weboriëntatie/VoornaamA_Quiz</code> (met <code>index.html</code>, <code>style.css</code>, <code>app.js</code>).</li>
+<li>Deel via volledige map <strong>Weboriëntatie</strong> met <strong>OneDrive-link</strong> in <strong>Classroom</strong>.</li>
+</ul>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/kunstkaai/js/main.js"></script>
+
+  </footer>
+</body>
+</html>

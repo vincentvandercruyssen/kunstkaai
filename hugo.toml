@@ -25,3 +25,7 @@ disableKinds = ["RSS", "taxonomy", "term"]
 
 [build]
   cleanDestinationDir = true
+
+[markup]
+[markup.highlight]
+  style = "github-dark"

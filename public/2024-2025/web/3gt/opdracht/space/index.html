@@ -407,69 +407,69 @@ Webontwikkeling
 <h2 id="css-styling">CSS-styling</h2>
 <h3 id="basisstyling">Basisstyling</h3>
 <p>Open <code>style.css</code> en zorg ervoor dat de <code>html</code> en <code>body</code> 100% van de hoogte beslaan.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">html</span><span style="color:#f92672">,</span> <span style="color:#f92672">body</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#7ee787">html</span><span style="color:#ff7b72;font-weight:bold">,</span> <span style="color:#7ee787">body</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">height</span>: <span style="color:#a5d6ff">100</span><span style="color:#ff7b72">%</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Stel een achtergrondafbeelding die de hele achtergrond van de <code>body</code> beslaat. Geef hier ook je lettertype, tekstkleur in.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">body</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">background-image</span>: url(<span style="color:#e6db74">&#39;images/sterrenachtergrond.jpg&#39;</span>);
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">background-size</span>: <span style="color:#66d9ef">cover</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">background-position</span>: <span style="color:#66d9ef">center</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#7ee787">body</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">margin</span>: <span style="color:#a5d6ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">background-image</span>: url(<span style="color:#a5d6ff">&#39;images/sterrenachtergrond.jpg&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">background-size</span>: <span style="color:#79c0ff">cover</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">background-position</span>: <span style="color:#79c0ff">center</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" frameborder="0" style="width: 100%; aspect-ratio: ;" height="440"></iframe>
 <h3 id="structuur">Structuur</h3>
 <p>Het <code>main</code>-element moet alle onderliggende tekst centreren in het midden van het beeldscherm. Dit doe je aan de hand van flexbox. Omdat flexbox de inhoud standaard van links naar rechts toont, stel je de richting in op <code>column</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">main</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">flex-direction</span>: <span style="color:#66d9ef">column</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#7ee787">main</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">height</span>: <span style="color:#a5d6ff">100</span><span style="color:#ff7b72">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">display</span>: <span style="color:#79c0ff">flex</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">flex-direction</span>: <span style="color:#79c0ff">column</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">justify-content</span>: <span style="color:#79c0ff">center</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">align-items</span>: <span style="color:#79c0ff">center</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="styling-van-tekst">Styling van tekst</h3>
 <p>Geef de titels en paragrafen een goed leesbare grootte.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">h1</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">3</span><span style="color:#66d9ef">rem</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#7ee787">h1</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">font-size</span>: <span style="color:#a5d6ff">3</span><span style="color:#ff7b72">rem</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">p</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">1.5</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span><span style="color:#7ee787">p</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">font-size</span>: <span style="color:#a5d6ff">1.5</span><span style="color:#ff7b72">rem</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="plaatsing-van-objecten">Plaatsing van objecten</h3>
 <p>Geef de planeten en sterren een absolute positie. Geef de gemeenschappelijke klasse <code>position: absolute;</code> hier kun je ook de breedte (<code>width</code>) instellen. Nu kun je de individuele planeten verplaatsen aan de hand van <code>top</code>, <code>right</code>, <code>bottom</code> of <code>left</code> met percentages.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">planeet</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">absolute</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">250</span><span style="color:#66d9ef">px</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#f0883e;font-weight:bold">planeet</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">position</span>: <span style="color:#79c0ff">absolute</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">width</span>: <span style="color:#a5d6ff">250</span><span style="color:#ff7b72">px</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">planeet-1</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">%</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>.<span style="color:#f0883e;font-weight:bold">planeet-1</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">top</span>: <span style="color:#a5d6ff">15</span><span style="color:#ff7b72">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">left</span>: <span style="color:#a5d6ff">5</span><span style="color:#ff7b72">%</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="animaties">Animaties</h3>
 <p>Gebruik <code>@keyframes</code> om de beweging van de planeten en de twinkeling van de sterren te realiseren.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">orbit1</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">from</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>) translateX(<span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>) rotate(<span style="color:#ae81ff">0</span><span style="color:#66d9ef">deg</span>);
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#ff7b72">keyframes</span> <span style="color:#7ee787">orbit1</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">from</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">transform</span>: rotate(<span style="color:#a5d6ff">0</span><span style="color:#ff7b72">deg</span>) translateX(<span style="color:#a5d6ff">30</span><span style="color:#ff7b72">px</span>) rotate(<span style="color:#a5d6ff">0</span><span style="color:#ff7b72">deg</span>);
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">to</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">transform</span>: rotate(<span style="color:#ae81ff">360</span><span style="color:#66d9ef">deg</span>) translateX(<span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>) rotate(<span style="color:#ae81ff">-360</span><span style="color:#66d9ef">deg</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">to</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">transform</span>: rotate(<span style="color:#a5d6ff">360</span><span style="color:#ff7b72">deg</span>) translateX(<span style="color:#a5d6ff">30</span><span style="color:#ff7b72">px</span>) rotate(<span style="color:#a5d6ff">-360</span><span style="color:#ff7b72">deg</span>);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">keyframes</span> <span style="color:#f92672">twinkle</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">from</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">0.2</span>;
+</span></span><span style="display:flex;"><span>@<span style="color:#ff7b72">keyframes</span> <span style="color:#7ee787">twinkle</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">from</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">opacity</span>: <span style="color:#a5d6ff">0.2</span>;
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">to</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">opacity</span>: <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#7ee787">to</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">opacity</span>: <span style="color:#a5d6ff">1</span>;
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Voeg de <code>animation</code>-eigenschap toe aan de juiste klasse.</p>
 <p>Bijvoorbeeld:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">planeet-1</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">animation</span>: orbit1 <span style="color:#ae81ff">6</span><span style="color:#66d9ef">s</span> <span style="color:#66d9ef">infinite</span> <span style="color:#66d9ef">linear</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#f0883e;font-weight:bold">planeet-1</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">animation</span>: orbit1 <span style="color:#a5d6ff">6</span><span style="color:#ff7b72">s</span> <span style="color:#79c0ff">infinite</span> <span style="color:#79c0ff">linear</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="indienen">Indienen</h2>
 <p>Mapnaam: <code>voornaam space</code> met de volgende bestanden:</p>

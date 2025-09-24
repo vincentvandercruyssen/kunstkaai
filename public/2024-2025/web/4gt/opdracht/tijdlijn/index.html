@@ -475,18 +475,18 @@ Webontwikkeling
 <li>een tekstbeschrijving (<code>&lt;p&gt;</code>)</li>
 </ul>
 <p>Een voorbeeld van een tijdlijn-item in HTML:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tijdlijn-item&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h2</span>&gt;1991&lt;/<span style="color:#f92672">h2</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h3</span>&gt;World Wide Web&lt;/<span style="color:#f92672">h3</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;images/www.jpg&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;World Wide Web&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;Het World Wide Web werd in 1991 geïntroduceerd door Tim Berners-Lee.&lt;/<span style="color:#f92672">p</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#7ee787">div</span> class<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;tijdlijn-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#7ee787">h2</span>&gt;1991&lt;/<span style="color:#7ee787">h2</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#7ee787">h3</span>&gt;World Wide Web&lt;/<span style="color:#7ee787">h3</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#7ee787">img</span> src<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;images/www.jpg&#34;</span> alt<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;World Wide Web&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#7ee787">p</span>&gt;Het World Wide Web werd in 1991 geïntroduceerd door Tim Berners-Lee.&lt;/<span style="color:#7ee787">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#7ee787">div</span>&gt;
 </span></span></code></pre></div><p>Zorg ervoor dat je minimaal 10 items toevoegt. Elk item moet een unieke gebeurtenis uit jouw tijdlijn bevatten, in chronologische volgorde.</p>
 <h2 id="css-styling">CSS-styling</h2>
 <h3 id="basisstyling">Basisstyling</h3>
 <p>Open je <code>style.css</code> bestand en begin met het instellen van de basisstyling voor je pagina. Zorg ervoor dat de <code>html</code> en <code>body</code> 100% van de hoogte van de pagina beslaan. Dit zorgt ervoor dat de pagina helemaal in de hoogte kan gevuld worden.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">html</span><span style="color:#f92672">,</span> <span style="color:#f92672">body</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#7ee787">html</span><span style="color:#ff7b72;font-weight:bold">,</span> <span style="color:#7ee787">body</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">height</span>: <span style="color:#a5d6ff">100</span><span style="color:#ff7b72">%</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Zorg ervoor dat de <code>body</code> een achtergrondkleur heeft en de tekst goed leesbaar is. Gebruik een standaard of extern lettertype.</p>
 <h3 id="header">Header</h3>
@@ -497,10 +497,10 @@ Webontwikkeling
 <p>Daarna centreer je de tijdlijncontainer verticaal. Door je <code>main</code> in een flexbox te veranderen, kun je eenvoudig de eigenschap <code>align-items</code> instellen op <code>center</code>.</p>
 <h3 id="tijdlijncontainer">Tijdlijncontainer</h3>
 <p>De tijdlijncontainer moet horizontaal kunnen scrollen. Dit doe je door de <code>overflow-x</code> in te stellen op <code>auto</code>. Ook de container wordt een flexbox om de onderliggende items naast elkaar te plaatsen. Stel ook een <code>gap</code> in van een aantal pixels.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">tijdlijn-container</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">gap</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">overflow-x</span>: <span style="color:#66d9ef">auto</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#f0883e;font-weight:bold">tijdlijn-container</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">display</span>: <span style="color:#79c0ff">flex</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">gap</span>: <span style="color:#a5d6ff">20</span><span style="color:#ff7b72">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">overflow-x</span>: <span style="color:#79c0ff">auto</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="tijdlijnitems">Tijdlijnitems</h3>
 <p>Elk tijdlijnitem moet je wat styling geven. Een achtergrond, wat padding, en een border-radius bijvoorbeeld. Zorg ervoor dat de breedte van elk item wordt ingesteld op een minimum, zodat de items goed leesbaar zijn.</p>
@@ -509,13 +509,13 @@ Webontwikkeling
 <p>De afbeeldingen in elk tijdlijnitem moeten zich aanpassen aan de breedte van het item zonder vervorming. Zorg ervoor dat ze de volledige breedte van het item vullen zonder de verhoudingen te verstoren. De afbeeldingen kun je boven en/of onder wat marge geven.</p>
 <h3 id="scrollen-en-navigatie">Scrollen en navigatie</h3>
 <p>Omdat de tijdlijn horizontaal moet scrollen, kun je de visuele weergave aanpassen door de items een overgang te geven als ze in beeld komen. Dit zorgt voor een dynamisch effect.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">tijdlijn-container</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">scroll-snap-type</span>: x <span style="color:#66d9ef">proximity</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">overflow-x</span>: <span style="color:#66d9ef">auto</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#f0883e;font-weight:bold">tijdlijn-container</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">scroll-snap-type</span>: x <span style="color:#79c0ff">proximity</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">overflow-x</span>: <span style="color:#79c0ff">auto</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">tijdlijn-item</span> {
-</span></span><span style="display:flex;"><span>    scroll-snap-align: <span style="color:#66d9ef">start</span>;
+</span></span><span style="display:flex;"><span>.<span style="color:#f0883e;font-weight:bold">tijdlijn-item</span> {
+</span></span><span style="display:flex;"><span>    scroll-snap-align: <span style="color:#79c0ff">start</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="indienen">Indienen</h2>
 <p>Mapnaam: <code>voornaam tijdlijn</code> met de volgende bestanden:</p>
