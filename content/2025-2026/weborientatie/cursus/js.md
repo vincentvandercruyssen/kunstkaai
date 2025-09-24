@@ -4,20 +4,6 @@ date = 2025-09-01T00:00:00Z
 draft = false
 +++
 
-💥 Oké — geen vragen meer, geen pauzes.
-Ik ga nu **alles** van de cursus achter elkaar zetten in **Markdown**, in grote blokken (omdat alles in één bericht niet past).
-
-📍 Start met blok 1
-
-* Inleiding
-* Een korte geschiedenis
-* Ken je tools en applicaties
-
-Hier komt blok 1 ↓
-
----
-
-```markdown
 # Inleiding
 
 Het komt veel voor dat men JavaScript noemt als één van de drie kerntalen van webpagina’s.
@@ -48,10 +34,6 @@ Een belangrijk aspect van het opsturen en uitvoeren van scripts in de webbrowser
 
 Een ander probleem is het verschil tussen browsers. Zoals je waarschijnlijk al wel weet ziet een website er niet helemaal hetzelfde uit in verschillende browsers met dezelfde meegestuurde CSS. Hetzelfde geldt voor JavaScript en dit is de reden waarom deze taal zo lang een slechte naam heeft gehad. Tot voor kort moest je scripts voorzien van browserdetectie zodat elk script juist uitgevoerd zou worden. Gelukkig is dat nu voorbij! Er zijn nog wel enkele punten waar dit nog steeds zo is, maar voor het fundamentele dat we hier bespreken niet.
 
-[Volgende: Een korte geschiedenis](#een-korte-geschiedenis)
-
----
-
 # Een korte geschiedenis
 
 JavaScript werd in 1995 ontwikkeld door Brendan Eich bij Netscape, in amper 10 dagen. De bedoeling was om webpagina’s interactiever te maken. Het kreeg aanvankelijk de naam **Mocha**, werd daarna **LiveScript**, en uiteindelijk **JavaScript** (voor marketingredenen, om mee te surfen op de populariteit van Java).
@@ -67,10 +49,6 @@ Belangrijke mijlpalen:
 - 2009 — ECMAScript 5 (strikte modus, JSON)  
 - 2015 — ECMAScript 6 (let, const, classes, arrow functions, modules, …)  
 - Nu — Jaarlijks nieuwe versies met extra functies
-
-[Volgende: Ken je tools en applicaties](#ken-je-tools-en-applicaties)
-
----
 
 # Ken je tools en applicaties
 
@@ -110,15 +88,6 @@ Je kunt ook online oefenen, zonder installatie:
 - [JSBin](https://jsbin.com)  
 - [StackBlitz](https://stackblitz.com)
 
-[Volgende: JavaScript structuur](#javascript-structuur)
-```
-
-Perfect ⚡
-Hier komt **blok 2** — **JavaScript structuur** met zijn twee subpagina’s:
-
----
-
-````markdown
 # JavaScript structuur
 
 ## Schrijven en Volgorde
@@ -178,15 +147,6 @@ Sommige voorbeelden tonen dit:
 
 `type="text/javascript"` is niet meer verplicht in HTML5, maar mag wel blijven staan (sommige editors voegen het automatisch toe).
 
-[Volgende: Fundamenten](#fundamenten)
-
-```
-
-💥 Nice — hier komt **blok 3: Fundamenten** met **alle subpagina’s** netjes opgeschoond in Markdown.
-
----
-
-````markdown
 # Fundamenten
 
 ## Commentaar
@@ -209,8 +169,6 @@ console.log("Hallo");
 */
 ```
 
----
-
 ## Variabelen (let)
 
 Een variabele is een naam voor een stukje data. Je maakt er één met `let`:
@@ -226,8 +184,6 @@ let leeftijd = 17;
 ```js
 const pi = 3.14;
 ```
-
----
 
 ## Gegevenstypes
 
@@ -248,8 +204,6 @@ let x = 42;
 console.log(typeof x); // "number"
 ```
 
----
-
 ## Boodschappen naar de console sturen
 
 Met `console.log()` toon je iets in de console (F12):
@@ -259,8 +213,6 @@ console.log("Hallo wereld");
 ```
 
 Zo kun je makkelijk testen of je code werkt.
-
----
 
 ## Wiskundige bewerkingen
 
@@ -327,8 +279,6 @@ let x = 5;
 console.log(x > 0 && x < 10); // true
 ```
 
----
-
 ## Vraagstellingen en condities (if)
 
 Met `if` voer je code alleen uit als iets waar is:
@@ -340,8 +290,6 @@ if (leeftijd >= 18) {
   console.log("Minderjarig");
 }
 ```
-
----
 
 ## Werken met lussen (while, for)
 
@@ -363,8 +311,6 @@ for (let i = 0; i < 3; i++) {
 }
 ```
 
----
-
 ## Functies (function)
 
 Functies groeperen code en maken ze herbruikbaar:
@@ -385,8 +331,6 @@ const begroet = (naam) => {
 };
 ```
 
----
-
 ## De 'scope' van een variabele
 
 **Scope** = waar een variabele geldig is:
@@ -402,18 +346,6 @@ const begroet = (naam) => {
 console.log(x); // fout: x bestaat hier niet
 ```
 
----
-
-[Volgende: Arrays](#arrays)
-
-```
-
-Perfect ⚡
-Hier komt **blok 4: Arrays** — kort maar belangrijk.
-
----
-
-````markdown
 # Arrays
 
 We hebben tot nu toe variabelen gebruikt met één waarde.  
@@ -460,18 +392,6 @@ console.log(omgekeerd.join(", "));
 
 Er bestaan veel nuttige methodes zoals `.push()`, `.pop()`, `.slice()`, `.splice()`, `.map()`, `.filter()`, …
 
----
-
-[Volgende: Objecten](#objecten)
-
-```
-
-Perfect 💪
-Hier komt **blok 5: Objecten** met alle subpagina’s erin verwerkt.
-
----
-
-````markdown
 # Objecten
 
 ## Het Object model
@@ -505,8 +425,6 @@ persoon.hobby = "muziek";
 persoon.leeftijd = 18;
 ```
 
----
-
 ## Werken met Strings
 
 **Strings** zijn tekst. Je kunt ze samenvoegen, splitsen en doorzoeken.
@@ -529,8 +447,6 @@ console.log(tekst.includes("wereld")); // true
 | `.slice(begin, eind)` | stuk tekst eruit knippen           |
 | `.split(" ")`         | opsplitsen in een array op spaties |
 | `.includes("...")`    | checkt of tekst voorkomt           |
-
----
 
 ## Werken met Datums
 
@@ -561,8 +477,6 @@ let verjaardag = new Date(2000, 4, 15); // 15 mei 2000
 | `.getDay()`      | weekdag (0 = zondag) |
 | `.getHours()`    | uur (0–23)           |
 | `.getMinutes()`  | minuten              |
-
----
 
 ## Werken met Objecten
 
@@ -602,24 +516,10 @@ console.log(Object.keys(mijnAuto));   // ["merk", "kleur"]
 console.log(Object.values(mijnAuto)); // ["Tesla", "blauw"]
 ```
 
----
-
-[Volgende: Document Object Model](#document-object-model)
-
-```
-
-Perfect ⚡
-Hier komt **blok 6: Document Object Model (DOM)** met alle subonderdelen.
-
----
-
-````markdown
 # Document Object Model
 
 Het **Document Object Model (DOM)** is de structuur waarin je webpagina wordt voorgesteld.  
 JavaScript kan via de DOM elk element op de pagina aanspreken, veranderen, toevoegen of verwijderen.
-
----
 
 ## Wat is de DOM?
 
@@ -644,8 +544,6 @@ bijv. document → body → div → p → ul → li
 - Elke node kan child-nodes (onderliggende elementen) en parent-nodes (bovenliggende elementen) hebben.
 - De DOM is dus een hiërarchische structuur.
 
----
-
 ## Werken met nodes en elementen
 
 Elke HTML-tag is een node in de DOM.  
@@ -666,8 +564,6 @@ element.nextSibling
 element.previousSibling
 ````
 
----
-
 ## Aanspreken van DOM-elementen
 
 Gebruik deze functies om elementen te selecteren:
@@ -681,8 +577,6 @@ document.querySelectorAll("p.belangrijk");
 ```
 
 Met `querySelector` kun je CSS-selectors gebruiken — meestal de handigste optie.
-
----
 
 ## DOM-elementen aanpassen
 
@@ -708,8 +602,6 @@ let link = document.querySelector("a");
 link.setAttribute("href", "https://example.com");
 link.getAttribute("href");
 ```
-
----
 
 ## DOM-elementen creëren
 
@@ -738,24 +630,10 @@ item.textContent = "Nieuw item";
 lijst.insertBefore(item, lijst.firstChild);
 ```
 
----
-
-[Volgende: Events](#events)
-
-```
-
-Top 🔥
-Hier komt **blok 7: Events** met alle subonderdelen erin.
-
----
-
-````markdown
 # Events
 
 Met **events** kan je code uitvoeren wanneer de gebruiker iets doet (klikt, typt, beweegt …).  
 Je kunt events koppelen aan HTML-elementen.
-
----
 
 ## Werken met onclick events
 
@@ -792,8 +670,6 @@ document.getElementById("knop")
   });
 ```
 
----
-
 ## Werken met onload events
 
 `onload` gebeurt als de pagina volledig geladen is:
@@ -816,8 +692,6 @@ window.addEventListener("load", () => {
 });
 ```
 
----
-
 ## De onblur en onfocus events
 
 * `onfocus` → als een invoerveld actief wordt
@@ -838,8 +712,6 @@ naam.addEventListener("blur", () => {
 });
 </script>
 ```
-
----
 
 ## Timers
 
@@ -863,24 +735,10 @@ setInterval(() => {
 
 Je kan een interval stoppen met `clearInterval(id)`.
 
----
-
-[Volgende: Formulieren](#formulieren)
-
-```
-
-Perfect ⚡
-Hier komt **blok 8: Formulieren** met de twee subonderdelen.
-
----
-
-````markdown
 # Formulieren
 
 Formulieren gebruiken events om te reageren op gebruikersinvoer.  
 Met JavaScript kun je formulierverzending tegenhouden, controleren en dynamisch reageren.
-
----
 
 ## Stop submit
 
@@ -901,8 +759,6 @@ document.getElementById("mijnForm")
   });
 </script>
 ````
-
----
 
 ## Reageren op formulier selecties
 
@@ -936,24 +792,10 @@ document.getElementById("naam")
 </script>
 ```
 
----
-
-[Volgende: CSS en JavaScript](#css-en-javascript)
-
-```
-
-Perfect 💪
-Hier komt **blok 9: CSS en JavaScript** met het onderdeel over animatie.
-
----
-
-````markdown
 # CSS en JavaScript
 
 Met JavaScript kun je CSS aanpassen, toevoegen of verwijderen.  
 Zo kan je dynamisch stijlen wijzigen of animaties starten/stoppen.
-
----
 
 ## Animatie via JavaScript en CSS
 
@@ -997,23 +839,9 @@ blok.style.transition = "transform 0.5s";
 
 Maar meestal is werken met CSS-classes netter en overzichtelijker.
 
----
-
-[Volgende: JavaScript Beter](#javascript-beter)
-
-```
-
-Perfect ⚡
-Hier komt **blok 10: JavaScript Beter** met de twee subonderdelen.
-
----
-
-````markdown
 # JavaScript Beter
 
 Hier leer je hoe je code netter en efficiënter schrijft en hoe je bestanden kleiner maakt voor publicatie.
-
----
 
 ## JavaScript stijl
 
@@ -1039,8 +867,6 @@ function x(a,b){return a+b}
 ```
 
 Gebruik ook **linters** of **formatters** zoals [Prettier](https://prettier.io/) of [ESLint](https://eslint.org/) om je code automatisch op te schonen.
-
----
 
 ## Minify
 
@@ -1071,24 +897,10 @@ Minifyen doe je met tools zoals:
 ⚠️ Let op: gebruik bij voorkeur de **niet-minified versie tijdens het ontwikkelen**
 en enkel de **minified versie bij publicatie**.
 
----
-
-[Volgende: Libraries](#libraries)
-
-```
-
-Perfect 💥
-Hier komt **blok 11: Libraries** — de laatste sectie.
-
----
-
-````markdown
 # Libraries
 
 **Libraries** zijn herbruikbare bundels met JavaScript-code die vaak voorkomende taken makkelijker maken.  
 In plaats van alles zelf te schrijven, gebruik je een library en roep je functies ervan aan.
-
----
 
 ## Voorbeelden van libraries
 
@@ -1099,8 +911,6 @@ In plaats van alles zelf te schrijven, gebruik je een library en roep je functie
 - **Chart.js** — grafieken en diagrammen  
 - **Three.js** — 3D in de browser  
 - **GSAP** — animaties
-
----
 
 ## Gebruik van een library
 
@@ -1128,8 +938,6 @@ import axios from "axios";
 axios.get("https://api.example.com/data")
   .then(res => console.log(res.data));
 ```
-
----
 
 ## Wanneer libraries gebruiken?
 
