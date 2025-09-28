@@ -5,6 +5,9 @@
     <loc>http://localhost:1313/kunstkaai/2025-2026/weborientatie/6xm/opdracht/quiz/</loc>
     <lastmod>2025-09-24T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/web/6xm/opdracht/wiki/</loc>
+    <lastmod>2025-09-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/kunstkaai/2025-2026/typo/4gt/opdracht/staalkaart/</loc>
     <lastmod>2025-09-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -50,6 +53,9 @@
     <loc>http://localhost:1313/kunstkaai/2025-2026/weborientatie/cursus/js/</loc>
     <lastmod>2025-09-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/web/cursus/php/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/kunstkaai/2025-2026/data/cursus/</loc>
     <lastmod>2025-09-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -84,6 +90,9 @@
     <lastmod>2025-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/kunstkaai/2025-2026/web/4gt/opdracht/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/web/6xm/opdracht/</loc>
     <lastmod>2025-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/kunstkaai/2025-2026/weborientatie/5xm/opdracht/</loc>
@@ -240,6 +249,9 @@
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/kunstkaai/2025-2026/web/4gt/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kunstkaai/2025-2026/web/6xm/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/kunstkaai/2025-2026/web/</loc>

@@ -126,7 +126,8 @@ div:has(iframe),
 iframe,
 hr,
 details,
-.highlight {
+.highlight,
+pre {
   margin-bottom: var(--margin-bottom);
 }
 

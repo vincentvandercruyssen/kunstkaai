@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/kunstkaai/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=kunstkaai/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Cursus: PHP | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/kunstkaai/css/main.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/qtj0alg.css">
+<link rel="icon" type="image/svg" href="/kunstkaai/favicon.svg">
+
+</head>
+<body>
+  <select data-theme-picker name="themepicker" id="theme">
+    <option value="🖥️">🖥️</option>
+    <option value="☀️">☀️</option>
+    <option value="🌙">🌙</option>
+  </select>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+
+
+
+Webontwikkeling
+<br>
+    Cursus: PHP
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#wat-is-php">1. Wat is PHP?</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#waarom-is-php-zo-populair">1.1 Waarom is PHP zo populair?</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#programmeertaal-of-scripttaal">2. Programmeertaal of scripttaal?</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#programmeertaal">2.1 Programmeertaal</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#scripttaal">2.2 Scripttaal</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#server-side-versus-client-side">2.3 Server-side versus client-side</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#wat-kun-je-doen-met-php">3. Wat kun je doen met PHP?</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#voorbeeld">3.1 Voorbeeld</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#waarom-php-gebruiken">4. Waarom PHP gebruiken?</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#php-installeren">5. PHP installeren</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#homebrew-macos">5.1 Homebrew (macOS)</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#winget-windows">5.2 Winget (Windows)</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#php-server-vs-code-extensie">6. PHP Server (VS Code-extensie)</a>
+
+      
+      
+    
+
+    
+    </li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+
+
+
+Webontwikkeling
+ <br> Cursus: PHP</h1>
+
+<h2 id="wat-is-php">Wat is PHP?</h2>
+<p><strong>PHP</strong> staat voor <em>Hypertext Preprocessor</em> en is een <strong>open source server-side scriptingtaal</strong> die vooral wordt gebruikt in <strong>webontwikkeling</strong>.
+Met PHP kun je <strong>dynamische websites</strong> bouwen: websites die niet altijd dezelfde inhoud tonen, maar reageren op de gebruiker, tijd, gegevens uit een database of andere invoer.</p>
+<p>PHP draait op de <strong>server</strong>, niet in de browser. Dat betekent dat de PHP-code eerst op de <strong>webserver</strong> wordt uitgevoerd, waarna enkel de <strong>HTML-uitvoer</strong> naar de bezoeker wordt gestuurd. De gebruiker ziet dus nooit de onderliggende code.</p>
+<p>PHP wordt al sinds de jaren 1990 gebruikt en is vandaag nog steeds aanwezig op bijna <strong>80% van alle websites</strong>, volgens onafhankelijke webtechnologie-onderzoeken. Grote platformen zoals <strong>Facebook</strong>, <strong>Wikipedia</strong>, <strong>WordPress</strong> en <strong>Drupal</strong> zijn ofwel met PHP gebouwd, of gebruiken het nog steeds als kernonderdeel.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/a7_WFUlFS94?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h3 id="waarom-is-php-zo-populair">Waarom is PHP zo populair?</h3>
+<ul>
+<li><strong>Gratis en open source</strong>: Iedereen kan het gebruiken, aanpassen en uitbreiden.</li>
+<li><strong>Platformonafhankelijk</strong>: Werkt op Linux, macOS, Windows en vrijwel elke webserver.</li>
+<li><strong>Sterke community</strong>: Uitgebreide documentatie, fora en miljoenen voorbeelden online.</li>
+<li><strong>Naadloze integratie met HTML</strong>: Je kunt PHP-code direct tussen HTML schrijven.</li>
+<li><strong>Ondersteuning voor databases</strong>: Vooral <strong>MySQL</strong>, maar ook <strong>PostgreSQL</strong>, <strong>SQLite</strong>, enz.</li>
+</ul>
+<p>Dankzij die kenmerken is PHP bijzonder geschikt voor <strong>beginners</strong> én <strong>professionals</strong>. Zeker wie <strong>WordPress</strong> of <strong>webapplicaties</strong> wil aanpassen, heeft met PHP een krachtig gereedschap in handen.</p>
+<h2 id="programmeertaal-of-scripttaal">Programmeertaal of scripttaal?</h2>
+<p>PHP is een <strong>scripttaal</strong> die zich richt op specifieke <strong>webtoepassingen</strong>. Maar wat betekent dat precies?</p>
+<h3 id="programmeertaal">Programmeertaal</h3>
+<p>Een <strong>programmeertaal</strong> (zoals C of Java) wordt <strong>gecompileerd</strong>: de code wordt eerst vertaald naar <strong>machinetaal</strong>, die rechtstreeks door de computer kan worden uitgevoerd. Deze programma’s draaien <strong>zelfstandig</strong>.</p>
+<h3 id="scripttaal">Scripttaal</h3>
+<p>Een <strong>scripttaal</strong> (zoals PHP, Python, JavaScript) wordt meestal <strong>geïnterpreteerd</strong>: de code wordt <strong>regel per regel uitgevoerd</strong> door een ander programma (de interpreter).
+Scripttalen worden vaak gebruikt voor <strong>specifieke taken</strong> zoals webpagina’s genereren, data verwerken of automatisering.</p>
+<h3 id="server-side-versus-client-side">Server-side versus client-side</h3>
+<ul>
+<li><strong>Client-side</strong>: de code draait in de <strong>browser</strong> (zoals <strong>JavaScript</strong>)</li>
+<li><strong>Server-side</strong>: de code draait op de <strong>server</strong> (zoals <strong>PHP</strong>)</li>
+</ul>
+<p>PHP is dus een <strong>server-side scripttaal</strong>:
+de <strong>server voert de instructies uit</strong>, bouwt de webpagina op, en stuurt de <strong>klaar gegenereerde HTML</strong> naar de gebruiker.</p>
+<p><strong>Voorbeeld van de werking:</strong></p>
+<ol>
+<li>De gebruiker vraagt een pagina aan (<code>index.php</code>)</li>
+<li>De webserver voert de PHP-code uit</li>
+<li>De PHP-code haalt bijvoorbeeld gegevens op uit een database</li>
+<li>De server bouwt een HTML-pagina</li>
+<li>De browser ontvangt enkel de HTML (geen PHP meer)</li>
+</ol>
+<h2 id="wat-kun-je-doen-met-php">Wat kun je doen met PHP?</h2>
+<p>PHP is veelzijdig. Je kunt er o.a. mee:</p>
+<ul>
+<li><strong>Dynamische inhoud tonen</strong> (bv. persoonlijke begroetingen, tijdsafhankelijke boodschappen)</li>
+<li><strong>Data opslaan of ophalen uit een database</strong> (meestal MySQL)</li>
+<li><strong>Contactformulieren</strong> verwerken en <strong>e-mails verzenden</strong></li>
+<li><strong>Gebruikers beheren</strong> (inloggen, registreren, sessies)</li>
+<li><strong>Bestanden genereren</strong> (PDF’s, CSV’s)</li>
+<li><strong>Volwaardige webapplicaties</strong> bouwen</li>
+</ul>
+<p>Omdat PHP enkel op de <strong>server</strong> draait, is het ook <strong>veiliger</strong>: gebruikers zien enkel de <strong>HTML-uitvoer</strong>, nooit de broncode.</p>
+<h3 id="voorbeeld">Voorbeeld</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">&lt;?</span>php
+</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">echo</span> <span style="color:#a5d6ff">&#34;Hello World!&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#8b949e;font-weight:bold;font-style:italic">?&gt;</span><span style="color:#f85149">
+</span></span></span></code></pre></div><p><strong>Browseroutput:</strong></p>
+<p><code>Hello World!</code></p>
+<p>Let op: de PHP-code zelf is <strong>onzichtbaar</strong> in de broncode van de pagina.</p>
+<h2 id="waarom-php-gebruiken">Waarom PHP gebruiken?</h2>
+<p>PHP heeft vele troeven:</p>
+<ul>
+<li><strong>Beginner-vriendelijk</strong>: De syntax is eenvoudig en goed te begrijpen voor wie HTML kent.</li>
+<li><strong>Breed toepasbaar</strong>: Van kleine scripts tot grote webplatformen.</li>
+<li><strong>Sterke integratie met HTML</strong>: PHP en HTML werken moeiteloos samen.</li>
+<li><strong>Snelheid</strong>: Door jarenlange optimalisatie is PHP zeer performant.</li>
+<li><strong>Ruime ondersteuning</strong>: Veel hostingproviders ondersteunen PHP standaard.</li>
+<li><strong>Lage kostprijs</strong>: PHP is gratis, en open source frameworks zijn dat ook.</li>
+</ul>
+<p>Daarnaast bestaan er krachtige <strong>frameworks</strong> die PHP nog efficiënter maken. Frameworks helpen ontwikkelaars om <strong>sneller</strong>, <strong>veiliger</strong> en <strong>gestructureerder</strong> te werken.</p>
+<p>PHP is een krachtige, flexibele en toegankelijke <strong>server-side scripttaal</strong> waarmee je dynamische websites kunt bouwen.
+Ze vormt de <strong>ruggengraat</strong> van veel moderne webapplicaties, en is onmisbaar voor wie de stap wil zetten van <strong>statische HTML-sites</strong> naar <strong>interactieve en datagestuurde webapplicaties</strong>.</p>
+<h2 id="php-installeren">PHP installeren</h2>
+<p>PHP is <strong>software</strong> die je op je computer installeert om <strong>dynamische websites</strong> lokaal te kunnen draaien en testen. Zonder PHP kan je geen <code>.php</code>-bestanden uitvoeren op je eigen toestel.</p>
+<p>Je kunt <strong>PHP</strong> handmatig downloaden via de officiële website <a href="https://www.php.net/downloads" target="_blank" rel="noopener noreferrer">php.net</a>, dat vereist echter enkele <strong>extra stappen</strong>: je moet het pakket zelf <strong>uitpakken</strong>, <strong>configureren</strong>, en <strong>handmatig toevoegen aan het systeempad</strong>, zodat het overal in je omgeving herkend wordt. Dat proces is minder gebruiksvriendelijk en foutgevoeliger.</p>
+<p>Een <strong>handigere en snellere keuze</strong> is daarom om PHP te installeren via een pakketbeheerder of <strong>package manager</strong>. Een <em>package manager</em> is een programma dat software automatisch kan <strong>zoeken, downloaden en installeren</strong>, inclusief alle vereiste onderdelen. Zo hoef je niet zelf op zoek te gaan naar downloads of instellingen.</p>
+<ul>
+<li>Op <strong>macOS</strong> gebruik je de bekende package manager <strong>Homebrew</strong>.</li>
+<li>Op <strong>Windows</strong> gebruik je <strong>Winget</strong>, de standaard open source package manager van Windows.</li>
+</ul>
+<p>Door PHP via zo’n package manager te installeren, wordt het bijvoorbeeld automatisch toegevoegd aan het <strong>PATH</strong> en meteen overal herkend (ook in <strong>VS Code</strong>).</p>
+<h3 id="homebrew-macos">Homebrew (macOS)</h3>
+<p>Ga naar <a href="https://brew.sh/" target="_blank" rel="noopener noreferrer">brew.sh</a>, de officiële website van <strong>Homebrew</strong>. Daar vind je een kort commando dat je moet kopiëren en plakken in je <strong>Terminal</strong>. Dat kan in de standaard <strong>Terminal-app</strong> van macOS, of in de ingebouwde Terminal van <strong>VS Code</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/bin/bash -c <span style="color:#a5d6ff">&#34;</span><span style="color:#ff7b72">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style="color:#ff7b72">)</span><span style="color:#a5d6ff">&#34;</span>
+</span></span></code></pre></div><p>De installatie kan enkele minuten duren. Volg de instructies in beeld en beantwoord eventuele vragen met <strong>Enter</strong> of <strong>y</strong> (voor “yes”).</p>
+<p>Na de installatie kun je meteen <strong>PHP</strong> installeren. Homebrew installeert automatisch de <strong>laatste stabiele versie</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install php
+</span></span></code></pre></div><p>Start daarna <strong>VS Code</strong> eventueel even opnieuw op. Controleer vervolgens of PHP correct is geïnstalleerd met:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php -v
+</span></span></code></pre></div><p>Als je een versie te zien krijgt (bijvoorbeeld <code>PHP 8.4.13</code>), is alles goed verlopen en kun je aan de slag.</p>
+<h3 id="winget-windows">Winget (Windows)</h3>
+<p>Gebruik als pakketbeheerder <strong>Winget</strong>, de standaard open source <strong>package manager</strong> van Windows. Chocolatey is eveneens een bekende en betrouwbare keuze, maar Winget volstaat ruim voor PHP.</p>
+<ul>
+<li>Je kunt deze installatie uitvoeren in de <strong>terminal van VS Code</strong> (met PowerShell of Git Bash).</li>
+<li>Controleer eerst of Winget beschikbaar is:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>winget -v
+</span></span></code></pre></div><p>Verschijnt er een versienummer? Dan is Winget actief.</p>
+<p>Zoek daarna naar beschikbare PHP-versies:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>winget search php
+</span></span></code></pre></div><p>Zoek de <strong>laatste stabiele versie</strong> in de lijst (bijvoorbeeld <code>PHP.PHP.8.4</code>).</p>
+<p>Installeer PHP met:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>winget install PHP.PHP.8.4
+</span></span></code></pre></div><p>Controleer de installatie:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php -v
+</span></span></code></pre></div><p>Als je nog niets ziet, herstart dan <strong>VS Code</strong>. Daarna zou <code>php -v</code> de geïnstalleerde versie moeten tonen.</p>
+<h2 id="php-server-vs-code-extensie">PHP Server (VS Code-extensie)</h2>
+<p><strong>PHP Server</strong> is een eenvoudige manier om een <strong>lokale server</strong> te starten via een <strong>extensie</strong> in <strong>VS Code</strong>. Zo kun je je PHP-bestanden meteen testen in de browser.</p>
+<ul>
+<li>Installeer de extensie <strong>PHP Server</strong> (van <em>brapifra</em>).</li>
+<li>Open je <strong>projectmap</strong> in VS Code en ga naar een <code>.php</code>-bestand.</li>
+<li>Klik <strong>rechts</strong> in het bestand en kies <strong>&ldquo;PHP Server: Serve project&rdquo;</strong>, of gebruik het <strong>blauwe icoontje</strong> rechtsbovenaan.</li>
+<li>Er verschijnt een <strong>lokale link</strong> (bijv. <code>http://localhost:3000</code>) die opent in je browser.</li>
+<li>De server <strong>voert je PHP-code uit</strong> en toont het resultaat als <strong>gewone HTML</strong>, net zoals op een echte webserver.</li>
+</ul>
+<hr>
+<p>Wordt vervolgd&hellip;</p>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/kunstkaai/js/main.js"></script>
+
+  </footer>
+</body>
+</html>
