@@ -22,8 +22,8 @@
       <!-- Extract the ID attribute from the header -->
       {{ $id := replaceRE "<h[2-3][^>]*id=\"([^\"]+)\".*" "$1" $element }}
 
-      <!-- Extract the text content of the header -->
-      {{ $text := replaceRE "<h[2-3][^>]*id=\"[^\"]+\"[^>]*>([^<]+)</h[2-3]>" "$1" $element }}
+      <!-- Extract the text content of the header and decode HTML entities -->
+      {{ $text := replaceRE "<h[2-3][^>]*id=\"[^\"]+\"[^>]*>([^<]+)</h[2-3]>" "$1" $element | htmlUnescape }}
 
       <!-- If the current header is an h2 -->
       {{ if eq $currentLevel 2 }}

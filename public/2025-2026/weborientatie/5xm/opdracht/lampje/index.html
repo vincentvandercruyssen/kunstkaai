@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/kunstkaai/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=kunstkaai/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Opdracht: Lampje | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/kunstkaai/css/main.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/qtj0alg.css">
+<link rel="icon" type="image/svg" href="/kunstkaai/favicon.svg">
+
+</head>
+<body>
+  <select data-theme-picker name="themepicker" id="theme">
+    <option value="🖥️">🖥️</option>
+    <option value="☀️">☀️</option>
+    <option value="🌙">🌙</option>
+  </select>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Weboriëntatie
+<br>
+    Opdracht: Lampje
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#computationeel-denken">1. Computationeel denken</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#decompositie">1.1 Decompositie</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#structuur-van-je-project">2. Structuur van je project</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#state-de-toestand-van-de-lamp">3. State: de toestand van de lamp</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#selecties-elementen-uit-de-html-halen">4. Selecties: elementen uit de HTML halen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#events-reageren-op-klikken">5. Events: reageren op klikken</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#functies-herbruikbare-blokjes-code">6. Functies: herbruikbare blokjes code</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#ui-update-tekst-en-kleur-veranderen">7. UI-update: tekst en kleur veranderen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#wat-gebruik-je-hier">7.1 Wat gebruik je hier?</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#decompositie-in-actie">8. Decompositie in actie</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#stijl-css">9. Stijl (CSS)</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#mini-uitbreidingen-optioneel">10. Mini-uitbreidingen (optioneel)</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#indienen">11. Indienen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#puntenverdeling">12. Puntenverdeling</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#bronnen">13. Bronnen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#variabelen--state">13.1 Variabelen &amp; state</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#dom-selecties">13.2 DOM-selecties</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#events">13.3 Events</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#functies">13.4 Functies</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#condities--logica">13.5 Condities &amp; logica</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#ui-updates">13.6 UI-updates</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#html--defer">13.7 HTML &amp; defer</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#denkconcept">13.8 Denkconcept</a></li>
+      
+    
+
+    
+    </ol></li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Weboriëntatie
+ <br> Opdracht: Lampje</h1>
+
+<p>In deze opdracht bouw je een <strong>lampje</strong> dat je kunt <strong>aan- en uitzetten</strong> met twee knoppen. Wanneer je de lamp <strong>aanzet</strong>, krijgt de lamp kleur en verschijnt er tekst, bijvoorbeeld <strong>“Lamp is aan”</strong>. Wanneer de lamp wordt <strong>uitgezet</strong>, kleurt de lamp <strong>neutraal</strong> en verschijnt er tekst zoals <strong>“Lamp is uit”</strong>.</p>
+<p>Zo leer je stap voor stap hoe je in <strong>JavaScript</strong> een <strong>state</strong> beheert, <strong>DOM-elementen</strong> selecteert, <strong>events</strong> koppelt, <strong>functies</strong> schrijft en <strong>stijl en tekst</strong> dynamisch aanpast.</p>
+<h2 id="computationeel-denken">Computationeel denken</h2>
+<p>Even tussendoor.</p>
+<p><strong>Computational Thinking</strong> betekent <em>denken als een computer</em>: je leert problemen stap voor stap oplossen zoals bijvoorbeeld een programmeur dat doet.</p>
+<p>Computationeel denken bestaat uit vier belangrijke bouwstenen:</p>
+<ol>
+<li><strong>Decompositie</strong> het probleem opdelen in kleinere, duidelijke stukjes.</li>
+<li><strong>Patronen herkennen</strong> gelijkenissen zien tussen taken.</li>
+<li><strong>Abstractie</strong> enkel focussen op wat echt belangrijk is.</li>
+<li><strong>Algoritmes</strong> een reeks logische stappen bedenken om tot een oplossing te komen.</li>
+</ol>
+<h3 id="decompositie">Decompositie</h3>
+<p>In deze opdracht wordt vooral <strong>Decompositie</strong> toegepast: het probleem <em>“maak een werkend lampje met javascript”</em> kan opgedeeld worden in vijf kleine stappen:</p>
+<ol>
+<li>De <strong>state</strong> (toestand) bijhouden.</li>
+<li>De juiste <strong>elementen selecteren</strong>, elementen uit de HTML halen.</li>
+<li>De knoppen laten reageren met <strong>events</strong>.</li>
+<li>Taken bundelen in <strong>functies</strong>, herbruikbare blokken code.</li>
+<li>De <strong>UI</strong> (kleur en tekst) aanpassen, stijl en tekst aanpassen met logica.</li>
+</ol>
+<p>Door elk stukje apart te bouwen, kun je stap voor stap het volledige programma opbouwen.</p>
+<h2 id="structuur-van-je-project">Structuur van je project</h2>
+<p>Zorg dat je werkt in je vakmap voor het vak <strong>Weboriëntatie</strong>.</p>
+<pre tabindex="0"><code>VoornaamA_Lampje/
+├── index.html
+├── style.css
+└── app.js
+</code></pre><p>In je HTML maak je een <strong>lampje</strong> met een <code>div</code>-element, een <strong>tekstvak</strong> met een <code>p</code>-element en <strong>twee knoppen</strong>. Gebruik momenteel uitsluitend <code>id</code>-kenmerken om CSS en JavaScript aanpassingen toe te voegen.</p>
+<p>Vergeet niet je script onderaan te koppelen met <code>defer</code> zodat het pas start als de HTML is ingeladen. In deze kleine opdracht is dat nog niet cruciaal, maar in grotere projecten wel, zo ben je zeker dat alle HTML-elementen bestaan vóór je JavaScript start.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>  &lt;<span style="color:#7ee787">script</span> src<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;app.js&#34;</span> defer&gt;&lt;/<span style="color:#7ee787">script</span>&gt;
+</span></span></code></pre></div><h2 id="state-de-toestand-van-de-lamp">State: de toestand van de lamp</h2>
+<p>Een <strong>state</strong> is een <strong>variabele</strong> die onthoudt wat de huidige toestand is. Bijvoorbeeld, in dit geval, is de lamp <strong>aan</strong> of <strong>uit</strong>? Een variabele kan <strong>veel verschillende soorten gegevens</strong> bijhouden: getallen, stukken tekst, waar/onwaar, lijsten, enzoverder.</p>
+<p>Gebruik hiervoor:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">let</span> lampAan <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">false</span>;
+</span></span></code></pre></div><ul>
+<li><code>let</code> gebruik je als de waarde <strong>kan veranderen</strong> tijdens het programma.</li>
+<li>In dit geval start de lamp <strong>uit</strong> (<code>false</code>) en kan later <strong>aan</strong> gezet worden (<code>true</code>).</li>
+</ul>
+<p>Een veelgebruikte manier om variabelen te schrijven is met <strong>camelCase</strong>: het eerste woord is <strong>klein</strong>, elk volgend woord start met een <strong>hoofdletter</strong> (zoals <code>lampAan</code> of <code>aantalKlikken</code>). Zo blijft de naam leesbaar en herken je het als één geheel.</p>
+<h2 id="selecties-elementen-uit-de-html-halen">Selecties: elementen uit de HTML halen</h2>
+<p>In JavaScript kun je via de <strong>DOM</strong> (<em>Document Object Model</em>) elk onderdeel van je webpagina aanspreken. De DOM is de <strong>boomstructuur van je HTML</strong>, waarin elk element een tak is die je met code kunt bereiken.</p>
+<p>Om met <strong>JavaScript</strong> iets te <strong>veranderen in de HTML</strong>, moet je het eerst <strong>selecteren</strong>. Gebruik <code>querySelector()</code> om elementen te vinden via hun <code>id</code>.</p>
+<p>In dit geval:</p>
+<ul>
+<li>De <strong>lamp</strong> (<code>#lamp</code>)</li>
+<li>De <strong>status-tekst</strong> (<code>#status</code>)</li>
+<li>De twee <strong>knoppen</strong> (<code>#btn-aan</code> en <code>#btn-uit</code>)</li>
+</ul>
+<p>Bewaar deze selecties in <strong>const</strong>-variabelen:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> lamp <span style="color:#ff7b72;font-weight:bold">=</span> document.querySelector(<span style="color:#a5d6ff">&#39;#lamp&#39;</span>);
+</span></span></code></pre></div><ul>
+<li><code>const</code> gebruik je voor dingen die <strong>niet opnieuw worden toegewezen</strong> (maar hun <strong>inhoud</strong> mag wél veranderen)</li>
+<li><code>document</code> verwijst naar het hele HTML-document</li>
+<li><code>querySelector</code> zoekt het <strong>eerste</strong> element dat overeenkomt met de opgegeven selector</li>
+<li>Wil je <strong>meerdere elementen</strong> tegelijk selecteren , dan gebruik je <code>querySelectorAll()</code></li>
+</ul>
+<p>Zo zul je de geselecteerde elementen verder in je code rechtstreeks kunnen aanpassen.</p>
+<h2 id="events-reageren-op-klikken">Events: reageren op klikken</h2>
+<p>De knoppen moeten <strong>iets doen</strong> als je erop klikt.</p>
+<p>Dat doe je met een <strong>eventlistener</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>knopAan.addEventListener(<span style="color:#a5d6ff">&#39;click&#39;</span>, zetAan);
+</span></span></code></pre></div><ul>
+<li><code>addEventListener</code> zegt letterlijk: “luister naar een <strong>event</strong> (hier: klik) en voer dan een <strong>functie</strong> uit.”</li>
+<li>Dit is beter dan <code>onclick</code> in HTML, want je scheidt <strong>structuur (HTML)</strong> van <strong>logica (JS)</strong>. Zo blijft je code <strong>duidelijker en properder</strong>.</li>
+</ul>
+<p>Je maakt dus twee eventlisteners:</p>
+<ul>
+<li>Eén voor <strong>aanzetten</strong></li>
+<li>Eén voor <strong>uitzetten</strong></li>
+</ul>
+<h2 id="functies-herbruikbare-blokjes-code">Functies: herbruikbare blokjes code</h2>
+<p>Een <strong>functie</strong> is een <strong>groepje instructies</strong> die samen een taak uitvoeren. Functies dienen om code <strong>herbruikbaar</strong> en <strong>duidelijk</strong> te maken.</p>
+<p>Bijvoorbeeld:</p>
+<ul>
+<li><code>zetAan()</code> zet de lamp aan</li>
+<li><code>zetUit()</code> zet de lamp uit</li>
+<li><code>updateLamp()</code> werkt de tekst en kleur bij</li>
+</ul>
+<p>In de functies pas je eerst de <strong>state</strong> aan (bijv. <code>lampAan = true;</code>)
+en roep je dan <strong><code>updateLamp()</code></strong> op om de <strong>UI</strong> te veranderen. Zo hou je je code overzichtelijk en vermijd je herhaling.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">function</span> naamFunctie() {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b949e;font-style:italic">// voer iets uit
+</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>}
+</span></span></code></pre></div><h2 id="ui-update-tekst-en-kleur-veranderen">UI-update: tekst en kleur veranderen</h2>
+<p>In de <strong>updateLamp-functie</strong> controleer je met een <strong>conditionele structuur</strong> (<code>if ... else</code>) wat de toestand is, en pas je op basis daarvan de stijl en tekst aan.</p>
+<p>Een <strong>conditionele structuur</strong> betekent: <em>iets uitvoeren als een bepaalde voorwaarde klopt, waar is.</em></p>
+<p>Bijvoorbeeld:</p>
+<ul>
+<li><strong>Als</strong> de lamp <strong>aan</strong> is (<code>if (lampAan)</code>), verander dan de kleur naar <strong>geel</strong> en de tekst naar <strong>“Lamp is aan”</strong>.</li>
+<li><strong>Anders</strong> (<code>else</code>), zet de kleur terug naar <strong>grijs</strong> en de tekst naar <strong>“Lamp is uit”</strong>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">if</span> (lampAan) {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b949e;font-style:italic">// lamp aan → kleur geel, tekst groen
+</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>} <span style="color:#ff7b72">else</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b949e;font-style:italic">// lamp uit → kleur grijs, tekst zwart
+</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>}
+</span></span></code></pre></div><h3 id="wat-gebruik-je-hier">Wat gebruik je hier?</h3>
+<ul>
+<li><code>element.style.backgroundColor = 'yellow';</code> → past rechtstreeks de <strong>achtergrondkleur</strong> aan.</li>
+<li><code>element.textContent = 'Lamp is aan';</code> → verandert de <strong>tekstinhoud</strong> van het element.</li>
+<li><code>element.style.color = 'green';</code> → past de <strong>tekstkleur</strong> aan.</li>
+</ul>
+<p>Zo maak je de <strong>visuele feedback</strong> voor de gebruiker.</p>
+<h2 id="decompositie-in-actie">Decompositie in actie</h2>
+<p>Door het probleem op te delen in vijf logische stappen (state, selecties, events, functies, UI), heb je <strong>controle</strong> over elk deel en kun je fout per fout opsporen. Dat is exact wat <strong>decompositie</strong> betekent.</p>
+<h2 id="stijl-css">Stijl (CSS)</h2>
+<p>Ontwerp in <code>style.css</code> een <strong>eenvoudige, overzichtelijke opmaak</strong>. Geef de lamp bijvoorbeeld een <strong>cirkelvorm</strong> met een <strong>duidelijke kleur</strong>.</p>
+<h2 id="mini-uitbreidingen-optioneel">Mini-uitbreidingen (optioneel)</h2>
+<ul>
+<li>Tel hoe vaak de lamp is aangezet (extra state: <code>let aantalKeer = 0</code>).</li>
+<li>Voeg meerdere lampen toe.</li>
+<li>&hellip;</li>
+</ul>
+<h2 id="indienen">Indienen</h2>
+<ul>
+<li>Map <strong>VoornaamA_Lampje</strong> in de vakmap <strong>Webontwikkeling</strong>.</li>
+<li>Upload <strong>OneDrive-link</strong> van je gehele vakmap <strong>Webontwikkeling</strong> in <strong>Google Classroom</strong>.</li>
+</ul>
+<h2 id="puntenverdeling">Puntenverdeling</h2>
+<ul>
+<li><strong>Structuur</strong>: correcte map en koppeling met <code>defer</code></li>
+<li><strong>State</strong>: juiste variabele gebruikt</li>
+<li><strong>Selecties</strong>: juiste elementen geselecteerd</li>
+<li><strong>Events</strong>: listeners correct gekoppeld</li>
+<li><strong>Functies</strong>: duidelijke functies</li>
+<li><strong>UI-update</strong>: correcte <code>if ... else</code>, <code>style</code>, <code>textContent</code></li>
+<li><strong>Netheid</strong>: heldere naamgeving, nette indeling, geen dode code</li>
+<li><strong>Decompositie</strong>: stappenplan correct gevolgd</li>
+</ul>
+<h2 id="bronnen">Bronnen</h2>
+<h3 id="variabelen--state">Variabelen &amp; state</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let" target="_blank" rel="noopener noreferrer">let - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const" target="_blank" rel="noopener noreferrer">const - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank" rel="noopener noreferrer">JavaScript Data Types | MDN</a></li>
+</ul>
+<h3 id="dom-selecties">DOM-selecties</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank" rel="noopener noreferrer">Document Object Model (DOM) Introduction | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" target="_blank" rel="noopener noreferrer">Document.querySelector() | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank" rel="noopener noreferrer">Document.querySelectorAll() | MDN</a></li>
+</ul>
+<h3 id="events">Events</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank" rel="noopener noreferrer">Element.addEventListener() | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank" rel="noopener noreferrer">Event reference | MDN</a></li>
+</ul>
+<h3 id="functies">Functies</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" target="_blank" rel="noopener noreferrer">Functions - JavaScript Guide | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function" target="_blank" rel="noopener noreferrer">function declaration | MDN</a></li>
+</ul>
+<h3 id="condities--logica">Condities &amp; logica</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" target="_blank" rel="noopener noreferrer">if&hellip;else - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean" target="_blank" rel="noopener noreferrer">Booleans | MDN</a></li>
+</ul>
+<h3 id="ui-updates">UI-updates</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent" target="_blank" rel="noopener noreferrer">Element.textContent | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style" target="_blank" rel="noopener noreferrer">HTMLElement.style | MDN</a></li>
+</ul>
+<h3 id="html--defer">HTML &amp; defer</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-defer" target="_blank" rel="noopener noreferrer"><code>&lt;script&gt;</code> - HTML | MDN</a></li>
+</ul>
+<h3 id="denkconcept">Denkconcept</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Computational_thinking" target="_blank" rel="noopener noreferrer">Computational Thinking | Wikipedia</a></li>
+</ul>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/kunstkaai/js/main.js"></script>
+
+  </footer>
+</body>
+</html>
