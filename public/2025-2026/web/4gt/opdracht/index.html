@@ -71,6 +71,60 @@ Webontwikkeling
   <h1>Opdrachten</h1>
   
   
+    <h2><a href="/kunstkaai/2025-2026/web/4gt/opdracht/overmij_css/">Opdracht: Over mij (CSS)</a></h2>
+    <h2 id="omschrijving">Omschrijving</h2>
+<p>Je gaat jouw &ldquo;Over mij&rdquo;-pagina vormgeven met behulp van <strong>CSS</strong>. In deze opdracht leer je hoe je externe stijlen en CSS-selectors kunt gebruiken om een goed gestructureerde en aantrekkelijk vormgegeven webpagina te maken.</p>
+<p>Je maakt gebruik van <strong>sections</strong> om de verschillende onderdelen van je pagina te structureren. Minstens één section moet je anders vormgeven met behulp van een <strong>id-selector</strong> en het <strong>id-attribuut</strong> in HTML.</p>
+
+
+
+
+<style>
+    .pinboard span {
+        border: none !important;
+        border-radius: 0 !important;
+    }
+
+    .pinboard span[style*="width"] {
+        display: block !important;
+        width: calc(100% + 1rem) !important;
+        margin-bottom: 1.5rem;
+        margin-left: -0.5rem;
+        background-color: transparent;
+    }
+
+    .pinboard span:first-of-type>span:first-child {
+        display: none;
+    }
+
+    .pinboard span:last-of-type>span:last-child {
+        display: none;
+    }
+
+    .pinboard span[style*="width"]>span:nth-child(2) {
+        padding: 0px !important;
+    }
+
+    .pinboard span[style*="width"]>span:nth-child(2)>span>span {
+        padding: 0 0.5rem !important;
+    }
+
+    .pinboard span[style*="width"]>span:nth-child(2)>span>span>span[style*="background-image"] {
+        display: block !important;
+        margin-bottom: 1rem !important;
+    }
+</style>
+
+<div class="pinboard">
+    <a data-pin-do="embedBoard" 
+        href="https://www.pinterest.com/vincentvandercruyssen/over-mij/"
+        data-pin-scale-width="213"
+        data-pin-scale-height="640"
+        data-pin-board-width="640">
+    </a>
+</div>
+<p style="text-align: center;"><a href="https://www.pinterest.com/vincentvandercruyssen/over-mij/" target="_blank">Bekijk board op Pinterest.</a></p>
+  
     <h2><a href="/kunstkaai/2025-2026/web/4gt/opdracht/overmij_html/">Opdracht: Over mij (HTML)</a></h2>
     <p>We starten het jaar met een eenvoudige maar leuke oefening: een webpagina over jezelf. Zo leer je meteen werken met HTML én toon je iets van wie je bent.</p>
 
