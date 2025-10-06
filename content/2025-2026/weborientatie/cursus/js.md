@@ -481,7 +481,7 @@ naam.addEventListener("blur",  () => console.log("Focus verloren"));
 </script>
 ```
 
-## Voorwaardelijke uitvoering met `if`
+## Voorwaardelijke uitvoering met if
 
 Met `if` laat je code enkel uitvoeren als een **voorwaarde** waar is.
 
