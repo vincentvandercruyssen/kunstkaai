@@ -12,13 +12,21 @@ JavaScript is één van de drie **kerntalen** van het web, samen met **HTML** en
 - **CSS** (*Cascading Style Sheets*) verzorgt de **vormgeving** (lettertypes, kleuren, marges, lay-out,...).
 - **JavaScript** voegt **gedrag en interactiviteit** toe, zoals menu’s, formuliercontrole, slideshows,...
 
-JavaScript is in essentie een **client-side scripttaal**: de code wordt samen met HTML en CSS naar de browser gestuurd en daar uitgevoerd. Moderne browsers (Chrome, Firefox, Safari, Edge, ...) bevatten elk een eigen **JavaScript-motor** die de scripts uitvoert.
+Met JavaScript kan een website **dynamisch reageren** op acties van de gebruiker: zoals klikken, typen of scrollen. Denk aan **interactiviteit** en **gebruikerservaring**:
 
-Om veiligheidsredenen mag JavaScript **geen directe toegang** krijgen tot bestanden of hardware van de gebruiker. Dit voorkomt dat websites je systeem kunnen manipuleren of lokale bestanden kunnen lezen.
+- **Navigatie**: dropdownmenu’s, schuivende zijbalken, dynamische tabs,...
+- **Formulieren**: onmiddellijke foutmeldingen of validatie zonder herladen,...
+- **Inhoud**: automatisch laden van nieuwe berichten of producten,...
+- **Animatie**: overgangen, bewegende elementen, sliders,...
+- **Toepassingen**: interactieve kaarten, games, webapps, chatvensters,...
 
-JavaScript werd oorspronkelijk ontworpen om **webpagina’s interactief** te maken, maar is vandaag uitgegroeid tot een volwaardige programmeertaal. Ze wordt ook **server-side** gebruikt met **Node.js** en vormt de basis van talloze toepassingen en tools.
+### Client-side scripttaal
 
-Dankzij de gemeenschappelijke **ECMAScript-standaard** werken scripts tegenwoordig in alle moderne browsers veel betrouwbaarder en consistenter dan vroeger. Kleine verschillen bestaan nog, maar bij de basisfunctionaliteit merk je daar niets van.
+Oorspronkelijk is JavaScript ontwikkeld als een **client-side scripttaal**: de code wordt samen met HTML en CSS naar de **browser** gestuurd en **daar** uitgevoerd. Elke moderne browser (zoals Chrome, Firefox, Safari en Edge) bevat een eigen **JavaScript-motor** die de scripts uitvoert.
+
+Om veiligheidsredenen krijgt JavaScript in de browser **geen directe toegang** tot bestanden of hardware van de gebruiker. Zo kunnen websites je systeem niet manipuleren of lokale bestanden uitlezen.
+
+Tegenwoordig wordt JavaScript ook **buiten de browser** gebruikt, bijvoorbeeld op **servers** met **Node.js**. In dat geval spreken we van **server-side JavaScript**. Beide toepassingen gebruiken dezelfde taal, maar in een **andere omgeving**: de browser aan de kant van de gebruiker (*client*), of de server die de pagina’s levert (*server*).
 
 Hoewel bijna alle gebruikers JavaScript aan hebben staan, zijn er situaties waarin scripts niet worden uitgevoerd. Daarom is het goed om websites zo te bouwen dat ze ook zonder JavaScript bruikbaar blijven. 
 
@@ -36,6 +44,8 @@ Om die verschillen weg te werken, werd de taal gestandaardiseerd als **ECMAScrip
 - **2015** **ECMAScript 6** (*let*, *const*, classes, modules...)
 - **Vanaf 2016** Jaarlijkse updates (*ES2016, ES2017...*)
 
+Dankzij de gemeenschappelijke **ECMAScript-standaard** werken scripts tegenwoordig in alle moderne browsers veel betrouwbaarder en consistenter dan vroeger. Kleine verschillen bestaan nog, maar bij de basisfunctionaliteit merk je daar niets van.
+
 Vandaag draait **JavaScript** in **alle moderne browsers** op **elk systeem**. Je hebt enkel een **teksteditor** nodig, zoals [**Visual Studio Code**](https://code.visualstudio.com/).
 
 ### Gereedschap en applicaties
@@ -52,6 +62,8 @@ Je kunt JavaScript schrijven in **elke teksteditor**, maar een goede editor bied
 
 Bewaar je JavaScript-bestanden altijd met de bestandsextensie `.js`.
 
+{{< svg src="img/web/vsc-logo.svg" width="100" href="https://code.visualstudio.com/" text="Visual Studio Code" >}}
+
 #### Een lokale webserver (soms nodig)
 
 Sommige functies van JavaScript werken alleen correct wanneer je bestanden laadt via een **webserver** in plaats van rechtstreeks via `file://...`. Dat is vooral nodig wanneer je **modules** gebruikt (`import` / `export`).
@@ -66,24 +78,64 @@ Wil je snel iets uitproberen zonder installatie? Gebruik een online omgeving. Je
 
 ## JavaScript-structuur
 
+### Plaatsing van het script
+
+De browser voert JavaScript uit **van boven naar beneden** zodra een `<script>`-tag wordt gelezen. De plaats bepaalt **wanneer** de code wordt uitgevoerd.
+
+Plaats `<script>`-tags **vlak vóór** `</body>`. Zo laadt de volledige HTML eerst voordat het script start, wat de prestaties en gebruikerservaring verbetert.
+
+Gebruik `async` of `defer` als het script in de `<head>` staat:
+
+- `async` laadt en voert uit zodra het beschikbaar is (**onafhankelijk**, bv. voor analytics of advertenties)
+- `defer` laadt op de achtergrond en voert pas uit **na** de HTML (**nodig bij DOM-manipulatie**)
+
+Staat je `<script>` vlak vóór `</body>`? Dan is `defer` niet nodig.
+
+#### Inline scripts
+
+Je kunt JavaScript rechtstreeks in het HTML-bestand schrijven, inline scripts maken de code minder overzichtelijk en moeilijker te hergebruiken. 
+
+```html
+<script>
+  console.log("Hallo wereld.");
+</script>
+```
+
+#### Externe scripts
+
+Gebruik externe `.js-`bestand(en) zodat structuur en logica gescheiden blijven. Dat houdt de code overzichtelijk, herbruikbaar en makkelijk te onderhouden.
+
+```html
+<script src="mijnscript.js"></script>
+```
+
+#### Type-kenmerk
+
+Sommige voorbeelden tonen nog een extern bestand met `type`-kenmerk. Dit is niet meer verplicht, browsers gaan standaard uit van JavaScript.
+
+```html
+<script src="mijnscript.js" type="text/javascript"></script>
+```
+
 ### Schrijven en volgorde
 
-JavaScript wordt geschreven als platte tekst, net als HTML en CSS. Het wordt **direct geïnterpreteerd** door de browser, er is geen aparte compileerstap nodig. Moderne JavaScript-engines gebruiken vaak **JIT-compilatie** (*Just-In-Time*) om de code vlak voor uitvoering te optimaliseren.
+JavaScript wordt **direct geïnterpreteerd** door de browser, er is geen aparte compileerstap nodig. Moderne JavaScript-engines gebruiken vaak **JIT-compilatie** (*Just-In-Time*) om de code vlak voor uitvoering te optimaliseren.
 
 ⚠️ **JavaScript is hoofdlettergevoelig.** Variabelen, functienamen enzovoort moeten exact overeenkomen in hoofd- en kleine letters. JavaScript gokt nooit wat je bedoelt.
 
 JavaScript-code bestaat uit **statements**: instructies die stap voor stap aangeven wat er moet gebeuren (bijvoorbeeld een kleur aanpassen, een berekening uitvoeren of een element tonen of verbergen).
 
-- Meestal schrijf je elk statement op één regel.  
-- Sluit statements af met een puntkomma `;`. De puntkomma maakt de code duidelijker en voorkomt fouten door de automatische puntkomma-invoeging van JavaScript.  
-- Gebruik een puntkomma bij **expressies** zoals toekenningen of functieaanroepen:
+- Meestal schrijf je elk statement op één regel en meestal sluit je statements af met een puntkomma `;`. 
+
+Gebruik een puntkomma bij **expressies** zoals toekenningen of functieaanroepen.
 
 ```js
 let naam = "Vincent";
 console.log(naam);
+mijnFunctie();
 ```
 
-- Gebruik echter **geen** puntkomma bij blokstructuren of declaraties zoals `if`, `for`, `while`, `function` of `class`:
+Gebruik echter **geen** puntkomma bij blokstructuren (zoals `if`, `for`, `while`, `function` of `class`).
 
 ```js
 function groet() {
@@ -105,102 +157,46 @@ const groet = function() {
 
 JavaScript negeert extra spaties en nieuwe regels, behalve binnen aanhalingstekens. Daar tellen spaties als gewone tekens in een string.
 
-### Plaatsing van het script
-
-De browser voert JavaScript **van boven naar beneden** uit zodra een `<script>`-tag wordt gelezen. De plaats van de tag bepaalt dus **wanneer** de code wordt uitgevoerd.
-
-Je kunt scripts opnemen in de `<head>` of in de `<body>`. De keuze beïnvloedt de **laadtijd** en de **volgorde van uitvoering**.
-
-Aanbevolen werkwijze: plaats `<script>`-tags **vlak vóór** `</body>`. Zo laadt de HTML eerst volledig voordat het script start, wat de **prestaties** en **gebruikerservaring** verbetert.
-
-Gebruik eventueel de kenmerken `async` of `defer` als het script in de `<head>` staat:
-- `async` laadt en voert het script uit zodra het beschikbaar is (niet in volgorde)
-- `defer` laadt het script op de achtergrond en voert het pas uit **na** het laden van de HTML
-
-#### Inline scripts
-
-Voor eenvoudige pagina’s kun je JavaScript rechtstreeks in het HTML-bestand opnemen:
-
-```html
-<script>
-  console.log("Hallo wereld");
-</script>
-```
-
-Dit **wordt afgeraden**, inline scripts maken de code minder overzichtelijk en moeilijker te hergebruiken. Gebruik **externe bestanden** zodat structuur en logica gescheiden blijven.
-
-#### Externe scripts
-
-Een apart `.js`-bestand is de beste keuze. Dat houdt de code overzichtelijk, herbruikbaar en makkelijk te onderhouden.
-
-```html
-<script src="mijnscript.js"></script>
-```
-
-Plaats deze `<script>`-tag bij voorkeur **onderaan de `<body>`**, vlak vóór `</body>`. Zo is de HTML volledig geladen wanneer het script wordt uitgevoerd.
-
-#### type-kenmerk
-
-Sommige voorbeelden tonen nog:
-
-```html
-<script src="mijnscript.js" type="text/javascript"></script>
-```
-
-Sinds HTML5 is `type="text/javascript"` niet meer verplicht. Browsers gaan standaard uit van JavaScript.
-
 ## Fundamenten
-
-### Commentaar
-
-Commentaar wordt **niet uitgevoerd**. Gebruik het om je code leesbaar te houden of tijdelijk uit te schakelen.
-
-**Eenregelige commentaar:**
-
-```js
-// Dit is commentaar
-console.log("Hallo");
-```
-
-**Meerregelige commentaar:**
-
-```js
-/*
-  Dit zijn
-  meerdere regels
-  commentaar
-*/
-```
 
 ### Variabelen
 
-Een **variabele** is een naam voor data. Je maakt er één met `let`:
+Een **variabele** is een **naam** die verwijst naar een **waarde** die je in je code wil gebruiken of onthouden. Je kunt het vergelijken met een **doos met een label**: de **doos** bevat de waarde, het **label** is de naam. Een variabele is dus een **naam voor gegevens**.
+
+Je maakt een variabele meestal met `let` of `const`:
+
+* `let` voor **waarden die kunnen veranderen**
+* `const` voor **vaste waarden** die **niet opnieuw worden toegewezen**
 
 ```js
-let naam = "Sam";
+let gebruiker = "Sam";
 let leeftijd = 17;
+const pi = 3.14;
 ```
 
-Gebruik:
-
-- `let` voor **waarden die kunnen veranderen**
-- `const` voor **vaste waarden** die niet opnieuw worden toegewezen
+In JavaScript bepaalt de **waarde** automatisch het **gegevenstype**.
+De taal is **dynamisch getypeerd**, dus een variabele kan later een ander type bevatten:
 
 ```js
-const pi = 3.14;
+let x = 42;       // type: number
+x = "Hallo";      // nu type: string
 ```
 
 ### Gegevenstypes
 
-Belangrijkste types in JavaScript:
+Elke waarde in JavaScript heeft een **gegevenstype**. Dat type bepaalt **wat** de waarde voorstelt (tekst, getal, waar/onwaar, …) en **welke bewerkingen** je ermee kunt uitvoeren.
 
-* **String** tekst: `"Hallo"`
-* **Number** getallen: `42`, `3.14`
+* **String** tekst: `"Hallo"`, `"123"`
+* **Number** getal: `42`, `3.14`
 * **Boolean** waar/onwaar: `true`, `false`
-* **Null** geen waarde
-* **Undefined** nog niet toegewezen
-* **Object** verzameling van waarden
-* **Array** lijst van waarden
+* **Null** bewuste afwezigheid van een waarde
+* **Undefined** nog geen waarde toegekend
+* **Symbol** unieke, onveranderbare waarde
+* **BigInt** heel grote getallen
+* **Object** niet-primitieve waarde met eigenschappen en methodes
+
+Alles wat **tussen aanhalingstekens** staat, is een **string**.
+Ook `"123"` is tekst, geen getal: je kunt er niet mee rekenen zonder het om te zetten.
 
 Type controleren met `typeof`:
 
@@ -209,15 +205,387 @@ let x = 42;
 console.log(typeof x); // "number"
 ```
 
+### Scope
+
+Scope bepaalt **waar** een variabele beschikbaar is.
+
+* **Lokale scope**: variabelen gedefinieerd **binnen een functie** zijn enkel daar bruikbaar.
+* **Globale scope**: variabelen gedefinieerd **buiten functies** zijn overal beschikbaar.
+
+```js
+let bericht = "Hallo"; // globaal
+
+function melding() {
+  let naam = "Sam"; // lokaal
+  console.log(bericht, naam); // ✅ werkt
+}
+melding();
+console.log(naam); // ❌ fout: naam bestaat niet buiten de functie
+```
+
 ### Console
 
-Met `console.log()` toon je iets in de **console**:
+Met `console.log()` toon je iets in de **console**, onderdeel van de **ontwikkelaarstools** in je browser.
+Gebruik dit om te testen of je code werkt:
 
 ```js
 console.log("Hallo wereld");
 ```
 
-Gebruik dit om te testen of je code werkt.
+### Commentaar
+
+Commentaar wordt **niet uitgevoerd**. Gebruik het om je code leesbaar te houden of tijdelijk uit te schakelen:
+
+```js
+// Dit is commentaar
+
+/*
+  Dit zijn
+  meerdere regels
+  commentaar
+*/
+```
+
+## Objecten in JavaScript
+
+JavaScript kent twee soorten waarden:
+
+* **Primitieve types**: eenvoudige, onveranderlijke waarden
+  (`string`, `number`, `boolean`, `null`, `undefined`, `symbol`, `bigint`)
+* **Objecten**: verzamelingen van **eigenschappen** (data) en **methodes** (functies)
+
+Alles wat **geen primitief type** is, is een **object**.
+Voorbeelden: gewone objecten (`{}`), arrays (`[]`), functies, de DOM (`document`), enz.
+
+Voorbeeld:
+
+```js
+let persoon = {
+  naam: "Sam",
+  leeftijd: 17,
+  spreek() {
+    console.log("Hallo!");
+  }
+};
+
+console.log(persoon.naam); // "Sam"
+persoon.spreek();          // "Hallo!"
+```
+
+Eigenschappen aanspreken:
+
+```js
+console.log(persoon.naam);
+console.log(persoon["leeftijd"]);
+```
+
+Eigenschappen toevoegen of wijzigen:
+
+```js
+persoon.hobby = "muziek";
+persoon.leeftijd = 18;
+```
+
+Een object is dus een **container** die gegevens en functies bundelt.
+
+## De DOM: een verzameling van objecten
+
+De **Document Object Model (DOM)** is een **structuur** die de **browser** opbouwt op basis van de **HTML** van je webpagina. Elk HTML-element wordt vertaald naar een **JavaScript-object**.
+
+Zo kan JavaScript de webpagina **lezen**, **aanpassen**, **toevoegen** of **verwijderen**.
+
+```html
+<body>
+  <h1 id="titel">Welkom</h1>
+  <p class="intro">Dit is een paragraaf.</p>
+</body>
+```
+
+Wordt in de DOM voorgesteld als:
+
+```
+document
+└── html
+    └── body
+        ├── h1#titel
+        └── p.intro
+```
+
+De DOM is dus een **boom van objecten**.
+Elk element is een **object** met **eigenschappen** (zoals `textContent`, `id`) en **methodes** (zoals `querySelector`, `appendChild`).
+
+De browser maakt deze objecten aan, jij gebruikt JavaScript om ze te bewerken.
+
+### Soorten nodes
+
+Elke HTML-tag, tekst of kenmerk wordt een **node** (knooppunt):
+
+* **Element nodes** HTML-tags (`<p>`, `<div>`, …)
+* **Text nodes** tekst binnenin elementen
+* **Attribute nodes** kenmerken zoals `id`, `class`, `src`
+
+Navigeren in de boom:
+
+```js
+element.parentNode        // ouder
+element.children          // enkel elementen
+element.firstChild
+element.lastChild
+element.nextSibling
+element.previousSibling
+```
+
+Gebruik **`children`** als je enkel elementen wilt (geen tekst).
+
+### Elementen selecteren
+
+Gebruik **selectors** om elementen op te halen.
+
+#### Moderne methodes
+
+```js
+document.querySelector("#titel");
+document.querySelectorAll("p.intro");
+```
+
+`querySelector` haalt één element op (de **eerste match**), `querySelectorAll` haalt **meerdere elementen** op (een NodeList of lijst met **alle matches**). Deze lijst kun je vervolgens gemakkelijk met een `forEach` doorlopen.
+
+Werkt met alle eenvoudige CSS-selectors (zoals `#id`, `.class`, `div`, `p.intro`,...). Alsook met complexere CSS-selectors (zoals `section > p`, `ul li:first-child`, `[type="text"]`,...).
+
+#### Oudere methodes
+
+```js
+document.getElementById("titel");
+document.getElementsByTagName("p");
+document.getElementsByClassName("intro");
+```
+
+Minder flexibel, maar één soort selector per functie, je kunt er geen combinaties of complexe CSS-selectors mee gebruiken.
+
+### Elementen aanpassen
+
+#### Tekst of HTML
+
+```js
+let titel = document.querySelector("#titel");
+titel.textContent = "Nieuwe titel";          // enkel tekst
+titel.innerHTML = "<em>Nieuwe</em> titel";   // met HTML-opmaak
+```
+
+Gebruik **`textContent`**, veiliger en sneller.
+
+#### CSS
+
+```js
+titel.style.color = "red";
+titel.style.fontSize = "2em";
+```
+
+Of met classes:
+
+```js
+titel.classList.add("belangrijk");
+titel.classList.remove("oud");
+```
+
+#### Kenmerken
+
+```js
+let link = document.querySelector("a");
+link.setAttribute("href", "https://example.com");
+console.log(link.getAttribute("href"));
+```
+
+### Elementen maken, invoegen of verwijderen
+
+Nieuw element:
+
+```js
+let nieuw = document.createElement("p");
+nieuw.textContent = "Hallo wereld";
+document.body.appendChild(nieuw);
+```
+
+Verwijderen:
+
+```js
+document.body.removeChild(nieuw);
+```
+
+Invoegen vóór een ander element:
+
+```js
+let lijst = document.querySelector("ul");
+let item = document.createElement("li");
+item.textContent = "Nieuw item";
+lijst.insertBefore(item, lijst.firstChild);
+```
+
+## Events
+
+**Events** zijn acties waarop JavaScript kan **reageren** (zoals klikken, typen, laden of focussen). Koppel ze in **JavaScript**, niet in **HTML**.
+
+### Klik-events
+
+Vermijd inline handlers (`onclick="..."`), overschrijven elkaar en is beperkter. Gebruik `addEventListener()` voor meer flexibiliteit: je kunt meerdere functies koppelen en extra opties instellen (zoals `once` of `capture`).
+
+```html
+<button id="knop">Klik mij</button>
+<script>
+document.querySelector("#knop").addEventListener("click", () => {
+  console.log("Hallo!");
+});
+</script>
+```
+
+### Pagina laden: DOMContentLoaded & load
+
+**`DOMContentLoaded`** start zodra de **HTML-structuur** geladen is, ideaal om scripts te activeren die de DOM gebruiken.
+
+**`load`**: wacht tot **alles** geladen is (ook afbeeldingen en stylesheets). Gebruik dit alleen als je alle middelen nodig hebt.
+
+```js
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM klaar");
+});
+
+window.addEventListener("load", () => {
+  console.log("Pagina volledig geladen");
+});
+```
+
+```
+window (het browservenster)
+ └── document (de HTML-pagina in dat venster)
+      └── html (het root-element van de pagina)
+           ├── head (metadata, titel, links naar CSS, scripts)
+           └── body (zichtbare inhoud)
+                └── elementen (div, p, img, button, form,...)
+```
+
+### Focus-events
+
+* `focus`: wanneer een element focus krijgt.
+* `blur`: wanneer het element focus verliest. 
+  
+Deze events worden enkel op het element zelf uitgevoerd. 
+
+Wil je ook reageren op een **ouder-element** waarin ze zich bevinden, gebruik dan `focusin` en `focusout`, ook wel **“bubbling”** genoemd.
+
+```html
+<input id="naam" type="text">
+<script>
+const naam = document.querySelector("#naam");
+naam.addEventListener("focus", () => console.log("Focus!"));
+naam.addEventListener("blur",  () => console.log("Focus verloren"));
+</script>
+```
+
+## Voorwaardelijke uitvoering met `if`
+
+Met `if` laat je code enkel uitvoeren als een **voorwaarde** waar is.
+
+```js
+if (leeftijd >= 18) {
+  console.log("Volwassen");
+} else {
+  console.log("Tiener");
+}
+```
+
+* De voorwaarde tussen haakjes moet **true** of **false** opleveren.
+* `else` voert uit wat gebeurt als de voorwaarde **niet waar** is.
+* Met `else if` test je meerdere voorwaarden.
+
+```js
+if (score > 90) {
+  console.log("Uitstekend");
+} else if (score >= 50) {
+  console.log("Geslaagd");
+} else {
+  console.log("Niet geslaagd");
+}
+```
+
+Gebruik `if` om te **beslissen** welke code mag lopen, afhankelijk van een toestand.
+
+## Herhalen met lussen
+
+Een **lus** voert een blok code **meerdere keren** uit.
+
+### `while`
+
+Herhaalt **zolang** de voorwaarde waar is.
+
+```js
+let i = 0;
+while (i < 3) {
+  console.log(i);
+  i++; // voorkom oneindige lus
+}
+```
+
+Gebruik `while` als je **niet op voorhand weet** hoe vaak je wil herhalen.
+
+### `for`
+
+Herhaalt een **vast aantal keren**.
+
+```js
+for (let i = 0; i < 3; i++) {
+  console.log(i);
+}
+```
+
+* `i = 0` → startwaarde
+* `i < 3` → voorwaarde
+* `i++` → stap per ronde
+
+Gebruik `for` als je **exact weet** hoe vaak de lus moet lopen.
+
+## Herbruikbare code met functies
+
+Een **functie** groepeert code en maakt ze **herbruikbaar**.
+
+### Klassieke functie
+
+```js
+function begroet(naam) {
+  console.log("Hallo " + naam);
+}
+
+begroet("Sam"); // Hallo Sam
+```
+
+### Arrow function
+
+```js
+const begroet = (naam) => {
+  console.log(`Hallo ${naam}`);
+};
+
+begroet("Sam");
+```
+
+**Verschillen:**
+
+* Arrow functions zijn **korter**
+* Ze nemen de **`this`**-waarde over van hun **buitenste omgeving**
+* Klassieke functies krijgen **hun eigen `this`**
+
+`this` verwijst naar **de context waarin de functie wordt uitgevoerd**. In een klassiek voorbeeld binnen een object wijst `this` naar dat **object**; bij arrow functions blijft `this` wat het erbuiten was.
+
+```js
+const persoon = {
+  naam: "Sam",
+  zegNaam() {
+    console.log(this.naam); // "Sam"
+  }
+};
+persoon.zegNaam();
+```
+
+Gebruik arrow functions voor **korte taken of callbacks**, klassieke functies voor methodes in objecten of wanneer je met **`this`** werkt.
 
 ## Wiskundige bewerkingen
 
@@ -355,73 +723,6 @@ let juist = (2 + 3) * 4;     // 5 * 4 = 20
 
 Gebruik **haakjes** om je code leesbaar en voorspelbaar te houden.
 
-## Vraagstellingen en condities (if)
-
-Met `if` voer je code alleen uit als iets waar is:
-
-```js
-if (leeftijd >= 18) {
-  console.log("Volwassen");
-} else {
-  console.log("Minderjarig");
-}
-```
-
-## Werken met lussen (while, for)
-
-**While-lus**: herhaalt zolang de voorwaarde waar is
-
-```js
-let i = 0;
-while (i < 3) {
-  console.log(i);
-  i++;
-}
-```
-
-**For-lus**: herhaalt vast aantal keer
-
-```js
-for (let i = 0; i < 3; i++) {
-  console.log(i);
-}
-```
-
-## Functies (function)
-
-Functies groeperen code en maken ze herbruikbaar:
-
-```js
-function begroet(naam) {
-  console.log("Hallo " + naam);
-}
-
-begroet("Sam");
-```
-
-Of als **arrow function**:
-
-```js
-const begroet = (naam) => {
-  console.log(`Hallo ${naam}`);
-};
-```
-
-## De 'scope' van een variabele
-
-**Scope** = waar een variabele geldig is:
-
-* `let` en `const` hebben **blokscope** → alleen binnen `{ }`
-* `var` (oud) heeft **function scope**
-
-```js
-{
-  let x = 10;
-  console.log(x); // 10
-}
-console.log(x); // fout: x bestaat hier niet
-```
-
 ## Arrays
 
 We hebben tot nu toe variabelen gebruikt met één waarde.  
@@ -467,38 +768,6 @@ console.log(omgekeerd.join(", "));
 ```
 
 Er bestaan veel nuttige methodes zoals `.push()`, `.pop()`, `.slice()`, `.splice()`, `.map()`, `.filter()`...
-
-## Objecten
-
-### Het Object model
-
-Een **object** is een verzameling van eigenschappen (properties) en functies (methodes). Eigenschappen zijn stukjes data, methodes zijn functies die op het object werken.
-
-```js
-let persoon = {
-  naam: "Sam",
-  leeftijd: 17,
-  spreek: function () {
-    console.log("Hallo!");
-  }
-};
-
-console.log(persoon.naam); // Sam
-persoon.spreek(); // Hallo!
-```
-
-Je spreekt eigenschappen aan met **puntnotatie** of **blokhaken**:
-
-```js
-console.log(persoon["leeftijd"]);
-```
-
-Je kunt nieuwe eigenschappen toevoegen of wijzigen:
-
-```js
-persoon.hobby = "muziek";
-persoon.leeftijd = 18;
-```
 
 ## Werken met Strings
 
@@ -593,200 +862,6 @@ console.log(Object.keys(mijnAuto));   // ["merk", "kleur"]
 console.log(Object.values(mijnAuto)); // ["Tesla", "blauw"]
 ```
 
-## Document Object Model
-
-Het **Document Object Model (DOM)** is de structuur waarin je webpagina wordt voorgesteld. JavaScript kan via de DOM elk element op de pagina aanspreken, veranderen, toevoegen of verwijderen.
-
-### Wat is de DOM?
-
-De **DOM** (Document Object Model) stelt je webpagina voor als een **boomstructuur** waarin elk HTML-element een **node** is. JavaScript kan die structuur lezen en dynamisch aanpassen.
-
-### Document
-
-De webpagina waar je op dat moment naar kijkt.
-Het is hetzelfde document, of je nu naar de HTML-bron kijkt of naar de visuele weergave.
-Voor JavaScript is de HTML-bron belangrijk.
-
-### Object
-
-Een **object** is een element in de HTML (zoals `<h1>`, `<p>`, `<ul>`, `<li>`).
-Objecten kunnen andere objecten bevatten.
-
-### Model
-
-De HTML wordt weergegeven als een **boomstructuur** van nodes:
-bijv. document → body → div → p → ul → li
-
-- Elke node kan child-nodes (onderliggende elementen) en parent-nodes (bovenliggende elementen) hebben.
-- De DOM is dus een hiërarchische structuur.
-
-## Werken met nodes en elementen
-
-Elke HTML-tag is een node in de DOM.
-De belangrijkste types:
-
-- **element nodes** HTML-tags zoals `<p>`, `<div>`, `<ul>`
-- **text nodes** de tekst binnen een element
-- **attribute nodes** de kenmerken van een element
-
-Je kunt navigeren in de DOM met:
-
-```js
-element.parentNode     // ouder
-element.childNodes     // kinderen
-element.firstChild
-element.lastChild
-element.nextSibling
-element.previousSibling
-```
-
-## Aanspreken van DOM-elementen
-
-Gebruik deze functies om elementen te selecteren:
-
-```js
-document.getElementById("titel");
-document.getElementsByTagName("p");
-document.getElementsByClassName("belangrijk");
-document.querySelector("#titel");
-document.querySelectorAll("p.belangrijk");
-```
-
-Met `querySelector` kun je CSS-selectors gebruiken, meestal de handigste optie.
-
-## DOM-elementen aanpassen
-
-### Tekst of HTML aanpassen
-
-```js
-let titel = document.getElementById("titel");
-titel.textContent = "Nieuwe titel";
-titel.innerHTML = "<em>Nieuwe</em> titel";
-```
-
-### CSS aanpassen
-
-```js
-titel.style.color = "red";
-titel.style.fontSize = "2em";
-```
-
-### Kenmerken (attributen) aanpassen
-
-```js
-let link = document.querySelector("a");
-link.setAttribute("href", "https://example.com");
-link.getAttribute("href");
-```
-
-## DOM-elementen creëren
-
-Nieuwe elementen toevoegen aan de DOM:
-
-```js
-let nieuw = document.createElement("p");
-nieuw.textContent = "Hallo wereld";
-
-document.body.appendChild(nieuw);
-```
-
-Je kunt ook verwijderen:
-
-```js
-document.body.removeChild(nieuw);
-```
-
-Of elders invoegen:
-
-```js
-let lijst = document.querySelector("ul");
-let item = document.createElement("li");
-item.textContent = "Nieuw item";
-
-lijst.insertBefore(item, lijst.firstChild);
-```
-
-## Events
-
-**Events** zijn acties of gebeurtenissen (zoals klikken, typen of bewegen) waarop JavaScript kan **reageren** door code uit te voeren. Je kunt events koppelen aan HTML-elementen.
-
-### Werken met onclick events
-
-`onclick` wordt uitgevoerd als een element wordt aangeklikt:
-
-```html
-<button onclick="zegHallo()">Klik mij</button>
-
-<script>
-function zegHallo() {
-  console.log("Hallo!");
-}
-</script>
-```
-
-**Betere manier** (scheidt HTML en JS):
-
-```html
-<button id="knop">Klik mij</button>
-
-<script>
-document.getElementById("knop").onclick = () => {
-  console.log("Hallo!");
-};
-</script>
-```
-
-Of met `addEventListener` (meest gebruikt):
-
-```js
-document.getElementById("knop")
-  .addEventListener("click", () => {
-    console.log("Hallo!");
-  });
-```
-
-### Werken met onload events
-
-`onload` gebeurt als de pagina volledig geladen is:
-
-```html
-<body onload="init()">
-
-<script>
-function init() {
-  console.log("Pagina geladen");
-}
-</script>
-```
-
-Beter met JS:
-
-```js
-window.addEventListener("load", () => {
-  console.log("Pagina geladen");
-});
-```
-
-### De onblur en onfocus events
-
-* `onfocus` → als een invoerveld actief wordt
-* `onblur` → als het veld focus verliest
-
-```html
-<input type="text" id="naam">
-
-<script>
-const naam = document.getElementById("naam");
-
-naam.addEventListener("focus", () => {
-  console.log("Focus!");
-});
-
-naam.addEventListener("blur", () => {
-  console.log("Focus verloren");
-});
-</script>
-```
 
 ## Timers
 
@@ -964,14 +1039,7 @@ function telOp(a, b) {
 function telOp(a,b){return a+b;}
 ```
 
-Minifyen doe je met tools zoals:
-
-- [UglifyJS](https://skalman.github.io/UglifyJS-online/)
-- [Terser](https://terser.org/)
-- [JavaScript Minifier](https://javascript-minifier.com/)
-
-⚠️ Let op: gebruik bij voorkeur de **niet-minified versie tijdens het ontwikkelen**
-en enkel de **minified versie bij publicatie**.
+Minifyen (en vervormen en comprimeren) doe je met speciale tools. Gebruik uiteraard de **niet-minified versie tijdens het ontwikkelen** en enkel de **minified versie bij publicatie**.
 
 ## Libraries
 

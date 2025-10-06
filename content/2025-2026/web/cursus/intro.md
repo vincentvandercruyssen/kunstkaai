@@ -337,7 +337,6 @@ Visual Studio Code is een gratis programma dat ontwikkelaars helpt bij het maken
 
 {{< svg src="img/web/vsc-logo.svg" width="100" href="https://code.visualstudio.com/" text="Visual Studio Code" >}}
 
-
 #### Installatie van VSC op macOS
 
 1. Ga naar [Visual Studio Code website](https://code.visualstudio.com/).
