@@ -216,7 +216,7 @@ Weboriëntatie
         
 
         
-        <li><a href="#schrijven-en-volgorde">2.2 Schrijven en volgorde</a></li>
+        <li><a href="#syntax-en-structuur">2.2 Syntax en structuur</a></li>
       
     
 
@@ -1753,10 +1753,12 @@ Weboriëntatie
 <li><strong>Toepassingen</strong>: interactieve kaarten, games, webapps, chatvensters,&hellip;</li>
 </ul>
 <h3 id="client-side-scripttaal">Client-side scripttaal</h3>
-<p>Oorspronkelijk is JavaScript ontwikkeld als een <strong>client-side scripttaal</strong>: de code wordt samen met HTML en CSS naar de <strong>browser</strong> gestuurd en <strong>daar</strong> uitgevoerd. Elke moderne browser (zoals Chrome, Firefox, Safari en Edge) bevat een eigen <strong>JavaScript-motor</strong> die de scripts uitvoert.</p>
-<p>Om veiligheidsredenen krijgt JavaScript in de browser <strong>geen directe toegang</strong> tot bestanden of hardware van de gebruiker. Zo kunnen websites je systeem niet manipuleren of lokale bestanden uitlezen.</p>
-<p>Tegenwoordig wordt JavaScript ook <strong>buiten de browser</strong> gebruikt, bijvoorbeeld op <strong>servers</strong> met <strong>Node.js</strong>. In dat geval spreken we van <strong>server-side JavaScript</strong>. Beide toepassingen gebruiken dezelfde taal, maar in een <strong>andere omgeving</strong>: de browser aan de kant van de gebruiker (<em>client</em>), of de server die de pagina’s levert (<em>server</em>).</p>
-<p>Hoewel bijna alle gebruikers JavaScript aan hebben staan, zijn er situaties waarin scripts niet worden uitgevoerd. Daarom is het goed om websites zo te bouwen dat ze ook zonder JavaScript bruikbaar blijven.</p>
+<p>Een <em>client</em> is het toestel van de gebruiker (zoals desktop, laptop, tablet of smartphone). Een client-side scripttaal betekent dus dat de code in de browser van de gebruiker wordt uitgevoerd, niet op de server.</p>
+<p>JavaScript is oorspronkelijk ontworpen als <strong>client-side scripttaal</strong>: de code wordt samen met HTML en CSS naar de <strong>browser</strong> gestuurd en <strong>daar uitgevoerd</strong>. Elke moderne browser (zoals Chrome, Firefox, Safari en Edge) bevat een eigen <strong>JavaScript-motor</strong> die de scripts verwerkt.</p>
+<p>JavaScript wordt <strong>niet vooraf gecompileerd</strong> zoals bij klassieke programmeertalen (zoals C of Java). JavaScript wordt <strong>direct geïnterpreteerd</strong> door de browser, regel per regel. Moderne JavaScript-engines gebruiken vaak <strong>JIT-compilatie</strong> (<em>Just-In-Time</em>): delen van de code worden vlak voor uitvoering tijdelijk omgezet naar machinecode, zodat ze sneller draaien.</p>
+<p>Om veiligheidsredenen krijgt JavaScript in de browser <strong>geen directe toegang</strong> tot bestanden of hardware van de gebruiker. Zo kunnen websites je systeem niet manipuleren of lokale bestanden uitlezen. Alleen via <strong>specifieke web-API’s</strong> (zoals het uploaden van een bestand of toegang tot de camera) kan dat, en dan enkel <strong>met toestemming van de gebruiker</strong>.</p>
+<p>JavaScript wordt ook <strong>buiten de browser</strong> gebruikt, bijvoorbeeld op <strong>servers</strong> met <strong>Node.js</strong>. In dat geval spreken we van <strong>server-side JavaScript</strong>. Beide toepassingen gebruiken dezelfde taal, maar in een <strong>andere omgeving</strong>: de browser aan de kant van de gebruiker (<em>client</em>), of de server die de pagina’s levert (<em>server</em>).</p>
+<p>Hoewel bijna alle gebruikers JavaScript aan hebben staan, zijn er situaties waarin scripts niet worden uitgevoerd. Bouw websites daarom zodanig ze ook <strong>zonder JavaScript</strong> bruikbaar blijven.</p>
 <h3 id="een-korte-geschiedenis">Een korte geschiedenis</h3>
 <p><strong>JavaScript</strong> werd in <strong>1995</strong> ontwikkeld door <strong>Brendan Eich</strong> bij <strong>Netscape</strong>. De taal heette eerst <strong>Mocha</strong>, daarna <strong>LiveScript</strong>, en werd uiteindelijk om marketingredenen hernoemd naar <strong>JavaScript</strong>. Hoewel JS niets te maken heeft met Java, kon het meeliften op de hype rond Java.</p>
 <p><strong>Microsoft</strong> ontwikkelde een eigen variant, <strong>JScript</strong>, voor <strong>Internet Explorer</strong>, wat jarenlang zorgde voor verschillen tussen browsers.</p>
@@ -1833,8 +1835,9 @@ Weboriëntatie
 </span></span></code></pre></div><h4 id="type-kenmerk">Type-kenmerk</h4>
 <p>Sommige voorbeelden tonen nog een extern bestand met <code>type</code>-kenmerk. Dit is niet meer verplicht, browsers gaan standaard uit van JavaScript.</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#7ee787">script</span> src<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;mijnscript.js&#34;</span> type<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;text/javascript&#34;</span>&gt;&lt;/<span style="color:#7ee787">script</span>&gt;
-</span></span></code></pre></div><h3 id="schrijven-en-volgorde">Schrijven en volgorde</h3>
-<p>JavaScript wordt <strong>direct geïnterpreteerd</strong> door de browser, er is geen aparte compileerstap nodig. Moderne JavaScript-engines gebruiken vaak <strong>JIT-compilatie</strong> (<em>Just-In-Time</em>) om de code vlak voor uitvoering te optimaliseren.</p>
+</span></span></code></pre></div><h3 id="syntax-en-structuur">Syntax en structuur</h3>
+<p><strong>Syntax</strong> is het systeem en de <strong>schrijfwijze</strong> van een taal. Zoals bij spreektalen de grammatica en woordenschat bepalen welke zinnen &ldquo;juist&rdquo; zijn, bepaalt de syntax van een programmeertaal welke <strong>symbolen</strong> op welke manier gecombineerd mogen worden.</p>
+<p>In <strong>JavaScript</strong> geeft de syntax aan hoe je code moet schrijven zodat de browser ze correct kan lezen en uitvoeren. De <strong>structuur</strong> beschrijft hoe die code is <strong>opgebouwd</strong>: uit afzonderlijke <strong>statements</strong>, <strong>blokstructuren</strong> en <strong>expressies</strong> die samen het programma vormen.</p>
 <p>⚠️ <strong>JavaScript is hoofdlettergevoelig.</strong> Variabelen, functienamen enzovoort moeten exact overeenkomen in hoofd- en kleine letters. JavaScript gokt nooit wat je bedoelt.</p>
 <p>JavaScript-code bestaat uit <strong>statements</strong>: instructies die stap voor stap aangeven wat er moet gebeuren (bijvoorbeeld een kleur aanpassen, een berekening uitvoeren of een element tonen of verbergen).</p>
 <ul>
@@ -1865,9 +1868,9 @@ Weboriëntatie
 <p>Je maakt een variabele meestal met <code>let</code> of <code>const</code>:</p>
 <ul>
 <li><code>let</code> voor <strong>waarden die kunnen veranderen</strong></li>
-<li><code>const</code> voor <strong>vaste waarden</strong> die <strong>niet opnieuw worden toegewezen</strong></li>
+<li><code>const</code> voor <strong>vaste waarden die niet opnieuw worden toegewezen</strong></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">let</span> gebruiker <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;Sam&#34;</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">let</span> gebruiker <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;Vincent&#34;</span>;
 </span></span><span style="display:flex;"><span><span style="color:#ff7b72">let</span> leeftijd <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">17</span>;
 </span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> pi <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">3.14</span>;
 </span></span></code></pre></div><p>In JavaScript bepaalt de <strong>waarde</strong> automatisch het <strong>gegevenstype</strong>.
@@ -1900,16 +1903,49 @@ Ook <code>&quot;123&quot;</code> is tekst, geen getal: je kunt er niet mee reken
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">let</span> bericht <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;Hallo&#34;</span>; <span style="color:#8b949e;font-style:italic">// globaal
 </span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>
 </span></span><span style="display:flex;"><span><span style="color:#ff7b72">function</span> melding() {
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">let</span> naam <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;Sam&#34;</span>; <span style="color:#8b949e;font-style:italic">// lokaal
+</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">let</span> naam <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;Vincent&#34;</span>; <span style="color:#8b949e;font-style:italic">// lokaal
 </span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>  console.log(bericht, naam); <span style="color:#8b949e;font-style:italic">// ✅ werkt
 </span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>}
 </span></span><span style="display:flex;"><span>melding();
 </span></span><span style="display:flex;"><span>console.log(naam); <span style="color:#8b949e;font-style:italic">// ❌ fout: naam bestaat niet buiten de functie
 </span></span></span></code></pre></div><h3 id="console">Console</h3>
 <p>Met <code>console.log()</code> toon je iets in de <strong>console</strong>, onderdeel van de <strong>ontwikkelaarstools</strong> in je browser.
-Gebruik dit om te testen of je code werkt:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>console.log(<span style="color:#a5d6ff">&#34;Hallo wereld&#34;</span>);
-</span></span></code></pre></div><h3 id="commentaar">Commentaar</h3>
+Gebruik dit om te testen of je code werkt.</p>
+<p>
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/kunstkaai/img/web/cursus/js-console-firefox_1_hu_4b859b50ed44f094.webp" alt="js-console-firefox_1" loading="lazy">
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+<img src="http://localhost:1313/kunstkaai/img/web/cursus/js-console-chrome_1_hu_22b4dbb7eab21955.webp" alt="js-console-chrome_1" loading="lazy">
+
+
+
+</p>
+<h3 id="commentaar">Commentaar</h3>
 <p>Commentaar wordt <strong>niet uitgevoerd</strong>. Gebruik het om je code leesbaar te houden of tijdelijk uit te schakelen:</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">// Dit is commentaar
 </span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>
@@ -1929,14 +1965,14 @@ Gebruik dit om te testen of je code werkt:</p>
 Voorbeelden: gewone objecten (<code>{}</code>), arrays (<code>[]</code>), functies, de DOM (<code>document</code>), enz.</p>
 <p>Voorbeeld:</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">let</span> persoon <span style="color:#ff7b72;font-weight:bold">=</span> {
-</span></span><span style="display:flex;"><span>  naam<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;Sam&#34;</span>,
+</span></span><span style="display:flex;"><span>  naam<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;Vincent&#34;</span>,
 </span></span><span style="display:flex;"><span>  leeftijd<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">17</span>,
 </span></span><span style="display:flex;"><span>  spreek() {
 </span></span><span style="display:flex;"><span>    console.log(<span style="color:#a5d6ff">&#34;Hallo!&#34;</span>);
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>};
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>console.log(persoon.naam); <span style="color:#8b949e;font-style:italic">// &#34;Sam&#34;
+</span></span><span style="display:flex;"><span>console.log(persoon.naam); <span style="color:#8b949e;font-style:italic">// &#34;Vincent&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>persoon.spreek();          <span style="color:#8b949e;font-style:italic">// &#34;Hallo!&#34;
 </span></span></span></code></pre></div><p>Eigenschappen aanspreken:</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>console.log(persoon.naam);
@@ -2103,13 +2139,13 @@ Elk element is een <strong>object</strong> met <strong>eigenschappen</strong> (z
 </span></span><span style="display:flex;"><span>  console.log(<span style="color:#a5d6ff">&#34;Hallo &#34;</span> <span style="color:#ff7b72;font-weight:bold">+</span> naam);
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>begroet(<span style="color:#a5d6ff">&#34;Sam&#34;</span>); <span style="color:#8b949e;font-style:italic">// Hallo Sam
+</span></span><span style="display:flex;"><span>begroet(<span style="color:#a5d6ff">&#34;Vincent&#34;</span>); <span style="color:#8b949e;font-style:italic">// Hallo Vincent
 </span></span></span></code></pre></div><h3 id="arrow-function">Arrow function</h3>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> begroet <span style="color:#ff7b72;font-weight:bold">=</span> (naam) =&gt; {
 </span></span><span style="display:flex;"><span>  console.log(<span style="color:#a5d6ff">`Hallo </span><span style="color:#a5d6ff">${</span>naam<span style="color:#a5d6ff">}</span><span style="color:#a5d6ff">`</span>);
 </span></span><span style="display:flex;"><span>};
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>begroet(<span style="color:#a5d6ff">&#34;Sam&#34;</span>);
+</span></span><span style="display:flex;"><span>begroet(<span style="color:#a5d6ff">&#34;Vincent&#34;</span>);
 </span></span></code></pre></div><p><strong>Verschillen:</strong></p>
 <ul>
 <li>Arrow functions zijn <strong>korter</strong></li>
@@ -2118,9 +2154,9 @@ Elk element is een <strong>object</strong> met <strong>eigenschappen</strong> (z
 </ul>
 <p><code>this</code> verwijst naar <strong>de context waarin de functie wordt uitgevoerd</strong>. In een klassiek voorbeeld binnen een object wijst <code>this</code> naar dat <strong>object</strong>; bij arrow functions blijft <code>this</code> wat het erbuiten was.</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> persoon <span style="color:#ff7b72;font-weight:bold">=</span> {
-</span></span><span style="display:flex;"><span>  naam<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;Sam&#34;</span>,
+</span></span><span style="display:flex;"><span>  naam<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#34;Vincent&#34;</span>,
 </span></span><span style="display:flex;"><span>  zegNaam() {
-</span></span><span style="display:flex;"><span>    console.log(<span style="color:#ff7b72">this</span>.naam); <span style="color:#8b949e;font-style:italic">// &#34;Sam&#34;
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#ff7b72">this</span>.naam); <span style="color:#8b949e;font-style:italic">// &#34;Vincent&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>  }
 </span></span><span style="display:flex;"><span>};
 </span></span><span style="display:flex;"><span>persoon.zegNaam();
@@ -2289,8 +2325,8 @@ Elk element is een <strong>object</strong> met <strong>eigenschappen</strong> (z
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>console.log(<span style="color:#a5d6ff">10</span> <span style="color:#ff7b72;font-weight:bold">%</span> <span style="color:#a5d6ff">3</span>); <span style="color:#8b949e;font-style:italic">// 1
 </span></span></span></code></pre></div><h3 id="concatenatie">Concatenatie</h3>
 <p>Strings samenvoegen met <code>+</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">let</span> voornaam <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;Sam&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#ff7b72">let</span> naam <span style="color:#ff7b72;font-weight:bold">=</span> voornaam <span style="color:#ff7b72;font-weight:bold">+</span> <span style="color:#a5d6ff">&#34; Vandercruyssen&#34;</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">let</span> voornaam <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;Vincent&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">let</span> naam <span style="color:#ff7b72;font-weight:bold">=</span> voornaam <span style="color:#ff7b72;font-weight:bold">+</span> <span style="color:#a5d6ff">&#34; Vander Cruyssen&#34;</span>;
 </span></span></code></pre></div><p>Gebruik sinds <strong>ES6</strong> liever <strong>template literals</strong>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">let</span> naam <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">`Hallo </span><span style="color:#a5d6ff">${</span>voornaam<span style="color:#a5d6ff">}</span><span style="color:#a5d6ff">`</span>;
 </span></span></code></pre></div><h3 id="nan-not-a-number">NaN (<em>Not a Number</em>)</h3>

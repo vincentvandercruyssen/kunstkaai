@@ -22,13 +22,17 @@ Met JavaScript kan een website **dynamisch reageren** op acties van de gebruiker
 
 ### Client-side scripttaal
 
-Oorspronkelijk is JavaScript ontwikkeld als een **client-side scripttaal**: de code wordt samen met HTML en CSS naar de **browser** gestuurd en **daar** uitgevoerd. Elke moderne browser (zoals Chrome, Firefox, Safari en Edge) bevat een eigen **JavaScript-motor** die de scripts uitvoert.
+Een *client* is het toestel van de gebruiker (zoals desktop, laptop, tablet of smartphone). Een client-side scripttaal betekent dus dat de code in de browser van de gebruiker wordt uitgevoerd, niet op de server.
 
-Om veiligheidsredenen krijgt JavaScript in de browser **geen directe toegang** tot bestanden of hardware van de gebruiker. Zo kunnen websites je systeem niet manipuleren of lokale bestanden uitlezen.
+JavaScript is oorspronkelijk ontworpen als **client-side scripttaal**: de code wordt samen met HTML en CSS naar de **browser** gestuurd en **daar uitgevoerd**. Elke moderne browser (zoals Chrome, Firefox, Safari en Edge) bevat een eigen **JavaScript-motor** die de scripts verwerkt.
 
-Tegenwoordig wordt JavaScript ook **buiten de browser** gebruikt, bijvoorbeeld op **servers** met **Node.js**. In dat geval spreken we van **server-side JavaScript**. Beide toepassingen gebruiken dezelfde taal, maar in een **andere omgeving**: de browser aan de kant van de gebruiker (*client*), of de server die de pagina’s levert (*server*).
+JavaScript wordt **niet vooraf gecompileerd** zoals bij klassieke programmeertalen (zoals C of Java). JavaScript wordt **direct geïnterpreteerd** door de browser, regel per regel. Moderne JavaScript-engines gebruiken vaak **JIT-compilatie** (*Just-In-Time*): delen van de code worden vlak voor uitvoering tijdelijk omgezet naar machinecode, zodat ze sneller draaien.
 
-Hoewel bijna alle gebruikers JavaScript aan hebben staan, zijn er situaties waarin scripts niet worden uitgevoerd. Daarom is het goed om websites zo te bouwen dat ze ook zonder JavaScript bruikbaar blijven. 
+Om veiligheidsredenen krijgt JavaScript in de browser **geen directe toegang** tot bestanden of hardware van de gebruiker. Zo kunnen websites je systeem niet manipuleren of lokale bestanden uitlezen. Alleen via **specifieke web-API’s** (zoals het uploaden van een bestand of toegang tot de camera) kan dat, en dan enkel **met toestemming van de gebruiker**.
+
+JavaScript wordt ook **buiten de browser** gebruikt, bijvoorbeeld op **servers** met **Node.js**. In dat geval spreken we van **server-side JavaScript**. Beide toepassingen gebruiken dezelfde taal, maar in een **andere omgeving**: de browser aan de kant van de gebruiker (*client*), of de server die de pagina’s levert (*server*).
+
+Hoewel bijna alle gebruikers JavaScript aan hebben staan, zijn er situaties waarin scripts niet worden uitgevoerd. Bouw websites daarom zodanig ze ook **zonder JavaScript** bruikbaar blijven.
 
 ### Een korte geschiedenis
 
@@ -117,9 +121,11 @@ Sommige voorbeelden tonen nog een extern bestand met `type`-kenmerk. Dit is niet
 <script src="mijnscript.js" type="text/javascript"></script>
 ```
 
-### Schrijven en volgorde
+### Syntax en structuur
 
-JavaScript wordt **direct geïnterpreteerd** door de browser, er is geen aparte compileerstap nodig. Moderne JavaScript-engines gebruiken vaak **JIT-compilatie** (*Just-In-Time*) om de code vlak voor uitvoering te optimaliseren.
+**Syntax** is het systeem en de **schrijfwijze** van een taal. Zoals bij spreektalen de grammatica en woordenschat bepalen welke zinnen "juist" zijn, bepaalt de syntax van een programmeertaal welke **symbolen** op welke manier gecombineerd mogen worden.
+
+In **JavaScript** geeft de syntax aan hoe je code moet schrijven zodat de browser ze correct kan lezen en uitvoeren. De **structuur** beschrijft hoe die code is **opgebouwd**: uit afzonderlijke **statements**, **blokstructuren** en **expressies** die samen het programma vormen.
 
 ⚠️ **JavaScript is hoofdlettergevoelig.** Variabelen, functienamen enzovoort moeten exact overeenkomen in hoofd- en kleine letters. JavaScript gokt nooit wat je bedoelt.
 
@@ -166,10 +172,10 @@ Een **variabele** is een **naam** die verwijst naar een **waarde** die je in je 
 Je maakt een variabele meestal met `let` of `const`:
 
 * `let` voor **waarden die kunnen veranderen**
-* `const` voor **vaste waarden** die **niet opnieuw worden toegewezen**
+* `const` voor **vaste waarden die niet opnieuw worden toegewezen**
 
 ```js
-let gebruiker = "Sam";
+let gebruiker = "Vincent";
 let leeftijd = 17;
 const pi = 3.14;
 ```
@@ -216,7 +222,7 @@ Scope bepaalt **waar** een variabele beschikbaar is.
 let bericht = "Hallo"; // globaal
 
 function melding() {
-  let naam = "Sam"; // lokaal
+  let naam = "Vincent"; // lokaal
   console.log(bericht, naam); // ✅ werkt
 }
 melding();
@@ -226,11 +232,11 @@ console.log(naam); // ❌ fout: naam bestaat niet buiten de functie
 ### Console
 
 Met `console.log()` toon je iets in de **console**, onderdeel van de **ontwikkelaarstools** in je browser.
-Gebruik dit om te testen of je code werkt:
+Gebruik dit om te testen of je code werkt.
 
-```js
-console.log("Hallo wereld");
-```
+{{< img src="/img/web/cursus/js-console-firefox_1.png" >}}
+{{< img src="/img/web/cursus/js-console-chrome_1.png" >}}
+
 
 ### Commentaar
 
@@ -261,14 +267,14 @@ Voorbeeld:
 
 ```js
 let persoon = {
-  naam: "Sam",
+  naam: "Vincent",
   leeftijd: 17,
   spreek() {
     console.log("Hallo!");
   }
 };
 
-console.log(persoon.naam); // "Sam"
+console.log(persoon.naam); // "Vincent"
 persoon.spreek();          // "Hallo!"
 ```
 
@@ -554,7 +560,7 @@ function begroet(naam) {
   console.log("Hallo " + naam);
 }
 
-begroet("Sam"); // Hallo Sam
+begroet("Vincent"); // Hallo Vincent
 ```
 
 ### Arrow function
@@ -564,7 +570,7 @@ const begroet = (naam) => {
   console.log(`Hallo ${naam}`);
 };
 
-begroet("Sam");
+begroet("Vincent");
 ```
 
 **Verschillen:**
@@ -577,9 +583,9 @@ begroet("Sam");
 
 ```js
 const persoon = {
-  naam: "Sam",
+  naam: "Vincent",
   zegNaam() {
-    console.log(this.naam); // "Sam"
+    console.log(this.naam); // "Vincent"
   }
 };
 persoon.zegNaam();
@@ -643,8 +649,8 @@ console.log(10 % 3); // 1
 Strings samenvoegen met `+`:
 
 ```js
-let voornaam = "Sam";
-let naam = voornaam + " Vandercruyssen";
+let voornaam = "Vincent";
+let naam = voornaam + " Vander Cruyssen";
 ```
 
 Gebruik sinds **ES6** liever **template literals**:
