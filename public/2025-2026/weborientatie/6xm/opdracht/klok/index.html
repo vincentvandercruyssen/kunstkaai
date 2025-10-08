@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/kunstkaai/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=kunstkaai/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Opdracht: Klok | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/kunstkaai/css/main.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/qtj0alg.css">
+<link rel="icon" type="image/svg" href="/kunstkaai/favicon.svg">
+
+</head>
+<body>
+  <select data-theme-picker name="themepicker" id="theme">
+    <option value="🖥️">🖥️</option>
+    <option value="☀️">☀️</option>
+    <option value="🌙">🌙</option>
+  </select>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Weboriëntatie
+<br>
+    Opdracht: Klok
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#inleiding">1. Inleiding</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#bestanden-en-namen">2. Bestanden en namen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#html-minimale-structuur">3. HTML minimale structuur</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#javascript-stap-voor-stap">4. JavaScript stap voor stap</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#elementen-selecteren">4.1 Elementen selecteren</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#tijdzone-en-formatters">4.2 Tijdzone en formatters</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#tikkende-klok">4.3 Tikkende klok</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#extra-opties">5. Extra opties</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#puntenverdeling">6. Puntenverdeling</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#bronvermelding">7. Bronvermelding</a>
+
+      
+      
+    
+
+    
+    </li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Weboriëntatie
+ <br> Opdracht: Klok</h1>
+
+<h2 id="inleiding">Inleiding</h2>
+<p>Je maakt in deze opdracht de meest ongelooflijke schermvullende digitale klok met JavaScript die de wereld ooit gezien heeft. De klok toont <strong>tijd</strong> en <strong>datum</strong> in <strong>real-time</strong> en gebruikt de tijdzone van je <strong>computer</strong>.</p>
+<p>Je leert:</p>
+<ul>
+<li>datum en tijd ophalen met <code>Date()</code></li>
+<li>formatteren met <code>Intl.DateTimeFormat</code></li>
+<li>de DOM aanpassen met <code>textContent</code></li>
+<li>de klok precies per seconde te laten tikken</li>
+</ul>
+<p>De <strong>CSS/vormgeving</strong> bepaal je zelf. Laat je creativiteit de vrije gang!</p>
+<h2 id="bestanden-en-namen">Bestanden en namen</h2>
+<pre tabindex="0"><code>└── Weboriëntatie/
+  └── VoornaamA_Klok/
+    ├── index.html
+    ├── style.css
+    ├── app.js
+    └── ...
+</code></pre><h2 id="html-minimale-structuur">HTML minimale structuur</h2>
+<p>Plaats in de <code>body</code> een <code>&lt;main&gt;</code>-element met twee <code>&lt;div&gt;</code>-elementen:</p>
+<ul>
+<li>één voor de <strong>tijd</strong></li>
+<li>één voor de <strong>datum</strong></li>
+</ul>
+<p>Gebruik duidelijke <code>id</code>-namen (bijv. <code>tijd</code> en <code>datum</code>), zodat je ze later in JavaScript kunt opzoeken. Zet het <code>&lt;script&gt;</code>-element <strong>onderaan</strong> de <code>body</code>, zodat de elementen eerst bestaan voor het script wordt uitgevoerd.</p>
+<h2 id="javascript-stap-voor-stap">JavaScript stap voor stap</h2>
+<h3 id="elementen-selecteren">Elementen selecteren</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> tijdText <span style="color:#ff7b72;font-weight:bold">=</span> document.querySelector(<span style="color:#a5d6ff">&#39;#tijd&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> datumText <span style="color:#ff7b72;font-weight:bold">=</span> document.querySelector(<span style="color:#a5d6ff">&#39;#datum&#39;</span>);
+</span></span></code></pre></div><p>Je kiest de juiste elementen uit de HTML. Met <code>const</code> geef je aan dat deze verwijzingen <strong>niet meer veranderen</strong>. Zo kun je straks hun tekstinhoud (<code>textContent</code>) aanpassen.</p>
+<h3 id="tijdzone-en-formatters">Tijdzone en formatters</h3>
+<p>Om tijd en datum leesbaar te tonen, gebruik je een <strong>formatter</strong>. Die maak je met de ingebouwde functie <strong><code>Intl.DateTimeFormat()</code></strong>.</p>
+<p>Het object <strong><code>Intl</code></strong> staat voor <em>Internationalization</em> (internationale instellingen). Het zorgt ervoor dat de browser weet <strong>hoe tijd en datum eruit moeten zien</strong> in een bepaalde <strong>taal en regio</strong>.</p>
+<p>Het idee is eerst de formatter te maken, iets wat een complex gegeven als de huidige datum en tijd kan opmaken (<em>to format</em>) tot iets wat voor jouw project leesbaar is. Wanneer je die formatter dan loslaat op de huidige datum en/of tijd kun je die omzetten tot leesbare tekst!</p>
+<p>Je maakt voor de tijd een <code>const</code> <code>tijdFormat</code>. Je geeft die een waarde met Intl.DateTimeFormat(locatie tussen aanhalingstekens, opties tussen accolades).</p>
+<h4 id="locale">Locale</h4>
+<p>De eerste parameter, <code>'nl-BE'</code>, bepaalt de taal en regio.</p>
+<ul>
+<li><code>'nl'</code> = Nederlands</li>
+<li><code>'BE'</code> = België</li>
+</ul>
+<p>Zo weet de browser dat maandnamen in het Nederlands moeten en dat we een 24-uursnotatie gebruiken.</p>
+<h4 id="opties">Opties</h4>
+<p>De tweede parameter is een <strong>object</strong> tussen <code>{ ... }</code> waarin je aangeeft <strong>welke delen</strong> van de tijd of datum je wil tonen, en <strong>hoe</strong>.</p>
+<p>Je maakt bijvoorbeeld:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> tijdFormaat <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Intl.DateTimeFormat(<span style="color:#a5d6ff">&#39;nl-BE&#39;</span>, {
+</span></span><span style="display:flex;"><span>  hour<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#39;2-digit&#39;</span>,
+</span></span><span style="display:flex;"><span>  minute<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#39;2-digit&#39;</span>,
+</span></span><span style="display:flex;"><span>  second<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#39;2-digit&#39;</span>,
+</span></span><span style="display:flex;"><span>  hour12<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#79c0ff">false</span>
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>Wanneer je straks <code>.format(new Date())</code> gebruikt, zet dit een datumobject om naar tekst.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat" target="_blank" rel="noopener noreferrer">MDN - Intl.DateTimeFormat</a></p>
+<h4 id="overzicht-van-mogelijke-instellingen">Overzicht van mogelijke instellingen</h4>
+<table>
+  <thead>
+      <tr>
+          <th>Eigenschap</th>
+          <th>Mogelijke waarden</th>
+          <th>Uitleg</th>
+          <th>Voorbeeld</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>weekday</code></td>
+          <td><code>'long'</code>, <code>'short'</code>, <code>'narrow'</code></td>
+          <td>Dagnaam voluit of afgekort</td>
+          <td><code>woensdag</code>, <code>woe</code></td>
+      </tr>
+      <tr>
+          <td><code>day</code></td>
+          <td><code>'2-digit'</code>, <code>'numeric'</code></td>
+          <td>Dagnummer, met of zonder voorloopnul</td>
+          <td><code>09</code> of <code>9</code></td>
+      </tr>
+      <tr>
+          <td><code>month</code></td>
+          <td><code>'long'</code>, <code>'short'</code>, <code>'narrow'</code>, <code>'2-digit'</code>, <code>'numeric'</code></td>
+          <td>Maand voluit of als cijfer</td>
+          <td><code>oktober</code>, <code>okt</code>, <code>10</code></td>
+      </tr>
+      <tr>
+          <td><code>year</code></td>
+          <td><code>'numeric'</code>, <code>'2-digit'</code></td>
+          <td>Jaartal volledig of 2 cijfers</td>
+          <td><code>2025</code> of <code>25</code></td>
+      </tr>
+      <tr>
+          <td><code>hour</code></td>
+          <td><code>'2-digit'</code>, <code>'numeric'</code></td>
+          <td>Uur met of zonder voorloopnul</td>
+          <td><code>09</code> of <code>9</code></td>
+      </tr>
+      <tr>
+          <td><code>minute</code></td>
+          <td><code>'2-digit'</code>, <code>'numeric'</code></td>
+          <td>Minuut met of zonder voorloopnul</td>
+          <td><code>05</code> of <code>5</code></td>
+      </tr>
+      <tr>
+          <td><code>second</code></td>
+          <td><code>'2-digit'</code>, <code>'numeric'</code></td>
+          <td>Seconde met of zonder voorloopnul</td>
+          <td><code>03</code> of <code>3</code></td>
+      </tr>
+      <tr>
+          <td><code>hour12</code></td>
+          <td><code>true</code> of <code>false</code></td>
+          <td>12- of 24-uursnotatie</td>
+          <td><code>1:00 PM</code> of <code>13:00</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="https://tc39.es/ecma402/#sec-datetimeformat-abstracts" target="_blank" rel="noopener noreferrer">ECMAScript - DateTimeFormat options</a></p>
+<h3 id="tikkende-klok">Tikkende klok</h3>
+<p>Je kunt <strong>nu</strong> de klok al <em>triggeren</em> door de huidige tijd en datum op te halen met <code>new Date()</code>. Laat daarna je formatter erop los om deze om te zetten naar leesbare tekst. Zet die tekst vervolgens in de juiste HTML-elementen met <code>.textContent</code>. Zo verschijnt de tijd en datum direct op je pagina.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> nu <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Date();
+</span></span><span style="display:flex;"><span>tijdText.textContent <span style="color:#ff7b72;font-weight:bold">=</span> tijdFormaat.format(nu);
+</span></span></code></pre></div><p>Uiteraard zal de klok nu nog niet verdergaan, ze toont enkel de moment van het laden van de pagina.</p>
+<p>Om de klok <strong>telkens opnieuw</strong> te laten verversen, maak je een functie die zichzelf <strong>elke seconde</strong> opnieuw oproept aan de hand van <code>setTimeout</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">function</span> tikken() {
+</span></span><span style="display:flex;"><span>  ...
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tikken();
+</span></span></code></pre></div><p>Vergeet de functie zelf niet minimaal éénmalig zelf buiten de scope van de functie (onder de functie) te triggeren.</p>
+<p>Nu kun je zelfs de titel van de tab live veranderen. Die kun je aanpassen met <code>document.title</code>.</p>
+<h2 id="extra-opties">Extra opties</h2>
+<ul>
+<li>Eerste letter van datum kapitaliseren, correcter in Nederlands</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">function</span> capFirst(s) { <span style="color:#ff7b72">return</span> s.charAt(<span style="color:#a5d6ff">0</span>).toUpperCase() <span style="color:#ff7b72;font-weight:bold">+</span> s.slice(<span style="color:#a5d6ff">1</span>); }
+</span></span></code></pre></div><h2 id="puntenverdeling">Puntenverdeling</h2>
+<ul>
+<li>Structuur correct met vaste bestandsnamen</li>
+<li>HTML bevat <code>main</code>, <code>#tijd</code>, <code>#datum</code>, en script onderaan</li>
+<li>JavaScript gebruikt correcte selecties en <code>Intl.DateTimeFormat</code></li>
+<li>Klok tikt precies per seconde zonder drift</li>
+<li>Werking is stabiel en leesbaar</li>
+<li>Code is helder benoemd en logisch opgebouwd</li>
+<li>Vormgeving is eigen invulling zonder de logica te breken</li>
+</ul>
+<h2 id="bronvermelding">Bronvermelding</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl" target="_blank" rel="noopener noreferrer">MDN Intl overzicht</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat" target="_blank" rel="noopener noreferrer">MDN Intl.DateTimeFormat</a></li>
+<li><a href="https://tc39.es/ecma402/#datetimeformat-objects" target="_blank" rel="noopener noreferrer">ECMAScript DateTimeFormat object</a></li>
+</ul>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/kunstkaai/js/main.js"></script>
+
+  </footer>
+</body>
+</html>
