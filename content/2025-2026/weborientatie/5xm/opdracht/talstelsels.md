@@ -77,13 +77,7 @@ Andere inhoud:
 
 ## Puntenverdeling
 
-- Juiste OneDrive-link en deelrechten  
-- Juiste mapstructuur en bestandsnamen  
-- Semantische html toegepast  
-- Elementen correct geopend en gesloten  
-- Navigatie werkt (binnen pagina en/of tussen pagina’s)  
-- Tabel met minstens 16 dec → bin → hex correct  
-- Inhoud drie talstelsels duidelijk en in eigen woorden  
-- Externe css en verzorgde opmaak  
-- Afbeeldingen op juiste plaats en met alt  
-- Consistente koppenstructuur en titels  
+- Bestandsnamen & structuur: OneDrive-link, `index.html`, `style.css`, `images`
+- HTML: Elementen correct geopend en gesloten, semantische HTML, inhoudsverdeling, navigatie binnen en/of tussen pagina's, consistente titels en koppenstructuur, didactische tabellen en/of afbeeldingen, tekst, afbeeldingen
+- CSS: Verzorgde originele opmaak, element-selectors, eigenschappen voor kleur, lettertype en lay-out
+- Inhoud: Inleiding, drie talstelsels in eigen woorden en duidelijk cursusmateriaal
