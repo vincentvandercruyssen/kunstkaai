@@ -84,7 +84,7 @@ In je vakmap zit:
 
 - **Structuur (03)** `VoornaamA_Overmij` in OneDrive met `index.html` en `images/`.
 - **Elementen document (05)** `html`, `head`, `meta`, `title` (aangepast), `body`
-- **Elementen inhoud (07)** `main`, `h1`, `h2`, `img`, `p`, `a`, `ul` of `ol` met `li`
+- **Elementen inhoud (08)** `main`, `section`'s, `h1`, `h2`, `img`, `p`, `a`, `ul` of `ol` met `li`
 - **Kenmerken (04)** `src`, `alt`, `width`, `href`
 
 ## Veelvoorkomende fouten
