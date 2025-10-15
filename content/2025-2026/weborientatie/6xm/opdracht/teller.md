@@ -146,10 +146,9 @@ Je voorziet zelf CSS. Stijl je volledige pagina, de `#waarde` en de `.btn`-knopp
 
 ## Puntenverdeling
 
-- **Structuur & koppeling**: Mappen correct, `defer` juist gekoppeld.
+- **Structuur & koppeling**: Mappen en bestanden correct, `script` juist gekoppeld.
 - **State & logica**: `teller` correct gebruikt en bijgewerkt.
 - **DOM-selecties**: `#waarde` en `.btn` correct geselecteerd.
 - **Click-handler**: `forEach`, `currentTarget`, `classList.contains` correct.
-- **UI-update**: `textContent` wordt correct geüpdatet.
-- **Kleurwissel**: Juiste kleur via `style` of klassen.
+- **UI-update**: `textContent` wordt correct geüpdatet, kleur via `style` of klassen.
 - **Consistentie & netheid**: Duidelijke klassen- en variabelennamen. Indentatie, comments, geen dode code.

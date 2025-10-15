@@ -191,7 +191,7 @@ Controleer of:
 
 ## Puntenverdeling
 
-* **Structuur & bestanden (06)** Correcte mapstructuur, bestandsnamen, minstens vier pagina’s, overzichtelijke opbouw.
+* **Structuur & Bestanden (06)** Correcte mapstructuur, bestandsnamen, minstens vier pagina’s, overzichtelijke opbouw.
 * **HTML & Navigatie (08)** Logische en semantische HTML-opbouw, consistente navigatie op elke pagina, correcte koppelingen.
 * **PHP & Hergebruik (08)** Juiste toepassing van `include()` voor header en footer, dynamisch jaartal (`date("Y")`), variabele e-mail.
 * **CSS & Vormgeving (06)** Eenvoudige, verzorgde en leesbare opmaak, consistente stijl, geen overbodige code of gekopieerde template.
