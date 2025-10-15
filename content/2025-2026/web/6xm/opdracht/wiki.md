@@ -184,7 +184,16 @@ Controleer of:
 - het jaartal en e-mailadres verschijnen
 - je CSS correct wordt toegepast
 
-## Inleveren
+## Indienen
 
 - Zorg dat je map **VoornaamA_Wiki** in je **OneDrive** gesynchroniseerd wordt. 
 - Deel de **leeslink** van je gehele vakmap **Webontwikkeling** via **Google Classroom**.
+
+## Puntenverdeling
+
+* **Structuur & bestanden (06)** Correcte mapstructuur, bestandsnamen, minstens vier pagina’s, overzichtelijke opbouw.
+* **HTML & Navigatie (08)** Logische en semantische HTML-opbouw, consistente navigatie op elke pagina, correcte koppelingen.
+* **PHP & Hergebruik (08)** Juiste toepassing van `include()` voor header en footer, dynamisch jaartal (`date("Y")`), variabele e-mail.
+* **CSS & Vormgeving (06)** Eenvoudige, verzorgde en leesbare opmaak, consistente stijl, geen overbodige code of gekopieerde template.
+* **Inhoud (06)** Vier inhoudelijk relevante pagina’s, duidelijke tekststructuur, correcte taal, logische verdeling van info.
+* **Creativiteit & Originaliteit (06)** Persoonlijk karakter, visuele samenhang, zorg voor beeldkeuze en eigen interpretatie van het thema.
