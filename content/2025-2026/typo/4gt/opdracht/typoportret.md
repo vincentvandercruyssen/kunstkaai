@@ -53,6 +53,7 @@ Zo ontdek je niet alleen elkaars poster, maar ook elkaars verhaal.
 
 ## Puntenverdeling
 
+- Naam en kernwoorden
 - Lettertype-stijlen en typografie
 - Teksthiërarchie en lay-out
-- Verbeelding en inventiviteit 
+- Verbeelding, afwerking en inventiviteit
