@@ -24,7 +24,7 @@ Eén **resetknop** (bv. `<button id="reset">Opnieuw</button>`)
 Je script koppel je met `defer` onderaan de `body`:
 
 ```html
-  <script src="app.js" defer></script>
+<script src="app.js" defer></script>
 ```
 
 *`defer` zorgt dat de HTML eerst is ingeladen vóór je JS draait.*
@@ -147,3 +147,11 @@ Voor knoppen-uitgeschakeld volstaat een specifieke selector `button:disabled { .
 
 - Map: `Weboriëntatie/VoornaamA_Quiz` (met `index.html`, `style.css`, `app.js`).
 - Deel via volledige map **Weboriëntatie** met **OneDrive-link** in **Classroom**.
+
+## Puntenverdeling
+
+- **Structuur & koppeling** Correcte mapstructuur en bestandsnamen, `script` juist gekoppeld.
+- **Inhoud (HTML)** Minimaal drie duidelijke vraagblokken met correcte structuur
+- **Interactie (JavaScript)** Detectie antwoorden, `if/else`, `dataset`, `querySelectorAll`, Feedback verschijnt correct en in kleur, Knoppen blokkeren na antwoord, Score weergegeven en geüpdatet, Resetknop
+- **Vormgeving (CSS)** Overzichtelijke en verzorgde layout, Vormgeving   past bij gekozen thema
+- **Inhoud en creativiteit** Eigen thema/onderwerp gekozen, Vragen persoonlijk of origineel, Antwoorden logisch
