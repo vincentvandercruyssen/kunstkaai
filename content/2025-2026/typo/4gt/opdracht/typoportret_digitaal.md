@@ -58,7 +58,8 @@ In je vakmap zit:
 
 ## Puntenverdeling
 
-- Typografie en letterkeuze 
-- Digitale uitwerking en nauwkeurigheid 
-- Creativiteit en eigenheid 
-- Reflectie op verschil met het originele ontwerp 
+- Correct indienen
+- Inhoud: Naam en kernwoorden
+- Lettertype-stijlen en typografie
+- Teksthiërarchie en lay-out
+- Verbeelding, afwerking en inventiviteit
