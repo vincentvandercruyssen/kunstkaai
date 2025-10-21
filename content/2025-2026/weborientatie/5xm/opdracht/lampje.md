@@ -177,14 +177,16 @@ Ontwerp in `style.css` een **eenvoudige, overzichtelijke opmaak**. Geef de lamp 
 
 ## Puntenverdeling
 
-- **Structuur**: correcte map en koppeling met `defer`
-- **State**: juiste variabele gebruikt
-- **Selecties**: juiste elementen geselecteerd
-- **Events**: listeners correct gekoppeld
-- **Functies**: duidelijke functies
-- **UI-update**: correcte `if ... else`, `style`, `textContent`
-- **Netheid**: heldere naamgeving, nette indeling, geen dode code
-- **Decompositie**: stappenplan correct gevolgd
+- **Structuur en netheid** Correcte mapstructuur, heldere naamgeving, indeling, koppeling
+- **Inhoud (HTML)**
+- **Vormgeving (CSS)**
+- **Interactiviteit (JS)**
+  - **State** Juiste variabele gebruikt
+  - **Selecties** Juiste elementen geselecteerd
+  - **Events** Listeners correct gekoppeld
+  - **Functies** Duidelijke functies
+  - **UI-update** Correcte `if ... else`, `style`, `textContent`
+- **Eigen toevoeging** Creatieve en inventieve toevoeging aan de webapp
 
 ## Bronnen
 
