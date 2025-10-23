@@ -435,21 +435,21 @@ Webontwikkeling
 </ul>
 <h3 id="animation-eigenschap">animation-eigenschap</h3>
 <p>De eigenschap <code>animation</code> combineert verschillende animatie-instellingen in één regel. De gebruikelijke volgorde is:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#7ee787">animation</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#7ee787">benaming</span> <span style="color:#7ee787">duurtijd</span> <span style="color:#7ee787">timing-function</span> <span style="color:#7ee787">iteration-count</span><span style="color:#ff7b72;font-weight:bold">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">animation</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">benaming</span> <span style="color:#ea9a97">duurtijd</span> <span style="color:#ea9a97">timing-function</span> <span style="color:#ea9a97">iteration-count</span><span style="color:#908caa">;</span>
 </span></span></code></pre></div><p>Bijvoorbeeld:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#7ee787">animation</span><span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#7ee787">beweeg</span> <span style="color:#7ee787">5s</span> <span style="color:#7ee787">linear</span> <span style="color:#7ee787">infinite</span><span style="color:#ff7b72;font-weight:bold">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">animation</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">beweeg</span> <span style="color:#ea9a97">5s</span> <span style="color:#ea9a97">linear</span> <span style="color:#ea9a97">infinite</span><span style="color:#908caa">;</span>
 </span></span></code></pre></div><p>Dit betekent: gebruik de animatie <code>beweeg</code>, laat ze 5 seconden duren, met een gelijkmatig tempo (<code>linear</code>), en herhaal ze oneindig (<code>infinite</code>).</p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation" target="_blank" rel="noopener noreferrer">MDN: animation</a></p>
 <h3 id="keyframes-regel">@keyframes-regel</h3>
 <p>Met <code>@keyframes</code> beschrijf je welke stappen een animatie doorloopt. Je geeft een naam aan de animatie en definieert wat er op bepaalde tijdstippen gebeurt (bijvoorbeeld bij <code>0%</code> en <code>100%</code>, hetzelfde als <code>from</code> en <code>to</code>):</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#ff7b72">keyframes</span> <span style="color:#7ee787">beweeg</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">0</span><span style="color:#ff7b72;font-weight:bold">%</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">left</span>: <span style="color:#a5d6ff">-200</span><span style="color:#ff7b72">px</span>;
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>  <span style="color:#7ee787">100</span><span style="color:#ff7b72;font-weight:bold">%</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">left</span>: <span style="color:#a5d6ff">100</span><span style="color:#ff7b72">%</span>;
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">@</span><span style="color:#3e8fb0">keyframes</span> <span style="color:#ea9a97">beweeg</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">0</span><span style="color:#908caa">%</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">left</span><span style="color:#908caa">:</span> <span style="color:#f6c177">-200</span><span style="color:#3e8fb0">px</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">100</span><span style="color:#908caa">%</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">left</span><span style="color:#908caa">:</span> <span style="color:#f6c177">100</span><span style="color:#3e8fb0">%</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
 </span></span></code></pre></div><p>De animatie <code>beweeg</code> start in dit voorbeeld buiten het scherm links (<code>-200px</code>) en eindigt helemaal rechts van het scherm (<code>100vw</code>).</p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes" target="_blank" rel="noopener noreferrer">MDN: @keyframes</a></p>
 <h2 id="figuur-beweegt-apart">Figuur beweegt apart</h2>

@@ -44,18 +44,18 @@ Laten we het alinea-element nog wat verder onderzoeken.
 
 ### De belangrijkste onderdelen van een element
 
-1. **De openingstag:** Deze bestaat uit de naam van het element (in dit geval 'p'), omsloten door openings- en sluitpunthaakjes. Het geeft aan waar het element begint – in dit geval waar de alinea begint.
-2. **De afsluitende tag:** Deze lijkt op de openingstag, maar heeft een schuine streep voor de elementnaam. Het geeft aan waar het element eindigt – in dit geval waar de alinea eindigt. Het weglaten van een afsluitende tag is een veelgemaakte beginnersfout en kan tot vreemde resultaten leiden.
+1. **De openingstag:** Deze bestaat uit de naam van het element (in dit geval 'p'), omsloten door openings- en sluitpunthaakjes. Het geeft aan waar het element begint, in dit geval waar de alinea begint.
+2. **De afsluitende tag:** Deze lijkt op de openingstag, maar heeft een schuine streep voor de elementnaam. Het geeft aan waar het element eindigt, in dit geval waar de alinea eindigt. Het weglaten van een afsluitende tag is een veelgemaakte beginnersfout en kan tot vreemde resultaten leiden.
 3. **De inhoud:** Dit is wat tussen de openingstag en de afsluitende tag staat, in dit geval is dat tekst.
 4. **Het element:** De combinatie van de openingstag, de afsluitende tag en de inhoud vormen samen het element.
 
 Elementen kunnen ook attributen bevatten. Deze zien er als volgt uit:
 
-{{< showcode >}}<a href="https://www.url.com">Klik hier.</a>
+```html
+<a href="https://www.url.com">Klik hier.</a>
 <section id="introductie">...</section>
 <img src="img/afbeelding.jpg" />
-
-{{< /showcode >}}
+```
 
 Attributen geven extra informatie over het element die je niet direct in de inhoud wilt tonen. In het bovenstaande voorbeeld verwijst het attribuut `href` naar een URL, `id` geeft een unieke identificatie voor het element en `src` verwijst naar het pad van een afbeelding.
 
@@ -81,7 +81,8 @@ Bepaalde HTML-elementen maken geen tekstuele inhoud op en worden daarom 'lege el
 
 ### Anatomie van een HTML-document
 
-{{< showcode >}}<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -94,8 +95,7 @@ Bepaalde HTML-elementen maken geen tekstuele inhoud op en worden daarom 'lege el
     <img src="images/afbeelding.jpg" alt="Mijn afbeelding" />
   </body>
 </html>
-
-{{< /showcode >}}
+```
 
 ### De belangrijkste onderdelen van een document
 
@@ -111,7 +111,8 @@ Bepaalde HTML-elementen maken geen tekstuele inhoud op en worden daarom 'lege el
 
 Metadata is informatie over andere gegevens, ofwel data over data. In het geval van een webpagina bevat metadata vaak informatie die niet direct zichtbaar is voor gebruikers.
 
-{{< showcode >}}<head>
+```html
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Cursus" />
@@ -120,16 +121,13 @@ Metadata is informatie over andere gegevens, ofwel data over data. In het geval 
   <title>Mijn webpagina</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
-{{< /showcode >}}
+```
 
 ## Inhoudsstroom
 
 De inhoudsstroom, *flow content*, omvat de meeste elementen die binnen het `<body>`-element kunnen worden geplaatst.
 
-{{< showcode >}}<a>, <audio>, <blockquote>, <br>, <button>, <canvas>, <code>, <div>, <em>, <embed>, <footer>, <form>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <header>, <hr>, <iframe>, <img>, <input>, <label>, <main>, <mark>, <nav>, <ol>, <p>, <picture>, <script>, <section>, <select>, <span>, <strong>, <sub>, <sup>, <svg>, <textarea>, <time>, <ul>, <video>
-
-{{< /showcode >}}
+`<a>, <audio>, <blockquote>, <br>, <button>, <canvas>, <code>, <div>, <em>, <embed>, <footer>, <form>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <header>, <hr>, <iframe>, <img>, <input>, <label>, <main>, <mark>, <nav>, <ol>, <p>, <picture>, <script>, <section>, <select>, <span>, <strong>, <sub>, <sup>, <svg>, <textarea>, <time>, <ul>, <video>`
 
 ### Inhoudsverdeling
 
@@ -145,46 +143,48 @@ Inhoudsverdeling, *sectioning content*, verdeelt of segmenteert alle inhoud binn
 
 Kopinhoud, *heading content*, omschrijft de titel of ondertitel van een onderdeel.
 
-{{< showcode >}}<h1>Koptitel</h1>
+```html
+<h1>Koptitel</h1>
 <h2>Ondertitel</h2>
 <h3>...</h3>
 <h4>...</h4>
 <h5>...</h5>
 <h6>...</h6>
-
-{{< /showcode >}}
+```
 
 ### Alinea-element
 
 Het `<p>`-element vertegenwoordigt een alinea.
 
-{{< showcode >}}<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus quae placeat, ipsam minus necessitatibus atque.</p>
-
-{{< /showcode >}}
+```html
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus quae placeat, ipsam minus necessitatibus atque.</p>
+```
 
 ### Lijst met Lijstitems
 
 Het `<li>`-element wordt gebruikt om een item in een lijst weer te geven.
 
-{{< showcode >}}<ul>
+```html
+<ul>
   <li>...</li>
   <li>...</li>
   <li>...</li>
 </ul>
+```
 
-{{< /showcode >}}
 Dit wordt:
 - ...
 - ...
 - ...
 
-{{< showcode >}}<ol>
+```html
+<ol>
   <li>...</li>
   <li>...</li>
   <li>...</li>
 </ol>
+```
 
-{{< /showcode >}}
 Dit wordt:
 1. ...
 2. ...
@@ -205,10 +205,10 @@ Elementen in HTML hebben vaak *attributes*.
 
 Het `<a>`-element maakt een hyperlink.
 
-{{< showcode >}}<a href="#interne-link">Deze link verwijst naar een id binnen de pagina</a>
+```html
+<a href="#interne-link">Deze link verwijst naar een id binnen de pagina</a>
 <a href="http://www.externe-link.be">Deze link verwijst buiten de website</a>
-
-{{< /showcode >}}
+```
 
 ### Formulieren
 
@@ -230,58 +230,54 @@ Het `<input>`-element creëert interactieve elementen voor gebruikersinvoer.
 
 Het `<textarea>`-element creëert een groter invoerveld voor tekst.
 
-{{< showcode >}}<textarea name="opmerking" cols="8" rows="3" placeholder="Hier kan je tekst schrijven."></textarea>
-
-{{< /showcode >}}
+```html
+<textarea name="opmerking" cols="8" rows="3" placeholder="Hier kan je tekst schrijven."></textarea>
+```
 
 ### Opties selecteren
 
 Het `<select>`-element creëert een dropdown-menu.
 
-{{< showcode >}}<select name="selectie">
+```html
+<select name="selectie">
   <option value="waarde1">Kies een optie</option>
   <option value="waarde2">Waarde 2</option>
   <option value="waarde3">Waarde 3</option>
 </select>
-
-{{< /showcode >}}
+```
 
 ### Knop
 
 Het `<button>`-element creëert een klikbare knop.
 
-{{< showcode >}}<button type="submit">Indienen</button>
+```html
+<button type="submit">Indienen</button>
 <button type="reset">Reset</button>
-
-{{< /showcode >}}
+```
 
 ### Veld en omschrift
 
 Het `<fieldset>`-element groepeert invoervelden, en `<legend>` geeft een titel aan een veldset.
 
-{{< showcode >}}<fieldset>
+```html
+<fieldset>
   <legend>Voorbeeld van een fieldset.</legend>
   <input type="text" name="tekstje" placeholder="Voorbeeld" />
 </fieldset>
-
-{{< /showcode >}}
+```
 
 ### Ingesloten inhoud
 
 Ingesloten elementen importeren inhoud uit een andere bron.
 
-{{< showcode >}}<audio>, <canvas>, <embed>, <iframe>, <img>, <math>, <picture>, <svg>, <video>
-
-{{< /showcode >}}
+`<audio>, <canvas>, <embed>, <iframe>, <img>, <math>, <picture>, <svg>, <video>`
 
 ### Interactieve inhoud
 
 Interactieve elementen zijn specifiek ontworpen voor gebruikersinteractie.
 
-{{< showcode >}}<a>, <button>, <details>, <embed>, <iframe>, <label>, <select>
-
-{{< /showcode >}}
+`<a>, <button>, <details>, <embed>, <iframe>, <label>, <select>`
 
 ## Bronnen
 
-287: - [MDN Web Docs - HTML Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+[MDN Web Docs - HTML Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)

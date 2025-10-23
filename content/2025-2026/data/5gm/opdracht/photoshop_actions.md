@@ -6,26 +6,30 @@ draft = false
 
 In deze opdracht leer je hoe je **Photoshop Actions** gebruikt om een reeks foto's automatisch te bewerken en op te slaan met een nieuwe bestandsnaam. Je maakt een action (handeling) aan, past minimaal twee aanpassingslagen toe en voert een batchverwerking uit om dezelfde handelingen automatisch op meerdere foto's toe te passen. 
 
-Je organiseert de bestanden correct in een mappenstructuur. Aan het einde van deze opdracht heb je een action (handeling) gemaakt en toegepast op een reeks foto's. Je bewaart je resultaten en deelt ze via **OneDrive** en **Google Classroom**.
+Je organiseert de bestanden correct in een mappenstructuur. Aan het einde van deze opdracht heb je een action (handeling) gemaakt en toegepast op een reeks foto's. 
+
+Je maakt een contactblad waarop je alle originele en bewerkte foto's plaatst.
+
+Je bewaart je resultaten en deelt ze via **OneDrive** en **Google Classroom**.
 
 ## Voorbereiding
 
-### Download en mappenstructuur
-
-Download het juiste pakket uit **Google Classroom**, de eerste letter van je voornaam verwijst naar welk pakket je moet downloaden.
-
-- A-I.zip
-- J-L.zip
-- M-Z.zip
+### Mappenstructuur en download
 
 Maak een nieuwe map in **Datamanagement** genaamd **VoornaamA_Photoshop Actions**.
-   
+
 Maak hierin twee submappen:
 
 - **Originelen** (voor de originele foto's)
 - **Batch** (voor de bewerkte foto's)
 
-Pak het zip-bestand uit en plaats de foto's in de map **Originelen**.
+Afbeeldingen downloaden: 
+
+- Ga naar **[unsplash.com](https://unsplash.com/)**. 
+- Zoek **16 afbeeldingen** met als zoekterm **een zoekterm naar keuze**.
+- Download de afbeeldingen in de **hoogste kwaliteit**, de download-knop op de thumbnail zorgt hier automatisch voor.
+- Afbeeldingen aangeduid met "+" zijn niet gratis beschikbaar.
+- Plaats de nieuwe foto's in de map **Originelen**, en hernoem ze met je zoekterm en een volgnummer.
 
 ## Photoshop Action aanmaken
 
@@ -100,13 +104,51 @@ Heb je nog problemen, bekijk dan deze duidelijke video over Photoshop Actions (H
 
 {{< youtube rhaDBbj_qnE >}}
 
+## PDF met Bridge Output
+
+### Output-workspace
+
+- Ga naar de tab **Output (Uitvoer)**.
+- Selecteer in Bridge alle 16 afbeeldingen in de map **Originelen** (Ctrl/Cmd+A) en sleep ze naar het contactblad.
+- Herhaal voor de map **Batch**: selecteer alle afbeeldingen en sleep ze naar hetzelfde contactblad, zodat zowel originelen als bewerkte versies worden toegevoegd.
+
+{{< img src="/img/data/opdracht-03-bridge_workflow-output_2.png" percent="75" >}}
+
+### Instellingen voor de contactsheet
+
+#### Raster en marges
+
+- Open het menu **Grid and Margins (Raster en marges)**.
+- Stel het raster in op **4 x 4** (4 rijen, 4 kolommen).
+- Zet **Auto Spacing** aan.
+- Pas de marges aan: **Boven:** 0,5 cm en **onder, links, rechts:** 1 cm.
+
+{{< img src="/img/data/opdracht-03-bridge_workflow-output_4.png" >}}
+
+### Koptekst
+
+- Open het menu **Header and Footer (Koptekst en voettekst)**.
+- Vink Include Header (Inclusief koptekst) aan.
+- Vul in bij **Text (Tekst)**: **Voornaam Photoshop Actions**.
+- **Uitlijning:** Centreren.
+- **Header size (Grootte koptekst):** 1 cm.
+
+{{< img src="/img/data/opdracht-03-bridge_workflow-output_5.png" >}}
+
+### PDF exporteren
+
+- Klik op **Export PDF** en sla het bestand op als: **"VoornaamA_Photoshop Actions.pdf"** in de map **"VoornaamA_Photoshop Actions"**.
+
+{{< img src="/img/data/opdracht-03-bridge_workflow-export_1.png" percent="35" >}}
+
 ## Indienen
 
 Open je OneDrive-map **Datamanagement**.
 
 Controleer of de volgende bestanden aanwezig zijn in de map **VoornaamA_Photoshop Actions**:
 
-- Het Action-bestand..
+- Het Action-bestand.
+- Het PDF-bestand, contactblad.
 - De oorspronkelijke foto's in de map **Originelen**.
 - De bewerkte foto's in de map **Batch**.
 
@@ -114,10 +156,11 @@ Deel de link naar je gehele **Datamanagement OneDrive-map** via **Google Classro
 
 ## Puntenverdeling
 
-- **Naamgeving en mappenstructuur (05)** `VoornaamA_Photoshop Actions` met `Originelen`-map (35 originele JPG-afbeeldingen), `Batch`-map (35 bewerkt en correct hernoemd), .ATN-bestand (action).
-- **Photoshop Action (04)** bevat minimaal twee aanpassingslagen en correcte opslaginstellingen.
-- **Batchverwerking (04)** alle foto's automatisch bewerkt en correct opgeslagen met `*_bewerkt`-suffix.
-- **OneDrive-koppeling (01)** naar volledige map `Datamanagement`.
+- **Naamgeving en mappenstructuur** `VoornaamA_Photoshop Actions` met `Originelen`-map (originele JPG-afbeeldingen), `Batch`-map (bewerkt en correct hernoemd), `.ATN`-bestand (action), `.PDF`-bestand (contactblad).
+- **Photoshop Action** Bevat minimaal twee aanpassingslagen en correcte opslaginstellingen.
+- **Batchverwerking** Alle foto's automatisch bewerkt en correct opgeslagen met `*_bewerkt`-suffix.
+- **Contactblad** Twee pagina's, met de correcte instellingen.
+- **OneDrive-koppeling (01)** naar volledige vakmap `Datamanagement`.
 
 ## Bronnen
 

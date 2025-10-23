@@ -17,7 +17,7 @@ In deze opdracht leer je efficiënt werken met **Adobe Bridge Workflow** en **Br
 - Maak een nieuwe map met de naam: **`VoornaamA_Bridge Workflow`**.  
 
 ### Afbeeldingen verzamelen
-- Ga naar **[unsplash.com](https://unsplash.com/)**.  
+- Ga naar **[unsplash.com](https://unsplash.com/)**. 
 - Zoek **16 afbeeldingen** met als zoekterm **je voornaam of een relevant sleutelwoord**.
 - Download de afbeeldingen in de **hoogste kwaliteit**, de download-knop op de thumbnail zorgt hier automatisch voor.
 - Sla de afbeeldingen op in de map **"VoornaamA_Bridge Workflow"**.

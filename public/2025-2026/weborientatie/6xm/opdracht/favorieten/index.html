@@ -376,7 +376,7 @@ Weboriëntatie
         
 
         
-        <li><a href="#mini-uitbreidingen-optioneel">4. Mini-uitbreidingen (optioneel)</a>
+        <li><a href="#mini-uitbreidingen">4. Mini-uitbreidingen</a>
 
       
       
@@ -524,10 +524,13 @@ Weboriëntatie
 <p><a href="https://www.w3schools.com/js/js_array_methods.asp" target="_blank" rel="noopener noreferrer">W3Schools: JavaScript Arrays: Add and Remove Items</a></p>
 <h3 id="lijst-vullen-in-de-dom">Lijst vullen in de DOM</h3>
 <ul>
-<li>Selecteer het element met <code>id=&quot;lijst&quot;</code></li>
-<li>Loop met <code>forEach</code> door de array en voeg per item een <code>&lt;li&gt;</code> toe</li>
-<li>Zet de tekst in elk <code>&lt;li&gt;</code> met <code>textContent</code></li>
+<li>Selecteer het <code>&lt;ul&gt;</code>-element met <code>id=&quot;lijst&quot;</code></li>
+<li>Maak voor de <em>unordered list</em> een variabele aan met <code>document.querySelector(&quot;#lijst&quot;)</code></li>
+<li>Loop met <code>forEach</code> door de array, waarbij je een eigen <code>function</code> aanroept</li>
+<li>Die functie voegt per item (of waarde) een <code>&lt;li&gt;</code> toe met <code>createElement</code></li>
+<li>Zet de tekst van elke arraywaarde in de nieuwe <code>&lt;li&gt;</code>-elementen met <code>textContent</code></li>
 </ul>
+<p>Bekijk ook eens of je de lijst kunt aanmaken met een <strong>for-loop</strong>. Een <code>for</code>-loop doet in essentie hetzelfde als een <code>forEach</code>, maar je beheert zelf de teller (<code>i</code>) en de stopvoorwaarde. <code>forEach</code> neemt dat automatisch over en doorloopt elk element van de array.</p>
 <p>MDN info: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" target="_blank" rel="noopener noreferrer">Document.querySelector()</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement" target="_blank" rel="noopener noreferrer">Document.createElement()</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild" target="_blank" rel="noopener noreferrer">Node.appendChild()</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent" target="_blank" rel="noopener noreferrer">Element.textContent</a> | <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank" rel="noopener noreferrer">Array.forEach()</a></p>
 <h3 id="aantal-tonen">Aantal tonen</h3>
 <ul>
@@ -550,7 +553,9 @@ Weboriëntatie
 <li>Let erop dat de lijst zichtbaar blijft als je pagina herlaadt</li>
 </ul>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/log" target="_blank" rel="noopener noreferrer">Console.log()</a></p>
-<h2 id="mini-uitbreidingen-optioneel">Mini-uitbreidingen (optioneel)</h2>
+<h2 id="mini-uitbreidingen">Mini-uitbreidingen</h2>
+<p>Nu ga je op zoek deze eenvoudige webapplicatie verder uit te breiden, wees creatief, gebruik je verbeelding.</p>
+<p>Hieronder enkele mogelijke voorbeelden.</p>
 <ul>
 <li>Voeg één nieuw item toe aan de array en controleer of het <strong>aantal</strong> klopt</li>
 <li>Zet de <strong>willekeurige keuze</strong> ook als <strong>extra <code>&lt;li&gt;</code></strong> bovenaan de lijst</li>
@@ -563,6 +568,7 @@ Weboriëntatie
 <li>Verander de tekstkleur willekeurig</li>
 <li>Laat een item verwijderen met <code>filter()</code></li>
 <li>Bewaar de lijst met <code>localStorage</code></li>
+<li>&hellip;</li>
 </ul>
 <h2 id="indienen">Indienen</h2>
 <ul>
@@ -571,11 +577,11 @@ Weboriëntatie
 </ul>
 <h2 id="puntenverdeling">Puntenverdeling</h2>
 <ul>
-<li><strong>Array</strong>: Lijst correct aangemaakt en logisch gevuld</li>
-<li><strong>Weergave</strong>: Lijst netjes opgebouwd in de DOM</li>
-<li><strong>Interactie</strong>: Beide knoppen werken en tonen de juiste info</li>
-<li><strong>Codekwaliteit</strong>: Duidelijke namen, consistente inspringing, geen dode code</li>
-<li><strong>Presentatie</strong>: Zichtbare en leesbare output op de pagina</li>
+<li><strong>Array en weergave</strong> Lijst correct aangemaakt en logisch gevuld, netjes opgebouwd in de DOM</li>
+<li><strong>Interactie</strong> Knoppen werken en tonen de juiste informatie</li>
+<li><strong>Codekwaliteit</strong> Duidelijke namen, consequente inspringing, geen overbodige code</li>
+<li><strong>Vormgeving (CSS)</strong> Verzorgde, originele en overzichtelijke lay-out</li>
+<li><strong>Toevoeging</strong> Creatieve uitbreiding van het oorspronkelijke idee, minimale vereisten blijven behouden</li>
 </ul>
 
 

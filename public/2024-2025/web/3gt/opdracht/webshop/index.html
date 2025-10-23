@@ -383,11 +383,11 @@ Webontwikkeling
 </ul>
 <h3 id="html-structuur">HTML-structuur</h3>
 <p>De opbouw van de HTML in alle pagina’s:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#7ee787">header</span>&gt;...&lt;/<span style="color:#7ee787">header</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#7ee787">main</span>&gt;
-</span></span><span style="display:flex;"><span>  &lt;<span style="color:#7ee787">section</span>&gt;...&lt;/<span style="color:#7ee787">section</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#7ee787">main</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#7ee787">footer</span>&gt;Gemaakt door [jouw naam]&lt;/<span style="color:#7ee787">footer</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">header</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">header</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">main</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">section</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">section</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">main</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">footer</span><span style="color:#908caa">&gt;</span>Gemaakt door [jouw naam]<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">footer</span><span style="color:#908caa">&gt;</span>
 </span></span></code></pre></div><p>Zorg ervoor dat de structuur en vormgeving <strong>overeenkomen in beide pagina’s</strong>.</p>
 <h2 id="header-met-flexbox-of-grid">Header met flexbox of grid</h2>
 <p>De header bevat een <strong>logo</strong> en een <strong>navigatiebalk</strong>.</p>
@@ -401,62 +401,62 @@ Webontwikkeling
 <li>een <code>&lt;nav&gt;</code> met enkele <code>&lt;a&gt;</code>-linkjes naar categorieën</li>
 </ul>
 <p>Voorbeeld:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#7ee787">header</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#7ee787">div</span> class<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;flex-container&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>        &lt;<span style="color:#7ee787">input</span> placeholder<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;🔍&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>        &lt;<span style="color:#7ee787">img</span> src<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;images/logo.svg&#34;</span> alt<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;Logo webshop&#34;</span> /&gt;
-</span></span><span style="display:flex;"><span>        &lt;<span style="color:#7ee787">div</span>&gt;
-</span></span><span style="display:flex;"><span>            &lt;<span style="color:#7ee787">a</span> href<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;#&#34;</span>&gt;🛒&lt;/<span style="color:#7ee787">a</span>&gt;
-</span></span><span style="display:flex;"><span>            &lt;<span style="color:#7ee787">a</span> href<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;#&#34;</span>&gt;👤&lt;/<span style="color:#7ee787">a</span>&gt;
-</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#7ee787">div</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#7ee787">div</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#7ee787">nav</span> class<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;flex-container&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>        &lt;<span style="color:#7ee787">a</span> href<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;#&#34;</span>&gt;Home&lt;/<span style="color:#7ee787">a</span>&gt;
-</span></span><span style="display:flex;"><span>        &lt;<span style="color:#7ee787">a</span> href<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;#&#34;</span>&gt;Shop&lt;/<span style="color:#7ee787">a</span>&gt;
-</span></span><span style="display:flex;"><span>        &lt;<span style="color:#7ee787">a</span> href<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;#&#34;</span>&gt;Contact&lt;/<span style="color:#7ee787">a</span>&gt;
-</span></span><span style="display:flex;"><span>        &lt;<span style="color:#7ee787">a</span> href<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;#&#34;</span>&gt;Over ons&lt;/<span style="color:#7ee787">a</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#7ee787">nav</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#7ee787">header</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">header</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">div</span> <span style="color:#ea9a97">class</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;flex-container&#34;</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">input</span> <span style="color:#ea9a97">placeholder</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;🔍&#34;</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">img</span> <span style="color:#ea9a97">src</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;images/logo.svg&#34;</span> <span style="color:#ea9a97">alt</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;Logo webshop&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">div</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">a</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;#&#34;</span><span style="color:#908caa">&gt;</span>🛒<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">a</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">a</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;#&#34;</span><span style="color:#908caa">&gt;</span>👤<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">a</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">div</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">div</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">nav</span> <span style="color:#ea9a97">class</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;flex-container&#34;</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">a</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;#&#34;</span><span style="color:#908caa">&gt;</span>Home<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">a</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">a</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;#&#34;</span><span style="color:#908caa">&gt;</span>Shop<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">a</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">a</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;#&#34;</span><span style="color:#908caa">&gt;</span>Contact<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">a</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">a</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;#&#34;</span><span style="color:#908caa">&gt;</span>Over ons<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">a</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">nav</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">header</span><span style="color:#908caa">&gt;</span>
 </span></span></code></pre></div><blockquote>
 <p>Gebruik SVG voor je logo. Je kan zelf iets ontwerpen of iets zoeken op <a href="https://www.svgrepo.com" target="_blank" rel="noopener noreferrer">https://www.svgrepo.com</a>.</p></blockquote>
 <h3 id="css">CSS</h3>
 <p>Maak nu <code>style.css</code> aan en koppel het aan je HTML-bestand in de <code>&lt;head&gt;</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#7ee787">link</span> rel<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;stylesheet&#34;</span> href<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;style.css&#34;</span> /&gt;
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">link</span> <span style="color:#ea9a97">rel</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;stylesheet&#34;</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;style.css&#34;</span> <span style="color:#908caa">/&gt;</span>
 </span></span></code></pre></div><p>Schrijf dan CSS om je header vorm te geven. Gebruik <code>display: flex</code> op <code>.flex-container</code>.</p>
 <p>Voorbeeld:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#7ee787">body</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">background-color</span>: <span style="color:#a5d6ff">#e6e6e6</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">color</span>: <span style="color:#a5d6ff">#223333</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">font-family</span>: Arial, <span style="color:#79c0ff">sans-serif</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">font-size</span>: <span style="color:#a5d6ff">16</span><span style="color:#ff7b72">px</span>;
-</span></span><span style="display:flex;"><span>}
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">body</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">background-color</span><span style="color:#908caa">:</span> <span style="color:#f6c177">#e6e6e6</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">color</span><span style="color:#908caa">:</span> <span style="color:#f6c177">#223333</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">font-family</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">Arial</span><span style="color:#908caa">,</span> <span style="color:#3e8fb0">sans-serif</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">font-size</span><span style="color:#908caa">:</span> <span style="color:#f6c177">16</span><span style="color:#3e8fb0">px</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>.<span style="color:#f0883e;font-weight:bold">flex-container</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">display</span>: <span style="color:#79c0ff">flex</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">justify-content</span>: <span style="color:#79c0ff">space-between</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">text-align</span>: <span style="color:#79c0ff">center</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">margin-bottom</span>: <span style="color:#a5d6ff">20</span><span style="color:#ff7b72">px</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">padding</span>: <span style="color:#a5d6ff">20</span><span style="color:#ff7b72">px</span>;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#908caa">.</span><span style="color:#9ccfd8">flex-container</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">display</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">flex</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">justify-content</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">space-between</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">text-align</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">center</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">margin-bottom</span><span style="color:#908caa">:</span> <span style="color:#f6c177">20</span><span style="color:#3e8fb0">px</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">padding</span><span style="color:#908caa">:</span> <span style="color:#f6c177">20</span><span style="color:#3e8fb0">px</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>.<span style="color:#f0883e;font-weight:bold">flex-container</span> <span style="color:#ff7b72;font-weight:bold">*</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">flex</span>: <span style="color:#a5d6ff">1</span>;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#908caa">.</span><span style="color:#9ccfd8">flex-container</span> <span style="color:#908caa">*</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">flex</span><span style="color:#908caa">:</span> <span style="color:#f6c177">1</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#7ee787">nav</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">background-color</span>: <span style="color:#a5d6ff">#f2f2f2</span>;
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#ea9a97">nav</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">background-color</span><span style="color:#908caa">:</span> <span style="color:#f6c177">#f2f2f2</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
 </span></span></code></pre></div><h2 id="main-minishop">Main: minishop</h2>
 <p>Onder je header komt het hoofdgedeelte van je website. Je maakt daarin een <code>&lt;main&gt;</code> met één <code>&lt;section&gt;</code> waarin je <strong>3 tot 4 items</strong> toont. Elk item bestaat uit een afbeelding, een naam en een knop/link naar de detailpagina (<code>item1.html</code>).</p>
 <p>Voorbeeldstructuur:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#7ee787">section</span> id<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;minishop&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;<span style="color:#7ee787">article</span>&gt;
-</span></span><span style="display:flex;"><span>        &lt;<span style="color:#7ee787">img</span> src<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;images/item1.jpg&#34;</span> alt<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;Item 1&#34;</span> /&gt;
-</span></span><span style="display:flex;"><span>        &lt;<span style="color:#7ee787">h2</span>&gt;Naam van item&lt;/<span style="color:#7ee787">h2</span>&gt;
-</span></span><span style="display:flex;"><span>        &lt;<span style="color:#7ee787">a</span> href<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;item1.html&#34;</span>&gt;Meer info&lt;/<span style="color:#7ee787">a</span>&gt;
-</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#7ee787">article</span>&gt;
-</span></span><span style="display:flex;"><span>    <span style="color:#8b949e;font-style:italic">&lt;!-- meer artikelen --&gt;</span>
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#7ee787">section</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">section</span> <span style="color:#ea9a97">id</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;minishop&#34;</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">article</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">img</span> <span style="color:#ea9a97">src</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;images/item1.jpg&#34;</span> <span style="color:#ea9a97">alt</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;Item 1&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">h2</span><span style="color:#908caa">&gt;</span>Naam van item<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">h2</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">a</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;item1.html&#34;</span><span style="color:#908caa">&gt;</span>Meer info<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">a</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">article</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6e6a86">&lt;!-- meer artikelen --&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">section</span><span style="color:#908caa">&gt;</span>
 </span></span></code></pre></div><p>Geef je items opmaak met CSS: randjes, witruimte, layout met grid of flex.</p>
 <h2 id="detailpagina">Detailpagina</h2>
 <p>Maak nu een tweede HTML-bestand: <code>item1.html</code>. Hier geef je meer uitleg over één product.</p>

@@ -8,9 +8,9 @@ draft = false
 
 Alle HTML-elementen hebben standaard stijlkenmerken. Wanneer je een eigen website maakt, kun je deze stijlkenmerken aanpassen met CSS. Je kunt dan informatie toevoegen aan HTML-elementen, zoals kleur, lettertype, afstand en achtergrond. Dit kan binnen het document zelf (als attribute van ieders element of met een `<style>`-element) of, nog veel beter, in een extern CSS-bestand aan de hand van het `<link>`-element.
 
-{{< showcode >}}<link rel="stylesheet" href="style.css">
-
-{{< /showcode >}}
+```html
+<link rel="stylesheet" href="style.css">
+```
 
 CSS staat voor Cascading Style Sheets. Het is een taal die wordt gebruikt om het uiterlijk, of lay-out, van een webpagina te beschrijven. CSS wordt gebruikt om alle HTML-elementen op een pagina op te maken, inclusief de koppen, alinea's en andere stukken tekst. Te beginnen bij het geheel of het hoogst liggend element, om dan steeds gedetailleerder vorm te geven.
 
@@ -34,21 +34,21 @@ In tegenstelling tot de reguliere flow lay-out zijn flex en grid ouderlijke elem
 
 Een CSS-regelset bestaat uit een selector en een declaratieblok. De selector verwijst naar het HTML-element dat je wil opmaken. Het declaratieblok bevat één of meer veranderingen of eigenschappen, gescheiden door puntkomma's. Elke verandering bevat een CSS eigenschapsnaam en een waarde, gescheiden door een dubbele punt.
 
-{{< showcode >}}p {
+```css
+p {
   color: red;
   text-align: center;
 }
-
-{{< /showcode >}}
+```
 
 Veranderingen aan CSS eigenschappen eindigen altijd met een puntkomma en declaratieblokken zijn omgeven door accolades. De volgorde van de declaratie is belangrijk. Wanneer meerdere declaraties dezelfde eigenschap hebben, wordt alleen de laatste gebruikt.
 
-{{< showcode >}}p {
+```css
+p {
   color: red;
   color: blue; /* → deze wordt gebruikt */
 }
-
-{{< /showcode >}}
+```
 
 ## CSS Selectors
 
@@ -65,45 +65,45 @@ Met CSS maak je gebruik van verschillende selectors. Hiermee selecteer je de ele
 
 De eenvoudigste selector is een element-selector. Met deze selector selecteer je alle elementen van een bepaalde soort. Je gebruikt hiervoor de naam van het element. Denk bijvoorbeeld aan de body of `<h1>` (kop 1).
 
-{{< showcode >}}body {
+```css
+body {
   background-color: red;
 }
 
 h1 {
   property: value;
 }
-
-{{< /showcode >}}
+```
 
 ### Id-selector
 
 Een id-selector is een aanduiding waarmee je kunt opgeven welke stijlen worden aangepast voor een element met een bepaalde id-waarde. Een id-selector wordt geschreven als een hashtag (#) gevolgd door de id van het element. In het onderstaande voorbeeld wordt de id "#uniek" gebruikt om de stijlen van het element met id="uniek" toe te passen.
 
-{{< showcode >}}#uniek {
+```css
+#uniek {
   background-color: yellow;
 }
-
-{{< /showcode >}}
+```
 
 ### Klasse-selector
 
 Een klasse-selector is een aanduiding waarmee je kunt opgeven welke stijlen worden toegepast op een HTML-element met een class-attribute. Een klasse-selector is een aanduiding die begint met een punt (.). In de onderstaande CSS-regel wordt de klasse-selector ".groepje" gebruikt. Dit betekent dat de eigenschappen worden toegepast op alle HTML-elementen met de klasse "groepje".
 
-{{< showcode >}}.groepje {
+```css
+.groepje {
   background-color: red;
 }
-
-{{< /showcode >}}
+```
 
 ### Pseudo-selector
 
 Met een pseudo-selector ga je een bepaalde stijl toepassen op een element dat in een bepaalde relatie tot een ander element staat. Het beste voorbeeld van een pseudo-selector is `:hover`, waarmee je kunt opgeven dat je een bepaalde stijl wilt toepassen op een element wanneer de muisaanwijzer eroverheen gaat. Pseudo-selectors hebben dus vaak te maken met de, al dan niet tijdelijke, toestand van een element.
 
-{{< showcode >}}a:hover {
+```css
+a:hover {
   color: red;
 }
-
-{{< /showcode >}}
+```
 
 ### Combinaties
 
@@ -111,21 +111,21 @@ Met een pseudo-selector ga je een bepaalde stijl toepassen op een element dat in
 
 Je kan meer verfijnde selecties maken door een spatie te gebruiken om afstammelingen van een element te selecteren. Hieronder selecteer ik bijvoorbeeld alleen de list-items binnen nav-elementen.
 
-{{< showcode >}}nav li {
+```css
+nav li {
   display: inline-block;
 }
-
-{{< /showcode >}}
+```
 
 ### Selector lijst
 
 Een selector lijst is een aantal selectors gescheiden door komma's, die samen een unieke set van elementen selecteren. Zo kan je heel gemakkelijk meerdere elementen selecteren en eigenschappen toekennen.
 
-{{< showcode >}}header, main, footer {
+```css
+header, main, footer {
   padding: 2vh 4vw;
 }
-
-{{< /showcode >}}
+```
 
 ## CSS eigenschappen
 
@@ -158,23 +158,23 @@ Een shorthand is een manier om een aantal CSS-regels in één regel te schrijven
 
 De `background` eigenschap is een kortere manier, *shorthand*, om `background-color`, `background-image`, `background-position`, `background-repeat`, en `background-size` in één regel te definiëren. Gemakkelijker is het vaak om deze eigenschappen afzonderlijk te definiëren.
 
-{{< showcode >}}body {
+```css
+body {
   background: #ff0000 url("img/lizard.png") center no-repeat 200px;
 }
-
-{{< /showcode >}}
+```
 
 Dat is hetzelfde als:
 
-{{< showcode >}}body {
+```css
+body {
   background-color: #ff0000;
   background-image: url("img/lizard.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 200px;
 }
-
-{{< /showcode >}}
+```
 
 ### background-image
 
@@ -194,48 +194,50 @@ De eigenschap `background-image` stelt één of meer achtergrondafbeeldingen in 
 
 De `color` eigenschap bepaalt de kleur van de tekst in een element. De kleur kan worden opgegeven als een hexadecimaal getal, RGB- of HSL-waarde, of een naam van [een standaard kleur](https://www.w3schools.com/colors/colors_names.asp).
 
-{{< showcode >}}p {
+```css
+p {
   color: red;
   color: #ff0000;
   color: rgb(255,0,0);
   color: hsl(0,100%,50%);
 }
-
-{{< /showcode >}}
+```
 
 #### Standaardkleuren
 
 Alle moderne browsers ondersteunen 140 standaard kleurnamen. [Je kan de lijst onder andere terugvinden op w3schools...](https://www.w3schools.com/colors/colors_names.asp)
 
-{{< showcode >}}color: firebrick;
-
-{{< /showcode >}}
+```css
+color: firebrick;
+```
 
 #### Hexadecimale kleuren
 
 Een hexadecimale kleur wordt opgegeven met: `#RRGGBB`. RR (rood), GG (groen) en BB (blauw) zijn hexadecimale gehele getallen tussen 00 en FF die de intensiteit van de kleur aangeven.
 
-{{< showcode >}}color: #B22222;
-
-{{< /showcode >}}
+```css
+color: #B22222;
+```
 
 #### rgb() kleuren
 
 De notatie `rgb()` drukt een kleur uit met drie parameters: rood, groen en blauw (r, g, b). De waarde van elke parameter moet liggen tussen 0 en 255. Een optionele alfacomponent vertegenwoordigt de transparantie van de kleur.
 
-{{< showcode >}}color: rgb(178, 34, 34);
-
-{{< /showcode >}}
+```css
+color: rgb(178, 34, 34);
+```
 
 #### hsl() kleuren
 
 De notatie `hsl()` drukt een kleur uit volgens de componenten voor tint (*hue*), verzadiging (*saturation*), en lichtheid (*lightness/brightness*).
 
-{{< showcode >}}color: hsl(0, 68%, 42%);
+```css
+color: hsl(0, 68%, 42%);
+```
 
-{{< /showcode >}}
+{{< hsl_colorwheel >}}
 
-{{< img src="/img/web/cursus-css-color_wheel-1.png" width="360" >}}
+{{< img src="/img/web/cursus-css-color_wheel-1.png" percent="52" >}}
 
 #### Additieve kleuren
 

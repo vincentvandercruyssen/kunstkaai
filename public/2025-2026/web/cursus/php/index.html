@@ -449,9 +449,9 @@ de <strong>server voert de instructies uit</strong>, bouwt de webpagina op, en s
 </ul>
 <p>Omdat PHP enkel op de <strong>server</strong> draait, is het ook <strong>veiliger</strong>: gebruikers zien enkel de <strong>HTML-uitvoer</strong>, nooit de broncode.</p>
 <h3 id="voorbeeld">Voorbeeld</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72;font-weight:bold">&lt;?</span>php
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">echo</span> <span style="color:#a5d6ff">&#34;Hello World!&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#8b949e;font-weight:bold;font-style:italic">?&gt;</span><span style="color:#f85149">
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#908caa">&lt;?</span><span style="color:#ea9a97">php</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">echo</span> <span style="color:#f6c177">&#34;Hello World!&#34;</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#6e6a86">?&gt;</span><span style="color:#eb6f92">
 </span></span></span></code></pre></div><p><strong>Browseroutput:</strong></p>
 <p><code>Hello World!</code></p>
 <p>Let op: de PHP-code zelf is <strong>onzichtbaar</strong> in de broncode van de pagina.</p>
@@ -479,12 +479,12 @@ Ze vormt de <strong>ruggengraat</strong> van veel moderne webapplicaties, en is 
 <p>Door PHP via zo’n package manager te installeren, wordt het bijvoorbeeld automatisch toegevoegd aan het <strong>PATH</strong> en meteen overal herkend (ook in <strong>VS Code</strong>).</p>
 <h3 id="homebrew-macos">Homebrew (macOS)</h3>
 <p>Ga naar <a href="https://brew.sh/" target="_blank" rel="noopener noreferrer">brew.sh</a>, de officiële website van <strong>Homebrew</strong>. Daar vind je een kort commando dat je moet kopiëren en plakken in je <strong>Terminal</strong>. Dat kan in de standaard <strong>Terminal-app</strong> van macOS, of in de ingebouwde Terminal van <strong>VS Code</strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/bin/bash -c <span style="color:#a5d6ff">&#34;</span><span style="color:#ff7b72">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style="color:#ff7b72">)</span><span style="color:#a5d6ff">&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/bin/bash -c <span style="color:#f6c177">&#34;</span><span style="color:#3e8fb0">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style="color:#3e8fb0">)</span><span style="color:#f6c177">&#34;</span>
 </span></span></code></pre></div><p>De installatie kan enkele minuten duren. Volg de instructies in beeld en beantwoord eventuele vragen met <strong>Enter</strong> of <strong>y</strong> (voor “yes”).</p>
 <p>Na de installatie kun je meteen <strong>PHP</strong> installeren. Homebrew installeert automatisch de <strong>laatste stabiele versie</strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install php
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install php
 </span></span></code></pre></div><p>Start daarna <strong>VS Code</strong> eventueel even opnieuw op. Controleer vervolgens of PHP correct is geïnstalleerd met:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php -v
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php -v
 </span></span></code></pre></div><p>Als je een versie te zien krijgt (bijvoorbeeld <code>PHP 8.4.13</code>), is alles goed verlopen en kun je aan de slag.</p>
 <h3 id="winget-windows">Winget (Windows)</h3>
 <p>Gebruik als pakketbeheerder <strong>Winget</strong>, de standaard open source <strong>package manager</strong> van Windows. Chocolatey is eveneens een bekende en betrouwbare keuze, maar Winget volstaat ruim voor PHP.</p>
@@ -492,15 +492,15 @@ Ze vormt de <strong>ruggengraat</strong> van veel moderne webapplicaties, en is 
 <li>Je kunt deze installatie uitvoeren in de <strong>terminal van VS Code</strong> (met PowerShell of Git Bash).</li>
 <li>Controleer eerst of Winget beschikbaar is:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>winget -v
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>winget -v
 </span></span></code></pre></div><p>Verschijnt er een versienummer? Dan is Winget actief.</p>
 <p>Zoek daarna naar beschikbare PHP-versies:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>winget search php
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>winget search php
 </span></span></code></pre></div><p>Zoek de <strong>laatste stabiele versie</strong> in de lijst (bijvoorbeeld <code>PHP.PHP.8.4</code>).</p>
 <p>Installeer PHP met:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>winget install PHP.PHP.8.4
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>winget install PHP.PHP.8.4
 </span></span></code></pre></div><p>Controleer de installatie:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php -v
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>php -v
 </span></span></code></pre></div><p>Als je nog niets ziet, herstart dan <strong>VS Code</strong>. Daarna zou <code>php -v</code> de geïnstalleerde versie moeten tonen.</p>
 <h2 id="php-server-vs-code-extensie">PHP Server (VS Code-extensie)</h2>
 <p><strong>PHP Server</strong> is een eenvoudige manier om een <strong>lokale server</strong> te starten via een <strong>extensie</strong> in <strong>VS Code</strong>. Zo kun je je PHP-bestanden meteen testen in de browser.</p>

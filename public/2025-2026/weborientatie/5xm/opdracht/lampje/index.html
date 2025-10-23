@@ -672,11 +672,11 @@ Weboriëntatie
 └── app.js
 </code></pre><p>In je HTML maak je een <strong>lampje</strong> met een <code>div</code>-element, een <strong>tekstvak</strong> met een <code>p</code>-element en <strong>twee knoppen</strong>. Gebruik momenteel uitsluitend <code>id</code>-kenmerken om CSS en JavaScript aanpassingen toe te voegen.</p>
 <p>Vergeet niet je script onderaan te koppelen met <code>defer</code> zodat het pas start als de HTML is ingeladen. In deze kleine opdracht is dat nog niet cruciaal, maar in grotere projecten wel, zo ben je zeker dat alle HTML-elementen bestaan vóór je JavaScript start.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>  &lt;<span style="color:#7ee787">script</span> src<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;app.js&#34;</span> defer&gt;&lt;/<span style="color:#7ee787">script</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">script</span> <span style="color:#ea9a97">src</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;app.js&#34;</span> <span style="color:#ea9a97">defer</span><span style="color:#908caa">&gt;&lt;/</span><span style="color:#ea9a97">script</span><span style="color:#908caa">&gt;</span>
 </span></span></code></pre></div><h2 id="state-de-toestand-van-de-lamp">State: de toestand van de lamp</h2>
 <p>Een <strong>state</strong> is een <strong>variabele</strong> die onthoudt wat de huidige toestand is. Bijvoorbeeld, in dit geval, is de lamp <strong>aan</strong> of <strong>uit</strong>? Een variabele kan <strong>veel verschillende soorten gegevens</strong> bijhouden: getallen, stukken tekst, waar/onwaar, lijsten, enzoverder.</p>
 <p>Gebruik hiervoor:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">let</span> lampAan <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">false</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">let</span> <span style="color:#ea9a97">lampAan</span> <span style="color:#908caa">=</span> <span style="color:#3e8fb0">false</span><span style="color:#908caa">;</span>
 </span></span></code></pre></div><ul>
 <li><code>let</code> gebruik je als de waarde <strong>kan veranderen</strong> tijdens het programma.</li>
 <li>In dit geval start de lamp <strong>uit</strong> (<code>false</code>) en kan later <strong>aan</strong> gezet worden (<code>true</code>).</li>
@@ -692,7 +692,7 @@ Weboriëntatie
 <li>De twee <strong>knoppen</strong> (<code>#btn-aan</code> en <code>#btn-uit</code>)</li>
 </ul>
 <p>Bewaar deze selecties in <strong>const</strong>-variabelen:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> lamp <span style="color:#ff7b72;font-weight:bold">=</span> document.querySelector(<span style="color:#a5d6ff">&#39;#lamp&#39;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">const</span> <span style="color:#ea9a97">lamp</span> <span style="color:#908caa">=</span> <span style="color:#ea9a97">document</span><span style="color:#908caa">.</span><span style="color:#ea9a97">querySelector</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#39;#lamp&#39;</span><span style="color:#908caa">);</span>
 </span></span></code></pre></div><ul>
 <li><code>const</code> gebruik je voor dingen die <strong>niet opnieuw worden toegewezen</strong> (maar hun <strong>inhoud</strong> mag wél veranderen)</li>
 <li><code>document</code> verwijst naar het hele HTML-document</li>
@@ -703,7 +703,7 @@ Weboriëntatie
 <h2 id="events-reageren-op-klikken">Events: reageren op klikken</h2>
 <p>De knoppen moeten <strong>iets doen</strong> als je erop klikt.</p>
 <p>Dat doe je met een <strong>eventlistener</strong>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>knopAan.addEventListener(<span style="color:#a5d6ff">&#39;click&#39;</span>, zetAan);
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ea9a97">knopAan</span><span style="color:#908caa">.</span><span style="color:#ea9a97">addEventListener</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#39;click&#39;</span><span style="color:#908caa">,</span> <span style="color:#ea9a97">zetAan</span><span style="color:#908caa">);</span>
 </span></span></code></pre></div><ul>
 <li><code>addEventListener</code> zegt letterlijk: “luister naar een <strong>event</strong> (hier: klik) en voer dan een <strong>functie</strong> uit.”</li>
 <li>Dit is beter dan <code>onclick</code> in HTML, want je scheidt <strong>structuur (HTML)</strong> van <strong>logica (JS)</strong>. Zo blijft je code <strong>duidelijker en properder</strong>.</li>
@@ -723,9 +723,9 @@ Weboriëntatie
 </ul>
 <p>In de functies pas je eerst de <strong>state</strong> aan (bijv. <code>lampAan = true;</code>)
 en roep je dan <strong><code>updateLamp()</code></strong> op om de <strong>UI</strong> te veranderen. Zo hou je je code overzichtelijk en vermijd je herhaling.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">function</span> naamFunctie() {
-</span></span><span style="display:flex;"><span>  <span style="color:#8b949e;font-style:italic">// voer iets uit
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>}
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">function</span> <span style="color:#ea9a97">naamFunctie</span><span style="color:#908caa">()</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6e6a86">// voer iets uit
+</span></span></span><span style="display:flex;"><span><span style="color:#6e6a86"></span><span style="color:#908caa">}</span>
 </span></span></code></pre></div><h2 id="ui-update-tekst-en-kleur-veranderen">UI-update: tekst en kleur veranderen</h2>
 <p>In de <strong>updateLamp-functie</strong> controleer je met een <strong>conditionele structuur</strong> (<code>if ... else</code>) wat de toestand is, en pas je op basis daarvan de stijl en tekst aan.</p>
 <p>Een <strong>conditionele structuur</strong> betekent: <em>iets uitvoeren als een bepaalde voorwaarde klopt, waar is.</em></p>
@@ -734,11 +734,11 @@ en roep je dan <strong><code>updateLamp()</code></strong> op om de <strong>UI</s
 <li><strong>Als</strong> de lamp <strong>aan</strong> is (<code>if (lampAan)</code>), verander dan de kleur naar <strong>geel</strong> en de tekst naar <strong>“Lamp is aan”</strong>.</li>
 <li><strong>Anders</strong> (<code>else</code>), zet de kleur terug naar <strong>grijs</strong> en de tekst naar <strong>“Lamp is uit”</strong>.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">if</span> (lampAan) {
-</span></span><span style="display:flex;"><span>  <span style="color:#8b949e;font-style:italic">// lamp aan → kleur geel, tekst groen
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>} <span style="color:#ff7b72">else</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#8b949e;font-style:italic">// lamp uit → kleur grijs, tekst zwart
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>}
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">if</span> <span style="color:#908caa">(</span><span style="color:#ea9a97">lampAan</span><span style="color:#908caa">)</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6e6a86">// lamp aan → kleur geel, tekst groen
+</span></span></span><span style="display:flex;"><span><span style="color:#6e6a86"></span><span style="color:#908caa">}</span> <span style="color:#3e8fb0">else</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6e6a86">// lamp uit → kleur grijs, tekst zwart
+</span></span></span><span style="display:flex;"><span><span style="color:#6e6a86"></span><span style="color:#908caa">}</span>
 </span></span></code></pre></div><h3 id="wat-gebruik-je-hier">Wat gebruik je hier?</h3>
 <ul>
 <li><code>element.style.backgroundColor = 'yellow';</code> → past rechtstreeks de <strong>achtergrondkleur</strong> aan.</li>

@@ -364,8 +364,8 @@ Weboriëntatie
 <p>Gebruik duidelijke <code>id</code>-namen (bijv. <code>tijd</code> en <code>datum</code>), zodat je ze later in JavaScript kunt opzoeken. Zet het <code>&lt;script&gt;</code>-element <strong>onderaan</strong> de <code>body</code>, zodat de elementen eerst bestaan voor het script wordt uitgevoerd.</p>
 <h2 id="javascript-stap-voor-stap">JavaScript stap voor stap</h2>
 <h3 id="elementen-selecteren">Elementen selecteren</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> tijdText <span style="color:#ff7b72;font-weight:bold">=</span> document.querySelector(<span style="color:#a5d6ff">&#39;#tijd&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> datumText <span style="color:#ff7b72;font-weight:bold">=</span> document.querySelector(<span style="color:#a5d6ff">&#39;#datum&#39;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">const</span> <span style="color:#ea9a97">tijdText</span> <span style="color:#908caa">=</span> <span style="color:#ea9a97">document</span><span style="color:#908caa">.</span><span style="color:#ea9a97">querySelector</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#39;#tijd&#39;</span><span style="color:#908caa">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#3e8fb0">const</span> <span style="color:#ea9a97">datumText</span> <span style="color:#908caa">=</span> <span style="color:#ea9a97">document</span><span style="color:#908caa">.</span><span style="color:#ea9a97">querySelector</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#39;#datum&#39;</span><span style="color:#908caa">);</span>
 </span></span></code></pre></div><p>Je kiest de juiste elementen uit de HTML. Met <code>const</code> geef je aan dat deze verwijzingen <strong>niet meer veranderen</strong>. Zo kun je straks hun tekstinhoud (<code>textContent</code>) aanpassen.</p>
 <h3 id="tijdzone-en-formatters">Tijdzone en formatters</h3>
 <p>Om tijd en datum leesbaar te tonen, gebruik je een <strong>formatter</strong>. Die maak je met de ingebouwde functie <strong><code>Intl.DateTimeFormat()</code></strong>.</p>
@@ -382,12 +382,12 @@ Weboriëntatie
 <h4 id="opties">Opties</h4>
 <p>De tweede parameter is een <strong>object</strong> tussen <code>{ ... }</code> waarin je aangeeft <strong>welke delen</strong> van de tijd of datum je wil tonen, en <strong>hoe</strong>.</p>
 <p>Je maakt bijvoorbeeld:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> tijdFormaat <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Intl.DateTimeFormat(<span style="color:#a5d6ff">&#39;nl-BE&#39;</span>, {
-</span></span><span style="display:flex;"><span>  hour<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#39;2-digit&#39;</span>,
-</span></span><span style="display:flex;"><span>  minute<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#39;2-digit&#39;</span>,
-</span></span><span style="display:flex;"><span>  second<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#a5d6ff">&#39;2-digit&#39;</span>,
-</span></span><span style="display:flex;"><span>  hour12<span style="color:#ff7b72;font-weight:bold">:</span> <span style="color:#79c0ff">false</span>
-</span></span><span style="display:flex;"><span>});
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">const</span> <span style="color:#ea9a97">tijdFormaat</span> <span style="color:#908caa">=</span> <span style="color:#3e8fb0">new</span> <span style="color:#ea9a97">Intl</span><span style="color:#908caa">.</span><span style="color:#ea9a97">DateTimeFormat</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#39;nl-BE&#39;</span><span style="color:#908caa">,</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">hour</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#39;2-digit&#39;</span><span style="color:#908caa">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">minute</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#39;2-digit&#39;</span><span style="color:#908caa">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">second</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#39;2-digit&#39;</span><span style="color:#908caa">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">hour12</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">});</span>
 </span></span></code></pre></div><p>Wanneer je straks <code>.format(new Date())</code> gebruikt, zet dit een datumobject om naar tekst.</p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat" target="_blank" rel="noopener noreferrer">MDN - Intl.DateTimeFormat</a></p>
 <h4 id="overzicht-van-mogelijke-instellingen">Overzicht van mogelijke instellingen</h4>
@@ -454,22 +454,22 @@ Weboriëntatie
 <p><a href="https://tc39.es/ecma402/#sec-datetimeformat-abstracts" target="_blank" rel="noopener noreferrer">ECMAScript - DateTimeFormat options</a></p>
 <h3 id="tikkende-klok">Tikkende klok</h3>
 <p>Je kunt <strong>nu</strong> de klok al <em>triggeren</em> door de huidige tijd en datum op te halen met <code>new Date()</code>. Laat daarna je formatter erop los om deze om te zetten naar leesbare tekst. Zet die tekst vervolgens in de juiste HTML-elementen met <code>.textContent</code>. Zo verschijnt de tijd en datum direct op je pagina.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> nu <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Date();
-</span></span><span style="display:flex;"><span>tijdText.textContent <span style="color:#ff7b72;font-weight:bold">=</span> tijdFormaat.format(nu);
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">const</span> <span style="color:#ea9a97">nu</span> <span style="color:#908caa">=</span> <span style="color:#3e8fb0">new</span> <span style="color:#ea9a97">Date</span><span style="color:#908caa">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#ea9a97">tijdText</span><span style="color:#908caa">.</span><span style="color:#ea9a97">textContent</span> <span style="color:#908caa">=</span> <span style="color:#ea9a97">tijdFormaat</span><span style="color:#908caa">.</span><span style="color:#ea9a97">format</span><span style="color:#908caa">(</span><span style="color:#ea9a97">nu</span><span style="color:#908caa">);</span>
 </span></span></code></pre></div><p>Uiteraard zal de klok nu nog niet verdergaan, ze toont enkel de moment van het laden van de pagina.</p>
 <p>Om de klok <strong>telkens opnieuw</strong> te laten verversen, maak je een functie die zichzelf <strong>elke seconde</strong> opnieuw oproept aan de hand van <code>setTimeout</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">function</span> tikken() {
-</span></span><span style="display:flex;"><span>  ...
-</span></span><span style="display:flex;"><span>}
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">function</span> <span style="color:#ea9a97">tikken</span><span style="color:#908caa">()</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>tikken();
+</span></span><span style="display:flex;"><span><span style="color:#ea9a97">tikken</span><span style="color:#908caa">();</span>
 </span></span></code></pre></div><p>Vergeet de functie zelf niet minimaal éénmalig zelf buiten de scope van de functie (onder de functie) te triggeren.</p>
 <p>Nu kun je zelfs de titel van de tab live veranderen. Die kun je aanpassen met <code>document.title</code>.</p>
 <h2 id="extra-opties">Extra opties</h2>
 <ul>
 <li>Eerste letter van datum kapitaliseren, correcter in Nederlands</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">function</span> capFirst(s) { <span style="color:#ff7b72">return</span> s.charAt(<span style="color:#a5d6ff">0</span>).toUpperCase() <span style="color:#ff7b72;font-weight:bold">+</span> s.slice(<span style="color:#a5d6ff">1</span>); }
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">function</span> <span style="color:#ea9a97">capFirst</span><span style="color:#908caa">(</span><span style="color:#ea9a97">s</span><span style="color:#908caa">)</span> <span style="color:#908caa">{</span> <span style="color:#3e8fb0">return</span> <span style="color:#ea9a97">s</span><span style="color:#908caa">.</span><span style="color:#ea9a97">charAt</span><span style="color:#908caa">(</span><span style="color:#f6c177">0</span><span style="color:#908caa">).</span><span style="color:#ea9a97">toUpperCase</span><span style="color:#908caa">()</span> <span style="color:#908caa">+</span> <span style="color:#ea9a97">s</span><span style="color:#908caa">.</span><span style="color:#ea9a97">slice</span><span style="color:#908caa">(</span><span style="color:#f6c177">1</span><span style="color:#908caa">);</span> <span style="color:#908caa">}</span>
 </span></span></code></pre></div><h2 id="puntenverdeling">Puntenverdeling</h2>
 <ul>
 <li>Structuur correct met vaste bestandsnamen</li>

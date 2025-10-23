@@ -712,18 +712,16 @@ Webontwikkeling
 </table>
 <h3 id="de-belangrijkste-onderdelen-van-een-element">De belangrijkste onderdelen van een element</h3>
 <ol>
-<li><strong>De openingstag:</strong> Deze bestaat uit de naam van het element (in dit geval &lsquo;p&rsquo;), omsloten door openings- en sluitpunthaakjes. Het geeft aan waar het element begint – in dit geval waar de alinea begint.</li>
-<li><strong>De afsluitende tag:</strong> Deze lijkt op de openingstag, maar heeft een schuine streep voor de elementnaam. Het geeft aan waar het element eindigt – in dit geval waar de alinea eindigt. Het weglaten van een afsluitende tag is een veelgemaakte beginnersfout en kan tot vreemde resultaten leiden.</li>
+<li><strong>De openingstag:</strong> Deze bestaat uit de naam van het element (in dit geval &lsquo;p&rsquo;), omsloten door openings- en sluitpunthaakjes. Het geeft aan waar het element begint, in dit geval waar de alinea begint.</li>
+<li><strong>De afsluitende tag:</strong> Deze lijkt op de openingstag, maar heeft een schuine streep voor de elementnaam. Het geeft aan waar het element eindigt, in dit geval waar de alinea eindigt. Het weglaten van een afsluitende tag is een veelgemaakte beginnersfout en kan tot vreemde resultaten leiden.</li>
 <li><strong>De inhoud:</strong> Dit is wat tussen de openingstag en de afsluitende tag staat, in dit geval is dat tekst.</li>
 <li><strong>Het element:</strong> De combinatie van de openingstag, de afsluitende tag en de inhoud vormen samen het element.</li>
 </ol>
 <p>Elementen kunnen ook attributen bevatten. Deze zien er als volgt uit:</p>
-<pre><code>&lt;a href=&#34;https://www.url.com&#34;&gt;Klik hier.&lt;/a&gt;
-&lt;section id=&#34;introductie&#34;&gt;...&lt;/section&gt;
-&lt;img src=&#34;img/afbeelding.jpg&#34; /&gt;
-
-</code></pre>
-<p>Attributen geven extra informatie over het element die je niet direct in de inhoud wilt tonen. In het bovenstaande voorbeeld verwijst het attribuut <code>href</code> naar een URL, <code>id</code> geeft een unieke identificatie voor het element en <code>src</code> verwijst naar het pad van een afbeelding.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">a</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;https://www.url.com&#34;</span><span style="color:#908caa">&gt;</span>Klik hier.<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">a</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">section</span> <span style="color:#ea9a97">id</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;introductie&#34;</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">section</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">img</span> <span style="color:#ea9a97">src</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;img/afbeelding.jpg&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span></code></pre></div><p>Attributen geven extra informatie over het element die je niet direct in de inhoud wilt tonen. In het bovenstaande voorbeeld verwijst het attribuut <code>href</code> naar een URL, <code>id</code> geeft een unieke identificatie voor het element en <code>src</code> verwijst naar het pad van een afbeelding.</p>
 <h3 id="elementen-nesten">Elementen nesten</h3>
 <p>Je kunt elementen binnen andere elementen plaatsen. Dit heet &rsquo;nesten&rsquo; (of nesting).</p>
 <p><code>&lt;p&gt;Ik ben &lt;strong&gt;zeer&lt;/strong&gt; blij.&lt;/p&gt;</code></p>
@@ -735,22 +733,20 @@ Webontwikkeling
 <p>Bepaalde HTML-elementen maken geen tekstuele inhoud op en worden daarom &rsquo;lege elementen&rsquo; genoemd. Neem bijvoorbeeld het <code>&lt;img&gt;</code>-element: het heeft typisch attributen zoals <code>src</code> en <code>alt</code>, maar er is <em>geen</em> afsluitende <code>&lt;img&gt;</code>-tag nodig.</p>
 <p><code>&lt;img src=&quot;images/icon.png&quot; alt=&quot;icoontje&quot; /&gt;</code></p>
 <h3 id="anatomie-van-een-html-document">Anatomie van een HTML-document</h3>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&#34;UTF-8&#34; /&gt;
-    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
-    &lt;title&gt;Mijn paginatitel&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Een koptitel&lt;/h1&gt;
-    &lt;p&gt;Een stukje tekst.&lt;/p&gt;
-    &lt;img src=&#34;images/afbeelding.jpg&#34; alt=&#34;Mijn afbeelding&#34; /&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-
-</code></pre>
-<h3 id="de-belangrijkste-onderdelen-van-een-document">De belangrijkste onderdelen van een document</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#6e6a86">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">html</span> <span style="color:#ea9a97">lang</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;en&#34;</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">head</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">meta</span> <span style="color:#ea9a97">charset</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;UTF-8&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">meta</span> <span style="color:#ea9a97">name</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;viewport&#34;</span> <span style="color:#ea9a97">content</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;width=device-width, initial-scale=1.0&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">title</span><span style="color:#908caa">&gt;</span>Mijn paginatitel<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">title</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">head</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">body</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">h1</span><span style="color:#908caa">&gt;</span>Een koptitel<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">h1</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">p</span><span style="color:#908caa">&gt;</span>Een stukje tekst.<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">p</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">img</span> <span style="color:#ea9a97">src</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;images/afbeelding.jpg&#34;</span> <span style="color:#ea9a97">alt</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;Mijn afbeelding&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">body</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">html</span><span style="color:#908caa">&gt;</span>
+</span></span></code></pre></div><h3 id="de-belangrijkste-onderdelen-van-een-document">De belangrijkste onderdelen van een document</h3>
 <ol>
 <li><strong><code>&lt;!DOCTYPE html&gt;</code></strong> De doctype is een verplichte inleiding. Het zorgt ervoor dat de browser de relevante specificaties volgt.</li>
 <li><strong><code>&lt;html&gt;... &lt;/html&gt;</code></strong> Het <code>&lt;html&gt;</code>-element omhult alle inhoud van de pagina.</li>
@@ -762,22 +758,18 @@ Webontwikkeling
 </ol>
 <h3 id="document-metadata">Document metadata</h3>
 <p>Metadata is informatie over andere gegevens, ofwel data over data. In het geval van een webpagina bevat metadata vaak informatie die niet direct zichtbaar is voor gebruikers.</p>
-<pre><code>&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
-  &lt;meta name=&#34;description&#34; content=&#34;Cursus&#34; /&gt;
-  &lt;meta name=&#34;keywords&#34; content=&#34;HTML, CSS, JavaScript&#34; /&gt;
-  &lt;meta name=&#34;author&#34; content=&#34;Vincent Vander Cruyssen&#34; /&gt;
-  &lt;title&gt;Mijn webpagina&lt;/title&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34; /&gt;
-&lt;/head&gt;
-
-</code></pre>
-<h2 id="inhoudsstroom">Inhoudsstroom</h2>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">head</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">meta</span> <span style="color:#ea9a97">charset</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;UTF-8&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">meta</span> <span style="color:#ea9a97">name</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;viewport&#34;</span> <span style="color:#ea9a97">content</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;width=device-width, initial-scale=1.0&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">meta</span> <span style="color:#ea9a97">name</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;description&#34;</span> <span style="color:#ea9a97">content</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;Cursus&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">meta</span> <span style="color:#ea9a97">name</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;keywords&#34;</span> <span style="color:#ea9a97">content</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;HTML, CSS, JavaScript&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">meta</span> <span style="color:#ea9a97">name</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;author&#34;</span> <span style="color:#ea9a97">content</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;Vincent Vander Cruyssen&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">title</span><span style="color:#908caa">&gt;</span>Mijn webpagina<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">title</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">link</span> <span style="color:#ea9a97">rel</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;stylesheet&#34;</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;style.css&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">head</span><span style="color:#908caa">&gt;</span>
+</span></span></code></pre></div><h2 id="inhoudsstroom">Inhoudsstroom</h2>
 <p>De inhoudsstroom, <em>flow content</em>, omvat de meeste elementen die binnen het <code>&lt;body&gt;</code>-element kunnen worden geplaatst.</p>
-<pre><code>&lt;a&gt;, &lt;audio&gt;, &lt;blockquote&gt;, &lt;br&gt;, &lt;button&gt;, &lt;canvas&gt;, &lt;code&gt;, &lt;div&gt;, &lt;em&gt;, &lt;embed&gt;, &lt;footer&gt;, &lt;form&gt;, &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;, &lt;header&gt;, &lt;hr&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;, &lt;label&gt;, &lt;main&gt;, &lt;mark&gt;, &lt;nav&gt;, &lt;ol&gt;, &lt;p&gt;, &lt;picture&gt;, &lt;script&gt;, &lt;section&gt;, &lt;select&gt;, &lt;span&gt;, &lt;strong&gt;, &lt;sub&gt;, &lt;sup&gt;, &lt;svg&gt;, &lt;textarea&gt;, &lt;time&gt;, &lt;ul&gt;, &lt;video&gt;
-
-</code></pre>
+<p><code>&lt;a&gt;, &lt;audio&gt;, &lt;blockquote&gt;, &lt;br&gt;, &lt;button&gt;, &lt;canvas&gt;, &lt;code&gt;, &lt;div&gt;, &lt;em&gt;, &lt;embed&gt;, &lt;footer&gt;, &lt;form&gt;, &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;, &lt;header&gt;, &lt;hr&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;input&gt;, &lt;label&gt;, &lt;main&gt;, &lt;mark&gt;, &lt;nav&gt;, &lt;ol&gt;, &lt;p&gt;, &lt;picture&gt;, &lt;script&gt;, &lt;section&gt;, &lt;select&gt;, &lt;span&gt;, &lt;strong&gt;, &lt;sub&gt;, &lt;sup&gt;, &lt;svg&gt;, &lt;textarea&gt;, &lt;time&gt;, &lt;ul&gt;, &lt;video&gt;</code></p>
 <h3 id="inhoudsverdeling">Inhoudsverdeling</h3>
 <p>Inhoudsverdeling, <em>sectioning content</em>, verdeelt of segmenteert alle inhoud binnen de body van een webpagina.</p>
 <ol>
@@ -789,42 +781,34 @@ Webontwikkeling
 </ol>
 <h3 id="kopteksten">Kopteksten</h3>
 <p>Kopinhoud, <em>heading content</em>, omschrijft de titel of ondertitel van een onderdeel.</p>
-<pre><code>&lt;h1&gt;Koptitel&lt;/h1&gt;
-&lt;h2&gt;Ondertitel&lt;/h2&gt;
-&lt;h3&gt;...&lt;/h3&gt;
-&lt;h4&gt;...&lt;/h4&gt;
-&lt;h5&gt;...&lt;/h5&gt;
-&lt;h6&gt;...&lt;/h6&gt;
-
-</code></pre>
-<h3 id="alinea-element">Alinea-element</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">h1</span><span style="color:#908caa">&gt;</span>Koptitel<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">h1</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">h2</span><span style="color:#908caa">&gt;</span>Ondertitel<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">h2</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">h3</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">h3</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">h4</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">h4</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">h5</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">h5</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">h6</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">h6</span><span style="color:#908caa">&gt;</span>
+</span></span></code></pre></div><h3 id="alinea-element">Alinea-element</h3>
 <p>Het <code>&lt;p&gt;</code>-element vertegenwoordigt een alinea.</p>
-<pre><code>&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus quae placeat, ipsam minus necessitatibus atque.&lt;/p&gt;
-
-</code></pre>
-<h3 id="lijst-met-lijstitems">Lijst met Lijstitems</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">p</span><span style="color:#908caa">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus quae placeat, ipsam minus necessitatibus atque.<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">p</span><span style="color:#908caa">&gt;</span>
+</span></span></code></pre></div><h3 id="lijst-met-lijstitems">Lijst met Lijstitems</h3>
 <p>Het <code>&lt;li&gt;</code>-element wordt gebruikt om een item in een lijst weer te geven.</p>
-<p><pre><code>&lt;ul&gt;
-  &lt;li&gt;...&lt;/li&gt;
-  &lt;li&gt;...&lt;/li&gt;
-  &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-
-</code></pre>
-Dit wordt:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">ul</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">li</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">li</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">li</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">li</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">li</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">li</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">ul</span><span style="color:#908caa">&gt;</span>
+</span></span></code></pre></div><p>Dit wordt:</p>
 <ul>
 <li>&hellip;</li>
 <li>&hellip;</li>
 <li>&hellip;</li>
 </ul>
-<p><pre><code>&lt;ol&gt;
-  &lt;li&gt;...&lt;/li&gt;
-  &lt;li&gt;...&lt;/li&gt;
-  &lt;li&gt;...&lt;/li&gt;
-&lt;/ol&gt;
-
-</code></pre>
-Dit wordt:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">ol</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">li</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">li</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">li</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">li</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">li</span><span style="color:#908caa">&gt;</span>...<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">li</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">ol</span><span style="color:#908caa">&gt;</span>
+</span></span></code></pre></div><p>Dit wordt:</p>
 <ol>
 <li>&hellip;</li>
 <li>&hellip;</li>
@@ -842,11 +826,9 @@ Dit wordt:</p>
 </ol>
 <h3 id="anker-element">Anker-element</h3>
 <p>Het <code>&lt;a&gt;</code>-element maakt een hyperlink.</p>
-<pre><code>&lt;a href=&#34;#interne-link&#34;&gt;Deze link verwijst naar een id binnen de pagina&lt;/a&gt;
-&lt;a href=&#34;http://www.externe-link.be&#34;&gt;Deze link verwijst buiten de website&lt;/a&gt;
-
-</code></pre>
-<h3 id="formulieren">Formulieren</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">a</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;#interne-link&#34;</span><span style="color:#908caa">&gt;</span>Deze link verwijst naar een id binnen de pagina<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">a</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">a</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;http://www.externe-link.be&#34;</span><span style="color:#908caa">&gt;</span>Deze link verwijst buiten de website<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">a</span><span style="color:#908caa">&gt;</span>
+</span></span></code></pre></div><h3 id="formulieren">Formulieren</h3>
 <p>Het <code>&lt;form&gt;</code>-element creëert een formulier waarin gebruikers gegevens kunnen invoeren.</p>
 <h3 id="invoerelement">Invoerelement</h3>
 <p>Het <code>&lt;input&gt;</code>-element creëert interactieve elementen voor gebruikersinvoer.</p>
@@ -882,44 +864,32 @@ Dit wordt:</p>
 </table>
 <h3 id="tekstvak">Tekstvak</h3>
 <p>Het <code>&lt;textarea&gt;</code>-element creëert een groter invoerveld voor tekst.</p>
-<pre><code>&lt;textarea name=&#34;opmerking&#34; cols=&#34;8&#34; rows=&#34;3&#34; placeholder=&#34;Hier kan je tekst schrijven.&#34;&gt;&lt;/textarea&gt;
-
-</code></pre>
-<h3 id="opties-selecteren">Opties selecteren</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">textarea</span> <span style="color:#ea9a97">name</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;opmerking&#34;</span> <span style="color:#ea9a97">cols</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;8&#34;</span> <span style="color:#ea9a97">rows</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;3&#34;</span> <span style="color:#ea9a97">placeholder</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;Hier kan je tekst schrijven.&#34;</span><span style="color:#908caa">&gt;&lt;/</span><span style="color:#ea9a97">textarea</span><span style="color:#908caa">&gt;</span>
+</span></span></code></pre></div><h3 id="opties-selecteren">Opties selecteren</h3>
 <p>Het <code>&lt;select&gt;</code>-element creëert een dropdown-menu.</p>
-<pre><code>&lt;select name=&#34;selectie&#34;&gt;
-  &lt;option value=&#34;waarde1&#34;&gt;Kies een optie&lt;/option&gt;
-  &lt;option value=&#34;waarde2&#34;&gt;Waarde 2&lt;/option&gt;
-  &lt;option value=&#34;waarde3&#34;&gt;Waarde 3&lt;/option&gt;
-&lt;/select&gt;
-
-</code></pre>
-<h3 id="knop">Knop</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">select</span> <span style="color:#ea9a97">name</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;selectie&#34;</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">option</span> <span style="color:#ea9a97">value</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;waarde1&#34;</span><span style="color:#908caa">&gt;</span>Kies een optie<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">option</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">option</span> <span style="color:#ea9a97">value</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;waarde2&#34;</span><span style="color:#908caa">&gt;</span>Waarde 2<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">option</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">option</span> <span style="color:#ea9a97">value</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;waarde3&#34;</span><span style="color:#908caa">&gt;</span>Waarde 3<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">option</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">select</span><span style="color:#908caa">&gt;</span>
+</span></span></code></pre></div><h3 id="knop">Knop</h3>
 <p>Het <code>&lt;button&gt;</code>-element creëert een klikbare knop.</p>
-<pre><code>&lt;button type=&#34;submit&#34;&gt;Indienen&lt;/button&gt;
-&lt;button type=&#34;reset&#34;&gt;Reset&lt;/button&gt;
-
-</code></pre>
-<h3 id="veld-en-omschrift">Veld en omschrift</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">button</span> <span style="color:#ea9a97">type</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;submit&#34;</span><span style="color:#908caa">&gt;</span>Indienen<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">button</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">button</span> <span style="color:#ea9a97">type</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;reset&#34;</span><span style="color:#908caa">&gt;</span>Reset<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">button</span><span style="color:#908caa">&gt;</span>
+</span></span></code></pre></div><h3 id="veld-en-omschrift">Veld en omschrift</h3>
 <p>Het <code>&lt;fieldset&gt;</code>-element groepeert invoervelden, en <code>&lt;legend&gt;</code> geeft een titel aan een veldset.</p>
-<pre><code>&lt;fieldset&gt;
-  &lt;legend&gt;Voorbeeld van een fieldset.&lt;/legend&gt;
-  &lt;input type=&#34;text&#34; name=&#34;tekstje&#34; placeholder=&#34;Voorbeeld&#34; /&gt;
-&lt;/fieldset&gt;
-
-</code></pre>
-<h3 id="ingesloten-inhoud">Ingesloten inhoud</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">fieldset</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">legend</span><span style="color:#908caa">&gt;</span>Voorbeeld van een fieldset.<span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">legend</span><span style="color:#908caa">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">&lt;</span><span style="color:#ea9a97">input</span> <span style="color:#ea9a97">type</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;text&#34;</span> <span style="color:#ea9a97">name</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;tekstje&#34;</span> <span style="color:#ea9a97">placeholder</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;Voorbeeld&#34;</span> <span style="color:#908caa">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">&lt;/</span><span style="color:#ea9a97">fieldset</span><span style="color:#908caa">&gt;</span>
+</span></span></code></pre></div><h3 id="ingesloten-inhoud">Ingesloten inhoud</h3>
 <p>Ingesloten elementen importeren inhoud uit een andere bron.</p>
-<pre><code>&lt;audio&gt;, &lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;math&gt;, &lt;picture&gt;, &lt;svg&gt;, &lt;video&gt;
-
-</code></pre>
+<p><code>&lt;audio&gt;, &lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;img&gt;, &lt;math&gt;, &lt;picture&gt;, &lt;svg&gt;, &lt;video&gt;</code></p>
 <h3 id="interactieve-inhoud">Interactieve inhoud</h3>
 <p>Interactieve elementen zijn specifiek ontworpen voor gebruikersinteractie.</p>
-<pre><code>&lt;a&gt;, &lt;button&gt;, &lt;details&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;label&gt;, &lt;select&gt;
-
-</code></pre>
+<p><code>&lt;a&gt;, &lt;button&gt;, &lt;details&gt;, &lt;embed&gt;, &lt;iframe&gt;, &lt;label&gt;, &lt;select&gt;</code></p>
 <h2 id="bronnen">Bronnen</h2>
-<p>287: - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener noreferrer">MDN Web Docs - HTML Element</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank" rel="noopener noreferrer">MDN Web Docs - HTML Element</a></p>
 
 
 

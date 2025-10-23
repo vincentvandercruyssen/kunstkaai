@@ -28,4 +28,4 @@ disableKinds = ["RSS", "taxonomy", "term"]
 
 [markup]
 [markup.highlight]
-  style = "github-dark"
+  style = "rose-pine-moon"

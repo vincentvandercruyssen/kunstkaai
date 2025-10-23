@@ -476,36 +476,36 @@ Weboriëntatie
 <li>Drie knoppen met telkens de algemene klasse <code>.btn</code> en daarnaast één specifieke klasse: <code>.verlaag</code>, <code>.beginwaarde</code> of <code>.verhoog</code></li>
 <li>Vergeet niet om onderaan je <code>&lt;body&gt;</code> je script (met <code>defer</code>) te koppelen:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#7ee787">script</span> src<span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#a5d6ff">&#34;app.js&#34;</span> defer&gt;&lt;/<span style="color:#7ee787">script</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">script</span> <span style="color:#ea9a97">src</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;app.js&#34;</span> <span style="color:#ea9a97">defer</span><span style="color:#908caa">&gt;&lt;/</span><span style="color:#ea9a97">script</span><span style="color:#908caa">&gt;</span>
 </span></span></code></pre></div><p><code>defer</code> zorgt ervoor dat het script pas wordt uitgevoerd wanneer de volledige HTML is ingeladen. Zo bestaan alle elementen al op het moment dat je ze in JavaScript selecteert.</p>
 <h2 id="logica-bouwen">Logica bouwen</h2>
 <h3 id="state-variabele-maken">State-variabele maken</h3>
 <p>Zet bovenaan je <code>app.js</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">let</span> teller <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">0</span>;
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">let</span> <span style="color:#ea9a97">teller</span> <span style="color:#908caa">=</span> <span style="color:#f6c177">0</span><span style="color:#908caa">;</span>
 </span></span></code></pre></div><ul>
 <li>De variabele <code>teller</code> is de plek waar je de waarde bijhoudt.</li>
 <li>Je past altijd eerst de waarde in <code>teller</code> aan, en daarna werk je de tekst en kleur bij op het scherm.</li>
 </ul>
 <h3 id="dom-elementen-selecteren">DOM-elementen selecteren</h3>
 <p>Selecteer de tellerwaarde en alle knoppen:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> waardeEl <span style="color:#ff7b72;font-weight:bold">=</span> document.querySelector(<span style="color:#a5d6ff">&#39;#waarde&#39;</span>);
-</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> buttons <span style="color:#ff7b72;font-weight:bold">=</span> document.querySelectorAll(<span style="color:#a5d6ff">&#39;.btn&#39;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">const</span> <span style="color:#ea9a97">waardeEl</span> <span style="color:#908caa">=</span> <span style="color:#ea9a97">document</span><span style="color:#908caa">.</span><span style="color:#ea9a97">querySelector</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#39;#waarde&#39;</span><span style="color:#908caa">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#3e8fb0">const</span> <span style="color:#ea9a97">buttons</span> <span style="color:#908caa">=</span> <span style="color:#ea9a97">document</span><span style="color:#908caa">.</span><span style="color:#ea9a97">querySelectorAll</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#39;.btn&#39;</span><span style="color:#908caa">);</span>
 </span></span></code></pre></div><ul>
 <li><code>querySelector</code> geeft één element terug.</li>
 <li><code>querySelectorAll</code> geeft een <strong>NodeList</strong> (lijkt op een array) terug. Een NodeList is géén echte array, maar je kunt er wél met forEach doorheen loopen.</li>
 </ul>
 <h3 id="click-handler-voor-knoppen">Click-handler voor knoppen</h3>
 <p>Doorloop de NodeList en voeg per knop een eventlistener (click-handler) toe:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>buttons.forEach(<span style="color:#ff7b72">function</span> (btn) {
-</span></span><span style="display:flex;"><span>  btn.addEventListener(<span style="color:#a5d6ff">&#39;click&#39;</span>, handleClick);
-</span></span><span style="display:flex;"><span>});
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ea9a97">buttons</span><span style="color:#908caa">.</span><span style="color:#ea9a97">forEach</span><span style="color:#908caa">(</span><span style="color:#3e8fb0">function</span> <span style="color:#908caa">(</span><span style="color:#ea9a97">btn</span><span style="color:#908caa">)</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">btn</span><span style="color:#908caa">.</span><span style="color:#ea9a97">addEventListener</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#39;click&#39;</span><span style="color:#908caa">,</span> <span style="color:#ea9a97">handleClick</span><span style="color:#908caa">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">});</span>
 </span></span></code></pre></div><ul>
 <li>Voordeel: je vermijdt drie keer bijna dezelfde code → overzichtelijk en onderhoudbaar.</li>
 </ul>
 <h3 id="welke-knop-geklikt">Welke knop geklikt?</h3>
 <p>We schrijven één functie <code>handleClick(e)</code> die voor alle knoppen werkt. De <code>e</code> is het <strong>event-object</strong> dat de browser automatisch meestuurt wanneer je op iets klikt, daarin zit o.a. informatie over wélk element is aangeklikt.</p>
 <p>In je <code>handleClick</code>-functie (<code>function handleClick(e) { ... }</code>):</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff7b72">const</span> klassen <span style="color:#ff7b72;font-weight:bold">=</span> e.currentTarget.classList;
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">const</span> <span style="color:#ea9a97">klassen</span> <span style="color:#908caa">=</span> <span style="color:#ea9a97">e</span><span style="color:#908caa">.</span><span style="color:#ea9a97">currentTarget</span><span style="color:#908caa">.</span><span style="color:#ea9a97">classList</span><span style="color:#908caa">;</span>
 </span></span></code></pre></div><ul>
 <li><code>e.currentTarget</code> = het element waar de listener op zit (de knop zelf)</li>
 <li><code>classList</code> → checkt of die knop een klasse heeft</li>
@@ -522,7 +522,7 @@ Weboriëntatie
 <code>if (klassen.contains(&quot;verlaag&quot;)) { ... }</code></p>
 <h3 id="waarde-tonen-in-de-ui">Waarde tonen in de UI</h3>
 <p>Zet de tekstinhoud van je <code>#waarde</code> element gelijk aan je variabele:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>waardeEl.textContent <span style="color:#ff7b72;font-weight:bold">=</span> teller;
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ea9a97">waardeEl</span><span style="color:#908caa">.</span><span style="color:#ea9a97">textContent</span> <span style="color:#908caa">=</span> <span style="color:#ea9a97">teller</span><span style="color:#908caa">;</span>
 </span></span></code></pre></div><ul>
 <li><code>textContent</code> is de manier om tekst op de pagina te tonen</li>
 </ul>

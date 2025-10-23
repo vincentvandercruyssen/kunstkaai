@@ -785,10 +785,8 @@ Webontwikkeling
 
 <h2 id="cascading-style-sheets">Cascading Style Sheets</h2>
 <p>Alle HTML-elementen hebben standaard stijlkenmerken. Wanneer je een eigen website maakt, kun je deze stijlkenmerken aanpassen met CSS. Je kunt dan informatie toevoegen aan HTML-elementen, zoals kleur, lettertype, afstand en achtergrond. Dit kan binnen het document zelf (als attribute van ieders element of met een <code>&lt;style&gt;</code>-element) of, nog veel beter, in een extern CSS-bestand aan de hand van het <code>&lt;link&gt;</code>-element.</p>
-<pre><code>&lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;
-
-</code></pre>
-<p>CSS staat voor Cascading Style Sheets. Het is een taal die wordt gebruikt om het uiterlijk, of lay-out, van een webpagina te beschrijven. CSS wordt gebruikt om alle HTML-elementen op een pagina op te maken, inclusief de koppen, alinea&rsquo;s en andere stukken tekst. Te beginnen bij het geheel of het hoogst liggend element, om dan steeds gedetailleerder vorm te geven.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#908caa">&lt;</span><span style="color:#ea9a97">link</span> <span style="color:#ea9a97">rel</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;stylesheet&#34;</span> <span style="color:#ea9a97">href</span><span style="color:#908caa">=</span><span style="color:#f6c177">&#34;style.css&#34;</span><span style="color:#908caa">&gt;</span>
+</span></span></code></pre></div><p>CSS staat voor Cascading Style Sheets. Het is een taal die wordt gebruikt om het uiterlijk, of lay-out, van een webpagina te beschrijven. CSS wordt gebruikt om alle HTML-elementen op een pagina op te maken, inclusief de koppen, alinea&rsquo;s en andere stukken tekst. Te beginnen bij het geheel of het hoogst liggend element, om dan steeds gedetailleerder vorm te geven.</p>
 <p>Dit stijlblad dat verschillende eigenschappen toepast op één of meerdere documenten wordt verwerkt van boven naar beneden, vandaar cascade (waterval). CSS kan niet alleen worden gebruikt om de lay-out van een pagina op te maken, maar ook om functies zoals bijvoorbeeld animaties en interactieve dropdownmenu&rsquo;s te creëren.</p>
 <h3 id="css-vernieuwingen">CSS Vernieuwingen</h3>
 <p>CSS is de afgelopen jaren steeds veelzijdiger geworden en kan inmiddels veel meer dan vroeger. Met het nieuwe zogenaamde flex en grid systeem kunnen we eenvoudiger vloeiende lay-outs maken. Deze lay-outs zijn <em>responsive</em> of adaptief aan het beeldscherm; ze zorgen ervoor dat ze op alle schermgroottes goed te zien zijn, van smartphone tot computerscherm.</p>
@@ -818,20 +816,16 @@ Webontwikkeling
 <p>In tegenstelling tot de reguliere flow lay-out zijn flex en grid ouderlijke elementen of containers. Zij krijgen extra eigenschappen die voornamelijk bepalen hoe de indeling van onderliggende elementen gebeurt. Dit staat tegenover de bekende flow lay-out waar je speelt met de display-methode van individuele elementen om een vormgeving te creëren.</p>
 <h2 id="css-declaration">CSS Declaration</h2>
 <p>Een CSS-regelset bestaat uit een selector en een declaratieblok. De selector verwijst naar het HTML-element dat je wil opmaken. Het declaratieblok bevat één of meer veranderingen of eigenschappen, gescheiden door puntkomma&rsquo;s. Elke verandering bevat een CSS eigenschapsnaam en een waarde, gescheiden door een dubbele punt.</p>
-<pre><code>p {
-  color: red;
-  text-align: center;
-}
-
-</code></pre>
-<p>Veranderingen aan CSS eigenschappen eindigen altijd met een puntkomma en declaratieblokken zijn omgeven door accolades. De volgorde van de declaratie is belangrijk. Wanneer meerdere declaraties dezelfde eigenschap hebben, wordt alleen de laatste gebruikt.</p>
-<pre><code>p {
-  color: red;
-  color: blue; /* → deze wordt gebruikt */
-}
-
-</code></pre>
-<h2 id="css-selectors">CSS Selectors</h2>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">p</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">color</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">red</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">text-align</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">center</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><p>Veranderingen aan CSS eigenschappen eindigen altijd met een puntkomma en declaratieblokken zijn omgeven door accolades. De volgorde van de declaratie is belangrijk. Wanneer meerdere declaraties dezelfde eigenschap hebben, wordt alleen de laatste gebruikt.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">p</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">color</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">red</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">color</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">blue</span><span style="color:#908caa">;</span> <span style="color:#6e6a86">/* → deze wordt gebruikt */</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h2 id="css-selectors">CSS Selectors</h2>
 <ul>
 <li><a href="https://www.w3schools.com/CSSref/trysel.asp" target="_blank" rel="noopener noreferrer">W3Schools CSS Reference</a>.</li>
 </ul>
@@ -844,52 +838,40 @@ Webontwikkeling
 </ul>
 <h3 id="element-selector">Element-selector</h3>
 <p>De eenvoudigste selector is een element-selector. Met deze selector selecteer je alle elementen van een bepaalde soort. Je gebruikt hiervoor de naam van het element. Denk bijvoorbeeld aan de body of <code>&lt;h1&gt;</code> (kop 1).</p>
-<pre><code>body {
-  background-color: red;
-}
-
-h1 {
-  property: value;
-}
-
-</code></pre>
-<h3 id="id-selector">Id-selector</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">body</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">background-color</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">red</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ea9a97">h1</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">property</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">value</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h3 id="id-selector">Id-selector</h3>
 <p>Een id-selector is een aanduiding waarmee je kunt opgeven welke stijlen worden aangepast voor een element met een bepaalde id-waarde. Een id-selector wordt geschreven als een hashtag (#) gevolgd door de id van het element. In het onderstaande voorbeeld wordt de id &ldquo;#uniek&rdquo; gebruikt om de stijlen van het element met id=&ldquo;uniek&rdquo; toe te passen.</p>
-<pre><code>#uniek {
-  background-color: yellow;
-}
-
-</code></pre>
-<h3 id="klasse-selector">Klasse-selector</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">#</span><span style="color:#ea9a97">uniek</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">background-color</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">yellow</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h3 id="klasse-selector">Klasse-selector</h3>
 <p>Een klasse-selector is een aanduiding waarmee je kunt opgeven welke stijlen worden toegepast op een HTML-element met een class-attribute. Een klasse-selector is een aanduiding die begint met een punt (.). In de onderstaande CSS-regel wordt de klasse-selector &ldquo;.groepje&rdquo; gebruikt. Dit betekent dat de eigenschappen worden toegepast op alle HTML-elementen met de klasse &ldquo;groepje&rdquo;.</p>
-<pre><code>.groepje {
-  background-color: red;
-}
-
-</code></pre>
-<h3 id="pseudo-selector">Pseudo-selector</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">.</span><span style="color:#9ccfd8">groepje</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">background-color</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">red</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h3 id="pseudo-selector">Pseudo-selector</h3>
 <p>Met een pseudo-selector ga je een bepaalde stijl toepassen op een element dat in een bepaalde relatie tot een ander element staat. Het beste voorbeeld van een pseudo-selector is <code>:hover</code>, waarmee je kunt opgeven dat je een bepaalde stijl wilt toepassen op een element wanneer de muisaanwijzer eroverheen gaat. Pseudo-selectors hebben dus vaak te maken met de, al dan niet tijdelijke, toestand van een element.</p>
-<pre><code>a:hover {
-  color: red;
-}
-
-</code></pre>
-<h3 id="combinaties">Combinaties</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">a</span><span style="color:#908caa">:</span><span style="color:#908caa">hover</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">color</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">red</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h3 id="combinaties">Combinaties</h3>
 <h4 id="afstammeling-combinatie">Afstammeling combinatie</h4>
 <p>Je kan meer verfijnde selecties maken door een spatie te gebruiken om afstammelingen van een element te selecteren. Hieronder selecteer ik bijvoorbeeld alleen de list-items binnen nav-elementen.</p>
-<pre><code>nav li {
-  display: inline-block;
-}
-
-</code></pre>
-<h3 id="selector-lijst">Selector lijst</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">nav</span> <span style="color:#ea9a97">li</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">display</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">inline-block</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h3 id="selector-lijst">Selector lijst</h3>
 <p>Een selector lijst is een aantal selectors gescheiden door komma&rsquo;s, die samen een unieke set van elementen selecteren. Zo kan je heel gemakkelijk meerdere elementen selecteren en eigenschappen toekennen.</p>
-<pre><code>header, main, footer {
-  padding: 2vh 4vw;
-}
-
-</code></pre>
-<h2 id="css-eigenschappen">CSS eigenschappen</h2>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">header</span><span style="color:#908caa">,</span> <span style="color:#ea9a97">main</span><span style="color:#908caa">,</span> <span style="color:#ea9a97">footer</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">padding</span><span style="color:#908caa">:</span> <span style="color:#f6c177">2</span><span style="color:#3e8fb0">vh</span> <span style="color:#f6c177">4</span><span style="color:#3e8fb0">vw</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h2 id="css-eigenschappen">CSS eigenschappen</h2>
 <p>CSS eigenschappen of properties zijn de stylingsmogelijkheden die je hebt binnen CSS. Ze bepalen hoe je HTML-elementen kunt opmaken, zoals de kleur, het lettertype, de achtergrond, de margins en de padding.</p>
 <h4 id="de-meest-gebruikte-css-eigenschappen">De meest gebruikte CSS eigenschappen</h4>
 <div class="table_layoutfixed"></div>
@@ -968,22 +950,18 @@ h1 {
 <p>Een shorthand is een manier om een aantal CSS-regels in één regel te schrijven. Het is een kortere manier om dezelfde CSS-regels te schrijven. Het is beter om de shorthand-methode in sommige gevallen te vermijden omdat de code zo moeilijker leesbaar wordt. Voor margin en padding is het aan te raden om de shorthand wel te gebruiken.</p>
 <h3 id="background">background</h3>
 <p>De <code>background</code> eigenschap is een kortere manier, <em>shorthand</em>, om <code>background-color</code>, <code>background-image</code>, <code>background-position</code>, <code>background-repeat</code>, en <code>background-size</code> in één regel te definiëren. Gemakkelijker is het vaak om deze eigenschappen afzonderlijk te definiëren.</p>
-<pre><code>body {
-  background: #ff0000 url(&#34;img/lizard.png&#34;) center no-repeat 200px;
-}
-
-</code></pre>
-<p>Dat is hetzelfde als:</p>
-<pre><code>body {
-  background-color: #ff0000;
-  background-image: url(&#34;img/lizard.png&#34;);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 200px;
-}
-
-</code></pre>
-<h3 id="background-image">background-image</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">body</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">background</span><span style="color:#908caa">:</span> <span style="color:#f6c177">#ff0000</span> <span style="color:#ea9a97">url</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#34;img/lizard.png&#34;</span><span style="color:#908caa">)</span> <span style="color:#3e8fb0">center</span> <span style="color:#3e8fb0">no-repeat</span> <span style="color:#f6c177">200</span><span style="color:#3e8fb0">px</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><p>Dat is hetzelfde als:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">body</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">background-color</span><span style="color:#908caa">:</span> <span style="color:#f6c177">#ff0000</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">background-image</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">url</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#34;img/lizard.png&#34;</span><span style="color:#908caa">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">background-position</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">center</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">background-repeat</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">no-repeat</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">background-size</span><span style="color:#908caa">:</span> <span style="color:#f6c177">200</span><span style="color:#3e8fb0">px</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h3 id="background-image">background-image</h3>
 <p>De eigenschap <code>background-image</code> stelt één of meer achtergrondafbeeldingen in op een element. De eigenschappen gekoppeld aan <code>background-image</code> worden gebruikt om de afbeelding in de achtergrond van een element op verschillende manieren te bewerken.</p>
 <p><strong>Background-repeat</strong>: De eigenschap <code>background-repeat</code> wordt gebruikt om aan te geven hoe een achtergrondbeeld moet worden herhaald. Een achtergrondafbeelding kan langs de horizontale en verticale as worden herhaald, of helemaal niet. Zo zijn er onder andere de waarden <code>repeat</code>, <code>repeat-x</code>, <code>repeat-y</code>, en <code>no-repeat</code>.</p>
 <p><strong>Background-position</strong>: De eigenschap <code>background-position</code> wordt gebruikt om de positie van een achtergrondbeeld te specificeren. Zo zijn er de waarden <code>left</code>, <code>right</code>, <code>top</code>, <code>bottom</code>, <code>center</code>, en combinaties daarvan zoals <code>left center</code>, <code>right center</code>, etc.</p>
@@ -992,34 +970,113 @@ h1 {
 <iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" frameborder="0" style="width: 100%; aspect-ratio: ;" height="440"></iframe>
 <h3 id="color">color</h3>
 <p>De <code>color</code> eigenschap bepaalt de kleur van de tekst in een element. De kleur kan worden opgegeven als een hexadecimaal getal, RGB- of HSL-waarde, of een naam van <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank" rel="noopener noreferrer">een standaard kleur</a>.</p>
-<pre><code>p {
-  color: red;
-  color: #ff0000;
-  color: rgb(255,0,0);
-  color: hsl(0,100%,50%);
-}
-
-</code></pre>
-<h4 id="standaardkleuren">Standaardkleuren</h4>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">p</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">color</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">red</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">color</span><span style="color:#908caa">:</span> <span style="color:#f6c177">#ff0000</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">color</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">rgb</span><span style="color:#908caa">(</span><span style="color:#f6c177">255</span><span style="color:#908caa">,</span><span style="color:#f6c177">0</span><span style="color:#908caa">,</span><span style="color:#f6c177">0</span><span style="color:#908caa">);</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">color</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">hsl</span><span style="color:#908caa">(</span><span style="color:#f6c177">0</span><span style="color:#908caa">,</span><span style="color:#f6c177">100</span><span style="color:#3e8fb0">%</span><span style="color:#908caa">,</span><span style="color:#f6c177">50</span><span style="color:#3e8fb0">%</span><span style="color:#908caa">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h4 id="standaardkleuren">Standaardkleuren</h4>
 <p>Alle moderne browsers ondersteunen 140 standaard kleurnamen. <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank" rel="noopener noreferrer">Je kan de lijst onder andere terugvinden op w3schools&hellip;</a></p>
-<pre><code>color: firebrick;
-
-</code></pre>
-<h4 id="hexadecimale-kleuren">Hexadecimale kleuren</h4>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">color</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">firebrick</span><span style="color:#908caa">;</span>
+</span></span></code></pre></div><h4 id="hexadecimale-kleuren">Hexadecimale kleuren</h4>
 <p>Een hexadecimale kleur wordt opgegeven met: <code>#RRGGBB</code>. RR (rood), GG (groen) en BB (blauw) zijn hexadecimale gehele getallen tussen 00 en FF die de intensiteit van de kleur aangeven.</p>
-<pre><code>color: #B22222;
-
-</code></pre>
-<h4 id="rgb-kleuren">rgb() kleuren</h4>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">color</span><span style="color:#908caa">:</span> <span style="color:#908caa">#</span><span style="color:#ea9a97">B22222</span><span style="color:#908caa">;</span>
+</span></span></code></pre></div><h4 id="rgb-kleuren">rgb() kleuren</h4>
 <p>De notatie <code>rgb()</code> drukt een kleur uit met drie parameters: rood, groen en blauw (r, g, b). De waarde van elke parameter moet liggen tussen 0 en 255. Een optionele alfacomponent vertegenwoordigt de transparantie van de kleur.</p>
-<pre><code>color: rgb(178, 34, 34);
-
-</code></pre>
-<h4 id="hsl-kleuren">hsl() kleuren</h4>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">color</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">rgb</span><span style="color:#908caa">(</span><span style="color:#ea9a97">178</span><span style="color:#908caa">,</span> <span style="color:#ea9a97">34</span><span style="color:#908caa">,</span> <span style="color:#ea9a97">34</span><span style="color:#908caa">);</span>
+</span></span></code></pre></div><h4 id="hsl-kleuren">hsl() kleuren</h4>
 <p>De notatie <code>hsl()</code> drukt een kleur uit volgens de componenten voor tint (<em>hue</em>), verzadiging (<em>saturation</em>), en lichtheid (<em>lightness/brightness</em>).</p>
-<pre><code>color: hsl(0, 68%, 42%);
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">color</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">hsl</span><span style="color:#908caa">(</span><span style="color:#ea9a97">0</span><span style="color:#908caa">,</span> <span style="color:#ea9a97">68</span><span style="color:#908caa">%,</span> <span style="color:#ea9a97">42</span><span style="color:#908caa">%);</span>
+</span></span></code></pre></div><style>
+  :root {
+     
+    --stage-size: 520px;  
+    --ring: 100px;  
+    --label-gap: 38px;  
+  }
 
-</code></pre>
+  .stage {
+    position: relative;
+    width: var(--stage-size);
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+  }
+
+   
+  .wheel {
+    position: relative;
+    width: calc(var(--stage-size) - var(--label-gap) * 2);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: conic-gradient(
+      red 0,
+      orange,
+      yellow,
+      #8bdc00,
+      #00d084,
+      #00bcd4,
+      #2979ff,
+      #673ab7,
+      #e91e63,
+      red 1turn
+    );
+  }
+
+  .wheel::after {
+    content: '';
+    position: absolute;
+    inset: var(--ring);
+    border-radius: 50%;
+    background: #eee;
+  }
+
+  .labels {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .label {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(var(--ang));
+  }
+
+  .label span {
+    font-size: clamp(16px, 2.2vw, 28px);
+     
+    transform: translateY(
+      calc(-0.5 * (var(--stage-size) - var(--label-gap)) - var(--label-gap) / 2)
+    )
+    rotate(calc(-1 * var(--ang)));
+  }
+</style>
+
+
+<div class="stage" role="img" aria-label="Kleurencirkel met gradenlabels per 30 graden">
+  <div class="wheel"></div>
+
+  <div class="labels" aria-hidden="true">
+    <div class="label" style="--ang:   0deg;"><span>0°</span></div>
+    <div class="label" style="--ang:  30deg;"><span>30°</span></div>
+    <div class="label" style="--ang:  60deg;"><span>60°</span></div>
+    <div class="label" style="--ang:  90deg;"><span>90°</span></div>
+    <div class="label" style="--ang: 120deg;"><span>120°</span></div>
+    <div class="label" style="--ang: 150deg;"><span>150°</span></div>
+    <div class="label" style="--ang: 180deg;"><span>180°</span></div>
+    <div class="label" style="--ang: 210deg;"><span>210°</span></div>
+    <div class="label" style="--ang: 240deg;"><span>240°</span></div>
+    <div class="label" style="--ang: 270deg;"><span>270°</span></div>
+    <div class="label" style="--ang: 300deg;"><span>300°</span></div>
+    <div class="label" style="--ang: 330deg;"><span>330°</span></div>
+  </div>
+</div>
+
 
 
 
@@ -1031,9 +1088,13 @@ h1 {
 
 
 
+<div style="width: 52%;">
 
-<img src="http://localhost:1313/kunstkaai/img/web/cursus-css-color_wheel-1_hu_7fc68820b17f0060.webp" alt="cursus-css-color_wheel-1" loading="lazy">
 
+<img src="http://localhost:1313/kunstkaai/img/web/cursus-css-color_wheel-1_hu_5c48a34a7489c104.webp" alt="cursus-css-color_wheel-1" loading="lazy">
+
+
+</div>
 
 
 

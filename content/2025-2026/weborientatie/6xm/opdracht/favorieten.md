@@ -73,12 +73,15 @@ VoornaamA_Favorieten/
 
 ### Lijst vullen in de DOM
 
-* Selecteer het element met `id="lijst"`
-* Loop met `forEach` door de array en voeg per item een `<li>` toe
-* Zet de tekst in elk `<li>` met `textContent`
+* Selecteer het `<ul>`-element met `id="lijst"`
+* Maak voor de *unordered list* een variabele aan met `document.querySelector("#lijst")`
+* Loop met `forEach` door de array, waarbij je een eigen `function` aanroept
+* Die functie voegt per item (of waarde) een `<li>` toe met `createElement`
+* Zet de tekst van elke arraywaarde in de nieuwe `<li>`-elementen met `textContent`
+
+Bekijk ook eens of je de lijst kunt aanmaken met een **for-loop**. Een `for`-loop doet in essentie hetzelfde als een `forEach`, maar je beheert zelf de teller (`i`) en de stopvoorwaarde. `forEach` neemt dat automatisch over en doorloopt elk element van de array.
 
 MDN info: [Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) | [Document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) | [Node.appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) | [Element.textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) | [Array.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-
 
 ### Aantal tonen
 
@@ -104,7 +107,11 @@ MDN info: [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 
 [Console.log()](https://developer.mozilla.org/en-US/docs/Web/API/console/log)
 
-## Mini-uitbreidingen (optioneel)
+## Mini-uitbreidingen
+
+Nu ga je op zoek deze eenvoudige webapplicatie verder uit te breiden, wees creatief, gebruik je verbeelding.
+
+Hieronder enkele mogelijke voorbeelden.
 
 * Voeg één nieuw item toe aan de array en controleer of het **aantal** klopt
 * Zet de **willekeurige keuze** ook als **extra `<li>`** bovenaan de lijst
@@ -117,6 +124,7 @@ MDN info: [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 * Verander de tekstkleur willekeurig
 * Laat een item verwijderen met `filter()`
 * Bewaar de lijst met `localStorage`
+* ...
 
 ## Indienen
 
@@ -125,8 +133,8 @@ MDN info: [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 
 ## Puntenverdeling
 
-* **Array**: Lijst correct aangemaakt en logisch gevuld
-* **Weergave**: Lijst netjes opgebouwd in de DOM
-* **Interactie**: Beide knoppen werken en tonen de juiste info
-* **Codekwaliteit**: Duidelijke namen, consistente inspringing, geen dode code
-* **Presentatie**: Zichtbare en leesbare output op de pagina
+* **Array en weergave** Lijst correct aangemaakt en logisch gevuld, netjes opgebouwd in de DOM
+* **Interactie** Knoppen werken en tonen de juiste informatie
+* **Codekwaliteit** Duidelijke namen, consequente inspringing, geen overbodige code
+* **Vormgeving (CSS)** Verzorgde, originele en overzichtelijke lay-out
+* **Toevoeging** Creatieve uitbreiding van het oorspronkelijke idee, minimale vereisten blijven behouden
