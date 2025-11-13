@@ -14,7 +14,7 @@ Werk stap per stap en bewaar alles duidelijk in OneDrive.
 |-|-|
 |{{< img src="/img/data/5gm/opdracht/kmskaarten/De_schilder_en_zijn_vrouw-Meester_van_Frankfurt.jpg" >}}|{{< img src="/img/data/5gm/opdracht/kmskaarten/Portret_van_een_predikant-Rembrandt.jpg" >}}|
 |Meester van Frankfurt, De schilder en zijn vrouw (1496)|Rembrandt, Portret van een predikant (1637)|
-|{{< img src="/img/data/5gm/opdracht/kmskaarten/de_intrige-james_ensor.jpg" >}}|{{< img src="/img/data/5gm/opdracht/kmskaarten/snelheid-jules_schmalzigaug.jpg" >}}|
+|{{< img src="/img/data/5gm/opdracht/kmskaarten/De_intrige-James_Ensor.jpg" >}}|{{< img src="/img/data/5gm/opdracht/kmskaarten/Snelheid-Jules_Schmalzigaug.jpg" >}}|
 |James Ensor, De intrige (1890)|Jules Schmalzigaug, Snelheid (1914)|
 
 ## Verzamelen en structuur
