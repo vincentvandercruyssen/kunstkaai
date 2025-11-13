@@ -4,11 +4,11 @@ date = 2025-11-12T00:00:00Z
 draft = false
 +++
 
-Je maakt een reeks van 12 prentkaarten van kunstwerken uit het **KMSKA**. Je werkt met **Google Spreadsheets**, **Adobe InDesign** en Gegevenssamenvoeging.
+In deze opdracht maak je een reeks van 12 prentkaarten van kunstwerken uit het **KMSKA**. Je werkt met **Google Spreadsheets**, **Adobe InDesign** en Gegevenssamenvoeging.
 
 Elke prentkaart heeft een kunstwerk uit de collectie van het **KMSKA**. De voorkant van elke kaart toont de afbeelding van het kunstwerk. De achterkant toont het logo van het museum en informatie over het kunstwerk. Laat op het ontwerp voldoende ruimte zodat iemand een bericht kan schrijven.
 
-Je gaat op zoek naar twaalf [kunstwerken uit de collectie](https://kmska.be/nl/overzicht/de-collectie) en verzameld de gevraagde gegevens. In deze opdracht vind je eveneens het logo van het KMSKA in SVG-formaat. Voor de kunstwerken zoek je de juiste afbeeldingen in hoge resolutie en plaats je die in dezelfde map als het logo. 
+Je gaat op zoek naar twaalf kunstwerken uit [de collectie](https://kmska.be/nl/overzicht/de-collectie) en verzameld de gevraagde gegevens. In deze opdracht vind je eveneens het logo van het KMSKA in SVG-formaat. Voor de kunstwerken zoek je de juiste afbeeldingen in hoge resolutie en plaats je die in dezelfde map als het logo. 
 
 De gegevens verwerk je in **Google Spreadsheets**. Je exporteert het rekenblad als CSV-bestand en koppelt dit in **Adobe InDesign** via Data Merge (Gegevenssamenvoeging).
 
