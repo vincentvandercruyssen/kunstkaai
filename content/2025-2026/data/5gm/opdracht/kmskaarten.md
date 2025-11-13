@@ -16,7 +16,7 @@ Gegevenssamenvoeging (Data Merge) is een InDesign-functie die gegevens automatis
 
 Werk stap per stap en bewaar alles duidelijk in OneDrive.
 
-{{< img src="/img/data/5gm/opdracht/kmskaarten/kmska_collectie1.png" percent="55" >}}
+{{< img src="/img/data/5gm/opdracht/kmskaarten/KMSKA_collectie1.png" percent="55" >}}
 
 ## Verzamelen en structuur
 
