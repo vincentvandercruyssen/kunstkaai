@@ -62,7 +62,7 @@ Logo van KMSKA in **SVG** (Scalable Vector Graphics), sla je ook op in de map `L
 
 ### Exporteren CSV
 
-Controleer alle gegevens (inclusief de bestandspaden in de kolommen @Kunstwerk en @Logo). 
+Controleer alle gegevens (inclusief de bestandspaden in de kolommen @Kunstwerk en @Logo).
 
 Exporteer daarna het rekenblad als CSV via Bestand → Download → Comma-separated values (.csv). Plaats het CSV-bestand (**VoornaamA_KMSKAkaarten.csv**) in de opdrachtmap VoornaamA_KMSKAkaarten.
 

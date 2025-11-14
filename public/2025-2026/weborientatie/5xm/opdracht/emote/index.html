@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/kunstkaai/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=kunstkaai/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Opdracht: Emote | Kunstkaai</title>
+
+    <link rel="stylesheet" href="/kunstkaai/css/main.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/qtj0alg.css">
+<link rel="icon" type="image/svg" href="/kunstkaai/favicon.svg">
+
+</head>
+<body>
+  <select data-theme-picker name="themepicker" id="theme">
+    <option value="🖥️">🖥️</option>
+    <option value="☀️">☀️</option>
+    <option value="🌙">🌙</option>
+  </select>
+  <header>
+    <div>
+  
+  <h1>
+    
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Weboriëntatie
+<br>
+    Opdracht: Emote
+  </h1>
+  
+  <ol>
+    
+    
+    
+
+    
+    
+
+    
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+        
+
+        
+        <li><a href="#computationeel-denken">1. Computationeel denken</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#focus-patronen-herkennen">1.1 Focus: patronen herkennen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#structuur-van-je-project">2. Structuur van je project</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#html">3. HTML</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#basisstructuur">3.1 Basisstructuur</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#sections">3.2 Sections</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#id-kenmerken">3.3 ID-kenmerken</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#css">4. CSS</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#javascript">5. JavaScript</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        <ol>
+
+        
+        <li><a href="#state-variabele">5.1 State-variabele</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#dom-selecties">5.2 DOM-selecties</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#events-koppelen">5.3 Events koppelen</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#functies-schrijven">5.4 Functies schrijven</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+
+        
+        
+
+        
+        <li><a href="#starttoestand">5.5 Starttoestand</a></li>
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </ol></li>
+
+        
+        
+        
+
+        
+        <li><a href="#uitbreidingen">6. Uitbreidingen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#indienen">7. Indienen</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#puntenverdeling">8. Puntenverdeling</a>
+
+      
+      
+    
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        </li>
+
+        
+        
+        
+
+        
+        <li><a href="#bronnen">9. Bronnen</a>
+
+      
+      
+    
+
+    
+    </li>
+  </ol>
+</div>
+
+  </header>
+  <main>
+    
+<h1>
+
+
+
+
+
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+
+
+
+Weboriëntatie
+ <br> Opdracht: Emote</h1>
+
+<p>In deze opdracht bouw je een <strong>emote-figuurtje</strong> (bijvoorbeeld een avatar, monster of karakter) dat in <strong>verschillende emotes of toestanden</strong> kan staan. Je voegt meerdere <strong>knoppen</strong> toe waarmee je het figuurtje kunt laten reageren, zoals <em>blij</em>, <em>boos</em>, <em>chill</em>, <em>hyper</em>, of <em>neutraal</em>.</p>
+<p>Wanneer de gebruiker op een knop klikt, verandert:</p>
+<ul>
+<li>het <strong>icoon</strong> (bijvoorbeeld een emoji, afbeelding of iets anders),</li>
+<li>de <strong>titel</strong> van de emote,</li>
+<li>een korte <strong>omschrijving</strong>,</li>
+<li>én de <strong>achtergrondkleur</strong> of sfeer.</li>
+</ul>
+<p>Zo leer je stap voor stap een <strong>state</strong> beheren, <strong>DOM-elementen</strong> selecteren, <strong>events</strong> koppelen, <strong>functies</strong> schrijven en <strong>logica</strong> toepassen om de UI te veranderen.</p>
+<h2 id="computationeel-denken">Computationeel denken</h2>
+<p><strong>Computational Thinking</strong> betekent dat je problemen oplost zoals een computer dat zou doen: in kleine, logische stappen, met duidelijke beslissingen.</p>
+<p>Het bestaat uit vier bouwstenen:</p>
+<ol>
+<li><strong>Decompositie</strong> Het probleem opdelen in kleinere, overzichtelijke stukjes.</li>
+<li><strong>Patronen herkennen</strong> Overeenkomsten zien tussen situaties, zodat je oplossingen kunt hergebruiken.</li>
+<li><strong>Abstractie</strong> Enkel focussen op wat belangrijk is en details tijdelijk weglaten.</li>
+<li><strong>Algoritmes</strong> Stappenplannen maken die altijd op dezelfde manier tot een resultaat leiden.</li>
+</ol>
+<h3 id="focus-patronen-herkennen">Focus: patronen herkennen</h3>
+<p>Je figuurtje heeft verschillende emotes, maar voor <strong>elke emote</strong> doorloop je <strong>dezelfde soort stappen</strong>:</p>
+<ul>
+<li><strong>Stap 1</strong>: De state veranderen naar de gekozen emote.</li>
+<li><strong>Stap 2</strong>: De UI aanpassen: icoon wijzigen, titel aanpassen, tekst updaten.</li>
+<li><strong>Stap 3</strong>: Eventueel ook kleuren of sfeer aanpassen.</li>
+</ul>
+<p>Dat betekent dat je steeds <strong>hetzelfde patroon</strong> uitvoert, maar met andere waarden.</p>
+<p>Je herkent dus een <strong>emote-patroon</strong>:</p>
+<pre tabindex="0"><code>Als emote = X
+    toon icoon X
+    toon titel X
+    toon omschrijving X
+    toon kleur X
+</code></pre><p>Omdat dit patroon identiek is voor <em>alle</em> emotes, kun je het oplossen met:</p>
+<ul>
+<li><strong>één enkele update-functie</strong> die telkens dezelfde stappen uitvoert;</li>
+<li>een <strong>state-variabele</strong> die bijhoudt welke emote actief is;</li>
+<li><strong>conditionele logica</strong> die beslist wat er getoond wordt.</li>
+</ul>
+<h2 id="structuur-van-je-project">Structuur van je project</h2>
+<p>Werk in je vakmap van <strong>Webontwikkeling</strong> in de map voor 5XM.</p>
+<p>Gebruik deze duidelijke structuur:</p>
+<pre tabindex="0"><code>VoornaamA_Emote/
+├── index.html
+├── style.css
+└── app.js
+</code></pre><p>Zorg voor correcte benamingen en een heldere indeling. Koppel je script onderaan in het <code>body</code>-element, zodat je JavaScript pas start wanneer de HTML volledig geladen is.</p>
+<h2 id="html">HTML</h2>
+<p>In je HTML maak je een duidelijke structuur met titel, onderdeel voor figuurtje en de knoppen.</p>
+<h3 id="basisstructuur">Basisstructuur</h3>
+<p><strong>Basisstructuur van de pagina</strong>: Een header met een titel, een main-gedeelte met twee sections.</p>
+<h3 id="sections">Sections</h3>
+<p><strong>Een section waarin je figuurtje en de tekst verschijnen.</strong></p>
+<ul>
+<li>een element voor het <strong>icoon</strong> (bijvoorbeeld een emoji weergave),</li>
+<li>een korte <strong>titel</strong> van de emote,</li>
+<li>een <strong>omschrijving</strong> die uitlegt wat de emote betekent.</li>
+</ul>
+<p><strong>Een section met meerdere knoppen.</strong></p>
+<ul>
+<li>Elke knop roept een andere emote op, zoals</li>
+<li>Blij, Boos, Chill, Hyper, Neutraal,&hellip;</li>
+</ul>
+<h3 id="id-kenmerken">ID-kenmerken</h3>
+<p>Gebruik <strong>id-kenmerken</strong> voor elementen die je in CSS én JavaScript wilt aanspreken, zoals:</p>
+<ul>
+<li>een id voor het icoon,</li>
+<li>een id voor de titel,</li>
+<li>een id voor de omschrijving,</li>
+<li>ids voor de knoppen.</li>
+</ul>
+<p>Gebruik “classes” voor groepen elementen die je visueel wilt groeperen (zoals een knoppenbalk).</p>
+<h2 id="css">CSS</h2>
+<p>Voorzie een <strong>eenvoudige basis-opmaak</strong>, bijvoorbeeld:</p>
+<ul>
+<li>Kies een rustige pagina-kleur.</li>
+<li>Centreer je figuurtje.</li>
+<li>Geef het icoon een groter lettertype.</li>
+<li>Geef de knoppen een uniforme stijl.</li>
+</ul>
+<p>Zorg dat:</p>
+<ul>
+<li>het hoofdfiguurtje duidelijk zichtbaar is,</li>
+<li>de tekst goed leesbaar is,</li>
+<li>de knoppen overzichtelijk staan.</li>
+</ul>
+<p>Laat ruimte voor <strong>creativiteit</strong>: je mag zelf bepalen hoe kleurrijk, minimalistisch of humoristisch het karakter eruitziet.</p>
+<h2 id="javascript">JavaScript</h2>
+<p>Hier gebeurt alle logica.</p>
+<h3 id="state-variabele">State-variabele</h3>
+<p>Maak een <strong>variabele die de huidige emote bijhoudt</strong>.</p>
+<p>Bijvoorbeeld:</p>
+<pre tabindex="0"><code>let huidigeEmote = &#34;neutraal&#34;;
+</code></pre><p>Gebruik <code>let</code> omdat deze waarde verandert bij het klikken op knoppen. Je gebruikt een <strong>string</strong> als state omdat je daarmee gemakkelijk verschillende emotes kunt benoemen en herkennen, zoals “blij”, “boos” of “chill”.</p>
+<h3 id="dom-selecties">DOM-selecties</h3>
+<p>Selecteer alle elementen die je later moet aanpassen:</p>
+<ul>
+<li>het icoon-element,</li>
+<li>de titel van de emote,</li>
+<li>de omschrijving,</li>
+<li>elke emote-knop.</li>
+</ul>
+<p>Bewaar ze in <code>const</code>-variabelen zodat je ze later gemakkelijk kunt aanspreken. Je gebruikt <code>const</code> bij DOM-selecties omdat jouw verwijzing naar dat element nooit verandert (letterlijk constant), ook al pas je later wel de inhoud (<code>textContent</code>) of stijl van dat element aan. Maar niet de variabele zelf.</p>
+<h3 id="events-koppelen">Events koppelen</h3>
+<p>Koppel op elke knop een <strong>klik-event</strong>.</p>
+<p>Wanneer de gebruiker op “Blij” klikt:</p>
+<ul>
+<li>verander je de state naar <code>&quot;blij&quot;</code> EN roep de update-functie op.</li>
+</ul>
+<p>Hetzelfde voor &ldquo;Boos&rdquo;, “Chill”, “Hyper” en eventueel “Neutraal”&hellip;</p>
+<p>Gebruik <strong><code>addEventListener</code></strong> in je JavaScript, niet <code>onclick</code> in je HTML. Zo blijft je HTML puur structuur, en je JS puur logica.</p>
+<p>Het patroon voor elke knop is hetzelfde:</p>
+<ul>
+<li>luister naar het <code>&quot;click&quot;</code>-event, verander de <code>huidigeEmote</code>, roep de functie aan die de UI bijwerkt.</li>
+</ul>
+<p>In code ziet dat er ongeveer zo uit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ea9a97">knopBlij</span><span style="color:#908caa">.</span><span style="color:#ea9a97">addEventListener</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#34;click&#34;</span><span style="color:#908caa">,</span> <span style="color:#3e8fb0">function</span> <span style="color:#908caa">()</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6e6a86">// 1. state aanpassen
+</span></span></span><span style="display:flex;"><span><span style="color:#6e6a86"></span>  <span style="color:#6e6a86">// 2. update-functie oproepen
+</span></span></span><span style="display:flex;"><span><span style="color:#6e6a86"></span><span style="color:#908caa">});</span>
+</span></span></code></pre></div><h4 id="opmerking">Opmerking</h4>
+<ul>
+<li>Hier gebruik je een <strong>anonieme functie</strong> (een functie zonder naam) direct in de eventlistener.</li>
+<li>Dat mag perfect: het maakt de code compact en leesbaar.</li>
+<li>Later kun je er altijd een aparte, benoemde functie van maken als je dat duidelijker vindt.</li>
+</ul>
+<h3 id="functies-schrijven">Functies schrijven</h3>
+<p>Maak één centrale functie, bijvoorbeeld <code>updateEmote()</code>, die de <strong>volledige UI</strong> bijwerkt op basis van de huidige state.</p>
+<p>Deze functie kijkt eerst naar de waarde van <code>huidigeEmote</code> en beslist op basis daarvan:</p>
+<ul>
+<li>welk icoon getoond wordt,</li>
+<li>welke titel getoond wordt,</li>
+<li>welke omschrijving getoond wordt,</li>
+<li>welke achtergrondkleur of sfeer gebruikt wordt.</li>
+</ul>
+<p>In woorden:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Functie updateEmote daarin zit:
+</span></span><span style="display:flex;"><span>  als huidigeEmote &#34;blij&#34; is:
+</span></span><span style="display:flex;"><span>      toon blij icoon, titel en tekst
+</span></span><span style="display:flex;"><span>      zet een vrolijke achtergrond
+</span></span><span style="display:flex;"><span>  anders als huidigeEmote &#34;boos&#34; is:
+</span></span><span style="display:flex;"><span>      toon boos icoon, titel en tekst
+</span></span><span style="display:flex;"><span>      zet een donkere of warme achtergrond
+</span></span><span style="display:flex;"><span>  anders als huidigeEmote &#34;chill&#34; is:
+</span></span><span style="display:flex;"><span>      toon chill icoon, titel en tekst
+</span></span><span style="display:flex;"><span>      zet een rustige achtergrond
+</span></span><span style="display:flex;"><span>  anders als huidigeEmote &#34;hyper&#34; is:
+</span></span><span style="display:flex;"><span>      toon druk icoon, titel en tekst
+</span></span><span style="display:flex;"><span>      zet een felle achtergrond
+</span></span><span style="display:flex;"><span>  anders:
+</span></span><span style="display:flex;"><span>      toon een neutrale toestand
+</span></span></code></pre></div><p>Alle code die de UI verandert, steek je in deze ene functie. Dat heeft voordelen:</p>
+<ul>
+<li>je past alle logica op één plek aan,</li>
+<li>je hoeft bij nieuwe emotes enkel de functie uit te breiden,</li>
+<li>je eventlisteners blijven heel kort en duidelijk.</li>
+</ul>
+<h4 id="conditionele-logica">Conditionele logica</h4>
+<p>In je functie <code>updateEmote()</code> gebruik je dus een <strong>if &hellip; else if &hellip; else</strong>-structuur om te beslissen wat er moet gebeuren:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#3e8fb0">if</span> <span style="color:#908caa">(</span><span style="color:#ea9a97">huidigeEmote</span> <span style="color:#908caa">===</span> <span style="color:#f6c177">&#34;blij&#34;</span><span style="color:#908caa">)</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6e6a86">// blij-icoon, blij-titel, blij-tekst, blij-kleur
+</span></span></span><span style="display:flex;"><span><span style="color:#6e6a86"></span><span style="color:#908caa">}</span> <span style="color:#3e8fb0">else</span> <span style="color:#3e8fb0">if</span> <span style="color:#908caa">(</span><span style="color:#ea9a97">huidigeEmote</span> <span style="color:#908caa">===</span> <span style="color:#f6c177">&#34;boos&#34;</span><span style="color:#908caa">)</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6e6a86">// boos-icoon, boos-titel, boos-tekst, boos-kleur
+</span></span></span><span style="display:flex;"><span><span style="color:#6e6a86"></span><span style="color:#908caa">}</span> <span style="color:#3e8fb0">else</span> <span style="color:#3e8fb0">if</span> <span style="color:#908caa">(</span><span style="color:#ea9a97">huidigeEmote</span> <span style="color:#908caa">===</span> <span style="color:#f6c177">&#34;chill&#34;</span><span style="color:#908caa">)</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6e6a86">// chill-icoon, chill-titel, chill-tekst, chill-kleur
+</span></span></span><span style="display:flex;"><span><span style="color:#6e6a86"></span><span style="color:#908caa">}</span> <span style="color:#3e8fb0">else</span> <span style="color:#3e8fb0">if</span> <span style="color:#908caa">(</span><span style="color:#ea9a97">huidigeEmote</span> <span style="color:#908caa">===</span> <span style="color:#f6c177">&#34;hyper&#34;</span><span style="color:#908caa">)</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6e6a86">// hyper-icoon, hyper-titel, hyper-tekst, hyper-kleur
+</span></span></span><span style="display:flex;"><span><span style="color:#6e6a86"></span><span style="color:#908caa">}</span> <span style="color:#3e8fb0">else</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6e6a86">// neutrale of standaard-toestand
+</span></span></span><span style="display:flex;"><span><span style="color:#6e6a86"></span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><p>Deze structuur kun je nadien altijd uitbreiden (bijvoorbeeld nieuwe emotes toevoegen).</p>
+<h4 id="waarom--en-niet-">Waarom <code>===</code> en niet <code>==</code>?</h4>
+<p>In JavaScript bestaan twee soorten vergelijkingen:</p>
+<ul>
+<li><code>==</code> probeert waarden <strong>eerst te veranderen van type</strong>, en dan te vergelijken.</li>
+<li><code>===</code> vergelijkt <strong>waarde én type</strong> tegelijk, zonder iets stiekem te veranderen.</li>
+</ul>
+<p>Voor je emote-state wil je:</p>
+<ul>
+<li>exact controleren of <code>huidigeEmote</code> gelijk is aan de string <code>&quot;blij&quot;</code>, <code>&quot;boos&quot;</code>, enzovoort,</li>
+<li>geen automatische omzettingen of “gokken” van JavaScript.</li>
+</ul>
+<p>Daarom gebruik je hier <strong>altijd <code>===</code></strong>:</p>
+<ul>
+<li>je weet zeker dat je een string vergelijkt met een string,</li>
+<li>je vermijdt rare bugs en onverwacht gedrag,</li>
+<li>het is de standaard in moderne JavaScript-code.</li>
+</ul>
+<p>Kort:</p>
+<ul>
+<li><code>===</code> is <strong>strikte vergelijking</strong>,</li>
+<li><code>==</code> is <strong>losse vergelijking</strong> met risico op misverstanden.</li>
+</ul>
+<h3 id="starttoestand">Starttoestand</h3>
+<p>Zet onderaan je script nog éénmaal een oproep van je update-functie:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ea9a97">updateEmote</span><span style="color:#908caa">();</span>
+</span></span></code></pre></div><p>Zo zorg je ervoor dat:</p>
+<ul>
+<li>de pagina meteen bij het laden in een geldige toestand staat,</li>
+<li>de start-emote (bijvoorbeeld <code>&quot;neutraal&quot;</code>) direct zichtbaar is,</li>
+<li>de gebruiker een duidelijk beginpunt ziet, nog voor er op knoppen geklikt is.</li>
+</ul>
+<h2 id="uitbreidingen">Uitbreidingen</h2>
+<p>Klaar met de basis? Maak één of meerdere uitbreidingen hieronder en werk ze netjes uit in HTML, CSS én JavaScript.</p>
+<ul>
+<li><strong>Extra emotes toevoegen</strong> Voeg minstens twee nieuwe emotes toe (bijvoorbeeld <em>slaperig</em>, <em>verveeld</em>, <em>bang</em>). Zorg voor een nieuw icoon, een eigen titel, een passende tekst en een aangepaste achtergrondkleur. Breid je <code>if ... else if ... else</code>-structuur uit zodat alles correct meeverandert.</li>
+<li><strong>Actieve knop in de verf zetten</strong> Laat duidelijk zien <strong>welke emote actief is</strong>. Voeg in je CSS een klasse zoals <code>.actief</code> toe voor knoppen. In <code>updateEmote()</code> verwijder je eerst die klasse bij alle knoppen en voeg je ze daarna alleen toe bij de knop van de huidige emote.</li>
+<li><strong>Random emote-knop</strong> Maak een extra knop “Random”. Wanneer je daarop klikt, kiest je script willekeurig één van de emotes en zet die actief. Voor wie al met arrays gewerkt heeft: bewaar de namen van de emotes in een array en kies een willekeurig element daaruit; anders mag je ook een aantal <code>if</code>-takken gebruiken.</li>
+<li><strong>Toetsenbord-bediening</strong> Laat de gebruiker de emotes ook met het toetsenbord bedienen. Bijvoorbeeld: cijfers 1-5 roepen de verschillende emotes op. Luister naar het <code>keydown</code>-event, controleer <code>event.key</code> en pas <code>huidigeEmote</code> en de UI aan.</li>
+<li><strong>Automatisch terug naar neutraal</strong> Laat het figuurtje na een tijdje <strong>automatisch terugkeren naar neutraal</strong>. Bijvoorbeeld: elke keer als de emote verandert, start je met <code>setTimeout</code> een timer van 5 seconden die <code>huidigeEmote = &quot;neutraal&quot;</code> zet en <code>updateEmote()</code> opnieuw oproept (tenzij de gebruiker intussen al een andere emote gekozen heeft).</li>
+<li><strong>Extra sfeer in de achtergrond</strong> Verander niet alleen de achtergrondkleur van de pagina, maar ook andere sfeer-elementen: bijvoorbeeld een lichte schaduw rond het figuurtje, een randkleur die per emote verandert, of een eenvoudige animatie (bijvoorbeeld <code>transform: scale(...)</code> of een zachte overgang met <code>transition</code>).</li>
+<li>. . .</li>
+</ul>
+<h2 id="indienen">Indienen</h2>
+<ul>
+<li>In de vakmap <strong>Webontwikkeling</strong> de map <strong>VoornaamA_Emote</strong> op je OneDrive.</li>
+<li>Plaats daarin <strong>index.html</strong>, <strong>style.css</strong> en <strong>app.js</strong>.</li>
+<li>Upload de <strong>OneDrive-link</strong> naar je volledige vak,ap in <strong>Google Classroom</strong> onder deze opdracht.</li>
+</ul>
+<h2 id="puntenverdeling">Puntenverdeling</h2>
+<ul>
+<li><strong>Structuur en netheid</strong> Correcte map, juiste bestanden, heldere naamgeving.</li>
+<li><strong>HTML</strong> Duidelijke structuur, correcte elementen, logische opbouw.</li>
+<li><strong>CSS</strong> Verzorgde vormgeving, leesbaarheid, overzicht.</li>
+<li><strong>JavaScript</strong>
+<ul>
+<li><strong>State</strong> correct gebruikt</li>
+<li><strong>Selecties</strong> correct uitgevoerd</li>
+<li><strong>Events</strong> logisch gekoppeld</li>
+<li><strong>Functies</strong> helder opgebouwd</li>
+<li><strong>UI-update</strong> werkt correct</li>
+<li><strong>If-else-logica</strong> juist toegepast</li>
+</ul>
+</li>
+<li><strong>Computational Thinking</strong> De leerling toont dat patronen worden herkend en consequent toegepast.</li>
+<li><strong>Creativiteit</strong> Unieke karakter-uitwerking of extra sfeer.</li>
+</ul>
+<h2 id="bronnen">Bronnen</h2>
+<h4 id="variabelen--state">Variabelen &amp; state</h4>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let" target="_blank" rel="noopener noreferrer">let - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const" target="_blank" rel="noopener noreferrer">const - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Data_structures" target="_blank" rel="noopener noreferrer">JavaScript data types and data structures | MDN</a></li>
+</ul>
+<h4 id="dom-selecties-1">DOM-selecties</h4>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" target="_blank" rel="noopener noreferrer">Document Object Model (DOM) | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" target="_blank" rel="noopener noreferrer">Document.querySelector() | MDN</a></li>
+</ul>
+<h4 id="events">Events</h4>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank" rel="noopener noreferrer">EventTarget.addEventListener() | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events" target="_blank" rel="noopener noreferrer">DOM events - event reference | MDN</a></li>
+</ul>
+<h4 id="functies">Functies</h4>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" target="_blank" rel="noopener noreferrer">Functions - JavaScript Guide | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function" target="_blank" rel="noopener noreferrer">function declaration - JavaScript | MDN</a></li>
+</ul>
+<h4 id="logica">Logica</h4>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" target="_blank" rel="noopener noreferrer">if&hellip;else - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" rel="noopener noreferrer">Boolean - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion" target="_blank" rel="noopener noreferrer">Type coercion - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality" target="_blank" rel="noopener noreferrer">Equality (<code>==</code>) - JavaScript | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality" target="_blank" rel="noopener noreferrer">Strict equality (<code>===</code>) - JavaScript | MDN</a></li>
+</ul>
+<h4 id="ui-updates">UI-updates</h4>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent" target="_blank" rel="noopener noreferrer">Node.textContent | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style" target="_blank" rel="noopener noreferrer">HTMLElement.style | MDN</a></li>
+</ul>
+<h4 id="html--defer">HTML &amp; defer</h4>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank" rel="noopener noreferrer"><code>&lt;script&gt;</code> - HTML script element | MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement/defer" target="_blank" rel="noopener noreferrer">HTMLScriptElement.defer | MDN</a></li>
+</ul>
+<h4 id="denkconcept">Denkconcept</h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Computational_thinking" target="_blank" rel="noopener noreferrer">Computational thinking | Wikipedia</a></li>
+</ul>
+
+
+
+  </main>
+  <footer>
+    
+      <script src="/kunstkaai/js/main.js"></script>
+
+  </footer>
+</body>
+</html>
