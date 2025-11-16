@@ -29,9 +29,9 @@ In deze opdracht leer je hoe je een HTML-pagina maakt op basis van een online ge
 - **Voeg een `<header>` toe**: Binnen de `<body>`, voeg je een `<header>`-element toe met een `<h1>`-element dat de naam van het gerecht bevat.
 - **Bronvermelding**: Voeg onderaan de `header`, onder het `<h1>`-element, een paragraaf toe waarin je de bron vermeldt. Verwijder alles achter .com, .org, .be of dergelijk. Bijvoorbeeld:
 
-{{< showcode >}}<p>Bron: <a href="https://voorbeeldsite.com">voorbeeldsite.com</a></p>
-
-{{< /showcode >}}
+```html
+<p>Bron: <a href="https://voorbeeldsite.com">voorbeeldsite.com</a></p>
+```
 
 - **Voeg een `<main>` toe**: Na het `<header>`-element, voeg je een `<main>`-element toe. Hierin komt de hoofdinhoud van de pagina.
 

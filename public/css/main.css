@@ -15,26 +15,55 @@
 }
 
 :root {
+  /* Afstanden */
   --sidebar-width: 20rem;
   --margin-bottom: 1.5rem;
-  --text: #222;
+
+  /* Basis kleuren */
   --anchor: #19f;
-  --bgcbg: #eee;
-  /* --bgcfg: color-mix(in srgb, var(--bgcbg) 20%, white); */
-  --bgcfg: #fffe;
-  --bgcredits: #fff;
-  --bghighlight: #fff;
+
+  --text-light: #222;
+  --text-dark: #eee;
+
+  --bg-light: #eee;
+  --bg-dark: #222;
+
+  /* Vooraf berekende foregrounds */
+  --fg-light: color-mix(in srgb, var(--bg-light) 20%, white);
+  --fg-dark: color-mix(in srgb, var(--bg-dark) 80%, black);
 }
 
+/* Default: light */
+:root {
+  color-scheme: light;
+  --text: var(--text-light);
+  --bgcolor: var(--bg-light);
+  --fgcolor: var(--fg-light);
+}
+
+/* Automatic dark */
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #eee;
-    --anchor: #19f;
-    --bgcbg: #222;
-    --bgcfg: #0003;
-    --bgcredits: #0003;
-    --bghighlight: #0000;
+    color-scheme: dark;
+    --text: var(--text-dark);
+    --bgcolor: var(--bg-dark);
+    --fgcolor: var(--fg-dark);
   }
+}
+
+/* Overrides via UI */
+:root:has(#theme [value="☀️"]:checked) {
+  color-scheme: light;
+  --text: var(--text-light);
+  --bgcolor: var(--bg-light);
+  --fgcolor: var(--fg-light);
+}
+
+:root:has(#theme [value="🌙"]:checked) {
+  color-scheme: dark;
+  --text: var(--text-dark);
+  --bgcolor: var(--bg-dark);
+  --fgcolor: var(--fg-dark);
 }
 
 html {
@@ -47,31 +76,11 @@ html {
   right: 1rem;
   padding: 0.25rem;
   padding-left: 0.5rem;
-  background-color: var(--bgcredits);
+  background-color: var(--fgcolor);
   font-size: 1.2rem;
   cursor: pointer;
   border: none;
-  filter: grayscale(1) brightness(0.9) contrast(1.2);
-}
-
-:root:has(#theme [value="☀️"]:checked) {
-  color-scheme: light;
-  --text: #222;
-  --anchor: #19f;
-  --bgcbg: #eee;
-  --bgcfg: #fffe;
-  --bgcredits: #fff;
-  --bghighlight: #fff;
-}
-
-:root:has(#theme [value="🌙"]:checked) {
-  color-scheme: dark;
-  --text: #eee;
-  --anchor: #19f;
-  --bgcbg: #222;
-  --bgcfg: #0003;
-  --bgcredits: #0003;
-  --bghighlight: #0000;
+  filter: grayscale(1);
 }
 
 * {
@@ -88,7 +97,7 @@ main {
 }
 
 body {
-  background-color: var(--bgcbg);
+  background-color: var(--bgcolor);
   color: var(--text);
   font-family: "Noto Serif";
   font-family: "Grandview";
@@ -105,7 +114,7 @@ body::after {
   right: calc(-3rem - 2px);
   padding: 1rem 2ch;
   content: "Kunstkaai - V. Vander Cruyssen";
-  background-color: var(--bgcredits);
+  background-color: var(--fgcolor);
   font-size: 0.6rem;
   rotate: 90deg;
   line-height: 0;
@@ -211,8 +220,10 @@ table th {
   text-align: left;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-bottom: 1rem;
 }
 
+/* ??? */
 table th:has(strong) {
   padding-bottom: 1rem;
 }
@@ -261,7 +272,7 @@ summary {
 header,
 main {
   padding: 0;
-  background-color: var(--bgcfg);
+  background-color: var(--fgcolor);
 }
 
 header>* {
@@ -331,7 +342,7 @@ main ol li:nth-child(n + 10)::before {
 }
 
 .highlight * {
-  background-color: var(--bghighlight) !important;
+  background-color: var(--fgcolor) !important;
   /* color: var(--text) !important; */
 }
 

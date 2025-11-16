@@ -36,44 +36,44 @@ Dit stappenplan begeleidt je stap voor stap bij het vormgeven van jouw "Over mij
 
 Selecteer het `body`-element en geef het een passende achtergrondkleur met een kleurnaam of hexadecimale kleurwaarde. Stel een nieuwe `font-family` in en zet de `margin` op 0.
 
-{{< showcode >}}body {
+```css
+body {
     background-color: #f4f4f4;
 }
-
-{{< /showcode >}}
+```
 
 Selecteer het `h1`-element en geef het een kleur met een kleurnaam of hexadecimale kleurwaarde. Pas hetzelfde toe voor `h2`-elementen.
 
-{{< showcode >}}h1 {
+```css
+h1 {
     color: #333333;
 }
-
-{{< /showcode >}}
+```
 
 Selecteer het `p`-element en geef het een passende kleur met een kleurnaam of hexadecimale kleurwaarde.
 
-{{< showcode >}}p {
+```css
+p {
     color: #555555;
 }
-
-{{< /showcode >}}
+```
 
 Gebruik een **id-selector** om een specifieke `section` anders vorm te geven. Voeg een id-attribuut toe in je HTML, bijvoorbeeld: `<section id="intro">`. In je **style.css**-bestand kun je deze `section` als volgt stylen:
 
-{{< showcode >}}#intro {
+```css
+#intro {
     background-color: #e0f7fa;
 }
-
-{{< /showcode >}}
+```
 
 **`margin` en `padding`**: Voeg ruimte toe aan je elementen met marges en padding.
 
-{{< showcode >}}h1 {
+```css
+h1 {
     margin-bottom: 20px;
     padding: 10px;
 }
-
-{{< /showcode >}}
+```
 
 {{< img src="/img/web/cursus-css-box-model-1.png" width="1800" >}}
 

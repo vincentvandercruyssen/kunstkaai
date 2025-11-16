@@ -990,38 +990,28 @@ Webontwikkeling
 <div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">color</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">hsl</span><span style="color:#908caa">(</span><span style="color:#ea9a97">0</span><span style="color:#908caa">,</span> <span style="color:#ea9a97">68</span><span style="color:#908caa">%,</span> <span style="color:#ea9a97">42</span><span style="color:#908caa">%);</span>
 </span></span></code></pre></div><style>
   :root {
-     
-    --stage-size: 520px;  
-    --ring: 100px;  
-    --label-gap: 38px;  
+    --stage-max: 520px;
+    --ring: 20%;
+    --label-gap: 15%;
+    --label-offset: 1.2em;  
   }
 
   .stage {
     position: relative;
-    width: var(--stage-size);
+    width: min(100%, var(--stage-max));
     aspect-ratio: 1;
     display: grid;
     place-items: center;
+    margin-bottom: var(--margin-bottom);
   }
 
    
   .wheel {
     position: relative;
-    width: calc(var(--stage-size) - var(--label-gap) * 2);
+    width: calc(100% - var(--label-gap) * 2);
     aspect-ratio: 1;
     border-radius: 50%;
-    background: conic-gradient(
-      red 0,
-      orange,
-      yellow,
-      #8bdc00,
-      #00d084,
-      #00bcd4,
-      #2979ff,
-      #673ab7,
-      #e91e63,
-      red 1turn
-    );
+    background: conic-gradient(red 0, orange, yellow, #8bdc00, #00d084, #00bcd4, #2979ff, #673ab7, #e91e63, red 1turn);
   }
 
   .wheel::after {
@@ -1029,38 +1019,37 @@ Webontwikkeling
     position: absolute;
     inset: var(--ring);
     border-radius: 50%;
-    background: #eee;
+    background: var(--fgcolor);
   }
 
+   
   .labels {
     position: absolute;
     inset: 0;
     pointer-events: none;
   }
 
+   
   .label {
     position: absolute;
     inset: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;  
     justify-content: center;
     transform: rotate(var(--ang));
   }
 
+   
   .label span {
-    font-size: clamp(16px, 2.2vw, 28px);
+    font-size: 1.25rem;
+
      
-    transform: translateY(
-      calc(-0.5 * (var(--stage-size) - var(--label-gap)) - var(--label-gap) / 2)
-    )
-    rotate(calc(-1 * var(--ang)));
+    transform: translateY(calc(-50% + var(--label-offset))) rotate(calc(-1 * var(--ang)));
   }
 </style>
 
-
 <div class="stage" role="img" aria-label="Kleurencirkel met gradenlabels per 30 graden">
   <div class="wheel"></div>
-
   <div class="labels" aria-hidden="true">
     <div class="label" style="--ang:   0deg;"><span>0°</span></div>
     <div class="label" style="--ang:  30deg;"><span>30°</span></div>
@@ -1076,27 +1065,6 @@ Webontwikkeling
     <div class="label" style="--ang: 330deg;"><span>330°</span></div>
   </div>
 </div>
-
-
-
-
- 
- 
-
-
-
-
-
-
-<div style="width: 52%;">
-
-
-<img src="http://localhost:1313/kunstkaai/img/web/cursus-css-color_wheel-1_hu_5c48a34a7489c104.webp" alt="cursus-css-color_wheel-1" loading="lazy">
-
-
-</div>
-
-
 
 <h4 id="additieve-kleuren">Additieve kleuren</h4>
 <p>Additieve kleuren zijn kleuren die door licht te combineren worden gevormd. Het licht dat we zien is een mix van verschillende kleuren licht, elk met hun eigen golflengte. Wanneer deze kleuren licht samenkomen, worden ze toegevoegd aan elkaar en wordt het totaal licht dat we zien helderder. De primaire additieve kleuren zijn rood, groen, en blauw.</p>
@@ -1169,14 +1137,12 @@ Webontwikkeling
 
 <h3 id="font">font</h3>
 <p>De <code>font</code> eigenschap bepaalt de weergave van de lettertypen. Het is een kortere manier van het definiëren van onder andere de <code>font-family</code>, <code>font-weight</code>, en <code>font-size</code> eigenschappen in één regel.</p>
-<pre><code>section {
-  font-family: Georgia, serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-</code></pre>
-<h4 id="font-family">font-family</h4>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">section</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">font-family</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">Georgia</span><span style="color:#908caa">,</span> <span style="color:#3e8fb0">serif</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">font-size</span><span style="color:#908caa">:</span> <span style="color:#f6c177">1.5</span><span style="color:#3e8fb0">rem</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">font-weight</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">bold</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h4 id="font-family">font-family</h4>
 <p>Een <code>font-family</code> is een verzameling van verschillende lettertypen die allemaal een soortgelijke stijl hebben. De <code>font-family</code> eigenschap geeft de browser aan welke font de tekst moet laten zien.</p>
 <h4 id="font-size">font-size</h4>
 <p>De <code>font-size</code> eigenschap bepaalt de grootte van de tekst in een element.</p>
@@ -1302,19 +1268,15 @@ Webontwikkeling
 </ul>
 <h3 id="font-face">@font-face</h3>
 <p><code>@font-face</code> specificeert een aangepast lettertype waarmee tekst moet worden weergegeven; het lettertype kan worden geladen vanaf een externe server of een lokaal geïnstalleerd lettertype op de eigen computer van de gebruiker.</p>
-<pre><code>@font-face {
-  font-family: &#34;Open Sans&#34;;
-  font-weight: 400;
-  src: url(&#34;/fonts/OpenSans-Regular-webfont.woff2&#34;) format(&#34;woff2&#34;);
-}
-
-</code></pre>
-<h3 id="import">@import</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">@</span><span style="color:#3e8fb0">font-face</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">font-family</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#34;Open Sans&#34;</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">font-weight</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">400</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">src</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">url</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#34;/fonts/OpenSans-Regular-webfont.woff2&#34;</span><span style="color:#908caa">)</span> <span style="color:#ea9a97">format</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#34;woff2&#34;</span><span style="color:#908caa">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h3 id="import">@import</h3>
 <p>De <code>@import</code> wordt gebruikt om stijlregels uit andere stylesheets te importeren, bijvoorbeeld een verzameling fonts.</p>
-<pre><code>@import url(&#39;https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&amp;display=swap&#39;);
-
-</code></pre>
-<h2 id="flow-lay-out">Flow Lay-out</h2>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">@</span><span style="color:#3e8fb0">import</span> <span style="color:#ea9a97">url</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#39;https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&amp;display=swap&#39;</span><span style="color:#908caa">)</span><span style="color:#908caa">;</span>
+</span></span></code></pre></div><h2 id="flow-lay-out">Flow Lay-out</h2>
 <p>Flow lay-out is de manier waarop block- en inline-elementen op een pagina worden weergegeven. Elk HTML-element heeft een standaardweergave (<em>display, inline,&hellip;</em>), deze eigenschap is afhankelijk van het type element en kan worden aangepast.</p>
 <p>In de flow lay-out worden inline-elementen weergegeven in de inline-richting, dat wil zeggen in de richting van een zin of een regel. Na elkaar van links naar rechts.</p>
 <p>Blokelementen worden onder elkaar weergegeven, zoals alinea&rsquo;s. Onder elkaar van boven naar onder.</p>
@@ -1380,14 +1342,12 @@ Webontwikkeling
 </ul>
 <h3 id="border">border</h3>
 <p>Een border is een lijn die rond de rand van een element wordt getekend. De <code>border</code>-eigenschap is een kortere manier om de <code>border-width</code>, <code>border-style</code>, en <code>border-color</code> eigenschappen in één regel te schrijven.</p>
-<pre><code>section {
-  border-width: 4px;
-  border-style: dotted;
-  border-color: red;
-}
-
-</code></pre>
-<h3 id="margin">margin</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">section</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">border-width</span><span style="color:#908caa">:</span> <span style="color:#f6c177">4</span><span style="color:#3e8fb0">px</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">border-style</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">dotted</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">border-color</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">red</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h3 id="margin">margin</h3>
 <p>Margin wordt gebruikt om elementen op een pagina op een bepaalde afstand van elkaar te houden.</p>
 <p>De margin shorthand stelt margin aan alle vier de zijden van een element tegelijk in. De eigenschap margin kan worden opgegeven met één, twee, drie, of vier waarden.</p>
 <ul>
@@ -1443,12 +1403,10 @@ Webontwikkeling
 <iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/bGMZJBP" frameborder="0" style="width: 100%; aspect-ratio: ;" height="520"></iframe>
 <h2 id="box-sizing">box-sizing</h2>
 <p>De <code>box-sizing</code> eigenschap wordt gebruikt om te definiëren hoe het CSS box-model werkt. Bij het berekenen van de breedte en hoogte van een element wordt standaard de inhoud, de paddings, en de borders meegeteld.</p>
-<pre><code>* {
-  box-sizing: border-box;
-}
-
-</code></pre>
-<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/rNYBwXP" frameborder="0" style="width: 100%; aspect-ratio: ;" height="548"></iframe>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">*</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">box-sizing</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">border-box</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/rNYBwXP" frameborder="0" style="width: 100%; aspect-ratio: ;" height="548"></iframe>
 <h2 id="flexbox">Flexbox</h2>
 <p>Flexbox is een CSS lay-outmodel dat een efficiëntere manier biedt om ruimte tussen elementen op een pagina in te delen, uit te lijnen, en te verdelen. Je geeft het bovenliggende element een <code>display: flex</code> om een flex-container te maken.</p>
 <p>In het flexbox lay-outmodel kunnen de kinderen van een flex-container in elke richting worden opgesteld.</p>

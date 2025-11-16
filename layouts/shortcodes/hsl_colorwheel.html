@@ -1,37 +1,27 @@
 <style>
   :root {
-    /* De stage bepaalt de totale afmetingen */
-    --stage-size: 520px; /* totale diameter inclusief labels */
-    --ring: 100px; /* ringdikte */
-    --label-gap: 38px; /* afstand labels buiten de ring */
+    --stage-max: 520px;
+    --ring: 20%;
+    --label-gap: 15%;
+    --label-offset: 1.2em; /* nieuw: hoeveelheid dat labels naar binnen schuiven */
   }
 
   .stage {
     position: relative;
-    width: var(--stage-size);
+    width: min(100%, var(--stage-max));
     aspect-ratio: 1;
     display: grid;
     place-items: center;
+    margin-bottom: var(--margin-bottom);
   }
 
-  /* De ring binnen de stage */
+  /* Ring */
   .wheel {
     position: relative;
-    width: calc(var(--stage-size) - var(--label-gap) * 2);
+    width: calc(100% - var(--label-gap) * 2);
     aspect-ratio: 1;
     border-radius: 50%;
-    background: conic-gradient(
-      red 0,
-      orange,
-      yellow,
-      #8bdc00,
-      #00d084,
-      #00bcd4,
-      #2979ff,
-      #673ab7,
-      #e91e63,
-      red 1turn
-    );
+    background: conic-gradient(red 0, orange, yellow, #8bdc00, #00d084, #00bcd4, #2979ff, #673ab7, #e91e63, red 1turn);
   }
 
   .wheel::after {
@@ -39,38 +29,37 @@
     position: absolute;
     inset: var(--ring);
     border-radius: 50%;
-    background: #eee;
+    background: var(--fgcolor);
   }
 
+  /* LABELS */
   .labels {
     position: absolute;
     inset: 0;
     pointer-events: none;
   }
 
+  /* Elke label roteert */
   .label {
     position: absolute;
     inset: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* ← START punt bovenaan cirkel */
     justify-content: center;
     transform: rotate(var(--ang));
   }
 
+  /* Plaats op 50% van de radius */
   .label span {
-    font-size: clamp(16px, 2.2vw, 28px);
-    /* afstand vanaf het centrum = halve wielbreedte + label-gap/2 */
-    transform: translateY(
-      calc(-0.5 * (var(--stage-size) - var(--label-gap)) - var(--label-gap) / 2)
-    )
-    rotate(calc(-1 * var(--ang)));
+    font-size: 1.25rem;
+
+    /* 50% = rand van de stage, offset duwt alles naar binnen */
+    transform: translateY(calc(-50% + var(--label-offset))) rotate(calc(-1 * var(--ang)));
   }
 </style>
 
-
 <div class="stage" role="img" aria-label="Kleurencirkel met gradenlabels per 30 graden">
   <div class="wheel"></div>
-
   <div class="labels" aria-hidden="true">
     <div class="label" style="--ang:   0deg;"><span>0°</span></div>
     <div class="label" style="--ang:  30deg;"><span>30°</span></div>

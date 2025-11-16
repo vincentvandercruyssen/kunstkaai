@@ -237,8 +237,6 @@ color: hsl(0, 68%, 42%);
 
 {{< hsl_colorwheel >}}
 
-{{< img src="/img/web/cursus-css-color_wheel-1.png" percent="52" >}}
-
 #### Additieve kleuren
 
 Additieve kleuren zijn kleuren die door licht te combineren worden gevormd. Het licht dat we zien is een mix van verschillende kleuren licht, elk met hun eigen golflengte. Wanneer deze kleuren licht samenkomen, worden ze toegevoegd aan elkaar en wordt het totaal licht dat we zien helderder. De primaire additieve kleuren zijn rood, groen, en blauw.
@@ -258,13 +256,13 @@ In Visual Studio Code kan je door de verschillende kleurennotaties kiezen door o
 
 De `font` eigenschap bepaalt de weergave van de lettertypen. Het is een kortere manier van het definiëren van onder andere de `font-family`, `font-weight`, en `font-size` eigenschappen in één regel.
 
-{{< showcode >}}section {
+```css
+section {
   font-family: Georgia, serif;
   font-size: 1.5rem;
   font-weight: bold;
 }
-
-{{< /showcode >}}
+```
 
 #### font-family
 
@@ -313,21 +311,21 @@ Een CDN, *content delivery network*, is een netwerk van servers die gebruikt wor
 
 `@font-face` specificeert een aangepast lettertype waarmee tekst moet worden weergegeven; het lettertype kan worden geladen vanaf een externe server of een lokaal geïnstalleerd lettertype op de eigen computer van de gebruiker.
 
-{{< showcode >}}@font-face {
+```css
+@font-face {
   font-family: "Open Sans";
   font-weight: 400;
   src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2");
 }
-
-{{< /showcode >}}
+```
 
 ### @import
 
 De `@import` wordt gebruikt om stijlregels uit andere stylesheets te importeren, bijvoorbeeld een verzameling fonts.
 
-{{< showcode >}}@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
-
-{{< /showcode >}}
+```css
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+```
 
 ## Flow Lay-out
 
@@ -383,13 +381,13 @@ De padding shorthand stelt padding aan alle vier de zijden van een element tegel
 
 Een border is een lijn die rond de rand van een element wordt getekend. De `border`-eigenschap is een kortere manier om de `border-width`, `border-style`, en `border-color` eigenschappen in één regel te schrijven.
 
-{{< showcode >}}section {
+```css
+section {
   border-width: 4px;
   border-style: dotted;
   border-color: red;
 }
-
-{{< /showcode >}}
+```
 
 ### margin
 
@@ -437,11 +435,11 @@ Relatieve eenheden zijn afhankelijk van de context waarin ze worden gebruikt. Ze
 
 De `box-sizing` eigenschap wordt gebruikt om te definiëren hoe het CSS box-model werkt. Bij het berekenen van de breedte en hoogte van een element wordt standaard de inhoud, de paddings, en de borders meegeteld.
 
-{{< showcode >}}* {
+```css
+* {
   box-sizing: border-box;
 }
-
-{{< /showcode >}}
+```
 
 {{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/rNYBwXP" height="548" >}}
 
