@@ -124,23 +124,28 @@ Vergeet de functie zelf niet minimaal éénmalig zelf buiten de scope van de fun
 
 Nu kun je zelfs de titel van de tab live veranderen. Die kun je aanpassen met `document.title`.
 
-## Extra opties
+## Eigen toevoeging
 
-- Eerste letter van datum kapitaliseren, correcter in Nederlands
+Je wordt in deze opdracht vooral beoordeeld op een **creatieve, eigenzinnige, nieuwe toevoeging** aan je klok. Het gaat om een originele uitbreiding die je klok persoonlijk en verrassend maakt.
 
-```js
-function capFirst(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
-```
+Bijvoorbeeld:
+- Toon de tijd in verschillende wereldsteden (bijv. *New York, Londen, Tokyo,...*)
+- Laat om de X aantal minuten iets speciaals gebeuren
+- Maak een die automatisch wisselt op basis van het uur, moment van de dag
+- Laat elke minuut een ander citaat of feitje verschijnen
+- Toon hoeveel procent van de dag voorbij is
+- . . .
+
+De bedoeling is dat je iets maakt dat **niet standaard** in een klok zit en dat perfect bij jouw stijl past.
 
 ## Puntenverdeling
 
 * Structuur correct met vaste bestandsnamen
 * HTML bevat `main`, `#tijd`, `#datum`, en script onderaan
 * JavaScript gebruikt correcte selecties en `Intl.DateTimeFormat`
-* Klok tikt precies per seconde zonder drift
-* Werking is stabiel en leesbaar
-* Code is helder benoemd en logisch opgebouwd
-* Vormgeving is eigen invulling zonder de logica te breken
+* Klok tikt precies per seconde
+* Vormgeving volgens eigen invulling zonder de logica te breken
+* Eigen toevoeging
 
 ## Bronvermelding
 

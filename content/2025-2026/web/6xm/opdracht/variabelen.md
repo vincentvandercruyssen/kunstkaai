@@ -272,5 +272,5 @@ Of werk op één pagina met ankers:
 * **Variabelen** Correcte declaratie en gebruik.
 * **Rekenen** Juiste operatoren en afronding.
 * **Datum** Correcte berekening van verschil in dagen.
-* **Output** Duidelijke, leesbare tekst met labels.
+* **Uitvoer en vormgeving** Duidelijke, leesbare tekst met correcte labels op nette pagina’s.
 * **Navigatie** Werkende links of ankers.
