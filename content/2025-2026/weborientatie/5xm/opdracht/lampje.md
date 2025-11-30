@@ -177,16 +177,16 @@ Ontwerp in `style.css` een **eenvoudige, overzichtelijke opmaak**. Geef de lamp 
 
 ## Puntenverdeling
 
-- **Structuur en netheid** Correcte mapstructuur, heldere naamgeving, indeling, koppeling
-- **Inhoud (HTML)**
-- **Vormgeving (CSS)**
+- **Structuur en netheid** Correcte mapstructuur, heldere naamgeving, indeling, koppelingen HTML/CSS/JS
+- **Inhoud (HTML)** Titel, lamp, teksten, knoppen
+- **Vormgeving (CSS)** Overzichtelijke lay-out, typografie, duidelijke lamp
 - **Interactiviteit (JS)**
   - **State** Juiste variabele gebruikt
   - **Selecties** Juiste elementen geselecteerd
   - **Events** Listeners correct gekoppeld
   - **Functies** Duidelijke functies
   - **UI-update** Correcte `if ... else`, `style`, `textContent`
-- **Eigen toevoeging** Creatieve en inventieve toevoeging aan de webapp
+- **Eigen toevoeging** Creatieve en inventieve toevoeging aan de webapp met toepasselijke vormgeving
 
 ## Bronnen
 
