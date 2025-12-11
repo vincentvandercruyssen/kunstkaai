@@ -179,7 +179,7 @@ Ontwerp in `style.css` een **eenvoudige, overzichtelijke opmaak**. Geef de lamp 
 
 - **Structuur en netheid** Correcte mapstructuur, heldere naamgeving, indeling, koppelingen HTML/CSS/JS
 - **Inhoud (HTML)** Titel, lamp, teksten, knoppen
-- **Vormgeving (CSS)** Overzichtelijke lay-out, typografie, duidelijke lamp
+- **Vormgeving (CSS)** Overzichtelijke lay-out, typografie, duidelijke lamp(en)
 - **Interactiviteit (JS)**
   - **State** Juiste variabele gebruikt
   - **Selecties** Juiste elementen geselecteerd

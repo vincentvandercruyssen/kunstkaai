@@ -96,8 +96,8 @@ Referentie: [https://kaaikunst.kunstkaai.online/](https://kaaikunst.kunstkaai.on
 
 ## Puntenverdeling
 
-* **Structuur en includes** Consistente includes, nette mappen en bestanden.
-* **Inhoud (HTML)** Semantiek, labels en correcte kenmerken.
-* **Vormgeving (CSS en responsief)** Layout, typografie en gedrag op mobiel en desktop.
+* **Structuur en includes** Correcte mappen en bestanden, consistente includes (PHP).
+* **Inhoud (HTML)** Semantiek, correcte kenmerken, navigatie.
+* **Vormgeving (CSS)** Layout, typografie en responsive op mobiel en desktop.
 * **Formulieren en UX** Duidelijke labels, states, validatie,...
-* **Vormgeving ontwerp (06)** Trouw aan XD/Figma en verzorgd.
+* **Vormgeving ontwerp** Trouw aan voorontwerp, verzorgd.

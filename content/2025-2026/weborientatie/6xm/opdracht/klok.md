@@ -140,12 +140,11 @@ De bedoeling is dat je iets maakt dat **niet standaard** in een klok zit en dat 
 
 ## Puntenverdeling
 
-* Structuur correct met vaste bestandsnamen
-* HTML bevat `main`, `#tijd`, `#datum`, en script onderaan
-* JavaScript gebruikt correcte selecties en `Intl.DateTimeFormat`
-* Klok tikt precies per seconde
-* Vormgeving volgens eigen invulling zonder de logica te breken
-* Eigen toevoeging
+- **Structuur en netheid** Correcte mapstructuur, vaste bestandsnamen, nette en overzichtelijke code.
+- **Inhoud (HTML)** Semantische structuur met `<main>`, duidelijke ids voor tijd en datum, script onderaan de body.
+- **Vormgeving (CSS)** Schermvullende, verzorgde klok met duidelijke typografie en hiërarchie; vormgeving mag nooit de kloklogica breken.
+- **Interactiviteit (JS)** Correcte DOM-selecties, gebruik van `Date` en `Intl.DateTimeFormat`, tikkende klok per seconde via functie en `setTimeout`, tijd en datum worden live geüpdatet.
+- **Eigen toevoeging** Creatieve en inventieve uitbreiding van de klok met passende vormgeving en duidelijke meerwaarde.
 
 ## Bronvermelding
 
