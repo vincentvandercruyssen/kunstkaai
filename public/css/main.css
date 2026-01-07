@@ -159,7 +159,7 @@ ul li ul li {
 
 h1 {
   font-size: 2.4rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-overflow: ellipsis;
 }
 
@@ -275,17 +275,16 @@ main {
   background-color: var(--fgcolor);
 }
 
-header>* {
+header {
+  width: var(--sidebar-width);
+}
+
+header .fixed {
   position: fixed;
   display: flex;
   flex-direction: column;
-  width: var(--sidebar-width);
   height: 100vh;
   padding: 1rem;
-}
-
-header>*>ol {
-  overflow-y: scroll;
 }
 
 header h1 {
@@ -297,37 +296,79 @@ header a {
   padding: 0.4rem 0;
 }
 
-header ul,
-header ol,
-header li {
-  list-style: none;
-}
-
-header ol {
-  padding: 0;
+header nav {
   font-size: 0.8rem;
+  overflow-y: scroll;
 }
 
 header li {
   margin: 0;
 }
 
-header ol li ol {
-  padding-left: 1rem;
+/* counter reset */
+header nav#TableOfContents>ul {
+  counter-reset: toc-h2;
 }
 
-header ol li ol a {
-  padding: 0.2rem 0;
+/* h2 items counter, reset h3 */
+header nav#TableOfContents>ul>li {
+  counter-increment: toc-h2;
+  counter-reset: toc-h3;
+}
+
+/* prefix voor h2 */
+header nav#TableOfContents>ul>li>a::before {
+  content: counter(toc-h2) ". ";
+}
+
+/* h3 items counter */
+header nav#TableOfContents>ul>li>ul>li {
+  counter-increment: toc-h3;
+}
+
+/* prefix voor h3 */
+header nav#TableOfContents>ul>li>ul>li>a::before {
+  content: counter(toc-h2) "." counter(toc-h3) " ";
 }
 
 main {
   margin: 0 2rem;
   padding: 1rem 2rem;
+  counter-reset: h2;
+  /* Reset counters */
+}
+
+/* H2 = 1. */
+main h2 {
+  counter-reset: h3;
+}
+
+main h2::before {
+  counter-increment: h2;
+  content: counter(h2) ". ";
+}
+
+/* H3 = 1.1 */
+main h3::before {
+  counter-increment: h3;
+  content: counter(h2) "." counter(h3) " ";
+}
+
+/* H4 = 1.1.1 */
+main h3 {
+  counter-reset: h4;
+}
+
+main h4::before {
+  counter-increment: h4;
+  content: counter(h2) "." counter(h3) "." counter(h4) " ";
 }
 
 main ul li::before {
   content: "↪ ";
 }
+
+/* dubbele digits */
 
 main ol li {
   counter-increment: item;

@@ -1,56 +1,8 @@
-<div>
+<div class="fixed">
   <!-- Display the site title and the current section -->
   <h1>
     {{ partial "sectionName.html" . }}<br>
     {{ .Title }}
   </h1>
-  <!-- Begin ordered list for the table of contents -->
-  <ol>
-    <!-- Initialize counters for sections and subsections -->
-    {{ $sectionCounter := 0 }}
-    {{ $subsectionCounter := 0 }}
-
-    <!-- Iterate only over the current page's content -->
-    {{ $matches := findRE "<h([2-3])[^>]*id=\"([^\"]+)\"[^>]*>([^<]+)</h[2-3]>" .Content }}
-
-    <!-- Iterate over each match (header found in the content) -->
-    {{ range $index, $element := $matches }}
-
-      <!-- Determine the header level (2 or 3) -->
-      {{ $currentLevel := index (split $element " ") 0 | replaceRE "<h([2-3]).*" "$1" | int }}
-
-      <!-- Extract the ID attribute from the header -->
-      {{ $id := replaceRE "<h[2-3][^>]*id=\"([^\"]+)\".*" "$1" $element }}
-
-      <!-- Extract the text content of the header and decode HTML entities -->
-      {{ $text := replaceRE "<h[2-3][^>]*id=\"[^\"]+\"[^>]*>([^<]+)</h[2-3]>" "$1" $element | htmlUnescape }}
-
-      <!-- If the current header is an h2 -->
-      {{ if eq $currentLevel 2 }}
-        <!-- Close the previous section's list if it exists -->
-        {{ if $sectionCounter }}{{ if gt $subsectionCounter 0 }}</ol></li>{{ else }}</li>{{ end }}{{ end }}
-
-        <!-- Increment the section counter and reset the subsection counter -->
-        {{ $sectionCounter = add $sectionCounter 1 }}
-        {{ $subsectionCounter = 0 }}
-
-        <!-- Start a new list item for the section -->
-        <li><a href="#{{ $id }}">{{ $sectionCounter }}. {{ $text }}</a>
-
-      <!-- If the current header is an h3 -->
-      {{ else if eq $currentLevel 3 }}
-        <!-- Increment the subsection counter -->
-        {{ $subsectionCounter = add $subsectionCounter 1 }}
-
-        <!-- If it's the first subsection, start a nested ordered list -->
-        {{ if eq $subsectionCounter 1 }}<ol>{{ end }}
-
-        <!-- Add the subsection as a list item -->
-        <li><a href="#{{ $id }}">{{ $sectionCounter }}.{{ $subsectionCounter }} {{ $text }}</a></li>
-      {{ end }}
-    {{ end }}
-
-    <!-- Close any open lists at the end of the content iteration -->
-    {{ if gt $subsectionCounter 0 }}</ol></li>{{ else }}</li>{{ end }}
-  </ol>
+  {{ .TableOfContents }}
 </div>

@@ -68,18 +68,63 @@ Exporteer daarna het rekenblad als CSV via Bestand → Download → Comma-separa
 
 ## InDesign-sjabloon
 
-- Nieuw InDesign-document
-  - **100 × 150 mm**
-  - 2 pagina’s onder elkaar
-- Voorkant:
-  - Afbeelding van het kunstwerk
-- Achterkant:
-  - Logo (SVG)
-  - Tekstvelden voor Titel, Kunstenaar, Datum, Medium, Afmetingen
-- Werk met lagen:
-  - **Afbeeldingen**
-  - **Tekst**
-- Zorg voor duidelijke hiërarchie en verzorgde lay-out
+In deze stap maak je **één sjabloon** in Adobe InDesign dat later automatisch wordt ingevuld via Gegevenssamenvoeging. Dit sjabloon vormt de basis voor alle prentkaarten, dus werk nauwkeurig en consequent.
+
+### Documentinstellingen
+
+- Maak een **nieuw InDesign-document**
+- Formaat: **100 × 150 mm**
+- Aantal pagina’s: **2**
+- Zet de pagina’s **onder elkaar** (geen spreads)
+
+De twee pagina’s stellen samen één prentkaart voor:
+- Pagina 1 is de **voorkant**
+- Pagina 2 is de **achterkant**
+
+### Voorkant (pagina 1)
+
+- Plaats één afbeeldingskader dat het kunstwerk toont
+- Dit kader wordt later gekoppeld aan **@Kunstwerk**
+- Zorg dat de afbeelding correct wordt uitgesneden en schaalt zonder vervorming
+- De voorkant bevat **geen tekst**
+
+### Achterkant (pagina 2)
+
+- Plaats een afbeeldingskader voor het **KMSKA-logo (SVG)** (te koppelen aan **@Logo**)
+- Maak aparte tekstkaders voor:
+  - Titel
+  - Kunstenaar
+  - Datum
+  - Medium
+  - Afmetingen
+- Deze tekstkaders worden later gekoppeld aan de overeenkomstige kolommen uit het CSV-bestand
+- Voorzie voldoende **witruimte** zodat de kaart ook functioneert als echte prentkaart (**ruimte om iets te schrijven**)
+
+### Lagenstructuur
+
+Werk met duidelijke lagen om overzicht te bewaren:
+- **Afbeeldingen**  
+  - Kunstwerk
+  - Logo
+- **Tekst**  
+  - Alle tekstkaders
+
+Plaats elk object op de juiste laag en benoem lagen correct.
+
+### Vormgeving
+
+- Zorg voor een duidelijke **typografische hiërarchie**
+- Houd de lay-out sober, leesbaar en verzorgd
+- Het sjabloon moet werken voor alle kunstwerken, zonder handmatige aanpassingen
+- Gebruik uitlijning en consistente marges
+
+Controleer of elk kader correct staat en klaar is om gekoppeld te worden vóór je start met Gegevenssamenvoeging.
+
+### Opslaan
+
+- Controleer of de koppelingen naar de map **Links** correct zijn
+- Sla het document op als **VoornaamA_KMSKAkaarten.indd**
+- Bewaar het bestand in de hoofdmap **VoornaamA_KMSKAkaarten** in je OneDrive-map
 
 ## Gegevenssamenvoeging
 

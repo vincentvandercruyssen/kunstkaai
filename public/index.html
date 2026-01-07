@@ -20,7 +20,7 @@
     <option value="🌙">🌙</option>
   </select>
   <header>
-    <div>
+    <div class="fixed">
   
   <h1>
     
@@ -39,23 +39,8 @@ page
 <br>
     Home
   </h1>
-  
-  <ol>
-    
-    
-    
-
-    
-    
-
-    
-    
-
-    
-    </li>
-  </ol>
+  <nav id="TableOfContents"></nav>
 </div>
-
   </header>
   <main>
     
@@ -83,6 +68,13 @@ page
 
     h4 {
       font-size: 1.2rem;
+    }
+
+    main h1::before,
+    main h2::before,
+    main h3::before,
+    main h4::before {
+      content: none;
     }
 
     .kolommen {

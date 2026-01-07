@@ -19,7 +19,7 @@
     <option value="🌙">🌙</option>
   </select>
   <header>
-    <div>
+    <div class="fixed">
   
   <h1>
     
@@ -50,261 +50,33 @@ Datamanagement
 <br>
     Opdracht: KMSKAarten
   </h1>
-  
-  <ol>
-    
-    
-    
-
-    
-    
-
-    
-    
-
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-        
-        
-
-        
-        
-        
-
-        
-        <li><a href="#verzamelen-en-structuur">1. Verzamelen en structuur</a>
-
-      
-      
-    
-
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-        
-        
-
-        
-        <ol>
-
-        
-        <li><a href="#mappen">1.1 Mappen</a></li>
-      
-    
-
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-        
-        
-
-        
-        
-
-        
-        <li><a href="#rekenblad">1.2 Rekenblad</a></li>
-      
-    
-
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-        
-        
-
-        
-        
-
-        
-        <li><a href="#afbeeldingen-en-logo">1.3 Afbeeldingen en logo</a></li>
-      
-    
-
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-        
-        
-
-        
-        
-
-        
-        <li><a href="#exporteren-csv">1.4 Exporteren CSV</a></li>
-      
-    
-
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-        
-        </ol></li>
-
-        
-        
-        
-
-        
-        <li><a href="#indesign-sjabloon">2. InDesign-sjabloon</a>
-
-      
-      
-    
-
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-        
-        </li>
-
-        
-        
-        
-
-        
-        <li><a href="#gegevenssamenvoeging">3. Gegevenssamenvoeging</a>
-
-      
-      
-    
-
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-        
-        </li>
-
-        
-        
-        
-
-        
-        <li><a href="#export-en-structuur">4. Export en structuur</a>
-
-      
-      
-    
-
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-        
-        </li>
-
-        
-        
-        
-
-        
-        <li><a href="#puntenverdeling">5. Puntenverdeling</a>
-
-      
-      
-    
-
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-        
-        </li>
-
-        
-        
-        
-
-        
-        <li><a href="#bronnen">6. Bronnen</a>
-
-      
-      
-    
-
-    
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#verzamelen-en-structuur">Verzamelen en structuur</a>
+      <ul>
+        <li><a href="#mappen">Mappen</a></li>
+        <li><a href="#rekenblad">Rekenblad</a></li>
+        <li><a href="#afbeeldingen-en-logo">Afbeeldingen en logo</a></li>
+        <li><a href="#exporteren-csv">Exporteren CSV</a></li>
+      </ul>
     </li>
-  </ol>
+    <li><a href="#indesign-sjabloon">InDesign-sjabloon</a>
+      <ul>
+        <li><a href="#documentinstellingen">Documentinstellingen</a></li>
+        <li><a href="#voorkant-pagina-1">Voorkant (pagina 1)</a></li>
+        <li><a href="#achterkant-pagina-2">Achterkant (pagina 2)</a></li>
+        <li><a href="#lagenstructuur">Lagenstructuur</a></li>
+        <li><a href="#vormgeving">Vormgeving</a></li>
+        <li><a href="#opslaan">Opslaan</a></li>
+      </ul>
+    </li>
+    <li><a href="#gegevenssamenvoeging">Gegevenssamenvoeging</a></li>
+    <li><a href="#export-en-structuur">Export en structuur</a></li>
+    <li><a href="#puntenverdeling">Puntenverdeling</a></li>
+    <li><a href="#bronnen">Bronnen</a></li>
+  </ul>
+</nav>
 </div>
-
   </header>
   <main>
     
@@ -427,31 +199,70 @@ Datamanagement
 <p>Controleer alle gegevens (inclusief de bestandspaden in de kolommen @Kunstwerk en @Logo).</p>
 <p>Exporteer daarna het rekenblad als CSV via Bestand → Download → Comma-separated values (.csv). Plaats het CSV-bestand (<strong>VoornaamA_KMSKAkaarten.csv</strong>) in de opdrachtmap VoornaamA_KMSKAkaarten.</p>
 <h2 id="indesign-sjabloon">InDesign-sjabloon</h2>
+<p>In deze stap maak je <strong>één sjabloon</strong> in Adobe InDesign dat later automatisch wordt ingevuld via Gegevenssamenvoeging. Dit sjabloon vormt de basis voor alle prentkaarten, dus werk nauwkeurig en consequent.</p>
+<h3 id="documentinstellingen">Documentinstellingen</h3>
 <ul>
-<li>Nieuw InDesign-document
+<li>Maak een <strong>nieuw InDesign-document</strong></li>
+<li>Formaat: <strong>100 × 150 mm</strong></li>
+<li>Aantal pagina’s: <strong>2</strong></li>
+<li>Zet de pagina’s <strong>onder elkaar</strong> (geen spreads)</li>
+</ul>
+<p>De twee pagina’s stellen samen één prentkaart voor:</p>
 <ul>
-<li><strong>100 × 150 mm</strong></li>
-<li>2 pagina’s onder elkaar</li>
+<li>Pagina 1 is de <strong>voorkant</strong></li>
+<li>Pagina 2 is de <strong>achterkant</strong></li>
+</ul>
+<h3 id="voorkant-pagina-1">Voorkant (pagina 1)</h3>
+<ul>
+<li>Plaats één afbeeldingskader dat het kunstwerk toont</li>
+<li>Dit kader wordt later gekoppeld aan <strong>@Kunstwerk</strong></li>
+<li>Zorg dat de afbeelding correct wordt uitgesneden en schaalt zonder vervorming</li>
+<li>De voorkant bevat <strong>geen tekst</strong></li>
+</ul>
+<h3 id="achterkant-pagina-2">Achterkant (pagina 2)</h3>
+<ul>
+<li>Plaats een afbeeldingskader voor het <strong>KMSKA-logo (SVG)</strong> (te koppelen aan <strong>@Logo</strong>)</li>
+<li>Maak aparte tekstkaders voor:
+<ul>
+<li>Titel</li>
+<li>Kunstenaar</li>
+<li>Datum</li>
+<li>Medium</li>
+<li>Afmetingen</li>
 </ul>
 </li>
-<li>Voorkant:
+<li>Deze tekstkaders worden later gekoppeld aan de overeenkomstige kolommen uit het CSV-bestand</li>
+<li>Voorzie voldoende <strong>witruimte</strong> zodat de kaart ook functioneert als echte prentkaart (<strong>ruimte om iets te schrijven</strong>)</li>
+</ul>
+<h3 id="lagenstructuur">Lagenstructuur</h3>
+<p>Werk met duidelijke lagen om overzicht te bewaren:</p>
 <ul>
-<li>Afbeelding van het kunstwerk</li>
+<li><strong>Afbeeldingen</strong>
+<ul>
+<li>Kunstwerk</li>
+<li>Logo</li>
 </ul>
 </li>
-<li>Achterkant:
+<li><strong>Tekst</strong>
 <ul>
-<li>Logo (SVG)</li>
-<li>Tekstvelden voor Titel, Kunstenaar, Datum, Medium, Afmetingen</li>
+<li>Alle tekstkaders</li>
 </ul>
 </li>
-<li>Werk met lagen:
-<ul>
-<li><strong>Afbeeldingen</strong></li>
-<li><strong>Tekst</strong></li>
 </ul>
-</li>
-<li>Zorg voor duidelijke hiërarchie en verzorgde lay-out</li>
+<p>Plaats elk object op de juiste laag en benoem lagen correct.</p>
+<h3 id="vormgeving">Vormgeving</h3>
+<ul>
+<li>Zorg voor een duidelijke <strong>typografische hiërarchie</strong></li>
+<li>Houd de lay-out sober, leesbaar en verzorgd</li>
+<li>Het sjabloon moet werken voor alle kunstwerken, zonder handmatige aanpassingen</li>
+<li>Gebruik uitlijning en consistente marges</li>
+</ul>
+<p>Controleer of elk kader correct staat en klaar is om gekoppeld te worden vóór je start met Gegevenssamenvoeging.</p>
+<h3 id="opslaan">Opslaan</h3>
+<ul>
+<li>Controleer of de koppelingen naar de map <strong>Links</strong> correct zijn</li>
+<li>Sla het document op als <strong>VoornaamA_KMSKAkaarten.indd</strong></li>
+<li>Bewaar het bestand in de hoofdmap <strong>VoornaamA_KMSKAkaarten</strong> in je OneDrive-map</li>
 </ul>
 <h2 id="gegevenssamenvoeging">Gegevenssamenvoeging</h2>
 <ul>
