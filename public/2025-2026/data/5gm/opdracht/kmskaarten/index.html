@@ -70,7 +70,15 @@ Datamanagement
         <li><a href="#opslaan">Opslaan</a></li>
       </ul>
     </li>
-    <li><a href="#gegevenssamenvoeging">Gegevenssamenvoeging</a></li>
+    <li><a href="#gegevenssamenvoeging">Gegevenssamenvoeging</a>
+      <ul>
+        <li><a href="#csv-koppelen">CSV koppelen</a></li>
+        <li><a href="#kaders-koppelen">Kaders koppelen</a></li>
+        <li><a href="#voorvertoning-controleren">Voorvertoning controleren</a></li>
+        <li><a href="#problemen-met-speciale-tekens">Problemen met speciale tekens</a></li>
+        <li><a href="#samengevoegd-document-maken">Samengevoegd document maken</a></li>
+      </ul>
+    </li>
     <li><a href="#export-en-structuur">Export en structuur</a></li>
     <li><a href="#puntenverdeling">Puntenverdeling</a></li>
     <li><a href="#bronnen">Bronnen</a></li>
@@ -265,15 +273,70 @@ Datamanagement
 <li>Bewaar het bestand in de hoofdmap <strong>VoornaamA_KMSKAkaarten</strong> in je OneDrive-map</li>
 </ul>
 <h2 id="gegevenssamenvoeging">Gegevenssamenvoeging</h2>
+<p>In deze stap gebruik je <strong>Gegevenssamenvoeging (Data Merge)</strong> om je InDesign-sjabloon automatisch te vullen met de gegevens uit je CSV-bestand. Je koppelt tekst- en afbeeldingskaders aan de juiste kolommen en genereert zo alle prentkaarten in één keer.</p>
+<h3 id="csv-koppelen">CSV koppelen</h3>
 <ul>
-<li>Laad het <strong>CSV-bestand</strong> in InDesign via <strong>Data Merge</strong></li>
-<li>Koppel tekst en afbeeldingen aan de juiste velden</li>
-<li>Controleer met <strong>Voorvertoning</strong></li>
-<li>Genereer een <strong>samengevoegd document</strong>
+<li>Open je <strong>InDesign-sjabloon</strong></li>
+<li>Ga naar <strong>Window → Utilities → Data Merge</strong></li>
+<li>Kies <strong>Select Data Source&hellip;</strong></li>
+<li>Selecteer <strong>VoornaamA_KMSKAkaarten.csv</strong></li>
+</ul>
+<p>De kolommen uit je rekenblad verschijnen nu als velden in het Data Merge-paneel.</p>
+<h3 id="kaders-koppelen">Kaders koppelen</h3>
 <ul>
-<li>Resultaat: <strong>24 pagina’s</strong></li>
+<li>Plaats de tekstcursor in een <strong>tekstkader</strong></li>
+<li>Klik op het juiste veld (Titel, Kunstenaar, Datum,&hellip;)</li>
+<li>Koppel afbeeldingskaders aan:
+<ul>
+<li><strong>@Kunstwerk</strong> (voorkant)</li>
+<li><strong>@Logo</strong> (achterkant)</li>
 </ul>
 </li>
+</ul>
+<p>Elk kader mag slechts <strong>één veld</strong> bevatten.</p>
+<h3 id="voorvertoning-controleren">Voorvertoning controleren</h3>
+<ul>
+<li>Activeer <strong>Voorvertoning</strong> in het Data Merge-paneel</li>
+<li>Blader door de records</li>
+<li>Controleer:
+<ul>
+<li>Tekstinhoud</li>
+<li>Afbeeldingen</li>
+<li>Uitlijning en witruimte</li>
+</ul>
+</li>
+</ul>
+<p>Pas het sjabloon aan indien nodig.</p>
+<h3 id="problemen-met-speciale-tekens">Problemen met speciale tekens</h3>
+<p>Bij het inschakelen van Voorvertoning kunnen <strong>accenten of speciale tekens</strong> fout verschijnen (bv. √ of vreemde symbolen).<br>
+Dit is een <strong>bekende bug in InDesign Data Merge</strong> en ligt niet aan je spreadsheet.</p>
+<p>De meest eenvoudige en betrouwbare oplossing is het <strong>converteren van je CSV-bestand naar UTF-16-codering</strong>.</p>
+<p>Volg hiervoor deze stappen:</p>
+<ul>
+<li>Ga naar <a href="" target="_blank" rel="noopener noreferrer">https://www.freeformatter.com/convert-file-encoding.html</a></li>
+<li>Upload je CSV-bestand (VoornaamA_KMSKAkaarten.csv)</li>
+<li>Laat <strong>Original encoding</strong> staan op <em>Auto-detect</em></li>
+<li>Kies bij <strong>Target encoding</strong> <strong>UTF-16</strong></li>
+<li>Klik op <strong>Convert file encoding</strong></li>
+<li>Plaats dit nieuwe bestand opnieuw in je map VoornaamA_KMSKAkaarten</li>
+<li>Ga terug naar <strong>Adobe InDesign</strong></li>
+<li>Laad het gecorrigeerde CSV-bestand opnieuw in via <strong>Data Merge</strong></li>
+</ul>
+<p>De tekst zou nu <strong>correct en leesbaar</strong> moeten verschijnen, zonder foutieve symbolen.</p>
+<h3 id="samengevoegd-document-maken">Samengevoegd document maken</h3>
+<ul>
+<li>Klik op <strong>Samengevoegd document maken</strong></li>
+<li>Kies:
+<ul>
+<li>All records</li>
+<li>Nieuwe pagina per record</li>
+</ul>
+</li>
+</ul>
+<p>Resultaat:</p>
+<ul>
+<li><strong>24 pagina’s</strong></li>
+<li>Eén nieuw InDesign-bestand met alle prentkaarten dat je apart opslaat</li>
 </ul>
 <h2 id="export-en-structuur">Export en structuur</h2>
 <p>Bewaar alles in <strong>VoornaamA_KMSKAkaarten</strong>:</p>

@@ -128,11 +128,68 @@ Controleer of elk kader correct staat en klaar is om gekoppeld te worden vóór 
 
 ## Gegevenssamenvoeging
 
-- Laad het **CSV-bestand** in InDesign via **Data Merge**
-- Koppel tekst en afbeeldingen aan de juiste velden
-- Controleer met **Voorvertoning**
-- Genereer een **samengevoegd document**
-  - Resultaat: **24 pagina’s**
+In deze stap gebruik je **Gegevenssamenvoeging (Data Merge)** om je InDesign-sjabloon automatisch te vullen met de gegevens uit je CSV-bestand. Je koppelt tekst- en afbeeldingskaders aan de juiste kolommen en genereert zo alle prentkaarten in één keer.
+
+### CSV koppelen
+
+- Open je **InDesign-sjabloon**
+- Ga naar **Window → Utilities → Data Merge**
+- Kies **Select Data Source...**
+- Selecteer **VoornaamA_KMSKAkaarten.csv**
+
+De kolommen uit je rekenblad verschijnen nu als velden in het Data Merge-paneel.
+
+### Kaders koppelen
+
+- Plaats de tekstcursor in een **tekstkader**
+- Klik op het juiste veld (Titel, Kunstenaar, Datum,...)
+- Koppel afbeeldingskaders aan:
+  - **@Kunstwerk** (voorkant)
+  - **@Logo** (achterkant)
+
+Elk kader mag slechts **één veld** bevatten.
+
+### Voorvertoning controleren
+
+- Activeer **Voorvertoning** in het Data Merge-paneel
+- Blader door de records
+- Controleer:
+  - Tekstinhoud
+  - Afbeeldingen
+  - Uitlijning en witruimte
+
+Pas het sjabloon aan indien nodig.
+
+### Problemen met speciale tekens
+
+Bij het inschakelen van Voorvertoning kunnen **accenten of speciale tekens** fout verschijnen (bv. √ of vreemde symbolen).  
+Dit is een **bekende bug in InDesign Data Merge** en ligt niet aan je spreadsheet.
+
+De meest eenvoudige en betrouwbare oplossing is het **converteren van je CSV-bestand naar UTF-16-codering**.
+
+Volg hiervoor deze stappen:
+
+* Ga naar [https://www.freeformatter.com/convert-file-encoding.html]()
+* Upload je CSV-bestand (VoornaamA_KMSKAkaarten.csv)
+* Laat **Original encoding** staan op *Auto-detect*
+* Kies bij **Target encoding** **UTF-16**
+* Klik op **Convert file encoding**
+* Plaats dit nieuwe bestand opnieuw in je map VoornaamA_KMSKAkaarten
+* Ga terug naar **Adobe InDesign**
+* Laad het gecorrigeerde CSV-bestand opnieuw in via **Data Merge**
+
+De tekst zou nu **correct en leesbaar** moeten verschijnen, zonder foutieve symbolen.
+
+### Samengevoegd document maken
+
+- Klik op **Samengevoegd document maken**
+- Kies:
+  - All records
+  - Nieuwe pagina per record
+
+Resultaat:
+- **24 pagina’s**
+- Eén nieuw InDesign-bestand met alle prentkaarten dat je apart opslaat
 
 ## Export en structuur
 
