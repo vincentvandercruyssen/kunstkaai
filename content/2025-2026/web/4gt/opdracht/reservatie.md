@@ -6,7 +6,7 @@ draft = false
 
 ## Opgave
 
-In deze opdracht ga je een reservatie-formulier maken voor een fictief bedrijf. Het formulier moet gebruiksvriendelijk en visueel aantrekkelijk zijn, met een heldere uitstraling. Het formulier bevat verschillende invoervelden, waaronder tekstvelden, een e-mailveld, een datum- en tijdselector, een veld voor een telefoonnummer, een tekstgebied en een verzendknop. Gebruik browservalidatie met `required` en correcte `type`-waarden, zodat gebruikers alle vereiste informatie invullen.
+In deze opdracht ga je een reservatie-formulier maken voor een fictief restaurant. Het formulier moet gebruiksvriendelijk en visueel aantrekkelijk zijn, met een heldere uitstraling. Het formulier bevat verschillende invoervelden, waaronder tekstvelden, een e-mailveld, een datum- en tijdselector, een veld voor een telefoonnummer, een tekstgebied en een verzendknop. Gebruik browservalidatie met `required` en correcte `type`-waarden, zodat gebruikers alle vereiste informatie invullen.
 
 Je gaat het formulier stylen met CSS. 
 
