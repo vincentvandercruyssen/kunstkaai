@@ -141,8 +141,17 @@ pre {
   margin-bottom: var(--margin-bottom);
 }
 
-h2, h3 {
+h2,
+h3 {
   margin-top: var(--margin-top);
+}
+
+h1+h2 {
+  margin-top: 0;
+}
+
+h2+h3 {
+  margin-top: 0;
 }
 
 details:last-of-type {
