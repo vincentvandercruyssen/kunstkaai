@@ -24,9 +24,10 @@ responder-p:Kunstkaai::200
 {{< /fontshowcase >}}
 
 {{< table_layoutfixed >}}
-|   |   |   |   |
-|---|---|---|---|
-|Serif {{< br >}} *schreef*|Sans-serif {{< br >}}*schreefloos*|Script {{< br >}}*kalligrafisch*|Handwritten {{< br >}}*handgeschreven*|
+|           |               |                 |                  |
+|-----------|---------------|-----------------|------------------|
+| Serif     | Sans-serif    | Script          | Handwritten      |
+| *schreef* | *schreefloos* | *kalligrafisch* | *handgeschreven* |
 
 ## Typografische uitdaging
 

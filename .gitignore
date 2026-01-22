@@ -1,1 +1,11 @@
-content/.DS_Store
+# Hugo build output
+/public/
+/resources/
+
+# Node / tooling
+/node_modules/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/

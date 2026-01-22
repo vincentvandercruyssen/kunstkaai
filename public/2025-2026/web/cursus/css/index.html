@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
+<html lang="nl" dir="ltr">
 <head><script src="/kunstkaai/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=kunstkaai/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
@@ -74,8 +74,6 @@ Webontwikkeling
         <li><a href="#background-image">background-image</a></li>
         <li><a href="#color">color</a></li>
         <li><a href="#font">font</a></li>
-        <li><a href="#font-face">@font-face</a></li>
-        <li><a href="#import">@import</a></li>
       </ul>
     </li>
     <li><a href="#flow-lay-out">Flow Lay-out</a>
@@ -88,6 +86,7 @@ Webontwikkeling
         <li><a href="#padding">padding</a></li>
         <li><a href="#border">border</a></li>
         <li><a href="#margin">margin</a></li>
+        <li><a href="#box-sizing">box-sizing</a></li>
       </ul>
     </li>
     <li><a href="#eenheden">Eenheden</a>
@@ -96,10 +95,16 @@ Webontwikkeling
         <li><a href="#relatieve-eenheden">Relatieve eenheden</a></li>
       </ul>
     </li>
-    <li><a href="#box-sizing">box-sizing</a></li>
     <li><a href="#flexbox">Flexbox</a>
       <ul>
         <li></li>
+      </ul>
+    </li>
+    <li><a href="#css-regels">CSS-regels</a>
+      <ul>
+        <li><a href="#font-face">@font-face</a></li>
+        <li><a href="#import">@import</a></li>
+        <li><a href="#media">@media</a></li>
       </ul>
     </li>
     <li><a href="#bronnen">Bronnen</a>
@@ -216,7 +221,6 @@ Webontwikkeling
 </span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">color</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">red</span><span style="color:#908caa">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
 </span></span></code></pre></div><h3 id="combinaties">Combinaties</h3>
-<h4 id="afstammeling-combinatie">Afstammeling combinatie</h4>
 <p>Je kan meer verfijnde selecties maken door een spatie te gebruiken om afstammelingen van een element te selecteren. Hieronder selecteer ik bijvoorbeeld alleen de list-items binnen nav-elementen.</p>
 <div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ea9a97">nav</span> <span style="color:#ea9a97">li</span> <span style="color:#908caa">{</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">display</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">inline-block</span><span style="color:#908caa">;</span>
@@ -227,7 +231,7 @@ Webontwikkeling
 </span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">padding</span><span style="color:#908caa">:</span> <span style="color:#f6c177">2</span><span style="color:#3e8fb0">vh</span> <span style="color:#f6c177">4</span><span style="color:#3e8fb0">vw</span><span style="color:#908caa">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
 </span></span></code></pre></div><h2 id="css-eigenschappen">CSS eigenschappen</h2>
-<p>CSS eigenschappen of properties zijn de stylingsmogelijkheden die je hebt binnen CSS. Ze bepalen hoe je HTML-elementen kunt opmaken, zoals de kleur, het lettertype, de achtergrond, de margins en de padding.</p>
+<p>CSS eigenschappen of properties zijn de stylingsmogelijkheden die je hebt binnen CSS. Ze bepalen hoe je HTML-elementen kunt opmaken, zoals de kleur, het lettertype, de achtergrond, de witruimte in je lay-out.</p>
 <h4 id="de-meest-gebruikte-css-eigenschappen">De meest gebruikte CSS eigenschappen</h4>
 <div class="table_layoutfixed"></div>
 <table>
@@ -250,54 +254,44 @@ Webontwikkeling
           <td>cursor</td>
       </tr>
       <tr>
-          <td>font</td>
-          <td>top</td>
+          <td>font-family</td>
+          <td>inset (top, right, bottom, left)</td>
           <td>opacity</td>
       </tr>
       <tr>
           <td>text-align</td>
-          <td>right</td>
+          <td>display</td>
           <td>filter</td>
       </tr>
       <tr>
           <td>line-height</td>
-          <td>bottom</td>
-          <td>@font-face</td>
-      </tr>
-      <tr>
-          <td>text-transform</td>
-          <td>left</td>
-          <td>@import</td>
-      </tr>
-      <tr>
-          <td>text-decoration</td>
-          <td>display</td>
-          <td>@media</td>
-      </tr>
-      <tr>
-          <td>letter-spacing</td>
           <td>margin</td>
           <td>transform</td>
       </tr>
       <tr>
-          <td>word-spacing</td>
+          <td>text-transform</td>
           <td>border</td>
           <td>animation</td>
       </tr>
       <tr>
-          <td>list-style</td>
+          <td>text-decoration</td>
           <td>width</td>
-          <td></td>
+          <td>transition</td>
       </tr>
       <tr>
-          <td></td>
+          <td>letter-spacing</td>
           <td>height</td>
-          <td></td>
+          <td>aspect-ratio</td>
       </tr>
       <tr>
-          <td></td>
+          <td>word-spacing</td>
           <td>padding</td>
-          <td></td>
+          <td>object-fit</td>
+      </tr>
+      <tr>
+          <td>list-style</td>
+          <td>gap</td>
+          <td>user-select</td>
       </tr>
   </tbody>
 </table>
@@ -317,10 +311,10 @@ Webontwikkeling
 </span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">background-size</span><span style="color:#908caa">:</span> <span style="color:#f6c177">200</span><span style="color:#3e8fb0">px</span><span style="color:#908caa">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
 </span></span></code></pre></div><h3 id="background-image">background-image</h3>
-<p>De eigenschap <code>background-image</code> stelt één of meer achtergrondafbeeldingen in op een element. De eigenschappen gekoppeld aan <code>background-image</code> worden gebruikt om de afbeelding in de achtergrond van een element op verschillende manieren te bewerken.</p>
-<p><strong>Background-repeat</strong>: De eigenschap <code>background-repeat</code> wordt gebruikt om aan te geven hoe een achtergrondbeeld moet worden herhaald. Een achtergrondafbeelding kan langs de horizontale en verticale as worden herhaald, of helemaal niet. Zo zijn er onder andere de waarden <code>repeat</code>, <code>repeat-x</code>, <code>repeat-y</code>, en <code>no-repeat</code>.</p>
-<p><strong>Background-position</strong>: De eigenschap <code>background-position</code> wordt gebruikt om de positie van een achtergrondbeeld te specificeren. Zo zijn er de waarden <code>left</code>, <code>right</code>, <code>top</code>, <code>bottom</code>, <code>center</code>, en combinaties daarvan zoals <code>left center</code>, <code>right center</code>, etc.</p>
-<p><strong>Background-size</strong>: De eigenschap <code>background-size</code> wordt gebruikt om aan te geven hoe een achtergrondbeeld moet worden geschaald. De afbeelding kan behouden blijven in de oorspronkelijke grootte, uitgerekt of beperkt worden om in de beschikbare ruimte te passen. Je kunt onder andere de waarden <code>cover</code> en <code>contain</code> gebruiken.</p>
+<p>De eigenschap <code>background-image</code> stelt één of meerdere achtergrondafbeeldingen in op een element. De eigenschappen gekoppeld aan <code>background-image</code> worden gebruikt om de afbeelding in de achtergrond van een element op verschillende manieren te bewerken.</p>
+<p><code>background-repeat</code> De eigenschap <code>background-repeat</code> wordt gebruikt om aan te geven hoe een achtergrondbeeld moet worden herhaald. Een achtergrondafbeelding kan langs de horizontale en verticale as worden herhaald, of helemaal niet. Zo zijn er onder andere de waarden <code>repeat</code>, <code>repeat-x</code>, <code>repeat-y</code>, en <code>no-repeat</code>.</p>
+<p><code>background-position</code> De eigenschap <code>background-position</code> wordt gebruikt om de positie van een achtergrondbeeld te specificeren. Zo zijn er de waarden <code>left</code>, <code>right</code>, <code>top</code>, <code>bottom</code>, <code>center</code>, en combinaties daarvan zoals <code>left center</code>, <code>right center</code>, enzoverder.</p>
+<p><code>background-size</code> De eigenschap <code>background-size</code> wordt gebruikt om aan te geven hoe een achtergrondbeeld moet worden vergroot of verkleind. De afbeelding kan behouden blijven in de oorspronkelijke grootte of getransformeerd worden met lengtemaateenheden (<code>px</code>, <code>%</code>, <code>vw</code>,&hellip;). Ze kunnen ook beperkt worden om in de beschikbare ruimte te passen, met onder andere de waarden <code>cover</code> en <code>contain</code>.</p>
 <h4 id="background-image-eigenschappen">background-image eigenschappen</h4>
 <iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/RwjNrbN" frameborder="0" style="width: 100%; aspect-ratio: ;" height="440"></iframe>
 <h3 id="color">color</h3>
@@ -445,7 +439,7 @@ Webontwikkeling
 
 
     
-    <img src="http://localhost:1313/kunstkaai/img/web/colors-additive-rgb.svg" width="100%" alt="colors-additive-rgb" loading="lazy" >
+    <img src="http://localhost:1313/kunstkaai/img/web/colors-additive-rgb.svg" width="500" alt="colors-additive-rgb" loading="lazy" >
     
     
 
@@ -465,7 +459,7 @@ Webontwikkeling
 
 
     
-    <img src="http://localhost:1313/kunstkaai/img/web/colors-subtractive-cmyk.svg" width="100%" alt="colors-subtractive-cmyk" loading="lazy" >
+    <img src="http://localhost:1313/kunstkaai/img/web/colors-subtractive-cmyk.svg" width="500" alt="colors-subtractive-cmyk" loading="lazy" >
     
     
 
@@ -621,46 +615,24 @@ Webontwikkeling
 <li><a href="https://fonts.adobe.com/" target="_blank" rel="noopener noreferrer">Adobe Fonts</a></li>
 <li><a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a></li>
 </ul>
-<h3 id="font-face">@font-face</h3>
-<p><code>@font-face</code> specificeert een aangepast lettertype waarmee tekst moet worden weergegeven; het lettertype kan worden geladen vanaf een externe server of een lokaal geïnstalleerd lettertype op de eigen computer van de gebruiker.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">@</span><span style="color:#3e8fb0">font-face</span> <span style="color:#908caa">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">font-family</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#34;Open Sans&#34;</span><span style="color:#908caa">;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">font-weight</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">400</span><span style="color:#908caa">;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">src</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">url</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#34;/fonts/OpenSans-Regular-webfont.woff2&#34;</span><span style="color:#908caa">)</span> <span style="color:#ea9a97">format</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#34;woff2&#34;</span><span style="color:#908caa">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
-</span></span></code></pre></div><h3 id="import">@import</h3>
-<p>De <code>@import</code> wordt gebruikt om stijlregels uit andere stylesheets te importeren, bijvoorbeeld een verzameling fonts.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">@</span><span style="color:#3e8fb0">import</span> <span style="color:#ea9a97">url</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#39;https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&amp;display=swap&#39;</span><span style="color:#908caa">)</span><span style="color:#908caa">;</span>
-</span></span></code></pre></div><h2 id="flow-lay-out">Flow Lay-out</h2>
+<h2 id="flow-lay-out">Flow Lay-out</h2>
 <p>Flow lay-out is de manier waarop block- en inline-elementen op een pagina worden weergegeven. Elk HTML-element heeft een standaardweergave (<em>display, inline,&hellip;</em>), deze eigenschap is afhankelijk van het type element en kan worden aangepast.</p>
 <p>In de flow lay-out worden inline-elementen weergegeven in de inline-richting, dat wil zeggen in de richting van een zin of een regel. Na elkaar van links naar rechts.</p>
 <p>Blokelementen worden onder elkaar weergegeven, zoals alinea&rsquo;s. Onder elkaar van boven naar onder.</p>
 <h3 id="display">display</h3>
-<p>De <code>display</code> eigenschap stelt in of een element wordt behandeld als een blok- of inline-element in de normale flow lay-out. Het kan ook onderliggende elementen (<em>children</em>) in een bepaald lay-outtype gieten, zoals bij grid en flex.</p>
+<p>De <code>display</code> eigenschap stelt in of een element wordt behandeld als een blok- of inline-element in de normale flow lay-out. Het kan ook onderliggende elementen (<em>children</em>) in een bepaald lay-outtype gieten, zoals bij <code>grid</code> en <code>flex</code>.</p>
 <ul>
-<li><strong>display: none;</strong> Verbergt een element (en onderliggende geneste elementen).</li>
-<li><strong>display: inline;</strong> Elementen worden geplaatst op dezelfde regel als de omringende inhoud. Een inline element begint niet op een nieuwe regel en neemt slechts zoveel breedte in beslag als nodig is.</li>
-<li><strong>display: block;</strong> Elementen worden geplaatst op een nieuwe regel. Een element op blokniveau neemt altijd de volledige beschikbare ruimte in beslag.</li>
-<li><strong>display: inline-block;</strong> Elementen worden geplaatst op dezelfde regel als de omringende tekst, maar kunnen worden aangepast in breedte en hoogte.</li>
+<li><code>display: none;</code> Verbergt een element (en onderliggende geneste elementen).</li>
+<li><code>display: inline;</code> Elementen worden geplaatst op dezelfde regel als de omringende inhoud. Een inline element begint niet op een nieuwe regel en neemt slechts zoveel breedte in beslag als nodig is.</li>
+<li><code>display: block;</code> Elementen worden geplaatst op een nieuwe regel. Een element op blokniveau neemt altijd de volledige beschikbare ruimte in beslag.</li>
+<li><code>display: inline-block;</code> Elementen worden geplaatst op dezelfde regel als de omringende tekst, maar kunnen worden aangepast in breedte en hoogte.</li>
 </ul>
-<div class="table_layoutfixed"></div>
-<table>
-  <thead>
-      <tr>
-          <th></th>
-          <th></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ <br>░░░░░░░░░░░░░░░░ ← <code>inline</code> richting → <br>░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ <br></td>
-          <td>↑ <br> <code>block</code> richting <br> ↓</td>
-      </tr>
-  </tbody>
-</table>
-<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/QWOwbWJ" frameborder="0" style="width: 100%; aspect-ratio: ;" height="548"></iframe>
-<h4 id="flow-lay-out-navigatie-met-lis-en-as">Flow lay-out navigatie met li&rsquo;s en a&rsquo;s</h4>
-<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/bGMZyde" frameborder="0" style="width: 100%; aspect-ratio: ;" height="480"></iframe>
+<pre tabindex="0"><code>→ → inline → → ░░░░░░░░░░░░░░░░░░░ ↓↓↓↓↓ ░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ block ░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ↓↓↓↓↓ ░░░░░░░░░░░░░░░░░░░░░░░
+</code></pre><iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/QWOwbWJ" frameborder="0" style="width: 100%; aspect-ratio: ;" height="500"></iframe>
+<h4 id="flow-lay-out-navigatie">Flow lay-out navigatie</h4>
+<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/bGMZyde" frameborder="0" style="width: 100%; aspect-ratio: ;" height="540"></iframe>
 <h2 id="box-model">Box Model</h2>
 <p>Het Box model is de manier van weergeven van HTML-elementen in de webbrowser. Het bevat vier verschillende onderdelen: de content (<em>inhoud</em>), de padding (<em>opvulling</em>), de border (<em>rand</em>), en de margin (<em>marge</em>). Deze onderdelen kunnen verschillende eigenschappen hebben, zoals afmetingen, kleuren, en randstijlen.</p>
 
@@ -675,7 +647,7 @@ Webontwikkeling
 
 
 
-<img src="http://localhost:1313/kunstkaai/img/web/cursus-css-box-model-1_hu_8cd895e7b4e09492.webp" alt="cursus-css-box-model-1" loading="lazy">
+<img src="http://localhost:1313/kunstkaai/img/web/cursus-css-box-model-1_hu_74e8cc7ca8903f2b.webp" alt="cursus-css-box-model-1" loading="lazy">
 
 
 
@@ -714,7 +686,13 @@ Webontwikkeling
 <h4 id="horizontale-centrering">Horizontale centrering</h4>
 <p>Om iets horizontaal te centreren, kun je <code>display: flex</code> en <code>justify-content: center</code> gebruiken. Ook kun je <code>margin: 0 auto</code> toepassen om een element binnen het bovenliggende element te centreren.</p>
 <h4 id="centreren-met-margin">Centreren met margin</h4>
-<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/ZERGera" frameborder="0" style="width: 100%; aspect-ratio: ;" height="330"></iframe>
+<iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/ZERGera" frameborder="0" style="width: 100%; aspect-ratio: ;" height="390"></iframe>
+<h3 id="box-sizing">box-sizing</h3>
+<p>De <code>box-sizing</code> eigenschap wordt gebruikt om te definiëren hoe het CSS box-model werkt. Bij het berekenen van de breedte en hoogte van een element wordt standaard de inhoud, de paddings, en de borders meegeteld.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">*</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">box-sizing</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">border-box</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/rNYBwXP" frameborder="0" style="width: 100%; aspect-ratio: ;" height="550"></iframe>
 <h2 id="eenheden">Eenheden</h2>
 <p>Er zijn in CSS verschillende maateenheden om afmetingen aan te passen. Veel van de eigenschappen kunnen veranderd worden met deze eenheden, zoals <code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code>, en <code>font-size</code>.</p>
 <h3 id="absolute-eenheden">Absolute eenheden</h3>
@@ -756,12 +734,6 @@ Webontwikkeling
   </tbody>
 </table>
 <iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/bGMZJBP" frameborder="0" style="width: 100%; aspect-ratio: ;" height="520"></iframe>
-<h2 id="box-sizing">box-sizing</h2>
-<p>De <code>box-sizing</code> eigenschap wordt gebruikt om te definiëren hoe het CSS box-model werkt. Bij het berekenen van de breedte en hoogte van een element wordt standaard de inhoud, de paddings, en de borders meegeteld.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">*</span> <span style="color:#908caa">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#3e8fb0">box-sizing</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">border-box</span><span style="color:#908caa">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
-</span></span></code></pre></div><iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/rNYBwXP" frameborder="0" style="width: 100%; aspect-ratio: ;" height="548"></iframe>
 <h2 id="flexbox">Flexbox</h2>
 <p>Flexbox is een CSS lay-outmodel dat een efficiëntere manier biedt om ruimte tussen elementen op een pagina in te delen, uit te lijnen, en te verdelen. Je geeft het bovenliggende element een <code>display: flex</code> om een flex-container te maken.</p>
 <p>In het flexbox lay-outmodel kunnen de kinderen van een flex-container in elke richting worden opgesteld.</p>
@@ -1003,6 +975,45 @@ Dit kan de uitlijning op de dwarsas overschrijven voor individuele flex-items.
 <iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/eYemZLZ" frameborder="0" style="width: 100%; aspect-ratio: ;" height="480"></iframe>
 <h4 id="flexbox-eigenschappen-demo">Flexbox Eigenschappen (Demo)</h4>
 <iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/MWOYyGY" frameborder="0" style="width: 100%; aspect-ratio: ;" height="800"></iframe>
+<h2 id="css-regels">CSS-regels</h2>
+<h3 id="font-face">@font-face</h3>
+<p><code>@font-face</code> specificeert een aangepast lettertype waarmee tekst moet worden weergegeven; het lettertype kan worden geladen vanaf een externe server of een lokaal geïnstalleerd lettertype op de eigen computer van de gebruiker.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">@</span><span style="color:#3e8fb0">font-face</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">font-family</span><span style="color:#908caa">:</span> <span style="color:#f6c177">&#34;Open Sans&#34;</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">font-weight</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">400</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">src</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">url</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#34;/fonts/OpenSans-Regular-webfont.woff2&#34;</span><span style="color:#908caa">)</span> <span style="color:#ea9a97">format</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#34;woff2&#34;</span><span style="color:#908caa">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><h3 id="import">@import</h3>
+<p>De <code>@import</code> wordt gebruikt om stijlregels uit andere stylesheets te importeren, bijvoorbeeld een verzameling fonts.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">@</span><span style="color:#3e8fb0">import</span> <span style="color:#ea9a97">url</span><span style="color:#908caa">(</span><span style="color:#f6c177">&#39;https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&amp;display=swap&#39;</span><span style="color:#908caa">)</span><span style="color:#908caa">;</span>
+</span></span></code></pre></div><h3 id="media">@media</h3>
+<p>Met <code>@media</code> kun je CSS-regels <strong>voorwaardelijk toepassen</strong>, afhankelijk van de eigenschappen van het apparaat of het venster waarin de website wordt bekeken. Dit wordt vooral gebruikt om responsive lay-outs te maken.</p>
+<p>Met andere woorden: dezelfde HTML-structuur kan er anders uitzien op een smartphone, tablet of groot scherm, zonder extra HTML te schrijven.</p>
+<p>Een <code>@media</code>-regel bestaat uit:</p>
+<ul>
+<li>Een <strong>media condition</strong> (bijvoorbeeld een maximale schermbreedte).</li>
+<li>Een <strong>declaratieblok</strong> met gewone CSS-regels.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e0def4;background-color:#232136;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#908caa">@</span><span style="color:#3e8fb0">media</span> <span style="color:#908caa">(</span><span style="color:#ea9a97">max-width</span><span style="color:#908caa">:</span> <span style="color:#ea9a97">768px</span><span style="color:#908caa">)</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">body</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">font-size</span><span style="color:#908caa">:</span> <span style="color:#f6c177">2</span><span style="color:#3e8fb0">rem</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ea9a97">nav</span> <span style="color:#908caa">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#3e8fb0">flex-direction</span><span style="color:#908caa">:</span> <span style="color:#3e8fb0">row</span><span style="color:#908caa">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#908caa">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#908caa">}</span>
+</span></span></code></pre></div><p>In dit voorbeeld worden de regels <strong>enkel toegepast wanneer het scherm 768 pixels breed of kleiner is</strong>.</p>
+<p>De meest gebruikte media conditions werken met de breedte van de viewport.</p>
+<ul>
+<li><code>max-width</code> Regels gelden tot en met een bepaalde schermbreedte.</li>
+<li><code>min-width</code> Regels gelden vanaf een bepaalde schermbreedte.</li>
+</ul>
+<p><code>@media</code> wordt vaak gecombineerd met lay-outtechnieken zoals flexbox en grid om een ontwerp aan te passen aan verschillende schermgroottes.</p>
+<ul>
+<li>Binnen een <code>@media</code>-blok gebruik je gewone CSS.</li>
+<li>Je schrijft meestal eerst de basisstijl en past die later aan met <code>@media</code>.</li>
+</ul>
 <h2 id="bronnen">Bronnen</h2>
 <h4 id="icoontjes">Icoontjes</h4>
 <ul>

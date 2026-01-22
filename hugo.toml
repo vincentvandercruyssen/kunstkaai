@@ -1,7 +1,6 @@
 baseURL = "https://vincentvandercruyssen.github.io/kunstkaai/"
-languageCode = 'en-us'
+languageCode = 'nl'
 title = 'Kunstkaai'
-theme = 'kunstkaai'
 
 disableKinds = ["RSS", "taxonomy", "term"]
 

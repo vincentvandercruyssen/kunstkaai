@@ -107,8 +107,6 @@ a:hover {
 
 ### Combinaties
 
-#### Afstammeling combinatie
-
 Je kan meer verfijnde selecties maken door een spatie te gebruiken om afstammelingen van een element te selecteren. Hieronder selecteer ik bijvoorbeeld alleen de list-items binnen nav-elementen.
 
 ```css
@@ -129,26 +127,23 @@ header, main, footer {
 
 ## CSS eigenschappen
 
-CSS eigenschappen of properties zijn de stylingsmogelijkheden die je hebt binnen CSS. Ze bepalen hoe je HTML-elementen kunt opmaken, zoals de kleur, het lettertype, de achtergrond, de margins en de padding.
+CSS eigenschappen of properties zijn de stylingsmogelijkheden die je hebt binnen CSS. Ze bepalen hoe je HTML-elementen kunt opmaken, zoals de kleur, het lettertype, de achtergrond, de witruimte in je lay-out.
 
 #### De meest gebruikte CSS eigenschappen
 
 {{< table_layoutfixed >}}
-| **Kleur en tekst**     | **Lay-out**        | **Geavanceerd**     |
-|------------------------|--------------------|---------------------|
-| background             | position           | overflow            |
-| color                  | z-index            | cursor              |
-| font                   | top                | opacity             |
-| text-align             | right              | filter              |
-| line-height            | bottom             | @font-face          |
-| text-transform         | left               | @import             |
-| text-decoration        | display            | @media              |
-| letter-spacing         | margin             | transform           |
-| word-spacing           | border             | animation           |
-| list-style             | width              |                     |
-|                        | height             |                     |
-|                        | padding            |                     |
-
+| **Kleur en tekst** | **Lay-out**                      | **Geavanceerd** |
+|--------------------|----------------------------------|-----------------|
+| background         | position                         | overflow        |
+| color              | z-index                          | cursor          |
+| font-family        | inset (top, right, bottom, left) | opacity         |
+| text-align         | display                          | filter          |
+| line-height        | margin                           | transform       |
+| text-transform     | border                           | animation       |
+| text-decoration    | width                            | transition      |
+| letter-spacing     | height                           | aspect-ratio    |
+| word-spacing       | padding                          | object-fit      |
+| list-style         | gap                              | user-select     |
 
 ### Shorthands
 
@@ -178,13 +173,13 @@ body {
 
 ### background-image
 
-De eigenschap `background-image` stelt één of meer achtergrondafbeeldingen in op een element. De eigenschappen gekoppeld aan `background-image` worden gebruikt om de afbeelding in de achtergrond van een element op verschillende manieren te bewerken.
+De eigenschap `background-image` stelt één of meerdere achtergrondafbeeldingen in op een element. De eigenschappen gekoppeld aan `background-image` worden gebruikt om de afbeelding in de achtergrond van een element op verschillende manieren te bewerken.
 
-**Background-repeat**: De eigenschap `background-repeat` wordt gebruikt om aan te geven hoe een achtergrondbeeld moet worden herhaald. Een achtergrondafbeelding kan langs de horizontale en verticale as worden herhaald, of helemaal niet. Zo zijn er onder andere de waarden `repeat`, `repeat-x`, `repeat-y`, en `no-repeat`.
+`background-repeat` De eigenschap `background-repeat` wordt gebruikt om aan te geven hoe een achtergrondbeeld moet worden herhaald. Een achtergrondafbeelding kan langs de horizontale en verticale as worden herhaald, of helemaal niet. Zo zijn er onder andere de waarden `repeat`, `repeat-x`, `repeat-y`, en `no-repeat`.
 
-**Background-position**: De eigenschap `background-position` wordt gebruikt om de positie van een achtergrondbeeld te specificeren. Zo zijn er de waarden `left`, `right`, `top`, `bottom`, `center`, en combinaties daarvan zoals `left center`, `right center`, etc.
+`background-position` De eigenschap `background-position` wordt gebruikt om de positie van een achtergrondbeeld te specificeren. Zo zijn er de waarden `left`, `right`, `top`, `bottom`, `center`, en combinaties daarvan zoals `left center`, `right center`, enzoverder.
 
-**Background-size**: De eigenschap `background-size` wordt gebruikt om aan te geven hoe een achtergrondbeeld moet worden geschaald. De afbeelding kan behouden blijven in de oorspronkelijke grootte, uitgerekt of beperkt worden om in de beschikbare ruimte te passen. Je kunt onder andere de waarden `cover` en `contain` gebruiken.
+`background-size` De eigenschap `background-size` wordt gebruikt om aan te geven hoe een achtergrondbeeld moet worden vergroot of verkleind. De afbeelding kan behouden blijven in de oorspronkelijke grootte of getransformeerd worden met lengtemaateenheden (`px`, `%`, `vw`,...). Ze kunnen ook beperkt worden om in de beschikbare ruimte te passen, met onder andere de waarden `cover` en `contain`.
 
 #### background-image eigenschappen
 
@@ -241,10 +236,10 @@ color: hsl(0, 68%, 42%);
 
 Additieve kleuren zijn kleuren die door licht te combineren worden gevormd. Het licht dat we zien is een mix van verschillende kleuren licht, elk met hun eigen golflengte. Wanneer deze kleuren licht samenkomen, worden ze toegevoegd aan elkaar en wordt het totaal licht dat we zien helderder. De primaire additieve kleuren zijn rood, groen, en blauw.
 
-|   |   |
-| - | - |
-| {{< svg src="img/web/colors-additive-rgb.svg" >}} | {{< svg src="img/web/colors-subtractive-cmyk.svg" >}} |
-| RGB Additieve kleurmenging | CMYK Subtractieve kleurmenging |
+|                                                               |                                                                   |
+|---------------------------------------------------------------|-------------------------------------------------------------------|
+| {{< svg src="img/web/colors-additive-rgb.svg" width="500" >}} | {{< svg src="img/web/colors-subtractive-cmyk.svg" width="500" >}} |
+| RGB Additieve kleurmenging                                    | CMYK Subtractieve kleurmenging                                    |
 
 #### Kleurenkiezer in VSC
 
@@ -307,26 +302,6 @@ Een CDN, *content delivery network*, is een netwerk van servers die gebruikt wor
 - [Adobe Fonts](https://fonts.adobe.com/)
 - [Google Fonts](https://fonts.google.com/)
 
-### @font-face
-
-`@font-face` specificeert een aangepast lettertype waarmee tekst moet worden weergegeven; het lettertype kan worden geladen vanaf een externe server of een lokaal geïnstalleerd lettertype op de eigen computer van de gebruiker.
-
-```css
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 400;
-  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2");
-}
-```
-
-### @import
-
-De `@import` wordt gebruikt om stijlregels uit andere stylesheets te importeren, bijvoorbeeld een verzameling fonts.
-
-```css
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
-```
-
 ## Flow Lay-out
 
 Flow lay-out is de manier waarop block- en inline-elementen op een pagina worden weergegeven. Elk HTML-element heeft een standaardweergave (*display, inline,...*), deze eigenschap is afhankelijk van het type element en kan worden aangepast.
@@ -337,23 +312,24 @@ Blokelementen worden onder elkaar weergegeven, zoals alinea's. Onder elkaar van 
 
 ### display
 
-De `display` eigenschap stelt in of een element wordt behandeld als een blok- of inline-element in de normale flow lay-out. Het kan ook onderliggende elementen (*children*) in een bepaald lay-outtype gieten, zoals bij grid en flex.
+De `display` eigenschap stelt in of een element wordt behandeld als een blok- of inline-element in de normale flow lay-out. Het kan ook onderliggende elementen (*children*) in een bepaald lay-outtype gieten, zoals bij `grid` en `flex`.
 
-- **display: none;** Verbergt een element (en onderliggende geneste elementen).
-- **display: inline;** Elementen worden geplaatst op dezelfde regel als de omringende inhoud. Een inline element begint niet op een nieuwe regel en neemt slechts zoveel breedte in beslag als nodig is.
-- **display: block;** Elementen worden geplaatst op een nieuwe regel. Een element op blokniveau neemt altijd de volledige beschikbare ruimte in beslag.
-- **display: inline-block;** Elementen worden geplaatst op dezelfde regel als de omringende tekst, maar kunnen worden aangepast in breedte en hoogte.
+- `display: none;` Verbergt een element (en onderliggende geneste elementen).
+- `display: inline;` Elementen worden geplaatst op dezelfde regel als de omringende inhoud. Een inline element begint niet op een nieuwe regel en neemt slechts zoveel breedte in beslag als nodig is.
+- `display: block;` Elementen worden geplaatst op een nieuwe regel. Een element op blokniveau neemt altijd de volledige beschikbare ruimte in beslag.
+- `display: inline-block;` Elementen worden geplaatst op dezelfde regel als de omringende tekst, maar kunnen worden aangepast in breedte en hoogte.
 
-{{< table_layoutfixed >}}
-| | |
-|-|-|
-|░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ {{< br >}}░░░░░░░░░░░░░░░░ ← `inline` richting → {{< br >}}░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ {{< br >}}|↑ {{< br >}} `block` richting {{< br >}} ↓|
+```
+→ → inline → → ░░░░░░░░░░░░░░░░░░░ ↓↓↓↓↓ ░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ block ░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ ↓↓↓↓↓ ░░░░░░░░░░░░░░░░░░░░░░░
+```
 
-{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/QWOwbWJ" height="548" >}}
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/QWOwbWJ" height="500" >}}
 
-#### Flow lay-out navigatie met li's en a's
+#### Flow lay-out navigatie
 
-{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/bGMZyde" height="480" >}}
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/bGMZyde" height="540" >}}
 
 ## Box Model
 
@@ -406,7 +382,19 @@ Om iets horizontaal te centreren, kun je `display: flex` en `justify-content: ce
 
 #### Centreren met margin
 
-{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/ZERGera" height="330" >}}
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/ZERGera" height="390" >}}
+
+### box-sizing
+
+De `box-sizing` eigenschap wordt gebruikt om te definiëren hoe het CSS box-model werkt. Bij het berekenen van de breedte en hoogte van een element wordt standaard de inhoud, de paddings, en de borders meegeteld.
+
+```css
+* {
+  box-sizing: border-box;
+}
+```
+
+{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/rNYBwXP" height="550" >}}
 
 ## Eenheden
 
@@ -420,28 +408,16 @@ Absolute eenheden zijn onafhankelijk van de context waarin ze worden gebruikt. D
 
 Relatieve eenheden zijn afhankelijk van de context waarin ze worden gebruikt. Ze zijn relatief aan iets anders, zoals de grootte van het lettertype van het bovenliggende element of de grootte van de viewport.
 
-| **Eenheid** | **in verhouding tot** |
-|-------------|-----------------------|
+| **Eenheid** | **in verhouding tot**                                                                                                                               |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `%`         | Percentagewaarden zijn altijd relatief ten opzichte van een andere hoeveelheid, bijvoorbeeld relatief aan de breedte van het bovenliggende element. |
-| `em`        | De lettergrootte van het bovenliggende element. |
-| `rem`       | Lettergrootte van het root-element. |
-| `ch`        | De breedte van letterteken "0" van het lettertype (van het element). |
-| `vw`        | Viewport Width, 1% van de breedte van het venster. |
-| `vh`        | Viewport Height, 1% van de hoogte van het venster. |
+| `em`        | De lettergrootte van het bovenliggende element.                                                                                                     |
+| `rem`       | Lettergrootte van het root-element.                                                                                                                 |
+| `ch`        | De breedte van letterteken "0" van het lettertype (van het element).                                                                                |
+| `vw`        | Viewport Width, 1% van de breedte van het venster.                                                                                                  |
+| `vh`        | Viewport Height, 1% van de hoogte van het venster.                                                                                                  |
 
 {{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/bGMZJBP" height="520" >}}
-
-## box-sizing
-
-De `box-sizing` eigenschap wordt gebruikt om te definiëren hoe het CSS box-model werkt. Bij het berekenen van de breedte en hoogte van een element wordt standaard de inhoud, de paddings, en de borders meegeteld.
-
-```css
-* {
-  box-sizing: border-box;
-}
-```
-
-{{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/rNYBwXP" height="548" >}}
 
 ## Flexbox
 
@@ -451,10 +427,10 @@ In het flexbox lay-outmodel kunnen de kinderen van een flex-container in elke ri
 
 {{< table_layoutfixed >}}
 {{< table_baseline >}}
-| | |
-|-|-|
-|{{< svg src="img/web/cursus-css-flex_container-1.svg">}}|{{< svg src="img/web/cursus-css-flex_items-1.svg">}}|
-|Een element wordt een flex-container door de eigenschap `display: flex;` toe te wijzen.|Alle direct onderliggende elementen worden nu beschouwd als flex-items.|
+|                                                                                         |                                                                         |
+|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| {{< svg src="img/web/cursus-css-flex_container-1.svg">}}                                | {{< svg src="img/web/cursus-css-flex_items-1.svg">}}                    |
+| Een element wordt een flex-container door de eigenschap `display: flex;` toe te wijzen. | Alle direct onderliggende elementen worden nu beschouwd als flex-items. |
 |{{< details summary="justify-content" >}}
 {{< svg src="/img/web/cursus-css-flex-justify-content-1.svg" >}}
 Bepaalt hoe flex-items worden uitgelijnd langs de hoofdas van de container. {{< /details >}} {{< details summary="align-items" >}}
@@ -485,6 +461,63 @@ Bronnen: [CSS Flexbox Layout Guide (CSS-Tricks)](https://css-tricks.com/snippets
 #### Flexbox Eigenschappen (Demo)
 
 {{< iframe src="https://codepen.io/vincent-vandercruyssen-kunstkaai/embed/MWOYyGY" height="800" >}}
+
+## CSS-regels
+
+### @font-face
+
+`@font-face` specificeert een aangepast lettertype waarmee tekst moet worden weergegeven; het lettertype kan worden geladen vanaf een externe server of een lokaal geïnstalleerd lettertype op de eigen computer van de gebruiker.
+
+```css
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2");
+}
+```
+
+### @import
+
+De `@import` wordt gebruikt om stijlregels uit andere stylesheets te importeren, bijvoorbeeld een verzameling fonts.
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+```
+
+### @media
+
+Met `@media` kun je CSS-regels **voorwaardelijk toepassen**, afhankelijk van de eigenschappen van het apparaat of het venster waarin de website wordt bekeken. Dit wordt vooral gebruikt om responsive lay-outs te maken.
+
+Met andere woorden: dezelfde HTML-structuur kan er anders uitzien op een smartphone, tablet of groot scherm, zonder extra HTML te schrijven.
+
+Een `@media`-regel bestaat uit:
+
+* Een **media condition** (bijvoorbeeld een maximale schermbreedte).
+* Een **declaratieblok** met gewone CSS-regels.
+
+```css
+@media (max-width: 768px) {
+  body {
+    font-size: 2rem;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+}
+```
+
+In dit voorbeeld worden de regels **enkel toegepast wanneer het scherm 768 pixels breed of kleiner is**.
+
+De meest gebruikte media conditions werken met de breedte van de viewport.
+
+* `max-width` Regels gelden tot en met een bepaalde schermbreedte.
+* `min-width` Regels gelden vanaf een bepaalde schermbreedte.
+
+`@media` wordt vaak gecombineerd met lay-outtechnieken zoals flexbox en grid om een ontwerp aan te passen aan verschillende schermgroottes.
+
+* Binnen een `@media`-blok gebruik je gewone CSS.
+* Je schrijft meestal eerst de basisstijl en past die later aan met `@media`.
 
 ## Bronnen
 

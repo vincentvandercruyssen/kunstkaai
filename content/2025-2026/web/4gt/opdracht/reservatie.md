@@ -31,7 +31,7 @@ Pas het `<title>`-element aan met een treffende titel, zoals "Reservatie".
 
 Koppel het CSS-bestand in het `<head>`-element.
 
-In de `<body>` maak je één `<main>`-element aan waarin je het formulier plaatst. Voor het formulier voeg je een titel toe met een `<h1>`-element met de tekst "Reservatie". Gebruik eventueel een `<h2>`-element voor een tussentitel.
+In de `<body>` maak je één `<main>`-element aan. Daarin voeg je een koptitel toe met een `<h1>`-element met de tekst "Reservatie". Gebruik eventueel een `<h2>`-element voor een tussentitel.
 
 ## Formspree instellen
 
@@ -59,9 +59,11 @@ Om het formulier werkend te maken, ga je gebruikmaken van **Formspree**. Formspr
 
 ## Het formulier
 
-Het `<form>`-element wordt gebruikt om een formulier te maken waarin gebruikers gegevens kunnen invoeren. Het `action`-kenmerk specificeert de URL waar de gegevens naartoe moeten worden gestuurd. Het `method`-kenmerk bepaalt dan weer hoe de gegevens verzonden worden, meestal aan de hand van `POST`.
+Het `<form>`-element wordt gebruikt om een formulier te maken waarin gebruikers gegevens kunnen invoeren. Het `action`-kenmerk specificeert de URL waar de gegevens naartoe moeten worden gestuurd. Het `method`-kenmerk bepaalt dan weer hoe de gegevens verzonden worden.
 
-Formspree vereist dat de `action` de juiste URL van hun service bevat en dat de `method` op `POST` staat.
+Formspree vereist dat de `action` de juiste unieke URL van hun service bevat en dat de `method` op `POST` staat.
+
+Gebruik de Emmet-afkorting `form:post` om het `form`-element met de nodige kenmerken aan te maken.
 
 ### Invoervelden
 
@@ -95,8 +97,11 @@ Let goed op het kenmerk `type` (Emmet helpt je hierbij). Maar nog belangrijker z
 
 Begin met het instellen van een basisstyling voor het formulier. Open je CSS-bestand en voeg de volgende stijlen toe:
 
-`body`: Stel een basislettertype (`font-family`) in. Stel de `margin` in op 0. Geef achtergrondkleur en tekstkleur.
-`main`: Centreer het `main`-element op de pagina met behulp van `margin: 0 auto`. Geef de eigenschap `max-width` met een lengte in pixels (bijvoorbeeld 640px). Stel `padding` in zodanig niet alles tegen de rand plakt.
+`body {} ` Stel een basislettertype (`font-family`) in. Stel de `margin` in op 0. Voeg ook een achtergrondkleur en tekstkleur toe.
+
+`main {} ` Centreer het `main`-element op de pagina met behulp van `margin: 0 auto;` en `max-width` met een lengte in pixels (bijvoorbeeld 550px).
+
+Stel `padding` in zodanig niet alles tegen de rand plakt.
 
 ### Formulierstyling
 
@@ -110,8 +115,8 @@ Style het formulier met de volgende eigenschappen:
 
 Style de invoervelden en het tekstgebied (`textarea`) met de volgende eigenschappen:
 
-- Gebruik `width: 100%` en voeg `padding` toe in pixels.
 - Met `display: block` worden de velden onder elkaar geplaatst op de pagina.
+- Gebruik `width: 100%` en voeg `padding` toe in pixels.
 - Voeg een `border` en `border-radius` toe.
 - Gebruik `margin-bottom` om ruimte tussen de velden te creëren.
 
