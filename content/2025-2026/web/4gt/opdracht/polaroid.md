@@ -54,11 +54,11 @@ Er lijkt momenteel nog niets te veranderen, dit komt doordat de afbeeldingen uit
 
 {{< img src="/img/web/opdracht-4-08-polaroid-breedte1.png" percent="55" >}}
 
-Selecteer de afbeeldingen met `.polaroid img {}`. Laat de afbeeldingen de volledige breedte van de polaroid-kaders innemen door de eigenschap `width` in te stellen op `100%`. 
+Selecteer de polaroid-afbeeldingen met `.polaroid img {}`. Laat de afbeeldingen de volledige breedte van de polaroid-kaders innemen door de eigenschap `width` in te stellen op `100%`. 
 
 ### Lettertype
 
-Onder elke Polaroid-foto hoort natuurlijk een tekstje, je immiteert de handgeschreven stijl door een gepast lettertype te zoeken. 
+Onder elke Polaroid-foto hoort natuurlijk een tekstje, je immiteert de handgeschreven stijl door een gepast lettertype te zoeken.
 
 Dit doe je bijvoorbeeld door gebruik te maken van [Adobe Fonts](https://fonts.adobe.com/). Daar kun je gemakkelijk lettertypes sorteren op Handgeschreven (Handwritten).
 
@@ -69,8 +69,11 @@ Zoek een lettertype dat je inspireert. Klik bovenaan de pagina van je gekozen le
 {{< img src="/img/web/opdracht-4-08-polaroid-adobefonts1.png" percent="80" >}}
 
 In het venster dat verschijnt, maak je een nieuw project aan met het dropdown-menu. 
+Je kunt meerdere lettertypes aan je webproject toevoegen.
 
-Kopieer vervolgens de `@import`-regel en plak deze bovenaan in je CSS-bestand. 
+Kopieer de koppeling naar het CSS-bestand van jouw webproject naar je eigen HTML-document in het `<head>`-element. Of gebruik de `@import`-regel en plak deze bovenaan in je CSS-bestand, let er op een `@import`-regel moet altijd bovenaan het CSS-bestand staan.
+
+Dit CSS-bestand is uniek voor jouw webproject, telkens je een lettertype aan je project toevoegt wordt het CSS-bestand aangevuld. 
 
 | | |
 |-|-|
@@ -78,7 +81,7 @@ Kopieer vervolgens de `@import`-regel en plak deze bovenaan in je CSS-bestand.
 
 Nu kun je de `font-family` eigenschap met bijbehorend lettertype kopiëren. Dit plak je uiteraard in de selector voor je `body {}`, zo verander je het lettertype over je gehele webpagina. 
 
-Een andere optie is een lettertype te downloaden en gebruik te maken van de regel `@font-face`. Meer informatie daarover [vind je hier](https://www.w3schools.com/cssref/atrule_font-face.php), of vraag het aan je favoriete chatbot. Zorg er dan wel voor dat je het lettertype in een aparte map opslaat (bijvoorbeeld `fonts`).
+Een andere optie is een lettertype te downloaden en gebruik te maken van de regel `@font-face`. Meer informatie daarover [vind je hier](/kunstkaai/2025-2026/web/cursus/css/#font-face). Zorg er dan wel voor dat je het lettertype in een aparte map opslaat (bijvoorbeeld `fonts`).
 
 ### Positionering
 

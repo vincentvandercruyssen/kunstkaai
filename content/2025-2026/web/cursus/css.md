@@ -472,7 +472,7 @@ Bronnen: [CSS Flexbox Layout Guide (CSS-Tricks)](https://css-tricks.com/snippets
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
-  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2");
+  src: url("fonts/OpenSans-Regular-webfont.woff2") format("woff2");
 }
 ```
 

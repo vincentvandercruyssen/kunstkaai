@@ -61,7 +61,7 @@ Zorg voor een koppeling naar je volledige vakmap in je OneDrive bij de opdracht 
 
 ## Puntenverdeling
 
-- **Structuur (08)** Correcte zip-map met index.html, recept_1.html, recept_2.html, recept_3.html, style.css en één map met afbeeldingen met duidelijke benamingen.
+- **Structuur (08)** Correcte map met index.html, recept_1.html, recept_2.html, recept_3.html, style.css en één map met afbeeldingen met duidelijke benamingen.
 - **Header en navigatie (08)** Dezelfde header-vormgeving op elke pagina, werkende links op elke pagina die leiden naar elk recept en terug naar de hoofdpagina.
 - **Inhoud en opmaak (08)** Volledige recepten op elke pagina met een correcte indeling, samenhangende vormgeving en gebruik van de eerder gevraagde CSS-eigenschappen.
 
