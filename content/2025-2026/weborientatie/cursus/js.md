@@ -190,7 +190,7 @@ x = "Hallo";      // nu type: string
 
 ### Gegevenstypes
 
-Elke waarde in JavaScript heeft een **gegevenstype**. Dat type bepaalt **wat** de waarde voorstelt (tekst, getal, waar/onwaar, …) en **welke bewerkingen** je ermee kunt uitvoeren.
+Elke waarde in JavaScript heeft een **gegevenstype**, ofwel datatype. Dat type bepaalt **wat** de waarde voorstelt (tekst, getal, waar/onwaar, …) en **welke bewerkingen** je ermee kunt uitvoeren.
 
 * **String** tekst: `"Hallo"`, `"123"`
 * **Number** getal: `42`, `3.14`
@@ -210,6 +210,29 @@ Type controleren met `typeof`:
 let x = 42;
 console.log(typeof x); // "number"
 ```
+
+### State in JavaScript
+
+“State” is de **huidige toestand** van je pagina of applicatie. Het zijn de waarden die je wil **onthouden** terwijl de gebruiker klikt, typt of navigeert. Zonder state zou je pagina na elke actie “vergeten” wat er net gebeurd is.
+
+Denk aan state zoals:
+
+* Of een menu open of toe is
+* Welke tab actief is
+* Welke items in een winkelmand zitten
+* De huidige waarde van een teller
+* Of een formulier geldig is
+
+#### State is data
+
+Een veelgemaakte fout is de DOM (je HTML) gebruiken als opslagplaats. Bijvoorbeeld: “Ik lees gewoon uit de tekst van de knop of het aan staat.” Dat werkt even, maar wordt snel rommelig.
+
+Beter:
+
+* **State leeft in JavaScript** (variabelen, objecten, arrays)
+* **UI leeft in HTML/CSS**
+* Events passen **eerst state** aan
+* Daarna **render** je de UI op basis van die state
 
 ### Scope
 
@@ -252,9 +275,98 @@ Commentaar wordt **niet uitgevoerd**. Gebruik het om je code leesbaar te houden 
 */
 ```
 
+## Voorwaardelijke uitvoering met if
+
+Met `if` laat je code enkel uitvoeren als een **voorwaarde** waar of onwaar is. Het maakt beslissingen.
+
+```js
+if (leeftijd >= 18) {
+  console.log("Volwassen");
+} else {
+  console.log("Tiener");
+}
+```
+
+* De voorwaarde tussen haakjes moet **true** of **false** opleveren.
+* `else` voert uit wat gebeurt als de voorwaarde **niet waar** is.
+* Met `else if` test je meerdere voorwaarden.
+
+```js
+if (score > 90) {
+  console.log("Uitstekend");
+} else if (score >= 50) {
+  console.log("Geslaagd");
+} else {
+  console.log("Niet geslaagd");
+}
+```
+
+Gebruik `if` om te **beslissen** welke code mag lopen, afhankelijk van een toestand.
+
+## Events
+
+**Events** zijn acties waarop JavaScript kan **reageren** (zoals klikken, typen, laden of focussen). Koppel ze in **JavaScript**, niet in **HTML**.
+
+### Klik-events
+
+Vermijd inline handlers (`onclick="..."`), overschrijven elkaar en is beperkter. Gebruik `addEventListener()` voor meer flexibiliteit: je kunt meerdere functies koppelen en extra opties instellen (zoals `once` of `capture`).
+
+```html
+<button id="knop">Klik mij</button>
+
+<script>
+  document.querySelector("#knop").addEventListener("click", () => {
+    console.log("Hallo!");
+  });
+</script>
+```
+
+### Pagina laden: DOMContentLoaded & load
+
+**`DOMContentLoaded`** start zodra de **HTML-structuur** geladen is, ideaal om scripts te activeren die de DOM gebruiken.
+
+**`load`**: wacht tot **alles** geladen is (ook afbeeldingen en stylesheets). Gebruik dit alleen als je alle middelen nodig hebt.
+
+```js
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM klaar");
+});
+
+window.addEventListener("load", () => {
+  console.log("Pagina volledig geladen");
+});
+```
+
+```
+window (het browservenster)
+ └── document (de HTML-pagina in dat venster)
+      └── html (het root-element van de pagina)
+           ├── head (metadata, titel, links naar CSS, scripts)
+           └── body (zichtbare inhoud)
+                └── elementen (div, p, img, button, form,...)
+```
+
+### Focus-events
+
+* `focus`: wanneer een element focus krijgt.
+* `blur`: wanneer het element focus verliest. 
+  
+Deze events worden enkel op het element zelf uitgevoerd. 
+
+Wil je ook reageren op een **ouder-element** waarin ze zich bevinden, gebruik dan `focusin` en `focusout`, ook wel **“bubbling”** genoemd.
+
+```html
+<input id="naam" type="text">
+<script>
+const naam = document.querySelector("#naam");
+naam.addEventListener("focus", () => console.log("Focus!"));
+naam.addEventListener("blur",  () => console.log("Focus verloren"));
+</script>
+```
+
 ## Objecten in JavaScript
 
-JavaScript kent twee soorten waarden:
+JavaScript kent twee soorten gegevenstypes of datatypes:
 
 * **Primitieve types**: eenvoudige, onveranderlijke waarden
   (`string`, `number`, `boolean`, `null`, `undefined`, `symbol`, `bigint`)
@@ -427,128 +539,6 @@ item.textContent = "Nieuw item";
 lijst.insertBefore(item, lijst.firstChild);
 ```
 
-## Events
-
-**Events** zijn acties waarop JavaScript kan **reageren** (zoals klikken, typen, laden of focussen). Koppel ze in **JavaScript**, niet in **HTML**.
-
-### Klik-events
-
-Vermijd inline handlers (`onclick="..."`), overschrijven elkaar en is beperkter. Gebruik `addEventListener()` voor meer flexibiliteit: je kunt meerdere functies koppelen en extra opties instellen (zoals `once` of `capture`).
-
-```html
-<button id="knop">Klik mij</button>
-<script>
-document.querySelector("#knop").addEventListener("click", () => {
-  console.log("Hallo!");
-});
-</script>
-```
-
-### Pagina laden: DOMContentLoaded & load
-
-**`DOMContentLoaded`** start zodra de **HTML-structuur** geladen is, ideaal om scripts te activeren die de DOM gebruiken.
-
-**`load`**: wacht tot **alles** geladen is (ook afbeeldingen en stylesheets). Gebruik dit alleen als je alle middelen nodig hebt.
-
-```js
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM klaar");
-});
-
-window.addEventListener("load", () => {
-  console.log("Pagina volledig geladen");
-});
-```
-
-```
-window (het browservenster)
- └── document (de HTML-pagina in dat venster)
-      └── html (het root-element van de pagina)
-           ├── head (metadata, titel, links naar CSS, scripts)
-           └── body (zichtbare inhoud)
-                └── elementen (div, p, img, button, form,...)
-```
-
-### Focus-events
-
-* `focus`: wanneer een element focus krijgt.
-* `blur`: wanneer het element focus verliest. 
-  
-Deze events worden enkel op het element zelf uitgevoerd. 
-
-Wil je ook reageren op een **ouder-element** waarin ze zich bevinden, gebruik dan `focusin` en `focusout`, ook wel **“bubbling”** genoemd.
-
-```html
-<input id="naam" type="text">
-<script>
-const naam = document.querySelector("#naam");
-naam.addEventListener("focus", () => console.log("Focus!"));
-naam.addEventListener("blur",  () => console.log("Focus verloren"));
-</script>
-```
-
-## Voorwaardelijke uitvoering met if
-
-Met `if` laat je code enkel uitvoeren als een **voorwaarde** waar is.
-
-```js
-if (leeftijd >= 18) {
-  console.log("Volwassen");
-} else {
-  console.log("Tiener");
-}
-```
-
-* De voorwaarde tussen haakjes moet **true** of **false** opleveren.
-* `else` voert uit wat gebeurt als de voorwaarde **niet waar** is.
-* Met `else if` test je meerdere voorwaarden.
-
-```js
-if (score > 90) {
-  console.log("Uitstekend");
-} else if (score >= 50) {
-  console.log("Geslaagd");
-} else {
-  console.log("Niet geslaagd");
-}
-```
-
-Gebruik `if` om te **beslissen** welke code mag lopen, afhankelijk van een toestand.
-
-## Herhalen met lussen
-
-Een **lus** voert een blok code **meerdere keren** uit.
-
-### `while`
-
-Herhaalt **zolang** de voorwaarde waar is.
-
-```js
-let i = 0;
-while (i < 3) {
-  console.log(i);
-  i++; // voorkom oneindige lus
-}
-```
-
-Gebruik `while` als je **niet op voorhand weet** hoe vaak je wil herhalen.
-
-### `for`
-
-Herhaalt een **vast aantal keren**.
-
-```js
-for (let i = 0; i < 3; i++) {
-  console.log(i);
-}
-```
-
-* `i = 0` → startwaarde
-* `i < 3` → voorwaarde
-* `i++` → stap per ronde
-
-Gebruik `for` als je **exact weet** hoe vaak de lus moet lopen.
-
 ## Herbruikbare code met functies
 
 Een **functie** groepeert code en maakt ze **herbruikbaar**.
@@ -592,6 +582,40 @@ persoon.zegNaam();
 ```
 
 Gebruik arrow functions voor **korte taken of callbacks**, klassieke functies voor methodes in objecten of wanneer je met **`this`** werkt.
+
+## Herhalen met lussen
+
+Een **lus** voert een blok code **meerdere keren** uit.
+
+### while
+
+Herhaalt **zolang** de voorwaarde waar is.
+
+```js
+let i = 0;
+while (i < 3) {
+  console.log(i);
+  i++; // voorkom oneindige lus
+}
+```
+
+Gebruik `while` als je **niet op voorhand weet** hoe vaak je wil herhalen.
+
+### for
+
+Herhaalt een **vast aantal keren**.
+
+```js
+for (let i = 0; i < 3; i++) {
+  console.log(i);
+}
+```
+
+* `i = 0` → startwaarde
+* `i < 3` → voorwaarde
+* `i++` → stap per ronde
+
+Gebruik `for` als je **exact weet** hoe vaak de lus moet lopen.
 
 ## Wiskundige bewerkingen
 
