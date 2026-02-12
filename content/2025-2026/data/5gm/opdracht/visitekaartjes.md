@@ -6,7 +6,7 @@ draft = false
 
 In deze opdracht ontwerp je een **eigen visitekaartje** en genereer je een reeks kaartjes met behulp van **Data Merge** in **Adobe InDesign**. Je werkt met een eigen sjabloon en een lijst van contactgegevens.
 
-Waarom zou je alles manueel typen als InDesign het zware werk voor jou kan doen? Jij ontwerpt en met Data Merge automatiseer je het saaie gedeelte en genereer je in één keer een hele reeks unieke kaartjes. Slimmer werken, niet harder!
+Waarom zou je alles manueel typen wanneer InDesign het zware werk voor jou kan doen? Jij ontwerpt het sjabloon, en met Data Merge automatiseer je het saaie gedeelte en genereer je in één keer een hele reeks unieke kaartjes. Slimmer werken, niet harder! 🤖
 
 Bekijk onderstaand voorbeeld om een idee te krijgen van wat er verwacht wordt.
 
