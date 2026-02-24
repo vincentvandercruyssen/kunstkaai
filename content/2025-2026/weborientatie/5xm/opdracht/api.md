@@ -10,23 +10,32 @@ In deze opdracht bouw je een kleine website die gegevens (data) ophaalt via een 
 
 ### Wat is een API?
 
-Een **API** ([Application Programming Interface](https://nl.wikipedia.org/wiki/Application_programming_interface)) is een soort "doorgeefluik" waarmee twee systemen met elkaar kunnen communiceren. In de context van webdevelopment gebruiken we API's vaak om externe gegevens op te halen uit een database (denk aan actuele weergegevens, een boeken-catalogus, of profielen). 
+Een **API** ([Application Programming Interface](https://nl.wikipedia.org/wiki/Application_programming_interface)) is een soort "doorgeefluik" waarmee twee systemen met elkaar kunnen communiceren. Een API verbergt hoe een programma intern werkt, maar geeft wel toegang tot bepaalde gegevens en functies. Het is een "afspraak" die bepaalt hoe verschillende onderdelen van software met elkaar communiceren. In die afspraak staat welke functies beschikbaar zijn, welke soort gegevens worden gebruikt en onder welke voorwaarden iets mag gebeuren. De interne werking van het programma blijft verborgen, alleen de afgesproken manier van communiceren zijn zichtbaar.
 
-In plaats van alle data zelf hardcoded in je HTML te typen, stuur je via JavaScript (met het `fetch`-commando) een vraag naar een specifiek webadres (het *endpoint*). De API antwoordt vervolgens met de gewenste data, meestal in het overzichtelijke **JSON-formaat**. Jouw taak is om die data uit te lezen en netjes in de user interface te verwerken.
+Dankzij API’s kan software opgebouwd worden uit aparte onderdelen. Daardoor is ze gemakkelijker aanpasbaar, beter te onderhouden en eenvoudiger uit te breiden. Je kunt nieuwe functies toevoegen zonder alles opnieuw te moeten maken.
+
+Een API is dus geen moeilijk modewoord, maar een belangrijk basisprincipe in software. Bijna alle grote technologieplatformen maken er gebruik van, zoals cloudservices, mobiele apps, websites en systemen die uit meerdere kleine diensten bestaan.
+
+### API's en webontwikkeling
+
+In de context van deze opdracht gebruik je API's om externe gegevens op te halen uit een database (bijvoorbeeld actuele weergegevens, een boeken-catalogus, of profielen).
+
+In plaats van alle data zelf handmatig in je HTML te typen, stuur je via JavaScript (met het `fetch`-commando) een vraag naar een specifiek webadres (het *endpoint*). De API antwoordt vervolgens met de gewenste data, meestal in het overzichtelijke **JSON-formaat**. Jouw taak is om die data uit te lezen en netjes in de gebruikersomgeving (user interface) te verwerken.
 
 ## Keuze van API
 
 Je mag één van deze toegankelijke APIs gebruiken voor je project. Voor elk van deze APIs is een werkend voorbeeld beschikbaar in de lesbestanden:
-- **REST Countries**
-- **Open Library** 
-- **Open-Meteo**
-- **Quotable** 
-- **Wikipedia**
-- **Random User**
-- **OpenWeatherMap** (API key vereist)
-- **NewsAPI** (API key vereist)
-- **Pixabay** (API key vereist)
-- **Unsplash** (API key vereist)
+
+- **REST Countries** - [Website](https://restcountries.com/) | [Documentatie](https://restcountries.com/#endpoints-all)
+- **Open Library** - [Website](https://openlibrary.org/) | [Documentatie](https://openlibrary.org/developers/api)
+- **Open-Meteo** - [Website](https://open-meteo.com/) | [Documentatie](https://open-meteo.com/en/docs)
+- **Quotable** - [Website](https://github.com/lukePeavey/quotable) | [Documentatie](https://github.com/lukePeavey/quotable#api-reference)
+- **Wikipedia** - [Website](https://nl.wikipedia.org/) | [Documentatie](https://www.mediawiki.org/wiki/API:Main_page)
+- **Random User** - [Website](https://randomuser.me/) | [Documentatie](https://randomuser.me/documentation)
+- **OpenWeatherMap** (API key vereist) - [Website](https://openweathermap.org/) | [Documentatie](https://openweathermap.org/api)
+- **NewsAPI** (API key vereist) - [Website](https://newsapi.org/) | [Documentatie](https://newsapi.org/docs)
+- **Pixabay** (API key vereist) - [Website](https://pixabay.com/) | [Documentatie](https://pixabay.com/api/docs/)
+- **Unsplash** (API key vereist) - [Website](https://unsplash.com/) | [Documentatie](https://unsplash.com/documentation)
 
 ### Eigen API zoeken
 Je mag ook zelf een andere API kiezen. Je moet dan wel **zélf** uitzoeken hoe die API werkt (het endpoint, de parameters, de JSON-structuur). 
@@ -46,7 +55,7 @@ Je website moet minstens de volgende onderdelen bevatten:
 - **Resultaten tonen:** Laat de opgehaalde data netjes zien in de interface (bijvoorbeeld in een `div` of lijst). Voorzie minstens titel/naam, wat kerninformatie en waar mogelijk een afbeelding. Als je meerdere resultaten ophaalt, kan je hiervoor "kaarten" (cards) bouwen of een lijst (`ul`/`li`) gebruiken.
 - **Extra interactie (minstens 1):** Voeg een extra interactie toe aan je website (dit mag een simpele knop zijn zoals de "Willekeurig Artikel" knop uit het Wikipedia voorbeeld, het beperken van het aantal resultaten met `.slice()`, sorteren, een "laad meer"-functie, etc.).
 
-## Technische eisen
+## Technisch
 
 - Gebruik `fetch` in combinatie met `async/await`.
 - Gebruik `encodeURIComponent` bij zoektermen in een URL om fouten te vermijden.
@@ -74,10 +83,6 @@ VoornaamA_API/
 - Plaats de map **VoornaamA_API** in je OneDrive-map voor Weboriëntatie.
 - De map bevat al je bestanden. Geen losse stukjes code.
 - Voeg in dezelfde map een **screenshot** toe waarop duidelijk het werkende resultaat te zien is.
-- Voeg een kort **tekstdocumentje** (bijv. `info.txt`) toe met de info:
-  - Welke API heb je gebruikt?
-  - Welke endpoints heb je aangesproken?
-  - Welke specifieke parameters of querystrings gaf je op in de URL?
 - Deel de **OneDrive-link** via **Google Classroom**.
 
 ## Puntenverdeling
