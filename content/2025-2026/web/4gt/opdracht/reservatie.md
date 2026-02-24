@@ -149,11 +149,11 @@ Zorg voor een koppeling naar je volledige vakmap in je OneDrive bij de opdracht 
 
 ## Puntenverdeling
 
-- **Structuur (04)** Correcte bestandsnamen en mapstructuur.
-- **HTML (14)** Correct gebruik van elementen en kenmerken, `<title>`, `<main>`, `h`-kop, `<form>`, `action`, `method`, formulier-elementen met specifieke kenmerken. 
-- **CSS Basis (04)** Algemene styling, `body`, `background-color`, `color`, `font-family`.
-- **CSS Formulier (10)** Styling van het formulier, invoervelden en knop.
-- **Formspree (02)** Correcte integratie van Formspree en werkend formulier (via schermafbeelding).
+- **Structuur** Correcte bestandsnamen en mapstructuur.
+- **HTML** Correct gebruik van elementen en kenmerken, `<title>`, `<main>`, `h`-kop, `<form>`, `action`, `method`, formulier-elementen met specifieke kenmerken. 
+- **CSS Basis** Algemene styling, `body`, `background-color`, `color`, `font-family`.
+- **CSS Formulier** Styling van het formulier, invoervelden en knop.
+- **Formspree** Correcte integratie van Formspree en werkend formulier (via schermafbeelding).
 
 ## Veelvoorkomende fouten
 

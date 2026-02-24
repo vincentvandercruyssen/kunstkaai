@@ -118,11 +118,20 @@ Je licht je webpresentatie kort toe in de klas:
 
 ## Puntenverdeling
 
-- **Structuur en netheid** Correcte map, juiste bestanden, duidelijke opbouw
-- **HTML** Semantische structuur, logische indeling, correcte koppen
-- **JavaScript-concept** Correct uitgelegd, juiste terminologie, eigen woorden
-- **Didactische kwaliteit** Begrijpelijk voor klasgenoten, heldere voorbeelden
-- **Mondelinge toelichting** Duidelijk, voorbereid, binnen de tijd
+### Deel 1: Webpresentatie
+
+- **Structuur en netheid**: Correcte mapstructuur, juiste bestandsnamen, duidelijke opbouw.
+- **HTML/CSS**: Semantische structuur, correcte koppen, logische hiërarchische indeling, leesbaarheid, overzichtelijke lay-out en vormgeving.
+- **JavaScript-concept**: Concept correct uitgelegd, juiste terminologie, eigen woorden.
+- **Codevoorbeeld of demo**: Werkend en relevant voorbeeld dat het concept ondersteunt.
+- **Bronvermelding**: Gebruikte bronnen correct en volledig vermeld.
+
+### Deel 2: Mondelinge presentatie
+
+- **Inleiding en uitleg in eigen woorden**: Concept wordt correct en begrijpelijk uitgelegd.
+- **Context en duiding**: Wanneer gebruik je dit en waarom bestaat het.
+- **Codevoorbeeld of demo**: Voorbeeld werkt en ondersteunt de uitleg.
+- **Structuur**: Logische opbouw, duidelijke volgorde.
 
 ## Doel van deze opdracht
 
