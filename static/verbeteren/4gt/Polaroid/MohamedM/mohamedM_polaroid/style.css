@@ -1,0 +1,75 @@
+@import url("https://use.typekit.net/xyb5hkw.css");
+
+body {
+    background-color: rgb(222,198, 167);
+    font-family: "p22-shibumi", sans-serif;
+
+} 
+
+.polaroid {
+    width: 200px;
+    position: absolute;
+}
+
+.polaroid img {
+width: 100%;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+object-position: top;
+}
+
+
+#polaroid_01 {
+    top: 50%;
+    left: 20%;
+    rotate: 40dag;
+    }
+
+#polaroid_02 {
+    top: 4%;
+    left: 80%;
+    rotate: -12dag;
+    }
+#polaroid_03 {
+        top: 30%;
+        left: 40%; 
+        rotate: -12dag;
+        }
+
+#polaroid_04 {
+            top: 70%;
+            left: 70%;
+            rotate: 10dag;
+            }
+
+#polaroid_05 {
+                top: 55%;
+                left: 37%;
+                rotate: 30dag ;
+                }
+
+#polaroid_06 {
+                    top: 25%;
+                    left: 10%;
+                    rotate: -5dag ;
+                    }
+
+#polaroid_07 {
+                        top: 30%;
+                        left: 75%;
+                        rotate: 7dag ;
+                        }
+
+#polaroid_08 {
+                            top: 67%;
+                            left: 10%;
+                            rotate: 11dag ;
+                            }
+
+#polaroid_01 {
+                                top: 42%;
+                                left: 60%;
+                                rotate: 15dag ;
+                                } 
+                                
+    

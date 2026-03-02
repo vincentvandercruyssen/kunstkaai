@@ -66,6 +66,14 @@ Controleer alle gegevens (inclusief de bestandspaden in de kolommen @Kunstwerk e
 
 Exporteer daarna het rekenblad als CSV via Bestand → Download → Comma-separated values (.csv). Plaats het CSV-bestand (**VoornaamA_KMSKAkaarten.csv**) in de opdrachtmap VoornaamA_KMSKAkaarten.
 
+### Puntenverdeling
+
+- **Naamgeving en mappenstructuur (04)** Map VoornaamA_KMSKAkaarten, map Links, CSV-bestand correct benoemd, juiste plaatsing in OneDrive, geen overbodige bestanden.
+- **Verzamelen afbeeldingen (06)** Minimaal twaalf hoge resolutie kunstwerken in Links, consistente en correcte bestandsnamen.
+- **Verzamelen logo (01)** Correct SVG-logo aanwezig in Links.
+- **CSV-bestand: tekst (06)** Vijf gevraagde tekstkolommen correct ingevuld, minimaal twaalf kunstwerken, correcte en volledige gegevens.
+- **CSV-bestand: afbeeldingen (06)** Twee kolommen met bestandspaden, paden komen exact overeen met map en bestandsnamen.
+
 ## InDesign-sjabloon
 
 In deze stap maak je **één sjabloon** in Adobe InDesign dat later automatisch wordt ingevuld via Gegevenssamenvoeging. Dit sjabloon vormt de basis voor alle prentkaarten, dus werk nauwkeurig en consequent.
@@ -125,6 +133,13 @@ Controleer of elk kader correct staat en klaar is om gekoppeld te worden vóór 
 - Controleer of de koppelingen naar de map **Links** correct zijn
 - Sla het document op als **VoornaamA_KMSKAkaarten.indd**
 - Bewaar het bestand in de hoofdmap **VoornaamA_KMSKAkaarten** in je OneDrive-map
+
+### Puntenverdeling
+
+- **Naamgeving en structuur (04)** Correct documentformaat (100 × 150 mm), 2 pagina’s onder elkaar / geen spreads, correcte bestandsnaam, duidelijk gehanteerde lagenstructuur (Afbeeldingen / Tekst).
+- **Tekstkaders (05)** Aparte plek of kader per gegeven (Titel, Kunstenaar, Datum, Medium, Afmetingen), logische plaatsing, geen overlopende tekst, voorbereid op koppeling.
+- **Afbeeldingskaders (04)** Kunstwerk correct geplaatst op pagina 1, logo logisch geplaatst op pagina 2, correcte positionering.
+- **Typografie en hiërarchie (04)** Duidelijke hiërarchie, consistente uitlijning, correcte marges, verzorgde lay-out, leesbaarheid, voldoende schrijfruimte voorzien.
 
 ## Gegevenssamenvoeging
 
@@ -191,7 +206,7 @@ Resultaat:
 - **24 pagina’s**
 - Eén nieuw InDesign-bestand met alle prentkaarten dat je apart opslaat
 
-## Export en structuur
+### Export en structuur
 
 Bewaar alles in **VoornaamA_KMSKAkaarten**:
 
@@ -203,14 +218,13 @@ Bewaar alles in **VoornaamA_KMSKAkaarten**:
 
 Deel de OneDrive-koppeling in Google Classroom.
 
-## Puntenverdeling
+### Puntenverdeling
 
-- Structuur en naamgeving
-- Spreadsheet correct en volledig
-- CSV correct
-- Sjabloon in InDesign correct
-- Gegevenssamenvoeging werkt
-- Samengevoegd document en PDF
+- **Structuur en naamgeving (04)** Mapnaam, correct Indesign-sjabloon, CSV-bestand, Links-map (afbeeldingen + logo), samengevoegd document en PDF, geen overbodige bestanden.
+- **CSV gegevens (04)** Minimaal zeven juiste kolommen (vijf tekst, twee afbeeldingen), twaalf kunstwerken, correcte en volledige gegevens.
+- **Sjabloon InDesign (04)** Volgens de instructies gemaakte sjabloon, lagenstructuur, logische plaatsing van de elementen, typografische hiërarchie, verzorgde lay-out.
+- **Gegevenssamenvoeging (04)** Correct gekoppelde velden, voorvertoning, geen tekstoverlopen.
+- **Samengevoegd document en PDF (04)** Correct samengevoegd document en PDF.
 
 ## Bronnen
 

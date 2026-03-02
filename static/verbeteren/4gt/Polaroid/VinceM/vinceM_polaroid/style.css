@@ -1,0 +1,102 @@
+
+body {
+    margin: 0;
+    font-family: 'YourChosenFont', sans-serif;
+    background-image: url("images/textuur-achtergrond.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.polaroid {
+    position: absolute;
+    width: 200px;
+    background-color: #fefefe; 
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.polaroid img {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    filter: sepia(0.5); 
+}
+
+
+#polaroid_01 {
+    top: 10%;
+    left: 10%;
+    transform: rotate(-5deg);
+    z-index: 1;
+}
+
+#polaroid_02 {
+    top: 20%;
+    left: 30%;
+    transform: rotate(5deg);
+    z-index: 2;
+}
+
+#polaroid_03 {
+    top: 30%;
+    left: 50%;
+    transform: rotate(-10deg);
+    z-index: 3;
+}
+
+#polaroid_04 {
+    top: 40%;
+    left: 20%;
+    transform: rotate(10deg);
+    z-index: 4;
+}
+
+#polaroid_05 {
+    top: 50%;
+    left: 60%;
+    transform: rotate(-15deg);
+    z-index: 5;
+}
+
+#polaroid_06 {
+    top: 60%;
+    left: 40%;
+    transform: rotate(15deg);
+    z-index: 6;
+}
+
+#polaroid_07 {
+    top: 70%;
+    left: 70%;
+    transform: rotate(-20deg);
+    z-index: 7;
+}
+
+#polaroid_08 {
+    top: 60%;
+    left: 50%;
+    transform: rotate(20deg);
+    z-index: 8;
+}
+
+#polaroid_09 {
+    top: 70%;
+    left: 30%;
+    transform: rotate(-25deg);
+    z-index: 9;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    background-image: url('afbeeldingen/achetgrond.jpg'); 
+    background-size: 100vw 100vh; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+

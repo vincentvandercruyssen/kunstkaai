@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(0, 212, 212);
+    color: rgba(0, 0, 0, 0.604);
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    background-color: rgba(0, 0, 0, 0.587);
+    padding: 10px;
+    
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 11px;
+    border-radius: 20px;
+}
+
+main {
+    background-color: rgba(4, 92, 92, 0.683);
+    color: rgb(0, 0, 0);
+    max-width: 500px;
+    margin: auto;
+    padding: 24px;
+    border-radius: 20px;
+}      
+button{
+    background-color: rgb(255, 213, 0);
+    border-radius: 20px;
+}
+button:hover {
+    background-color: blue;
+}
+
+li {
+    list-style-position: inside;
+}

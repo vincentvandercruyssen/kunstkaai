@@ -1,0 +1,43 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: rgb(227, 250, 246);
+    color: rgb(96, 130, 159);   
+    
+    padding: 3%;
+    
+}
+
+form {
+    padding-left: 5%;
+    border: 2px solid rgb(193, 213, 227);
+    background-color: rgb(225, 245, 247);
+    box-sizing: border-box; 
+    border-radius: 10px;   
+}
+input, textarea {
+display:block;
+text-align: center;
+margin: 1%;
+
+}
+main{
+  max-width: 640px; 
+  margin: 0 auto;
+   background-color: rgb(255, 255, 255);
+   border: 1px solid rgb(96, 130, 159);
+   padding-left: 3%;
+   padding-right: 3%;
+   padding-bottom: 3%;
+   border-radius: 10px;
+}
+button {
+    background-color: rgb(115, 193, 193);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-color: rgb(255, 255, 255);
+    margin: 1%;
+    border-radius: 5px;
+}
+
+

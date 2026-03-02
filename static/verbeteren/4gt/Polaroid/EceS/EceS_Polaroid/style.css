@@ -1,0 +1,64 @@
+body{
+    background-color: bisque;
+    background-image: url(images/background.jpg);
+    
+}
+
+.polaroid {
+    position:absolute;
+    background-color:rgb(250, 227, 235);
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+}
+
+#polaroid1 {
+    top: 55%;
+    left: 70%;
+    rotate: 15deg;
+} 
+
+#polaroid2 {
+    top: 20%;
+    left: 65%;
+    rotate: -15deg;
+    z-index: 1;
+}
+#polaroid3 {
+    top: 45%;
+    left: 20%;
+    rotate:-15deg;
+    z-index: 1;
+}
+#polaroid4 {
+    top: 65%;
+    left: 35%;
+    rotate:-5deg;
+   
+}
+#polaroid5 {
+    top: 17%;
+    left:35%;
+    rotate: -5deg;
+}
+#polaroid6 {
+    top: 50%;
+    left:50%;
+    rotate: 5deg;
+    
+}
+#polaroid7 {
+    top: 70%;
+    left: 15%;
+    rotate: 10deg;
+}
+#polaroid8 {
+    top: 5%;
+    left: 5%;
+    rotate:15deg;
+}
+#polaroid9 {
+    top: 6%;
+    left: 50%;
+    rotate: 10deg;
+}

@@ -1,0 +1,97 @@
+body {
+    font-family: "felt-tip-woman", sans-serif;
+font-weight: 400;
+font-style: normal;
+background-color: beige;
+background-image: url(images/wood.jpg);
+background-size: 750px;
+color: rgb(54, 41, 34);
+}
+
+div.polaroid{
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 10px 2px 25px rgb(0, 0, 0);
+    box-sizing: border-box;
+
+}
+
+.polaroid img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: top;
+    filter: invert(5%) contrast(80%);
+} 
+
+#polaroid_1{
+    top: 35%;
+    right: 50%;
+    rotate: 5deg;
+}
+
+#polaroid_2{
+    top: 45%;
+right: 31%;
+rotate: -15deg;
+}
+
+#polaroid_3{
+    top: 15%;
+    left: 55%;
+    rotate: -5deg;
+}
+
+#polaroid_4{
+    top: 5%;
+    left: 32%;
+    rotate: 15deg;
+}
+
+#polaroid_5{
+    top: 1%;
+    left: 5%;
+    rotate: -15deg;
+}
+
+#polaroid_6{
+    top: 73%;
+    right: 13%;
+    rotate: 15deg;
+    
+}
+
+#polaroid_7{
+    top: 70%;
+    left: 29%;
+    rotate: 10deg;
+}
+
+#polaroid_8{
+    top: 34%;
+    left: 5%;
+    rotate: 15deg;
+
+}
+
+#polaroid_9{
+    top: 43%;
+    right: 5%;
+    rotate: -5deg;
+}
+
+#polaroid_10{
+    top: 65%;
+    left: 1%;
+    rotate: -15deg;
+
+}
+
+#polaroid_11{
+    top: 5%;
+    right: 5%;
+    rotate: 15deg;
+}

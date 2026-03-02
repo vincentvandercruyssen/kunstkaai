@@ -1,0 +1,31 @@
+input, textarea{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label{
+    display: block;
+    
+}
+
+body{
+    background-color: rgb(178, 178, 178);
+    
+  
+}
+main{
+    background-color: rgba(255, 255, 255, 0.777);
+    max-width: 300px;
+    margin: auto;
+    border-radius: 70px;
+    padding: 50px;
+}
+
+button{
+    background-color: blue;
+color: aliceblue;
+padding: 10px;
+border-radius: 90px;
+}
+
