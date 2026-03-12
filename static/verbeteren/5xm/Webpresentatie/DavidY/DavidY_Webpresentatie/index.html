@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpresentatie – Functies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+        <div class="header">
+            <h1>Functies in Javascript</h1>
+            <p>Webpresentatie door David Yusuf</p>
+        </div>
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#inleiding"><span>Wat?</span></a></li>
+                    <li><a href="#waarom"><span>Waarom?</span></a></li>
+                    <li><a href="#uitleg"><span>Hoe?</span></a></li>
+                    <li><a href="#parameters-return"><span>Parameters & Return</span></a></li>
+                    <li><a href="#voorbeeld"><span>Voorbeeld</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inleiding">
+            <h2>Wat is een functie?</h2>
+            <p>Een <strong>functie</strong> in JavaScript is een stukje code dat je een naam geeft en dat je later kan oproepen om het opnieuw uit te voeren. Je kan het zien als een soort recept of machine die een taak uitvoert.</p>
+            <p>Het voordeel is dat je code niet telkens opnieuw moet schrijven: je definieert de functie één keer en je kan ze daarna op verschillende plaatsen gebruiken.</p>
+        </section>
+
+        <section id="waarom">
+            <h2>Waarom bestaan functies?</h2>
+            <p>Functies zorgen ervoor dat je code <strong>korter</strong>, <strong>leesbaarder</strong> en <strong>herbruikbaar</strong> wordt. In plaats van dezelfde code vijf keer te kopiëren, schrijf je één functie en roep je die vijf keer op.</p>
+            <p>Dat maakt fouten zoeken makkelijker en je kan één functie aanpassen in plaats van overal losse stukjes code te moeten wijzigen.</p>
+        </section>
+
+        <section id="uitleg">
+            <h2>Hoe schrijf je een eenvoudige functie?</h2>
+            <p>Een klassieke functie ziet er zo uit:</p>
+            <pre>
+                <code>
+// definitie van de functie
+function begroet() {
+console.log("Hallo, welkom op mijn pagina!");
+}
+
+// de functie oproepen (uitvoeren)
+begroet();
+                </code>
+            </pre>
+            <p><strong>function</strong> is het sleutelwoord, <strong>begroet</strong> is de naam van de functie, en tussen de <strong>{ }</strong> staat de code die wordt uitgevoerd wanneer je de functie oproept.</p>
+        </section>
+
+        <section id="parameters-return">
+            <h2>Functies met parameters en return</h2>
+            <p>Functies kunnen ook <strong>parameters</strong> (input) krijgen en een <strong>return-waarde</strong> (output) teruggeven.</p>
+            <pre>  
+                <code>
+function telOp(getal1, getal2) {
+const som = getal1 + getal2;
+return som;
+}
+
+const resultaat = telOp(3, 5); // resultaat is 8
+console.log(resultaat);
+                </code>
+            </pre>
+            <p><strong>getal1</strong> en <strong>getal2</strong> zijn parameters. De functie telt ze op en <strong>return</strong> stuurt de uitkomst terug, zodat je die kan bewaren in een variabele of tonen op het scherm.</p>
+        </section>
+
+        <section id="voorbeeld">
+            <h2>Voorbeeld van een functie</h2>
+            <p>Hieronder zie je een voorbeeld van een interactieve functie. Jij geeft twee getallen in en een functie rekent de som uit en toont het resultaat in de pagina.</p>
+            <div class="voorbeeld">
+                <label for="getal1">Eerste getal:</label>
+                <input type="number" id="getal1" value="3">
+
+                <label for="getal2">Tweede getal:</label>
+                <input type="number" id="getal2" value="5">
+
+                <button id="bereken-knop">Bereken som</button>
+
+                <p id="uitkomst-tekst">De som verschijnt hier.</p>
+            </div>
+            <h3>Code van de voorbeeld (JavaScript)</h3>
+            <pre>
+                <code>
+// functie die twee getallen optelt
+function berekenSom(a, b) {
+  const resultaat = a + b;
+  return resultaat;
+}
+
+// elementen uit de HTML selecteren
+const input1 = document.querySelector("#getal1");
+const input2 = document.querySelector("#getal2");
+const knop = document.querySelector("#bereken-knop");
+const uitkomstTekst = document.querySelector("#uitkomst-tekst");
+
+// eventlistener om de functie uit te voeren wanneer je op de knop klikt
+knop.addEventListener("click", function () {
+  const waarde1 = Number(input1.value);
+  const waarde2 = Number(input2.value);
+  const som = berekenSom(waarde1, waarde2);
+
+  uitkomstTekst.textContent = "De som is: " + som;
+});
+                </code>
+            </pre>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Bronnen</h2>
+        <p>MDN Web Docs – JavaScript Functions<br>W3Schools - JavaScript Functions<br>Stackoverflow.com</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

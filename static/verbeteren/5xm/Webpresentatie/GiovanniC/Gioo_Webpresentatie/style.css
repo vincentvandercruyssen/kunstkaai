@@ -1,0 +1,122 @@
+
+* {margin:0;padding:0;box-sizing:border-box;}
+
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: radial-gradient(circle at top, #1b1b2f, #0f0f1a);
+  color: #f5f5f5;
+  height: 100vh;
+  overflow: hidden;
+  transition: background 0.5s, color 0.5s;
+}
+
+.img {position: fixed;   
+    top: 0;            
+    left: 0;            
+    width: 100px;
+    height: auto;       
+    padding: 15px;      
+    z-index: 9999;      
+}
+
+
+
+body.light {
+  background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+  color: #111;
+}
+
+
+.slide {
+  display: none;
+  height: 100vh;
+  padding: 80px;
+  text-align: center;
+  animation: slideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #a855f7, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}     
+
+h2 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+p, li {
+  font-size: 1.7rem;
+  max-width: 700px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+button {
+  margin-top: 25px;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(124, 58, 237, 0.6);
+}
+
+#demoBox {
+  margin-top: 30px;
+  padding: 25px;
+  width: 320px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.4s ease;
+}
+
+.highlight {
+  color: white;
+  box-shadow: 0 20px 50px rgba(236, 72, 153, 0.5);
+  transform: scale(1.05);
+}
+
+
+.controls {
+  position: fixed;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.controls button {
+  margin: 0 10px;
+}
+
+#counter {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+@keyframes slideIn {
+  from {opacity:0;transform: translateY(30px) scale(0.98);}
+  to {opacity:1;transform: translateY(0) scale(1);}
+}

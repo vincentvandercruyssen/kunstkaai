@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Events & Event Listeners</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Events & Event Listeners</h1>
+    <p>Weboriëntatie_JavaScript</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#wat">Wat is een event?</a></li>
+      <li><a href="#listener">Event listener</a></li>
+      <li><a href="#voorbeeld">Voorbeeld</a></li>
+      <li><a href="#bronnen">Bronnen</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="wat">
+      <h2>Wat is een event?</h2>
+      <p>
+        Een <strong>event</strong> is een gebeurtenis die plaatsvindt in de browser.
+        Dit kan gebeuren door een gebruiker of door de pagina zelf.
+      </p>
+      <p>
+        Voorbeelden van events zijn:
+      </p>
+      <ul>
+        <li>klikken op een knop</li>
+        <li>een toets indrukken</li>
+        <li>de pagina laden</li>
+        <li>met de muis over een element gaan</li>
+      </ul>
+    </section>
+
+<section id="slides">
+  <h2>Voorbeeld slides</h2>
+
+  <div class="slideshow">
+    <img src="images/slide1.webp" class="slide active">
+    <img src="images/slide2.gif" class="slide">
+  </div>
+
+  <button id="prev">Vorige</button>
+  <button id="next">Volgende</button>
+</section>
+
+
+
+
+
+
+    <section id="listener">
+      <h2>Wat is een event listener?</h2>
+      <p>
+        Een <strong>event listener</strong> is JavaScript-code die luistert naar een event
+        en iets uitvoert wanneer dat event gebeurt.
+      </p>
+      <p>
+        Zonder event listeners zou een website niet weten wanneer hij moet reageren
+        op de gebruiker.
+      </p>
+    </section>
+
+    <section id="voorbeeld">
+      <h2>Codevoorbeeld</h2>
+      <p>
+        In dit voorbeeld zit er een knop op de pagina.
+        Wanneer je op de knop klikt, verandert de tekst.
+      </p>
+
+      <button id="klikKnop">Klik mij</button>
+      <p id="resultaat">Er is nog niet geklikt.</p>
+
+      <code>
+const knop = document.getElementById("klikKnop");
+const tekst = document.getElementById("resultaat");
+
+knop.addEventListener("click", function () {
+tekst.textContent = "Je hebt op de knop geklikt!";
+});
+      </code>
+
+      <h3>Wat gebeurt hier?</h3>
+      <p>
+        JavaScript luistert naar het click-event van de knop.
+        Zodra de gebruiker klikt, wordt de tekst aangepast.
+      </p>
+    </section>
+
+    <section id="bronnen">
+      <h2>Bronnen</h2>
+      <ul>
+        <li>Google</li>
+        <li>Chatgpt</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Tsering Angel Geduntsang_Weboriëntatie</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

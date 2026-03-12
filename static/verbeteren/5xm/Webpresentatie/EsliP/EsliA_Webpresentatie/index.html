@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS in JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+      <div>
+        <h1>Style/CSS aanpassen in JavaScript</h1>
+        <p>Weboriëntatie – JavaScript concept</p>
+      </div>
+      <button id="lightBtn" class="light-toggle" title="Toggle light mode">💡</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Wat is het?</h2>
+      <p>
+        Met JavaScript kan je de opmaak (CSS) van een webpagina aanpassen terwijl de pagina al geladen is.
+        Zo kan je kleuren, groottes of andere stijlen veranderen op basis van gebruikersacties.
+        <img src="images/sddefault.jpg" alt="">
+      </p>
+    </section>
+
+    <section>
+      <h2>Waarom gebruiken we dit?</h2>
+      <p>
+        CSS aanpassen via JavaScript wordt vaak gebruikt voor interactieve websites.
+        Denk aan knoppen, thema’s (donker/licht), waarschuwingen of animaties.
+      </p>
+    </section>
+
+    <section>
+      <h2>Voorbeeld</h2>
+      <p>Klik op de knop om de stijl van de box te veranderen.</p>
+
+      <div id="box">Ik ben een box</div>
+      <button id="styleBtn">Verander stijl</button>
+    </section>
+
+    <section>
+      <h2>Codevoorbeeld</h2>
+      <p>
+        In JavaScript selecteren we een element en passen we de CSS aan via
+        <code>.style</code>. Het verschil tussen CSS en JavaScript is dat we in JavaScript dingen anders aanspreken en de stijl direct aanpassen via de DOM. Kort gezegd: JavaScript bepaalt wanneer iets verandert, en CSS bepaalt hoe het eruitziet.
+      </p>
+      <pre><code class="code-box">
+let styleToggle = false;
+const box = document.querySelector("#box");
+const styleBtn = document.querySelector("#styleBtn");
+
+styleBtn.addEventListener("click", boxToggleStyle);
+
+function boxToggleStyle() {
+  styleToggle = !styleToggle;
+  if (styleToggle) {
+    box.style.backgroundColor = "lightblue";
+    box.style.color = "white";
+    box.style.borderRadius = "10px";
+    box.style.fontSize = "1.2rem";
+  } else {
+    box.style.backgroundColor = "rgb(170, 187, 193)";
+    box.style.color = "black";
+    box.style.borderRadius = "0";
+    box.style.fontSize = "1rem";
+  }
+}
+</code></pre>
+    </section>
+
+    <section>
+      <h2>Bronnen</h2>
+      <ul>
+        <li>MDN Web Docs – JavaScript & DOM</li>
+        <li>W3Schools – JavaScript Style</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Esli</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code voorbeeld — if-else</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <a href="index.html" class="back">← Terug</a>
+    <h2>Code voorbeeld</h2>
+    <pre><code>// HTML
+&lt;button id="actionBtn" type="button"&gt;turn on light&lt;/button&gt;
+&lt;div id="status"&gt;De lamp is uit&lt;/div&gt;
+
+document.addEventListener('DOMContentLoaded', function(){
+  let lampOn = false;
+  const btn = document.getElementById('actionBtn');
+  btn.addEventListener('click', function(){
+    if(lampOn){
+      lampOn = false;
+    } else {
+      lampOn = true;
+    }
+  
+  });
+});
+</code></pre>
+
+    <section class="interactive">
+      <button id="actionBtn" type="button">turn on light</button>
+      <div id="status" class="status" aria-live="polite">De lamp is uit</div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

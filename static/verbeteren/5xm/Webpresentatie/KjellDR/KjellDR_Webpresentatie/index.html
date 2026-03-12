@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Events en EventListeners</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Events en EventListeners</h1>
+    <p>Hoe JavaScript reageert op acties van de gebruiker</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Wat is een event?</h2>
+      <p>
+        Een <strong>event</strong> is een gebeurtenis die plaatsvindt op een webpagina. 
+        Dit kan een actie van de gebruiker zijn, zoals klikken, typen of bewegen van de muis. 
+        Maar het kan ook automatisch gebeuren, bijvoorbeeld wanneer de pagina klaar is met laden.
+      </p>
+      <p>
+        Events zorgen ervoor dat JavaScript weet wanneer er iets gebeurt. Zonder events zou een webpagina 
+        statisch zijn en niet reageren op de gebruiker.
+      </p>
+      <p>
+        Voorbeelden van events:
+        <ul>
+          <li>Klikken op een knop</li>
+          <li>Bewegen van de muis</li>
+          <li>Indrukken van een toets</li>
+          <li>Pagina is geladen</li>
+        </ul>
+      </p>
+    </section>
+
+    <section>
+      <h2>Wat is een eventlistener?</h2>
+      <p>
+        Een <strong>eventlistener</strong> is een stukje JavaScript dat “luistert” naar een event. 
+        Zodra dat event plaatsvindt, voert de eventlistener een functie uit.
+      </p>
+      <p>
+        Je kan het zien als: “Als dit gebeurt, doe dan dat.”  
+        Dit maakt een website interactief, omdat er dan direct iets kan veranderen op de pagina.
+      </p>
+      <p>
+        Eventlisteners worden vaak gebruikt voor:
+        <ul>
+          <li>Knoppen</li>
+          <li>Formulieren</li>
+          <li>Animaties</li>
+          <li>Spellen</li>
+        </ul>
+      </p>
+    </section>
+
+    <section>
+      <h2>Waarom zijn events belangrijk?</h2>
+      <p>
+        Events en eventlisteners maken websites interactief. Zonder eventlisteners kan JavaScript niet reageren op de gebruiker. 
+        Hierdoor zou een website alleen tekst en afbeeldingen tonen, zonder dat er iets verandert.
+      </p>
+      <p>
+        Met events kan je dingen doen zoals: inhoud veranderen, pagina-elementen verbergen, nieuwe elementen toevoegen, of zelfs games maken.
+      </p>
+    </section>
+
+    <section>
+      <h2>Voorbeeld</h2>
+
+      <button id="klikKnop">Klik mij</button>
+      <button id="resetKnop">Reset</button>
+
+      <p id="tekst">Deze tekst zal veranderen.</p>
+    </section>
+
+    <section>
+      <h2>Muiscoördinaten (event + eventlistener)</h2>
+      <p>Beweeg je muis over de pagina en je ziet de exacte x/y-coördinaten.</p>
+      <p id="coords">X: 0 | Y: 0</p>
+    </section>
+
+    <section>
+      <h2>Codevoorbeeld</h2>
+      <pre>
+/* SLIDE EVENTS */
+volgendeBtn.addEventListener("click", () => {
+  if (huidigeSlide < slides.length - 1) {
+    huidigeSlide++;
+    toonSlide(huidigeSlide);
+  }
+});
+
+vorigeBtn.addEventListener("click", () => {
+  if (huidigeSlide > 0) {
+    huidigeSlide--;
+    toonSlide(huidigeSlide);
+  }
+});
+
+/* KNOP EVENTS */
+klikKnop.addEventListener("click", () => tekst.textContent = "Je hebt op de knop geklikt!");
+resetKnop.addEventListener("click", () => tekst.textContent = "Deze tekst zal veranderen.");
+
+/* MUIS EVENTS */
+document.addEventListener("mousemove", (e) => {
+  coords.textContent = `X: ${e.clientX} | Y: ${e.clientY}`;
+});
+      </pre>
+    </section>
+
+    <section>
+      <h2>Afsluiter</h2>
+      <p>Bedankt voor het kijken! 😊</p>
+      <p>Heb je nog vragen?</p>
+    </section>
+
+    <div class="slide-controls">
+      <button id="vorige">⬅ Vorige</button>
+      <button id="volgende">Volgende ➡</button>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Les Weboriëntatie</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

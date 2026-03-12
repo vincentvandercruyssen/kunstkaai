@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Webpresentatie – textContent</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="slide-container">
+      <section class="slide active">
+        <h1>Tekst aanpassen met textContent</h1>
+      </section>
+
+      <section class="slide">
+        <h2>Wat is textContent?</h2>
+        <p>
+          <code>textContent</code> is een eigenschap van elk HTML-element.
+          Hiermee kan JavaScript de tekst binnen dat element ophalen of
+          veranderen.
+        </p>
+        <p>Het gaat enkel om de tekst, niet om de opmaak of HTML.</p>
+      </section>
+
+      <section class="slide">
+        <h2>Waarom bestaat textContent?</h2>
+        <p>
+          Moderne websites moeten interactief reageren op gebruikers. Denk aan:
+        </p>
+        <ul>
+          <li>Klikken op knoppen</li>
+          <li>Formuliervelden invullen</li>
+          <li>Status tonen, zoals "Gelukt!"</li>
+        </ul>
+        <p>
+          Dankzij <code>textContent</code> kan een website dit zonder herladen.
+        </p>
+      </section>
+
+      <section class="slide">
+        <h2>Hoe werkt het?</h2>
+
+        <ol>
+          <li>Selecteer het element met <code>querySelector</code></li>
+          <li>Gebruik <code>textContent</code> om de tekst te veranderen</li>
+        </ol>
+
+        <pre><code>
+// Selecteer een element
+const titel = document.querySelector("h2");
+
+// Verander de tekst
+titel.textContent = "Nieuwe tekst!";
+        </code></pre>
+      </section>
+
+      <section class="slide">
+        <h2>Interactieve Demo</h2>
+
+        <p id="tekst">Dit is de originele tekst.</p>
+
+        <div class="buttons">
+          <button id="verander">Verander tekst</button>
+          <button id="reset">Reset</button>
+        </div>
+      </section>
+
+      <section class="slide">
+        <h2>Wanneer gebruik je textContent?</h2>
+        <p>Voorbeelden uit echte websites:</p>
+        <ul>
+          <li>Formulierstatus: “Dankjewel voor je inzending!”</li>
+          <li>Score tonen in een spel</li>
+          <li>Chatberichten toevoegen</li>
+          <li>Tekst aanpassen bij knoppen en menu’s</li>
+        </ul>
+        <p>
+          Overal waar tekst verandert, komt <code>textContent</code> van pas.
+        </p>
+      </section>
+
+      <section class="slide">
+        <h2>Samenvatting</h2>
+        <ul>
+          <li><code>textContent</code> verandert de tekst in HTML</li>
+          <li>Handig voor dynamische, interactieve pagina’s</li>
+          <li>Superveel gebruikt in websites, games en apps</li>
+        </ul>
+      </section>
+
+      <section class="slide">
+        <h2>Bronnen</h2>
+        <ul>
+          <li>MDN Web Docs – textContent</li>
+          <li>Cursus Weboriëntatie</li>
+        </ul>
+        <p>Bedankt voor het luisteren</p>
+      </section>
+    </div>
+
+    <div class="controls">
+      <button id="prev">Vorige</button>
+      <button id="next">Volgende</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Arrays in JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Arrays in JavaScript</h1>
+  <p>Leer wat arrays zijn en hoe je ze kunt gebruiken in JavaScript</p>
+</header>
+
+<main>
+  <section>
+    <h2>Wat is een array?</h2>
+    <img src="img/java.jpg" alt="Uitleg array">
+    <p>
+      Een array is een speciale variabele die meerdere waarden kan bevatten. 
+      Deze waarden staan in een vaste volgorde en hebben een **index**, beginnend bij 0. 
+      Bijvoorbeeld: <code>const kleuren = ["rood", "blauw", "groen"];</code>
+    </p>
+  </section>
+
+  <section>
+    <h2>Waarom arrays gebruiken?</h2>
+    <img src="img/java2.jpg" alt="Voorbeeld array">
+    <p>
+      Arrays maken het makkelijker om lijsten van gegevens te beheren. 
+      Zonder arrays zou je voor elke waarde een aparte variabele moeten maken.  
+      Bijvoorbeeld: in plaats van <code>let kleur1, kleur2, kleur3</code>, gebruik je één array <code>kleuren</code>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Array voorbeelden</h2>
+    <ul>
+      <li><code>const kleuren = ["rood", "blauw", "groen"];</code></li>
+      <li><code>const namen = ["Anna", "Bram", "Celine"];</code></li>
+      <li><code>const cijfers = [10, 20, 30, 40];</code></li>
+    </ul>
+    <p>Je kunt een specifiek item ophalen via de index: <code>kleuren[0]</code> geeft "rood".</p>
+  </section>
+
+  <section>
+    <h2>Itereren over een array</h2>
+    <p>
+      Je kunt door alle items van een array lopen met een <code>for-loop</code>:
+    </p>
+    <pre>
+const kleuren = ["rood", "blauw", "groen"];
+
+for (let i = 0; i &lt; kleuren.length; i++) {
+  console.log(kleuren[i]);
+}
+    </pre>
+    <p>Dit toont elk item in de console.</p>
+  </section>
+
+  <section>
+    <h2>Interactief: voeg zelf een kleur toe!</h2>
+    <p>Type een kleur en klik op "Toevoegen" om de array uit te breiden:</p>
+    <input type="text" id="nieuweKleur" placeholder="Bijv. oranje">
+    <button id="toevoegenKnop">Toevoegen</button>
+    <p>Array: <span id="arrayWeergave"></span></p>
+  </section>
+
+  <section>
+    <h2>Bronnen</h2>
+    <ul>
+      <li><a href="https://developer.mozilla.org/nl/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">MDN Web Docs-Arrays</a></li>
+      <li><a href="https://www.w3schools.com/js/js_arrays.asp" target="_blank">W3Schools - JavaScript Arrays</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Weboriëntatie - Léon Blyweert</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

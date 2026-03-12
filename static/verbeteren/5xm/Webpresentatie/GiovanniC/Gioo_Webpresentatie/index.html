@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS aanpassen via JavaScript – Webpresentatie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+ 
+
+  <img src="images/CSS logo.png" class="img" alt="css logo">
+
+  <section class="slide active">
+    <h1>CSS aanpassen via JavaScript</h1>
+  </section>
+
+
+  <section class="slide">
+    <h2>Wat is CSS aanpassen via JavaScript?</h2>
+    <p>
+      Met JavaScript kan je het uiterlijk van elementen dynamisch veranderen,
+      bijvoorbeeld kleur, achtergrond of layout.
+    </p>
+    <p>Het maakt websites interactief en responsief op acties van de gebruiker.</p>
+  </section>
+
+
+  <section class="slide">
+    <h2>Waarom bestaat dit?</h2>
+    <p>
+      Websites waren vroeger statisch. Met JavaScript kun je elementen laten reageren
+      op klikken, muisbewegingen of toetsen. Zo wordt de ervaring dynamischer.
+    </p>
+    <ul>
+      <li>HTML = structuur</li>
+      <li>CSS = uiterlijk</li>
+      <li>JavaScript = gedrag</li>
+    </ul>
+  </section>
+
+  <!-- Slide 4: Live demo – verander stijl -->
+  <section class="slide">
+    <h2>Live demo</h2>
+    <p>Klik op de knop hieronder om de stijl van dit element te veranderen:</p>
+    <button id="demoBtn">Verander stijl</button>
+    <div id="demoBox">Ik verander van CSS via JS</div>
+  </section>
+
+  <!-- Slide 5: Dark / Light mode -->
+  <section class="slide">
+    <h2>Dark / Light mode</h2>
+    <p>Een realistisch voorbeeld van CSS via JS:</p>
+    <button id="themeBtn">Toggle theme</button>
+  </section>
+
+  <!-- Slide 6: Stappenplan -->
+  <section class="slide">
+    <h2>Hoe werkt het?</h2>
+    <ol>
+      <li>Element selecteren via de DOM (<code>querySelector</code>)</li>
+      <li>Luisteren naar een event (<code>click</code>)</li>
+      <li>CSS-class toevoegen of verwijderen (<code>classList.toggle</code>)</li>
+    </ol>
+  </section>
+
+  <!-- Slide 7: Best practices -->
+  <section class="slide">
+    <h2>Best practices</h2>
+    <ul>
+      <li>Gebruik <code>classList</code> ipv <code>element.style</code></li>
+      <li>Houd CSS overzichtelijk in aparte bestanden</li>
+      <li>Maak interactieve elementen duidelijk voor gebruikers</li>
+      <li>Gebruik animaties subtiel voor betere UX</li>
+    </ul>
+  </section>
+
+  <!-- Slide 8: Bronnen -->
+  <section class="slide">
+    <h2>Bronnen</h2>
+    <ul>
+      <li>MDN Web Docs</li>
+      <li>javascript.info</li>
+      <li>W3Schools</li>
+    </ul>
+    <p>Gemaakt door Gioo – Weboriëntatie</p>
+  </section>
+
+</main>
+
+<!-- Navigatie -->
+<div class="controls">
+  <button id="prev">◀</button>
+  <span id="counter">1 / 8</span>
+  <button id="next">▶</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

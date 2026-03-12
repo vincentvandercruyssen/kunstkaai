@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpresentatie – querySelector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#intro">Inleiding</a></li>
+            <li><a href="#uitleg">Uitleg</a></li>
+            <li><a href="#voorbeeld">Voorbeeld</a></li>
+            <li><a href="#bronnen">Bronnen</a></li>
+        </ul>
+    </nav>
+    <h1>DOM selecteren met querySelector</h1>
+</header>
+
+<main>
+    <section id="intro">
+        <h2>Wat is querySelector?</h2>
+        <p>
+            <code>querySelector</code> is een JavaScript-methode waarmee je één
+            element uit de HTML-pagina kan selecteren. Je gebruikt dezelfde
+            selectors als in CSS.
+        </p>
+    </section>
+
+    <section id="uitleg">
+        <h2>Hoe werkt het?</h2>
+        <p>
+            Met <code>querySelector</code> selecteer je één element. JavaScript zoekt dan het eerste element dat overeenkomt
+            met die selector. Daarna kan je dat element aanpassen, bijvoorbeeld de tekst, stijl of inhoud.
+            Met <code>querySelectorAll</code> kan je meerdere elementen tegelijk
+            selecteren, zoals alle links of knoppen op een pagina.
+        </p>
+        <img src="Screenshot 2026-01-27 at 11.32.47.png" alt="">
+    </section>
+
+    <section id="voorbeeld">
+        <h2>Voorbeeld</h2>
+        <p id="demo-text">Klik op de knop om deze tekst te veranderen.</p>
+        <button id="change-btn">Verander tekst</button>
+    </section>
+
+    <section id="bronnen">
+        <h2>Bronnen</h2>
+        <ul>
+            <li>MDN Web Docs – querySelector</li>
+            <li>W3Schools – JavaScript DOM</li>
+            <li>ChatGPT</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>Gemaakt voor Weboriëntatie</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

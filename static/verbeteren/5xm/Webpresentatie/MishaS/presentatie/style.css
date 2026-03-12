@@ -1,0 +1,19 @@
+body {
+    font-family: "Merriweather", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(142, 142, 79, 0.834);
+}
+
+.h2text {
+    margin-left: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.containerLet {
+    margin-left: 200px;
+}
+
+.containerconst {
+    margin-left: 200px;
+}

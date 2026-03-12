@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functies schrijven en hergebruiken</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<header>
+<h1>Functies herschrijven in JavaScript</h1>
+<p>Leer hoe je functies slimmer, korter en herbruikbaar maakt</p>
+</header>
+
+
+<section class="container">
+<div class="card">
+<h2>Wat is een functie?</h2>
+<p>
+Een functie in JavaScript is een blok code dat je kunt hergebruiken.
+In plaats van dezelfde code meerdere keren te schrijven, roep je de functie aan.
+</p>
+</div>
+
+
+<div class="card">
+<h2>Standaard functie</h2>
+<p>Zo ziet een klassieke functie eruit:</p>
+<pre><code>function telOp(a, b) {
+return a + b;
+}
+
+
+console.log(telOp(2, 3));</code></pre>
+</div>
+
+
+<div class="card">
+<h2>Functie herschrijven (arrow function)</h2>
+<p>
+Arrow functions zijn korter en moderner. Ze worden veel gebruikt in moderne JavaScript.
+</p>
+<pre><code>const telOp = (a, b) => {
+return a + b;
+};</code></pre>
+</div>
+
+
+<div class="card">
+<h2>Extra verkorte versie</h2>
+<p>
+Als je functie maar één regel heeft, kun je <code>return</code> weglaten.
+</p>
+<pre><code>const telOp = (a, b) => a + b;</code></pre>
+</div>
+
+
+<div class="card">
+<h2>Praktisch voorbeeld</h2>
+<p>Klik op de knop om een functie uit te voeren:</p>
+<button onclick="toonResultaat()">Bereken 5 + 7</button>
+<p id="resultaat"></p>
+</div>
+
+
+<div class="card">
+<h2>Waarom functies herschrijven?</h2>
+<ul>
+<li>✔ Minder code</li>
+<li>✔ Betere leesbaarheid</li>
+<li>✔ Makkelijker onderhoud</li>
+<li>✔ Moderne JavaScript - stijl</li>
+</ul>
+</div>
+</section>
+
+
+<footer>
+<p>Webpresentatie functies schrijven en hergebruiken in JS - Lex Lagniau</p>
+</footer>
+
+
+<script>
+const telOp = (a, b) => a + b;
+
+
+function toonResultaat() {
+document.getElementById("resultaat").textContent =
+"Resultaat: " + telOp(5, 7);
+}
+</script>
+
+
+</body>
+</html>

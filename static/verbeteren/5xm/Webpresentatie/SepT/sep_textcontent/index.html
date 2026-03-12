@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Webpresentatie – textContent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Tekst aanpassen met textContent</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Wat is textContent?</h2>
+      <p>Met <strong>textContent</strong> kan je de tekst van een HTML-element lezen of veranderen.</p>
+    </section>
+
+    <section>
+      <h2>Voorbeeld</h2>
+      <p id="message">Klik op de knop om deze tekst te veranderen.</p>
+      <button id="changeBtn">Verander tekst</button>
+    </section>
+
+    <section>
+      <h2>Hoe werkt het?</h2>
+      <p>Je selecteert een element met querySelector en past daarna de tekst aan.</p>
+      <pre><code>
+message.textContent = "Nieuwe tekst";
+      </code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Gemaakt door Sep Timmermans</p>
+  </footer>
+
+   <script src="main.js"></script>
+</body>
+</html>

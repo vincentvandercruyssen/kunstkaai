@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Веб-презентация</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hmt4qld.css">
+</head>
+<body>
+
+    <div class="slider">
+    <div class="slide active ">
+        <h1>presentatie</h1>
+        <p></p>
+    </div>
+<div class="slider">
+    <div class="slide ">
+        <h1>for-loops (for-lussen en forEach)</h1>
+        <p>В **JavaScript** есть разные виды **циклов**, и два самых популярных для перебора данных — это **`for`** и **`forEach</p>
+    </div>
+
+    <div class="slide ">
+        <h1>`for` — классический цикл</h1>
+        <p>Это обычный цикл, который ты сам полностью контролируешь.</p>
+    </div>
+
+    <div class="slide">
+        <h1>Синтаксис:</h1>
+        <img src="img presentatie/image.png" alt="">
+    </div>
+    <div class="slide">
+        <h1>Как это работает:</h1>
+        <div class="numbers">
+            <ul>`let i = 0` — начальное значение</ul>
+            <ul>`i < 5` — условие (пока оно `true`, цикл работает)</ul>
+            <ul>`i++` — шаг (увеличиваем `i` на 1)</ul>
+        </div>
+    </div>
+    <div class="slide">
+        <h1>Пример с массивом:</h1>
+            <img src="img presentatie/Снимок экрана 2026-01-08 в 23.08.34.png" alt="">
+        <p>Плюсы</p>
+        <div class="numbers">
+            <ul>Можно использовать `break` и `continue`</ul>
+            <ul>Работает с любыми структурами</ul>
+            <ul>Полный контроль над индексом</ul>
+        </div>
+    </div>
+    <div class="slide">
+        <h1>`forEach` — метод массивов</h1>
+        <p>`forEach` — это **метод массива**, который выполняет функцию для каждого элемента массива.</p>
+    </div>
+    <div class="slide">
+        <h1>Синтаксис</h1>
+        <img src="img presentatie/image copy.png" alt="">
+    </div>
+    <div class="slide">
+        <h1>Пример:</h1>
+        <img src="img presentatie/Снимок экрана 2026-01-08 в 23.08.34.png" alt="">
+        <h2>Что передаётся</h2>
+        <div class="numbers">
+            <ul>`element` — текущий элемент массива</ul>
+            <ul>`index` — индекс элемента</ul>
+            <ul>`array` — сам массив</ul>
+        </div>
+    </div>
+    <div class="slide">
+        <h1>Важно</h1>
+        <ul>`forEach` **нельзя остановить** (`break` / `continue` не работают)</ul>
+        <ul>Работает **только с массивами**</ul>
+    </div>
+    <div class="slide">
+        <h1>Разница между `for` и `forEach`</h1>
+        <table>
+    <thead>
+      <tr>
+        <th>for</th>
+        <th>forEach</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Можно использовать <code>break</code> и <code>continue</code></td>
+        <td>❌ Нельзя прерывать цикл напрямую</td>
+      </tr>
+      <tr>
+        <td>Работает с массивами, объектами, строками, NodeList и другими итерируемыми</td>
+        <td>Только с массивами (или массивоподобными объектами через <code>Array.from()</code>)</td>
+      </tr>
+      <tr>
+        <td>Более гибкий, подходит для сложной логики</td>
+        <td>Более компактный и читабельный для простых операций</td>
+      </tr>
+      <tr>
+        <td>Старый синтаксис, поддержка во всех браузерах</td>
+        <td>Современный стиль, ES5+</td>
+          </tr>
+    </tbody>
+  </table>
+    </div>
+    <div class="slide">
+        <h1>Когда что использовать?</h1>
+        <h4>Используй **`for`**, если нужно:</h4>
+        <div class="numbers">
+            <ul>рервать цикл</ul>
+            <ul>сложная логика</ul>
+            <h4>Используй **`forEach`**, если:</h4>
+            <ul>просто перебрать массив</ul>
+            <ul>написать чистый и понятный код</ul>
+        </div>
+    </div>
+    <div class="slide">
+        <h1>Brommen</h1>
+        <h2>Open Ai</h2>
+        <div class="img1">
+        <img src="img presentatie/841754547484_604564.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="controls">
+    <button id="prev">←</button>
+    <button id="next">→</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

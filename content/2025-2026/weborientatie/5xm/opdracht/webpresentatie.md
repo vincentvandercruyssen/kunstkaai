@@ -120,18 +120,19 @@ Je licht je webpresentatie kort toe in de klas:
 
 ### Deel 1: Webpresentatie
 
-- **Structuur en netheid**: Correcte mapstructuur, juiste bestandsnamen, duidelijke opbouw.
-- **HTML/CSS**: Semantische structuur, correcte koppen, logische hiërarchische indeling, leesbaarheid, overzichtelijke lay-out en vormgeving.
-- **JavaScript-concept**: Concept correct uitgelegd, juiste terminologie, eigen woorden.
-- **Codevoorbeeld of demo**: Werkend en relevant voorbeeld dat het concept ondersteunt.
-- **Bronvermelding**: Gebruikte bronnen correct en volledig vermeld.
+- **Structuur en netheid (04)**: Correcte mapstructuur, juiste bestandsnamen, duidelijke opbouw.
+- **HTML/CSS (04)**: Semantische structuur, correcte koppen, logische hiërarchische indeling, leesbaarheid, overzichtelijke lay-out en vormgeving.
+- **JavaScript-concept (06)**: Concept correct uitgelegd, juiste terminologie, eigen woorden.
+- **Codevoorbeeld of demo (04)**: Werkend en relevant voorbeeld dat het concept ondersteunt.
+- **Bronvermelding (02)**: Gebruikte bronnen correct en volledig vermeld.
 
 ### Deel 2: Mondelinge presentatie
 
-- **Inleiding en uitleg in eigen woorden**: Concept wordt correct en begrijpelijk uitgelegd.
-- **Context en duiding**: Wanneer gebruik je dit en waarom bestaat het.
-- **Codevoorbeeld of demo**: Voorbeeld werkt en ondersteunt de uitleg.
-- **Structuur**: Logische opbouw, duidelijke volgorde.
+- **Tijdig en correct ingediend (02)**
+- **Inleiding en uitleg in eigen woorden (04)**: Concept wordt correct en begrijpelijk uitgelegd.
+- **Context en duiding (04)**: Wanneer gebruik je dit en waarom bestaat het.
+- **Codevoorbeeld of demo (04)**: Voorbeeld werkt en ondersteunt de uitleg.
+- **Structuur (02)**: Logische opbouw, duidelijke volgorde.
 
 ## Doel van deze opdracht
 

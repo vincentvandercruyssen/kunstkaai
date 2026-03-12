@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>ForLoops & ForEach</title>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<div class="bg-layer" id="main-bg"></div>
+	<div class="bg-layer" id="gradient-bg"></div>
+
+	<main class="container">
+		<div class="header-container">
+			<h1 class="main-title">ForLoops <span class="white">&</span> ForEach</h1>
+		</div>
+
+		<div class="icons-container">
+			<div class="icon-wrapper left" id="btn-forloop">
+				<img src="images/ForLoop.png" alt="For Loop Icon" class="loop-icon">
+			</div>
+
+			<div class="icon-wrapper right" id="btn-foreach">
+				<img src="images/ForEach.png" alt="ForEach Icon" class="loop-icon">
+			</div>
+		</div>
+	</main>
+
+	<div class="modal-overlay" id="modal-overlay">
+		<div class="modal-content" id="modal-content">
+			<button class="close-btn">&times;</button>
+			<div id="content-body"></div>
+		</div>
+	</div>
+
+	<template id="data-forloop">
+		<h2 class="modal-title">For Loop</h2>
+		<p class="summary">Perfect als je controle wilt over de index.</p>
+		<div class="code-box">
+			<pre><code>const autos = ["BMW", "Audi", "Volvo"];
+
+for (let i = 0; i < autos.length; i++) {
+  console.log(autos[i]);
+}</code></pre>
+		</div>
+
+		<div class="result-label">Resultaat:</div>
+		<div class="result-box">BMW<br>Audi<br>Volvo</div>
+
+		<p class="explanation">
+			<strong>1. let i = 0;</strong> Begin bij de eerste auto (index 0).<br>
+			<strong>2. i < autos.length;</strong> Ga door zolang er auto's zijn.<br>
+					<strong>3. i++;</strong> Ga naar de volgende auto in de lijst.
+		</p>
+	</template>
+
+	<template id="data-foreach">
+		<h2 class="modal-title">For Each</h2>
+		<p class="summary">De makkelijkste manier om door een lijst te gaan.</p>
+		<div class="code-box">
+			<pre><code>const autos = ["BMW", "Audi", "Volvo"];
+
+autos.forEach(auto => {
+  console.log("Ik rij een " + auto);
+});</code></pre>
+		</div>
+
+		<div class="result-label">Resultaat:</div>
+		<div class="result-box">Ik rij een BMW<br>Ik rij een Audi<br>Ik rij een Volvo</div>
+
+		<p class="explanation">
+			Je hoeft geen index of teller bij te houden.<br>
+			Hij pakt automatisch <strong>elke auto</strong> uit de lijst.
+		</p>
+	</template>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

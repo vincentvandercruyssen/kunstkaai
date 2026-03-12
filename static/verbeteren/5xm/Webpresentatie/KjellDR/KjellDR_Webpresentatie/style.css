@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #d9e4f5);
+  color: #1f2933;
+  overflow: hidden;
+}
+
+header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+main {
+  height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: none;
+  width: 90%;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+section.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#resetKnop {
+  background-color: #64748b;
+  margin-left: 0.5rem;
+}
+
+#tekst {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+#coords {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #1f2933;
+}
+
+pre {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  padding: 1.2rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+.slide-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 900px;
+  margin-top: 1.5rem;
+}
+
+footer {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
