@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kanban Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+    <h1>Kanban Pro</h1>
+
+    <div class="topbar">
+      <input id="kaartTekst" placeholder="Nieuwe taak toevoegen..." />
+      <button id="voegKaartToe" type="button">Toevoegen</button>
+      <button id="darkModeToggle" type="button">🌙 Dark Mode</button>
+    </div>
+
+    <section class="kanban-bord">
+
+      <div class="kolom">
+        <h2>Te doen (<span id="todoCount">0</span>)</h2>
+        <div class="lijst" id="todo"></div>
+      </div>
+
+      <div class="kolom">
+        <h2>Bezig (<span id="bezigCount">0</span>)</h2>
+        <div class="lijst" id="bezig"></div>
+      </div>
+
+      <div class="kolom">
+        <h2>Klaar (<span id="klaarCount">0</span>)</h2>
+        <div class="lijst" id="klaar"></div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

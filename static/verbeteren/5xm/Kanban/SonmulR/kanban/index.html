@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+    <h1>My Kanban Board</h1>
+
+    <div class="bediening">
+      <input
+        id="kaartTekst"
+        type="text"
+        placeholder="Add a new task"
+      />
+      <button id="voegKaartToe">Add</button>
+    </div>
+
+    <section class="kanban-bord">
+
+      <div class="kolom">
+        <h2>To Do</h2>
+        <div class="lijst" id="todo"></div>
+      </div>
+
+     
+      <div class="kolom">
+        <h2>In Progress</h2>
+        <div class="lijst" id="bezig"></div>
+      </div>
+
+      <div class="kolom">
+        <h2>Done</h2>
+        <div class="lijst" id="klaar"></div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

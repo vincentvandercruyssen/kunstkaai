@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4ff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4a4aff;
+}
+
+.board {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.column {
+    background: #ffffff;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.column h2 {
+    text-align: center;
+    color: #333;
+}
+
+.note {
+    background: #ffe680;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note button {
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+textarea {
+    width: 300px;
+    height: 80px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #aaa;
+}
+
+.add-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #4a4aff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+

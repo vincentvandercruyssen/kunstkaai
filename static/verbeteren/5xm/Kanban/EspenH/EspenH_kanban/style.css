@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.kanban-board {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* allow columns to wrap on narrow viewports */
+}
+.kanban-column {
+    flex: 1 1 300px; /* grow and shrink with minimum width */
+}
+
+.kanban-column {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-list {
+    min-height: 100px;
+    position: relative;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    transition: background-color 0.2s;
+}
+.kanban-list.over {
+    background-color: #f0f8ff;
+}
+
+.kanban-list:empty::before {
+    content: "Drop tasks here";
+    color: #aaa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    font-style: italic;
+    transition: opacity 0.2s;
+}
+
+.kanban-item.dragging {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.kanban-item {
+    background-color: #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.kanban-item:hover {
+    background-color: #ccc;
+}
+
+.kanban-item:active {
+    background-color: #aaa;
+}
+
+h2 {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+/* controls area */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+.add-task input,
+.add-task input[type=color] {
+    padding: 5px;
+    font-size: 1em;
+    margin-right: 5px;
+}
+.add-task button,
+.controls button {
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.count {
+    background: #eee;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.add-task button:hover,
+.controls button:hover {
+    background-color: #eee;
+}
+
+/* task delete button */
+.kanban-item {
+    background-color: #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.kanban-item .delete-btn,
+.kanban-item .edit-btn {
+    position: absolute;
+    top: 3px;
+    background: transparent;
+    border: none;
+    font-size: 0.9em;
+    cursor: pointer;
+    padding: 0 3px;
+}
+
+.kanban-item .delete-btn {
+    right: 5px;
+}
+.kanban-item .edit-btn {
+    right: 20px;
+}
+
+.kanban-item .delete-btn:hover {
+    color: red;
+}
+.kanban-item .edit-btn:hover {
+    color: blue;
+}
+
+/* inline editor inside cards */
+.task-editor {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-top: 6px;
+}
+.task-editor .editor-input {
+    padding: 4px;
+    font-size: 0.95em;
+}
+.task-editor .editor-color {
+    width: 34px;
+    height: 28px;
+    padding: 0;
+    border: none;
+}
+.task-editor .save-btn,
+.task-editor .cancel-btn {
+    padding: 4px 6px;
+    font-size: 0.85em;
+    cursor: pointer;
+}
+

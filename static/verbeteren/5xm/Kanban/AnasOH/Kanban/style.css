@@ -1,0 +1,58 @@
+body {
+  background-color: #f6f6f8;
+  color: #121212;
+  font-family: system-ui;
+  margin: 20px;
+}
+
+.bediening {
+  margin-block-end: 24px;
+}
+
+input {
+  padding: 6px;
+  width: 220px;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.kanban-bord {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.kolom {
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.lijst {
+  min-height: 150px;
+  padding: 8px;
+  border: 2px dashed #ccc;
+  border-radius: 6px;
+}
+
+.lijst.over {
+  background-color: #e6f0ff;
+  border-color: #4a90e2;
+}
+
+.kaart {
+  background-color: #ffffff;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  cursor: grab;
+}
+
+.zwevend {
+  opacity: 0.5;
+}

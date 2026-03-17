@@ -1,0 +1,102 @@
+body {
+  background-color: #f6f6f8;
+  color: #121212;
+  font-family: system-ui;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bediening {
+  margin-block-end: 24px;
+}
+
+input {
+  padding: 6px;
+  width: 220px;
+}
+
+button {
+  padding: 6px 10px;
+}
+
+.kanban-bord {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* TODO: kolom als duidelijk blok */
+.kolom {
+  height: 100px;
+  line-height: normal;
+  background: #eaeaea;
+  width: 300px;
+  min-height: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* TODO: drop zone zichtbaar maken */
+.lijst {
+background-color: #f6f6f8;
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 5px;
+margin-right: 5px;
+border-radius: 10px;
+border: dashed #d3d3d3;
+padding: 100px;
+min-height: 200px;
+padding: 10px;
+}
+
+/* TODO: feedback bij dragover */
+.lijst.over {
+  background-color: #d8dbdd;
+}
+
+/* TODO: kaart stijl */
+.kaart {
+  background: white;
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
+}
+
+.kaart:active {
+  cursor: grabbing;
+}
+
+/* TODO: kaart feedback tijdens slepen */
+.zwevend {
+opacity: 0.5;
+}
+
+.verwijder {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #888;
+}
+
+.verwijder:hover {
+  color: red;
+}
+
+.zwevend {
+  opacity: 0.5;
+}
+
+
+section h2 {
+text-align: center;
+}
+

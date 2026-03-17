@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Bord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Mijn Kanban Bord</h1>
+
+        <div class="progress-container">
+            <div class="progress-info">
+                <span class="progress-label">Voortgang</span>
+                <span class="progress-percentage">0%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill-bezig" id="progressBezig"></div>
+                <div class="progress-fill-klaar" id="progressKlaar"></div>
+            </div>
+        </div>
+
+        <div class="bediening">
+            <input id="kaartTekst" placeholder="Nieuw kaartje toevoegen" />
+            <button id="voegKaartToe">Toevoegen</button>
+        </div>
+
+        <div class="kanban-bord">
+            <div class="kolom">
+                <h2>Te doen</h2>
+                <div class="lijst" id="todo"></div>
+            </div>
+
+            <div class="kolom">
+                <h2>Bezig</h2>
+                <div class="lijst" id="bezig"></div>
+            </div>
+
+            <div class="kolom">
+                <h2>Klaar</h2>
+                <div class="lijst" id="klaar"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Bronnen</h3>
+        <ul>
+            <li><a href="https://leertaken.nl/5.-JS/5.-DOM-manipulation/DOM">Leertaken - DOM Manipulation</a></li>
+            <li><a href="https://leertaken.nl/5.-JS/3.-Functions/functions">Leertaken - Functions</a></li>
+            <li><a href="https://code.mu/nl/javascript/manual/lang/null/">Code.mu - Null</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API">MDN - Drag and Drop
+                    API</a></li>
+        </ul>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

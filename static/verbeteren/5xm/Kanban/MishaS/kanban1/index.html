@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bediening">
+        <h1>Kanban</h1>
+  <input id="kaartTekst" placeholder="Nieuw kaartje toevoegen" />
+  <button id="voegKaartToe">Toevoegen</button>
+
+    <section class="kanban-bord">
+    <div class="kolom">
+        <h2>Te doen</h2>
+        <div class="lijst" id="todo">
+        </div>
+    </div>
+
+     <div class="kolom">
+        <h2>Bezig</h2>
+        <div class="lijst" id="bezig">
+        </div>
+    </div>
+
+     <div class="kolom">
+        <h2>Klaar</h2>
+        <div class="lijst" id="klaar">
+        </div>
+    </div>
+
+<script src="app.js"></script>
+
+</section>
+</div>
+</body>
+</html>

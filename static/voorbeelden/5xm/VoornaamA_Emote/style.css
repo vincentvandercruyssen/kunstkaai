@@ -1,0 +1,50 @@
+body {
+    font-family: system-ui;
+    background-color: #456;
+    color: #eef;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#emote-zone {
+    padding: 2rem;
+    background: #0004;
+}
+
+#emote-icoon {
+    font-size: 5rem;
+    user-select: none;
+}
+
+#emote-titel {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.knoppen {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 1rem;
+    border: none;
+    background: #456;
+    color: #eef;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #678;
+}

@@ -1,0 +1,95 @@
+body {
+  background-color: #f6f6f8;
+  color: white;;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(IMG/bg.jpg);
+  background-size: cover;
+}
+h1{
+   color: #727ccb;
+}
+h2{
+   color: #2535b0;
+}
+.bediening {
+  margin-block-end: 24px;
+}
+
+input {
+  padding: 6px;
+  width: 220px;
+}
+
+button {
+  padding: 6px 10px;
+}
+
+.kanban-bord {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.kolom {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.lijst {
+  min-height: 150px;
+  padding: 8px;
+  border: 2px dashed #ccc;
+  border-radius: 6px;
+}
+
+.lijst.over {
+  border-color: #4f46e5;
+}
+
+.kaart {
+  background: #727ccb;
+  padding: 8px;
+  margin-block-end: 8px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  cursor: grab;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.zwevend {
+  opacity: 0.5;
+}
+
+.verwijder {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #b91c1c;
+}
+
+.verwijder:hover {
+  color: #7f1d1d;
+}
+@media (max-width: 768px) {
+  .kanban-bord {
+    grid-template-columns: 1fr;
+  }
+
+  .bediening {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: fit-content;
+  }
+}

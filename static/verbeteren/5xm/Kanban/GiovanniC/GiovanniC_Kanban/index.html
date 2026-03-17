@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kanban Bord</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Mijn Kanban Bord</h1>
+
+  <div class="bediening">
+    <input type="text" id="taakInvoer" placeholder="Nieuwe taak...">
+    <button id="taakToevoegenKnop">Toevoegen</button>
+  </div>
+
+  <div class="kanban-bord">
+    
+    <div class="kolom">
+      <h2>To Do</h2>
+      <div class="lijst" id="todoLijst"></div>
+    </div>
+
+    <div class="kolom">
+      <h2>Bezig</h2>
+      <div class="lijst" id="bezigLijst"></div>
+    </div>
+
+    <div class="kolom">
+      <h2>Klaar</h2>
+      <div class="lijst" id="klaarLijst"></div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

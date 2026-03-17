@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kanban Bord</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main>
+  <h1>Mijn Kanban Bord</h1>
+
+  <div class="bediening">
+    <input id="kaartTekst" placeholder="Nieuw kaartje toevoegen" />
+    <button id="voegKaartToe">Toevoegen</button>
+  </div>
+
+  <section class="kanban-bord">
+    <div class="kolom">
+      <h2>Te doen</h2>
+      <div class="lijst" id="todo"></div>
+    </div>
+
+    <div class="kolom">
+      <h2>Bezig</h2>
+      <div class="lijst"></div>
+    </div>
+
+    <div class="kolom">
+      <h2>Klaar</h2>
+      <div class="lijst"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Bronnen:
+      Chatgpt, google
+    </p>
+  </footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

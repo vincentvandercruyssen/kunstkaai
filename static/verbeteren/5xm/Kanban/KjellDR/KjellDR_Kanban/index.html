@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geavanceerd Kanban Bord</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+  <h1>Mijn Geavanceerd Kanban Bord</h1>
+
+  <div class="bediening">
+    <input id="kaartTekst" placeholder="Nieuwe taak...">
+
+    <select id="prioriteit">
+      <option value="laag">Laag</option>
+      <option value="middel">Middel</option>
+      <option value="hoog">Hoog</option>
+    </select>
+
+    <input type="color" id="kleurLabel" value="#6366f1">
+
+    <button id="voegKaartToe">Toevoegen</button>
+
+    <input id="zoekInput" placeholder="Zoek taak...">
+  </div>
+
+  <div class="kanban-bord">
+
+    <section class="kolom">
+      <h2>Te doen (<span id="todoCount">0</span>/5)</h2>
+      <div id="todo" class="lijst"></div>
+    </section>
+
+    <section class="kolom">
+      <h2>Bezig (<span id="bezigCount">0</span>/5)</h2>
+      <div id="bezig" class="lijst"></div>
+    </section>
+
+    <section class="kolom">
+      <h2>Klaar (<span id="klaarCount">0</span>/5)</h2>
+      <button id="archiveBtn">Archiveer alles</button>
+      <div id="klaar" class="lijst"></div>
+    </section>
+
+  </div>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

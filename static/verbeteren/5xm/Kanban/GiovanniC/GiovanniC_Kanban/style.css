@@ -1,0 +1,96 @@
+:root {
+  --rood: #c62828;
+  --rood-licht: #ef5350;
+  --rood-zacht: #fdecea;
+  --grijs: #f5f5f5;
+  --border: #ddd;
+}
+
+body {
+  background: var(--grijs);
+  font-family: system-ui, sans-serif;
+  padding: 30px;
+}
+
+h1 {
+  color: var(--rood);
+}
+
+.bediening {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  width: 220px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: var(--rood);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--rood-licht);
+}
+
+.kanban-bord {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.kolom {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border-top: 4px solid var(--rood);
+}
+
+.lijst {
+  min-height: 200px;
+  padding: 10px;
+  border: 2px dashed var(--border);
+  border-radius: 6px;
+}
+
+.lijst.over {
+  background: var(--rood-zacht);
+  border-color: var(--rood);
+}
+
+.kaart {
+  position: relative;
+  background: white;
+  padding: 10px 30px 10px 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid var(--rood);
+  border-radius: 6px;
+  cursor: grab;
+}
+
+.zwevend {
+  opacity: 0.5;
+}
+
+
+.verwijder-btn {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: var(--rood);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.verwijder-btn:hover {
+  color: black;
+}

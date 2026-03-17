@@ -313,10 +313,10 @@ Kies minstens één uitbreiding uit de lijst hieronder, of bedenk zelf een eigen
 ## Puntenverdeling
 
 * Bestandsnamen en structuur (04) Correcte map, juiste bestanden, OneDrive link.
-* HTML (06) Semantische structuur, correcte koppen, id kenmerken correct, classes logisch.
-* CSS (06) Overzichtelijke layout, kolommen, kaarten, duidelijke feedback classes.
-* JavaScript basis (04) Correcte selecties, click event, functie kaartToevoegen werkt foutloos en bevat duidelijke, inhoudelijke commentaar.
-* Drag en drop (04) Sleepbaar, drop zones, verplaatsen werkt altijd en code is duidelijk becommentarieerd, geen errors.
+* HTML (02) Semantische structuur, correcte koppen, id kenmerken correct, classes logisch.
+* CSS (02) Overzichtelijke layout, kolommen, kaarten, duidelijke feedback classes.
+* JavaScript basis (03) Correcte selecties, click event, functie kaartToevoegen werkt foutloos en bevat duidelijke, inhoudelijke commentaar.
+* Drag en drop (03) Sleepbaar, drop zones, verplaatsen werkt altijd en code is duidelijk becommentarieerd, geen errors.
 * Extra (06) Nieuwe optie(s) volledig werkend en netjes geïntegreerd.
 
 ## Bronnen

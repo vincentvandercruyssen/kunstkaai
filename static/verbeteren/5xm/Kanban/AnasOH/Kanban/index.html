@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Bord</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Mijn Kanban Bord</h1>
+
+      <div class="bediening">
+        <input id="kaartTekst" placeholder="Nieuw kaartje toevoegen" />
+        <button id="voegKaartToe">Toevoegen</button>
+      </div>
+
+      <div class="kanban-bord">
+        <section class="kolom">
+          <h2>Te doen</h2>
+          <div id="todo" class="lijst"></div>
+        </section>
+
+        <section class="kolom">
+          <h2>Bezig</h2>
+          <div class="lijst"></div>
+        </section>
+
+        <section class="kolom">
+          <h2>Klaar</h2>
+          <div class="lijst"></div>
+        </section>
+      </div>
+
+      <footer>
+        <p>Bronnen: leertaken.nl, code.mu, cursus Weboriëntatie</p>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

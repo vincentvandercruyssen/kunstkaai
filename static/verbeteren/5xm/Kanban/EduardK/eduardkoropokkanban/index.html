@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Punk Kanban</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top">
+    <div class="brand">
+      <div class="orb" aria-hidden="true"></div>
+      <div class="brandText">
+        <h1 class="title">KANBAN</h1>
+        <p class="subtitle">cut • paste • do • repeat</p>
+      </div>
+    </div>
+
+    <form class="composer" id="composer" autocomplete="off">
+      <input id="taskInput" type="text" placeholder="Text hier..." maxlength="120" />
+      <button id="addBtn" type="submit">Toevoegen</button>
+    </form>
+  </header>
+
+  <main class="board" aria-label="Kanban board">
+    <section class="col" data-col="todo">
+      <div class="colHead">
+        <h2>Te doen</h2>
+        <span class="count" id="count-todo">0</span>
+      </div>
+      <div class="lane" data-lane="todo"></div>
+    </section>
+
+    <section class="col" data-col="doing">
+      <div class="colHead">
+        <h2>Bezig</h2>
+        <span class="count" id="count-doing">0</span>
+      </div>
+      <div class="lane" data-lane="doing"></div>
+    </section>
+
+    <section class="col" data-col="done">
+      <div class="colHead">
+        <h2>Klaar</h2>
+        <span class="count" id="count-done">0</span>
+      </div>
+      <div class="lane" data-lane="done"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span class="stamp">NO FUTURE? OK — JUST TASKS.</span>
+    <button class="ghost" id="clearAll" type="button">Clean</button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

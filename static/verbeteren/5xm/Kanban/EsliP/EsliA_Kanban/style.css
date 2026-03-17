@@ -1,0 +1,89 @@
+body {
+  background-color: #f6f6f8;
+  color: #121212;
+  font-family: system-ui;
+  margin: 20px;
+}
+
+.bediening {
+  margin-block-end: 24px;
+}
+
+input {
+  padding: 6px;
+  width: 220px;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.kanban-bord {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Kolom als duidelijk blok */
+.kolom {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Drop zone zichtbaar maken */
+.lijst {
+  min-height: 200px;
+  padding: 8px;
+  border: 2px dashed #ccc;
+  border-radius: 6px;
+}
+
+/* Feedback bij dragover */
+.lijst.over {
+  background-color: #e0f0ff;
+  border-color: #3399ff;
+}
+
+/* Prullenbak speciale styling */
+.kolom.prullenbak {
+  background: linear-gradient(180deg, #fff6f6 0%, #fff 100%);
+}
+
+.lijst.prullenbak {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a1f1f;
+  border-color: #ff9999;
+  background: #fff6f6;
+}
+
+.lijst.prullenbak.over {
+  background-color: #ffdcdc;
+  border-color: #ff4d4d;
+}
+
+.placeholder {
+  font-size: 0.95rem;
+  color: #8a1f1f;
+}
+
+/* Kaart stijl */
+.kaart {
+  background: #ffffff;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  cursor: grab;
+}
+
+/* Kaart feedback tijdens slepen */
+.zwevend {
+  opacity: 0.5;
+}

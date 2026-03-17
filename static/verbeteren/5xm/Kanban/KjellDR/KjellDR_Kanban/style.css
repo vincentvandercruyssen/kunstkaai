@@ -1,0 +1,115 @@
+body {
+  background: linear-gradient(135deg,#e0e7ff,#f8fafc);
+  font-family: system-ui;
+  margin:20px;
+  color:#1e293b;
+}
+
+h1 {
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.bediening {
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-bottom:25px;
+}
+
+input, select, button {
+  padding:8px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button {
+  background:#6366f1;
+  color:white;
+  border:none;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+button:hover {
+  background:#4f46e5;
+}
+
+.kanban-bord {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.kolom {
+  background:white;
+  padding:15px;
+  border-radius:15px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  display:flex;
+  flex-direction:column;
+}
+
+.lijst {
+  min-height:300px;
+  padding:10px;
+  border-radius:10px;
+  transition:0.2s;
+}
+
+.lijst.over {
+  outline:3px dashed #6366f1;
+}
+
+#todo { background:#fef9c3; }
+#bezig { background:#dbeafe; }
+#klaar { background:#dcfce7; }
+
+/* ====== KAARTEN ====== */
+
+.kaart {
+  background:white;
+  padding:10px;
+  margin-bottom:10px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+  /* Cursor fix */
+  cursor: grab;
+  cursor: -webkit-grab;
+
+  user-select: none; 
+
+  transition:0.2s;
+}
+
+.kaart:hover {
+  transform:translateY(-2px);
+  box-shadow:0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* Tijdens klikken */
+.kaart:active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+/* Tijdens slepen */
+.zwevend {
+  opacity:0.5;
+}
+
+/* Prioriteit kleuren */
+.prioriteit-laag { border-left:6px solid green; }
+.prioriteit-middel { border-left:6px solid orange; }
+.prioriteit-hoog { border-left:6px solid red; }
+
+/* Verwijderknop */
+.verwijder {
+  float:right;
+  background:none;
+  border:none;
+  color:red;
+  cursor:pointer;
+}

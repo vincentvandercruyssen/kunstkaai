@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- task creation controls -->
+    <div class="controls">
+        <div class="add-task">
+            <input type="text" id="new-task-input" placeholder="New task..." aria-label="New task">
+            <input type="color" id="new-task-color" value="#dddddd" title="Task color">
+            <button id="add-task-btn">Add</button>
+        </div>
+        <button id="reset-board-btn" title="Clear all tasks">Reset Board</button>
+    </div>
+
+    <div class="kanban-board">
+        <div class="kanban-column" id="backlog">
+            <h2>To Do <span class="count" id="count-backlog">0/5</span></h2>
+            <div class="kanban-list" id="backlog-list" role="list"></div>
+        </div>
+        <div class="kanban-column" id="in-progress">
+            <h2>In Progress <span class="count" id="count-in-progress">0/5</span></h2>
+            <div class="kanban-list" id="in-progress-list" role="list"></div>
+        </div>
+        <div class="kanban-column" id="done">
+            <h2>Done <span class="count" id="count-done">0/5</span></h2>
+            <div class="kanban-list" id="done-list" role="list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
