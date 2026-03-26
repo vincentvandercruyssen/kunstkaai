@@ -66,6 +66,7 @@ Mogelijke startpunten:
 - [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API): Geluid genereren of visualiseren.
 - [Shadertoy](https://www.shadertoy.com/): GLSL shaders in de browser.
 - [CodePen](https://codepen.io/): Duizenden voorbeelden om van te leren.
+- [Generative Design](http://www.generative-gestaltung.de/2/) Voorbeelden van generatieve ontwerpen.
 
 ## Structuur van je project
 
