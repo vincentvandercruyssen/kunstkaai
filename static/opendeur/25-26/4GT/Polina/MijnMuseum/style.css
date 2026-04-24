@@ -1,0 +1,79 @@
+@import url("https://use.typekit.net/zyd0wlf.css");
+
+body {
+    background-color: rgb(184, 52, 52);
+    color: rgb(72, 16, 16);
+    background-image: url(images/achtergrond.jpg);
+    background-blend-mode:lighten;
+    text-align: center;
+    
+    
+    }
+
+
+header {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 30px;
+    background-color: rgb(230, 215, 192);
+    text-align: center;
+    border-radius: 30px;
+    border-color: rgb(120, 45, 45);
+    border-style:double;
+    border-width: 5px;
+}
+
+
+nav {
+    display: flex;
+    gap: 16px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    padding: 16px;
+    background-color: rgba(250, 238, 229, 0.663);
+    color: rgb(174, 46, 46);
+    text-decoration: none;
+    border-radius: 10%;
+}
+
+nav a:hover { 
+    background-color: rgb(211, 93, 93);
+    color:antiquewhite
+}
+
+h1 {
+    font-family: "kuhlman-vf", sans-serif;
+}
+
+h2,p {
+    background-color: rgb(230, 215, 192);
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(174, 46, 46);
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.galerij {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+img {
+    width: 100%;
+}

@@ -1,0 +1,47 @@
+body {
+    background-color: rgba(96, 90, 83, 0.783);
+    font-family: sans-serif;
+    color: rgb(250, 149, 77);
+    padding: 20px;
+   
+   
+}
+main {
+    padding-top: 10px;
+    max-width: 880px;
+    margin: 0 auto;
+    
+}
+header {
+    padding: 20px;
+    padding-bottom: 10px;
+    background-color: rgba(79, 47, 4, 0.507);
+    text-align: center;
+    color: rgb(228, 138, 28);
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    color: rgb(255, 116, 2);
+}
+img {
+    display: block;
+    margin: auto;
+}
+
+section {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(79, 46, 4, 0.79);
+    border-radius: 20px;
+}
+
+#chatgpt {
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(225, 227, 236);
+}
+#welkom {
+    text-align: center;
+}

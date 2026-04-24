@@ -1,0 +1,91 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
+  font-family: "manifold-extd-cf", sans-serif;
+}
+
+main {
+  height: 100%;
+  position: relative;
+}
+
+#tekst01 {
+  font-size: 90px;
+  color: #9f0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-weight: 300;
+  font-style: italic;
+
+  animation: slideInLeft 5s linear infinite;
+}
+
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-100vw); }
+  40% { opacity: 1; transform: translateX(0); }
+  60% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(100vw); }
+}
+
+
+.word {
+  position: absolute;
+  font-size: 50px;
+  font-style: italic;
+  opacity: 0;
+  animation: appear 6s ease-in-out infinite;
+}
+
+.word span {
+  display: inline-block;
+}
+
+.w1 { top: 20%; left: 10%; color: #ff4d4d; animation-delay: 0s; }
+.w2 { top: 60%; left: 20%; color: #4dd2ff; animation-delay: 1.5s; }
+.w3 { top: 30%; right: 15%; color: #66ff66; animation-delay: 3s; }
+.w4 { bottom: 15%; right: 20%; color: #ffd24d; animation-delay: 4.5s; }
+.w5 { top: 10%; right: 30%; color: #ff66cc; animation-delay: 2s; }
+.w6 { bottom: 20%; left: 35%; color: #00ffff; animation-delay: 5s; }
+
+@keyframes appear {
+  0% { opacity: 0; transform: translateY(20px); }
+  15% { opacity: 1; transform: translateY(0); }
+  85% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+.w1 span { animation: swing1 7s infinite; }
+.w2 span { animation: swing2 9s infinite; }
+.w3 span { animation: swing3 6s infinite; }
+.w4 span { animation: swing1 8s infinite; }
+.w5 span { animation: swing2 10s infinite; }
+.w6 span { animation: swing3 7.5s infinite; }
+
+@keyframes swing1 {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-12deg); }
+  20% { transform: rotate(10deg); }
+  30% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes swing2 {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(15deg); }
+  25% { transform: rotate(-8deg); }
+  35% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes swing3 {
+  0% { transform: rotate(0deg); }
+  12% { transform: rotate(-18deg); }
+  22% { transform: rotate(12deg); }
+  32% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}

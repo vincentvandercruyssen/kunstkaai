@@ -1,0 +1,51 @@
+body{
+background-color: antiquewhite;
+color: black;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+margin: 20px;
+padding: 20px;
+background-color: antiquewhite;
+
+}
+nav a {
+padding: 20px;
+background-color: rgb(153, 142, 142);
+color: antiquewhite;
+text-decoration: none;
+}
+nav a:hover{
+ background-color: rgb(141, 43, 43);
+
+
+}
+.galerij {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 20px;
+}
+
+.galerij img {
+width: 80%;
+aspect-ratio: 1/1;
+object-fit: cover;
+}
+ 
+img {
+width: 800px;
+padding: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+

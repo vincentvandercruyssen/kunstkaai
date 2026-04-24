@@ -1,0 +1,41 @@
+@import url(https://use.typekit.net/aug4hei.css);
+
+body {
+    background-color: rgb(106, 189, 83);
+    color: black;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(137, 224, 125);
+    padding: 4%;
+    color: rgb(42, 126, 23);
+ font-family: "jetsam-collection-basilea", sans-serif;
+}
+
+header a {
+    color: rgb(25, 96, 24);
+}
+
+nav {
+    display: flex;
+    gap: 20%;
+}
+nav a {
+    padding: 12px;
+    background-color: rgb(131, 213, 121);
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: rgb(100, 170, 68);
+}
+#Mosasaurus img{
+    object-position: center 30%;
+}
+#Mosasaurus {
+    top: 10%;
+    left: 30%;
+
+    padding: ;
+}
+

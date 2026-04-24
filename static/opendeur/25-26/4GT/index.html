@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4GT Opendeur</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <main id="content"></main>
+
+    <div id="fullscreen-overlay">
+        <div class="fullscreen-titlebar">
+            <h3 id="fullscreen-title"></h3>
+            <button id="close-fullscreen" onclick="closeFullscreen()"><img src="../img/plus_11.svg"></button>
+        </div>
+        <iframe id="fullscreen-iframe" src=""></iframe>
+    </div>
+
+    <script>
+        const presentaties = [
+            { titel: "Overmij", leerling: "Alexandra", pad: "" },
+            { titel: "Polaroid", leerling: "Alexandra", pad: "" },
+            { titel: "Recept", leerling: "Alexandra", pad: "" },
+            { titel: "Reservatie", leerling: "Alexandra", pad: "" },
+            { titel: "Mijn Museum", leerling: "Amine", pad: "" },
+            { titel: "Over Mij", leerling: "Amine", pad: "" },
+            { titel: "Polaroid", leerling: "Amine", pad: "" },
+            { titel: "Recept", leerling: "Amine", pad: "" },
+            { titel: "Reservatie", leerling: "Amine", pad: "" },
+            { titel: "Typoanimatie", leerling: "Amine", pad: "" },
+            { titel: "MijnMuseum", leerling: "Burayr", pad: "" },
+            { titel: "Polaroid", leerling: "Burayr", pad: "" },
+            { titel: "Reservatie", leerling: "Burayr", pad: "" },
+            { titel: "Typoanimatie", leerling: "Burayr", pad: "" },
+            { titel: "Mymuseum", leerling: "Ece", pad: "" },
+            { titel: "Overmij", leerling: "Ece", pad: "" },
+            { titel: "Polaroid", leerling: "Ece", pad: "" },
+            { titel: "Recept", leerling: "Ece", pad: "" },
+            { titel: "Reservatie", leerling: "Ece", pad: "" },
+            { titel: "Typoanimatie", leerling: "Ece", pad: "" },
+            { titel: "Mijn museum", leerling: "Elle", pad: "" },
+            { titel: "Museum", leerling: "Emiliia", pad: "" },
+            { titel: "Polaroid", leerling: "Emiliia", pad: "" },
+            { titel: "Recept", leerling: "Emiliia", pad: "" },
+            { titel: "Reservatie", leerling: "Emiliia", pad: "" },
+            { titel: "Typoanimatie", leerling: "Emiliia", pad: "" },
+            { titel: "Museum", leerling: "Emily", pad: "" },
+            { titel: "Polaroid", leerling: "Emily", pad: "" },
+            { titel: "Recept", leerling: "Emily", pad: "" },
+            { titel: "Reservatie", leerling: "Emily", pad: "" },
+            { titel: "Museum", leerling: "Kamiel", pad: "" },
+            { titel: "Polaroid", leerling: "Kamiel", pad: "" },
+            { titel: "Reservatie", leerling: "Kamiel", pad: "" },
+            { titel: "MijnMuseum", leerling: "Lander", pad: "" },
+            { titel: "Polaroid", leerling: "Lander", pad: "" },
+            { titel: "Recept", leerling: "Lander", pad: "" },
+            { titel: "Reservatie", leerling: "Lander", pad: "" },
+            { titel: "Typoanimatie", leerling: "Lander", pad: "" },
+            { titel: "MijnMuseum", leerling: "Lleyton", pad: "" },
+            { titel: "Polaroid", leerling: "Lleyton", pad: "" },
+            { titel: "Reservatie", leerling: "Lleyton", pad: "" },
+            { titel: "Typoanimatie", leerling: "Lleyton", pad: "" },
+            { titel: "Recept", leerling: "Mohamed", pad: "" },
+            { titel: "Reservatie", leerling: "Mohamed", pad: "" },
+            { titel: "MijnMuseum", leerling: "Polina", pad: "" },
+            { titel: "Polaroid", leerling: "Polina", pad: "" },
+            { titel: "Recept", leerling: "Polina", pad: "" },
+            { titel: "Reservatie", leerling: "Polina", pad: "" },
+            { titel: "Typoanimatie", leerling: "Polina", pad: "" },
+            { titel: "MijnMuseum", leerling: "Ruben", pad: "" },
+            { titel: "Polaroid", leerling: "Ruben", pad: "" },
+            { titel: "TypoAnimatie", leerling: "Ruben", pad: "" },
+            { titel: "MijnMuseum", leerling: "Sabir", pad: "" },
+            { titel: "Polaroid", leerling: "Sabir", pad: "" },
+            { titel: "Recept", leerling: "Sabir", pad: "" },
+            { titel: "Museum", leerling: "Sam", pad: "" },
+            { titel: "Polaroid", leerling: "Sam", pad: "" },
+            { titel: "Recept", leerling: "Sam", pad: "" },
+            { titel: "Polaroid", leerling: "Sertzio", pad: "" },
+            { titel: "Recept", leerling: "Sertzio", pad: "" },
+            { titel: "MijnMuseum", leerling: "Shan", pad: "" },
+            { titel: "Polaroid", leerling: "Shan", pad: "" },
+            { titel: "Recept", leerling: "Shan", pad: "" },
+            { titel: "Museum", leerling: "Siebe", pad: "" },
+            { titel: "Polaroid", leerling: "Siebe", pad: "" },
+            { titel: "Reservatie", leerling: "Siebe", pad: "" },
+            { titel: "MijnMuseum", leerling: "Vince", pad: "" },
+            { titel: "Polaroid", leerling: "Vince", pad: "" },
+            { titel: "Recept", leerling: "Vince", pad: "" },
+            { titel: "Reservatie", leerling: "Vince", pad: "" },
+            { titel: "MijnMuseum", leerling: "Yorbe", pad: "" },
+            { titel: "Overmij", leerling: "Yorbe", pad: "" },
+            { titel: "Polaroid", leerling: "Yorbe", pad: "" },
+            { titel: "Recept", leerling: "Yorbe", pad: "" },
+            { titel: "Reservatie", leerling: "Yorbe", pad: "" },
+            { titel: "TypoAnimatie", leerling: "Yorbe", pad: "" },
+        ];
+    </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

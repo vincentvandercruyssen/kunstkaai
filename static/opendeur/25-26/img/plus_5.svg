@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="plus_symbol" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 5 5">
+  <polygon fill="#fffe" points="
+    2,0 3,0 3,2 5,2 5,3 3,3
+    3,5 2,5 2,3 0,3 0,2 2,2
+  " />
+</svg>

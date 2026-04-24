@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    background-color: rgb(86, 99, 197);
+    font-family: "vw", sans-serif;
+    animation: fadein 1s ease-in;
+}
+
+
+main {
+    height: 92%;
+}
+
+.absolute {
+    position: absolute;
+}
+
+#hoofdtitel {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+    top: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#heylen{
+    max-width: 1500px;
+    text-align: center;
+    top: 40%;
+    font-size: 25px;
+}
+#tiliakos{
+    max-width: 1500px;
+    text-align: center;
+    top: 40%;
+    font-size: 25px;
+}
+#schoonvliet{
+    max-width: 1500px;
+    text-align: center;
+    top: 40%;
+    font-size: 25px;
+}
+#vandercruyssen{
+ max-width: 1500px;
+ text-align: center;
+ top: 40%;
+ font-size: 25px;
+}
+
+#titel {
+   margin-top: 20vh;
+}
+
+.aanbod {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    top: 100%;
+}
+
+.item {
+    position: relative;
+    text-align: center;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .overlay img {
+    vertical-align: middle;
+    max-width: 30%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .overlay.active {
+    visibility: visible;
+    opacity: 1;
+  }
+.gallerij {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.gallerij img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 15px;}
+    height: auto;
+.gallerij img {
+    transition: 0.3s;
+}
+
+.gallerij img:hover {
+    transform: scale(1.05);
+}
+
+.item h2 {
+    margin: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    animation: highlight 8s infinite;
+}
+
+.item:hover h2 {
+    color: #F2385A !important;
+    transform: scale(1.1) !important;
+    text-shadow: 0 0 10px #F2385A !important;
+}
+
+.item:hover a {
+    opacity: 1 !important;
+    transform: translateX(-50%) translateY(0) !important;
+}
+
+.item a {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    white-space: nowrap;
+    color: #F2385A;
+    animation: showLink 8s infinite;
+}
+
+.item h2,
+.item a {
+    transition: all 0.3s ease;
+}
+.aanbod:hover .item:not(:hover) h2 {
+    color: inherit;
+    transform: scale(1);
+    text-shadow: none;
+}
+#vec{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    max-width: 1000px;
+    margin: 40px auto;
+}
+.aanbod:hover .item:not(:hover) a {
+    opacity: 0;
+}
+.aanbod:hover .item h2,
+.aanbod:hover .item a {
+    animation: none !important;
+}
+
+.item:nth-child(1) h2,
+.item:nth-child(1) a { animation-delay: 0s; }
+
+.item:nth-child(2) h2,
+.item:nth-child(2) a { animation-delay: 2s; }
+
+.item:nth-child(3) h2,
+.item:nth-child(3) a { animation-delay: 4s; }
+
+.item:nth-child(4) h2,
+.item:nth-child(4) a { animation-delay: 6s; }
+
+.startpage h1{
+    color: black;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.svg-left {
+    position: absolute;
+    left: 75%;
+    top: 45%;
+    rotate: 90deg;
+    width: 550px;
+}
+
+.svg-right {
+    position: absolute;
+    top: 21%;
+    rotate: -90deg; 
+    width: 550px;
+    right: 84%;
+}
+
+
+.text {
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 350;
+    stroke-dashoffset: 0;
+    animation: stroke 6.7s infinite linear;
+}
+
+.text:nth-child(1) {
+    stroke: #F2385A;
+    animation-delay: -1.2s;
+}
+.text:nth-child(2) {
+    stroke: #F5A503;
+    animation-delay: -2.4s;
+}
+.text:nth-child(3) {
+    stroke: #E9F1DF;
+    animation-delay: -3.6s;
+}
+.text:nth-child(4) {
+    stroke: #56D9CD;
+    animation-delay: -4.8s;
+}
+.text:nth-child(5) {
+    stroke: #3AA1BF;
+    animation-delay: -6s;
+}
+footer {
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+
+
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+
+@keyframes verschijnen {
+    0%   { opacity: 0; transform: scaleX(0); }
+    15%  { opacity: 1; transform: scaleX(1); }
+    85%  { opacity: 1; transform: scaleX(1); }
+    100% { opacity: 0; transform: scaleX(0); }
+}
+
+@keyframes highlight {
+    0%, 100% {
+        transform: scale(1);
+        color: inherit;
+        text-shadow: none;
+    }
+
+    10%, 20% {
+        transform: scale(1.1);
+        color: #F2385A;
+        text-shadow: 0 0 10px #F2385A;
+    }
+}
+
+@keyframes showLink {
+    0%, 100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+
+    10%, 20% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}

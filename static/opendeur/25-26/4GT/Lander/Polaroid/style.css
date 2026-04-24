@@ -1,0 +1,76 @@
+@import url("https://use.typekit.net/sev0mxe.css");
+.polaroid {
+    width: 200px;
+    position:absolute;
+    background-color: rgb(253, 253, 253);
+    text-align: center;
+    padding-top: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    filter: sepia(35%) saturate(75%) contrast(85%) brightness(110%) blur(0.5px);
+}
+img {
+    width: 100%;
+}
+#polaroid01 {
+    top: 15%;
+    right: 65%;
+    rotate: -12deg;
+}
+
+#polaroid02 {
+    top: 25%;
+    right: 35%;
+    rotate: 8deg;
+}
+
+#polaroid03 {
+    top: 35%;
+    right: 50%;
+    rotate: -6deg;
+}
+
+#polaroid04 {
+    top: 50%;
+    right: 25%;
+    rotate: 10deg;
+}
+
+#polaroid05 {
+    top: 40%;
+    right: 80%;
+    rotate: -14deg;
+}
+
+#polaroid06 {
+    top: 54%;
+    right: 60%;
+    rotate: 15deg;
+}
+
+#polaroid07 {
+    top: 70%;
+    right: 40%;
+    rotate: -8deg;
+}
+
+#polaroid08 {
+    top: 80%;
+    right: 60%;
+    rotate: 6deg;
+}
+
+#polaroid09 {
+    top: 20%;
+    right: 10%;
+    rotate: -5deg;
+}
+
+body {
+font-family: "square-peg", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 160%;
+background-image: url(images/lichtroze-pluizige-stoffentextuur-verfrommelde-textiel-nepbont-deken-achtergrond_327904-695.avif);
+background-size: cover;
+}

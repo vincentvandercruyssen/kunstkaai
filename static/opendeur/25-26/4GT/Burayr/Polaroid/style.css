@@ -1,0 +1,74 @@
+@import url("https://use.typekit.net/wkk5yvz.css");
+.polaroid {
+    width: 200px;
+    position: absolute;
+    background-color: white;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    filter: contrast(60%);
+    
+    
+    
+}
+img {
+    width: 100%;
+}
+
+#polaroid_01{
+    top: 59%;
+    right: 30%;
+    rotate: -27deg;
+}
+
+#polaroid_02{
+    top: 45%;
+    right: 14%;
+}
+
+#polaroid_03{
+    top: 32%;
+    left: 25%;
+    rotate: 33deg;
+}
+
+#polaroid_04{
+    top: 39%;
+    left: 45%;
+    rotate: -24deg;
+}
+
+#polaroid_05{
+    top: 24%;
+    left: 58%;
+}
+
+#polaroid_06{
+    top: 9%;
+    right: 34%;
+    rotate: 11deg;
+}
+
+#polaroid_07{
+    top: 11%;
+    left: 19%;
+    rotate: 5deg;
+}
+
+#polaroid_08{
+    top: 55%;
+    left: 33%;
+    rotate: 22deg;
+}
+
+#polaroid_09{
+    top: 67%;
+    left: 20%;
+    rotate: -20deg;
+}
+body{
+    background-image: url(images/7841571-kurk-prikbord-achtergrond-met-hoge-resolutie-foto.jpg);
+    font-family: wordy-diva, sans-serif;
+}

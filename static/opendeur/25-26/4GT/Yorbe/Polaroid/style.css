@@ -1,0 +1,91 @@
+.polaroid {
+    background-color: white;
+    width: 200px;
+    border: 10px solid white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(55, 55, 55);
+    filter: brightness(80%) contrast(120%) saturate(120%) invert(5%) grayscale(20%) sepia(10%) ; 
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+}
+
+.polaroid img {
+    width: 100%; 
+
+}
+
+#polaroid_01 {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: rotate(5deg);
+}
+
+#polaroid_02 {
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: rotate(-10deg);
+
+}
+
+#polaroid_03 {
+    position: absolute;
+    top: 9%;
+    left: 80%;
+    transform: rotate(-5deg);
+}
+
+#polaroid_04 {
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    transform: rotate(20deg);
+}
+
+#polaroid_05 {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: rotate(-5deg);
+}
+
+#polaroid_06 {
+    position: absolute;
+    top: 44%;
+    left: 82%;
+    transform: rotate(25deg);
+
+}
+
+#polaroid_07 {
+    position: absolute;
+    top: 80%;
+    left: 17%;
+    transform: rotate(-15deg);
+}
+
+#polaroid_08 {
+    position: absolute;
+    top: 85%;
+    left: 49%;
+    transform: rotate(30deg);
+}
+
+#polaroid_09 {
+    position: absolute;
+    top: 79%;
+    left: 80%;
+    transform: rotate(10deg);
+}
+
+body {
+    background-image: url("foto/Walnut-1.avif");
+    background-size: cover;
+    background-position: center;
+
+}

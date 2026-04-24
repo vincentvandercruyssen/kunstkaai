@@ -1,0 +1,74 @@
+body {
+    font-family: "permanent-marker-pro", sans-serif;
+    background-color: black;
+    background-image: url(images/Polaroid\ Texture.jpeg);
+    background-size: cover;
+    color: white;
+}
+
+.polaroid {
+    position: absolute;
+    width: 200px;
+    background-color: rgb(15, 15, 13);
+    padding: 12px;
+    filter: drop-shadow(0 0 10px rgba(167, 47, 34, 0.623));
+}
+
+.polaroid img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+#polaroid1 {
+left: 00px;
+top: 50px;
+rotate: -10deg;
+}
+
+#polaroid2 {
+left: 400px;
+top: 700px;
+rotate: 20deg;
+}
+
+#polaroid3 {
+left: 300px;
+top: 550px;
+rotate: 30deg;
+}
+
+#polaroid4 {
+left: 300px;
+top: 200px;
+rotate:-40deg;
+}
+
+#polaroid5 {
+left: 900px;
+top: 250px;
+rotate: 50deg;
+}
+
+#polaroid6 {
+left: 557px;
+rotate: -18deg;
+}
+
+#polaroid7 {
+left: 80px;
+top: 350px;
+rotate: 34deg;
+}
+
+#polaroid8 {
+left: 600px;
+top: 300px;
+rotate: 20deg;
+}
+
+#polaroid9 {
+left: 500px;
+top: 450px;
+rotate: 9deg;
+}

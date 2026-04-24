@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typografische Vormgeving</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="startpage">
+        <a href="index.html"><h1 id="Startpage">Startpagina</h1></a>
+    </div>
+    <div class="aanbod">
+        <div class="item">
+            <h2>Webontwikkeling</h2>
+            <a href="webontwikkeling.html"> Zie Onze Aanbod</a>
+        </div>
+    
+        <div class="item">
+            <h2>Beeldverwerking</h2>
+            <a href="beeldverwerking.html">Zie Onze Aanbod</a>
+        </div>
+    
+        <div class="item">
+            <h2>Vectorieel Tekenen</h2>
+            <a href="vectekenen.html">Zie Onze Aanbod</a>
+        </div>
+    
+        <div class="item">
+            <h2>Typografische Vormgeving</h2>
+            <a href="typovormgeving.html">Zie Onze Aanbod</a>
+        </div>
+    </div>
+    <h1 id="titel">Typografische Vormgeving</h1>
+    <svg class="svg-left" viewBox="0 0 255 250">
+        <symbol id="s-text-left">
+            <text text-anchor="left" dy="1em">
+                TYPOGRAFISCHE VORMGEVING
+            </text>
+        </symbol>
+    
+        <use class="text" href="#s-text-left"></use>
+        <use class="text" href="#s-text-left"></use>
+        <use class="text" href="#s-text-left"></use>
+        <use class="text" href="#s-text-left"></use>
+        <use class="text" href="#s-text-left"></use>
+    </svg>
+    <svg class="svg-right" viewBox="0 0 255 58">
+        <symbol id="s-text-right">
+            <text text-anchor="right" dy="1em">
+                TYPOGRAFISCHE VORMGEVING 
+            </text>
+        </symbol>
+    
+        <use class="text" href="#s-text-right"></use>
+        <use class="text" href="#s-text-right"></use>
+        <use class="text" href="#s-text-right"></use>
+        <use class="text" href="#s-text-right"></use>
+        <use class="text" href="#s-text-right"></use>
+    </svg>
+    <div class="center">
+        <p id="schoonvliet">Tijdens typografische vormgeving leer je hoe je tekst niet alleen leesbaar, maar ook visueel aantrekkelijk maakt. Je gaat aan de slag met Adobe InDesign en ontdekt de basis van typografie: lettertypes kiezen, tekst opmaken en een sterke lay-out opbouwen. Je leert hoe je tekst en beeld combineert tot een mooi geheel, zoals affiches, brochures en andere ontwerpen. Verwacht een mix van creatief nadenken, nauwkeurig uitlijnen en af en toe vloeken wanneer alles nét niet perfect op één lijn wil staan</p>
+    </div>
+    
+    <div class="gallerij">
+        <img src="afbeeldingen/Typo4.png" alt="">
+        <img src="afbeeldingen/Typo3.png" alt="">
+        <img src="afbeeldingen/Typo2.png" alt="">
+        <img src="afbeeldingen/Typo1.png" alt="">
+    </div>
+</main>
+
+<footer>
+    <p>Gemaakt Door Mohamed Amine El Issaoui - 4GT</p>
+</footer>
+<div class="overlay" id="imageOverlay" onclick="sluitAfbeelding()">
+    <img id="vergroteAfbeelding" src="" alt="Vergrote afbeelding">
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>

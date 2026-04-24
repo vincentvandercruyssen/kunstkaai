@@ -1,0 +1,192 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    overflow: hidden;
+    background-color:rgb(0, 0, 0);
+    
+  }
+  
+  main {
+    height: 100%;
+  }
+  body {
+    font-family: "jouw-lettertype", sans-serif;
+  }
+  
+  h2#tekst01 {
+    font-size: 18vw;
+    color: #ffffff;
+  }
+  h1#tekst01 {
+    font-size: 180px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "tarzana-narrow", sans-serif;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+
+
+    background: linear-gradient(90deg, #ff00ff, #00ffff, #ffff00);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientMove 5s infinite linear;
+}
+
+
+h1#tekst01::before,
+h1#tekst01::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: inherit;
+    background-size: inherit;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.7;
+}
+
+h1#tekst01::before {
+    animation: glitch1 2s infinite;
+    filter: drop-shadow(4px 0 red);
+}
+
+h1#tekst01::after {
+    animation: glitch2 2s infinite;
+    filter: drop-shadow(-4px 0 cyan);
+}
+
+
+@keyframes gradientMove {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
+}
+
+
+@keyframes glitch1 {
+    0% { transform: translate(0); }
+    20% { transform: translate(-5px, 3px); }
+    40% { transform: translate(5px, -3px); }
+    60% { transform: translate(-3px, 2px); }
+    80% { transform: translate(3px, -2px); }
+    100% { transform: translate(0); }
+}
+
+@keyframes glitch2 {
+    0% { transform: translate(0); }
+    20% { transform: translate(5px, -3px); }
+    40% { transform: translate(-5px, 3px); }
+    60% { transform: translate(3px, -2px); }
+    80% { transform: translate(-3px, 2px); }
+    100% { transform: translate(0); }
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; 
+
+   
+    background: linear-gradient(90deg, #ff00ff, #00ffff, #ffff00);
+    background-size: 300%;
+    animation: rainbowMove 5s linear infinite;
+
+    
+    mask:
+        linear-gradient(#000 0 0) top/100% 6px,
+        linear-gradient(#000 0 0) bottom/100% 6px,
+        linear-gradient(#000 0 0) left/6px 100%,
+        linear-gradient(#000 0 0) right/6px 100%;
+    mask-repeat: no-repeat;
+
+   
+    animation: rainbowMove 5s linear infinite,
+               borderCrawl 8s linear infinite;
+}
+
+
+@keyframes rainbowMove {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
+}
+
+@keyframes borderCrawl {
+    0%   { mask-position: 0% 0%, 0% 100%, 0% 0%, 100% 0%; }
+    25%  { mask-position: 100% 0%, 0% 100%, 0% 0%, 100% 0%; }
+    50%  { mask-position: 100% 0%, 100% 100%, 0% 0%, 100% 0%; }
+    75%  { mask-position: 100% 0%, 100% 100%, 0% 100%, 100% 0%; }
+    100% { mask-position: 0% 0%, 0% 100%, 0% 0%, 100% 0%; }
+}
+.float {
+    position: fixed;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "tarzana-narrow", sans-serif;
+    color: white;
+    pointer-events: none;
+    z-index: 999;
+}
+
+
+.creatief {
+    animation: bounce1 12s infinite linear;
+}
+
+.leuk {
+    animation: bounce2 14s infinite linear;
+}
+
+.stoer {
+    animation: bounce3 16s infinite linear;
+}
+
+.chaos {
+    animation: bounce4 18s infinite linear;
+}
+
+
+@keyframes bounce1 {
+    0%   { top: 5%; left: 5%; }
+    25%  { top: 5%; left: 80%; }
+    50%  { top: 80%; left: 80%; }
+    75%  { top: 80%; left: 5%; }
+    100% { top: 5%; left: 5%; }
+}
+
+@keyframes bounce2 {
+    0%   { top: 20%; left: 70%; }
+    25%  { top: 80%; left: 70%; }
+    50%  { top: 80%; left: 10%; }
+    75%  { top: 20%; left: 10%; }
+    100% { top: 20%; left: 70%; }
+}
+
+@keyframes bounce3 {
+    0%   { top: 50%; left: 10%; }
+    25%  { top: 10%; left: 80%; }
+    50%  { top: 70%; left: 80%; }
+    75%  { top: 70%; left: 10%; }
+    100% { top: 50%; left: 10%; }
+}
+
+@keyframes bounce4 {
+    0%   { top: 60%; left: 40%; }
+    25%  { top: 10%; left: 40%; }
+    50%  { top: 10%; left: 90%; }
+    75%  { top: 60%; left: 90%; }
+    100% { top: 60%; left: 40%; }
+}
+

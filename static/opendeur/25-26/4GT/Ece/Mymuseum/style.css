@@ -1,0 +1,48 @@
+body{
+    background-color:rgb(222, 222, 86);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+h1, h2,p{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+   
+}  
+
+header{
+    text-align: center;
+    background-color:darkkhaki;
+     width: 600px;
+    padding-bottom: 20px;
+    margin: auto;
+    
+}
+
+
+h3{
+    text-align: center;
+}
+
+main {
+    box-sizing: border-box;
+    background-color:darkkhaki;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+.gallerij{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.gallerij img {
+    width: 100%;
+}
+
+a{color: black;}
+a:hover{color: rgb(75, 154, 6);}
+    
+    

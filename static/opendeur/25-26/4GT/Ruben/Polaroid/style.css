@@ -1,0 +1,83 @@
+@import url("https://use.typekit.net/apr6rkc.css");
+
+body{
+    background-color: bisque;
+    font-family: "patrick-hand-sc", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-image: url(afbeeldingen/hout.jpeg);
+    background-size: cover;
+}
+
+.polaroid{
+    background-color: white;
+    box-shadow: 5px;
+    box-sizing: border-box;
+    padding: 1%;
+    position: absolute;
+    width: 200px;
+}
+
+.polaroid img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+
+#polaroid_01{
+    
+    top: 10%;
+    left: 50%;
+    rotate: -20deg;
+}
+
+#polaroid_02{
+    
+    top: 10%;
+    left: 23%;
+    rotate: 10deg;
+}
+
+#polaroid_03{
+    
+    bottom: 5%;
+    left: 10%;
+    rotate: 0deg;
+}
+
+#polaroid_04{
+    
+    bottom: -5%;
+    left: 50%;
+    rotate: 10deg;
+}
+
+#polaroid_05{
+    
+    bottom: 5%;
+    left: 70%;
+    rotate: -10deg;
+}
+
+#polaroid_06{
+    
+    top: 5%;
+    left: 75%;
+    rotate: 10deg;
+}
+
+#polaroid_07{
+    
+    top: 50%;
+    left: 35%;
+    rotate: 10deg;
+}
+
+#polaroid_08{
+    
+    top: 50%;
+    left: 35%;
+    rotate: 10deg;
+}

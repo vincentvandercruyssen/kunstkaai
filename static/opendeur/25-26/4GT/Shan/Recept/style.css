@@ -1,0 +1,28 @@
+
+body { background-color: rgb(250, 183, 164); 
+color: rgb(202, 26, 26);
+margin: 50px;}
+
+header {padding: 30px;
+background-color: aliceblue;
+border-radius: 50px;}
+
+h2 {font-family: mtm-pontejos-2-vf, sans-serif;
+font-size: 30px; 
+background-color: rgb(221, 124, 124);
+border-radius: 20px;}
+
+h1 { font-family: mtm-pontejos-2-vf, sans-serif;
+}
+
+p {font-family: "bc-blot", sans-serif;
+font-size: 20px;}
+
+ul {font-family: "bc-blot", sans-serif;
+font-size: 20px;}
+
+ol {font-family: "bc-blot", sans-serif;
+font-size: 20px;}
+section {background-color: aliceblue;
+border-radius: 20px;
+border: 20px;}

@@ -1,0 +1,100 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+
+header {
+    background: linear-gradient(to right, #c8102e, #1d428a);
+    padding: 4%;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+nav a {
+    padding: 12px 20px;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fdb927;
+    color: black;
+    transform: scale(1.1);
+}
+
+
+main {
+    padding: 5%;
+}
+
+.galerij {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.galerij div {
+    background-color: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galerij div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+
+footer {
+    background: linear-gradient(to right, #1d428a, #c8102e);
+    text-align: center;
+    padding: 3%;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .galerij {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+.galerij div {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

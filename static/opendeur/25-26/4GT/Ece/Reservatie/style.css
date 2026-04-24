@@ -1,0 +1,56 @@
+input , textarea{
+    display: block;
+ color: rgb(54, 131, 47, 0.641);
+ margin-bottom: 50px;
+ width: 400px;
+ padding: 2px;
+ margin-left: 15px;
+}
+textarea{
+    height: 200px;
+    margin-left: 15px;
+}
+
+html, body {
+    height: 100%;
+    margin-left: 15px;
+}
+
+body {
+    color: rgba(54, 131, 47, 0.641);
+    background-color: rgb(252, 212, 218);
+   font-family: 'Times New Roman', Times, serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 15px;
+
+}
+button {
+    color: rgb(54, 131, 47, 0.641);
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 15px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+main {
+    box-sizing: border-box;
+    background-color: beige;
+    width: 600px;
+    padding: 40px;
+    border-radius: 10px;
+    
+}
+button:hover {
+    background-color: rgb(252, 212, 218);
+}
+h1{
+    margin-left: 150px;
+}
+h2{
+    margin-left: 135px;
+}
+
+input:focus {
+    background: rgb(252, 212, 218);
+}

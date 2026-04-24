@@ -1,0 +1,64 @@
+body {
+    background-color: #626060;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 3%;
+    background-color: #333;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+nav a {
+    padding: 10px;
+    background-color: #555;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+main {
+    padding: 20px;
+}
+
+.galerij {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center; 
+}
+
+.galerij img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+@media (max-width: 600px) {
+    .galerij {
+        grid-template-columns: 1fr;
+    }
+}

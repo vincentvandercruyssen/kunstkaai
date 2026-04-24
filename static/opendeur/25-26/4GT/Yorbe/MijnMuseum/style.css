@@ -1,0 +1,141 @@
+
+
+body {
+  background-color: #3d3c3cf4;
+  color: #ffffff;
+  font-family: "willard-sniffin-script", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+header {
+  padding: 5px;
+  background-color: #8b8b8b;
+  text-align: center;
+
+}
+
+header h1 a {
+  color: #000000;
+  text-decoration: none;
+}
+header h1 a:hover {
+  color: #ffffff;
+  transition: color 0.5s;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+nav a {
+  padding: 15px;
+  background-color: #bdbdbd;
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.5s;
+}
+
+nav a:hover {
+  background-color: #757575;
+  color: #fff;
+}
+
+#welkom {
+  text-align: center;
+  margin: 40px 0;
+}
+#welkom_title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+#welkom_text {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#welkom_foto {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 10px;
+}
+#thema1 {
+ text-align: center;
+ font-size: large;
+}
+#thema1_title{
+  font-size: 38px;
+}
+#thema1_Tussen{
+  font-size: 20px;
+}
+
+.spotify_logo {
+  display: grid;
+  gap: 40px;
+  max-width: 600px;
+  margin: auto;
+  
+}
+.spotify_logo img {
+  display: grid;
+  gap: 40px;
+  margin: auto;
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+max-width: 300px;
+height: auto;
+padding: 5px;
+border-radius: 20px;
+  
+}
+
+.galerij {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.galerij img {
+  aspect-ratio: 3/4.5;
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+max-width: 300px;
+height: auto;
+padding: 5px;
+border-radius: 20px;
+}
+
+.galerij img:hover{
+  transform: scale(1.05);
+  background-color: #FFFFFF;
+  transition: 0.3s;
+
+}
+.underconstruction {
+  gap: 40px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.underconstruction img {
+
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+max-width: 300px;
+height: auto;
+padding: 5px;
+border-radius: 20px;
+}

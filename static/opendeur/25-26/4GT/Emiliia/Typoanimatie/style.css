@@ -1,0 +1,326 @@
+html, body {
+  height: 100%;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: "strelka", sans-serif;
+    color: #911214;
+font-weight: 800;
+font-style: normal;
+position: relative;
+background-image: url(Foto/achter.jpg);
+  background-size: cover;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.big-text {
+  font-size: 90px;
+  animation: 
+    bounceIn 0.8s ease,
+    pulse 3s infinite;
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.10); }
+    100% { transform: scale(1); }
+}
+
+main {
+  height: 100%;
+  max-width: 80vw;
+    margin: auto;
+
+}
+
+
+h1{
+    font-family: "manihot", sans-serif;
+font-weight: 1800;
+font-style: normal;
+    text-align: center;
+   text-decoration: underline dotted rgb(66, 85, 131) 2px;
+    
+}
+h2{
+    text-align: center;
+     color: #57141e;
+    
+}
+
+h5{
+    text-align: center;
+    text-decoration: underline dotted;
+   
+}
+footer{
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+    color: #6b0606;
+}
+nav a {
+  color: rgb(202, 153, 171);
+  text-decoration: none;
+}
+
+.glitch-link {
+  position: absolute;
+  display: inline-block;
+}
+
+.glitch-link h2 {
+  position: relative;
+  margin: 0;
+  color: rgb(81, 6, 6);
+  animation: glitchMain 1s linear infinite;
+}
+
+.glitch-link::before,
+.glitch-link::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: rgb(237, 5, 5);
+  pointer-events: none;
+}
+
+.glitch-link::before {
+  color: #8b4071;
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+.glitch-link::after {
+  color: #831010;
+  animation: glitchBottom 1.3s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchMain {
+  2%, 64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%, 60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+@keyframes glitchTop {
+  2%, 64% {
+    transform: translate(2px, -2px);
+  }
+  4%, 60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(10px, -1px) skew(-10deg);
+  }
+}
+
+@keyframes glitchBottom {
+  2%, 64% {
+    transform: translate(-2px, 0);
+  }
+  4%, 60% {
+    transform: translate(2px, 0);
+  }
+  62% {
+    transform: translate(-10px, 2px) skew(12deg);
+  }
+}
+.galerij{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 69px;
+  }
+  
+  @media (max-width: 600px) {
+  .galerij {
+    grid-template-columns: 1fr;
+  }
+}
+img{
+    max-width: 100%;
+    border: 3px dashed #57141e ;
+    justify-content: center;
+}
+
+p{
+    background-color: #0e559781;
+}
+
+.woorden {
+  position: absolute
+  
+}
+
+#TypografischeVormgeving{
+  top: 50%;
+  left: 55%;
+  rotate: -9deg;
+}
+
+#BEELDVERWERKING{
+top: 40%;
+left: 20%;
+rotate: -6deg;
+}
+
+#Vectorialtekening{
+  top: 30%;
+    left: 60%;
+    rotate: 3deg;
+    
+}
+
+
+ #Vectorialtekening{
+  top: 35%;
+  left: 60%;
+ }
+ #BEELDVERWERKING{
+  top: 70%;
+  left: 10%;
+ }
+ #TypografischeVormgeving{
+  top: 55%;
+  left: 70%;
+ }
+
+
+#stap{
+  border: 0cap;
+  top: 68%;
+  left: 90%;
+   animation: stap-loop 6s infinite linear;
+}
+
+@keyframes stap-loop {
+  0% {
+    left: 120%;
+    transform: scaleX(1);
+  }
+
+  35% {
+    left: 69%;
+    transform: scaleX(1);
+  }
+
+  50% {
+    left: 69%;
+    transform: scaleX(1);
+  }
+
+  55% {
+    left: 69%;
+    transform: scaleX(-1);
+  }
+
+  100% {
+    left: 120%;
+    transform: scaleX(-1);
+  }
+}
+  
+ 
+ #vogel{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120px;
+  border: 0;
+  pointer-events: none;
+  z-index: 999;
+  animation: flyAround 14s linear infinite;
+ }
+
+   @keyframes flyAround {
+  0% {
+    transform: translate(0vw, 20vh) rotate(0deg);
+  }
+  20% {
+    transform: translate(70vw, 10vh) rotate(8deg);
+  }
+  40% {
+    transform: translate(80vw, 60vh) rotate(-6deg);
+  }
+  60% {
+    transform: translate(40vw, 75vh) rotate(10deg);
+  }
+  80% {
+    transform: translate(10vw, 50vh) rotate(-8deg);
+  }
+  100% {
+    transform: translate(0vw, 20vh) rotate(0deg);
+  }
+}
+
+
+
+ #Kunstkaai1{
+   display: block;
+  backface-visibility: hidden;
+}
+
+.cf-wrap {
+  position: relative;
+  width: 600px;
+  aspect-ratio: 3 / 2;
+  border-radius: 80px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.cf-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  opacity: 0;
+  animation: crossfade 9s infinite;
+}
+
+
+.cf-img--1 { animation-delay: 0s; }
+.cf-img--2 { animation-delay: 3s; }
+.cf-img--3 { animation-delay: 6s; }
+
+
+@keyframes crossfade {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  33%  { opacity: 1; }
+  43%  { opacity: 0; }
+  100% { opacity: 0; }
+}

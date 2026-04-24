@@ -1,0 +1,49 @@
+ body {
+    background-color: rgb(231, 124, 124);
+    color: rgb(169, 62, 62);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: larger;
+ }
+
+  header {
+    margin: 2%;
+    padding: 2%;
+    background-color: rgb(160, 67, 67);
+  }
+  nav {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  justify-content: space-around;
+}
+  nav a {
+  padding: 16px;
+  background-color: rgb(80, 31, 31);
+  color: rgb(242, 156, 156);
+  text-decoration: none;
+  
+}
+nav a:hover {
+  background-color: rgb(245, 172, 172);
+}
+
+a { color:  rgb(245, 168, 168);}
+a:hover { color: rgb(80, 31, 31);}
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+ 
+img {
+  display: block;
+}
+
+.gallerij { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+ 

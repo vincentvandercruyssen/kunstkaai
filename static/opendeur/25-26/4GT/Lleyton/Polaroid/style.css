@@ -1,0 +1,73 @@
+@import url("https://use.typekit.net/coo4yco.css");
+.polaroid  {
+   width: 200px;
+   position: absolute;
+background-color: rgb(255, 255, 255);
+box-sizing: border-box;
+padding: 11px;
+box-shadow: 0px 8px 10px rgb(0, 0, 0,0.5)
+}
+
+img {
+    width: 100%;
+}
+body {
+font-family: protest-revolution, sans-serif;
+text-align: center;
+background-image:url(Afbeeldingen/7841571-kurk-prikbord-achtergrond-met-hoge-resolutie-foto.jpg);
+background-size:150%;
+}
+
+
+#polaroid_01 {
+    top: 50%;
+    right: 30%;
+    rotate: 20deg;
+}
+
+#polaroid_02 {
+    top: 20%;
+    left: 10%;
+    rotate: -20deg;
+}
+
+#polaroid_03 {
+    top: 15%;
+    right: 70%;
+    rotate: -20deg;
+}
+
+#polaroid_04 {
+    top: 60%;
+    left: 15%;
+   rotate: -20deg;
+}
+
+#polaroid_05 {
+    top: 60%;
+    left: 27%;
+    rotate: -20deg;
+}
+
+#polaroid_06 {
+    top: 10%;
+    right: 12%;
+    rotate: 20deg;
+}
+
+#polaroid_07 {
+    top: 9%;
+    right: 24%;
+    rotate: 20deg;
+}
+
+#polaroid_08 {
+    top: 50%;
+    right: 18%;
+    rotate: 20deg  ;
+}
+
+#polaroid_09 {
+    top: 30%;
+    right: 47%;
+}
