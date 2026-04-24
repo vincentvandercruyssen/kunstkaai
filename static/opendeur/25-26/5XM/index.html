@@ -36,30 +36,24 @@
             font-weight: 500;
             font-size: 16px;
             transition: color 0.2s;
+            cursor: pointer;
         }
 
         #main-header a:hover {
             color: #0056b3;
         }
 
-        /* Carousel container */
-        #carousel {
-            display: flex;
-            height: 100vh;
-            width: 100vw;
-            overflow-x: auto;
-            overflow-y: hidden;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
+        #main-header a.active {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 4px;
         }
 
-        /* Individual item in carousel */
-        .carousel-item {
-            flex: 0 0 100vw;
-            height: 100vh;
-            scroll-snap-align: start;
+        /* Viewer container */
+        #viewer {
             display: flex;
             flex-direction: column;
+            height: 100vh;
             padding-top: 60px; /* To prevent overlapping with fixed header */
             box-sizing: border-box;
         }
@@ -99,8 +93,11 @@
         <!-- Student links will be injected here -->
     </nav>
 
-    <div id="carousel">
-        <!-- Iframes will be injected here -->
+    <div id="viewer">
+        <div class="student-header">
+            <a id="viewer-header-link" href="#" target="_blank">Laden...</a>
+        </div>
+        <iframe id="viewer-iframe" src="" loading="lazy"></iframe>
     </div>
 
     <script>
@@ -129,47 +126,39 @@
         ];
 
         const header = document.getElementById('main-header');
-        const carousel = document.getElementById('carousel');
+        const iframe = document.getElementById('viewer-iframe');
+        const headerLink = document.getElementById('viewer-header-link');
 
-        // Extract unique students for the top navigation (e.g., "David" instead of "David (8Ball)")
-        const uniqueStudents = [...new Set(pages.map(p => p.student.split(' ')[0]))];
+        function loadPage(index) {
+            const page = pages[index];
+            iframe.src = page.path;
+            headerLink.href = page.path;
+            headerLink.textContent = page.student;
 
-        uniqueStudents.forEach(student => {
+            // Update active state in navigation
+            const links = header.getElementsByTagName('a');
+            for(let i=0; i<links.length; i++) {
+                if(i === index) links[i].classList.add('active');
+                else links[i].classList.remove('active');
+            }
+        }
+
+        // Add all links to the header
+        pages.forEach((page, index) => {
             const a = document.createElement('a');
-            a.href = `#student-${student}`;
-            a.textContent = student;
+            a.href = '#';
+            a.textContent = page.student;
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                loadPage(index);
+            });
             header.appendChild(a);
         });
 
-        pages.forEach((page, index) => {
-            const item = document.createElement('div');
-            item.className = 'carousel-item';
-            
-            // Set an ID so anchor links work. The first project of a student gets the ID.
-            const baseStudent = page.student.split(' ')[0];
-            const isFirstOfStudent = pages.findIndex(p => p.student.split(' ')[0] === baseStudent) === index;
-            
-            if (isFirstOfStudent) {
-                item.id = `student-${baseStudent}`;
-            }
-
-            const studentHeader = document.createElement('div');
-            studentHeader.className = 'student-header';
-            
-            const link = document.createElement('a');
-            link.href = page.path;
-            link.target = "_blank";
-            link.textContent = page.student;
-            studentHeader.appendChild(link);
-
-            const iframe = document.createElement('iframe');
-            iframe.src = page.path;
-            iframe.loading = "lazy"; // Important for performance when dealing with many iframes
-
-            item.appendChild(studentHeader);
-            item.appendChild(iframe);
-            carousel.appendChild(item);
-        });
+        // Load the first page initially
+        if (pages.length > 0) {
+            loadPage(0);
+        }
     </script>
 </body>
 </html>
