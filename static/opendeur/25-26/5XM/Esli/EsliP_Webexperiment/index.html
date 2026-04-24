@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy Field</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="c"></canvas>
+
+<div class="ui-panel">
+  <div class="title">🌊 Energy Field</div>
+  <div class="controls">
+    <label>
+      <input type="range" id="particleCount" min="50" max="800" value="300" step="10">
+      <span>Deeltjes: <strong id="countDisplay">300</strong></span>
+    </label>
+    <label>
+      <input type="range" id="trailLength" min="0.05" max="0.3" value="0.15" step="0.01">
+      <span>Trail: <strong id="trailDisplay">0.15</strong></span>
+    </label>
+    <label>
+      <input type="range" id="audioForce" min="1" max="10" value="5" step="0.5">
+      <span>Audio Kracht: <strong id="audioDisplay">5</strong></span>
+    </label>
+  </div>
+  <div class="status" id="audioStatus">🎤 Microfoon wachtend...</div>
+  <div class="hint">💡 Beweeg je muis • Klik voor chaos • Matje staat aan</div>
+</div>
+
+<div class="fps-counter" id="fps">FPS: 60</div>
+
+<script src="app.js"></script>
+
+    // draw
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, 2 + audioLevel * 5, 0, Math.PI*2);
+    ctx.fillStyle = `hsl(${p.x / w * 360}, 100%, 60%)`;
+    ctx.fill();
+  });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+
+</body>
+</html>

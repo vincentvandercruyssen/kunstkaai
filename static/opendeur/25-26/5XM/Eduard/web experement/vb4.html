@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>KUNSTKAAI TERMINAL v1.0</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  height: 100%;
+  background: radial-gradient(ellipse at 50% 0%, #2a2a1a 0%, #111 60%, #000 100%);
+  font-family: 'Share Tech Mono', monospace;
+  -webkit-font-smoothing: none;
+  overflow-x: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 10px 40px;
+}
+
+/* ─── COMPUTER WRAPPER ─── */
+/* Scale the entire computer as one unit to always fit viewport */
+.computer-scaler {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.computer {
+  /* Fixed design width — CSS scale handles the rest */
+  width: 520px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(0 30px 60px rgba(0,0,0,0.8));
+  transform-origin: top center;
+}
+
+/* ─── MONITOR ─── */
+.monitor-outer {
+  width: 100%;
+  background: linear-gradient(160deg, #8a8a6a 0%, #6a6a4a 40%, #5a5a3a 100%);
+  border-radius: 12px 12px 6px 6px;
+  padding: 18px 18px 14px;
+  border: 2px solid #9a9a7a;
+  border-bottom: 3px solid #4a4a2a;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.15), inset 0 -2px 0 rgba(0,0,0,0.3);
+}
+
+.screen-bezel {
+  background: #1a1a0a;
+  border-radius: 6px 6px 4px 4px;
+  padding: 3px;
+  box-shadow: inset 0 0 0 2px #2a2a1a, inset 0 0 20px rgba(0,0,0,0.8);
+}
+
+.screen {
+  position: relative;
+  background: #000810;
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  box-shadow: inset 0 0 60px rgba(0,0,0,0.5), inset 4px 0 20px rgba(0,0,0,0.3), inset -4px 0 20px rgba(0,0,0,0.3);
+}
+.screen::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px);
+  pointer-events: none; z-index: 20;
+}
+.screen::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 40%, rgba(0,255,80,0.04) 0%, transparent 70%);
+  pointer-events: none; z-index: 21;
+}
+
+#matrix-canvas, #crt-canvas {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+}
+#crt-canvas { z-index: 5; }
+#matrix-canvas { z-index: 15; opacity: 0; }
+#flash {
+  position: absolute; inset: 0;
+  pointer-events: none; z-index: 30; opacity: 0; border-radius: 4px;
+}
+
+#terminal {
+  position: relative; z-index: 10;
+  width: 100%; height: 100%;
+  padding: 12px 14px;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+}
+#output {
+  flex: 1; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: flex-end;
+}
+
+.line {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #00e040;
+  text-shadow: 0 0 6px #00ff60, 0 0 12px rgba(0,255,80,0.3);
+  white-space: pre-wrap; word-break: break-all;
+  animation: line-in 0.1s ease-out;
+}
+.line.dim  { color: #008825; text-shadow: none; }
+.line.warn { color: #e0c000; text-shadow: 0 0 6px #ffd000; }
+.line.err  { color: #ff3030; text-shadow: 0 0 6px #ff0000; }
+.line.info { color: #00c8ff; text-shadow: 0 0 6px #00aaff; }
+.line.art  { color: #00e040; }
+@keyframes line-in { from { opacity: 0; transform: translateX(-4px); } to { opacity: 1; transform: none; } }
+
+.input-row { display: flex; align-items: center; gap: 4px; margin-top: 4px; flex-shrink: 0; }
+.prompt, #input-display {
+  font-size: 12px;
+  color: #00e040;
+  text-shadow: 0 0 6px #00ff60;
+}
+.prompt { white-space: nowrap; }
+#input-display { flex: 1; overflow: hidden; white-space: nowrap; }
+.cursor-block {
+  display: inline-block; width: 8px; height: 14px;
+  background: #00e040; box-shadow: 0 0 6px #00ff60;
+  animation: blink-cur 1s step-end infinite; vertical-align: text-bottom; margin-left: 1px;
+}
+@keyframes blink-cur { 0%,100%{opacity:1} 50%{opacity:0} }
+
+.monitor-bar {
+  display: flex; justify-content: space-between; align-items: center; padding: 6px 4px 0;
+}
+.monitor-brand { font-size: 7px; letter-spacing: 0.15em; color: #5a5a3a; text-transform: uppercase; }
+.power-led {
+  width: 7px; height: 7px; border-radius: 50%; background: #00ff40;
+  box-shadow: 0 0 6px #00ff40; animation: led-pulse 2.5s ease-in-out infinite;
+}
+@keyframes led-pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+
+/* ─── CONNECTOR ─── */
+.connector {
+  width: 75%; height: 14px;
+  background: linear-gradient(180deg, #5a5a3a 0%, #6a6a4a 50%, #5a5a3a 100%);
+  border-left: 2px solid #4a4a2a; border-right: 2px solid #4a4a2a; border-bottom: 2px solid #3a3a1a;
+}
+
+/* ─── KEYBOARD ─── */
+.keyboard-body {
+  width: 100%;
+  background: linear-gradient(170deg, #8a8a6a 0%, #7a7a5a 40%, #6a6a4a 100%);
+  border-radius: 6px 6px 14px 14px;
+  padding: 10px 10px 16px;
+  border: 2px solid #9a9a7a; border-top: 2px solid #7a7a5a;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.1), inset 0 -4px 0 rgba(0,0,0,0.3);
+}
+
+.fn-row, .key-row {
+  display: flex; gap: 4px;
+  margin-bottom: 4px;
+  justify-content: center;
+}
+.fn-row { margin-bottom: 6px; }
+
+/* ─── BASE KEY ─── */
+/* All key sizes in px — no vw/clamp, so they don't shrink on wide screens */
+.key {
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(175deg, #d8d8b0 0%, #c0c090 60%, #a8a870 100%);
+  border: 1px solid #7a7a5a;
+  border-bottom: 3px solid #5a5a3a;
+  border-right: 2px solid #6a6a4a;
+  border-radius: 3px;
+  font-size: 9px;
+  color: #2a2a1a;
+  cursor: pointer; user-select: none;
+  transition: transform 0.06s, box-shadow 0.06s, background 0.06s;
+  height: 30px;
+  min-width: 24px;
+  padding: 0 4px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center; line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+  flex-shrink: 0;
+}
+.key:active, .key.pressed {
+  transform: translateY(2px);
+  border-bottom: 1px solid #5a5a3a;
+  background: linear-gradient(175deg, #b0b088 0%, #989870 60%, #808050 100%);
+  box-shadow: none;
+}
+
+/* key width variants */
+.key.w-28  { min-width: 28px; }
+.key.w-36  { min-width: 36px; }
+.key.w-44  { min-width: 44px; }
+.key.w-52  { min-width: 52px; }
+.key.w-70  { min-width: 70px; }
+.key.w-120 { min-width: 120px; }
+.key.w-26  { min-width: 26px; }
+
+.key.fn-key  { background: linear-gradient(175deg, #b8b890 0%, #a0a070 100%); font-size: 8px; }
+.key.special { background: linear-gradient(175deg, #c0c8b0 0%, #a8b098 100%); }
+
+.kb-main { display: flex; gap: 8px; }
+.kb-alpha { flex: 1; min-width: 0; }
+.numpad   { display: flex; flex-direction: column; gap: 4px; flex-shrink: 0; }
+.numpad .key-row { justify-content: flex-start; }
+
+/* fx row */
+.fx-row { display: flex; gap: 4px; margin-top: 6px; justify-content: center; flex-wrap: nowrap; }
+.key.fx-key {
+  background: linear-gradient(175deg, #a0b8d0 0%, #7898b0 100%);
+  color: #0a1a2a; border-color: #5a7a9a; border-bottom-color: #3a5a7a;
+  font-size: 8px; flex: 1; min-width: 0; max-width: 60px; letter-spacing: 0.02em;
+}
+
+/* glitch strips */
+.glitch-strip {
+  position: absolute; left: 0; right: 0; pointer-events: none; z-index: 25;
+  animation: glitch-move 0.12s steps(2) forwards; opacity: 0;
+}
+@keyframes glitch-move {
+  0%   { opacity:1; transform:translateX(0); filter:hue-rotate(0deg); }
+  33%  { transform:translateX(-6px); filter:hue-rotate(90deg); }
+  66%  { transform:translateX(4px);  filter:hue-rotate(180deg); }
+  100% { opacity:0; transform:translateX(0); }
+}
+</style>
+</head>
+<body>
+
+<div class="computer-scaler">
+<div class="computer" id="computer">
+
+  <!-- MONITOR -->
+  <div class="monitor-outer">
+    <div class="screen-bezel">
+      <div class="screen" id="screen">
+        <canvas id="crt-canvas"></canvas>
+        <canvas id="matrix-canvas"></canvas>
+        <div id="flash"></div>
+        <div id="terminal">
+          <div id="output"></div>
+          <div class="input-row">
+            <span class="prompt" id="prompt-label">A:&gt;&nbsp;</span>
+            <span id="input-display"></span><span class="cursor-block"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="monitor-bar">
+      <span class="monitor-brand">KUNSTKAAI KK-1</span>
+      <span class="power-led"></span>
+    </div>
+  </div>
+
+  <!-- CONNECTOR -->
+  <div class="connector"></div>
+
+  <!-- KEYBOARD -->
+  <div class="keyboard-body">
+
+    <!-- FN row -->
+    <div class="fn-row">
+      <div class="key fn-key" data-key="Escape">ESC</div>
+      <div style="flex:1;min-width:8px"></div>
+      <div class="key fn-key" data-key="F1">F1</div>
+      <div class="key fn-key" data-key="F2">F2</div>
+      <div class="key fn-key" data-key="F3">F3</div>
+      <div class="key fn-key" data-key="F4">F4</div>
+      <div class="key fn-key" data-key="F5">F5</div>
+      <div class="key fn-key" data-key="F6">F6</div>
+      <div class="key fn-key" data-key="F7">F7</div>
+      <div class="key fn-key" data-key="F8">F8</div>
+    </div>
+
+    <div class="kb-main">
+      <div class="kb-alpha">
+        <!-- numbers -->
+        <div class="key-row">
+          <div class="key" data-char="`">`</div>
+          <div class="key" data-char="1">1</div><div class="key" data-char="2">2</div>
+          <div class="key" data-char="3">3</div><div class="key" data-char="4">4</div>
+          <div class="key" data-char="5">5</div><div class="key" data-char="6">6</div>
+          <div class="key" data-char="7">7</div><div class="key" data-char="8">8</div>
+          <div class="key" data-char="9">9</div><div class="key" data-char="0">0</div>
+          <div class="key" data-char="-">-</div><div class="key" data-char="=">=</div>
+          <div class="key w-44 special" data-key="Backspace">DEL</div>
+        </div>
+        <!-- QWERTY -->
+        <div class="key-row">
+          <div class="key w-44 special" data-key="Tab">TAB</div>
+          <div class="key" data-char="Q">Q</div><div class="key" data-char="W">W</div>
+          <div class="key" data-char="E">E</div><div class="key" data-char="R">R</div>
+          <div class="key" data-char="T">T</div><div class="key" data-char="Y">Y</div>
+          <div class="key" data-char="U">U</div><div class="key" data-char="I">I</div>
+          <div class="key" data-char="O">O</div><div class="key" data-char="P">P</div>
+          <div class="key" data-char="[">[</div><div class="key" data-char="]">]</div>
+          <div class="key w-44 special" data-key="Enter">↵</div>
+        </div>
+        <!-- ASDF -->
+        <div class="key-row">
+          <div class="key w-52 special" data-key="CapsLock">CAPS</div>
+          <div class="key" data-char="A">A</div><div class="key" data-char="S">S</div>
+          <div class="key" data-char="D">D</div><div class="key" data-char="F">F</div>
+          <div class="key" data-char="G">G</div><div class="key" data-char="H">H</div>
+          <div class="key" data-char="J">J</div><div class="key" data-char="K">K</div>
+          <div class="key" data-char="L">L</div><div class="key" data-char=";">;</div>
+          <div class="key" data-char="'">'</div><div class="key" data-char="\">\</div>
+        </div>
+        <!-- ZXCV -->
+        <div class="key-row">
+          <div class="key w-70 special" data-key="Shift">SHIFT</div>
+          <div class="key" data-char="Z">Z</div><div class="key" data-char="X">X</div>
+          <div class="key" data-char="C">C</div><div class="key" data-char="V">V</div>
+          <div class="key" data-char="B">B</div><div class="key" data-char="N">N</div>
+          <div class="key" data-char="M">M</div><div class="key" data-char=",">,</div>
+          <div class="key" data-char=".">.</div><div class="key" data-char="/">/</div>
+          <div class="key w-70 special" data-key="Shift">SHIFT</div>
+        </div>
+        <!-- SPACE ROW -->
+        <div class="key-row">
+          <div class="key w-36 special" data-key="ctrl">CTL</div>
+          <div class="key w-36 special" data-key="alt">ALT</div>
+          <div class="key w-120" data-char=" "></div>
+          <div class="key w-36 special" data-key="alt">ALT</div>
+          <div class="key w-36 special" data-key="ctrl">CTL</div>
+        </div>
+      </div>
+
+      <!-- NUMPAD -->
+      <div class="numpad">
+        <div class="key-row"><div class="key w-26 fn-key" data-char="7">7</div><div class="key w-26 fn-key" data-char="8">8</div><div class="key w-26 fn-key" data-char="9">9</div></div>
+        <div class="key-row"><div class="key w-26 fn-key" data-char="4">4</div><div class="key w-26 fn-key" data-char="5">5</div><div class="key w-26 fn-key" data-char="6">6</div></div>
+        <div class="key-row"><div class="key w-26 fn-key" data-char="1">1</div><div class="key w-26 fn-key" data-char="2">2</div><div class="key w-26 fn-key" data-char="3">3</div></div>
+        <div class="key-row"><div class="key fn-key" style="min-width:56px" data-char="0">0</div><div class="key w-26 fn-key" data-char=".">.</div></div>
+      </div>
+    </div>
+
+    <!-- EFFECTS ROW -->
+    <div class="fx-row">
+      <div class="key fx-key" data-effect="matrix">MATRIX</div>
+      <div class="key fx-key" data-effect="glitch">GLITCH</div>
+      <div class="key fx-key" data-effect="wave">WAVE</div>
+      <div class="key fx-key" data-effect="invert">INVERT</div>
+      <div class="key fx-key" data-effect="scanline">SCAN</div>
+      <div class="key fx-key" data-effect="snow">SNOW</div>
+      <div class="key fx-key" data-effect="clear">CLEAR</div>
+      <div class="key fx-key" data-effect="color">COLOR</div>
+    </div>
+
+  </div>
+</div><!-- .computer -->
+</div><!-- .computer-scaler -->
+
+<script>
+// ══════════════════════════════════════
+//  SCALE COMPUTER TO FIT VIEWPORT
+// ══════════════════════════════════════
+const computer = document.getElementById('computer');
+function scaleComputer() {
+  const DESIGN_W = 520;
+  const available = Math.min(window.innerWidth - 20, window.innerWidth);
+  const scale = Math.min(1, available / DESIGN_W);
+  computer.style.transform = `scale(${scale})`;
+  // adjust container height so page doesn't scroll weirdly
+  const naturalH = computer.scrollHeight;
+  computer.parentElement.style.height = (naturalH * scale + 40) + 'px';
+}
+scaleComputer();
+window.addEventListener('resize', scaleComputer);
+
+// ══════════════════════════════════════
+//  STATE
+// ══════════════════════════════════════
+const screen    = document.getElementById('screen');
+const output    = document.getElementById('output');
+const inputDisp = document.getElementById('input-display');
+const flash     = document.getElementById('flash');
+const matCanvas = document.getElementById('matrix-canvas');
+const crtCanvas = document.getElementById('crt-canvas');
+const matCtx    = matCanvas.getContext('2d');
+
+let inputBuffer = '';
+let capsLock = false, shiftDown = false;
+let matrixActive = false, matrixTimer = null;
+let waveActive = false,   waveTimer   = null;
+let snowActive = false,   snowTimer   = null;
+let wavePhase = 0;
+let currentColor = 'green';
+let commandHistory = [], histIdx = -1;
+
+const COLORS = {
+  green: { text: '#00e040', glow: '#00ff60', bg: '#000810' },
+  amber: { text: '#e08000', glow: '#ff9000', bg: '#100800' },
+  blue:  { text: '#40a0ff', glow: '#60c0ff', bg: '#000815' },
+  white: { text: '#d8d8c8', glow: '#ffffff', bg: '#050508' },
+};
+
+// ══════════════════════════════════════
+//  CANVAS
+// ══════════════════════════════════════
+function resizeCRT() {
+  const r = screen.getBoundingClientRect();
+  matCanvas.width = crtCanvas.width = r.width;
+  matCanvas.height = crtCanvas.height = r.height;
+}
+resizeCRT();
+window.addEventListener('resize', () => { resizeCRT(); scaleComputer(); });
+
+// ══════════════════════════════════════
+//  TERMINAL
+// ══════════════════════════════════════
+const MAX_LINES = 22;
+function addLine(text, cls = '') {
+  const el = document.createElement('div');
+  el.className = 'line' + (cls ? ' ' + cls : '');
+  el.textContent = text;
+  output.appendChild(el);
+  while (output.children.length > MAX_LINES) output.removeChild(output.firstChild);
+}
+
+function setColor(col) {
+  currentColor = col;
+  const c = COLORS[col] || COLORS.green;
+  document.querySelectorAll('.line, .prompt, #input-display, .cursor-block').forEach(el => {
+    el.style.color = c.text;
+    el.style.textShadow = `0 0 6px ${c.glow}, 0 0 12px ${c.glow}33`;
+  });
+  screen.style.background = c.bg;
+  const led = document.querySelector('.power-led');
+  led.style.background = c.text;
+  led.style.boxShadow  = `0 0 6px ${c.glow}`;
+}
+
+// ══════════════════════════════════════
+//  BOOT
+// ══════════════════════════════════════
+[
+  { t: 0,    text: 'KUNSTKAAI KK-1 BIOS v2.6  (C) 1987', cls: 'dim' },
+  { t: 200,  text: 'Memory test: 640K OK', cls: 'dim' },
+  { t: 420,  text: 'Loading WEBORIENTATIE.SYS...', cls: 'dim' },
+  { t: 650,  text: '████████████████ 100%', cls: 'dim' },
+  { t: 870,  text: '', cls: '' },
+  { t: 950,  text: 'KUNSTKAAI TERMINAL v1.0', cls: '' },
+  { t: 1060, text: '5XM WEBORIENTATIE — OPEN DEUREN 2026', cls: 'info' },
+  { t: 1170, text: '', cls: '' },
+  { t: 1280, text: "Type HELP voor commando's.", cls: '' },
+  { t: 1390, text: '', cls: '' },
+].forEach(b => setTimeout(() => addLine(b.text, b.cls), b.t));
+
+// ══════════════════════════════════════
+//  COMMANDS
+// ══════════════════════════════════════
+function runCommand(raw) {
+  const cmd = raw.trim().toUpperCase();
+  if (!cmd) return;
+  addLine('A:> ' + raw, 'dim');
+  commandHistory.unshift(raw); histIdx = -1;
+
+  if (cmd === 'HELP') {
+    [
+      { t: '', c: '' }, { t: "Commando's:", c: 'info' },
+      { t: '  HELP       — dit menu',               c: '' },
+      { t: '  HELLO      — begroeting',              c: '' },
+      { t: '  KUNST      — over kunstkaai',          c: '' },
+      { t: '  WEB        — over weborientatie',      c: '' },
+      { t: '  KLEUR [green|amber|blue|white]',       c: '' },
+      { t: '  ASCII      — ascii art',               c: '' },
+      { t: '  DATUM      — datum & tijd',            c: '' },
+      { t: '  MATRIX / WAVE / SNOW / GLITCH',        c: '' },
+      { t: '  INVERT / SCAN / CLEAR',                c: '' },
+      { t: '', c: '' },
+      { t: 'F1-F8 en blauwe knoppen = shortcuts!', c: 'info' },
+      { t: '', c: '' },
+    ].forEach(l => addLine(l.t, l.c));
+  } else if (cmd === 'HELLO' || cmd === 'HI') {
+    addLine(''); addLine('Hallo! Welkom bij Kunstkaai.', 'info');
+    addLine('Dit is een web-experiment van 5XM.'); addLine('');
+  } else if (cmd === 'KUNST') {
+    addLine(''); addLine('KUNSTKAAI — Antwerpen', 'info');
+    addLine('Grafische & Digitale Media');
+    addLine('Project: Weborientatie / HTML+CSS+JS'); addLine('');
+  } else if (cmd === 'WEB') {
+    addLine(''); addLine('WEBORIENTATIE 5XM', 'info');
+    addLine('Van pixels naar ervaring.');
+    addLine('Van code naar gevoel.');
+    addLine('Het web is een canvas zonder randen.'); addLine('');
+  } else if (cmd === 'ASCII') {
+    addLine('');
+    ['  _  __                _   _           _ ',
+     ' | |/ /   _ _ __  ___| |_| | ____ _  _(_)',
+     " | ' / | | | '_ \\/ __| __| |/ / _\` |/ _\` |",
+     ' | . \\ |_| | | | \\__ \\ |_|   < (_| | (_| |',
+     ' |_|\\_\\__,_|_| |_|___/\\__|_|\\_\\__,_|\\__,_|',
+    ].forEach(l => addLine(l, 'art')); addLine('');
+  } else if (cmd === 'DATUM' || cmd === 'DATE') {
+    const now = new Date();
+    addLine(''); addLine('Datum: ' + now.toLocaleDateString('nl-BE',{weekday:'long',year:'numeric',month:'long',day:'numeric'}), 'info');
+    addLine('Tijd:  ' + now.toLocaleTimeString('nl-BE')); addLine('');
+  } else if (cmd.startsWith('KLEUR') || cmd.startsWith('COLOR')) {
+    const ch = raw.trim().split(/\s+/)[1]?.toLowerCase();
+    if (['green','amber','blue','white'].includes(ch)) { setColor(ch); addLine('Kleur: ' + ch, 'info'); }
+    else addLine('Gebruik: KLEUR [green|amber|blue|white]', 'warn');
+  } else if (cmd === 'MATRIX') { toggleMatrix(); addLine('MATRIX ' + (matrixActive?'AAN':'UIT'), 'warn');
+  } else if (cmd === 'WAVE')   { toggleWave();   addLine('WAVE '   + (waveActive  ?'AAN':'UIT'), 'info');
+  } else if (cmd === 'SNOW')   { toggleSnow();   addLine('SNOW '   + (snowActive  ?'AAN':'UIT'), 'info');
+  } else if (cmd === 'GLITCH') { doGlitch(); addLine('GLITCH PULS', 'warn');
+  } else if (cmd === 'INVERT') { doInvert(); addLine('INVERT', 'warn');
+  } else if (cmd === 'SCAN')   { doScanline(); addLine('SCANLINE BOOST', 'info');
+  } else if (cmd === 'CLEAR' || cmd === 'CLS') { output.innerHTML = ''; addLine('Gewist.','dim');
+  } else {
+    addLine(''); addLine('Onbekend: ' + raw, 'err');
+    addLine("Type HELP voor commando's.", 'dim'); addLine('');
+  }
+}
+
+// ══════════════════════════════════════
+//  INPUT
+// ══════════════════════════════════════
+function updateDisplay() { inputDisp.textContent = inputBuffer; }
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter')     { runCommand(inputBuffer); inputBuffer = ''; }
+  else if (e.key === 'Backspace') { inputBuffer = inputBuffer.slice(0,-1); flashKey('Backspace'); }
+  else if (e.key === 'ArrowUp')   { e.preventDefault(); if (histIdx < commandHistory.length-1){ histIdx++; inputBuffer = commandHistory[histIdx]; } }
+  else if (e.key === 'ArrowDown') { e.preventDefault(); if (histIdx > 0){ histIdx--; inputBuffer = commandHistory[histIdx]; } else { histIdx=-1; inputBuffer=''; } }
+  else if (e.key === 'CapsLock')  { capsLock = !capsLock; flashKey('CapsLock'); }
+  else if (e.key.length === 1)    { inputBuffer += e.key; }
+  updateDisplay();
+});
+
+// ── ON-SCREEN KEYS ──
+document.querySelectorAll('.key[data-char]').forEach(key => {
+  const go = () => {
+    const ch = key.dataset.char;
+    const letter = shiftDown !== capsLock && ch.match(/[a-z]/i) ? ch.toUpperCase() : ch;
+    inputBuffer += letter; updateDisplay(); flashKey(null, key); keyFx();
+  };
+  key.addEventListener('mousedown', go);
+  key.addEventListener('touchstart', e => { e.preventDefault(); go(); }, { passive: false });
+});
+
+document.querySelectorAll('.key[data-key]').forEach(key => {
+  const go = () => {
+    flashKey(null, key); keyFx();
+    const k = key.dataset.key;
+    if (k === 'Enter')    { runCommand(inputBuffer); inputBuffer = ''; updateDisplay(); }
+    else if (k === 'Backspace') { inputBuffer = inputBuffer.slice(0,-1); updateDisplay(); }
+    else if (k === 'CapsLock')  { capsLock = !capsLock; }
+    else if (k === 'Shift')     { shiftDown = true; setTimeout(() => shiftDown = false, 500); }
+    else if (k === 'Tab')       { inputBuffer += '    '; updateDisplay(); }
+  };
+  key.addEventListener('mousedown', go);
+  key.addEventListener('touchstart', e => { e.preventDefault(); go(); }, { passive: false });
+});
+
+document.querySelectorAll('.key[data-key^="F"]').forEach(key => {
+  const go = () => {
+    const map = { F1:'HELP', F2:'ASCII', F3:'DATUM', F4:'MATRIX', F5:'WAVE', F6:'SNOW', F7:'GLITCH', F8:'CLEAR' };
+    const cmd = map[key.dataset.key];
+    if (cmd) { runCommand(cmd); inputBuffer = ''; updateDisplay(); }
+    flashKey(null, key); keyFx();
+  };
+  key.addEventListener('mousedown', go);
+  key.addEventListener('touchstart', e => { e.preventDefault(); go(); }, { passive: false });
+});
+
+document.querySelector('.key[data-key="Escape"]')?.addEventListener('mousedown', () => { inputBuffer = ''; updateDisplay(); });
+
+document.querySelectorAll('.key[data-effect]').forEach(key => {
+  const go = () => {
+    flashKey(null, key); keyFx();
+    const fx = key.dataset.effect;
+    if (fx === 'matrix')   { toggleMatrix(); addLine('MATRIX '+(matrixActive?'AAN':'UIT'),'warn'); }
+    if (fx === 'glitch')   { doGlitch(); addLine('GLITCH PULS','warn'); }
+    if (fx === 'wave')     { toggleWave(); addLine('WAVE '+(waveActive?'AAN':'UIT'),'info'); }
+    if (fx === 'invert')   { doInvert(); addLine('INVERT','warn'); }
+    if (fx === 'scanline') { doScanline(); addLine('SCANLINE BOOST','info'); }
+    if (fx === 'snow')     { toggleSnow(); addLine('SNOW '+(snowActive?'AAN':'UIT'),'info'); }
+    if (fx === 'clear')    { output.innerHTML = ''; addLine('Gewist.','dim'); }
+    if (fx === 'color')    {
+      const cols = ['green','amber','blue','white'];
+      setColor(cols[(cols.indexOf(currentColor)+1)%cols.length]);
+      addLine('Kleur: '+currentColor,'info');
+    }
+  };
+  key.addEventListener('mousedown', go);
+  key.addEventListener('touchstart', e => { e.preventDefault(); go(); }, { passive: false });
+});
+
+function flashKey(name, el) {
+  const t = el || document.querySelector(`.key[data-key="${name}"]`);
+  if (!t) return;
+  t.classList.add('pressed');
+  setTimeout(() => t.classList.remove('pressed'), 120);
+}
+function keyFx() {
+  flash.style.background = 'rgba(0,255,80,0.03)';
+  flash.style.opacity = '1';
+  setTimeout(() => flash.style.opacity = '0', 50);
+}
+
+document.addEventListener('keydown', e => {
+  const el = document.querySelector(`.key[data-char="${e.key.toUpperCase()}"]`) || document.querySelector(`.key[data-key="${e.key}"]`);
+  if (el) el.classList.add('pressed');
+  if (e.key === 'F1'){e.preventDefault();runCommand('HELP');  inputBuffer='';updateDisplay();}
+  if (e.key === 'F2'){e.preventDefault();runCommand('ASCII'); inputBuffer='';updateDisplay();}
+  if (e.key === 'F3'){e.preventDefault();runCommand('DATUM'); inputBuffer='';updateDisplay();}
+  if (e.key === 'F4'){e.preventDefault();toggleMatrix();}
+  if (e.key === 'F5'){e.preventDefault();toggleWave();}
+});
+document.addEventListener('keyup', e => {
+  const el = document.querySelector(`.key[data-char="${e.key.toUpperCase()}"]`) || document.querySelector(`.key[data-key="${e.key}"]`);
+  if (el) el.classList.remove('pressed');
+});
+
+// ══════════════════════════════════════
+//  EFFECTS
+// ══════════════════════════════════════
+const matChars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノ0123456789ABCDEF<>{}[]∿◈⊘';
+let matDrops = [];
+
+function startMatrix() {
+  const W = matCanvas.width, H = matCanvas.height;
+  const cols = Math.floor(W / 10);
+  matDrops = Array.from({length:cols}, () => Math.random() * -50);
+  matrixActive = true; matCanvas.style.opacity = '0.85'; matLoop();
+}
+function matLoop() {
+  if (!matrixActive) return;
+  const W = matCanvas.width, H = matCanvas.height;
+  matCtx.fillStyle = 'rgba(0,0,0,0.05)'; matCtx.fillRect(0,0,W,H);
+  const c = COLORS[currentColor]||COLORS.green;
+  matCtx.fillStyle = c.text; matCtx.font = '9px "Share Tech Mono"';
+  matDrops.forEach((y,i) => {
+    matCtx.fillText(matChars[Math.floor(Math.random()*matChars.length)], i*10, y*10);
+    if (y*10 > H && Math.random() > 0.975) matDrops[i] = 0;
+    matDrops[i] += 0.5;
+  });
+  matrixTimer = requestAnimationFrame(matLoop);
+}
+function stopMatrix() { matrixActive=false; cancelAnimationFrame(matrixTimer); matCtx.clearRect(0,0,matCanvas.width,matCanvas.height); matCanvas.style.opacity='0'; }
+function toggleMatrix() { matrixActive ? stopMatrix() : startMatrix(); }
+
+function startWave() { waveActive=true; matCanvas.style.opacity='0.6'; waveLoop(); }
+function waveLoop() {
+  if (!waveActive) return;
+  const W=matCanvas.width, H=matCanvas.height;
+  matCtx.clearRect(0,0,W,H);
+  const c=COLORS[currentColor]||COLORS.green;
+  for(let w=0;w<5;w++){
+    matCtx.beginPath(); matCtx.strokeStyle=c.text;
+    matCtx.globalAlpha=0.08+w*0.04; matCtx.lineWidth=1;
+    for(let x=0;x<=W;x+=2){
+      const y=H/2+Math.sin(x*0.015+wavePhase+w*0.8)*(20+w*15);
+      x===0?matCtx.moveTo(x,y):matCtx.lineTo(x,y);
+    }
+    matCtx.stroke();
+  }
+  matCtx.globalAlpha=1; wavePhase+=0.05;
+  waveTimer=requestAnimationFrame(waveLoop);
+}
+function stopWave() { waveActive=false; cancelAnimationFrame(waveTimer); matCtx.clearRect(0,0,matCanvas.width,matCanvas.height); matCanvas.style.opacity='0'; }
+function toggleWave() { waveActive ? stopWave() : startWave(); }
+
+let snowFlakes=[];
+function startSnow() {
+  snowActive=true; matCanvas.style.opacity='0.7';
+  const W=matCanvas.width, H=matCanvas.height;
+  snowFlakes=Array.from({length:80},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.4,vy:Math.random()*.6+.2,s:Math.random()*1.5+.3}));
+  snowLoop();
+}
+function snowLoop() {
+  if(!snowActive) return;
+  const W=matCanvas.width,H=matCanvas.height;
+  matCtx.clearRect(0,0,W,H);
+  const c=COLORS[currentColor]||COLORS.green;
+  matCtx.fillStyle=c.text;
+  snowFlakes.forEach(f=>{
+    f.x+=f.vx; f.y+=f.vy;
+    if(f.y>H){f.y=0;f.x=Math.random()*W;}
+    matCtx.globalAlpha=0.4; matCtx.beginPath(); matCtx.arc(f.x,f.y,f.s,0,Math.PI*2); matCtx.fill();
+  });
+  matCtx.globalAlpha=1; snowTimer=requestAnimationFrame(snowLoop);
+}
+function stopSnow() { snowActive=false; cancelAnimationFrame(snowTimer); matCtx.clearRect(0,0,matCanvas.width,matCanvas.height); matCanvas.style.opacity='0'; }
+function toggleSnow() { snowActive?stopSnow():startSnow(); }
+
+function doGlitch() {
+  for(let i=0;i<6;i++) setTimeout(()=>{
+    const s=document.createElement('div'); s.className='glitch-strip';
+    s.style.cssText=`top:${Math.random()*85}%;height:${Math.random()*30+10}px;background:rgba(0,255,80,0.08);`;
+    screen.appendChild(s); setTimeout(()=>s.remove(),150);
+  },i*40);
+  const t=document.getElementById('terminal');
+  t.style.transform='translateX(4px)'; setTimeout(()=>t.style.transform='translateX(-3px)',60); setTimeout(()=>t.style.transform='',120);
+}
+function doInvert() { screen.style.filter='invert(1)'; setTimeout(()=>screen.style.filter='',400); }
+function doScanline() {
+  flash.style.background='repeating-linear-gradient(0deg,rgba(0,255,80,0.06) 0px,rgba(0,255,80,0.06) 2px,transparent 2px,transparent 4px)';
+  flash.style.opacity='1'; setTimeout(()=>flash.style.opacity='0',600);
+}
+</script>
+</body>
+</html>

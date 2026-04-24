@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Visuele Dobbelsteen — Webexperiment</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<canvas id="bg"></canvas>
+
+			<div id="ui">
+				<header id="top-header">
+					<div class="title">🎲 Visuele Dobbelsteen</div>
+					<div class="subtitle">Roll twee keer hetzelfde om te winnen</div>
+				</header>
+			<div id="die-area">
+				<!-- Canvas drawing happens in app.js -->
+				<canvas id="die" width="700" height="700"></canvas>
+				<div id="hint">Klik of druk spatie om te rollen</div>
+			</div>
+
+					<aside id="history">
+						<h2>Geschiedenis</h2>
+						<div id="list"></div>
+						<div id="leaderboard" aria-live="polite">
+							<h3>Hall of Fame</h3>
+							<div id="hof-controls"><button id="hof-reset">Reset Hall of Fame</button></div>
+							<div id="leaderboard-list"></div>
+						</div>
+					</aside>
+		</div>
+
+		<script defer src="app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5XM Opendeur - Webexperimenten</title>
+    <style>
+        body, html {
+            margin: 0;
+            height: 100%;
+            font-family: system-ui;
+            background-color: #fafafa;
+        }
+
+        /* Top navigation header */
+        #main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: #ffffff;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 0 20px;
+            z-index: 100;
+        }
+
+        #main-header a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 25px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.2s;
+        }
+
+        #main-header a:hover {
+            color: #0056b3;
+        }
+
+        /* Carousel container */
+        #carousel {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+        }
+
+        /* Individual item in carousel */
+        .carousel-item {
+            flex: 0 0 100vw;
+            height: 100vh;
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px; /* To prevent overlapping with fixed header */
+            box-sizing: border-box;
+        }
+
+        /* Header above iframe with link */
+        .student-header {
+            text-align: center;
+            padding: 15px;
+            background: #eeeeee;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .student-header a {
+            text-decoration: none;
+            color: #222;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .student-header a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        /* The iframe itself */
+        iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+            background: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="main-header">
+        <!-- Student links will be injected here -->
+    </nav>
+
+    <div id="carousel">
+        <!-- Iframes will be injected here -->
+    </div>
+
+    <script>
+        const pages = [
+            { student: "Angel", path: "Angel/webexperiment/index.html" },
+            { student: "David (Constellations)", path: "David/webexperiment tests/constellations/index.html" },
+            { student: "David (Shattering Star)", path: "David/webexperiment tests/shattering star shape thing/index.html" },
+            { student: "David (8Ball)", path: "David/webexperiment tests/8Ball/index.html" },
+            { student: "David (Webcam)", path: "David/webexperiment tests/webcam/index.html" },
+            { student: "Eduard (vb1)", path: "Eduard/web experement/vb1.html" },
+            { student: "Eduard (vb2)", path: "Eduard/web experement/vb2.html" },
+            { student: "Eduard (vb3)", path: "Eduard/web experement/vb3.html" },
+            { student: "Eduard (vb4)", path: "Eduard/web experement/vb4.html" },
+            { student: "Esli", path: "Esli/EsliP_Webexperiment/index.html" },
+            { student: "Espen", path: "Espen/EspenH_CoderMario/index.html" },
+            { student: "Giovanni", path: "Giovanni/GiovanniC_Webexperiment/index.html" },
+            { student: "Jena", path: "Jena/JenaVdB_web_experiment/index.html" },
+            { student: "Jordan", path: "Jordan/da/index.html" },
+            { student: "Kjell", path: "Kjell/KjellDR_Webexperiment/index.html" },
+            { student: "Leon", path: "Leon/webexperiment/index.html" },
+            { student: "Lex", path: "Lex/LexL_Webexperiment/index.html" },
+            { student: "Michael", path: "Michael/webexperiment/index.html" },
+            { student: "Misha", path: "Misha/MishaS_GENART/index.html" },
+            { student: "Sep", path: "Sep/web_experment/index.html" },
+            { student: "Sonmul", path: "Sonmul/webexperiment_sonmul/index.html" }
+        ];
+
+        const header = document.getElementById('main-header');
+        const carousel = document.getElementById('carousel');
+
+        // Extract unique students for the top navigation (e.g., "David" instead of "David (8Ball)")
+        const uniqueStudents = [...new Set(pages.map(p => p.student.split(' ')[0]))];
+
+        uniqueStudents.forEach(student => {
+            const a = document.createElement('a');
+            a.href = `#student-${student}`;
+            a.textContent = student;
+            header.appendChild(a);
+        });
+
+        pages.forEach((page, index) => {
+            const item = document.createElement('div');
+            item.className = 'carousel-item';
+            
+            // Set an ID so anchor links work. The first project of a student gets the ID.
+            const baseStudent = page.student.split(' ')[0];
+            const isFirstOfStudent = pages.findIndex(p => p.student.split(' ')[0] === baseStudent) === index;
+            
+            if (isFirstOfStudent) {
+                item.id = `student-${baseStudent}`;
+            }
+
+            const studentHeader = document.createElement('div');
+            studentHeader.className = 'student-header';
+            
+            const link = document.createElement('a');
+            link.href = page.path;
+            link.target = "_blank";
+            link.textContent = page.student;
+            studentHeader.appendChild(link);
+
+            const iframe = document.createElement('iframe');
+            iframe.src = page.path;
+            iframe.loading = "lazy"; // Important for performance when dealing with many iframes
+
+            item.appendChild(studentHeader);
+            item.appendChild(iframe);
+            carousel.appendChild(item);
+        });
+    </script>
+</body>
+</html>

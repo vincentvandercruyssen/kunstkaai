@@ -1,11 +1,3 @@
-:root {
-    --bgb: #222222;
-    --bgf: #313131;
-    --bgbtn: #171717;
-    --txt: #fffe;
-    --brdr: #fff2;
-}
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -18,8 +10,8 @@ body {
 }
 
 body {
-    background-color: var(--bgb);
-    color: var(--txt);
+    background-color: #222222;
+    color: #ffffffee;
     font-family: system-ui;
     line-height: 1.618;
 }
@@ -42,10 +34,10 @@ main {
 section {
     position: relative;
     border-radius: 0.3rem;
-    border: 1px solid var(--brdr);
+    border: 1px solid #ffffff22;
     padding: 1rem;
     padding-top: 0;
-    background-color: var(--bgf);
+    background-color: #313131;
 }
 
 h4 {
@@ -57,7 +49,8 @@ h4 {
 iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
-    border: 1px solid var(--brdr);
+    min-height: 12rem;
+    border: 1px solid #ffffff22;
 }
 
 .fullscreen-btn {
@@ -65,11 +58,11 @@ iframe {
     top: 1rem;
     right: 1rem;
     display: flex;
-    border: 1px solid var(--brdr);
+    border: 1px solid #ffffff22;
     width: 2rem;
     aspect-ratio: 1;
-    background-color: var(--bgbtn);
-    color: var(--txt);
+    background-color: #171717;
+    color: #ffffffee;
     padding: 10px;
     cursor: pointer;
 }
@@ -86,11 +79,11 @@ iframe {
     position: fixed;
     top: 4rem;
     left: 4rem;
-    border: 1px solid var(--brdr);
+    border: 1px solid #ffffff22;
     width: calc(100% - 8rem);
     height: calc(100% - 8rem);
     outline: 16rem solid #0007;
-    background-color: var(--bgf);
+    background-color: #313131;
     display: none;
     flex-direction: column;
     z-index: 2;
@@ -111,12 +104,12 @@ iframe {
 }
 
 #close-fullscreen {
-    border: 1px solid var(--brdr);
+    border: 1px solid #ffffff22;
     padding: 10px;
     width: 3rem;
     height: 3rem;
-    background-color: var(--bgbtn);
-    color: var(--txt);
+    background-color: #171717;
+    color: #ffffffee;
     cursor: pointer;
 }
 
