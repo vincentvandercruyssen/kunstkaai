@@ -1,22 +1,103 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4GT Opendeur</title>
-    <link rel="stylesheet" href="../style.css" />
+    <style>
+        body, html {
+            margin: 0;
+            height: 100%;
+            font-family: system-ui;
+            background-color: #fafafa;
+        }
+
+        /* Top navigation header */
+        #main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: #ffffff;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 0 20px;
+            z-index: 100;
+        }
+
+        #main-header a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 25px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.2s;
+            cursor: pointer;
+        }
+
+        #main-header a:hover {
+            color: #0056b3;
+        }
+
+        #main-header a.active {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 4px;
+        }
+
+        /* Viewer container */
+        #viewer {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            padding-top: 60px; /* To prevent overlapping with fixed header */
+            box-sizing: border-box;
+        }
+
+        /* Header above iframe with link */
+        .student-header {
+            text-align: center;
+            padding: 15px;
+            background: #eeeeee;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .student-header a {
+            text-decoration: none;
+            color: #222;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .student-header a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        /* The iframe itself */
+        iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+            background: #ffffff;
+        }
+    </style>
 </head>
-
 <body>
-    <main id="content"></main>
 
-    <div id="fullscreen-overlay">
-        <div class="fullscreen-titlebar">
-            <h3 id="fullscreen-title"></h3>
-            <button id="close-fullscreen" onclick="closeFullscreen()"><img src="../img/plus_11.svg"></button>
+    <nav id="main-header">
+        <!-- Student links will be injected here -->
+    </nav>
+
+    <div id="viewer">
+        <div class="student-header">
+            <a id="viewer-header-link" href="#" target="_blank">Laden...</a>
         </div>
-        <iframe id="fullscreen-iframe" src=""></iframe>
+        <iframe id="viewer-iframe" src="" loading="lazy"></iframe>
     </div>
 
     <script>
@@ -98,8 +179,51 @@
             { titel: "Reservatie", leerling: "Yorbe", pad: "" },
             { titel: "TypoAnimatie", leerling: "Yorbe", pad: "" },
         ];
-    </script>
-    <script src="../script.js"></script>
-</body>
 
+        // Shuffle presentaties array
+        for (let i = presentaties.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [presentaties[i], presentaties[j]] = [presentaties[j], presentaties[i]];
+        }
+
+        const header = document.getElementById('main-header');
+        const iframe = document.getElementById('viewer-iframe');
+        const headerLink = document.getElementById('viewer-header-link');
+
+        function loadPage(index) {
+            const page = presentaties[index];
+            // Path was previously constructed as leerling/titel + pad
+            const path = `${page.leerling}/${page.titel}${page.pad}`;
+            const titleLabel = `${page.leerling} (${page.titel})`;
+            
+            iframe.src = path;
+            headerLink.href = path;
+            headerLink.textContent = titleLabel;
+
+            // Update active state in navigation
+            const links = header.getElementsByTagName('a');
+            for(let i=0; i<links.length; i++) {
+                if(i === index) links[i].classList.add('active');
+                else links[i].classList.remove('active');
+            }
+        }
+
+        // Add all links to the header
+        presentaties.forEach((page, index) => {
+            const a = document.createElement('a');
+            a.href = '#';
+            a.textContent = `${page.leerling} (${page.titel})`;
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                loadPage(index);
+            });
+            header.appendChild(a);
+        });
+
+        // Load the first page initially
+        if (presentaties.length > 0) {
+            loadPage(0);
+        }
+    </script>
+</body>
 </html>
