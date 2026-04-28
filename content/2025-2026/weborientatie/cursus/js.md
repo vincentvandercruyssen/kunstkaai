@@ -275,6 +275,56 @@ Commentaar wordt **niet uitgevoerd**. Gebruik het om je code leesbaar te houden 
 */
 ```
 
+## Arrays
+
+We hebben tot nu toe variabelen gebruikt met één waarde. Een **array** is een variabele die meerdere waarden kan bevatten.
+
+```js
+let kleuren = ["rood", "groen", "blauw"];
+let rood = kleuren[0]; // variabele rood heeft nu waarde "rood"
+```
+
+### Lege array aanmaken
+
+```js
+let waarden = [];
+// of
+let waarden = new Array();
+```
+
+### Waarden toevoegen op positie
+
+Positienummer of de index begint bij **0**:
+
+```js
+waarden[0] = 100;
+waarden[1] = 60;
+waarden[2] = "Mouse";
+```
+
+### Waarden opvragen
+
+```js
+console.log(waarden[1]);
+```
+
+### Lengte van een array
+
+```js
+console.log(waarden.length);
+```
+
+### Arrays bewerken met methodes
+
+Arrays zijn objecten en hebben ingebouwde functies (methodes):
+
+```js
+let omgekeerd = waarden.reverse();
+console.log(omgekeerd.join(", "));
+```
+
+Er bestaan veel nuttige methodes zoals `.push()`, `.pop()`, `.slice()`, `.splice()`, `.map()`, `.filter()`...
+
 ## Voorwaardelijke uitvoering met if
 
 Met `if` laat je code enkel uitvoeren als een **voorwaarde** waar of onwaar is. Het maakt beslissingen.
@@ -587,20 +637,6 @@ Gebruik arrow functions voor **korte taken of callbacks**, klassieke functies vo
 
 Een **lus** voert een blok code **meerdere keren** uit.
 
-### while
-
-Herhaalt **zolang** de voorwaarde waar is.
-
-```js
-let i = 0;
-while (i < 3) {
-  console.log(i);
-  i++; // voorkom oneindige lus
-}
-```
-
-Gebruik `while` als je **niet op voorhand weet** hoe vaak je wil herhalen.
-
 ### for
 
 Herhaalt een **vast aantal keren**.
@@ -616,6 +652,60 @@ for (let i = 0; i < 3; i++) {
 * `i++` → stap per ronde
 
 Gebruik `for` als je **exact weet** hoe vaak de lus moet lopen.
+
+### forEach
+
+Een handige manier om over **lijsten** (zoals arrays of geselecteerde HTML-elementen) te lopen. Je voert code uit voor **elk item** in die lijst.
+
+```js
+let fruit = ["appel", "banaan", "kers"];
+
+fruit.forEach((stuk) => {
+  console.log(stuk);
+});
+```
+
+* `fruit` → de lijst waarover we lopen
+* `stuk` → de tijdelijke naam voor het item waar we op dat moment zijn
+
+#### Voorbeeld: Knoppen op de pagina
+
+Een heel nuttige toepassing is `forEach` combineren met `querySelectorAll`. Hiermee kan je door alle geselecteerde elementen lopen om er bijvoorbeeld aan elk een klik-actie aan te koppelen.
+
+```html
+<button class="actieknop">Knop 1</button>
+<button class="actieknop">Knop 2</button>
+<button class="actieknop">Knop 3</button>
+
+<script>
+// selecteer alle knoppen met de class 'actieknop'
+let knoppen = document.querySelectorAll(".actieknop");
+
+// loop door die lijst van knoppen
+knoppen.forEach((knop) => {
+  
+  // voeg aan elke knop afzonderlijk een klik-event toe
+  knop.addEventListener("click", () => {
+    console.log("Er is op een knop geklikt!");
+  });
+
+});
+</script>
+```
+
+### while
+
+Herhaalt **zolang** de voorwaarde waar is.
+
+```js
+let i = 0;
+while (i < 3) {
+  console.log(i);
+  i++; // voorkom oneindige lus
+}
+```
+
+Gebruik `while` als je **niet op voorhand weet** hoe vaak je wil herhalen.
 
 ## Wiskundige bewerkingen
 
@@ -752,52 +842,6 @@ let juist = (2 + 3) * 4;     // 5 * 4 = 20
 ```
 
 Gebruik **haakjes** om je code leesbaar en voorspelbaar te houden.
-
-## Arrays
-
-We hebben tot nu toe variabelen gebruikt met één waarde.  
-Een **array** is een variabele die meerdere waarden kan bevatten.
-
-### Een lege array aanmaken
-
-```js
-let waarden = [];
-// of
-let waarden = new Array();
-```
-
-### Waarden toevoegen op posities (indexen)
-
-Indexen beginnen bij **0**:
-
-```js
-waarden[0] = 100;
-waarden[1] = 60;
-waarden[2] = "Mouse";
-```
-
-### Waarden opvragen
-
-```js
-console.log(waarden[1]); // 60
-```
-
-### Lengte van een array
-
-```js
-console.log(waarden.length); // 3
-```
-
-### Arrays bewerken met methodes
-
-Arrays zijn objecten en hebben ingebouwde functies (methodes):
-
-```js
-let omgekeerd = waarden.reverse();
-console.log(omgekeerd.join(", "));
-```
-
-Er bestaan veel nuttige methodes zoals `.push()`, `.pop()`, `.slice()`, `.splice()`, `.map()`, `.filter()`...
 
 ## Werken met Strings
 

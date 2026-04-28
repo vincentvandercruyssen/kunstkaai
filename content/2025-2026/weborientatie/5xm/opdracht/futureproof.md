@@ -1,14 +1,15 @@
 +++
-title = 'Opdracht: Duurzaamheid'
+title = 'Opdracht: Future Proof'
 date = 2026-04-27T00:00:00Z
 draft = false
+aliases = ["/weborientatie/5xm/opdracht/duurzaamheid"]
 +++
 
 ## Introductie
 
-Voor de **mini-eindproef** maak je voor het vak Weboriëntatie een **interactieve minigame/webapp** rond een thema binnen duurzaamheid. Binnen de eindproef bedenk je een **product** en voor dit product maak je in de andere praktijkvakken een logo, huisstijl, website, mockups enzovoort. Dit is een vakoverschrijdend project: de visuele stijl en het gekozen subthema lopen dus door in alle vakken.
+Voor de **mini-eindproef** maak je voor het vak Weboriëntatie een **interactieve minigame of webapp** (dit hoeft dus niet per se een spelletje te zijn) rond een thema binnen duurzaamheid. Binnen de eindproef bedenk je een **product** en voor dit product maak je in de andere praktijkvakken een logo, huisstijl, mockups enzovoort. **Het globale einddoel van dit vakoverschrijdend project is een overtuigende crowdfunding website** voor jouw product, met als doel bezoekers te overtuigen om je product te steunen ("backen"). De visuele stijl en het gekozen subthema lopen door in alle vakken.
 
-Het doel van je minigame of webapp? De gebruiker bewust maken van de gekozen problematiek, vernieuwing, jouw product op een boeiende, eye-cachende, interessante manier!
+Je minigame of webapp speelt in op de crowdfunding campagne en wordt liefst verwerkt in deze website. Het doel van de applicatie? De gebruiker bewust maken van de gekozen problematiek of vernieuwing rond jouw product op een boeiende, interessante manier! Mogelijk heeft je webapp een duidelijke "Call to Action" (CTA) om de gebruiker aan te sporen het product te backen op de crowdfundingpagina.
 
 We focussen in de eerste fase op het conceptuele en een schets of wireframe. Vervolgens werk je op basis daarvan een **Minimum Viable Product (MVP)** uit. Dit betekent dat je de kernfunctionaliteit werkend krijgt voordat je verdere details toevoegt. 
 
@@ -18,14 +19,13 @@ Als tweede onderdeel voor het vak Weboriëntatie word je ook beoordeeld op de UX
 
 Je kiest zelf een subthema uit onderstaande lijst, of stelt een ander verwant thema voor:
 
-- E-waste
-- Fast fashion
-- Voedselverspilling
-- Streaming en datacenters
-- Verpakkingsmateriaal
-- Vlees versus plantaardig
-- Smartphones
-- Eigen keuze *(eerst navragen)*
+- **Kleding:** Ontwerp een product als reactie op de fast fashion industrie.
+- **Voeding:** Focus op efficiënt landgebruik en alternatieve bronnen.
+- **Verpakkingen:** Bedenk een oplossing voor de plasticberg door gebruik te maken van alternatieve materialen.
+- **Wonen:** Creëer een product dat helpt bij het besparen van water of energie.
+- **Elektronica:** Ontwikkel een toestel dat e-waste beperkt of het energieverbruik minimaliseert.
+- **Mobiliteit:** Ontwerp een product dat de afhankelijkheid van fossiele brandstoffen vermindert.
+- **Eigen keuze:** *(eerst navragen)*
 
 ## Technisch, UX
 
@@ -34,6 +34,7 @@ De applicatie wordt gebouwd met **HTML, CSS en JavaScript**. Je gebruikt een eig
 - **States en acties:** De applicatie is opgebouwd rond duidelijke 'states' (bijvoorbeeld: een startscherm, een actieve fase, en een resultaat- of eindscherm) en 'acties' (gebruikersinput die de state verandert).
 - **UX (User Experience):** De gebruikerservaring is cruciaal. Acties moeten voorzien zijn van duidelijke visuele feedback via CSS-animaties, vloeiende overgangen of JavaScript-effecten.
 - **Kwaliteit:** De interacties in je webapp moeten van hetzelfde kwaliteitsniveau zijn als het UX- en interactieve gedeelte van de bijbehorende productwebsite die je maakt voor het vak Webontwikkeling. De webapp en de website vullen elkaar hierin aan.
+- **Integratie en responsiviteit:** Houd er rekening mee dat de game/app in een andere website geplaatst zal worden (bijvoorbeeld via een `iframe` of een specifieke container-div). Dit betekent dat het ontwerp responsief moet zijn en visueel niet mag vloeken met de rest van de onepager.
 - **Code:** Je code moet netjes en overzichtelijk opgebouwd zijn.
 
 ## Werkwijze
@@ -81,7 +82,7 @@ Naast standaard HTML, CSS en JavaScript, mag je voor je webapp ook gebruik maken
 Werk in je OneDrive vakmap voor Weboriëntatie, met deze structuur:
 
 ```text
-VoornaamA_MiniEindproef/
+VoornaamA_FutureProof/
 ├── index.html
 ├── style.css
 ├── app.js
@@ -102,7 +103,7 @@ Voeg aan je projectmap een kort tekstdocument toe (`readme.md`). Hierin beantwoo
 
 ## Indienen
 
-1. Plaats de map `VoornaamA_MiniEindproef` in je OneDrive map Weboriëntatie.
+1. Plaats de map `VoornaamA_FutureProof` in je OneDrive map Weboriëntatie.
 2. Deel de OneDrive link met leesrechten.
 3. Dien de link in via Google Classroom.
 
