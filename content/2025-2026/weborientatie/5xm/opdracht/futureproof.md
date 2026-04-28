@@ -2,7 +2,7 @@
 title = 'Opdracht: Future Proof'
 date = 2026-04-27T00:00:00Z
 draft = false
-aliases = ["/weborientatie/5xm/opdracht/duurzaamheid"]
+aliases = ["/2025-2026/weborientatie/5xm/opdracht/duurzaamheid/"]
 +++
 
 ## Introductie
