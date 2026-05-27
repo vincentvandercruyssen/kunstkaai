@@ -1,7 +1,7 @@
 const pages = [
     { student: "Lore", path: "https://verhulst.kunstkaai.online/LoreV_fase2_webapp/index.php" },
     { student: "Roan", path: "https://smout.kunstkaai.online/final%20webapp/index.html" },
-    { student: "Marlies", path: "http://morrens.kunstkaai.online/opdrachten/MarliesM_fase3_webapp/index.html" },
+    { student: "Marlies", path: "https://morrens.kunstkaai.online/opdrachten/MarliesM_fase3_webapp/index.html" },
     { student: "Violeta", path: "https://markova.kunstkaai.online/VioletaM_fase4_Webapp/" },
     { student: "Konstantin", path: "https://kharlamov.kunstkaai.online/test.php" },
     { student: "Chadi", path: "https://bahamou.kunstkaai.online/minigame.html" },
@@ -19,7 +19,7 @@ const pages = [
     { student: "Thibaut", path: "https://bruerst.kunstkaai.online/Webapp/" },
     { student: "Azra", path: "https://baturar.kunstkaai.online/AzraB_Fase4_Webapp/" },
     { student: "Sem", path: "" },
-    { student: "Leonardo", path: "http://arnous.kunstkaai.online/LeonardoA_eindwerk/" }
+    { student: "Leonardo", path: "https://arnous.kunstkaai.online/LeonardoA_eindwerk/" }
 ];
 
 const header = document.querySelector('header nav');
