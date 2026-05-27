@@ -1,0 +1,62 @@
+body,
+html {
+    margin: 0;
+    height: 100%;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #fafafa;
+    line-height: 1;
+}
+
+/* Top navigation header */
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 1rem;
+    z-index: 100;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 2ch;
+    font-weight: 500;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+header nav a:hover {
+    color: #05B;
+}
+
+header nav a.active {
+    color: #05B;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+/* Viewer container */
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 49px;
+    /* To prevent overlapping with fixed header */
+    box-sizing: border-box;
+}
+
+/* The iframe itself */
+iframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+    background: #ffffff;
+}
