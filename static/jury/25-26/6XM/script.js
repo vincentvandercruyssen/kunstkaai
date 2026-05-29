@@ -15,11 +15,11 @@ const pages = [
     { student: "Nyssa", path: "https://geelen.kunstkaai.online/webapp/index.php" },
     { student: "Axel", path: "https://ahermans.kunstkaai.online/Webapp/" },
     { student: "Simon", path: "https://colen.kunstkaai.online/Opdrachten/WebApp/" },
-    { student: "Arjin", path: "" },
+    { student: "Arjin", path: "https://cap.kunstkaai.online/" },
     { student: "Thibaut", path: "https://bruerst.kunstkaai.online/Webapp/" },
     { student: "Azra", path: "https://baturar.kunstkaai.online/AzraB_Fase4_Webapp/" },
-    { student: "Sem", path: "" },
-    { student: "Leonardo", path: "https://arnous.kunstkaai.online/LeonardoA_eindwerk/" }
+    { student: "Sem", path: "https://verbist.kunstkaai.online/weborientatie/index.html" },
+    { student: "Leonardo", path: "https://arnous.kunstkaai.online/Controlpanel/" }
 ];
 
 const header = document.querySelector('header nav');
