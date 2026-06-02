@@ -1,0 +1,521 @@
+:root {
+  --bg-main: #070708;
+  --bg-secondary: #0f0b0d;
+  --panel: rgba(20, 16, 18, 0.82);
+  --panel-strong: rgba(14, 10, 12, 0.92);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-soft: rgba(255, 255, 255, 0.04);
+
+  --text-main: #f3ece6;
+  --text-soft: #cbbfb6;
+  --text-muted: #9a8f88;
+
+  --accent: #9f1d1d;
+  --accent-soft: #6b1111;
+  --accent-glow: rgba(159, 29, 29, 0.28);
+
+  --gold-soft: #b08b57;
+  --shadow-dark: 0 25px 80px rgba(0, 0, 0, 0.55);
+
+  --radius-xl: 28px;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+
+  --max-width: 1120px;
+  --transition: 0.28s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at top left, rgba(159, 29, 29, 0.12), transparent 30%),
+    radial-gradient(circle at top right, rgba(176, 139, 87, 0.07), transparent 24%),
+    radial-gradient(circle at bottom center, rgba(90, 10, 18, 0.12), transparent 28%),
+    linear-gradient(180deg, #050505 0%, #0a0809 35%, #120d10 100%);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ---------------------------------------------------------
+   ДЕКОРАТИВНЫЕ ФОНОВЫЕ ПЯТНА / ТУМАН
+--------------------------------------------------------- */
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: auto;
+  width: 32rem;
+  height: 32rem;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+body::before {
+  top: -10rem;
+  left: -8rem;
+  background: rgba(159, 29, 29, 0.35);
+}
+
+body::after {
+  right: -10rem;
+  bottom: -12rem;
+  background: rgba(90, 10, 18, 0.38);
+}
+
+/* Если в HTML уже есть background-blur,
+   то мы их тоже красиво оформим */
+.background-blur {
+  position: fixed;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.14;
+}
+
+.blur-one {
+  top: -6rem;
+  left: -6rem;
+  background: #7a1414;
+}
+
+.blur-two {
+  right: -7rem;
+  bottom: -8rem;
+  background: #341016;
+}
+
+/* ---------------------------------------------------------
+   ОСНОВНАЯ ОБЛАСТЬ
+--------------------------------------------------------- */
+
+.site-header,
+.layout {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 5rem 1.25rem 2.2rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  font-size: 0.76rem;
+  color: var(--gold-soft);
+  opacity: 0.95;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  line-height: 0.92;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-main);
+  text-shadow:
+    0 0 1px rgba(255,255,255,0.08),
+    0 0 18px rgba(159, 29, 29, 0.16);
+}
+
+.intro {
+  max-width: 45rem;
+  margin-top: 1.15rem;
+  color: var(--text-soft);
+  font-size: 1.02rem;
+  line-height: 1.85;
+}
+
+/* ---------------------------------------------------------
+   GRID-РАЗМЕТКА
+--------------------------------------------------------- */
+
+.layout {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem 4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+/* ---------------------------------------------------------
+   ПАНЕЛИ
+--------------------------------------------------------- */
+
+.panel {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)),
+    var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-dark);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+}
+
+/* тонкая декоративная полоска сверху */
+.panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(176, 139, 87, 0.32),
+    transparent
+  );
+  pointer-events: none;
+}
+
+.controls-panel,
+.status-panel,
+.results-panel {
+  padding: 1.3rem;
+}
+
+/* ---------------------------------------------------------
+   КОНТРОЛЫ
+--------------------------------------------------------- */
+
+.label {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-size: 0.94rem;
+  color: var(--text-soft);
+  letter-spacing: 0.02em;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 0.8rem;
+}
+
+input,
+button {
+  font: inherit;
+  border: 0;
+  border-radius: var(--radius-md);
+}
+
+input {
+  width: 100%;
+  padding: 1rem 1.05rem;
+  color: var(--text-main);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015)),
+    rgba(8, 8, 9, 0.7);
+  outline: 1px solid rgba(255, 255, 255, 0.06);
+  transition:
+    outline var(--transition),
+    box-shadow var(--transition),
+    transform var(--transition),
+    background var(--transition);
+}
+
+input::placeholder {
+  color: #8f7f78;
+}
+
+input:focus {
+  outline: 1px solid rgba(176, 139, 87, 0.35);
+  box-shadow: 0 0 0 4px rgba(176, 139, 87, 0.06);
+  background: rgba(12, 10, 11, 0.9);
+}
+
+/* ---------------------------------------------------------
+   КНОПКИ
+--------------------------------------------------------- */
+
+button {
+  position: relative;
+  padding: 1rem 1.15rem;
+  color: var(--text-main);
+  cursor: pointer;
+  background:
+    linear-gradient(180deg, rgba(159, 29, 29, 0.22), rgba(60, 10, 10, 0.9));
+  outline: 1px solid rgba(255, 255, 255, 0.07);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    background var(--transition),
+    outline var(--transition);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background:
+    linear-gradient(180deg, rgba(179, 34, 34, 0.28), rgba(82, 12, 12, 0.96));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.08),
+    0 14px 32px rgba(0,0,0,0.36),
+    0 0 24px rgba(159, 29, 29, 0.15);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:focus-visible {
+  outline: 1px solid rgba(176, 139, 87, 0.42);
+}
+
+.hint {
+  margin: 0.85rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* ---------------------------------------------------------
+   СТАТУС-БЛОК
+--------------------------------------------------------- */
+
+.status-panel {
+  background:
+    linear-gradient(180deg, rgba(159, 29, 29, 0.08), rgba(255,255,255,0.01)),
+    var(--panel-strong);
+}
+
+.status-panel p {
+  margin: 0;
+  min-height: 1.5rem;
+  color: #d6bda8;
+  letter-spacing: 0.02em;
+}
+
+/* ---------------------------------------------------------
+   РЕЗУЛЬТАТЫ
+--------------------------------------------------------- */
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 1rem;
+}
+
+/* ---------------------------------------------------------
+   КАРТОЧКА ЦИТАТЫ
+--------------------------------------------------------- */
+
+.quote-card {
+  position: relative;
+  min-height: 245px;
+  padding: 1.15rem 1.1rem 1.2rem;
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.012)),
+    linear-gradient(135deg, rgba(159, 29, 29, 0.04), transparent 55%),
+    rgba(10, 8, 9, 0.82);
+  outline: 1px solid rgba(255,255,255,0.06);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.04),
+    0 18px 36px rgba(0, 0, 0, 0.32);
+  overflow: hidden;
+  transition:
+    transform var(--transition),
+    outline var(--transition),
+    box-shadow var(--transition);
+}
+
+/* декоративное красное свечение внутри карточки */
+.quote-card::before {
+  content: "";
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  right: -3rem;
+  bottom: -4rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(159,29,29,0.24), transparent 65%);
+  pointer-events: none;
+}
+
+/* декоративная тонкая "золотая" линия */
+.quote-card::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    rgba(176, 139, 87, 0.05),
+    rgba(176, 139, 87, 0.45),
+    rgba(176, 139, 87, 0.08)
+  );
+}
+
+.quote-card:hover {
+  transform: translateY(-4px);
+  outline: 1px solid rgba(176, 139, 87, 0.18);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.05),
+    0 24px 42px rgba(0, 0, 0, 0.42),
+    0 0 28px rgba(159, 29, 29, 0.10);
+}
+
+.quote-mark {
+  margin: 0 0 0.4rem;
+  font-size: 3.3rem;
+  line-height: 1;
+  color: rgba(176, 139, 87, 0.34);
+}
+
+.quote-text {
+  position: relative;
+  margin: 0;
+  color: var(--text-main);
+  font-size: 1rem;
+  line-height: 1.86;
+  font-style: italic;
+  z-index: 1;
+}
+
+.quote-author {
+  margin-top: 1rem;
+  color: #d3a76d;
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------
+   ПУСТОЕ СОСТОЯНИЕ
+--------------------------------------------------------- */
+
+.empty-state {
+  padding: 2.2rem 1rem;
+  text-align: center;
+  color: var(--text-soft);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 18px;
+  outline: 1px dashed rgba(176, 139, 87, 0.16);
+}
+
+.empty-state p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------
+   НИЖНЯЯ КНОПКА
+--------------------------------------------------------- */
+
+.bottom-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.35rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ---------------------------------------------------------
+   ДОПОЛНИТЕЛЬНЫЕ МЕЛКИЕ ДЕТАЛИ
+--------------------------------------------------------- */
+
+::selection {
+  background: rgba(159, 29, 29, 0.34);
+  color: #fff5ef;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a090a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(159, 29, 29, 0.35);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(159, 29, 29, 0.55);
+}
+
+/* ---------------------------------------------------------
+   АДАПТИВНОСТЬ
+--------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .site-header {
+    padding-top: 4.2rem;
+  }
+
+  .site-header h1 {
+    line-height: 0.98;
+  }
+
+  .intro {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .controls-panel,
+  .status-panel,
+  .results-panel {
+    padding: 1rem;
+  }
+
+  .quote-card {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    padding: 3.2rem 1rem 1.5rem;
+  }
+
+  .layout {
+    padding: 0 1rem 3rem;
+  }
+
+  .site-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .intro {
+    font-size: 0.96rem;
+  }
+
+  .quote-text {
+    font-size: 0.97rem;
+  }
+}

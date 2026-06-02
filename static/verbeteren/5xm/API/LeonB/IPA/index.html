@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boekenzoeker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>📚 Boekenzoeker</h1>
+  <p>Zoek boeken via de Open Library API</p>
+</header>
+
+<main class="container">
+
+  <div class="zoekbalk">
+    <input 
+      type="text" 
+      id="zoekveld" 
+      placeholder="Typ een boektitel..." 
+    />
+    <button id="zoekknop">Zoeken</button>
+  </div>
+
+  <div id="status" class="status"></div>
+
+  <div id="resultaat" class="grid"></div>
+
+  <div class="center">
+    <button id="laadMeerKnop" class="hidden">Laad meer</button>
+  </div>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

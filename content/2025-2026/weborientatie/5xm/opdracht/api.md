@@ -116,13 +116,12 @@ Zorg ervoor dat je de volgende technische concepten begrijpt en toepast in je Ja
 
 - Plaats de map **VoornaamA_API** in je OneDrive-map voor Weboriëntatie.
 - De map bevat al je bestanden. Geen losse stukjes code.
-- Voeg in dezelfde map een **screenshot** toe waarop duidelijk het werkende resultaat te zien is.
 - Deel de **OneDrive-link** via **Google Classroom**.
 
 ## Puntenverdeling
 
-- **Structuur en bestanden:** Je levert een complete map in en gebruikt de juiste bestandsnamen. Screenshot en docje toegevoegd.
-- **Werking API:** De data wordt correct opgehaald m.b.v. `fetch` en `async/await`. Extra parameters/zoektermen worden juist meegegeven.
-- **DOM manipulatie en interactie:** Zoeken/klikken werkt, er is een laad- of foutstatus, resultaten verschijnen correct en netjes in de interface zonder dat de pagina refresht.
-- **UI en weergave:** De applicatie is overzichtelijk, leesbaar en netjes gestyled (CSS).
-- **Codekwaliteit en extra optie:** De code is opgedeeld in functies, zoektermen passeren via `encodeURIComponent` en de gevraagde extra specifieke interactie is aanwezig.
+- **Structuur en bestanden (02)** Je levert een complete map in en gebruikt de juiste bestandsnamen.
+- **Werking API (02)** De data wordt correct opgehaald m.b.v. `fetch` en `async/await`. Extra parameters/zoektermen worden juist meegegeven.
+- **DOM manipulatie en interactie (02)** Zoeken/klikken werkt, er is een laad- of foutstatus, resultaten verschijnen correct en netjes in de interface zonder dat de pagina refresht.
+- **UI en weergave (04)** De applicatie is overzichtelijk, leesbaar en netjes gestyled (CSS).
+- **Codekwaliteit en extra optie (04)** De code is opgedeeld in functies, zoektermen passeren via `encodeURIComponent` en de gevraagde extra specifieke interactie is aanwezig.

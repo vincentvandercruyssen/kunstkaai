@@ -1,0 +1,44 @@
+:root {
+  --bg: #060010;
+  --panel: rgba(255, 255, 255, 0.05);
+  --text: #e0f7ff;
+  --accent: #00ffe5;
+  --accent2: #ff00c8;
+}
+
+body {
+  margin: 0;
+  font-family: monospace;
+  background: radial-gradient(circle, #0a0020, #000);
+  color: var(--text);
+}
+
+.site-header h1 {
+  font-size: 3.5rem;
+  text-shadow: 0 0 20px var(--accent);
+}
+
+.panel {
+  border: 1px solid rgba(0,255,255,0.2);
+  backdrop-filter: blur(10px);
+}
+
+button {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+button:hover {
+  background: var(--accent);
+  color: black;
+}
+
+.quote-card {
+  border: 1px solid rgba(255,0,200,0.2);
+  box-shadow: 0 0 20px rgba(255,0,200,0.2);
+}
+
+.quote-author {
+  color: var(--accent2);
+}

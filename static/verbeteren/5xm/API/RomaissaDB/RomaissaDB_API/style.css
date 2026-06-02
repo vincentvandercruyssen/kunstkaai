@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  background: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0055aa;
+}
+
+#tekening {
+  display: block;
+  margin: 20px auto;
+  width: 250px;
+}
+
+#resultaat {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card {
+  background: #f7f9fc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid #003366;
+}

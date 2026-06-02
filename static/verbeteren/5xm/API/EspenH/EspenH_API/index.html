@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Minecraft Video Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Minecraft Video Zoekmachine</h1>
+        <form id="searchForm">
+            <input type="text" id="query" placeholder="Zoekterm (bijv. survival, building)" required>
+            <select id="videoType">
+                <option value="">Alle soorten</option>
+                <option value="100 days">100 Days</option>
+                <option value="civilization">Civilization</option>
+                <option value="survival">Survival</option>
+                <option value="creative">Creative</option>
+                <option value="redstone">Redstone</option>
+                <option value="modded">Modded</option>
+            </select>
+            <input type="number" id="maxSubs" placeholder="Max abonnees (ongeveer, via keywords)" min="0" max="100000">
+            <button type="submit">Zoeken</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

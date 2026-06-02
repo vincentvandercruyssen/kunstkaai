@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract Quotes</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <div class="background-blur blur-one"></div>
+  <div class="background-blur blur-two"></div>
+
+  <header class="site-header">
+    <p class="eyebrow">API project</p>
+    <h1>Abstract Quotes</h1>
+
+  </header>
+
+  <main class="layout">
+    <section class="panel controls-panel" aria-label="Search controls">
+      <label class="label" for="searchInput">Search by quote or author</label>
+
+      <div class="controls">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Type a word, mood or author..."
+          autocomplete="off"
+        />
+
+        <button id="searchBtn" type="button">Search</button>
+        <button id="randomBtn" type="button">Random</button>
+      </div>
+
+      <p class="hint">
+        Examples: life, success, Einstein, mind
+      </p>
+    </section>
+
+    <section class="panel status-panel" aria-live="polite">
+      <p id="statusMessage">Start by searching, or press Random.</p>
+    </section>
+
+    <section class="panel results-panel" aria-label="Quote results">
+      <div id="results" class="results-grid"></div>
+
+      <div class="bottom-actions">
+        <button id="loadMoreBtn" type="button" class="hidden">Load more</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

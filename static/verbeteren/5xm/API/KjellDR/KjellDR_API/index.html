@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Wikipedia Explorer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>Wikipedia Explorer</h1>
+<p>Zoek informatie uit Wikipedia via een API</p>
+
+<div class="top-controls">
+
+<button id="darkmode">🌙 Dark mode</button>
+
+<select id="sorteren">
+<option value="none">Sorteer resultaten</option>
+<option value="az">Titel A-Z</option>
+<option value="za">Titel Z-A</option>
+</select>
+
+</div>
+
+</header>
+
+<main>
+
+<div class="zoek-container">
+
+<input type="text" id="zoekveld" placeholder="Zoek een onderwerp...">
+
+<button id="zoekknop">Zoeken</button>
+
+<button id="randomknop">🎲 Random artikel</button>
+
+</div>
+
+<div id="resultaat"></div>
+
+<button id="laadmeer">Laad meer</button>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>

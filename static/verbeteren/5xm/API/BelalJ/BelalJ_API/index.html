@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Zoek naar boeken via Open Library — een gratis database met meer dan 20 miljoen titels." />
+    <title>BookFinder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a class="logo" href="#">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+                BookFinder
+            </a>
+            <nav>
+                <button id="favTab" class="tab-btn active">Zoeken</button>
+                <button id="savedTab" class="tab-btn">
+                    Bewaard
+                    <span id="savedCount" class="badge">0</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="zoekPanel">
+
+        <section class="search-section">
+            <div class="container">
+
+                <div class="search-wrapper">
+                    <div class="search-box">
+                        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
+                        </svg>
+                        <input type="text" id="zoekveld" placeholder="Zoek op titel, auteur of onderwerp…"
+                            autocomplete="off" />
+                        <button id="clearBtn" class="clear-btn" hidden>✕</button>
+                    </div>
+                    <button id="zoekknop">Zoeken</button>
+                    <button id="willekeurigKnop" class="btn-ghost">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 3 21 3 21 8" />
+                            <line x1="4" y1="20" x2="21" y2="3" />
+                            <polyline points="21 16 21 21 16 21" />
+                            <line x1="15" y1="15" x2="21" y2="21" />
+                        </svg>
+                        Verrassing
+                    </button>
+                </div>
+
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="aantalResultaten">Aantal</label>
+                        <select id="aantalResultaten">
+                            <option value="6">6</option>
+                            <option value="12" selected>12</option>
+                            <option value="24">24</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="sorteerOptie">Sorteren</label>
+                        <select id="sorteerOptie">
+                            <option value="relevantie">Relevantie</option>
+                            <option value="jaar">Nieuwste eerst</option>
+                            <option value="titel">Titel A–Z</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="taalFilter">Taal</label>
+                        <select id="taalFilter">
+                            <option value="">Alle talen</option>
+                            <option value="eng">Engels</option>
+                            <option value="dut">Nederlands</option>
+                            <option value="fre">Frans</option>
+                            <option value="ger">Duits</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="geschiedenisRij" class="search-history" hidden></div>
+
+            </div>
+        </section>
+
+        <section class="result-section" id="resultaten" aria-live="polite">
+            <div class="container">
+                <div id="resultaatInfo" class="result-info" hidden></div>
+                <div id="resultaat"></div>
+                <div id="paginaControls" class="pagina-controls" hidden>
+                    <button id="vorigeBtn" class="btn-ghost" disabled>← Vorige</button>
+                    <span id="paginaIndicator"></span>
+                    <button id="volgendeBtn" class="btn-ghost">Volgende →</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="savedPanel" hidden>
+        <div class="container">
+            <div class="saved-header">
+                <h2>Jouw boeken</h2>
+                <button id="clearSavedBtn" class="btn-danger" hidden>Alles weggooien</button>
+            </div>
+            <div id="savedResultaat"></div>
+        </div>
+    </section>
+
+    <!-- Detail modal -->
+    <div id="modal" class="modal" hidden>
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-box">
+            <button class="modal-close" id="modalSluit">✕</button>
+            <div id="modalInhoud"></div>
+        </div>
+    </div>
+
+    <!-- Kleine notificatie onderaan -->
+    <div id="toast" class="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

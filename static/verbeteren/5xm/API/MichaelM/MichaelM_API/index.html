@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landen Zoeker</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Landen Zoeker</h1>
+        <div class="nav-actions">
+          <button id="themeToggle" aria-label="Wissel thema">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p>Zoek informatie over landen via de REST Countries API. Typ een landnaam (bijv. België) of een deel daarvan en druk op "Zoeken" of Enter.</p>
+      </section>
+
+      <section class="controls" aria-label="Zoek en opties">
+  <input type="text" id="zoekveld" placeholder="Bijv. België, Frankrijk, Nederland" aria-label="Zoekveld voor landen">
+  <button id="zoekknop">Zoeken</button>
+  <button id="randomknop" aria-label="Verras me">Verras me</button>
+
+        <label for="limit">Max resultaten:</label>
+        <select id="limit">
+          <option value="all">Alle</option>
+          <option value="1">1</option>
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+        </select>
+      </section>
+
+      <section id="resultaat" class="resultaat" aria-live="polite">
+      </section>
+    </main>
+
+    <footer>
+      <p>Gebouwd met de <a href="https://restcountries.com/" target="_blank" rel="noopener">REST Countries API</a>. De zoektermen worden veilig gemaakt met <code>encodeURIComponent</code> en opgehaald met <code>fetch</code> (async/await).</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
