@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="nl" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPEN DEUREN / WEB EXPERIMENT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --c-bg: #050505;
+  --c-fg: #f0ede6;
+  --c-muted: #888;
+  --c-accent: #e8f542;
+  --c-accent2: #ff3c2e;
+  --c-accent3: #3cfff4;
+  --font-body: 'Space Grotesk', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--c-bg);
+  color: var(--c-fg);
+  font-family: var(--font-body);
+  min-height: 100dvh;
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+
+/* ─── CANVAS BG ─── */
+#bg-canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ─── CURSOR ─── */
+#cursor {
+  position: fixed;
+  width: 12px; height: 12px;
+  background: var(--c-accent);
+  border-radius: 0;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: exclusion;
+  transition: transform 0.1s;
+}
+#cursor-trail {
+  position: fixed;
+  width: 40px; height: 40px;
+  border: 1px solid var(--c-accent3);
+  border-radius: 0;
+  pointer-events: none;
+  z-index: 9998;
+  mix-blend-mode: exclusion;
+  transition: transform 0.3s ease, width 0.3s, height 0.3s;
+}
+
+/* ─── MAIN LAYOUT ─── */
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── HERO ─── */
+.hero {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: clamp(0.65rem, 1.5vw, 0.85rem);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: clamp(3.5rem, 12vw, 11rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  position: relative;
+  user-select: none;
+}
+
+.hero-title span {
+  display: block;
+}
+
+.hero-title .line-1 { color: var(--c-fg); }
+.hero-title .line-2 {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--c-accent);
+  text-stroke: 1px var(--c-accent);
+}
+.hero-title .line-3 { color: var(--c-accent2); }
+
+.hero-sub {
+  font-family: var(--font-mono);
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+  color: var(--c-muted);
+  margin-top: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--c-muted);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  animation: blink 2s step-end infinite;
+}
+
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* ─── GLITCH EFFECT ─── */
+.glitch {
+  position: relative;
+  display: inline-block;
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+}
+.glitch::before {
+  color: var(--c-accent3);
+  clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
+  animation: glitch-top 4s infinite;
+}
+.glitch::after {
+  color: var(--c-accent2);
+  clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+  animation: glitch-bot 4s infinite;
+}
+
+@keyframes glitch-top {
+  0%,90%,100%{ transform: translate(0); }
+  91%{ transform: translate(-3px, -1px); }
+  93%{ transform: translate(3px, 1px); }
+  95%{ transform: translate(-2px); }
+  97%{ transform: translate(2px); }
+}
+@keyframes glitch-bot {
+  0%,88%,100%{ transform: translate(0); }
+  89%{ transform: translate(4px, 1px); }
+  91%{ transform: translate(-4px, -1px); }
+  93%{ transform: translate(3px); }
+  95%{ transform: translate(-3px); }
+}
+
+/* ─── SECTION: GRID OF WORDS ─── */
+.word-grid {
+  padding: 8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker-row {
+  display: flex;
+  gap: 4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0.5rem 0;
+  border-top: 1px solid #1a1a1a;
+}
+
+.ticker-row:last-child {
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.ticker-inner {
+  display: flex;
+  gap: 4rem;
+  animation: ticker-l 28s linear infinite;
+}
+
+.ticker-row:nth-child(even) .ticker-inner {
+  animation: ticker-r 22s linear infinite;
+}
+
+.ticker-word {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #1c1c1c;
+  text-transform: uppercase;
+  transition: color 0.15s;
+  cursor: default;
+}
+
+.ticker-word:hover { color: var(--c-accent); }
+.ticker-word.accent { color: var(--c-fg); }
+.ticker-word.accent2 { color: var(--c-accent2); opacity: 0.5; }
+
+@keyframes ticker-l {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes ticker-r {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+/* ─── SECTION: INTERACTIVE GRID ─── */
+.interact-section {
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #1a1a1a;
+}
+
+#dot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(28px, 1fr));
+  gap: 4px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dot {
+  aspect-ratio: 1;
+  background: #1a1a1a;
+  border-radius: 0;
+  transition: background 0.4s, transform 0.4s;
+  cursor: pointer;
+}
+.dot:hover {
+  background: var(--c-accent);
+  transform: scale(1.5);
+}
+.dot.lit-1 { background: var(--c-accent); }
+.dot.lit-2 { background: var(--c-accent3); }
+.dot.lit-3 { background: var(--c-accent2); }
+
+/* ─── SECTION: TYPO EXPERIMENT ─── */
+.typo-section {
+  padding: 10rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.typo-section .section-label { margin-bottom: 6rem; }
+
+.big-statement {
+  font-size: clamp(2.5rem, 8vw, 8rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.big-statement .word-wrap {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.big-statement .word {
+  display: inline-block;
+  transform: translateY(110%);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.8s;
+}
+
+.big-statement.visible .word {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.big-statement .word:nth-child(1) { transition-delay: 0.05s; }
+.big-statement .word:nth-child(2) { transition-delay: 0.1s; }
+.big-statement .word:nth-child(3) { transition-delay: 0.15s; }
+.big-statement .word:nth-child(4) { transition-delay: 0.2s; }
+.big-statement .word:nth-child(5) { transition-delay: 0.25s; }
+.big-statement .word:nth-child(6) { transition-delay: 0.3s; }
+.big-statement .word:nth-child(7) { transition-delay: 0.35s; }
+.big-statement .word:nth-child(8) { transition-delay: 0.4s; }
+
+.big-statement .hi { color: var(--c-accent); }
+.big-statement .ho { color: var(--c-accent2); }
+.big-statement .ghost {
+  color: transparent;
+  -webkit-text-stroke: 1px #2a2a2a;
+  text-stroke: 1px #2a2a2a;
+}
+
+/* ─── SECTION: NUMBER COUNTER ─── */
+.stats-section {
+  padding: 6rem 2rem;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 0;
+}
+
+.stat-item {
+  padding: 3rem 2rem;
+  border-right: 1px solid #1a1a1a;
+  position: relative;
+  overflow: hidden;
+}
+.stat-item:last-child { border-right: none; }
+
+.stat-number {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  color: var(--c-accent);
+  font-family: var(--font-mono);
+}
+
+.stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--c-muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-top: 0.75rem;
+}
+
+/* ─── SECTION: CHAOS TEXT ─── */
+.chaos-section {
+  padding: 12rem 2rem;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#chaos-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 60vh;
+}
+
+.chaos-word {
+  position: absolute;
+  font-size: clamp(1rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: var(--c-fg);
+  letter-spacing: -0.03em;
+  cursor: default;
+  user-select: none;
+  transition: color 0.2s;
+}
+.chaos-word:hover { color: var(--c-accent); }
+
+/* ─── SECTION: FINAL ─── */
+.final-section {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.final-title {
+  font-size: clamp(2.5rem, 9vw, 9rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.final-title .inv {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--c-fg);
+  text-stroke: 2px var(--c-fg);
+}
+
+.final-sub {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--c-muted);
+  margin-top: 3rem;
+  letter-spacing: 0.1em;
+}
+
+/* ─── NOISE OVERLAY ─── */
+.noise {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px;
+}
+
+@media (max-width: 600px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stat-item { border-bottom: 1px solid #1a1a1a; }
+  .stat-item:nth-child(2n) { border-right: none; }
+  .chaos-section { padding: 6rem 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-inner { animation: none; }
+  .glitch::before, .glitch::after { animation: none; }
+  .scroll-cue { animation: none; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="noise"></div>
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">— Kunstkaai · Open Deuren · 2025–2026 —</p>
+      <h1 class="hero-title">
+        <span class="line-1">OPEN</span>
+        <span class="line-2 glitch" data-text="DEUREN">DEUREN</span>
+        <span class="line-3">WEB</span>
+      </h1>
+      <p class="hero-sub">[ bewegen is leven / scroll om verder te gaan ]</p>
+    </div>
+    <p class="scroll-cue">▼ scroll</p>
+  </section>
+
+  <!-- TICKER -->
+  <section class="word-grid" aria-label="Bewegende woorden">
+    <div class="ticker-row">
+      <div class="ticker-inner" aria-hidden="true">
+        <span class="ticker-word accent">OPEN</span>
+        <span class="ticker-word">DEUR</span>
+        <span class="ticker-word accent2">KUNST</span>
+        <span class="ticker-word">KAAI</span>
+        <span class="ticker-word">WEB</span>
+        <span class="ticker-word accent">DESIGN</span>
+        <span class="ticker-word">EXPERIMENTEEL</span>
+        <span class="ticker-word">OPEN</span>
+        <span class="ticker-word">DEUR</span>
+        <span class="ticker-word accent2">KUNST</span>
+        <span class="ticker-word">KAAI</span>
+        <span class="ticker-word">WEB</span>
+        <span class="ticker-word accent">DESIGN</span>
+        <span class="ticker-word">EXPERIMENTEEL</span>
+      </div>
+    </div>
+    <div class="ticker-row">
+      <div class="ticker-inner" aria-hidden="true">
+        <span class="ticker-word">FORM</span>
+        <span class="ticker-word accent">FOLLOWS</span>
+        <span class="ticker-word">FRICTION</span>
+        <span class="ticker-word">↗</span>
+        <span class="ticker-word">TYPOGRAFIE</span>
+        <span class="ticker-word accent2">CONTRAST</span>
+        <span class="ticker-word">LEEGTE</span>
+        <span class="ticker-word">FORM</span>
+        <span class="ticker-word accent">FOLLOWS</span>
+        <span class="ticker-word">FRICTION</span>
+        <span class="ticker-word">↗</span>
+        <span class="ticker-word">TYPOGRAFIE</span>
+        <span class="ticker-word accent2">CONTRAST</span>
+        <span class="ticker-word">LEEGTE</span>
+      </div>
+    </div>
+    <div class="ticker-row">
+      <div class="ticker-inner" aria-hidden="true">
+        <span class="ticker-word accent">PIXELS</span>
+        <span class="ticker-word">MATERIE</span>
+        <span class="ticker-word">CODE</span>
+        <span class="ticker-word accent2">↙</span>
+        <span class="ticker-word">TAAL</span>
+        <span class="ticker-word">AARD</span>
+        <span class="ticker-word accent">SCHERM</span>
+        <span class="ticker-word">RUIMTE</span>
+        <span class="ticker-word">PIXELS</span>
+        <span class="ticker-word">MATERIE</span>
+        <span class="ticker-word">CODE</span>
+        <span class="ticker-word accent2">↙</span>
+        <span class="ticker-word">TAAL</span>
+        <span class="ticker-word">AARD</span>
+        <span class="ticker-word accent">SCHERM</span>
+        <span class="ticker-word">RUIMTE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE DOT GRID -->
+  <section class="interact-section">
+    <p class="section-label">01 — interactief / hover over de punten</p>
+    <div id="dot-grid" aria-label="Interactief puntenraster"></div>
+  </section>
+
+  <!-- TYPO STATEMENT -->
+  <section class="typo-section">
+    <p class="section-label">02 — typografie als beeld</p>
+    <p class="big-statement" id="big-statement" aria-label="Elk scherm is een canvas">
+      <span class="word-wrap"><span class="word">ELK&nbsp;</span></span>
+      <span class="word-wrap"><span class="word hi">SCHERM&nbsp;</span></span>
+      <span class="word-wrap"><span class="word">IS&nbsp;</span></span>
+      <span class="word-wrap"><span class="word ghost">EEN&nbsp;</span></span>
+      <span class="word-wrap"><span class="word ho">CANVAS&nbsp;</span></span>
+      <span class="word-wrap"><span class="word ghost">VOOR&nbsp;</span></span>
+      <span class="word-wrap"><span class="word">HET&nbsp;</span></span>
+      <span class="word-wrap"><span class="word hi">ONBEKENDE</span></span>
+    </p>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number" data-count="∞">∞</div>
+        <div class="stat-label">mogelijkheden</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" id="cnt-1" data-target="2026">0</div>
+        <div class="stat-label">huidig jaar</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" id="cnt-2" data-target="5">0</div>
+        <div class="stat-label">maanden studie</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" id="cnt-3" data-target="1">0</div>
+        <div class="stat-label">experiment</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAOS TEXT -->
+  <section class="chaos-section">
+    <div class="section-label" style="position:absolute;top:4rem;left:2rem">03 — chaos / woorden in beweging</div>
+    <div id="chaos-container" aria-label="Bewegende woorden in de ruimte"></div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final-section">
+    <div>
+      <h2 class="final-title">
+        <span class="inv">WELKOM</span><br>
+        BIJ<br>
+        <span class="inv">KUNST</span>KAAI
+      </h2>
+      <p class="final-sub">— weborientatie · 5XM · 2025–2026 —</p>
+    </div>
+  </section>
+
+</main>
+
+<script>
+// ─── CURSOR ───
+const cursor = document.getElementById('cursor');
+const trail = document.getElementById('cursor-trail');
+let mx = 0, my = 0, tx = 0, ty = 0;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cursor.style.transform = `translate(${mx - 6}px, ${my - 6}px)`;
+});
+
+function animTrail() {
+  tx += (mx - tx) * 0.12;
+  ty += (my - ty) * 0.12;
+  trail.style.transform = `translate(${tx - 20}px, ${ty - 20}px)`;
+  requestAnimationFrame(animTrail);
+}
+animTrail();
+
+document.querySelectorAll('a, button, .dot, .ticker-word, .chaos-word').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    trail.style.width = '60px'; trail.style.height = '60px';
+    trail.style.borderColor = 'var(--c-accent)';
+  });
+  el.addEventListener('mouseleave', () => {
+    trail.style.width = '40px'; trail.style.height = '40px';
+    trail.style.borderColor = 'var(--c-accent3)';
+  });
+});
+
+// ─── BACKGROUND CANVAS ───
+const canvas = document.getElementById('bg-canvas');
+const ctx = canvas.getContext('2d');
+let W, H;
+const lines = [];
+
+function resize() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+class Line {
+  constructor() { this.reset(); }
+  reset() {
+    this.x = Math.random() * W;
+    this.y = Math.random() * H;
+    this.vx = (Math.random() - 0.5) * 0.4;
+    this.vy = (Math.random() - 0.5) * 0.4;
+    this.len = Math.random() * 80 + 20;
+    this.alpha = Math.random() * 0.15 + 0.02;
+    this.color = ['#e8f542','#ff3c2e','#3cfff4'][Math.floor(Math.random()*3)];
+  }
+  update() {
+    this.x += this.vx; this.y += this.vy;
+    if (this.x < -200 || this.x > W+200 || this.y < -200 || this.y > H+200) this.reset();
+  }
+  draw() {
+    ctx.save();
+    ctx.globalAlpha = this.alpha;
+    ctx.strokeStyle = this.color;
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(this.x, this.y);
+    ctx.lineTo(this.x + this.vx * this.len / 0.4, this.y + this.vy * this.len / 0.4);
+    ctx.stroke();
+    ctx.restore();
+  }
+}
+
+for (let i = 0; i < 60; i++) lines.push(new Line());
+
+function drawBG() {
+  ctx.clearRect(0, 0, W, H);
+  lines.forEach(l => { l.update(); l.draw(); });
+  requestAnimationFrame(drawBG);
+}
+drawBG();
+
+// ─── DOT GRID ───
+const dotGrid = document.getElementById('dot-grid');
+const NUM_DOTS = 48 * 12;
+for (let i = 0; i < NUM_DOTS; i++) {
+  const d = document.createElement('div');
+  d.className = 'dot';
+  d.addEventListener('mouseenter', function() {
+    const c = ['lit-1','lit-2','lit-3'][Math.floor(Math.random()*3)];
+    this.classList.add(c);
+    setTimeout(() => this.classList.remove(c), 800);
+  });
+  dotGrid.appendChild(d);
+}
+
+// Random light pulses
+setInterval(() => {
+  const dots = dotGrid.querySelectorAll('.dot');
+  const idx = Math.floor(Math.random() * dots.length);
+  const c = ['lit-1','lit-2','lit-3'][Math.floor(Math.random()*3)];
+  dots[idx].classList.add(c);
+  setTimeout(() => dots[idx].classList.remove(c), 600);
+}, 80);
+
+// ─── SCROLL REVEAL ───
+const bigStatement = document.getElementById('big-statement');
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.3 });
+io.observe(bigStatement);
+
+// ─── COUNTERS ───
+function animateCount(el, target, duration = 1800) {
+  let start = null;
+  const step = ts => {
+    if (!start) start = ts;
+    const p = Math.min((ts - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.floor(ease * target);
+    if (p < 1) requestAnimationFrame(step);
+    else el.textContent = target;
+  };
+  requestAnimationFrame(step);
+}
+
+const statsSection = document.querySelector('.stats-section');
+let counted = false;
+new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting && !counted) {
+    counted = true;
+    animateCount(document.getElementById('cnt-1'), 2026, 2000);
+    animateCount(document.getElementById('cnt-2'), 5, 1200);
+    animateCount(document.getElementById('cnt-3'), 1, 800);
+  }
+}, { threshold: 0.4 }).observe(statsSection);
+
+// ─── CHAOS WORDS ───
+const chaosWords = [
+  'KUNST','KAAI','WEB','CODE','PIXEL','SCHERM',
+  'OPEN','DEUR','RUIMTE','TAAL','BEELD','GELUID',
+  'KLEUR','VORM','LICHT','CHAOS','ORDE','TIJD',
+  'FLOW','GRID','DATA','NET','NODE','LINK',
+];
+const chaosContainer = document.getElementById('chaos-container');
+
+chaosWords.forEach((word, i) => {
+  const el = document.createElement('div');
+  el.className = 'chaos-word';
+  el.textContent = word;
+  el.style.left = (Math.random() * 85) + '%';
+  el.style.top = (Math.random() * 85) + '%';
+  el.style.opacity = Math.random() * 0.4 + 0.3;
+  el.style.fontSize = `clamp(0.8rem, ${Math.random() * 2.5 + 1}vw, ${Math.random() * 2 + 1}rem)`;
+  if (Math.random() > 0.7) el.style.color = ['var(--c-accent)','var(--c-accent2)','var(--c-accent3)'][Math.floor(Math.random()*3)];
+
+  const speed = Math.random() * 30 + 15;
+  const xDir = (Math.random() - 0.5) * 2;
+  const yDir = (Math.random() - 0.5) * 2;
+  let x = parseFloat(el.style.left);
+  let y = parseFloat(el.style.top);
+  el.style.position = 'absolute';
+
+  const move = () => {
+    x += xDir * 0.01;
+    y += yDir * 0.01;
+    if (x < 0 || x > 90) { x = Math.max(0, Math.min(x, 90)); }
+    if (y < 0 || y > 90) { y = Math.max(0, Math.min(y, 90)); }
+    el.style.left = x + '%';
+    el.style.top = y + '%';
+  };
+
+  setInterval(move, 1000/30);
+  chaosContainer.appendChild(el);
+});
+
+// ─── PARALLAX HERO ───
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  document.querySelector('.hero-title').style.transform = `translateY(${y * 0.25}px)`;
+  document.querySelector('.hero-eyebrow').style.transform = `translateY(${y * 0.15}px)`;
+  document.querySelector('.hero-sub').style.transform = `translateY(${y * 0.35}px)`;
+});
+</script>
+</body>
+</html>

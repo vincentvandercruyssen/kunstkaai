@@ -1,0 +1,35 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #0a0a12, #000000);
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+canvas {
+  display: block;
+}
+
+/* Input styling */
+#questionInput {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  transition: background 0.2s;
+}
+
+#questionInput:focus {
+  background: rgba(255, 255, 255, 0.2);
+}

@@ -98,7 +98,8 @@ Je levert in je map ook een kort tekstdocument in (`readme.md`). Dit hoeft geen 
 
 ## Puntenverdeling
 
-- **Werking en afwerking (06)**: Het experiment draait foutloos in een browser en is volledig afgewerkt.
-- **Visuele en/of interactieve impact (06)**: Het trekt de aandacht, verrast of doet iets interessants. Het is niet generiek.
-- **Technische ambitie (04)**: Je hebt iets geprobeerd dat nieuw, gedurfd of moeilijk was voor jou.
-- **Verantwoording (04)**: Bronnen vermeld, kort maar eerlijk beschreven wat je deed en leerde in je `readme.md`.
+- **Structuur en bestanden (02)** Je levert een complete map in en gebruikt de juiste bestandsnamen.
+- **Werking en afwerking (04)** Het experiment draait foutloos in een browser en is volledig afgewerkt.
+- **Visuele en/of interactieve impact (04)** Het trekt de aandacht, verrast of doet iets interessants. Het is origineel en niet voorspelbaar.
+- **Technische ambitie (04)** Je hebt iets nieuws geprobeerd, de code is nog steeds overzichtelijk.
+- **Verantwoording (04)** Bronnen vermeld, kort maar eerlijk en transparant beschreven wat je deed en leerde in je `readme.md`.

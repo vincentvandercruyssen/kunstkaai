@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>∿ webexperiment — kunstkaai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:100%; height:100%; overflow:hidden; background:#000; }
+body { font-family: 'Space Mono', monospace; cursor: none; }
+
+canvas#c {
+  position: fixed;
+  inset: 0;
+  display: block;
+}
+
+/* ── CUSTOM CURSOR ── */
+#cur {
+  position: fixed;
+  width: 6px; height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: transform 0.08s;
+}
+#cur-ring {
+  position: fixed;
+  width: 28px; height: 28px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  mix-blend-mode: difference;
+}
+
+/* ── HUD OVERLAY ── */
+#hud {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* corners */
+.corner {
+  position: absolute;
+  width: 20px; height: 20px;
+  border-color: rgba(255,255,255,0.18);
+  border-style: solid;
+}
+.corner.tl { top:24px;  left:24px;  border-width:1px 0 0 1px; }
+.corner.tr { top:24px;  right:24px; border-width:1px 1px 0 0; }
+.corner.bl { bottom:24px; left:24px; border-width:0 0 1px 1px; }
+.corner.br { bottom:24px; right:24px; border-width:0 1px 1px 0; }
+
+/* top info bar */
+#info-top {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.22);
+  white-space: nowrap;
+}
+
+/* bottom bar */
+#info-bottom {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.18);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* left column */
+#info-left {
+  position: absolute;
+  left: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.vert-text {
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.16);
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+/* right column */
+#info-right {
+  position: absolute;
+  right: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#readout {
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.2);
+  text-align: right;
+  line-height: 2.4;
+}
+
+/* center label (fades in/out) */
+#center-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+#center-label h1 {
+  font-size: clamp(1.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+#center-label p {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.28);
+  margin-top: 14px;
+}
+
+/* instruction blink */
+#instruction {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.22);
+  animation: blink 3s step-end infinite;
+  white-space: nowrap;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* progress bar */
+#prog {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: rgba(255,255,255,0.25);
+  width: 0%;
+  transition: width 0.05s linear;
+}
+
+/* click ripple */
+.ripple {
+  position: fixed;
+  width: 2px; height: 2px;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9997;
+  animation: ripple-out 0.8s ease-out forwards;
+}
+@keyframes ripple-out {
+  to { width:120px; height:120px; margin:-60px; opacity:0; border-color:rgba(255,255,255,0); }
+}
+
+@media (max-width:600px) {
+  #info-left, #info-right { display:none; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="c"></canvas>
+
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<div id="hud" aria-hidden="true">
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+
+  <div id="info-top">kunstkaai · weborientatie 5xm · open deuren 2025–2026</div>
+
+  <div id="info-left">
+    <span class="vert-text">experiment</span>
+    <span class="vert-text">webform</span>
+  </div>
+
+  <div id="info-right">
+    <div id="readout">
+      x: <span id="rx">—</span><br>
+      y: <span id="ry">—</span><br>
+      t: <span id="rt">0.00</span><br>
+      Δ: <span id="rd">—</span>
+    </div>
+  </div>
+
+  <div id="center-label">
+    <h1 id="main-title">∿</h1>
+    <p id="main-sub">beweeg · klik · observeer</p>
+  </div>
+
+  <p id="instruction">← beweeg je muis om het systeem te verstoren →</p>
+  <div id="prog"></div>
+</div>
+
+<script>
+// ════════════════════════════════════════
+//  CANVAS SETUP
+// ════════════════════════════════════════
+const canvas = document.getElementById('c');
+const ctx    = canvas.getContext('2d');
+let W, H;
+
+function resize() {
+  W = canvas.width  = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+// ════════════════════════════════════════
+//  STATE
+// ════════════════════════════════════════
+let mx = W / 2, my = H / 2;
+let cx = W / 2, cy = H / 2;  // smooth cursor
+let t  = 0;
+let clicks = 0;
+let mode   = 0;  // 0-4 cycling visual modes
+const MODES = 5;
+let modeTimer = 0;
+
+// ════════════════════════════════════════
+//  CURSOR
+// ════════════════════════════════════════
+const cur     = document.getElementById('cur');
+const curRing = document.getElementById('cur-ring');
+let rx_s = W/2, ry_s = H/2;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cur.style.transform = `translate(${mx - 3}px, ${my - 3}px)`;
+  document.getElementById('rx').textContent = mx.toFixed(0);
+  document.getElementById('ry').textContent = my.toFixed(0);
+});
+
+function animCursor() {
+  rx_s += (mx - rx_s) * 0.1;
+  ry_s += (my - ry_s) * 0.1;
+  curRing.style.transform = `translate(${rx_s - 14}px, ${ry_s - 14}px)`;
+  requestAnimationFrame(animCursor);
+}
+animCursor();
+
+// click ripple + mode change
+document.addEventListener('click', e => {
+  clicks++;
+  mode = (mode + 1) % MODES;
+  modeTimer = 0;
+
+  const r = document.createElement('div');
+  r.className = 'ripple';
+  r.style.left = e.clientX + 'px';
+  r.style.top  = e.clientY + 'px';
+  document.body.appendChild(r);
+  setTimeout(() => r.remove(), 800);
+
+  // update center text
+  const titles = ['∿', '◈', '⊘', '△', '⬡'];
+  const subs   = ['beweeg · klik · observeer', 'systeem actief', 'leegte gevonden', 'orde in chaos', 'terug naar begin'];
+  document.getElementById('main-title').textContent = titles[mode];
+  document.getElementById('main-sub').textContent   = subs[mode];
+});
+
+// ════════════════════════════════════════
+//  PARTICLE SYSTEM
+// ════════════════════════════════════════
+class Particle {
+  constructor() { this.reset(true); }
+  reset(init = false) {
+    this.x  = init ? Math.random() * W : mx + (Math.random() - .5) * 40;
+    this.y  = init ? Math.random() * H : my + (Math.random() - .5) * 40;
+    this.vx = (Math.random() - .5) * 0.8;
+    this.vy = (Math.random() - .5) * 0.8;
+    this.life = 1;
+    this.decay = Math.random() * 0.004 + 0.001;
+    this.size  = Math.random() * 2 + 0.3;
+    this.hue   = Math.random() * 60 - 30; // near white
+  }
+  update() {
+    // attract toward cursor faintly
+    const dx = mx - this.x;
+    const dy = my - this.y;
+    const dist = Math.sqrt(dx*dx + dy*dy) || 1;
+    const force = Math.min(40 / (dist * dist), 0.08);
+    this.vx += dx / dist * force;
+    this.vy += dy / dist * force;
+    // dampen
+    this.vx *= 0.98;
+    this.vy *= 0.98;
+    this.x  += this.vx;
+    this.y  += this.vy;
+    this.life -= this.decay;
+    if (this.life <= 0 || this.x < -10 || this.x > W+10 || this.y < -10 || this.y > H+10) this.reset();
+  }
+  draw() {
+    ctx.save();
+    ctx.globalAlpha = this.life * 0.6;
+    ctx.fillStyle = `hsl(${200 + this.hue},${20 + mode * 15}%,${70 + mode * 5}%)`;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  }
+}
+
+const NPARTICLES = 600;
+const particles = Array.from({ length: NPARTICLES }, () => new Particle());
+
+// ════════════════════════════════════════
+//  LISSAJOUS RINGS
+// ════════════════════════════════════════
+function drawLissajous(cx0, cy0, rx, ry, a, b, phase, alpha, col) {
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.strokeStyle = col;
+  ctx.lineWidth = 0.6;
+  ctx.beginPath();
+  const steps = 512;
+  for (let i = 0; i <= steps; i++) {
+    const s = (i / steps) * Math.PI * 2;
+    const x = cx0 + rx * Math.sin(a * s + phase);
+    const y = cy0 + ry * Math.sin(b * s);
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  }
+  ctx.stroke();
+  ctx.restore();
+}
+
+// ════════════════════════════════════════
+//  GRID FIELD
+// ════════════════════════════════════════
+function drawField() {
+  const step = 48;
+  const cols = Math.ceil(W / step) + 1;
+  const rows = Math.ceil(H / step) + 1;
+  ctx.save();
+  ctx.strokeStyle = 'rgba(255,255,255,0.04)';
+  ctx.lineWidth = 0.5;
+  for (let i = 0; i < cols; i++) {
+    for (let j = 0; j < rows; j++) {
+      const x  = i * step;
+      const y  = j * step;
+      const dx = mx - x;
+      const dy = my - y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      const angle = Math.atan2(dy, dx) + t * 0.3;
+      const len = Math.min(18, 600 / (dist + 60));
+      ctx.save();
+      ctx.globalAlpha = 0.06 + len / 80;
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+      ctx.lineTo(x + Math.cos(angle) * len, y + Math.sin(angle) * len);
+      ctx.stroke();
+      ctx.restore();
+    }
+  }
+  ctx.restore();
+}
+
+// ════════════════════════════════════════
+//  WAVEFORM BANDS
+// ════════════════════════════════════════
+function drawWaves() {
+  const cx0 = W / 2;
+  const numWaves = 8;
+  for (let w = 0; w < numWaves; w++) {
+    const yBase = H * 0.15 + (H * 0.7 / numWaves) * w;
+    const amp   = 20 + (mx / W) * 60 + w * 8;
+    const freq  = 0.008 + w * 0.002 + (my / H) * 0.012;
+    const speed = 0.6 + w * 0.15;
+    const alpha = 0.04 + (numWaves - w) * 0.008;
+
+    ctx.save();
+    ctx.strokeStyle = `hsl(${180 + w * 12 + mode * 30},30%,70%)`;
+    ctx.lineWidth = 0.8;
+    ctx.globalAlpha = alpha;
+    ctx.beginPath();
+    for (let x = 0; x <= W; x += 2) {
+      const y = yBase + Math.sin(x * freq + t * speed) * amp
+                      + Math.sin(x * freq * 1.7 - t * speed * 0.4) * amp * 0.4;
+      x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    ctx.restore();
+  }
+}
+
+// ════════════════════════════════════════
+//  RADIAL BURST (mode 1)
+// ════════════════════════════════════════
+function drawBurst() {
+  const spokes = 64;
+  const cx0 = W/2, cy0 = H/2;
+  ctx.save();
+  for (let i = 0; i < spokes; i++) {
+    const angle = (i / spokes) * Math.PI * 2 + t * 0.08;
+    const r1 = 40 + Math.sin(t * 1.1 + i * 0.3) * 20;
+    const r2 = 120 + Math.sin(t * 0.5 + i * 0.15) * 80 + (mx / W) * 60;
+    ctx.globalAlpha = 0.06 + Math.abs(Math.sin(t + i * 0.2)) * 0.08;
+    ctx.strokeStyle = `hsl(${220 + i * 2},20%,80%)`;
+    ctx.lineWidth = 0.5;
+    ctx.beginPath();
+    ctx.moveTo(cx0 + Math.cos(angle) * r1, cy0 + Math.sin(angle) * r1);
+    ctx.lineTo(cx0 + Math.cos(angle) * r2, cy0 + Math.sin(angle) * r2);
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+// ════════════════════════════════════════
+//  CONCENTRIC RINGS (mode 2)
+// ════════════════════════════════════════
+function drawRings() {
+  const cx0 = W/2 + (mx - W/2) * 0.08;
+  const cy0 = H/2 + (my - H/2) * 0.08;
+  const n = 20;
+  for (let i = 0; i < n; i++) {
+    const r = (i + 1) * (Math.min(W,H) / (n * 2)) + Math.sin(t * 0.4 + i * 0.5) * 8;
+    ctx.save();
+    ctx.globalAlpha = 0.06 + (n - i) * 0.003;
+    ctx.strokeStyle = `hsl(${200 + i * 6 + mode*20}, 15%, 75%)`;
+    ctx.lineWidth = 0.6 + (i % 3 === 0 ? 0.4 : 0);
+    ctx.beginPath();
+    ctx.ellipse(cx0, cy0, r, r * (0.6 + Math.sin(t*0.2) * 0.2), t * 0.02, 0, Math.PI*2);
+    ctx.stroke();
+    ctx.restore();
+  }
+}
+
+// ════════════════════════════════════════
+//  NOISE GRID (mode 3 — Perlin-like dots)
+// ════════════════════════════════════════
+function hash(x, y) {
+  return (Math.sin(x * 127.1 + y * 311.7) * 43758.5453) % 1;
+}
+function drawNoiseGrid() {
+  const step = 22;
+  const cols = Math.ceil(W / step);
+  const rows = Math.ceil(H / step);
+  for (let i = 0; i < cols; i++) {
+    for (let j = 0; j < rows; j++) {
+      const x = i * step + step/2;
+      const y = j * step + step/2;
+      const n = Math.abs(Math.sin(hash(i, j) * 100 + t * (0.3 + hash(i,j))));
+      const s = n * 3.5;
+      const alpha = n * 0.18 + 0.02;
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = `hsl(${180 + n * 60}, 20%, 80%)`;
+      ctx.beginPath();
+      ctx.arc(x, y, s, 0, Math.PI*2);
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+}
+
+// ════════════════════════════════════════
+//  FLOWING LINES (mode 4)
+// ════════════════════════════════════════
+const flowLines = Array.from({length:30}, (_, i) => ({
+  x: Math.random() * W,
+  y: Math.random() * H,
+  points: [],
+  speed: 0.4 + Math.random() * 0.8,
+  hue: 180 + i * 6,
+}));
+
+function updateFlowLines() {
+  flowLines.forEach(fl => {
+    const dx = mx - fl.x;
+    const dy = my - fl.y;
+    const dist = Math.sqrt(dx*dx + dy*dy) || 1;
+    const angle = Math.atan2(dy, dx) + Math.sin(t * 0.3 + fl.hue) * 1.2;
+    fl.x += Math.cos(angle) * fl.speed;
+    fl.y += Math.sin(angle) * fl.speed;
+    fl.points.push({ x: fl.x, y: fl.y });
+    if (fl.points.length > 80) fl.points.shift();
+    if (fl.x < 0 || fl.x > W || fl.y < 0 || fl.y > H) {
+      fl.x = Math.random() * W;
+      fl.y = Math.random() * H;
+      fl.points = [];
+    }
+  });
+}
+
+function drawFlowLines() {
+  flowLines.forEach((fl, fi) => {
+    if (fl.points.length < 2) return;
+    ctx.save();
+    ctx.lineWidth = 0.8;
+    ctx.beginPath();
+    fl.points.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+    const a = (fl.points.length / 80) * 0.18;
+    ctx.globalAlpha = a;
+    ctx.strokeStyle = `hsl(${fl.hue + mode * 20}, 20%, 75%)`;
+    ctx.stroke();
+    ctx.restore();
+  });
+}
+
+// ════════════════════════════════════════
+//  MAIN RENDER LOOP
+// ════════════════════════════════════════
+function render() {
+  // trail
+  ctx.fillStyle = 'rgba(0,0,0,0.06)';
+  ctx.fillRect(0, 0, W, H);
+
+  t += 0.016;
+  modeTimer += 0.016;
+
+  // always-on layers
+  drawField();
+  drawWaves();
+
+  // mode-specific layers
+  drawBurst();
+  drawRings();
+
+  if (mode === 3 || mode === 4) drawNoiseGrid();
+
+  updateFlowLines();
+  drawFlowLines();
+
+  // lissajous figures — always present, subtle
+  const lcx = W/2, lcy = H/2;
+  const lrx = (W * 0.3) * (0.5 + (mx/W)*0.5);
+  const lry = (H * 0.3) * (0.5 + (my/H)*0.5);
+  drawLissajous(lcx, lcy, lrx, lry, 3, 2, t * 0.08, 0.12, 'rgba(180,220,255,0.8)');
+  drawLissajous(lcx, lcy, lrx*0.7, lry*0.7, 5, 4, t * 0.06 + 1, 0.07, 'rgba(255,200,180,0.8)');
+  drawLissajous(lcx, lcy, lrx*0.45, lry*0.45, 2, 3, t * 0.05 + 2, 0.06, 'rgba(200,180,255,0.8)');
+
+  // particles
+  particles.forEach(p => { p.update(); p.draw(); });
+
+  // mouse glow
+  const grd = ctx.createRadialGradient(mx, my, 0, mx, my, 120);
+  grd.addColorStop(0, 'rgba(180,220,255,0.06)');
+  grd.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = grd;
+  ctx.beginPath();
+  ctx.arc(mx, my, 120, 0, Math.PI*2);
+  ctx.fill();
+
+  // readout
+  document.getElementById('rt').textContent = t.toFixed(2);
+  document.getElementById('rd').textContent = (Math.sqrt((mx-W/2)**2 + (my-H/2)**2) | 0) + 'px';
+  document.getElementById('prog').style.width = ((t % 30) / 30 * 100) + '%';
+
+  requestAnimationFrame(render);
+}
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Mario - P5.js Game</title>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script async src="https://unpkg.com/ml5@0.12.0/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+</head>
+<body>
+    <div id="gameContainer"></div>
+    <div id="hud">
+        <div id="score">Score: 0</div>
+        <div id="level">Level: 1</div>
+        <div id="status"></div>
+    </div>
+    <div id="instructions">
+        <h3>Coder Mario - 10 Worlds</h3>
+        <p>1. Keep your head and face fully visible in the camera view.</p>
+        <p>2. Move your nose/face left or right to steer the coder.</p>
+        <p>3. Jump by raising both index fingers above your nose.</p>
+        <p>4. Reach the green EXIT checkpoint at the top of each world.</p>
+        <p>5. Enemies get faster and more numerous in later worlds!</p>
+        <p>6. Auto-restart in 30 seconds after losing, or fist pump to restart instantly.</p>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>

@@ -1,10 +1,10 @@
-const API_KEY = 'AIzaSyCa-m-3_Km4B4ozfqq2_yJzG1t_BMncxWA';
+const API_KEY = '...';
 const YT_SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search';
 
 const form = document.getElementById('searchForm');
 const resultsDiv = document.getElementById('results');
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function (e) {
     e.preventDefault();
     generateYouTubeLink();
 });
@@ -118,7 +118,7 @@ function attachVideoItemClickHandlers() {
     if (!embeddedFrame) return;
 
     document.querySelectorAll('.video-item').forEach(item => {
-        item.addEventListener('click', function(e) {
+        item.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
             const videoId = this.getAttribute('data-videoid');

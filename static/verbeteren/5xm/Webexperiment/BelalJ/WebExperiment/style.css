@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    cursor: none; 
+}
+
+/* --- Custom Cursor --- */
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, background 0.3s ease, mix-blend-mode 0.3s ease, border 0.3s ease;
+}
+
+/* Transparante "Hollow" Cursor */
+.cursor.cursor-grow {
+    width: 80px;
+    height: 80px;
+    mix-blend-mode: normal; 
+    background-color: transparent; 
+    border: 2px solid rgba(255, 255, 255, 0.8); 
+    box-shadow: none; 
+    animation: none; 
+}
+
+/* --- Animatie Classes --- */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Hero Sectie --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 12vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    will-change: transform, opacity; 
+    transform-origin: center center;
+}
+
+.scroll-hint {
+    position: absolute;
+    bottom: 50px;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    opacity: 0.5;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.8; }
+}
+
+/* --- Bio Sectie --- */
+.bio-section {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.bio-text {
+    font-size: 3vw;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #e0e0e0;
+    max-width: 1400px;
+}
+
+/* --- Marquee Sectie --- */
+.marquee-container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.marquee {
+    white-space: nowrap;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 8vw;
+    font-weight: 700;
+    will-change: transform;
+}
+
+.marquee.outline span {
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+}
+
+/* --- Typography 404 & Glitch Sectie --- */
+.typo-404-section {
+    padding: 10vh 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.typo-small {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem; 
+    color: #888888;
+    z-index: 2;
+}
+
+.typo-large {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 7vw; 
+    white-space: nowrap;
+    color: #ffffff;
+    will-change: transform;
+}
+
+#typo-404 {
+    position: relative;
+    display: inline-block; 
+}
+
+#typo-404::before,
+#typo-404::after {
+    content: attr(data-text); 
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    opacity: 0.8;
+}
+
+#typo-404::before {
+    color: #ff0055; 
+    z-index: -1;
+    animation: glitch-anim-1 2s infinite linear alternate-reverse;
+    display: none; 
+}
+
+#typo-404::after {
+    color: #00ddff; 
+    z-index: -2;
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+    display: none; 
+}
+
+#typo-404.glitch-active::before,
+#typo-404.glitch-active::after {
+    display: block;
+}
+
+@keyframes glitch-anim-1 {
+    0% { clip-path: inset(20% 0 30% 0); transform: translate(-5px, -2px); }
+    10% { clip-path: inset(60% 0 10% 0); transform: translate(-2px, 2px); }
+    20% { clip-path: inset(10% 0 80% 0); transform: translate(2px, -2px); }
+    30% { clip-path: inset(90% 0 5% 0); transform: translate(-1px, 1px); }
+    40% { clip-path: inset(30% 0 60% 0); transform: translate(3px, -3px); }
+    50% { clip-path: inset(70% 0 20% 0); transform: translate(-2px, 2px); }
+    60% { clip-path: inset(15% 0 75% 0); transform: translate(1px, -1px); }
+    70% { clip-path: inset(85% 0 10% 0); transform: translate(-3px, 3px); }
+    80% { clip-path: inset(40% 0 50% 0); transform: translate(2px, -2px); }
+    90% { clip-path: inset(5% 0 90% 0); transform: translate(-1px, 1px); }
+    100% { clip-path: inset(50% 0 40% 0); transform: translate(3px, -3px); }
+}
+
+@keyframes glitch-anim-2 {
+    0% { clip-path: inset(50% 0 40% 0); transform: translate(5px, 2px); }
+    10% { clip-path: inset(10% 0 60% 0); transform: translate(2px, -2px); }
+    20% { clip-path: inset(80% 0 10% 0); transform: translate(-2px, 2px); }
+    30% { clip-path: inset(5% 0 90% 0); transform: translate(1px, -1px); }
+    40% { clip-path: inset(60% 0 30% 0); transform: translate(-3px, 3px); }
+    50% { clip-path: inset(20% 0 70% 0); transform: translate(2px, -2px); }
+    60% { clip-path: inset(75% 0 15% 0); transform: translate(-1px, 1px); }
+    70% { clip-path: inset(10% 0 85% 0); transform: translate(3px, -3px); }
+    80% { clip-path: inset(50% 0 40% 0); transform: translate(-2px, 2px); }
+    90% { clip-path: inset(90% 0 5% 0); transform: translate(1px, -1px); }
+    100% { clip-path: inset(40% 0 50% 0); transform: translate(-3px, 3px); }
+}
+
+/* --- Portfolio Lijst Sectie --- */
+.portfolio-list {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10vw 10vh 10vw;
+}
+
+.list-item {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 3.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Gedempte Oil Slick Lijn */
+.list-item::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; 
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #1a1a24, #3a2e3d, #2a3a3a, #2b3240, #3d322a, #1a1a24);
+    background-size: 300% 300%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    animation: oilSlick 5s ease infinite;
+}
+
+.list-item:hover::after {
+    opacity: 1;
+}
+
+.list-item:hover {
+    border-bottom-color: transparent; 
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.list-item h2 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 4vw;
+    font-weight: 700;
+    transition: letter-spacing 0.5s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s ease;
+}
+
+.project-desc {
+    font-size: 1rem;
+    color: #777777;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: color 0.4s ease;
+}
+
+.hover-reveal {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.list-item:hover h2 {
+    letter-spacing: 4px;
+    color: #ffffff;
+}
+
+.list-item:hover .project-desc {
+    color: #cccccc;
+}
+
+.list-item:hover .hover-reveal {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@keyframes oilSlick {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kaleidoscope Pro</title>
+<style>
+  body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+    touch-action: none;
+  }
+  canvas {
+    display: block;
+  }
+
+  #ui {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-family: monospace;
+    color: rgba(255,255,255,0.7);
+    font-size: 12px;
+    transition: opacity 0.5s;
+  }
+
+  #colors {
+    margin-top: 5px;
+    display: flex;
+    gap: 4px;
+  }
+
+  .color-box {
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+
+  .active {
+    border: 1px solid white;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<div id="ui">
+  <div id="counter"></div>
+  <div id="colors">
+    <div class="color-box" data-mode="1" style="background: linear-gradient(to right, red, yellow)"></div>
+    <div class="color-box" data-mode="2" style="background: blue"></div>
+    <div class="color-box" data-mode="3" style="background: red"></div>
+    <div class="color-box" data-mode="4" style="background: green"></div>
+    <div class="color-box" data-mode="5" style="background: purple"></div>
+  </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>

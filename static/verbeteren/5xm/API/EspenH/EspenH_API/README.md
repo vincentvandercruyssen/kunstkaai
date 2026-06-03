@@ -10,7 +10,7 @@ Deze applicatie is een zoekmachine voor Minecraft video's op YouTube, gemaakt me
 
 ## Hoe het werkt (met API key)
 De app gebruikt de YouTube Data API v3 en het opgegeven API key:
-- **API key**: `AIzaSyCa-m-3_Km4B4ozfqq2_yJzG1t_BMncxWA`
+- **API key**: `...`
 - API call: `https://www.googleapis.com/youtube/v3/search` met `part=snippet`, `type=video`, `maxResults=10`
 - Resultaten worden als thumbnails + titels weergegeven
 - De server-side API key is normaal veiliger, maar deze demo gebruikt het key in frontend voor eenvoud.

@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.ocean {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #4facfe, #001f3f);
+  position: relative;
+}
+
+/* CREATURES */
+.creature {
+  position: absolute;
+  width: 160px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* LEFT → RIGHT */
+.left {
+  animation: swimRight linear infinite;
+}
+
+/* RIGHT → LEFT */
+.right {
+  animation: swimLeft linear infinite;
+}
+
+/* Positions + speeds */
+.creature:nth-of-type(1) { top: 20%; animation-duration: 12s; }
+.creature:nth-of-type(2) { top: 40%; animation-duration: 18s; }
+.creature:nth-of-type(3) { top: 60%; animation-duration: 15s; }
+.creature:nth-of-type(4) { top: 75%; animation-duration: 20s; }
+.creature:nth-of-type(5) { top: 10%; animation-duration: 14s; }
+.creature:nth-of-type(6) { top: 30%; animation-duration: 17s; }
+.creature:nth-of-type(7) { top: 50%; animation-duration: 13s; }
+.creature:nth-of-type(8) { top: 80%; animation-duration: 22s; }
+
+/* SWIM RIGHT */
+@keyframes swimRight {
+  0% { left: -200px; transform: scaleX(-1); }
+  100% { left: 110%; transform: scaleX(-1); }
+}
+
+/* SWIM LEFT (FLIP WORKS HERE) */
+@keyframes swimLeft {
+  0% { left: 110%; transform: scaleX(-1); }
+  100% { left: -200px; transform: scaleX(-1); }
+}
+
+/* JELLY FLOAT */
+.jelly.left {
+  animation: swimRight linear infinite, float 6s ease-in-out infinite;
+}
+
+.jelly.right {
+  animation: swimLeft linear infinite, float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+  100% { transform: translateY(0); }
+}
+
+/* BUBBLES */
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  animation: rise linear infinite;
+}
+
+/* MANY SMALL BUBBLES */
+.bubble:nth-of-type(1)  { left: 5%;  width: 6px;  height: 6px;  animation-duration: 6s; }
+.bubble:nth-of-type(2)  { left: 15%; width: 8px;  height: 8px;  animation-duration: 7s; }
+.bubble:nth-of-type(3)  { left: 25%; width: 5px;  height: 5px;  animation-duration: 5s; }
+.bubble:nth-of-type(4)  { left: 35%; width: 7px;  height: 7px;  animation-duration: 6s; }
+.bubble:nth-of-type(5)  { left: 45%; width: 9px;  height: 9px;  animation-duration: 8s; }
+.bubble:nth-of-type(6)  { left: 55%; width: 6px;  height: 6px;  animation-duration: 5s; }
+.bubble:nth-of-type(7)  { left: 65%; width: 8px;  height: 8px;  animation-duration: 7s; }
+.bubble:nth-of-type(8)  { left: 75%; width: 5px;  height: 5px;  animation-duration: 6s; }
+.bubble:nth-of-type(9)  { left: 85%; width: 7px;  height: 7px;  animation-duration: 8s; }
+.bubble:nth-of-type(10) { left: 95%; width: 6px;  height: 6px;  animation-duration: 5s; }
+
+@keyframes rise {
+  0% { bottom: -50px; opacity: 0; }
+  50% { opacity: 1; }
+  100% { bottom: 110%; opacity: 0; }
+}

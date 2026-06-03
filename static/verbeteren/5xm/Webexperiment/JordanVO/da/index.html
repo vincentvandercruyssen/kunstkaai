@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opdracht: Webexperiment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas id="background"></canvas>
+  <canvas id="overlay-trail" style="position: fixed; inset: 0; z-index: 9999; pointer-events: none;"></canvas>
+
+  <main class="container">
+    <header class="glass-panel main-header">
+      <div class="glitch-wrapper">
+        <h1 class="glitch" data-text="Webexperiment">Webexperiment</h1>
+      </div>
+      <p class="subtitle">Een interactieve, digitale blikvanger. Gecodeerd met de vibe.</p>
+
+      <div class="action-controls">
+        <button id="overrideBtn" class="override-btn">
+          <span class="icon">⚡</span> Initieer Core Override
+        </button>
+      </div>
+    </header>
+
+    <div class="content-layout">
+      <section class="gallery-section glass-panel">
+        <div class="gallery-header">
+          <h2>Data Portretten</h2>
+          <div class="blinking-dot"></div>
+        </div>
+        <div id="gallery"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

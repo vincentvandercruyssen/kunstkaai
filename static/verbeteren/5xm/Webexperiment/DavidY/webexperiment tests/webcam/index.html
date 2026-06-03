@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CRT-monitor webcam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+
+    <div class="crt-shell">
+      <div class="crt-bezel">
+        <canvas id="crt-canvas"></canvas>
+
+        <!-- CRT overlays -->
+        <div class="crt-overlay scanlines"></div>
+        <div class="crt-overlay vignette"></div>
+        <div class="crt-overlay glow"></div>
+
+        <!-- UI overlay (channel, clock) -->
+        <div class="crt-ui">
+          <div class="ui-line">CH <span id="channel-num">03</span></div>
+          <div class="ui-line ui-right"><span id="clock">00:00</span></div>
+        </div>
+      </div>
+
+      <div class="crt-footer">
+        <div class="crt-brand">KUNSTKAAI // MONITOR</div>
+        <div class="crt-led">
+          <span class="led-dot"></span>
+          <span id="power-toggle" class="led-label">ON</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Effect buttons -->
+    <div class="controls">
+      <button data-effect="none" class="effect-btn active">Clean</button>
+      <button data-effect="fractured" class="effect-btn">Fractured Mirror</button>
+      <button data-effect="liquid" class="effect-btn">Liquid Distortion</button>
+      <button data-effect="echo" class="effect-btn">Echo Tunnel</button>
+      <button data-effect="shadow" class="effect-btn">Shadow Being</button>
+    </div>
+
+    <!-- Hidden webcam feed -->
+    <video id="webcam" playsinline autoplay muted></video>
+  </div>
+
+  <!-- SVG curvature filter -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <filter id="crt-curvature">
+        <feTurbulence type="fractalNoise" baseFrequency="0.0" numOctaves="1" result="noise"/>
+        <feColorMatrix
+          in="noise"
+          type="matrix"
+          values="
+            1 0 0 0 0
+            0 1 0 0 0
+            0 0 1 0 0
+            0 0 0 0 1"
+          result="map"
+        />
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="map"
+          scale="18"
+          xChannelSelector="R"
+          yChannelSelector="G"
+        />
+      </filter>
+    </defs>
+  </svg>
+
+  <script src="app.js"></script>
+</body>
+</html>
