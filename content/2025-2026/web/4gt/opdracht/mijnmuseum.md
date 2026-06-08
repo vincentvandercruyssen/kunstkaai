@@ -218,10 +218,10 @@ Zorg voor een koppeling naar je volledige vakmap in je OneDrive bij de opdracht 
 
 ## Puntenverdeling
 
-- **Structuur (08)** Correcte bestandsnamen en mapstructuur. `index.html`, drie thema's, `style.css`, map met afbeeldingen (min. 12).
-- **Navigatie (08)** Werkende navigatielinks en dezelfde header op elke pagina.
-- **HTML (20)** Correct gebruik van header, main, footer, section, h1-6, p, img/iframe en div met class voor de galerij.
-- **CSS (20)** Gebruik van flexbox, grid en consistentie in stijlen. Minimaal acht selectors, eigenschappen (background-color, color, font-family, margin, padding, width, display:flex, display:grid, grid-template-columns, gap).
+- **Structuur (04)** Correcte bestandsnamen en mapstructuur. `index.html`, drie thema's, `style.css`, map met afbeeldingen (min. 12).
+- **Navigatie (04)** Werkende navigatielinks en dezelfde header op elke pagina.
+- **HTML (10)** Correct gebruik van header, main, footer, section, h1-6, p, img/iframe en div met class voor de galerij.
+- **CSS (10)** Gebruik van flexbox, grid en consistentie in stijlen. Minimaal acht selectors, eigenschappen (background-color, color, font-family, margin, padding, width, display:flex, display:grid, grid-template-columns, gap).
 
 ## Veelvoorkomende fouten
 

@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(255, 215, 222);
+ 
+}
+
+header {
+    color: rgb(101, 55, 55);
+    background-color: rgb(255, 235, 239);
+    padding: 20px;
+margin: 15px;
+border-radius: 15px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+
+}
+nav{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+a{
+    font-family: "kuhlman-vf", sans-serif;
+font-variation-settings: "SEED" 0, "wdth" 100;
+    color: rgb(101, 55, 55);
+}
+
+a:hover {
+    color: pink;
+}
+
+h2{
+    font-family: "kuhlman-vf", sans-serif;
+font-variation-settings: "SEED" 0, "wdth" 100;
+color: rgb(101, 55, 55);
+}
+
+section{
+    color: rgb(101, 55, 55);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 235, 239);
+padding: 15px;
+margin: 15 px;
+border-radius: 15px;
+}
+.galerij{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 15px;
+
+}
+
+.galerij img{
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.galerij img:hover{
+    transform: scale(1.25);
+}

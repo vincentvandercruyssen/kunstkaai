@@ -1,0 +1,58 @@
+@import url("https://use.typekit.net/qrk5xvq.css");
+
+
+
+
+body {
+    background-color: antiquewhite;
+    color: black;
+    font-family: "gunter", sans-serif;
+}
+
+header {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(113, 94, 94);
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+nav a { 
+    padding: 16px;
+    background-color: bisque;
+    color: rgb(240, 154, 154);
+    text-decoration: none;
+}
+
+nav a:hover {
+
+    background-color: cadetblue;
+}
+
+a {
+    color: rgb(240, 154, 154);
+}
+
+img {
+    width: 400px;
+}
+
+main {
+    padding: 0 40px;
+}
+
+.galerij {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.galerij img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+

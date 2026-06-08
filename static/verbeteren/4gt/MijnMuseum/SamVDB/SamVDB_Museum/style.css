@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(205, 236, 179);
+    color: rgb(55, 153, 239);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(150, 200, 131);
+    padding: 2%;
+    margin: 2%;
+}
+ nav { 
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+ }
+ 
+
+a{ color: rgb(29, 133, 185);}
+a:hover{ color: aliceblue;}
+
+ main { max-width: 800px;
+margin:auto}
+   
+img {
+    margin-top: 10%;
+    margin-left: 5%
+    
+}
+.gallery 
+{ display: grid;
+grid-template-columns: 1fr 1fr 1fr
+; gap: 20px;
+}
