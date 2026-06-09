@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: system-ui;
+    background-color: black;
+    color: red;
+}
+
+.absolute {
+    position: absolute;
+}
+
+#tekst1 {
+    font-size: 10vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: wegenterug 1s steps(10) infinite;
+}
+
+@keyframes wegenterug {
+    0%{
+        clip-path: inset(0 100% 0 0);
+    }
+    100%{
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+#tekst2 {
+font-size: 7vw;
+top: 70%;
+right: 6%;
+animation: wegenterug 3s steps(12) infinite;
+}

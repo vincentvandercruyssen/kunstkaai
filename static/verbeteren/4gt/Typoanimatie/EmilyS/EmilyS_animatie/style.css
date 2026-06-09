@@ -1,0 +1,46 @@
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  overflow: hidden;
+}
+
+.absolute {
+  position: absolute;
+}
+
+#tekst1 {
+  font-size: 10vw;
+  top: 10%;
+  left: -13%;
+  rotate: 90deg;
+  animation: verplaatsen 3s infinite alternate;
+}
+
+#tekst2 {
+  font-size: 20vw;
+  top: 10%;
+  left: 35%;
+  rotate: -90deg;
+}
+
+#tekst3 {
+  font-size: 15vw;
+  top: 60%;
+  left: 5%;
+}
+
+#tekst4 {
+  font-size: 7vw;
+  top: 60%;
+  left: 5%;
+ animation: verplaatsen  ;
+  
+}
+
+@keyframes verplaatsen {
+  0% {
+    top: 10%;
+  }
+  100%{
+    top: 20%;
+  }
+}

@@ -1,0 +1,53 @@
+.absolute {
+position: absolute;
+}
+#tekst1 {
+    font-size: 10vw;
+    top: 70%;
+    left: -5%; 
+    rotate: 90deg;
+}
+
+#tekst2 {
+    font-size: 20vw;
+    top: 10%;
+    left: -10;
+    animation: verplaatsen 1s infinite alternate;
+}
+
+@keyframes verplaatsen {
+    0% {
+    top: 10%;
+    }
+    100% {
+        top: 20%;
+    }
+    }
+    
+
+
+    
+
+
+#tekst3 {
+    font-size: 10vw;
+    top: 70%;
+    left: -10;
+
+}
+
+#tekst4 {
+    font-size: 5vw;
+    top: 10%;
+    left: -10;
+animation: verplaatsen 1s infinite alternate;
+}
+
+@keyframes verplaatsen {
+0% {
+top: 10%;
+}
+100% {
+    top: 20%;
+}
+}

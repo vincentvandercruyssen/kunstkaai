@@ -205,11 +205,11 @@ Zorg voor een koppeling naar je volledige vakmap in je OneDrive bij de opdracht 
 
 ## Puntenverdeling
 
-- **Structuur (04)** Correcte bestandsnamen en mapstructuur, `index.html`, `style.css`.
-- **HTML (06)** Zinvol gebruik van elementen, duidelijke klassen, nette nesting. Kernwoorden grafische technieken als inhoud.
-- **CSS basis (08)** Full-screen layout met `vw`/`vh` en `overflow: hidden`, lettertype via Adobe Fonts, kleurgebruik en compositie.
-- **CSS animatie (16)** Correct gebruik van `@keyframes` (min. twee), `animation` met bijbehorende deeleigenschappen, `transform` (min. twee functies), `transition` op minstens één element.
-- **Artistiek resultaat (06)** Samenhangend geheel, bewuste keuze van woorden, kleuren en lettertype, geschikt voor tentoonstelling.
+- **Structuur (02)** Correcte bestandsnamen en mapstructuur, `index.html`, `style.css`.
+- **HTML (04)** Zinvol gebruik van elementen, duidelijke klassen, nette nesting. Kernwoorden grafische technieken als inhoud.
+- **CSS basis (04)** Full-screen layout, extern lettertype (bv. via Adobe Fonts), kleurgebruik en compositie.
+- **CSS animatie (04)** Correct gebruik van `@keyframes`, `animation` met bijbehorende deeleigenschappen, `transform` (of andere functies), eventueel `transition`.
+- **Artistiek resultaat (04)** Samenhangend en origineel geheel, bewuste keuze van woorden, kleuren en lettertype, geschikt voor tentoonstelling.
 
 ## Veelvoorkomende fouten
 

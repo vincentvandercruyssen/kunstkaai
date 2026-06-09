@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Typo Animatie</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display&family=Roboto+Mono&display=swap" rel="stylesheet">
+<style>
+body {
+    background: radial-gradient(circle at center, #1a1a1a, #000);
+    color: #b58fea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Centrale typing tekst GROTER */
+.typing-container {
+    font-family: "Courier New", monospace;
+    font-size: 3.5rem;
+    border-right: 4px solid #c18bda;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 6s steps(45, end) forwards infinite,
+               blink 0.8s infinite;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    100% { width: 21ch; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.side {
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    opacity: 0.8;
+    letter-spacing: 3px;
+}
+
+.left {
+    left: 20px;
+    top: 15%;
+    font-family: 'Montserrat', sans-serif;
+    color: #ff4d4d;
+    font-size: 2.5rem;
+    animation: float 4s ease-in-out infinite;
+}
+
+.right {
+    right: 20px;
+    top: 20%;
+    font-family: 'Playfair Display', serif;
+    color: #4da6ff;
+    font-size: 2.5rem;
+    animation: float 5s ease-in-out infinite reverse;
+}
+
+.extra-left {
+    left: 80px;
+    bottom: 10%;
+    font-family: 'Roboto Mono', monospace;
+    color: #66ff99;
+    font-size: 2rem;
+    animation: glitch 2s infinite;
+}
+
+.extra-right {
+    right: 80px;
+    bottom: 15%;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffcc00;
+    font-size: 2.2rem;
+    animation: float 6s ease-in-out infinite;
+}
+
+.word {
+    position: absolute;
+    font-size: 1.3rem;
+    opacity: 0.5;
+}
+
+.word1 { top: 10%; left: 40%; }
+.word2 { bottom: 15%; left: 35%; }
+.word3 { top: 25%; right: 35%; }
+.word4 { bottom: 25%; right: 40%; }
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-3px, 3px); }
+    40% { transform: translate(3px, -3px); }
+    60% { transform: translate(-3px, -3px); }
+    80% { transform: translate(3px, 3px); }
+    100% { transform: translate(0); }
+}
+
+</style>
+</head>
+<body>
+
+<div class="side left">TYPOGRAFIE</div>
+<div class="side right">DESIGN</div>
+<div class="side extra-left">VISUEEL</div>
+<div class="side extra-right">CREATIEF</div>
+
+<div class="typing-container">
+    Grafische technieken.
+</div>
+
+<div class="word word1">digitaal</div>
+<div class="word word2">Photoshop</div>
+<div class="word word3">ontwerpen</div>
+<div class="word word4">Webontwikeling</div>
+
+</body>
+</html>
