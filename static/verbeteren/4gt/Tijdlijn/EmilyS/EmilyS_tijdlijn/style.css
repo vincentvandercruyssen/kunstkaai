@@ -1,0 +1,28 @@
+.tijdlijn-container {
+    display: flex;
+    gap: 30px
+    ;
+    overflow-x: auto;
+}
+
+.tijdlijn-item {
+   min-width: 40ch;
+}
+
+.tijdlijn-item img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 500px;
+   filter: grayscale(1);   
+}
+
+body {
+    background-color: hwb(91 75% 9%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(118, 105, 86);
+    }
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

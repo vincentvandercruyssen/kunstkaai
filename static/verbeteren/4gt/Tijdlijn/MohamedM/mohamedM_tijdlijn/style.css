@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #2a2929; 
+    color: hsl(31, 83%, 79%);
+}
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2929;
+    border-bottom: 2px solid #333;
+}
+
+main {
+    height: calc(100% - 110px);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.tijdlijn-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px 20px 40px 20px; 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 80%;
+    align-items: center;
+}
+
+
+
+
+.tijdlijn-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+
+.tijdlijn-container::-webkit-scrollbar-track {
+    background: #222;
+    border-radius: 5px;
+}
+
+
+.tijdlijn-container::-webkit-scrollbar-thumb {
+    background: hsl(31, 83%, 79%); 
+    border-radius: 5px;
+    border: 2px solid #000000; 
+    transition: background 0.3s ease;
+}
+
+
+.tijdlijn-container::-webkit-scrollbar-thumb:hover {
+    background: #ff6b81;
+}
+
+
+
+.tijdlijn-item {
+    min-width: 350px;
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 15px;
+    scroll-snap-align: center;
+    border: 1px solid #333;
+    transition: transform 0.3s;
+}
+
+.tijdlijn-item:hover {
+transform: translateY(-10px);   
+    border-color: #fcb577;
+}
+
+.tijdlijn-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-bottom: 25px;
+}

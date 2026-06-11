@@ -1,0 +1,62 @@
+body {
+    background-color: rgba(0, 0, 0, 0.821);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #747373;
+    border-radius: 11px;
+} 
+h2 {
+    background-color: #6b6a6a74;
+    border-radius: 11px;
+    box-shadow: 0 1px 11px rgba(255, 255, 255, 0.3);
+}
+h3{
+    background-color: rgba(125, 125, 125, 0.668);
+    border-radius: 11px;
+    box-shadow: 0 1px 11px rgba(255, 255, 255, 0.3);
+}
+ h4{
+    box-shadow: 0 1px 11px rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3) ;
+    border-radius: 11px;
+ }
+
+.Tijdlijn-Container img:hover{
+    transform: scale(0.9);
+    transition: transform 0.3 ease;
+    
+}
+.Tijdlijn-Container img{
+transition: transform 0.3s ease;
+box-shadow: 0 1px 11px rgba(255, 255, 255, 0.3);
+
+}
+
+main {
+    padding: 0 90px;
+    background-color: #00000090;
+    border-radius: 11px;
+}
+
+.Tijdlijn-Container{
+    display: flex;
+    overflow-x: auto;
+    gap: 205px;
+    scroll-snap-type: x proximity;
+}
+.Tijdlijn-item{
+    min-width: 60ch;
+    scroll-snap-align: start;
+    
+}
+
+.Tijdlijn-item img{
+    width: 100%;
+    aspect-ratio: 5 / 8;
+    object-fit: cover;
+    border-radius: 11px;
+}

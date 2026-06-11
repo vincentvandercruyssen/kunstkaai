@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+}
+
+body{
+    background-color: rgb(110, 11, 11);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+header{
+    height: 100%;
+}
+main {
+  display: flex;
+  align-items: center;
+}
+
+.TijdLijn-container{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+}
+
+.TijdLijn-items img{
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.TijdLijn-items{
+    min-width: 40ch;
+    aspect-ratio: 16/9;
+}
+
+h2,h3{
+    font-family: "discovery", sans-serif;
+font-weight: 1000;
+font-style: normal;
+background-color: rgb(199, 77, 16);
+}
+

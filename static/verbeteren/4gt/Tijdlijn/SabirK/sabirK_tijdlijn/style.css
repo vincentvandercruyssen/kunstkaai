@@ -1,0 +1,22 @@
+.tijdlijn-container {
+display: flex;
+overflow-x: auto;
+gap: 30px;
+}
+.tijdlijn-item {
+min-width: 100ch;
+
+}
+
+.tijdlijn-item img {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+width: 90%;
+border:solid seashell 10px;
+
+}
+body {
+    background-color: rgb(70, 70, 225);
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    }

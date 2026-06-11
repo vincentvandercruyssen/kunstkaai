@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0b0f1a;
+    color: white;
+}
+
+header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111827;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    height: calc(100% - 120px);
+    display: flex;
+    align-items: center;
+}
+
+.tijdlijn-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-snap-type: x proximity;
+}
+
+.tijdlijn-item {
+    background-color: #1f2937;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 40ch;
+    scroll-snap-align: start;
+    transition: transform 0.3s;
+}
+
+.tijdlijn-item img {
+    width: 100%;
+    height: 200px;        
+    object-fit: cover;    
+    border-radius: 8px;
+    margin: 10px 0;
+}
