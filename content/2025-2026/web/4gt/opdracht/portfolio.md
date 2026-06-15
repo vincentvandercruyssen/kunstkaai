@@ -121,6 +121,13 @@ VoornaamA_Portfolio/
 
 Zorg ervoor dat je map `Webontwikkeling` gedeeld wordt, maak een koppeling aan en deel in de juiste opdracht van Google Classroom. 
 
+## Tussentijdse puntenverdeling
+
+- **Structuur (02)** Correcte mappenstructuur en bestandsnamen
+- **Verzameling projecten (05)** Afbeeldingen geconverteerd naar jpg of png (max. 1 MB), geen pdf-bestanden of dergelijke, video in mp4, minimaal 10 projecten correct verzameld
+- **Duidelijke aanzet HTML en CSS layout, navigatie (04)**
+- **Inzet (04)**
+
 ## Puntenverdeling
 
 - **Structuur (05)** Correcte mappenstructuur en bestandsnamen: `VoornaamA_Portfolio`, `index.html`, `about.html`, vakpagina’s (x5), `style.css`, map `images`.

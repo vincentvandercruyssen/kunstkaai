@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(234, 137, 182);
+    overflow-x: hidden;
+    color: #3a0922;
+font-weight: 400;
+font-style: normal;
+text-align: center;
+ transition: background-color 1s;
+  animation: fadeIn 1s ease-in;
+
+  
+}
+body:hover{
+    background-color: #c887dd;
+   
+}
+header{
+   margin: 4%;
+    padding: 5%;
+    border: thick double #6d2187;
+    text-align: center;
+}
+
+.big-text {
+  font-size: 70px;
+  color: #760270;
+
+    }
+
+a{
+  color: #580459;
+  display: flex;
+    gap: 20px;
+    padding: 14px;
+background-color:#fdb1d5;
+color: #4b1535;;
+text-decoration:underline;
+border: 4px dashed #c743f3;
+margin: auto;
+transition: 0.3sп89
+}
+
+
+nav a {
+padding: 14px;
+background-color:#d183a9;
+color: #4b1535;;
+text-decoration:underline;
+border: 4px dashed #c743f3;
+margin: auto;
+transition: 0.3s
+}
+nav a:hover{
+    background-color: #fca9aa;
+    transform: translateY(-5px);
+    
+}
+
+.galerij{
+  
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  }
+   
+  @media (max-width: 600px) {
+  .galerij {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+img{
+    max-width: 100%;
+    border: 2px solid #9c2864;
+    width: 500px;
+    left: 30px;
+}
