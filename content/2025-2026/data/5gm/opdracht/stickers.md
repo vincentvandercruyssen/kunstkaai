@@ -134,8 +134,8 @@ Dien deze koppeling in via **Google Classroom** bij de opdracht **Stickers**.
 
 ## Puntenverdeling
 
-- **Naamgeving en mappenstructuur (05)** `VoornaamA_Stickers` met submappen `Originelen` (32 zelfverzamelde JPG's rond één thema), `Batch` (32 bewerkte stickers), PDF-bestand en .ATN-bestand correct bewaard.
-- **Photoshop Action-bestand (06)** bevat beeldverkleining, toegevoegde grafische elementen/tekst, gerichte stijl/effecten, minimaal twee aanpassingslagen (zoals Gradient Map of Posterize), en correcte opslaginstellingen.
-- **Effecten en visuele stijl (02)** stijl past bij het thema (duotoon, riso, zeefdruk, etc.), grafische elementen (logo, tekst, quote) zijn goed geplaatst, totaalbeeld is consistent en werkt als een Guerrilla Marketing stickerreeks.
-- **Batchverwerking (02)** alle 32 beelden automatisch bewerkt en correct hernoemd (`VoornaamA_Sticker_01.jpg` tot `VoornaamA_Sticker_32.jpg`).
-- **PDF-contactblad (02)** correct opgemaakt: 4x4 raster, juiste marges, header met naam, max. twee pagina's.
+- **Naamgeving en structuur (04)** `VoornaamA_Stickers` met submappen `Originelen` (32 zelfverzamelde JPG's rond één thema), `Batch` (32 bewerkte stickers), PDF-bestand en .ATN-bestand correct bewaard.
+- **Photoshop Action-bestand (04)** bevat beeldverkleining, toegevoegde grafische elementen/tekst, gerichte stijl/effecten, minimaal twee aanpassingslagen (zoals Gradient Map of Posterize), en correcte opslaginstellingen.
+- **Effecten en visuele stijl (04)** stijl past bij het thema (duotoon, riso, zeefdruk, etc.), grafische elementen (logo, tekst, quote) zijn goed geplaatst, totaalbeeld is consistent en werkt als een Guerrilla Marketing stickerreeks.
+- **Originelen en Batchverwerking (04)** alle 32 beelden automatisch bewerkt en correct hernoemd (`VoornaamA_Sticker_01.jpg` tot `VoornaamA_Sticker_32.jpg`).
+- **PDF-contactblad (04)** correct opgemaakt: 4x4 raster, juiste marges, header met naam, max. twee pagina's.
