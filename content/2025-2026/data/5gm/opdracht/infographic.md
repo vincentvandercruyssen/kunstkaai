@@ -59,8 +59,7 @@ Deel de OneDrive-koppeling naar deze map in Google Classroom.
 
 ## Puntenverdeling
 
-- **Naamgeving en mappenstructuur (02)** Volledige inlevermap en alle afzonderlijke bestanden zijn correct benoemd. Alles zit mooi gebundeld in één map.
-- **Ruwe data en bronnen (04)** Gegevens zijn traceerbaar en komen uit een betrouwbare bron. De ruwe data is duidelijk aanwezig.
-- **Visuele kwaliteit (06)** Creatief en esthetisch ontwerp, sterke visuele hiërarchie en duidelijke leesbaarheid van alle tekst en data.
-- **Correctheid en volledigheid (04)** Data is correct en informatief verwerkt op de infographic. Het gekozen subthema is sterk uitgewerkt.
+- **Volledigheid, naamgeving en structuur (04)** De inlevermap is compleet en bevat alle 4 de gevraagde onderdelen (export, bronbestand, ruwe data, bronnenlijst). Alle bestanden zijn correct benoemd en netjes gebundeld.
+- **Onderzoek, inhoud, gegevens (06)** Gegevens zijn correct, traceerbaar en informatief verwerkt in de infographic. Het gekozen subthema is sterk uitgewerkt en de verzamelde ruwe gegevens (data) en betrouwbare bronnen zijn duidelijk en correct aanwezig.
+- **Visuele kwaliteit (06)** Creatief en esthetisch ontwerp, sterke visuele hiërarchie en duidelijke leesbaarheid van alle tekst en gegevens.
 - **Technische uitwerking (04)** Correct en ordelijk gebruik van de gekozen software (resolutie, opbouw document) en vlotte export naar het juiste bestandsformaat.
