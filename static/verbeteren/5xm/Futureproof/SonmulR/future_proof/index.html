@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESOLE // Easy Shoe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-viewport">
+        <div class="interactive-game-box">
+            
+        
+            <div id="state-start" class="app-state active">
+                <span class="game-tag">The RESOLE Shoe Game</span>
+                <h1 class="text-gradient">Catch and Recycle!</h1>
+                <p class="game-description">
+                    Most shoes are glued together in one big piece. When just one part breaks, you have to throw the whole shoe in the trash. This creates a lot of plastic waste.
+                    <br><br>
+                    RESOLE is different. Our shoes are made of separate parts that safely snap together. If a part breaks, you just replace that one piece instead of buying a whole new shoe!
+                    <br><br>
+                    <strong>How to play:</strong> Move your collector left and right to catch the good shoe parts and stay away from the trash. Watch out—the higher your score, the faster the parts fall!
+                </p>
+                <button id="btn-start-game" class="btn-primary-web">Start Playing</button>
+            </div>
+
+
+            <div id="state-active" class="app-state">
+                <div class="game-hud">
+                    <div class="hud-item">Points: <span id="hud-score">0</span></div>
+                    <div class="hud-item">Shield Health: <span id="hud-shield">100</span>%</div>
+                </div>
+                
+                <canvas id="arcadeCanvas" width="560" height="360"></canvas>
+                
+                <div class="game-controls-instruction">
+                    Use your <strong>Left & Right Arrow keys</strong> (or the <strong>A & D keys</strong>) to move back and forth.
+                </div>
+            </div>
+
+       
+            <div id="state-result" class="app-state">
+                <h3>Game Over!</h3>
+                <div class="results-summary">
+                    <span class="final-score-label">Your Final Score</span>
+                    <span id="val-final-score" class="final-score-value">0</span>
+                </div>
+
+                <div class="point-guide">
+                    <p class="guide-good"><strong>Gives Points:</strong> Top Fabric (+10), Shoe Bottom (+15), Soft Cushion (+20)</p>
+                    <p class="guide-bad"><strong>Hurts Shield:</strong> Toxic Trash (-25%), Harsh Glue (-25%)</p>
+                </div>
+
+                <p id="game-feedback-text" class="feedback-paragraph"></p>
+                <div class="game-actions">
+                    <button id="btn-reset-game" class="btn-secondary-web">Play Again</button>
+                    <button id="btn-cta-game" class="btn-primary-web" onclick="alert('Thank you for your support!');">Back Our Campaign</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

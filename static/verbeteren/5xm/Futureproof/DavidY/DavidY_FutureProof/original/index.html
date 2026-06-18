@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FutureProof – Repair Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- START SCREEN -->
+  <div id="screen-start" class="screen active">
+    <div class="start-card">
+      <h1 class="brand">Repair Race</h1>
+      <p class="tagline">Every second counts. Every part matters.</p>
+      <div class="start-instructions">
+        <p>You'll get a <strong>post-it note</strong> telling you which parts to swap.</p>
+        <p>Remove the back cover, install the right parts, then close it back up.</p>
+        <p>Complete <strong>10 rounds</strong> as fast as you can!</p>
+      </div>
+      <button id="btn-start" class="btn-primary">Start Repair</button>
+    </div>
+  </div>
+
+  <!-- GAME SCREEN -->
+  <div id="screen-game" class="screen">
+    <div class="bench-surface">
+
+      <!-- TIMER -->
+      <div class="timer-wrap">
+        <div class="timer-display" id="timer-display">00:00</div>
+      </div>
+
+      <!-- ROUND COUNTER -->
+      <div class="round-counter">Round <span id="round-num">1</span> / 10</div>
+
+      <!-- POST-IT NOTE -->
+      <div class="postit" id="postit">
+        <div class="postit-tape"></div>
+        <h2>REPLACE</h2>
+        <ul id="task-list"></ul>
+      </div>
+
+      <!-- PHONE -->
+      <div class="phone-wrap" id="phone-wrap">
+        <div class="phone" id="phone">
+          <!-- BACK ON STATE -->
+          <div class="phone-back-on" id="phone-back-on">
+            <div class="phone-camera-area">
+              <div class="phone-camera-module" id="installed-camera-display">
+                <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;border-radius:8px;">
+                  <rect width="70" height="70" rx="12" fill="#111"/>
+                  <circle cx="22" cy="20" r="8" fill="#1c1c1c" stroke="#555" stroke-width="2"/>
+                  <circle cx="22" cy="20" r="5" fill="#080808" stroke="#333" stroke-width="1"/>
+                  <circle cx="22" cy="20" r="3" fill="url(#dp1)"/>
+                  <circle cx="20" cy="18" r="1" fill="rgba(255,255,255,0.3)"/>
+                  <circle cx="22" cy="50" r="8" fill="#1c1c1c" stroke="#555" stroke-width="2"/>
+                  <circle cx="22" cy="50" r="5" fill="#080808" stroke="#333" stroke-width="1"/>
+                  <circle cx="22" cy="50" r="3" fill="url(#dp1)"/>
+                  <circle cx="20" cy="48" r="1" fill="rgba(255,255,255,0.3)"/>
+                  <circle cx="50" cy="35" r="7" fill="#1c1c1c" stroke="#555" stroke-width="2"/>
+                  <circle cx="50" cy="35" r="4.5" fill="#080808" stroke="#333" stroke-width="1"/>
+                  <circle cx="50" cy="35" r="2.5" fill="url(#dp1)"/>
+                  <circle cx="48" cy="33" r="0.9" fill="rgba(255,255,255,0.28)"/>
+                  <circle cx="50" cy="14" r="3" fill="#bbb" opacity="0.65"/>
+                  <defs><radialGradient id="dp1" cx="35%" cy="35%" r="60%"><stop offset="0%" stop-color="#4a7aaa"/><stop offset="100%" stop-color="#040810"/></radialGradient></defs>
+                </svg>
+              </div>
+            </div>
+            <div class="phone-body-lower"></div>
+          </div>
+          <!-- BACK OFF STATE -->
+          <div class="phone-back-off hidden" id="phone-back-off">
+            <div class="phone-camera-area-open">
+              <div class="phone-camera-module" id="installed-camera-display-open" style="background:none;border:none;padding:0;width:65px;height:65px;border-radius:10px;overflow:hidden;">
+                <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;border-radius:8px;">
+                  <rect width="70" height="70" rx="12" fill="#111"/>
+                  <circle cx="22" cy="20" r="8" fill="#1c1c1c" stroke="#555" stroke-width="2"/>
+                  <circle cx="22" cy="20" r="5" fill="#080808" stroke="#333" stroke-width="1"/>
+                  <circle cx="22" cy="20" r="3" fill="url(#op1)"/>
+                  <circle cx="20" cy="18" r="1" fill="rgba(255,255,255,0.3)"/>
+                  <circle cx="22" cy="50" r="8" fill="#1c1c1c" stroke="#555" stroke-width="2"/>
+                  <circle cx="22" cy="50" r="5" fill="#080808" stroke="#333" stroke-width="1"/>
+                  <circle cx="22" cy="50" r="3" fill="url(#op1)"/>
+                  <circle cx="20" cy="48" r="1" fill="rgba(255,255,255,0.3)"/>
+                  <circle cx="50" cy="35" r="7" fill="#1c1c1c" stroke="#555" stroke-width="2"/>
+                  <circle cx="50" cy="35" r="4.5" fill="#080808" stroke="#333" stroke-width="1"/>
+                  <circle cx="50" cy="35" r="2.5" fill="url(#op1)"/>
+                  <circle cx="48" cy="33" r="0.9" fill="rgba(255,255,255,0.28)"/>
+                  <circle cx="50" cy="14" r="3" fill="#bbb" opacity="0.65"/>
+                  <defs><radialGradient id="op1" cx="35%" cy="35%" r="60%"><stop offset="0%" stop-color="#4a7aaa"/><stop offset="100%" stop-color="#040810"/></radialGradient></defs>
+                </svg>
+              </div>
+            </div>
+            <div class="phone-internals">
+              <div class="slot battery-slot" id="slot-battery" data-slot="battery">
+                <span class="slot-label">Battery</span>
+                <div class="slot-fill" id="fill-battery"></div>
+              </div>
+              <div class="slot storage-slot" id="slot-storage" data-slot="storage">
+                <span class="slot-label">Storage</span>
+                <div class="slot-fill" id="fill-storage"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CLICK OVERLAY: toggle back -->
+          <div class="phone-click-hint" id="phone-click-hint">
+            <span>tap to open back</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PARTS PANEL -->
+      <div class="parts-panel" id="parts-panel">
+
+        <!-- CAMERAS -->
+        <div class="parts-section">
+          <div class="parts-tray camera-tray">
+
+            <!-- 3-lens -->
+            <div class="part camera-part" id="cam-1" data-type="camera" data-value="1" draggable="true">
+              <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" class="cam-svg">
+                <rect width="70" height="70" rx="12" fill="#111"/>
+                <circle cx="22" cy="20" r="8" fill="#1c1c1c" stroke="#555" stroke-width="2"/>
+                <circle cx="22" cy="20" r="5" fill="#080808" stroke="#333" stroke-width="1"/>
+                <circle cx="22" cy="20" r="3" fill="url(#lg1)"/>
+                <circle cx="20" cy="18" r="1" fill="rgba(255,255,255,0.3)"/>
+                <circle cx="22" cy="50" r="8" fill="#1c1c1c" stroke="#555" stroke-width="2"/>
+                <circle cx="22" cy="50" r="5" fill="#080808" stroke="#333" stroke-width="1"/>
+                <circle cx="22" cy="50" r="3" fill="url(#lg1)"/>
+                <circle cx="20" cy="48" r="1" fill="rgba(255,255,255,0.3)"/>
+                <circle cx="50" cy="35" r="7" fill="#1c1c1c" stroke="#555" stroke-width="2"/>
+                <circle cx="50" cy="35" r="4.5" fill="#080808" stroke="#333" stroke-width="1"/>
+                <circle cx="50" cy="35" r="2.5" fill="url(#lg1)"/>
+                <circle cx="48" cy="33" r="0.9" fill="rgba(255,255,255,0.28)"/>
+                <circle cx="50" cy="14" r="3" fill="#bbb" opacity="0.65"/>
+                <defs><radialGradient id="lg1" cx="35%" cy="35%" r="60%"><stop offset="0%" stop-color="#4a7aaa"/><stop offset="100%" stop-color="#040810"/></radialGradient></defs>
+              </svg>
+              <span class="cam-label">3-lens</span>
+            </div>
+
+            <!-- 2-lens + flash -->
+            <div class="part camera-part" id="cam-2" data-type="camera" data-value="2" draggable="true">
+              <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" class="cam-svg">
+                <rect width="70" height="70" rx="12" fill="#111"/>
+                <circle cx="24" cy="22" r="8" fill="#1c1c1c" stroke="#555" stroke-width="2"/>
+                <circle cx="24" cy="22" r="5" fill="#080808" stroke="#333" stroke-width="1"/>
+                <circle cx="24" cy="22" r="3" fill="url(#lg2)"/>
+                <circle cx="22" cy="20" r="1" fill="rgba(255,255,255,0.3)"/>
+                <circle cx="24" cy="50" r="8" fill="#1c1c1c" stroke="#555" stroke-width="2"/>
+                <circle cx="24" cy="50" r="5" fill="#080808" stroke="#333" stroke-width="1"/>
+                <circle cx="24" cy="50" r="3" fill="url(#lg2)"/>
+                <circle cx="22" cy="48" r="1" fill="rgba(255,255,255,0.3)"/>
+                <circle cx="52" cy="18" r="4" fill="#ddd" opacity="0.7"/>
+                <circle cx="52" cy="50" r="2.5" fill="#2a2a2a" stroke="#555" stroke-width="1.5"/>
+                <defs><radialGradient id="lg2" cx="35%" cy="35%" r="60%"><stop offset="0%" stop-color="#4a7aaa"/><stop offset="100%" stop-color="#040810"/></radialGradient></defs>
+              </svg>
+              <span class="cam-label">2-lens</span>
+            </div>
+
+            <!-- pill-2 -->
+            <div class="part camera-part" id="cam-3" data-type="camera" data-value="3" draggable="true">
+              <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" class="cam-svg">
+                <rect width="70" height="70" rx="12" fill="#111"/>
+                <rect x="6" y="18" width="58" height="34" rx="12" fill="#1c1c1c" stroke="#555" stroke-width="2"/>
+                <circle cx="24" cy="35" r="9" fill="#080808" stroke="#444" stroke-width="1.5"/>
+                <circle cx="24" cy="35" r="5.5" fill="url(#lg3)"/>
+                <circle cx="21.5" cy="32.5" r="1.3" fill="rgba(255,255,255,0.28)"/>
+                <circle cx="47" cy="35" r="7" fill="#080808" stroke="#444" stroke-width="1.5"/>
+                <circle cx="47" cy="35" r="4" fill="url(#lg3)"/>
+                <circle cx="45" cy="33" r="0.9" fill="rgba(255,255,255,0.22)"/>
+                <defs><radialGradient id="lg3" cx="35%" cy="35%" r="60%"><stop offset="0%" stop-color="#4a7aaa"/><stop offset="100%" stop-color="#040810"/></radialGradient></defs>
+              </svg>
+              <span class="cam-label">pill-2</span>
+            </div>
+
+            <!-- 1-lens -->
+            <div class="part camera-part" id="cam-4" data-type="camera" data-value="4" draggable="true">
+              <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" class="cam-svg">
+                <rect width="70" height="70" rx="12" fill="#111"/>
+                <circle cx="35" cy="35" r="22" fill="#1c1c1c" stroke="#555" stroke-width="2.5"/>
+                <circle cx="35" cy="35" r="16" fill="#080808" stroke="#333" stroke-width="1.5"/>
+                <circle cx="35" cy="35" r="9" fill="url(#lg4)"/>
+                <circle cx="30" cy="30" r="2.2" fill="rgba(255,255,255,0.3)"/>
+                <defs><radialGradient id="lg4" cx="35%" cy="35%" r="60%"><stop offset="0%" stop-color="#4a7aaa"/><stop offset="100%" stop-color="#040810"/></radialGradient></defs>
+              </svg>
+              <span class="cam-label">1-lens</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- BATTERY + STORAGE side by side -->
+        <div class="parts-section parts-bottom">
+          <div class="parts-tray battery-tray">
+            <div class="part battery-part" id="bat-1" data-type="battery" data-value="battery" draggable="true">
+              <div class="bat-icon"></div>
+            </div>
+          </div>
+          <div class="parts-tray storage-tray">
+            <div class="part storage-part" id="sto-128" data-type="storage" data-value="128gb" draggable="true">128gb</div>
+            <div class="part storage-part" id="sto-256" data-type="storage" data-value="256gb" draggable="true">256gb</div>
+            <div class="part storage-part" id="sto-525" data-type="storage" data-value="525gb" draggable="true">525gb</div>
+            <div class="part storage-part" id="sto-1tb" data-type="storage" data-value="1tb" draggable="true">1tb</div>
+          </div>
+        </div>
+
+      </div><!-- /parts-panel -->
+
+      <!-- CLOSE BACK BUTTON (appears when all tasks done) -->
+      <button class="btn-close-back hidden" id="btn-close-back">Put back cover on ✓</button>
+
+    </div><!-- /bench-surface -->
+  </div><!-- /screen-game -->
+
+  <!-- END SCREEN -->
+  <div id="screen-end" class="screen">
+    <div class="end-card">
+      <h1>Nice work, repair tech!</h1>
+      <p class="end-sub">You completed 10 rounds in:</p>
+      <div class="final-time" id="final-time">00:00</div>
+
+      <!-- NAME ENTRY -->
+      <div id="name-entry-section">
+        <p class="end-sub" style="margin-bottom:12px;">Enter your initials</p>
+        <div class="initials-inputs">
+          <input class="initial-box" id="init-0" maxlength="1" type="text" autocomplete="off" spellcheck="false" />
+          <input class="initial-box" id="init-1" maxlength="1" type="text" autocomplete="off" spellcheck="false" />
+          <input class="initial-box" id="init-2" maxlength="1" type="text" autocomplete="off" spellcheck="false" />
+        </div>
+        <button id="btn-submit-score" class="btn-primary" style="margin-top:16px;">Submit score</button>
+      </div>
+
+      <!-- LEADERBOARD -->
+      <div id="leaderboard-section" class="hidden">
+        <p class="end-sub" style="margin-bottom:10px;">Leaderboard</p>
+        <ol id="leaderboard-list" class="leaderboard-list"></ol>
+      </div>
+
+      <div style="margin-top:18px;">
+        <p class="end-cta-text">Want a phone that's actually built to be repaired like this?</p>
+        <button id="btn-back-project" class="btn-secondary">Back our project →</button>
+        <button id="btn-play-again" class="btn-primary">Play again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

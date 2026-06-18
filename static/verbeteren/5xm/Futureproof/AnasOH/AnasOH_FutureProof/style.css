@@ -1,0 +1,161 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #060f09;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  touch-action: none;
+}
+
+/* ── GAME WRAPPER ── */
+#wrap {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #0d1f14;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── HUD ── */
+#ui {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  pointer-events: none;
+}
+
+.stat {
+  color: #5ecb8a;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.stat b {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+}
+
+.stat.center {
+  text-align: center;
+}
+
+.stat.right {
+  text-align: right;
+}
+
+/* ── OVERLAY (start / game over) ── */
+#overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: rgba(13, 31, 20, 0.88);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+#overlay h2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#overlay p {
+  color: #5ecb8a;
+  font-size: 14px;
+  text-align: center;
+  max-width: 280px;
+  line-height: 1.6;
+}
+
+#overlay p.hint {
+  color: #4a7a5a;
+  font-size: 11px;
+}
+
+#overlay .big {
+  color: #f5c518;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#overlay .gameover-label {
+  color: #e84f3d;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#overlay .result-row {
+  display: flex;
+  gap: 24px;
+}
+
+#overlay .result-item {
+  text-align: center;
+  color: #8fcca8;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#overlay .result-item small {
+  display: block;
+  font-size: 11px;
+  color: #4a7a5a;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+#overlay .legend {
+  color: #8fcca8;
+  font-size: 12px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ── START / RESTART BUTTON ── */
+#startbtn {
+  border: 1px solid #5ecb8a;
+  background: transparent;
+  color: #5ecb8a;
+  font-family: inherit;
+  font-size: 15px;
+  padding: 10px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+#startbtn:hover {
+  background: rgba(27, 122, 74, 0.3);
+}

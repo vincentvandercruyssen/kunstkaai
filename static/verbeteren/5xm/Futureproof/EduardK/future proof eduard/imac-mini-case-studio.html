@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mcase — Macintosh Case Studio</title>
+  <meta name="description" content="Transforming discarded Macintosh cases into premium Mac mini enclosures." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&amp;family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;family=Ultra&amp;family=UnifrakturCook:wght@700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text-xs:   clamp(.6875rem,.63rem + .19vw,.8125rem);
+      --text-sm:   clamp(.8125rem,.76rem + .26vw,.9375rem);
+      --text-base: clamp(.9375rem,.88rem + .29vw,1.0625rem);
+      --text-lg:   clamp(1.0625rem,.94rem + .61vw,1.4375rem);
+      --text-xl:   clamp(1.4375rem,1.1rem + 1.19vw,2.125rem);
+      --text-2xl:  clamp(1.875rem,1.1rem + 2.38vw,3.3125rem);
+      --text-3xl:  clamp(2.375rem,.94rem + 3.81vw,5.3125rem);
+      --sp2:.5rem;--sp3:.75rem;--sp4:1rem;--sp5:1.25rem;
+      --sp6:1.5rem;--sp8:2rem;--sp10:2.5rem;--sp12:3rem;--sp16:4rem;--sp24:6rem;
+      --bg:#f0ebe1;--surface:#faf8f4;--alt:#e6e1d7;
+      --ink:#1a1a1a;--mid:#4d4d4d;--faint:#888;--inv:#f0ebe1;
+      --b:1.5px solid var(--ink);
+      --sh0:2px 2px 0 var(--ink);--sh1:3px 3px 0 var(--ink);
+      --sh2:5px 5px 0 var(--ink);--sh3:8px 8px 0 var(--ink);
+      --ff-display:'Acuta','Cormorant Garamond','Baskerville','Times New Roman',serif;
+      --ff-logo:'Avebury','UnifrakturCook','Ultra','Cooper Black','Arial Black',serif;
+      --ff-accent:'Baudot Pop Open','Codystar','Space Mono',monospace;
+      --ff-body:'Space Grotesk',system-ui,sans-serif;
+      --ff-mono:'Space Mono','Courier New',monospace;
+      --content:1240px;--ease:180ms cubic-bezier(.16,1,.3,1);
+      --grain-blend:multiply;--grain-opacity:.055;
+    }
+    *,::before,::after{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-font-smoothing:antialiased;text-size-adjust:none;scroll-behavior:smooth}
+    img,video,svg{display:block;max-width:100%;height:auto}
+    button,input,select,textarea{font:inherit;color:inherit}
+    button{border:none;background:none;cursor:pointer}
+    a{text-decoration:none;color:inherit}
+    :focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+    body{
+      min-height:100dvh;font-family:var(--ff-body);font-size:var(--text-base);
+      line-height:1.6;color:var(--ink);background:var(--bg);
+      overflow-x:hidden;transition:background var(--ease),color var(--ease);
+    }
+    body::before{
+      content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;
+      opacity:var(--grain-opacity);
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+      mix-blend-mode:var(--grain-blend);
+    }
+    .skip-link{position:absolute;left:-9999px}
+    .skip-link:focus{left:1rem;top:1rem;z-index:1000;padding:.5rem 1rem;background:var(--ink);color:var(--inv);border:var(--b)}
+    .container{width:min(calc(100% - 2rem),var(--content));margin-inline:auto}
+    .section{padding:clamp(var(--sp12),8vw,var(--sp24)) 0}
+
+    .eyebrow{
+      font-family:var(--ff-accent);font-size:var(--text-xs);
+      text-transform:uppercase;letter-spacing:.08em;color:var(--ink);
+      font-weight:400;text-shadow:.35px 0 currentColor;
+      display:flex;align-items:center;gap:.5rem;
+    }
+    .eyebrow::before{content:"";width:1.5rem;height:1.5px;background:currentColor;opacity:1}
+
+    /* ── BUTTONS ── */
+    .glass-button{
+      display:inline-flex;align-items:center;justify-content:center;
+      min-height:44px;padding:.7rem 1.4rem;
+      border:var(--b);border-radius:0;
+      font-family:var(--ff-mono);font-weight:700;font-size:var(--text-xs);
+      letter-spacing:.12em;text-transform:uppercase;
+      background:var(--surface);color:var(--ink);box-shadow:var(--sh0);
+      transition:transform var(--ease),box-shadow var(--ease),background var(--ease),color var(--ease);
+    }
+    .glass-button:hover{transform:translate(-2px,-2px);box-shadow:var(--sh2)}
+    .glass-button:active{transform:translate(0,0);box-shadow:none}
+    .btn-primary{background:var(--ink);color:var(--inv)}
+    .btn-primary:hover{background:var(--mid);color:var(--inv)}
+    .btn-secondary{background:transparent;color:var(--ink)}
+
+    /* ── INPUTS ── */
+    .glass-input{
+      width:100%;min-height:48px;padding:0 1rem;
+      border:var(--b);border-radius:0;
+      background:var(--bg);color:var(--ink);
+    }
+    .glass-input:focus{outline:2px solid var(--ink);outline-offset:2px}
+    textarea.glass-input{min-height:140px;padding:.75rem 1rem;resize:vertical}
+
+    /* ── HEADER ── */
+    .site-header{
+      position:sticky;top:0;z-index:100;
+      padding-top:var(--sp3);background:var(--bg);
+    }
+    .nav-wrap{
+      display:grid;gap:var(--sp3);
+      padding:.65rem 1rem;background:var(--surface);
+      border:var(--b);box-shadow:var(--sh0);
+      position:relative;
+    }
+    .nav-head{
+      display:flex;align-items:center;justify-content:space-between;gap:var(--sp4);
+      min-width:0;
+    }
+    .brand{display:flex;align-items:center;gap:var(--sp3)}
+    .brand-badge{
+      width:56px;height:82px;
+      display:flex;align-items:center;justify-content:center;
+      flex-shrink:0;overflow:visible;
+    }
+    .brand-badge img{
+      width:auto;height:100%;max-width:none;object-fit:contain;display:block;
+      background:transparent;
+    }
+    .brand-title{display:flex;flex-direction:column}
+    .brand-title strong{
+      font-family:var(--ff-logo);font-size:var(--text-lg);font-weight:400;
+      line-height:.9;letter-spacing:0;text-transform:uppercase;
+    }
+    .brand-title span{font-size:var(--text-xs);color:var(--faint);font-family:var(--ff-mono)}
+    .nav-panel{
+      display:grid;gap:var(--sp3);
+    }
+    .nav-links{
+      display:flex;align-items:center;gap:var(--sp6);
+      font-family:var(--ff-mono);font-size:var(--text-xs);
+      text-transform:uppercase;letter-spacing:.1em;color:var(--mid);
+      flex-wrap:wrap;
+    }
+    .nav-links a{
+      padding:.25rem 0;border-bottom:1.5px solid transparent;
+      transition:color var(--ease),border-color var(--ease);
+    }
+    .nav-links a:hover,.nav-links a.active{color:var(--ink);border-bottom-color:var(--ink)}
+    .nav-actions{display:flex;align-items:center;gap:var(--sp3);flex-shrink:0}
+    .nav-toggle{
+      width:44px;height:44px;border:var(--b);
+      display:none;place-items:center;background:transparent;
+      transition:background var(--ease),color var(--ease);
+    }
+    .nav-toggle:hover,.nav-toggle[aria-expanded="true"]{background:var(--ink);color:var(--inv)}
+    .nav-toggle-lines,
+    .nav-toggle-lines::before,
+    .nav-toggle-lines::after{
+      width:18px;height:2px;background:currentColor;display:block;content:"";
+      transition:transform var(--ease),opacity var(--ease);
+    }
+    .nav-toggle-lines{position:relative}
+    .nav-toggle-lines::before{position:absolute;top:-6px;left:0}
+    .nav-toggle-lines::after{position:absolute;top:6px;left:0}
+    .nav-wrap.is-open .nav-toggle-lines{background:transparent}
+    .nav-wrap.is-open .nav-toggle-lines::before{transform:translateY(6px) rotate(45deg)}
+    .nav-wrap.is-open .nav-toggle-lines::after{transform:translateY(-6px) rotate(-45deg)}
+    .nav-cta-mobile{display:none;width:100%;justify-content:center}
+    .nav-kicker{
+      width:100%;
+      display:flex;justify-content:space-between;align-items:center;gap:var(--sp4);
+      padding-top:var(--sp2);border-top:1px solid rgba(128,128,128,.2);
+      font-family:var(--ff-mono);font-size:var(--text-xs);color:var(--mid);
+    }
+    .nav-kicker strong{color:var(--ink)}
+    /* ── CAROUSEL ── */
+    .carousel-clip{overflow:hidden;width:100%;touch-action:pan-y pinch-zoom}
+    .carousel-track{
+      display:flex;
+      width:300%;
+      transition:transform .6s cubic-bezier(.16,1,.3,1);
+    }
+    .carousel-slide{
+      width:calc(100% / 3);flex-shrink:0;
+      padding:clamp(var(--sp10),7vw,var(--sp24)) 0 clamp(var(--sp12),7vw,var(--sp24));
+      background:var(--bg);position:relative;overflow:hidden;
+    }
+    .carousel-slide[data-bg="surface"]{background:var(--surface)}
+    .carousel-slide[data-bg="ink"]{background:var(--ink);color:var(--inv)}
+    .carousel-slide::before{
+      content:"";
+      position:absolute;right:-.02em;top:-.05em;
+      font-size:clamp(8rem,20vw,18rem);font-weight:700;
+      font-family:var(--ff-accent);line-height:1;letter-spacing:0;
+      color:transparent;-webkit-text-stroke:1.5px currentColor;
+      opacity:.07;pointer-events:none;
+    }
+    .slide-inner{
+      width:min(calc(100% - 2rem),var(--content));margin-inline:auto;
+      display:grid;grid-template-columns:1fr 1fr;
+      gap:var(--sp8);align-items:center;position:relative;z-index:1;
+    }
+    .hero-copy{
+      padding:var(--sp8);background:var(--surface);
+      border:var(--b);box-shadow:var(--sh2);
+    }
+    .carousel-slide[data-bg="ink"] .hero-copy{
+      background:rgba(240,235,225,.07);border-color:rgba(240,235,225,.2);
+    }
+    .carousel-slide[data-bg="ink"] .eyebrow{color:rgba(240,235,225,.92)}
+    .carousel-slide[data-bg="ink"] .hero-copy p{color:rgba(240,235,225,.65)}
+    .hero-copy h1{
+      font-family:var(--ff-display);
+      font-size:clamp(2.25rem,5.8vw,5.1rem);
+      line-height:.88;letter-spacing:.04em;font-weight:700;
+      max-width:12ch;margin:var(--sp4) 0 var(--sp5);
+    }
+    .hero-copy p{max-width:54ch;color:var(--mid)}
+    .hero-actions{display:flex;gap:var(--sp3);flex-wrap:wrap;margin-top:var(--sp6)}
+    .hero-ribbon{display:flex;gap:var(--sp2);flex-wrap:wrap;margin-top:var(--sp5)}
+    .ribbon-chip{
+      padding:.35rem .8rem;border:var(--b);
+      font-size:var(--text-xs);font-family:var(--ff-accent);color:var(--mid);background:var(--bg);
+    }
+    .carousel-slide[data-bg="ink"] .ribbon-chip{
+      border-color:rgba(240,235,225,.25);color:rgba(240,235,225,.55);background:transparent;
+    }
+    .slide-media{position:relative}
+    .device-box{
+      min-height:420px;padding:var(--sp6);
+      background:var(--surface);border:var(--b);box-shadow:var(--sh2);
+      display:grid;place-items:center;position:relative;overflow:hidden;
+    }
+    .carousel-slide[data-bg="ink"] .device-box{
+      background:rgba(240,235,225,.06);border-color:rgba(240,235,225,.18);
+    }
+    .device-box::after{
+      content:"";position:absolute;inset:0;pointer-events:none;
+      background-image:radial-gradient(circle,var(--ink) 1px,transparent 1px);
+      background-size:10px 10px;opacity:.06;
+    }
+    .imac-shell{
+      position:relative;width:min(240px,88%);aspect-ratio:4/5;
+      border:2px solid var(--ink);background:var(--surface);
+      box-shadow:var(--sh2);z-index:1;
+    }
+    .imac-shell::before{
+      content:"";position:absolute;inset:5.5% 5.5% 21% 5.5%;
+      border:1.5px solid var(--ink);
+      background:repeating-linear-gradient(45deg,transparent,transparent 3px,rgba(26,26,26,.07) 3px,rgba(26,26,26,.07) 6px);
+    }
+    .imac-shell::after{
+      content:"";position:absolute;left:50%;bottom:4%;
+      transform:translateX(-50%);width:30%;height:10%;
+      border:1.5px solid var(--ink);border-top:none;background:var(--surface);
+    }
+    .mini-core{
+      position:absolute;inset:26% 25% 34% 25%;
+      border:2px solid var(--ink);background:var(--ink);
+      display:grid;place-items:center;z-index:2;
+    }
+    .mini-core span{
+      font-size:var(--text-xs);font-weight:700;letter-spacing:.2em;
+      text-transform:uppercase;color:var(--inv);font-family:var(--ff-mono);
+    }
+    .slide-img{border:var(--b);box-shadow:var(--sh2);overflow:hidden;height:420px;}
+    .slide-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1);display:block;}
+    .slide-img.is-product img{filter:saturate(.9) contrast(1.05)}
+
+    /* carousel controls bar */
+    .carousel-bar{
+      padding:var(--sp3) 0;background:var(--bg);
+      border-bottom:var(--b);
+      transition:background var(--ease),border-color var(--ease);
+    }
+    .carousel-bar.on-dark{background:var(--ink);border-color:rgba(240,235,225,.2)}
+    .carousel-controls{display:flex;align-items:center;justify-content:center;gap:var(--sp4)}
+    .carousel-btn{
+      width:44px;height:44px;border:var(--b);background:var(--surface);
+      display:grid;place-items:center;box-shadow:var(--sh0);
+      transition:transform var(--ease),box-shadow var(--ease),background var(--ease),color var(--ease);
+    }
+    .carousel-btn:hover{transform:translate(-2px,-2px);box-shadow:var(--sh2);background:var(--ink);color:var(--inv)}
+    .carousel-bar.on-dark .carousel-btn{background:rgba(240,235,225,.1);border-color:rgba(240,235,225,.3);color:var(--inv)}
+    .carousel-bar.on-dark .carousel-btn:hover{background:rgba(240,235,225,.25)}
+    .carousel-dots{display:flex;gap:var(--sp2)}
+    .dot{
+      width:10px;height:10px;border:var(--b);background:transparent;
+      transition:background var(--ease);cursor:pointer;
+    }
+    .dot.active{background:var(--ink)}
+    .carousel-bar.on-dark .dot{border-color:rgba(240,235,225,.4)}
+    .carousel-bar.on-dark .dot.active{background:var(--inv)}
+
+    /* ── SECTION HEAD ── */
+    .section-head{
+      display:grid;grid-template-columns:.82fr 1.18fr;
+      gap:var(--sp8);align-items:end;margin-bottom:var(--sp8);
+    }
+    .section-head h2{
+      font-family:var(--ff-display);font-size:var(--text-2xl);
+      line-height:.94;letter-spacing:0;font-weight:700;
+    }
+    .section-head p{color:var(--mid);max-width:60ch}
+
+    /* ── STORY ── */
+    .story-wrap{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp8);align-items:start}
+    .story-text{padding:var(--sp8);background:var(--surface);border:var(--b);box-shadow:var(--sh2)}
+    .story-text h2{
+      font-family:var(--ff-display);font-size:var(--text-2xl);
+      line-height:.94;letter-spacing:0;font-weight:700;margin:.6rem 0 1rem;
+    }
+    .story-text p{color:var(--mid);margin-bottom:var(--sp4)}
+    .story-text p:last-of-type{margin-bottom:0}
+    .story-images{display:grid;gap:var(--sp4)}
+    .story-img{position:relative;overflow:hidden;border:var(--b);box-shadow:var(--sh2)}
+    .story-img img{width:100%;aspect-ratio:4/3;object-fit:cover;filter:grayscale(1) contrast(1.1);display:block}
+    .story-img-caption{
+      position:absolute;bottom:0;left:0;right:0;
+      padding:var(--sp3) var(--sp4);
+      background:linear-gradient(transparent,rgba(26,26,26,.75));
+      color:#f0ebe1;font-size:var(--text-xs);font-family:var(--ff-mono);
+    }
+
+    /* ── PRODUCT SPECS ── */
+    .product-wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:var(--sp8);align-items:start}
+    .product-intro{
+      display:grid;grid-template-columns:repeat(3,1fr);
+      gap:var(--sp4);margin-bottom:var(--sp6);
+    }
+    .intro-card{
+      padding:var(--sp5);background:var(--surface);border:var(--b);box-shadow:var(--sh1);
+    }
+    .intro-card strong{
+      display:block;margin:.55rem 0 .4rem;
+      font-size:var(--text-lg);font-family:var(--ff-display);line-height:1;font-weight:700;
+    }
+    .intro-card p{color:var(--mid);font-size:var(--text-sm)}
+    .product-visual{
+      padding:var(--sp8);background:var(--surface);border:var(--b);box-shadow:var(--sh2);
+      display:grid;place-items:center;min-height:380px;
+      position:relative;overflow:hidden;
+    }
+    .product-visual::after{
+      content:"";position:absolute;inset:0;pointer-events:none;
+      background-image:radial-gradient(circle,var(--ink) 1px,transparent 1px);
+      background-size:10px 10px;opacity:.05;
+    }
+    .product-visual .imac-shell{width:min(190px,80%);z-index:1}
+    .product-visual img{
+      position:relative;z-index:1;width:100%;height:100%;min-height:320px;
+      object-fit:cover;filter:saturate(.92) contrast(1.05);
+    }
+    .specs-card{background:var(--surface);border:var(--b);box-shadow:var(--sh2);overflow:hidden}
+    .specs-header{
+      padding:var(--sp6);background:var(--ink);color:var(--inv);border-bottom:var(--b);
+    }
+    .specs-header .eyebrow{color:rgba(240,235,225,.92)}
+    .specs-header h3{
+      font-size:var(--text-xl);margin:.5rem 0 .25rem;
+      font-family:var(--ff-display);font-weight:700;color:var(--inv);
+    }
+    .specs-header p{font-size:var(--text-xs);color:rgba(240,235,225,.5);font-family:var(--ff-mono)}
+    .spec-row{
+      display:flex;justify-content:space-between;align-items:flex-start;
+      padding:var(--sp3) var(--sp6);
+      border-bottom:1px solid rgba(128,128,128,.15);gap:var(--sp4);
+    }
+    .spec-row:last-child{border-bottom:none}
+    .spec-label{
+      font-size:var(--text-xs);font-family:var(--ff-mono);
+      text-transform:uppercase;letter-spacing:.1em;color:var(--faint);
+      flex-shrink:0;min-width:130px;
+    }
+    .spec-value{font-size:var(--text-xs);font-family:var(--ff-mono);color:var(--mid);text-align:right}
+    .spec-value strong{display:block;color:var(--ink);font-weight:700}
+
+    /* ── VIDEO ── */
+    .video-card{
+      background:var(--surface);border:var(--b);box-shadow:var(--sh2);overflow:hidden;
+    }
+    .video-stage{
+      position:relative;aspect-ratio:16/9;background:var(--ink);
+      border-bottom:var(--b);overflow:hidden;
+    }
+    .video-stage iframe{
+      position:absolute;inset:0;width:100%;height:100%;border:0;background:#000;
+    }
+    .video-badge{
+      position:absolute;left:var(--sp4);top:var(--sp4);z-index:2;
+      padding:.35rem .75rem;border:var(--b);background:rgba(240,235,225,.92);
+      font-family:var(--ff-mono);font-size:var(--text-xs);font-weight:700;color:var(--ink);
+    }
+    .video-meta{
+      padding:var(--sp6);display:grid;gap:var(--sp3);
+    }
+    .video-meta h3{
+      font-size:var(--text-xl);font-family:var(--ff-display);font-weight:700;
+    }
+    .video-meta p{color:var(--mid)}
+    .video-note{
+      padding:var(--sp3) var(--sp4);background:var(--bg);border:var(--b);
+      font-family:var(--ff-mono);font-size:var(--text-xs);color:var(--mid);
+    }
+
+    /* ── GALLERY ── */
+    .gallery-band{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp4)}
+    .gallery-card{
+      position:relative;overflow:hidden;min-height:280px;
+      padding:var(--sp4);display:flex;align-items:flex-end;
+      border:var(--b);box-shadow:var(--sh1);
+    }
+    .gallery-card img{
+      position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+      filter:grayscale(1) contrast(1.1);
+      transition:transform .4s cubic-bezier(.16,1,.3,1),filter .4s;
+    }
+    .gallery-card:hover img{transform:scale(1.04);filter:grayscale(.5) contrast(1.1)}
+    .gallery-card::before{content:none}
+    .gallery-card span{
+      position:relative;z-index:2;
+      color:#f0ebe1;font-size:var(--text-xs);max-width:28ch;font-family:var(--ff-mono);
+    }
+
+    /* ── FUND US ── */
+    .fund-wrap{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp6)}
+    .fund-info{background:var(--surface);border:var(--b);box-shadow:var(--sh2);overflow:hidden}
+    .fund-header{
+      padding:var(--sp6);background:var(--ink);color:var(--inv);border-bottom:var(--b);
+    }
+    .fund-header .eyebrow{color:rgba(240,235,225,.92)}
+    .fund-amount{
+      font-size:clamp(2rem,5vw,3.4rem);line-height:1;font-weight:700;
+      letter-spacing:-.04em;color:var(--inv);margin:.6rem 0 .25rem;
+      font-family:var(--ff-display);
+    }
+    .fund-header p{font-size:var(--text-xs);color:rgba(240,235,225,.6);font-family:var(--ff-mono)}
+    .progress-wrap{margin-top:var(--sp4)}
+    .progress-track{
+      height:12px;border:1.5px solid rgba(240,235,225,.3);
+      overflow:hidden;background:rgba(240,235,225,.1);
+    }
+    .progress-track span{
+      display:block;height:100%;
+      background:repeating-linear-gradient(45deg,var(--inv),var(--inv) 3px,transparent 3px,transparent 6px);
+      transition:width .6s cubic-bezier(.16,1,.3,1);
+    }
+    .fund-stats{
+      display:grid;grid-template-columns:repeat(3,1fr);
+      border-top:1.5px solid rgba(240,235,225,.2);margin-top:var(--sp4);
+    }
+    .fund-stat{padding:var(--sp4) var(--sp5)}
+    .fund-stat strong{display:block;font-size:var(--text-xl);font-family:var(--ff-display);font-weight:700;color:var(--inv)}
+    .fund-stat p{font-size:var(--text-xs);color:rgba(240,235,225,.5);font-family:var(--ff-mono)}
+    .tier-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:var(--sp5);gap:var(--sp3)}
+    .tier{
+      padding:var(--sp5);border:var(--b);background:var(--bg);cursor:pointer;
+      transition:background var(--ease),color var(--ease),box-shadow var(--ease);
+    }
+    .tier:hover,.tier.active{background:var(--ink);color:var(--inv);box-shadow:var(--sh2)}
+    .tier strong{display:block;font-size:var(--text-lg);font-weight:700;margin-bottom:.3rem}
+    .tier p{font-size:var(--text-xs);color:var(--mid);line-height:1.4;margin-bottom:.8rem}
+    .tier:hover p,.tier.active p{color:rgba(240,235,225,.6)}
+    .tier .tier-btn{width:100%;justify-content:center;margin-top:auto}
+
+    /* fund form */
+    .fund-form-card{
+      background:var(--surface);border:var(--b);box-shadow:var(--sh2);padding:var(--sp8);
+    }
+    .fund-form-card h3{
+      font-size:var(--text-xl);margin:.5rem 0 1.2rem;
+      font-family:var(--ff-display);font-weight:700;
+    }
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp4)}
+    .form-field{display:grid;gap:var(--sp2)}
+    .form-field.full{grid-column:1/-1}
+    .form-field label{
+      font-size:var(--text-xs);font-weight:700;font-family:var(--ff-mono);
+      text-transform:uppercase;letter-spacing:.1em;
+    }
+    .amount-row{display:flex;gap:var(--sp2);flex-wrap:wrap;margin:.5rem 0}
+    .amount-preset{
+      padding:.4rem .9rem;border:var(--b);background:var(--bg);
+      font-family:var(--ff-mono);font-size:var(--text-xs);font-weight:700;
+      transition:background var(--ease),color var(--ease);
+    }
+    .amount-preset:hover,.amount-preset.active{background:var(--ink);color:var(--inv)}
+    .small-note{font-size:var(--text-xs);color:var(--faint);font-family:var(--ff-mono)}
+    .form-success{
+      padding:var(--sp8);text-align:center;
+      border:var(--b);background:var(--surface);
+    }
+    .form-success .eyebrow{justify-content:center}
+    .form-success p{margin-top:var(--sp4);color:var(--mid)}
+
+    /* ── CONTACT ── */
+    .contact-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:var(--sp8);align-items:start}
+    .contact-info{padding:var(--sp8);background:var(--surface);border:var(--b);box-shadow:var(--sh2)}
+    .contact-info h3{
+      font-size:var(--text-xl);margin:.6rem 0 1rem;
+      font-family:var(--ff-display);font-weight:700;
+    }
+    .contact-info p{color:var(--mid);margin-bottom:var(--sp4)}
+    .contact-detail{display:grid;gap:var(--sp3);margin-top:var(--sp5)}
+    .contact-line{
+      display:flex;align-items:flex-start;gap:var(--sp3);
+      font-size:var(--text-xs);font-family:var(--ff-mono);padding:var(--sp3);
+      border:var(--b);background:var(--bg);
+    }
+    .contact-line .cl-label{
+      text-transform:uppercase;letter-spacing:.1em;color:var(--faint);
+      min-width:80px;flex-shrink:0;
+    }
+    .contact-line .cl-val{color:var(--mid)}
+    .contact-form-card{
+      background:var(--surface);border:var(--b);box-shadow:var(--sh2);padding:var(--sp8);
+    }
+    .contact-form-card h3{
+      font-size:var(--text-xl);margin:.5rem 0 1.2rem;
+      font-family:var(--ff-display);font-weight:700;
+    }
+
+    /* ── FOOTER ── */
+    .footer{padding:var(--sp10) 0 var(--sp12);border-top:var(--b)}
+    .footer-bar{
+      display:flex;justify-content:space-between;gap:var(--sp6);
+      align-items:center;padding:1.2rem 1.5rem;flex-wrap:wrap;
+      background:var(--surface);border:var(--b);box-shadow:var(--sh1);
+    }
+    .footer-copy{font-size:var(--text-xs);color:var(--faint);font-family:var(--ff-mono)}
+    .social-links{display:flex;gap:var(--sp3)}
+    .social-link{
+      width:40px;height:40px;border:var(--b);
+      display:grid;place-items:center;background:transparent;
+      transition:background var(--ease),color var(--ease),transform var(--ease),box-shadow var(--ease);
+    }
+    .social-link:hover{background:var(--ink);color:var(--inv);transform:translate(-2px,-2px);box-shadow:var(--sh1)}
+
+    /* ── SCROLL REVEAL ── */
+    .reveal{opacity:1}
+    @supports(animation-timeline:view()){
+      .reveal{opacity:0;animation:revealFade linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+    }
+    @keyframes revealFade{to{opacity:1}}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:1100px){
+      .story-wrap,.product-wrap,.fund-wrap,.contact-wrap{grid-template-columns:1fr}
+      .slide-inner{grid-template-columns:1fr}
+      .slide-media{display:none}
+      .section-head{grid-template-columns:1fr;gap:var(--sp4)}
+      .product-intro{grid-template-columns:1fr}
+    }
+    @media(max-width:820px){
+      .nav-wrap{gap:0}
+      .brand-title span{display:none}
+      .nav-toggle{display:grid}
+      .nav-actions .btn-primary{display:none}
+      .nav-panel{
+        display:none;
+        width:100%;
+        padding-top:var(--sp4);
+        margin-top:var(--sp4);
+        border-top:1px solid rgba(128,128,128,.2);
+      }
+      .nav-wrap.is-open .nav-panel{display:grid}
+      .nav-links{
+        width:100%;
+        gap:var(--sp2);
+        flex-direction:column;align-items:stretch;
+      }
+      .nav-links a{
+        min-height:48px;padding:.8rem 1rem;background:var(--bg);border:var(--b);
+        display:flex;align-items:center;justify-content:space-between;
+      }
+      .nav-links a::after{
+        content:">";font-size:1rem;line-height:1;color:var(--faint);
+      }
+      .nav-links a.active{background:var(--ink);color:var(--inv);border-bottom-color:transparent}
+      .nav-links a.active::after{color:currentColor}
+      .nav-cta-mobile{display:inline-flex}
+      .nav-kicker{
+        flex-direction:column;align-items:flex-start;gap:var(--sp2);
+        padding-top:var(--sp4);font-size:.72rem;
+      }
+      .gallery-band{grid-template-columns:1fr 1fr}
+      .tier-grid{grid-template-columns:1fr}
+      .form-grid{grid-template-columns:1fr}
+      .hero-copy,.story-text,.contact-info,.contact-form-card,.fund-form-card{padding:var(--sp5)}
+      .fund-stats{grid-template-columns:1fr 1fr 1fr}
+      .carousel-controls{gap:var(--sp3)}
+    }
+    @media(max-width:540px){
+      .site-header{padding-top:var(--sp2)}
+      .nav-wrap{padding:.55rem .75rem}
+      .brand{gap:var(--sp2)}
+      .brand-badge{width:36px;height:56px}
+      .brand-title strong{font-size:.82rem}
+      .gallery-band{grid-template-columns:1fr}
+      .carousel-bar{padding:var(--sp2) 0}
+      .carousel-btn{width:48px;height:48px}
+      .dot{width:12px;height:12px}
+      .footer-bar{flex-direction:column;text-align:center;gap:var(--sp4)}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ── HEADER ── -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrap">
+        <div class="nav-head">
+          <a href="#home" class="brand" aria-label="mcase — Home">
+            <div class="brand-badge">
+              <img src="img/logo2.svg" alt="mcase logo">
+            </div>
+            <div class="brand-title">
+              <strong>mcase</strong>
+            </div>
+          </a>
+          <div class="nav-actions">
+            <a href="#fund-us" class="glass-button btn-primary">Support Launch</a>
+            <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="siteNavPanel" aria-label="Open menu">
+              <span class="nav-toggle-lines" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <div class="nav-panel" id="siteNavPanel">
+          <nav class="nav-links" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#story">Story</a>
+            <a href="#product">Specs</a>
+            <a href="#video">Video</a>
+            <a href="#gallery">Photos</a>
+            <a href="#fund-us">Back this</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a href="#fund-us" class="glass-button btn-primary nav-cta-mobile">Support Launch</a>
+          <div class="nav-kicker" aria-label="Quick product summary">
+            <span><strong>Apple Silicon only</strong> for Mac mini</span>
+            <span>Reuse the Macintosh case. Upgrade the core.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ── HERO CAROUSEL ── -->
+    <section id="home" aria-label="Hero carousel">
+      <div class="carousel-clip">
+        <div class="carousel-track" id="carouselTrack">
+
+          <!-- Slide 1 -->
+          <div class="carousel-slide" data-bg="bg" data-num="01">
+            <div class="slide-inner">
+              <div class="hero-copy">
+                <span class="eyebrow">Macintosh case reuse project</span>
+                <h1>Old Macintosh. New Purpose.</h1>
+                <p>Transforming discarded Macintosh cases into premium Mac mini enclosures. Handcrafted, modular, and built to last — because good design should never die.</p>
+                <div class="hero-actions">
+                  <a href="#product" class="glass-button btn-primary">See the product</a>
+                  <a href="#story" class="glass-button btn-secondary">Read the story</a>
+                </div>
+              </div>
+              <div class="slide-media">
+                <div class="slide-img is-product">
+                  <img src="img/photo-02.png" alt="mcase desktop setup" width="1408" height="768" loading="eager">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide" data-bg="surface" data-num="02">
+            <div class="slide-inner">
+              <div class="hero-copy">
+                <span class="eyebrow">zero waste design</span>
+                <h1>Designed for the Future.</h1>
+                <p>Every year thousands of classic Macintosh cases are discarded. We see potential where others see waste. mcase gives that hardware a second life — beautifully.</p>
+                <div class="hero-actions">
+                  <a href="#story" class="glass-button btn-primary">Our mission</a>
+                  <a href="#gallery" class="glass-button btn-secondary">See gallery</a>
+                </div>
+              </div>
+              <div class="slide-media">
+                <div class="slide-img">
+                  <img src="img/photo-01.png" alt="mcase project photo 1" width="1408" height="768" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-slide" data-bg="ink" data-num="03">
+            <div class="slide-inner">
+              <div class="hero-copy">
+                <span class="eyebrow">crowdfunding campaign</span>
+                <h1>Help Us Build the First Batch.</h1>
+                <p>We're raising €12,000 to produce the first prototype series. Every backer brings mcase one step closer to reality.</p>
+                <div class="hero-actions">
+                  <a href="#fund-us" class="glass-button btn-primary">Fund this project</a>
+                  <a href="#contact" class="glass-button btn-secondary">Get in touch</a>
+                </div>
+              </div>
+              <div class="slide-media">
+                <div class="slide-img is-product">
+                  <img src="img/photo-04.png" alt="mcase studio setup" width="1408" height="768" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /carousel-track -->
+      </div><!-- /carousel-clip -->
+
+      <div class="carousel-bar" id="carouselBar">
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="carouselPrev" aria-label="Previous slide">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Carousel slides">
+            <button class="dot active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+            <button class="dot" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+            <button class="dot" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+          </div>
+          <button class="carousel-btn" id="carouselNext" aria-label="Next slide">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STORY ── -->
+    <section id="story" class="section">
+      <div class="container">
+        <div class="story-wrap reveal">
+          <div class="story-text">
+            <span class="eyebrow">the origin story</span>
+            <h2>Why mcase?</h2>
+            <p>It started with a pile of beautiful, discarded Macintosh cases found at a recycling center. These machines — once symbols of creativity and innovation — were being sent to the landfill.</p>
+            <p>The original Macintosh enclosure is iconic. The aluminum chassis, the elegant proportions, the attention to detail — it's a piece of design history. So we asked: what if we could keep the case, but upgrade the heart?</p>
+            <p>That's how mcase was born. We carefully disassemble old Macintosh enclosures, adapt them with custom mounts and I/O modules, and fit a modern Mac mini inside. The result is a machine that honors its past while running the latest Apple Silicon.</p>
+            <p>It's not just a product — it's a statement: <em>great design should never be wasted.</em></p>
+            <div style="margin-top:var(--sp6)">
+              <a href="#product" class="glass-button btn-primary">See specifications</a>
+            </div>
+          </div>
+          <div class="story-images">
+            <div class="story-img">
+              <img src="img/photo-02.png" alt="mcase project photo 2" width="1408" height="768" loading="lazy">
+            </div>
+            <div class="story-img">
+              <img src="img/photo-03.png" alt="mcase project photo 3" width="1408" height="768" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PRODUCT (Technical Fiche) ── -->
+    <section id="product" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">product details</span>
+            <h2>Product Specifications.</h2>
+          </div>
+          <p>mcase is a handcrafted conversion kit for Mac mini with Apple Silicon. You keep the iconic Macintosh case, add a modern M-series Mac mini inside, and get clean rear port access with better thermal management.</p>
+        </div>
+        <div class="product-intro reveal" aria-label="Quick product overview">
+          <article class="intro-card">
+            <span class="eyebrow">case</span>
+            <strong>Choose the case</strong>
+            <p>We restore an original Macintosh case and prepare it for a clean modern conversion.</p>
+          </article>
+          <article class="intro-card">
+            <span class="eyebrow">core</span>
+            <strong>Install Mac mini M-series</strong>
+            <p>The case is designed around Apple Silicon models only, from M1 through current M-series options.</p>
+          </article>
+          <article class="intro-card">
+            <span class="eyebrow">daily use</span>
+            <strong>Use it like a modern desktop</strong>
+            <p>Rear ports stay accessible, service access stays simple, and the outside still looks unmistakably Macintosh.</p>
+          </article>
+        </div>
+        <div class="product-wrap reveal">
+          <div class="product-visual">
+            <img src="img/photo-08.png" alt="mcase conversion interior with Mac mini" width="1408" height="768" loading="lazy">
+          </div>
+          <div class="specs-card">
+            <div class="specs-header">
+              <span class="eyebrow">mcase — studio edition</span>
+              <h3>Technical Sheet</h3>
+              <p>Standard production model — all specifications</p>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Compatible with</span>
+              <span class="spec-value"><strong>Mac mini with Apple Silicon</strong>M1 · M2 · M2 Pro · M4</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Macintosh case</span>
+              <span class="spec-value"><strong>Classic Macintosh enclosure</strong>Refitted custom case</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Dimensions</span>
+              <span class="spec-value"><strong>518 × 388 × 170 mm</strong>W × H × D</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Weight</span>
+              <span class="spec-value"><strong>~5.4 kg</strong>Including Mac mini unit</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Material</span>
+              <span class="spec-value"><strong>Aluminum alloy</strong>Original Macintosh case</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Mount system</span>
+              <span class="spec-value"><strong>Custom CNC bracket</strong>3-point secure mount</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Cooling</span>
+              <span class="spec-value"><strong>Passive + active hybrid</strong>Silent 80 mm fan (optional)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Port access</span>
+              <span class="spec-value"><strong>Full rear I/O exposed</strong>All Mac mini ports accessible</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Service access</span>
+              <span class="spec-value"><strong>Tool-free side panel</strong>Magnetic quick-release</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Finish options</span>
+              <span class="spec-value"><strong>Matte · Polished · Raw</strong>Three surface treatments</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Optional extras</span>
+              <span class="spec-value"><strong>LED accent lighting</strong>USB-C passthrough panel</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Warranty</span>
+              <span class="spec-value"><strong>2 years</strong>Craftsmanship guarantee</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Assembly time</span>
+              <span class="spec-value"><strong>~3 hours per unit</strong>Handcrafted per order</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Lead time</span>
+              <span class="spec-value"><strong>4–6 weeks</strong>After campaign closes</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Price (est.)</span>
+              <span class="spec-value"><strong>From €740</strong>Shell only, excl. Mac mini</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VIDEO ── -->
+    <section id="video" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">promo video</span>
+            <h2>FutureProof.</h2>
+          </div>
+          <p>Watch the project concept in motion — from discarded Macintosh cases to a modern Mac mini enclosure with a second life.</p>
+        </div>
+        <article class="video-card reveal">
+          <div class="video-stage">
+            <span class="video-badge">Project film</span>
+            <iframe
+              src="https://www.youtube.com/embed/XN_SzKErTIw"
+              title="FutureProof Promo Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-meta">
+            <h3>FutureProof Promo Video</h3>
+            <p>A short introduction to the mcase idea, the reuse process, and the first prototype direction.</p>
+            <div class="video-note">YouTube embed · hosted externally · controls enabled</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── GALLERY ── -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">photo gallery</span>
+            <h2>Gallery.</h2>
+          </div>
+          <p>A look inside the workshop — materials, process shots, and the finished product in its natural habitat.</p>
+        </div>
+        <div class="gallery-band reveal">
+          <div class="gallery-card">
+            <img src="img/photo-04.png" alt="mcase gallery photo 4" width="1408" height="768" loading="lazy">
+          </div>
+          <div class="gallery-card">
+            <img src="img/photo-05.png" alt="mcase gallery photo 5" width="1408" height="768" loading="lazy">
+          </div>
+          <div class="gallery-card">
+            <img src="img/photo-06.png" alt="mcase gallery photo 6" width="1408" height="768" loading="lazy">
+          </div>
+          <div class="gallery-card">
+            <img src="img/photo-07.png" alt="mcase gallery photo 7" width="1408" height="768" loading="lazy">
+          </div>
+          <div class="gallery-card">
+            <img src="img/photo-03.png" alt="mcase gallery photo 3" width="1408" height="768" loading="lazy">
+          </div>
+          <div class="gallery-card">
+            <img src="img/photo-01.png" alt="mcase gallery photo 1" width="1408" height="768" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FUND US ── -->
+    <section id="fund-us" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">crowdfunding</span>
+            <h2>Fund Us.</h2>
+          </div>
+          <p>Help us manufacture the first production run. Every contribution brings mcase one step closer to reality. Choose a tier or enter a custom amount.</p>
+        </div>
+        <div class="fund-wrap reveal">
+          <article class="fund-info">
+            <div class="fund-header">
+              <span class="eyebrow">campaign progress</span>
+              <div class="fund-amount">€4,250</div>
+              <p>raised of €12,000 goal — 35% funded</p>
+              <div class="progress-wrap">
+                <div class="progress-track"><span style="width:35%"></span></div>
+              </div>
+              <div class="fund-stats">
+                <div class="fund-stat"><strong>47</strong><p>backers</p></div>
+                <div class="fund-stat"><strong>38</strong><p>days left</p></div>
+                <div class="fund-stat"><strong>3</strong><p>prototypes</p></div>
+              </div>
+            </div>
+            <div class="tier-grid">
+              <div class="tier" data-amount="10">
+                <strong>€10+</strong>
+                <p>Support the idea and receive all development updates.</p>
+                <button class="glass-button btn-secondary tier-btn">Select</button>
+              </div>
+              <div class="tier active" data-amount="35">
+                <strong>€35+</strong>
+                <p>Your name in the backers list and early launch access.</p>
+                <button class="glass-button btn-primary tier-btn">Selected</button>
+              </div>
+              <div class="tier" data-amount="120">
+                <strong>€120+</strong>
+                <p>Vote on the next shell design and get exclusive updates.</p>
+                <button class="glass-button btn-secondary tier-btn">Select</button>
+              </div>
+            </div>
+          </article>
+
+          <aside class="fund-form-card" id="fundFormWrap">
+            <span class="eyebrow">back this project</span>
+            <h3>Make Your Pledge</h3>
+            <form id="fundForm" novalidate>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="fundName">Full name</label>
+                  <input id="fundName" name="name" type="text" class="glass-input" placeholder="Jane Smith" required>
+                </div>
+                <div class="form-field">
+                  <label for="fundEmail">E-mail</label>
+                  <input id="fundEmail" name="email" type="email" class="glass-input" placeholder="jane@studio.com" required>
+                </div>
+                <div class="form-field full">
+                  <label>Pledge amount</label>
+                  <div class="amount-row">
+                    <button type="button" class="amount-preset" data-amt="10">€10</button>
+                    <button type="button" class="amount-preset active" data-amt="35">€35</button>
+                    <button type="button" class="amount-preset" data-amt="120">€120</button>
+                    <button type="button" class="amount-preset" data-amt="custom">Custom</button>
+                  </div>
+                  <input id="fundAmount" name="amount" type="number" class="glass-input" value="35" min="5" placeholder="Amount in €">
+                </div>
+                <div class="form-field full">
+                  <label for="fundNote">Note (optional)</label>
+                  <input id="fundNote" name="note" type="text" class="glass-input" placeholder="A message for the team...">
+                </div>
+                <div class="form-field full" style="display:grid;gap:var(--sp2)">
+                  <button type="submit" class="glass-button btn-primary" style="width:100%;justify-content:center">
+                    Pledge Now
+                  </button>
+                  <p class="small-note">No payment charged now. You will be contacted when the campaign closes.</p>
+                </div>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">get in touch</span>
+            <h2>Contact.</h2>
+          </div>
+          <p>Have a question about mcase, a partnership idea, or just want to follow along? We'd love to hear from you.</p>
+        </div>
+        <div class="contact-wrap reveal">
+          <div class="contact-info">
+            <span class="eyebrow">reach us</span>
+            <h3>Let's Talk.</h3>
+            <p>We're a small team of designers and engineers passionate about sustainable technology. Whether you're a backer, a journalist, or just curious — reach out.</p>
+            <div class="contact-detail">
+              <div class="contact-line">
+                <span class="cl-label">Email</span>
+                <span class="cl-val">hello@mcase.com</span>
+              </div>
+              <div class="contact-line">
+                <span class="cl-label">Instagram</span>
+                <span class="cl-val">@mcase</span>
+              </div>
+              <div class="contact-line">
+                <span class="cl-label">YouTube</span>
+                <span class="cl-val">youtube.com/@mcase</span>
+              </div>
+              <div class="contact-line">
+                <span class="cl-label">Location</span>
+                <span class="cl-val">Antwerp, Belgium</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-card" id="contactFormWrap">
+            <span class="eyebrow">send a message</span>
+            <h3>Write to Us.</h3>
+            <form id="contactForm" novalidate>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="cName">Name</label>
+                  <input id="cName" name="name" type="text" class="glass-input" placeholder="Your name" required>
+                </div>
+                <div class="form-field">
+                  <label for="cEmail">E-mail</label>
+                  <input id="cEmail" name="email" type="email" class="glass-input" placeholder="your@email.com" required>
+                </div>
+                <div class="form-field full">
+                  <label for="cSubject">Subject</label>
+                  <input id="cSubject" name="subject" type="text" class="glass-input" placeholder="What is it about?" required>
+                </div>
+                <div class="form-field full">
+                  <label for="cMessage">Message</label>
+                  <textarea id="cMessage" name="message" class="glass-input" placeholder="Your message..." required></textarea>
+                </div>
+                <div class="form-field full">
+                  <button type="submit" class="glass-button btn-primary" style="width:100%;justify-content:center">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bar">
+        <a href="#home" class="brand" aria-label="mcase — back to top">
+          <div class="brand-badge">
+            <img src="img/logo2.svg" alt="mcase logo">
+          </div>
+          <div class="brand-title">
+            <strong>mcase</strong>
+          </div>
+        </a>
+        <p class="footer-copy">© 2026 mcase. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://instagram.com/mcase" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com/@mcase" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Watch us on YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+
+    const body = document.body;
+    const navWrap = document.querySelector('.nav-wrap');
+    const navToggle = document.querySelector('[data-nav-toggle]');
+    const navPanel = document.getElementById('siteNavPanel');
+
+    /* ── Mobile navigation ── */
+    function setMenuState(open) {
+      navWrap.classList.toggle('is-open', open);
+      navToggle.setAttribute('aria-expanded', open);
+      navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      body.style.overflow = open && window.innerWidth <= 820 ? 'hidden' : '';
+    }
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+      setMenuState(!isOpen);
+    });
+
+    navPanel.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => setMenuState(false));
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 820) setMenuState(false);
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') setMenuState(false);
+    });
+    document.addEventListener('click', e => {
+      if (window.innerWidth <= 820 && navWrap.classList.contains('is-open') && !navWrap.contains(e.target)) {
+        setMenuState(false);
+      }
+    });
+
+    /* ── Carousel ── */
+    const track = document.getElementById('carouselTrack');
+    const bar   = document.getElementById('carouselBar');
+    const dots  = [...document.querySelectorAll('#carouselDots .dot')];
+    const slides = [...document.querySelectorAll('.carousel-slide')];
+    let current = 0, autoTimer;
+
+    function goTo(idx) {
+      current = ((idx % slides.length) + slides.length) % slides.length;
+      track.style.transform = `translateX(-${current * 100 / 3}%)`;
+      dots.forEach((d, i) => {
+        d.classList.toggle('active', i === current);
+        d.setAttribute('aria-selected', i === current);
+      });
+      bar.classList.toggle('on-dark', slides[current].dataset.bg === 'ink');
+    }
+
+    document.getElementById('carouselPrev').addEventListener('click', () => { clearInterval(autoTimer); goTo(current - 1); startAuto(); });
+    document.getElementById('carouselNext').addEventListener('click', () => { clearInterval(autoTimer); goTo(current + 1); startAuto(); });
+    dots.forEach((d, i) => d.addEventListener('click', () => { clearInterval(autoTimer); goTo(i); startAuto(); }));
+
+    function startAuto() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(() => goTo(current + 1), 5500);
+    }
+    startAuto();
+
+    const carouselEl = document.querySelector('.carousel-clip');
+    carouselEl.addEventListener('mouseenter', () => clearInterval(autoTimer));
+    carouselEl.addEventListener('mouseleave', startAuto);
+
+    let touchStartX = 0;
+    let touchDeltaX = 0;
+    carouselEl.addEventListener('touchstart', e => {
+      touchStartX = e.changedTouches[0].clientX;
+      touchDeltaX = 0;
+      clearInterval(autoTimer);
+    }, { passive: true });
+    carouselEl.addEventListener('touchmove', e => {
+      touchDeltaX = e.changedTouches[0].clientX - touchStartX;
+    }, { passive: true });
+    carouselEl.addEventListener('touchend', () => {
+      if (Math.abs(touchDeltaX) > 45) {
+        goTo(current + (touchDeltaX < 0 ? 1 : -1));
+      }
+      startAuto();
+    }, { passive: true });
+
+    /* ── Fund tiers ── */
+    document.querySelectorAll('.tier').forEach(tier => {
+      tier.addEventListener('click', () => {
+        document.querySelectorAll('.tier').forEach(t => {
+          t.classList.remove('active');
+          const b = t.querySelector('.tier-btn');
+          b.textContent = 'Select';
+          b.className = 'glass-button btn-secondary tier-btn';
+        });
+        tier.classList.add('active');
+        const b = tier.querySelector('.tier-btn');
+        b.textContent = 'Selected';
+        b.className = 'glass-button btn-primary tier-btn';
+        const amt = tier.dataset.amount;
+        document.getElementById('fundAmount').value = amt;
+        document.querySelectorAll('.amount-preset').forEach(p => p.classList.toggle('active', p.dataset.amt === amt));
+      });
+    });
+
+    /* ── Amount presets ── */
+    document.querySelectorAll('.amount-preset').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.amount-preset').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        if (btn.dataset.amt !== 'custom') {
+          document.getElementById('fundAmount').value = btn.dataset.amt;
+        } else {
+          document.getElementById('fundAmount').value = '';
+          document.getElementById('fundAmount').focus();
+        }
+      });
+    });
+
+    /* ── Fund form submit ── */
+    document.getElementById('fundForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name   = this.name.value.trim();
+      const email  = this.email.value.trim();
+      const amount = this.amount.value;
+      if (!name || !email || !amount) { alert('Please fill in all required fields.'); return; }
+      document.getElementById('fundFormWrap').innerHTML =
+        '<div class="form-success"><span class="eyebrow">Thank you!</span>' +
+        '<p>Your pledge of <strong>€' + (+amount) + '</strong> has been recorded.<br>We will contact you at <strong>' + email + '</strong> when the campaign closes.</p></div>';
+    });
+
+    /* ── Contact form submit ── */
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name    = document.getElementById('cName').value.trim();
+      const email   = document.getElementById('cEmail').value.trim();
+      const subject = document.getElementById('cSubject').value.trim();
+      const message = document.getElementById('cMessage').value.trim();
+      if (!name || !email || !subject || !message) { alert('Please fill in all fields.'); return; }
+      document.getElementById('contactFormWrap').innerHTML =
+        '<div class="form-success"><span class="eyebrow">Message sent!</span>' +
+        '<p>Thanks, <strong>' + name + '</strong>!<br>We received your message and will reply to <strong>' + email + '</strong> soon.</p></div>';
+    });
+
+    /* ── Active nav highlight on scroll ── */
+    const sectionIds = ['home','story','product','gallery','fund-us','contact'];
+    const navLinks   = document.querySelectorAll('.nav-links a');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+        }
+      });
+    }, { threshold: 0.35 });
+    sectionIds.forEach(id => { const el = document.getElementById(id); if (el) io.observe(el); });
+
+  })();
+  </script>
+
+  <!-- Gemini Chat Widget -->
+  <script src="gemini-widget.js"></script>
+  <script>
+    GeminiChat.init({
+      provider:     'claude',
+      apiKey:       '',
+      endpoint:     window.location.origin,
+      model:        'claude-sonnet-4-6',
+      systemPrompt: 'You are a helpful assistant for mcase — a studio that transforms vintage Macintosh cases into modern Mac mini enclosures. Answer questions about the product, sustainability, pricing, and ordering. Be concise and friendly. Pricing from the current website: the standard mcase studio edition starts from €740 for the shell/conversion only, excluding the Mac mini. Compatible Mac mini models are Apple Silicon M1, M2, M2 Pro, and M4. Estimated lead time is 4–6 weeks after the campaign closes. Warranty is 2 years for craftsmanship. Optional extras listed on the site include LED accent lighting, USB-C passthrough panel, silent 80 mm fan, finish options Matte/Polished/Raw, and custom modifications; final pricing for extras, different vintage Macintosh cases, restoration condition, and bundles including a Mac mini should be confirmed by the team. Crowdfunding support tiers are €10+ for development updates, €35+ for backers list and early launch access, and €120+ for voting on the next shell design plus exclusive updates. Current campaign info on the site: €4,250 raised of a €12,000 goal, 35% funded, 47 backers, 38 days left, 3 prototypes. If asked for price, give the €740 starting price first, clearly say it excludes Mac mini, then mention that extras/custom builds may change the final quote.',
+      title:        'mcase Assistant',
+      subtitle:     'Ask me anything',
+      welcomeTitle: 'How to run this project',
+      welcomeText:  'Open a terminal in the project folder and run: node server.js. Then open: http://localhost:8000. The website and AI chat will work through the same local server.',
+    });
+  </script>
+</body>
+</html>

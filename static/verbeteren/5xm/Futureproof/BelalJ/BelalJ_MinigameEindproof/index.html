@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeedChew: The Chew, Spit & Sprout Challenge</title>
+    <!-- Google Fonts: Outfit (modern organic sans) & Playfair Display (editorial serif accents) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Organic Ambient Glow & Particles (VIBRANT & COLORFUL) -->
+    <div class="ambient-bg">
+        <div class="glow-orb forest-glow-1"></div>
+        <div class="glow-orb forest-glow-2"></div>
+        <div class="glow-orb blossom-glow"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Main Responsive Application Container -->
+    <main id="app-container">
+        
+        <!-- Top Navigation Bar with Logo and Language Selector -->
+        <header class="top-navbar">
+            <div class="nav-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="nav-logo-icon">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                    <path d="M12 2v10M12 12l4-4M12 12L8 8"/>
+                </svg>
+                <span class="logo-text">SEED<span>CHEW</span></span>
+            </div>
+            
+            <div class="header-controls">
+                <button id="sound-btn" class="sound-btn active" title="Toggle Sound">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="sound-icon">
+                        <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+                        <path class="sound-waves" d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/>
+                    </svg>
+                </button>
+                
+                <div class="lang-selector">
+                    <button class="lang-btn active" data-lang="nl">NL</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ================= STATE 1: START SCREEN ================= -->
+        <section id="start-screen" class="screen active">
+            <div class="logo-container">
+                <div class="sprout-logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                        <path d="M12 2V12M12 12L16 8M12 12L8 8" stroke-linecap="round"/>
+                        <path d="M12 6C12 6 9 8 9 10C9 12 12 12 12 12C12 12 15 12 15 10C15 8 12 6 12 6Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h1 class="glow-title">SEED<span>CHEW</span></h1>
+                <p class="tagline" data-i18n="tagline">KAUW • SPUUG • BLOEI & GROEI</p>
+            </div>
+
+            <div class="glass-card start-card border-glow-vibrant">
+                <h2 data-i18n="start-card-title">Chew, Spit, and Sprout!</h2>
+                <p data-i18n="start-card-p1">
+                    Wist je dat reguliere kauwgom gemaakt is van <strong>synthetische plastics en rubber polymeren</strong> (dezelfde plastics als autobanden)? Wereldwijd dumpen we jaarlijks 100.000 ton kauwgom, wat leidt tot microplastics en dodelijke risico's voor vogels.
+                </p>
+                <p data-i18n="start-card-p2">
+                    <strong>SeedChew</strong> verandert dit volledig. Onze kauwgom is 100% biologisch afbreekbaar, gemaakt van natuurlijk chicle-boomsap en gevuld met <strong>inheemse wildbloemenzaden</strong>. Spuug het uit in de natuur en zie het veranderen in een bloemenparadijs in plaats van plasticvervuiling!
+                </p>
+
+                <div class="impact-preview-grid">
+                    <div class="preview-item">
+                        <span class="value text-warning" data-i18n="preview-val-1">25 Jaar</span>
+                        <span class="label" data-i18n="preview-lbl-1">Ontbinding reguliere gum</span>
+                    </div>
+                    <div class="preview-item">
+                        <span class="value text-success" data-i18n="preview-val-2">30 Dagen</span>
+                        <span class="label" data-i18n="preview-lbl-2">SeedChew Bloeitijd</span>
+                    </div>
+                    <div class="preview-item">
+                        <span class="value text-accent" data-i18n="preview-val-3">100%</span>
+                        <span class="label" data-i18n="preview-lbl-3">Bijen- & Bijvriendelijk</span>
+                    </div>
+                </div>
+
+                <button id="btn-start-challenge" class="btn btn-primary btn-glow btn-rainbow">
+                    <span data-i18n="btn-start">START SIMULATIE</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </button>
+            </div>
+            
+            <footer class="school-footer">
+                <p>Weboriëntatie Mini-Eindproef • Gemaakt door Belal J.</p>
+            </footer>
+        </section>
+
+        <!-- ================= STATE 2: ACTIVE GAME SCREEN ================= -->
+        <section id="game-screen" class="screen">
+            <!-- Game Header -->
+            <div class="game-header">
+                <div class="active-stage-indicator">
+                    <span id="stage-badge" class="badge badge-traditional">FASE 1</span>
+                    <h2 id="stage-title" data-i18n="stage-title-trad">Traditionele Kauwgom</h2>
+                </div>
+                <div class="lab-stats">
+                    <div class="stat-bubble border-glow-error">
+                        <span class="stat-label" data-i18n="stat-pollution-lbl">Bodemvervuiling:</span>
+                        <span id="stat-pollution" class="stat-value text-error">0%</span>
+                    </div>
+                    <div class="stat-bubble border-glow-success">
+                        <span class="stat-label" data-i18n="stat-flowers-lbl">Bloemen gekweekt:</span>
+                        <span id="stat-flowers" class="stat-value text-success">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workbench Layout -->
+            <div class="workbench">
+                
+                <!-- Left Sidebar: Instruction Panel -->
+                <aside class="glass-card instructions-panel border-glow-primary">
+                    <h3 data-i18n="instructions-hdr">SIMULATIE-LAB INSTRUCTIES</h3>
+                    <div class="instruction-content">
+                        <div id="instruction-step" class="instruction-step">
+                            <p class="step-desc">Loading instructions...</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Console/Log terminal -->
+                    <div class="terminal-container">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title" data-i18n="terminal-hdr">SYSTEM LOGS</span>
+                        </div>
+                        <div id="terminal-logs" class="terminal-logs">
+                            <div class="log-entry system">> Natuur-simulator geïnitialiseerd. Welkom onderzoeker.</div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Center Stage: The Interactive Garden Area -->
+                <div class="glass-card interaction-stage border-glow-success" id="interaction-stage">
+                    
+                    <!-- Weather/Rain overlay effect -->
+                    <div id="weather-overlay" class="weather-overlay"></div>
+                    
+                    <!-- Sound/Interaction ripples -->
+                    <div id="impact-flash-overlay" class="damage-flash"></div>
+
+                    <!-- GARDEN CANVAS (SVG Visualizer) -->
+                    <div class="garden-canvas-wrapper">
+                        <div class="garden-svg-container" id="garden-svg-container">
+                            <svg viewBox="0 0 400 320" width="100%" height="100%" id="garden-svg">
+                                <defs>
+                                    <!-- Sky Hatching (Retro diagonal white lines) -->
+                                    <pattern id="hatch-sky" width="16" height="16" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+                                        <line x1="0" y1="0" x2="0" y2="16" stroke="#ffffff" stroke-width="2.5" opacity="0.75" />
+                                    </pattern>
+                                    <!-- Sun Hatching (Warm orange stripes on yellow sun) -->
+                                    <pattern id="hatch-sun" width="8" height="8" patternTransform="rotate(30)" patternUnits="userSpaceOnUse">
+                                        <line x1="0" y1="0" x2="0" y2="8" stroke="#d97706" stroke-width="2" />
+                                    </pattern>
+                                    <!-- Hill 1 Hatching (Thin diagonal) -->
+                                    <pattern id="hatch-hill-thin" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+                                        <line x1="0" y1="0" x2="0" y2="8" stroke="#111827" stroke-width="1.2" opacity="0.4" />
+                                    </pattern>
+                                    <!-- Hill 2 Hatching (Reverse medium diagonal) -->
+                                    <pattern id="hatch-hill-medium" width="12" height="12" patternTransform="rotate(-45)" patternUnits="userSpaceOnUse">
+                                        <line x1="0" y1="0" x2="0" y2="12" stroke="#111827" stroke-width="1.8" opacity="0.45" />
+                                    </pattern>
+                                    <!-- Hill 3 Hatching (Cross-hatch) -->
+                                    <pattern id="hatch-hill-cross" width="10" height="10" patternUnits="userSpaceOnUse">
+                                        <line x1="0" y1="0" x2="10" y2="0" stroke="#111827" stroke-width="1.2" opacity="0.35" />
+                                        <line x1="0" y1="0" x2="0" y2="10" stroke="#111827" stroke-width="1.2" opacity="0.35" />
+                                    </pattern>
+                                    <!-- Soil Hatching (Horizontal coarse lines) -->
+                                    <pattern id="hatch-soil" width="12" height="6" patternUnits="userSpaceOnUse">
+                                        <line x1="0" y1="3" x2="12" y2="3" stroke="#451a03" stroke-width="1.8" />
+                                    </pattern>
+                                    <!-- Grass Hatching (Fine vertical blades shading) -->
+                                    <pattern id="hatch-grass" width="6" height="10" patternUnits="userSpaceOnUse">
+                                        <line x1="3" y1="0" x2="3" y2="10" stroke="#15803d" stroke-width="1.5" />
+                                    </pattern>
+                                </defs>
+
+                                <!-- Sky background (Layered solid blue under retro white hatch overlay) -->
+                                <rect x="0" y="0" width="400" height="240" fill="#bae6fd" />
+                                <rect x="0" y="0" width="400" height="240" fill="url(#hatch-sky)" />
+
+                                <!-- Yellow Sun (Layered solid yellow under orange hatch overlay) -->
+                                <circle cx="340" cy="50" r="22" fill="#fbbf24" />
+                                <circle cx="340" cy="50" r="22" fill="url(#hatch-sun)" stroke="#111827" stroke-width="3" />
+                                
+                                <!-- Decorative colorful hills in background (Layered solids under hatch overlays) -->
+                                <path d="M -20 240 L 80 160 L 190 240 Z" fill="#0f766e" />
+                                <path d="M -20 240 L 80 160 L 190 240 Z" fill="url(#hatch-hill-thin)" stroke="#111827" stroke-width="3.5" stroke-linejoin="round" />
+
+                                <path d="M 120 240 L 240 140 L 370 240 Z" fill="#0d9488" />
+                                <path d="M 120 240 L 240 140 L 370 240 Z" fill="url(#hatch-hill-medium)" stroke="#111827" stroke-width="3.5" stroke-linejoin="round" />
+
+                                <path d="M 280 240 L 340 180 L 420 240 Z" fill="#14b8a6" />
+                                <path d="M 280 240 L 340 180 L 420 240 Z" fill="url(#hatch-hill-cross)" stroke="#111827" stroke-width="3.5" stroke-linejoin="round" />
+                                
+                                <!-- Soil and Grass layers with bold outlines and hatch overlays -->
+                                <rect x="-5" y="240" width="410" height="85" fill="#78350f" />
+                                <rect x="-5" y="240" width="410" height="85" fill="url(#hatch-soil)" stroke="#111827" stroke-width="3" />
+
+                                <rect x="-5" y="240" width="410" height="10" fill="#22c55e" /> <!-- Grass top line -->
+                                <rect x="-5" y="240" width="410" height="10" fill="url(#hatch-grass)" stroke="#111827" stroke-width="3" />
+
+                                <!-- Microplastics / pollution dots (Traditional phase) -->
+                                <g id="soil-pollution-layer"></g>
+
+                                <!-- ANIMAL OVERLAYS (Cartoon Comic Style) -->
+                                <!-- Bird looking for food (appears in traditional stage) -->
+                                <g id="svg-bird" class="bird-group" transform="translate(-50, 80)" opacity="0">
+                                    <path d="M 0 0 C 10 -10, 20 -10, 30 0 L 25 10 L 5 10 Z" fill="#3b82f6" stroke="#111827" stroke-width="2" stroke-linejoin="round" /> <!-- Bluebird -->
+                                    <polygon points="30,0 35,-3 28,5" fill="#f97316" stroke="#111827" stroke-width="1.5" stroke-linejoin="round" />
+                                    <circle cx="24" cy="-2" r="1.8" fill="#fff" stroke="#111827" stroke-width="1" />
+                                    <!-- Wing -->
+                                    <path d="M 10 5 C 10 -2, 20 -2, 20 5 Z" fill="#60a5fa" stroke="#111827" stroke-width="1.5" stroke-linejoin="round" />
+                                </g>
+
+                                <!-- Flying bees & colorful butterflies (appears in SeedChew flower blooming) -->
+                                <g id="svg-bees" opacity="0">
+                                    <!-- Bee 1 -->
+                                    <g class="bee-item" transform="translate(180, 140)">
+                                        <ellipse cx="0" cy="0" rx="7" ry="5" fill="#fbbf24" stroke="#111827" stroke-width="2" />
+                                        <path d="M -4 -4 L -4 4 M 0 -5 L 0 5 M 4 -4 L 4 4" stroke="#111827" stroke-width="2" />
+                                        <ellipse cx="-3" cy="-5" rx="3" ry="5" fill="#ffffff" stroke="#111827" stroke-width="1.5" transform="rotate(-30)" />
+                                        <ellipse cx="3" cy="-5" rx="3" ry="5" fill="#ffffff" stroke="#111827" stroke-width="1.5" transform="rotate(30)" />
+                                        <circle cx="4" cy="-1" r="1.2" fill="#111827" />
+                                    </g>
+                                    <!-- Bee 2 -->
+                                    <g class="bee-item" transform="translate(240, 110)">
+                                        <ellipse cx="0" cy="0" rx="7" ry="5" fill="#fbbf24" stroke="#111827" stroke-width="2" />
+                                        <path d="M -4 -4 L -4 4 M 0 -5 L 0 5 M 4 -4 L 4 4" stroke="#111827" stroke-width="2" />
+                                        <ellipse cx="-3" cy="-5" rx="3" ry="5" fill="#ffffff" stroke="#111827" stroke-width="1.5" transform="rotate(-30)" />
+                                        <ellipse cx="3" cy="-5" rx="3" ry="5" fill="#ffffff" stroke="#111827" stroke-width="1.5" transform="rotate(30)" />
+                                        <circle cx="4" cy="-1" r="1.2" fill="#111827" />
+                                    </g>
+                                    <!-- Butterfly 1 (Blossom Pink / Cherry) -->
+                                    <g class="bee-item" transform="translate(300, 150)">
+                                        <path d="M 0 0 C -5 -10, -15 -10, -10 -2 C -15 5, -5 5, 0 0" fill="#ec4899" stroke="#111827" stroke-width="2" stroke-linejoin="round" />
+                                        <path d="M 0 0 C 5 -10, 15 -10, 10 -2 C 15 5, 5 5, 0 0" fill="#ec4899" stroke="#111827" stroke-width="2" stroke-linejoin="round" />
+                                        <line x1="0" y1="0" x2="-2" y2="-12" stroke="#111827" stroke-width="2" />
+                                        <line x1="0" y1="0" x2="2" y2="-12" stroke="#111827" stroke-width="2" />
+                                        <ellipse cx="0" cy="-2" rx="2" ry="5" fill="#111827" />
+                                    </g>
+                                </g>
+
+                                <!-- Trajectory path for aiming -->
+                                <path id="svg-trajectory" d="" fill="none" stroke="#111827" stroke-width="2.5" stroke-dasharray="6 4" opacity="0" />
+                                <circle id="svg-aim-target" cx="0" cy="0" r="6" fill="none" stroke="#111827" stroke-width="2" stroke-dasharray="3 2" opacity="0" />
+
+                                <!-- THE SPIT OUT GUM OBJECT (Chunky Cartoon Outlined) -->
+                                <circle id="svg-gum-projectile" cx="30" cy="180" r="7" fill="#f43f5e" stroke="#111827" stroke-width="2" opacity="0" />
+
+                                <!-- Drag handle for aiming slingshot -->
+                                <g id="svg-slingshot-group" transform="translate(30, 180)" cursor="grab" opacity="0" style="pointer-events: none;">
+                                    <circle cx="0" cy="0" r="16" fill="rgba(255, 255, 255, 0.15)" stroke="#111827" stroke-width="2" stroke-dasharray="4 2" />
+                                    <circle cx="0" cy="0" r="7" fill="#f43f5e" stroke="#111827" stroke-width="2" id="svg-drag-center" />
+                                </g>
+
+                                <!-- GUM ON SOIL / DECOMPOSITION AND PLANT GROWING GRAPHICS -->
+                                <g id="interactive-botanical-group" transform="translate(200, 240)">
+                                    <!-- Gum wad lying in grass (Cartoon) -->
+                                    <g id="gum-wad" transform="translate(0, -3)" opacity="0">
+                                        <ellipse cx="0" cy="0" rx="9" ry="5" fill="#f43f5e" stroke="#111827" stroke-width="2" id="svg-gum-color" />
+                                        <!-- small bubbles on gum -->
+                                        <circle cx="-3" cy="-1.5" r="1.8" fill="#ffffff" stroke="#111827" stroke-width="1" />
+                                    </g>
+
+                                    <!-- Traditional gum microplastics pollution grid (spreads out underground) -->
+                                    <g id="traditional-pollution-underground" opacity="0">
+                                        <line x1="0" y1="0" x2="-20" y2="20" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="3 3" />
+                                        <line x1="0" y1="0" x2="20" y2="20" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="3 3" />
+                                        <circle cx="-20" cy="20" r="5" fill="#ef4444" stroke="#111827" stroke-width="2" />
+                                        <circle cx="20" cy="20" r="5" fill="#ef4444" stroke="#111827" stroke-width="2" />
+                                        <text x="0" y="38" font-family="Outfit" font-size="8" fill="#fca5a5" stroke="#111827" stroke-width="2" paint-order="stroke fill" text-anchor="middle" font-weight="bold" data-i18n="plastic-litter-txt">PLASTIC VERVUILING</text>
+                                    </g>
+
+                                    <!-- SeedChew Plant Growth Stages (Fades in dynamically - Comic outline styled) -->
+                                    <g id="seedchew-botanical-stages">
+                                        <!-- Stage 1: Sprout (Day 8 - 14) -->
+                                        <g id="plant-sprout" opacity="0">
+                                            <!-- Sprout stem thick outline -->
+                                            <path d="M 0 0 C -5 -10, -2 -20, 0 -22" fill="none" stroke="#111827" stroke-width="7" stroke-linecap="round" />
+                                            <!-- Sprout stem inner green -->
+                                            <path d="M 0 0 C -5 -10, -2 -20, 0 -22" fill="none" stroke="#4ade80" stroke-width="3.5" stroke-linecap="round" />
+                                            <!-- Sprout stem hand-drawn shading ticks -->
+                                            <path d="M -1 -4 L -3 -3 M -2 -9 L -4 -8 M -1 -14 L -3 -13 M 0 -18 L -2 -17" stroke="#15803d" stroke-width="1" stroke-linecap="round" />
+                                            
+                                            <!-- Sprout small leaves -->
+                                            <path d="M -2 -10 C -8 -10, -12 -16, -2 -14 Z" fill="#22c55e" stroke="#111827" stroke-width="2" stroke-linejoin="round" />
+                                            <!-- Left leaf center vein & shading ticks -->
+                                            <path d="M -2 -10 Q -5 -12, -7 -14" stroke="#111827" stroke-width="1.2" stroke-linecap="round" fill="none" />
+                                            <path d="M -4 -11 L -5 -13 M -3 -12 L -3 -14" stroke="#111827" stroke-width="0.8" stroke-linecap="round" />
+                                            
+                                            <path d="M 0 -15 C 6 -15, 10 -21, 0 -19 Z" fill="#22c55e" stroke="#111827" stroke-width="2" stroke-linejoin="round" />
+                                            <!-- Right leaf center vein & shading ticks -->
+                                            <path d="M 0 -15 Q 4 -17, 5 -18" stroke="#111827" stroke-width="1.2" stroke-linecap="round" fill="none" />
+                                            <path d="M 2 -16 L 3 -18 M 1 -17 L 1 -19" stroke="#111827" stroke-width="0.8" stroke-linecap="round" />
+                                        </g>
+                                        
+                                        <!-- Stage 2: Tall Plant (Day 15 - 24) -->
+                                        <g id="plant-leaves" opacity="0">
+                                            <!-- Stem thick outline -->
+                                            <path d="M 0 0 Q -10 -20, -5 -45" fill="none" stroke="#111827" stroke-width="8" stroke-linecap="round" />
+                                            <!-- Stem green fill -->
+                                            <path d="M 0 0 Q -10 -20, -5 -45" fill="none" stroke="#22c55e" stroke-width="4" stroke-linecap="round" />
+                                            <!-- Stem detailed retro shading marks -->
+                                            <path d="M -4 -8 L -6 -7 M -6 -18 L -8 -17 M -5 -28 L -7 -27 M -4 -38 L -6 -37" stroke="#15803d" stroke-width="1.2" stroke-linecap="round" />
+                                            
+                                            <!-- Leaf 1 with thick outline -->
+                                            <path d="M -6 -18 C -18 -18, -24 -30, -6 -24 Z" fill="#4ade80" stroke="#111827" stroke-width="2.5" stroke-linejoin="round" />
+                                            <!-- Leaf 1 center vein and vintage hatching ticks -->
+                                            <path d="M -6 -18 Q -14 -20, -18 -24" stroke="#111827" stroke-width="1.5" stroke-linecap="round" fill="none" />
+                                            <path d="M -10 -19 L -12 -22 M -13 -20 L -15 -23 M -8 -20 L -9 -23" stroke="#111827" stroke-width="1" stroke-linecap="round" />
+                                            
+                                            <!-- Leaf 2 with thick outline -->
+                                            <path d="M -4 -30 C 7 -30, 14 -42, -4 -34 Z" fill="#4ade80" stroke="#111827" stroke-width="2.5" stroke-linejoin="round" />
+                                            <!-- Leaf 2 center vein and vintage hatching ticks -->
+                                            <path d="M -4 -30 Q 4 -32, 8 -36" stroke="#111827" stroke-width="1.5" stroke-linecap="round" fill="none" />
+                                            <path d="M 0 -31 L 2 -34 M 3 -32 L 5 -35 M -2 -32 L -1 -35" stroke="#111827" stroke-width="1" stroke-linecap="round" />
+                                        </g>
+
+                                        <!-- Stage 3: Rich colorful Meadow Blooming (Day 25 - 30) -->
+                                        <g id="plant-flower" opacity="0" class="flower-bloomed-group">
+                                            <!-- CENTRAL FLOWER: Wilde Kamille (Daisy Style) -->
+                                            <!-- Stem thick outline -->
+                                            <path d="M 0 0 Q -5 -35, 0 -70" fill="none" stroke="#111827" stroke-width="8.5" stroke-linecap="round" />
+                                            <!-- Stem green fill -->
+                                            <path d="M 0 0 Q -5 -35, 0 -70" fill="none" stroke="#15803d" stroke-width="4.5" stroke-linecap="round" />
+                                            <!-- Stem shading ticks -->
+                                            <path d="M -3 -15 L -5 -14 M -4 -30 L -6 -29 M -2 -45 L -4 -44 M -1 -60 L -3 -59" stroke="#166534" stroke-width="1.2" stroke-linecap="round" />
+                                            
+                                            <!-- Leaves -->
+                                            <path d="M -4 -25 C -17 -25, -23 -37, -4 -30 Z" fill="#166534" stroke="#111827" stroke-width="2.5" stroke-linejoin="round" />
+                                            <!-- Leaf 1 center vein & shading ticks -->
+                                            <path d="M -4 -25 Q -12 -27, -17 -31" stroke="#111827" stroke-width="1.2" fill="none" />
+                                            <path d="M -8 -26 L -9 -28 M -11 -27 L -12 -29" stroke="#111827" stroke-width="0.8" />
+                                            
+                                            <path d="M -2 -48 C 10 -48, 18 -60, -2 -53 Z" fill="#166534" stroke="#111827" stroke-width="2.5" stroke-linejoin="round" />
+                                            <!-- Leaf 2 center vein & shading ticks -->
+                                            <path d="M -2 -48 Q 6 -50, 12 -54" stroke="#111827" stroke-width="1.2" fill="none" />
+                                            <path d="M 3 -49 L 4 -51 M 6 -50 L 7 -52" stroke="#111827" stroke-width="0.8" />
+                                            
+                                            <!-- Flower Head group (Pulsating and beautifully cartoon structured) -->
+                                            <g transform="translate(0, -70)" class="flower-head">
+                                                <!-- Petals with clear strokes -->
+                                                <circle cx="0" cy="-14" r="9" fill="#ffffff" stroke="#111827" stroke-width="2" />
+                                                <circle cx="0" cy="14" r="9" fill="#ffffff" stroke="#111827" stroke-width="2" />
+                                                <circle cx="-14" cy="0" r="9" fill="#ffffff" stroke="#111827" stroke-width="2" />
+                                                <circle cx="14" cy="0" r="9" fill="#ffffff" stroke="#111827" stroke-width="2" />
+                                                <circle cx="-10" cy="-10" r="9" fill="#ffffff" stroke="#111827" stroke-width="2" />
+                                                <circle cx="10" cy="10" r="9" fill="#ffffff" stroke="#111827" stroke-width="2" />
+                                                <circle cx="-10" cy="10" r="9" fill="#ffffff" stroke="#111827" stroke-width="2" />
+                                                <circle cx="10" cy="-10" r="9" fill="#ffffff" stroke="#111827" stroke-width="2" />
+                                                
+                                                <!-- Delicate radial petal folds / hand-drawn texture lines -->
+                                                <!-- Top petal -->
+                                                <path d="M 0 -22 L 0 -17 M -3 -21 L -2 -18 M 3 -21 L 2 -18" stroke="#111827" stroke-width="0.8" stroke-linecap="round" />
+                                                <!-- Bottom petal -->
+                                                <path d="M 0 22 L 0 17 M -3 21 L -2 18 M 3 21 L 2 18" stroke="#111827" stroke-width="0.8" stroke-linecap="round" />
+                                                <!-- Left petal -->
+                                                <path d="M -22 0 L -17 0 M -21 -3 L -18 -2 M -21 3 L -18 2" stroke="#111827" stroke-width="0.8" stroke-linecap="round" />
+                                                <!-- Right petal -->
+                                                <path d="M 22 0 L 17 0 M 21 -3 L 18 -2 M 21 3 L 18 2" stroke="#111827" stroke-width="0.8" stroke-linecap="round" />
+                                                <!-- Top-Left petal -->
+                                                <path d="M -16 -16 L -12 -12 M -17 -13 L -14 -11 M -13 -17 L -11 -14" stroke="#111827" stroke-width="0.8" stroke-linecap="round" />
+                                                <!-- Bottom-Right petal -->
+                                                <path d="M 16 16 L 12 12 M 17 13 L 14 11 M 13 17 L 11 14" stroke="#111827" stroke-width="0.8" stroke-linecap="round" />
+                                                <!-- Bottom-Left petal -->
+                                                <path d="M -16 16 L -12 12 M -17 13 L -14 11 M -13 17 L -11 14" stroke="#111827" stroke-width="0.8" stroke-linecap="round" />
+                                                <!-- Top-Right petal -->
+                                                <path d="M 16 -16 L 12 -12 M 17 -13 L 14 -11 M 13 -17 L 11 -14" stroke="#111827" stroke-width="0.8" stroke-linecap="round" />
+                                                
+                                                <!-- Yellow Center with a cute smiley face -->
+                                                <circle cx="0" cy="0" r="11" fill="#facc15" stroke="#111827" stroke-width="2.5" />
+                                                
+                                                <!-- Cute Vintage shading ticks at bottom of center circle -->
+                                                <path d="M -6 6 Q 0 10, 6 6 M -4 8 Q 0 10.5, 4 8" stroke="#d97706" stroke-width="1" stroke-linecap="round" fill="none" />
+                                                
+                                                <circle cx="-4" cy="-2" r="1.5" fill="#111827" />
+                                                <circle cx="4" cy="-2" r="1.5" fill="#111827" />
+                                                <path d="M -3 2 Q 0 5, 3 2" stroke="#111827" stroke-width="1.5" stroke-linecap="round" fill="none" />
+                                            </g>
+
+                                            <!-- ADDED COLORFUL SECONDARY FLOWERS (Makes it colorful!) -->
+                                            <!-- Blue Violet (Left side) -->
+                                            <g transform="translate(-25, 0)">
+                                                <!-- Stem outline -->
+                                                <path d="M 0 0 Q -10 -15, -12 -35" fill="none" stroke="#111827" stroke-width="7" stroke-linecap="round" />
+                                                <!-- Stem fill -->
+                                                <path d="M 0 0 Q -10 -15, -12 -35" fill="none" stroke="#15803d" stroke-width="3" stroke-linecap="round" />
+                                                <!-- Stem detailed shading ticks -->
+                                                <path d="M -3 -8 L -5 -7 M -5 -18 L -7 -17 M -8 -28 L -10 -27" stroke="#166534" stroke-width="1" stroke-linecap="round" />
+                                                
+                                                <g transform="translate(-12, -35)">
+                                                    <circle cx="0" cy="-7" r="6.5" fill="#6366f1" stroke="#111827" stroke-width="2" />
+                                                    <circle cx="-7" cy="0" r="6.5" fill="#6366f1" stroke="#111827" stroke-width="2" />
+                                                    <circle cx="7" cy="0" r="6.5" fill="#6366f1" stroke="#111827" stroke-width="2" />
+                                                    <circle cx="0" cy="7" r="6.5" fill="#6366f1" stroke="#111827" stroke-width="2" />
+                                                    
+                                                    <!-- Radial veins inside violet petals -->
+                                                    <path d="M 0 -12 L 0 -9 M -12 0 L -9 0 M 12 0 L 9 0 M 0 12 L 0 9" stroke="#111827" stroke-width="0.8" stroke-linecap="round" />
+                                                    
+                                                    <circle cx="0" cy="0" r="4.5" fill="#fef08a" stroke="#111827" stroke-width="1.5" />
+                                                </g>
+                                            </g>
+
+                                            <!-- Blossom Pink Poppy (Right side) -->
+                                            <g transform="translate(25, 0)">
+                                                <!-- Stem outline -->
+                                                <path d="M 0 0 Q 10 -15, 15 -42" fill="none" stroke="#111827" stroke-width="7" stroke-linecap="round" />
+                                                <!-- Stem fill -->
+                                                <path d="M 0 0 Q 10 -15, 15 -42" fill="none" stroke="#15803d" stroke-width="3" stroke-linecap="round" />
+                                                <!-- Stem detailed shading ticks -->
+                                                <path d="M 3 -8 L 5 -7 M 5 -18 L 7 -17 M 8 -28 L 10 -27" stroke="#166534" stroke-width="1" stroke-linecap="round" />
+                                                
+                                                <g transform="translate(15, -42)">
+                                                    <circle cx="0" cy="-8" r="7.5" fill="#ec4899" stroke="#111827" stroke-width="2" />
+                                                    <circle cx="-8" cy="0" r="7.5" fill="#ec4899" stroke="#111827" stroke-width="2" />
+                                                    <circle cx="8" cy="0" r="7.5" fill="#ec4899" stroke="#111827" stroke-width="2" />
+                                                    <circle cx="0" cy="8" r="7.5" fill="#ec4899" stroke="#111827" stroke-width="2" />
+                                                    
+                                                    <!-- Radial veins inside pink poppy petals -->
+                                                    <path d="M 0 -14 L 0 -11 M -14 0 L -11 0 M 14 0 L 11 0 M 0 14 L 0 11" stroke="#111827" stroke-width="0.8" stroke-linecap="round" />
+                                                    
+                                                    <circle cx="0" cy="0" r="5.5" fill="#111827" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <!-- Spit & Chew Dashboard controls -->
+                        <div class="tool-controls">
+                            <!-- Chewing Controller -->
+                            <div class="tool-card border-glow-warning" id="chew-card">
+                                <span class="tool-title">
+                                    <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                    <span data-i18n="chew-card-hdr">Kauw-o-meter</span>
+                                </span>
+                                <div class="gauge-container">
+                                    <div class="gauge-bar-wrapper">
+                                        <div id="chew-gauge-fill" class="gauge-fill chew-fill" style="width: 0%"></div>
+                                    </div>
+                                    <div class="gauge-markers">
+                                        <span data-i18n="chew-bar-l1">Hard</span>
+                                        <span class="target-label" data-i18n="chew-bar-l2">GELIJKMATIG KAUWEN</span>
+                                        <span data-i18n="chew-bar-l3">Super Elastisch!</span>
+                                    </div>
+                                </div>
+                                <div class="gauge-metrics-row">
+                                    <span data-i18n="chew-metrics-lbl">Kauwstatus:</span> <strong id="val-chew-status">Nog niet gekauwd</strong>
+                                </div>
+                                <button id="btn-chew-action" class="btn btn-warning btn-tool-action btn-rainbow">
+                                    <span data-i18n="btn-chew">KLIK SNEL OM TE KAUWEN</span>
+                                </button>
+                            </div>
+
+                            <!-- Seed Selector Card (Traditional doesn't need it, but let's hide/show it dynamically) -->
+                            <div class="tool-card border-glow-accent card-disabled" id="seed-card" style="display: none;">
+                                <span class="tool-title">
+                                    <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                                        <path d="M12 8v8M8 12h8"/>
+                                    </svg>
+                                    <span data-i18n="seed-card-hdr">Kies je Bloemzaad</span>
+                                </span>
+                                <div class="seed-options">
+                                    <button class="seed-option-btn active" data-seed="daisy" title="Wilde Kamille">
+                                        <span class="seed-emoji">🌼</span>
+                                        <span class="seed-name" data-i18n="seed-daisy">Kamille</span>
+                                    </button>
+                                    <button class="seed-option-btn" data-seed="violet" title="Indigo Viooltje">
+                                        <span class="seed-emoji">💜</span>
+                                        <span class="seed-name" data-i18n="seed-violet">Viooltje</span>
+                                    </button>
+                                    <button class="seed-option-btn" data-seed="poppy" title="Roze Klaproos">
+                                        <span class="seed-emoji">🌺</span>
+                                        <span class="seed-name" data-i18n="seed-poppy">Klaproos</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Spitting Launcher Tool -->
+                            <div class="tool-card card-disabled border-glow-error" id="spit-card">
+                                <span class="tool-title">
+                                    <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22a10 10 0 1 0-10-10 10 10 0 0 0 10 10zm-1-13h2v6h-2zm0-4h2v2h-2z"/>
+                                    </svg>
+                                    <span data-i18n="spit-card-hdr">Spuug-activator</span>
+                                </span>
+                                <p class="spit-desc text-muted" data-i18n="spit-card-desc">Zodra de kauwgom de juiste textuur heeft, kun je hem op het grasperk spugen.</p>
+                                <button id="btn-spit-action" class="btn btn-danger btn-tool-action btn-pulse-active" disabled>
+                                    <span data-i18n="btn-spit">SPUUG UIT IN NATUUR!</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Time lapse controller (Invisible until projectile lands) -->
+                        <div class="time-lapse-card glass-card border-glow-success" id="time-lapse-controls" style="display: none;">
+                            <div class="slider-header-row">
+                                <span class="time-lapse-title" id="timelapse-title" data-i18n="timelapse-hdr">TIME-LAPSE TIJDREIS</span>
+                                <span class="time-lapse-badge" id="val-time-lapse">0 Dagen</span>
+                            </div>
+                            <div class="time-lapse-slider-wrapper" id="time-lapse-slider-wrapper">
+                                <input type="range" id="time-lapse-range" min="0" max="30" value="0" step="1" class="range-slider">
+                                <div class="slider-ticks" id="time-lapse-ticks">
+                                    <span>Dag 0</span>
+                                    <span>Dag 10</span>
+                                    <span>Dag 20</span>
+                                    <span>Dag 30 (Bloei!)</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Interactive Nurture Controls (visible only during SeedChew stage after spitting) -->
+                            <div class="nurture-controls-wrapper" id="nurture-controls-wrapper" style="display: none;">
+                                <div class="nurture-status-row">
+                                    <div class="nurture-status-item">
+                                        <span class="nurture-status-label" data-i18n="nurture-water-lbl">Water:</span>
+                                        <span class="nurture-status-val" id="nurture-water-val">0/3</span>
+                                    </div>
+                                    <div class="nurture-status-item">
+                                        <span class="nurture-status-label" data-i18n="nurture-sun-lbl">Zon:</span>
+                                        <span class="nurture-status-val" id="nurture-sun-val">0/3</span>
+                                    </div>
+                                </div>
+                                <div class="nurture-buttons">
+                                    <button id="btn-nurture-water" class="btn btn-primary btn-glow btn-nurture-action btn-small-action">
+                                        <span>💧 GIET WATER</span>
+                                    </button>
+                                    <button id="btn-nurture-sun" class="btn btn-warning btn-glow btn-nurture-action btn-small-action">
+                                        <span>☀️ LAAT ZON SCHIJNEN</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="time-lapse-narrative" id="time-lapse-narrative">
+                                Sleep de regelaar om de klok vooruit te spoelen en de chemische afbraak te bestuderen.
+                            </div>
+                            <button id="btn-next-stage" class="btn btn-success btn-small-action mt-3 btn-glow">
+                                <span data-i18n="btn-next-stage">GA NAAR SPROUTGUM CHALLENGE</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= STATE 3: RESULTS & CROWDFUNDING SCREEN ================= -->
+        <section id="result-screen" class="screen">
+            <header class="logo-container results-logo">
+                <div class="sprout-logo-icon animate-bounce">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                        <path d="M12 2V12M12 12L16 8M12 12L8 8" stroke-linecap="round"/>
+                        <path d="M12 6C12 6 9 8 9 10C9 12 12 12 12 12C12 12 15 12 15 10C15 8 12 6 12 6Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h2 data-i18n="results-hdr">SIMULATIE RAPPORT</h2>
+                <p class="tagline" data-i18n="results-tagline">RESULTATEN VAN DE KAUWGOM VERGELIJKING</p>
+            </header>
+
+            <div class="results-grid">
+                
+                <!-- Left column: Lab Comparison Card -->
+                <div class="glass-card comparison-card border-glow-primary">
+                    <h3 data-i18n="table-hdr">TRADITIONEEL VS. SEEDCHEW</h3>
+                    
+                    <div class="table-container">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th data-i18n="t-criteria">Criteria</th>
+                                    <th class="col-traditional" data-i18n="t-traditional">Traditioneel</th>
+                                    <th class="col-volt" data-i18n="t-seedchew">SeedChew</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-i18n="tc-basis">Grondstof basis</td>
+                                    <td class="text-error" data-i18n="tc-basis-trad">Synthetisch Plastic (Polymeer)</td>
+                                    <td class="text-success font-bold" data-i18n="tc-basis-sc">100% Natuurlijk Chicle sap</td>
+                                </tr>
+                                <tr>
+                                    <td data-i18n="tc-time">Volledige afbraaktijd</td>
+                                    <td class="text-error" data-i18n="tc-time-trad">> 25 Jaar (microplastics)</td>
+                                    <td class="text-success font-bold" data-i18n="tc-time-sc">3 tot 4 Weken (compost)</td>
+                                </tr>
+                                <tr>
+                                    <td data-i18n="tc-pollution">Bodemvervuiling</td>
+                                    <td class="text-error" data-i18n="tc-pollution-trad">100% toxische ophoping</td>
+                                    <td class="text-success font-bold" data-i18n="tc-pollution-sc">0% (Verrijkt de grond)</td>
+                                </tr>
+                                <tr>
+                                    <td data-i18n="tc-fauna">Invloed op fauna</td>
+                                    <td class="text-error" data-i18n="tc-fauna-trad">Dodelijk (vogelmaag verstopping)</td>
+                                    <td class="text-success font-bold" data-i18n="tc-fauna-sc">Veilig (inheemse zaden eetbaar)</td>
+                                </tr>
+                                <tr>
+                                    <td data-i18n="tc-impact">Ecologische impact</td>
+                                    <td class="text-error" data-i18n="tc-impact-trad">Zwerfafval & Plasticberg</td>
+                                    <td class="text-success font-bold" data-i18n="tc-impact-sc">Groei wilde bloemen / bijenvoeding</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="carbon-bar-comparison">
+                        <span class="comparison-title" data-i18n="chart-title">Ontbindingstijd Vergelijking (in dagen)</span>
+                        <div class="bar-chart-container">
+                            <div class="bar-row">
+                                <span class="bar-label" data-i18n="t-traditional">Traditioneel</span>
+                                <div class="bar-wrapper">
+                                    <div class="bar-fill bg-error" style="width: 100%"></div>
+                                </div>
+                                <span class="bar-value" data-i18n="chart-val-trad">9125 dagen</span>
+                            </div>
+                            <div class="bar-row">
+                                <span class="bar-label" data-i18n="t-seedchew">SeedChew</span>
+                                <div class="bar-wrapper">
+                                    <div class="bar-fill bg-success" style="width: 0.32%"></div>
+                                </div>
+                                <span class="bar-value" data-i18n="chart-val-sc">30 dagen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right column: Crowdfunding Backing Simulator -->
+                <div class="glass-card pledge-card border-glow-success">
+                    <span class="badge badge-accent" data-i18n="pledge-badge">CROWDFUNDING CAMPAGNE</span>
+                    <h3 data-i18n="pledge-hdr">Plant bloemen met jouw steun</h3>
+                    <p class="pledge-intro" data-i18n="pledge-intro">
+                        SeedChew lost het kauwgomprobleem op en maakt van de steden groene ecosystemen. We hebben jouw steun nodig om biologisch chicle-boomsap op grote schaal in te kopen en machines aan te passen voor zaadinjecties.
+                    </p>
+
+                    <!-- Dynamic Backer rank Certificate mockup -->
+                    <div class="backer-badge-card border-glow-warning" id="backer-certificate">
+                        <div class="badge-glow-effect"></div>
+                        <div class="cert-stamps-layer" id="cert-stamps-layer"></div>
+                        <div class="cert-header">
+                            <span class="cert-title" data-i18n="cert-title">OFFICIEEL CROWDFUND-CERTIFICAAT</span>
+                            <span class="cert-rank" id="cert-rank-display">SPROUT BACKER</span>
+                        </div>
+                        <div class="cert-body">
+                            <div class="cert-names-col">
+                                <span class="cert-text" data-i18n="cert-text">Gecertificeerd Wildbloem Zaaier</span>
+                                <span class="cert-backer-name" id="cert-backer-name-display">Belal J.</span>
+                            </div>
+                            <span class="pledge-amount-text" id="cert-amount-display">€ 15</span>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-serial">SEED-2026-#740921</span>
+                            <span class="cert-seal" data-i18n="cert-seal">100% BIODEGRADABLE</span>
+                        </div>
+                    </div>
+
+                    <!-- Personalization controls -->
+                    <div class="personalize-container">
+                        <div class="form-group">
+                            <label for="cert-name-input" data-i18n="cert-name-lbl">Naam op certificaat:</label>
+                            <input type="text" id="cert-name-input" class="cert-name-input" value="Belal J." maxlength="25">
+                        </div>
+                        <div class="stamps-group">
+                            <span class="stamps-label" data-i18n="stamps-lbl">Klik om een stempel te zetten:</span>
+                            <div class="stamps-buttons">
+                                <button class="stamp-btn" data-stamp="sprout" title="Eco Sprout">🌱</button>
+                                <button class="stamp-btn" data-stamp="bee" title="Bee Friendly">🐝</button>
+                                <button class="stamp-btn" data-stamp="verified" title="100% Organic">✓ ECO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PLEDGE SLIDER -->
+                    <div class="pledge-slider-container">
+                        <div class="slider-labels">
+                            <span data-i18n="slider-lbl">Kies jouw Pledge bedrag:</span>
+                            <span class="slider-current-val" id="slider-val-display">€15</span>
+                        </div>
+                        <input type="range" id="pledge-range" min="5" max="250" value="15" step="5" class="range-slider">
+                        <div class="slider-ticks">
+                            <span>€5</span>
+                            <span>€50</span>
+                            <span>€150</span>
+                            <span>€250</span>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Rewards description box -->
+                    <div class="reward-box" id="reward-box">
+                        <span class="reward-tier-name" id="reward-title">TIER 2: STARTER PACK</span>
+                        <p class="reward-desc" id="reward-desc">
+                            Je ontvangt 3 pakjes SeedChew (Munt, Aardbei en Wildbloesem) in 100% composteerbaar perkamentpapier en een set biologische Sprout stickers!
+                        </p>
+                    </div>
+
+                    <!-- Simulated Campaign Progress -->
+                    <div class="campaign-progress-container">
+                        <div class="progress-info">
+                            <span>Campagne status: <strong id="val-camp-percent">92% Behaald</strong></span>
+                            <span>€ <span id="val-camp-raised">18.450</span> / € 20.000 <span data-i18n="pledge-target">doel</span></span>
+                        </div>
+                        <div class="campaign-progress-bar">
+                            <div class="campaign-progress-fill" id="campaign-progress-fill" style="width: 92.25%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Call to action button -->
+                    <button id="btn-back-project" class="btn btn-success btn-glow btn-large btn-rainbow">
+                        <span data-i18n="btn-back-now">BACK SEEDCHEW NU</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M12 2V12M12 12L16 8M12 12L8 8" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    
+                    <button id="btn-restart-game" class="btn btn-secondary btn-small-action text-center mt-3">
+                        <span data-i18n="btn-replay">SPEEL OPNIEUW</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Confetti Canvas overlay for success moment -->
+    <canvas id="confetti-canvas" style="display: none;"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>

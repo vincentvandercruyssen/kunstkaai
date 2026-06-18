@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaAura - Slimme Watermeter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <img src="images/logo_futureproof.png" alt="AquaAura Logo" class="app-logo">
+            <p>Jouw slimme douchecoach</p>
+            <button id="statsBtn" class="menu-btn" aria-label="Weekoverzicht">📊</button>
+        </header>
+
+        <div id="infoOverlay" class="stats-overlay">
+            <div class="stats-panel info-panel">
+                <div class="stats-header">
+                    <h2>Hoe het werkt</h2>
+                    <button id="closeInfoBtn" class="close-btn" aria-label="Sluiten">✕</button>
+                </div>
+                <div class="info-content">
+                    <p>AquaAura helpt je om water en energie te besparen op een actieve manier.</p>
+                    <div class="info-card">
+                        <span class="info-icon">🌡️</span>
+                        <div class="info-text">
+                            <strong>Temperatuur-correctie</strong>
+                            <p>Zodra de timer de status <strong>"Let op"</strong> bereikt (na 5 minuten), zal het water
+                                elke minuut <strong>2 graden kouder</strong> worden.</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">💧</span>
+                        <div class="info-text">
+                            <strong>Geleidelijke afbouw</strong>
+                            <p>Dit stimuleert je om de douche sneller af te ronden zonder abrupt te hoeven stoppen.</p>
+                        </div>
+                    </div>
+                    <button id="startFromInfoBtn" class="primary-btn" style="margin-top: 1rem;">Start Douche</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="statsOverlay" class="stats-overlay">
+            <div class="stats-panel">
+                <div class="stats-header">
+                    <h2>Weekoverzicht</h2>
+                    <button id="closeStatsBtn" class="close-btn" aria-label="Sluiten">✕</button>
+                </div>
+                <p class="stats-subtitle">Douchetijd per dag (minuten)</p>
+                <div class="chart-wrapper">
+                    <div class="chart-area">
+                        <div id="yAxis" class="y-axis"></div>
+                        <div id="barChart" class="bar-chart"></div>
+                    </div>
+                    <div id="dayLabels" class="day-labels"></div>
+                </div>
+                <div class="stats-summary">
+                    <div class="summary-item">
+                        <span class="summary-label">Gemiddeld</span>
+                        <span id="avgTime" class="summary-value">--</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Totaal</span>
+                        <span id="totalTime" class="summary-value">--</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Beste dag</span>
+                        <span id="bestDay" class="summary-value">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <main>
+            <section class="device-view">
+                <div class="meter-container" id="meterContainer">
+                    <div class="meter-glow" id="meterGlow"></div>
+                    <div class="meter-content">
+                        <div id="savingBadge" class="saving-badge">Besparing Actief</div>
+                        <span id="timeDisplay">00:00</span>
+                        <span id="statusText">Klaar</span>
+                    </div>
+                </div>
+                <button id="startBtn" class="primary-btn">Start Douche</button>
+                <button id="infoBtn" class="secondary-btn">Waterbesparing</button>
+            </section>
+
+            <section class="dashboard">
+                <div class="glass-card stat-card">
+                    <div class="stat-icon">💧</div>
+                    <div class="stat-info">
+                        <h3>Bespaard Water</h3>
+                        <p class="stat-value">12.5 L</p>
+                        <p class="stat-sub">deze week</p>
+                    </div>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-info">
+                        <h3>Gemiddelde Tijd</h3>
+                        <p class="stat-value">6:30</p>
+                        <p class="stat-sub">minuten</p>
+                    </div>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-info">
+                        <h3>Persoonlijk Doel</h3>
+                        <p class="stat-value">6:00</p>
+                        <p class="stat-sub">minuten</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

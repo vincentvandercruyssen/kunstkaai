@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexWear Runner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <canvas id="c"></canvas>
+
+      <div id="ui">
+        <div class="stat">
+          <span>afstand</span>
+          <b id="s-dist">0</b>
+        </div>
+        <div class="stat center">
+          <span>buttons</span>
+          <b id="s-btn">0</b>
+        </div>
+        <div class="stat right">
+          <span>CO₂ bespaard</span>
+          <b id="s-co2">0.0 kg</b>
+        </div>
+      </div>
+
+      <div id="overlay">
+        <h2>NexWear Runner</h2>
+        <p>Spring over fast fashion.<br />Vang NexWear buttons.</p>
+        <div class="legend">
+          <span>🔘 button = +CO₂</span>
+          <span>👕 👖 🧥 = game over</span>
+        </div>
+        <button id="startbtn">▶ Spelen</button>
+        <p class="hint">Klik · spatie · tik om te springen</p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

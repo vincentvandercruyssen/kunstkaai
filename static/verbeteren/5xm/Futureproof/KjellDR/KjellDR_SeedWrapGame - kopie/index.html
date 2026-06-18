@@ -1,0 +1,181 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeedWrap — Plant The Future</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Lora:wght@400;600&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- FLASH -->
+    <div id="flash"></div>
+
+    <!-- FLOATING LEAVES -->
+    <div class="leaf" style="left:5%; animation-duration:12s;">🍃</div>
+    <div class="leaf" style="left:20%; animation-duration:15s;">🍃</div>
+    <div class="leaf" style="left:40%; animation-duration:10s;">🍃</div>
+    <div class="leaf" style="left:65%; animation-duration:13s;">🍃</div>
+    <div class="leaf" style="left:85%; animation-duration:16s;">🍃</div>
+
+    <!-- START SCREEN -->
+    <section id="startScreen" class="screen active">
+
+        <div class="card">
+
+            <h1>Plant The Future</h1>
+
+            <p>
+                Sorteer verpakkingen correct
+                en help de planeet herstellen.
+            </p>
+
+            <div class="difficulty-select">
+
+                <button class="difficulty-btn" data-mode="easy">
+                    Easy
+                </button>
+
+                <button class="difficulty-btn active" data-mode="normal">
+                    Normal
+                </button>
+
+                <button class="difficulty-btn" data-mode="hard">
+                    Hard
+                </button>
+
+            </div>
+
+            <button id="startBtn">
+                Start Experience
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- GAME -->
+    <section id="gameScreen" class="screen">
+
+        <div class="game-wrapper">
+
+            <div class="topbar">
+
+                <div>
+                    🌱 Score:
+                    <span id="score">0</span>
+                </div>
+
+                <div>
+                    ⏳ Tijd:
+                    <span id="timer">10</span>
+                </div>
+
+                <div>
+                    🎮 Ronde:
+                    <span id="round">1</span>/10
+                </div>
+
+            </div>
+
+            <div class="game-card">
+
+                <h2>
+                    Sleep de verpakking naar de juiste zone
+                </h2>
+
+                <!-- ITEM -->
+                <div class="drag-container">
+
+                    <div id="dragItem"
+                        class="draggable"
+                        draggable="true">
+
+                        🌱 SeedWrap
+
+                    </div>
+
+                </div>
+
+                <!-- ZONES -->
+                <div class="dropzones">
+
+                    <div class="dropzone bin plastic-bin"
+                        data-accept="plastic">
+
+                        <div class="bin-icon">🗑️</div>
+                        <div class="bin-label">Plastic</div>
+
+                    </div>
+
+                    <div class="dropzone bin paper-bin"
+                        data-accept="paper">
+
+                        <div class="bin-icon">📦</div>
+                        <div class="bin-label">Papier</div>
+
+                    </div>
+
+                    <div class="dropzone bin metal-bin"
+                        data-accept="metal">
+
+                        <div class="bin-icon">♻️</div>
+                        <div class="bin-label">Metaal</div>
+
+                    </div>
+
+                    <div class="dropzone garden-zone"
+                        data-accept="seedwrap">
+
+                        <div class="garden-title">
+                            🌿 SeedWrap Garden
+                        </div>
+
+                        <div id="gardenPlants"
+                            class="garden-plants">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="feedback"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- END -->
+    <section id="endScreen" class="screen">
+
+        <div class="card">
+
+            <h1>Game Over 🌱</h1>
+
+            <p id="finalText"></p>
+
+            <h3>Leaderboard</h3>
+
+            <ul id="leaderboard"></ul>
+
+            <button onclick="location.reload()">
+                Play Again
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

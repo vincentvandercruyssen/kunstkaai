@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Space+Grotesk:wght@700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    touch-action: manipulation;
+}
+
+.font-display {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+.fade-in {
+    animation: fadeIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.96) translateY(20px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.power-transition {
+    transition: width 0.1s linear, background-color 0.4s ease;
+}
+
+.glow-pulse {
+    box-shadow: 0 0 35px rgba(46, 91, 255, 1);
+}
+
+.glow-pulse-text {
+    text-shadow: 0 0 25px rgba(46, 91, 255, 0.8);
+}

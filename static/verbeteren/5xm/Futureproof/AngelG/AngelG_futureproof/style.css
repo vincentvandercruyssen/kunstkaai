@@ -1,0 +1,76 @@
+body{
+    margin:0;
+    overflow:hidden;
+    font-family:Arial, sans-serif;
+    text-align:center;
+
+    
+    background-image: url(images/trees.jpg);
+    background-size: 120%;
+}
+
+h1{
+    color:#1b5e20;
+    margin-top:10px;
+}
+
+#hud{
+    font-size:24px;
+    font-weight:bold;
+    color:#1b5e20;
+    margin-bottom:10px;
+}
+
+canvas{
+    
+    background-image: url(images/plain.jpg);
+     background-size: cover;
+    border:8px solid #2e7d32;
+    border-radius:20px;
+
+    box-shadow:
+        0 0 15px #4caf50,
+        0 0 30px #81c784,
+        0 0 45px #a5d6a7;
+}
+
+#leaves{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.leaf{
+    position:absolute;
+    font-size:24px;
+
+    animation:
+        fall linear infinite,
+        sway ease-in-out infinite;
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(-50px);
+    }
+
+    to{
+        transform:translateY(110vh);
+    }
+}
+
+@keyframes sway{
+
+    0%{
+        margin-left:-20px;
+    }
+
+    50%{
+        margin-left:20px;
+    }
+
+    100%{
+        margin-left:-20px;
+    }
+}

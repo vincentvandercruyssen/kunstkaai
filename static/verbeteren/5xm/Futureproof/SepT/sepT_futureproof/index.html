@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Plastic Cleanup Game - V4 PRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌍 Plastic Cleanup: 3D Power Edition</h1>
+<p>Kies een mode, koop hoedjes met krachten en domineer het scorebord!</p>
+
+<div id="game-container">
+  
+  <div id="hud">
+    <div class="hud-box">♻️ Score: <span id="score">0</span></div>
+    <div class="hud-box">🎒 Flesjes: <span id="inventory">0</span></div>
+    <div class="hud-box">💰 Munten: <span id="coins">0</span></div>
+    <div class="hud-box">🌍 <span id="world-name">Bos</span></div>
+    <div class="hud-box" id="timer-box" style="display: none; color: #ff4757;">⏱️ Tijd: <span id="timer">0</span>s</div>
+    <button id="shop-btn">Winkel 🛒</button>
+    <button id="scoreboard-btn">Scorebord 🏆</button>
+  </div>
+
+  <div id="start-screen" class="overlay">
+    <h2>Kies je Game Mode</h2>
+    <div style="display: flex; gap: 20px; margin-top: 20px;">
+      <button id="mode-classic-btn" class="large-btn" style="background: #2ecc71;">Klassiek (Oneindig)</button>
+      <button id="mode-timed-btn" class="large-btn" style="background: #e74c3c;">Tijdrit (Beperkte Tijd)</button>
+    </div>
+  </div>
+
+  <div id="duration-screen" class="overlay" style="display: none;">
+    <h2>Kies de Tijdsduur</h2>
+    <div style="display: flex; gap: 15px; margin-top: 20px;">
+      <button onclick="startTimedGame(30)" class="large-btn">30 Sec ⏱️</button>
+      <button onclick="startTimedGame(60)" class="large-btn" style="background: #f1c40f;">1 Min ⏱️</button>
+      <button onclick="startTimedGame(180)" class="large-btn" style="background: #9b59b6;">3 Min ⏱️</button>
+    </div>
+    <button id="back-to-modes-btn" style="margin-top: 30px; background: #7f8c8d;">Terug</button>
+  </div>
+
+  <div id="game-over-screen" class="overlay" style="display: none;">
+    <h2 style="color: #ff4757;">⏱️ Tijd is Om!</h2>
+    <p style="font-size: 24px;">Je hebt een score behaald van: <span id="final-score" style="color: #f1c40f; font-weight: bold;">0</span></p>
+    <div style="margin-top: 20px; display: flex; gap: 15px;">
+      <button id="go-save-score-btn" style="background: #2ecc71;">Sla score op 🏆</button>
+      <button id="restart-game-btn">Speel Opnieuw 🔄</button>
+    </div>
+  </div>
+
+  <div id="shop-screen" class="overlay" style="display: none;">
+    <h2>Winkel & Modificaties 🛒</h2>
+    
+    <h3>Hoedjes met Powers ⚡</h3>
+    <div class="shop-items" id="hats-shop"></div>
+
+    <h3>Werelden</h3>
+    <div class="shop-items" id="worlds-shop"></div>
+
+    <p id="shop-message"></p>
+    <button id="close-shop-btn">Terug naar Spel</button>
+  </div>
+
+  <div id="scoreboard-screen" class="overlay" style="display: none;">
+    <h2>🏆 Highscores</h2>
+    <div id="scores-list" class="score-list"></div>
+    <div style="margin-top: 20px; display: flex; gap: 15px;">
+      <button id="save-score-btn" style="background: #2ecc71;">Sla huidige score op</button>
+      <button id="close-scoreboard-btn">Sluiten</button>
+    </div>
+  </div>
+
+  <canvas id="game" width="1000" height="600"></canvas>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

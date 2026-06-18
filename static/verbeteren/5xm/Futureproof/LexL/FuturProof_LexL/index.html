@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SORTAI</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Eigen stijlblad -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="scherm-wrapper">
+
+  <!-- ══════════════════════════════════
+       STATE 1 – STARTSCHERM
+  ══════════════════════════════════ -->
+  <div id="startscherm" class="scherm actief">
+
+    <div class="game-logo">🗑️</div>
+    <div class="game-titel">Sort</div>
+    <div class="game-subtitel">Vang het afval · Red de planeet</div>
+
+    <div class="feit-box">
+      💡 <strong>Wist je dat?</strong> Wereldwijd produceren we elk jaar meer dan
+      <strong>2 miljard ton</strong> afval. Slechts 13% wordt gerecycleerd.
+    </div>
+
+    <div class="moeilijkheid-label">Kies moeilijkheidsgraad</div>
+    <div class="moeilijkheid-knoppen">
+      <button class="knop-moeilijk gekozen" data-snelheid="1"   onclick="kiesNiveau(this)">🌱 Makkelijk</button>
+      <button class="knop-moeilijk"         data-snelheid="1.6" onclick="kiesNiveau(this)">♻️ Normaal</button>
+      <button class="knop-moeilijk"         data-snelheid="2.4" onclick="kiesNiveau(this)">🔥 Moeilijk</button>
+    </div>
+
+    <button class="knop-start" onclick="startSpel()">▶ START HET SPEL</button>
+
+    <div class="uitleg-klein">
+      Gebruik <span>← →</span> of <span>A D</span> om te bewegen.<br>
+      Vang afval en sorteer het voor bonuspunten!
+    </div>
+
+  </div><!-- /startscherm -->
+
+
+  <!-- ══════════════════════════════════
+       STATE 2 – SPEELSCHERM
+  ══════════════════════════════════ -->
+  <div id="speelscherm" class="scherm">
+
+    <!-- HUD -->
+    <div class="hud">
+      <div class="hud-item">
+        <div class="hud-label">Score</div>
+        <div class="hud-waarde" id="hud-score">0</div>
+      </div>
+      <div class="hud-item">
+        <div class="hud-label">Levens</div>
+        <div class="hud-waarde" id="hud-levens">❤️❤️❤️</div>
+      </div>
+      <div class="hud-item">
+        <div class="hud-label">Tijd</div>
+        <div class="hud-waarde" id="hud-tijd">60</div>
+      </div>
+    </div>
+
+    <!-- Canvas (spelveld) -->
+    <canvas id="game-canvas" width="420" height="480"></canvas>
+
+    <!-- Sorteer-knoppen -->
+    <div class="sorteer-balk">
+      <button class="sorteer-knop pmd"  onclick="sorteerAfval('PMD')">
+        <span class="sorteer-icon">🔵</span>PMD
+      </button>
+      <button class="sorteer-knop gft"  onclick="sorteerAfval('GFT')">
+        <span class="sorteer-icon">🟢</span>GFT
+      </button>
+      <button class="sorteer-knop rest" onclick="sorteerAfval('REST')">
+        <span class="sorteer-icon">⚫</span>Restafval
+      </button>
+    </div>
+
+    <!-- Mobiele pijlknoppen -->
+    <div class="mobiel-controls">
+      <button
+        class="knop-pijl"
+        id="knop-links"
+        ontouchstart="mobileLinks=true"
+        ontouchend="mobileLinks=false"
+      >◀</button>
+      <button
+        class="knop-pijl"
+        id="knop-rechts"
+        ontouchstart="mobileRechts=true"
+        ontouchend="mobileRechts=false"
+      >▶</button>
+    </div>
+
+  </div><!-- /speelscherm -->
+
+
+  <!-- ══════════════════════════════════
+       STATE 3 – EINDSCHERM
+  ══════════════════════════════════ -->
+  <div id="eindscherm" class="scherm">
+
+    <div class="eind-emoji" id="eind-emoji">🏆</div>
+    <div class="eind-titel" id="eind-titel">Geweldig gedaan!</div>
+
+    <div class="score-groot" id="eind-score">
+      0<span>punten</span>
+    </div>
+
+    <!-- Statistieken -->
+    <div class="stats-rij">
+      <div class="stat-kaart">
+        <div class="stat-icoon">✅</div>
+        <div class="stat-getal" id="stat-gevangen">0</div>
+        <div class="stat-label">Gevangen</div>
+      </div>
+      <div class="stat-kaart">
+        <div class="stat-icoon">❌</div>
+        <div class="stat-getal" id="stat-gemist">0</div>
+        <div class="stat-label">Gemist</div>
+      </div>
+      <div class="stat-kaart">
+        <div class="stat-icoon">♻️</div>
+        <div class="stat-getal" id="stat-sorteer">0%</div>
+        <div class="stat-label">Sorteerscore</div>
+      </div>
+    </div>
+
+    <!-- Milieufeit -->
+    <div class="feit-eind" id="feit-eind">
+      💡 <strong>Wist je dat?</strong> Correct sorteren van PMD-afval bespaart
+      tot <strong>70% energie</strong> ten opzichte van nieuwe productie.
+    </div>
+
+    <!-- CTA crowdfunding -->
+    <button class="knop-cta" onclick="alert('Bedankt voor je steun! 💚')">
+      💚 Back ons project op crowdfunding!
+    </button>
+
+    <button class="knop-opnieuw" onclick="toonStartscherm()">
+      ↺ Opnieuw spelen
+    </button>
+
+  </div><!-- /eindscherm -->
+
+</div><!-- /scherm-wrapper -->
+
+<!-- Feedback-toast (buiten wrapper voor z-index) -->
+<div id="feedback-toast"></div>
+
+<!-- Eigen JavaScript (onderaan voor snelste laadtijd) -->
+<script src="script.js"></script>
+
+</body>
+</html>

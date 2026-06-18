@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedal Rush - PedalCharge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🚲 <span class="green">PEDAL</span><span class="white">RUSH</span></h1>
+      <p>Laad je telefoon op terwijl je fietst!</p>
+    </header>
+
+    <canvas id="game" width="800" height="500"></canvas>
+
+    <div class="ui">
+      <div class="score">Afstand: <span id="distance">0</span>m</div>
+      <div class="energy-bar">
+        <div class="energy-fill" id="energy"></div>
+      </div>
+      <div class="batteries">Batterijen: <span id="batteries">0</span></div>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="screen">
+      <h2>PedalCharge</h2>
+      <p>Fiets zo lang mogelijk!</p>
+      
+      <button id="startBtn">START RIT</button>
+      <button id="rulesBtn">📜 Regels bekijken</button>
+
+      <div id="highScore" class="highscore">
+        Beste afstand: <span id="bestScore">0</span>m
+      </div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="gameOverScreen" class="screen hidden">
+      <h2>Game Over</h2>
+      <p id="finalScore"></p>
+      <button id="restartBtn">Opnieuw proberen</button>
+      <button onclick="window.location.reload()">Terug naar start</button>
+    </div>
+
+    <!-- Rules Modal -->
+    <div id="rulesModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>📜 Hoe werkt Pedal Rush?</h2>
+        <ul>
+          <li>← → Pijltjestoetsen of klik links/rechts om van baan te wisselen</li>
+          <li>Verzamel blauwe <strong>batterijen</strong> om je telefoon op te laden</li>
+          <li>Ontwijk rode <strong>obstakels</strong> (auto's)</li>
+          <li>Hou je energie boven 0!</li>
+        </ul>
+        <button id="closeRules">Sluiten</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

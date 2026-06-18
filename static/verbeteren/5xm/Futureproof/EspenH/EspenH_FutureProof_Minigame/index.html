@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FutureProof — Minigame</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="panel left">
+        <div class="mode-tabs">
+          <button class="mode-tab active" data-mode="defense">Eco Defense</button>
+          <button class="mode-tab" data-mode="power">Power Station</button>
+        </div>
+        <h2 id="panelTitle">Eco Deployments</h2>
+        <ul id="deploymentShop" class="objectives"></ul>
+        <ul id="powerShop" class="objectives hidden"></ul>
+        <p class="hint" id="panelHint">Choose a deployment, then place it beside the route to defend the river corridor.</p>
+      </aside>
+
+      <main class="stage">
+        <div class="stage-top">
+          <div>
+            <h1 id="mainTitle">FutureProof: Eco Defense</h1>
+            <p class="hint" id="mainHint">Build sustainable units and protect the path from pollution waves.</p>
+          </div>
+          <button id="nextWaveBtn" class="btn">Launch Wave</button>
+          <button id="collectPowerBtn" class="btn hidden">Collect Energy</button>
+        </div>
+        <div class="canvas-wrap">
+          <canvas id="gameCanvas" width="960" height="640"></canvas>
+        </div>
+        <div id="defenseControls" class="controls">
+          <div id="selectedTowerLabel">Selected: <strong>None</strong></div>
+          <div class="hint">Click empty squares to deploy. Units automatically target intruders.</div>
+        </div>
+        <div id="powerControls" class="controls hidden">
+          <div class="hint">Click on any field square to place generators. Objects generate energy passively!</div>
+        </div>
+        <div id="towerMenu" class="tower-menu hidden">
+          <div class="tower-menu-header">
+            <div class="tower-menu-icon" id="towerMenuIcon">⚙️</div>
+            <div>
+              <div id="towerMenuTitle">Tower Upgrade</div>
+              <div id="towerMenuType" class="tower-menu-subtitle"></div>
+            </div>
+            <button id="closeTowerMenu" class="btn small">Close</button>
+          </div>
+          <div class="tower-menu-body">
+            <p id="towerMenuDescription" class="hint"></p>
+            <div class="tower-menu-stats">
+              <div><strong>Level</strong><span id="towerMenuLevel"></span></div>
+              <div><strong>Damage</strong><span id="towerMenuDamage"></span></div>
+              <div><strong>Attack Rate</strong><span id="towerMenuRate"></span></div>
+              <div><strong>Range</strong><span id="towerMenuRange"></span></div>
+              <div><strong>Upgrade Cost</strong><span id="towerMenuCost"></span></div>
+            </div>
+            <div class="tower-menu-next">
+              <div><strong>Next Upgrade</strong><span id="towerMenuNextName"></span></div>
+              <p id="towerMenuNextDesc" class="hint"></p>
+            </div>
+            <div class="tower-menu-actions" style="display:flex;gap:10px;flex-wrap:wrap;">
+              <button id="upgradeTowerBtn" class="btn">Upgrade Tower</button>
+              <button id="sellItemBtn" class="btn" style="background:#ef4444;">Sell Item</button>
+            </div>
+            <div id="towerMenuNotice" class="tower-menu-notice"></div>
+          </div>
+        </div>
+      </main>
+
+      <aside class="panel right">
+        <h2 id="rightPanelTitle">Eco Control</h2>
+        <div class="status-row"><strong>Energy:</strong> <span id="score">150</span></div>
+        <div class="status-row"><strong>Base Health:</strong> <span id="lives">10</span></div>
+        <div class="status-row"><strong>Wave:</strong> <span id="wave">1</span></div>
+        <div class="status-row"><strong>Threat:</strong> <span id="remaining">0</span></div>
+        <div id="powerStationStats" class="hidden">
+          <div class="spacer"></div>
+          <div class="status-row"><strong>Pending Energy:</strong> <span id="pendingPower">0</span></div>
+          <div class="status-row"><strong>Objects Placed:</strong> <span id="objectCount">0</span></div>
+          <div class="status-row"><strong>Energy/sec:</strong> <span id="energyRate">0</span></div>
+        </div>
+        <div class="spacer"></div>
+        <button id="restartBtn" class="btn">Restart</button>
+        <div class="legend" id="defenseLegend">
+          <div class="legend-item"><span class="legend-cell house"></span> House base</div>
+          <div class="legend-item"><span class="legend-cell tower"></span> Deployment zone</div>
+          <div class="legend-item"><span class="legend-cell path"></span> Pollution route</div>
+        </div>
+        <div class="legend hidden" id="powerLegend">
+          <div class="legend-item"><span class="legend-cell house"></span> House</div>
+          <div class="legend-item"><span class="legend-cell field"></span> Field</div>
+          <div class="legend-item"><span class="legend-cell building"></span> Generators</div>
+        </div>
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

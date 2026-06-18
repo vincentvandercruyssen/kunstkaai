@@ -114,3 +114,12 @@ Je project wordt beoordeeld op de volgende criteria:
 - Concept en UX-intentie.
 - Technische uitwerking (feitelijke werking en logica van de minigame/webapp).
 - Visueel ontwerp, UX en interactiviteit van de bijbehorende productwebsite.
+
+## Puntenverdeling
+
+- **Voorbereiding en concept (04)** Vertaling van het thema naar een webtoepassing. De papieren of digitale schets (low-fidelity wireframe) vormt een duidelijk startpunt, met aandacht voor de verschillende schermen, fasen (states) en acties.
+- **Structuur (02)** Correcte mapstructuur en bestandsnamen.
+- **Technische werking (04)** De webtoepassing of het minispel functioneert degelijk op basisniveau. States en acties werken logisch met behulp van JavaScript en de code is overzichtelijk.
+- **UX en interactiviteit (04)** De werking is intuïtief met duidelijke visuele terugkoppeling bij gebruikersacties. Gepaste grafische elementen, vloeiende animaties, overgangen of effecten zorgen voor een aantrekkelijke en boeiende gebruikerservaring.
+- **Vormgeving en integratie (04)** Het ontwerp sluit visueel aan bij de stijl van het bijbehorende thema, het product en de crowdfunding.
+- **Verantwoording (04)** De `readme.md` bevat een duidelijke, kritische verantwoording over de werking, obstakels en het (AI-)bronnengebruik.

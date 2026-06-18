@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Groei Clicker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🌱 Groei Clicker</h1>
+
+<div class="stats">
+
+<p>👆 Kliks: <span id="clicks">0</span></p>
+<p>💰 Bespaard: €<span id="money">0</span></p>
+<p>🗑️ Afval: <span id="waste">0</span></p>
+<p>😊 Happiness: <span id="happy">100</span>%</p>
+
+</div>
+
+<div class="game-area">
+
+<div id="child">👶</div>
+
+<h2 id="age">2 jaar</h2>
+
+</div>
+
+<button id="clickBtn">Laat groeien!</button>
+
+<div id="choiceBox" class="hidden">
+
+<h2>Nieuwe groeifase!</h2>
+
+<p>Kies kleding:</p>
+
+<button onclick="chooseGrowMee()">
+🌱 Groei Mee
+</button>
+
+<button onclick="chooseNormal()">
+👕 Normale kleding
+</button>
+
+</div>
+
+<div class="shop">
+
+<h2>🛒 Shop</h2>
+
+<button onclick="buyBooster()">
+⚡ Booster (50 kliks)
+</button>
+
+<p>Klikkracht:
+<span id="power">1</span>
+</p>
+
+</div>
+
+<div class="missions">
+
+<h2>🏆 Missies</h2>
+
+<ul>
+
+<li id="m1">
+Bereik 6 jaar
+</li>
+
+<li id="m2">
+Bespaar €100
+</li>
+
+<li id="m3">
+Voorkom 5 stuks afval
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

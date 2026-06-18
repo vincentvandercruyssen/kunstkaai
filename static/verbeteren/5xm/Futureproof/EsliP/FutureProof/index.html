@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waterauto van de Toekomst</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app">
+
+    <!-- START -->
+    <section id="screen-start" class="screen active glass-panel">
+      <h1 class="title">De Waterauto van de Toekomst</h1>
+      <p class="subtitle">Ervaar het verschil tussen fossiele brandstoffen en rijden op water.</p>
+      <button id="btn-start" class="btn neon-btn">Start</button>
+    </section>
+
+    <!-- PLAY -->
+    <section id="screen-play" class="screen glass-panel">
+      <h2 class="title">Configureer je voertuig</h2>
+
+      <div class="choices">
+        <div class="choice-group" data-type="engine">
+          <h3>Motor</h3>
+          <button class="choice card" data-option="gasoline">Benzine</button>
+          <button class="choice card" data-option="diesel">Diesel</button>
+          <button class="choice card" data-option="water">Watermotor</button>
+        </div>
+
+        <div class="choice-group" data-type="usage">
+          <h3>Gebruik</h3>
+          <button class="choice card" data-option="short">Korte ritten</button>
+          <button class="choice card" data-option="medium">Gemiddeld</button>
+          <button class="choice card" data-option="long">Lange afstanden</button>
+        </div>
+      </div>
+
+      <div class="impact holo-box">
+        <h3>Impact</h3>
+        <p>CO₂: <span id="co2-value">0</span> kg/jaar</p>
+        <p>Kost: €<span id="cost-value">0</span></p>
+      </div>
+
+      <button id="btn-result" class="btn neon-btn">Bekijk resultaat</button>
+    </section>
+
+    <!-- RESULT -->
+    <section id="screen-result" class="screen glass-panel">
+      <h2 class="title">Jouw Resultaat</h2>
+
+      <div class="holo-box">
+        <p>CO₂-uitstoot: <span id="final-co2">0</span> kg/jaar</p>
+        <p>Jaarlijkse kost: €<span id="final-cost">0</span></p>
+      </div>
+
+      <div class="product-highlight holo-box">
+        <h3>Onze Waterauto</h3>
+        <p>0 uitstoot. Ultra‑efficiënt. De toekomst van mobiliteit.</p>
+      </div>
+
+      <button id="btn-cta" class="btn neon-btn">Steun onze waterauto</button>
+      <button id="btn-restart" class="btn ghost-btn">Opnieuw</button>
+    </section>
+
+  </main>
+
+  <section id="crowdfunding" class="glass-panel">
+    <h2 class="title">Steun het project</h2>
+    <p class="subtitle">Bedankt voor je interesse! Deze demo brengt je dichter bij een watergedreven toekomst.</p>
+
+    <div class="donation-box">
+      <div class="donation-summary">
+        <p>Je bijdrage helpt ons waterauto-concept van prototype naar productie te brengen.</p>
+        <p class="goal-text">Doel: <strong>€12.500</strong></p>
+
+        <div class="progress-bar">
+          <span style="width: 64%"></span>
+        </div>
+        <p class="progress-value"><strong>€8.000</strong> van €12.500 bereikt</p>
+      </div>
+
+      <form id="donation-form" class="donation-form">
+        <div class="donation-amounts">
+          <button type="button" class="amount-btn">€10</button>
+          <button type="button" class="amount-btn">€25</button>
+          <button type="button" class="amount-btn">€50</button>
+          <button type="button" class="amount-btn">€100</button>
+        </div>
+
+        <label for="donation-amount">Eigen bedrag</label>
+        <input id="donation-amount" class="donation-input" type="number" min="5" step="5" value="25" />
+
+        <button type="submit" class="btn neon-btn">Doneer nu</button>
+        <p id="donation-message" class="small-text success-message" hidden></p>
+      </form>
+    </div>
+
+    <p class="small-text">Veilig betalen met iDEAL, creditcard of bankoverschrijving. Dit is een demo-donatiebox.</p>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

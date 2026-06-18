@@ -1,0 +1,186 @@
+:root {
+    --bg-main: #222222;          
+    --bg-card: #2b2b2b;             
+    
+  
+    --accent-sand: #CDBFA6;      
+    --mint-sage: #6B8F71;       
+    --deep-forest: #1E3D2F;      
+    --moss-green: #53775D;       
+    
+    --text-primary: #ffffff;
+    --border-line: rgba(205, 191, 166, 0.15);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.app-viewport {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-tag {
+    color: var(--mint-sage);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, var(--mint-sage), var(--accent-sand));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.interactive-game-box {
+    background-color: var(--bg-card);
+    border: 2px solid var(--border-line);
+    border-radius: 24px;
+    width: 100%;
+    max-width: 600px;
+    padding: 35px;
+    min-height: 490px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.app-state {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.app-state.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#state-start h1 {
+    font-size: 34px;
+    margin-bottom: 16px;
+    font-weight: 800;
+}
+
+.game-description {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.game-hud {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.hud-item {
+    background-color: var(--bg-card-light);
+    border: 1px solid var(--border-line);
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--accent-sand);
+}
+
+#arcadeCanvas {
+    background-color: #1a1a1a;
+    border: 1px solid var(--border-line);
+    border-radius: 14px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.game-controls-instruction {
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.point-guide {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    text-align: left;
+}
+.guide-good { color: #6B8F71; font-weight: bold; }
+.guide-bad { color: #cc6666; font-weight: bold; margin-top: 4px; }
+
+.btn-primary-web {
+    background-color: var(--deep-forest);
+    color: white;
+    padding: 14px 28px;
+    border: 1px solid var(--moss-green);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: inline-block;
+}
+.btn-primary-web:hover { background-color: var(--moss-green); }
+
+.btn-secondary-web {
+    background-color: transparent;
+    color: var(--accent-sand);
+    padding: 14px 28px;
+    border: 1px solid var(--border-line);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn-secondary-web:hover { color: white; border-color: var(--accent-sand); }
+
+.final-score-label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+.final-score-value {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--mint-sage);
+}
+.feedback-paragraph {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 30px;
+}
+.game-actions { display: flex; gap: 15px; }
+.game-actions button { flex: 1; }
+
+@media (max-width: 480px) {
+    .interactive-game-box { padding: 20px; }
+    .game-actions { flex-direction: column; }
+}
