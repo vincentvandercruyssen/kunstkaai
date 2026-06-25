@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservatie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Reservatie</h1>
+        <h2>Hier kun je reserveren</h2>
+        <form action="https://formspree.io/f/xbddlavp" method="POST">
+            <label for="naam">Naam *</label>
+<input type="text" id="naam" name="naam" required>
+<label for="email">E-mail *</label>
+<input type="email" id="email" name="email" required>
+<label for="datum">Datum *</label>
+<input type="date" id="datum" name="datum" required>
+<label for="tijd">Tijd *</label>
+<input type="time" id="tijd" name="tijd" required>
+<label for="telefoon">Telefoonnummer *</label>
+<input type="tel" id="telefoon" name="telefoon" required>
+<label for="bericht">Bericht</label>
+<textarea id="bericht" name="bericht"></textarea>
+<button type="submit">Verzenden</button>
+    </main>
+</body>
+
+</html>

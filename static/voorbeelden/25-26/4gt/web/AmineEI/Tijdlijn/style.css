@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Microgramma D Extended Bold";
+    src:
+     url(fonts/Microgramma\ D\ Extended\ Bold.otf);
+}
+
+.tijdlijn-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+}
+img {
+    width: 340px;
+    border-radius: 20px;
+}
+html, body {
+    height: 100%;
+    background-color: #F4F1EA;
+    margin: 0%;
+}
+main {
+    display: flex;
+    align-items: center;
+}
+.tijdlijn-item {
+    scroll-snap-align: start;
+}
+
+h1{
+    text-align: center;
+    font-family: Microgramma D Extended Bold;
+}
+h3{
+    text-align: center;
+    margin: 0%;
+    font-family: Microgramma D Extended Bold;
+    font-size: medium;
+    color: rgb(255, 255, 255)
+}
+h2{
+    text-align: center;
+    margin: 0%;
+    font-family: Microgramma D Extended Bold;
+    color: rgb(255, 255, 255)
+}
+p{
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+div.tijdlijn-item{
+    border: 10px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 20px;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}

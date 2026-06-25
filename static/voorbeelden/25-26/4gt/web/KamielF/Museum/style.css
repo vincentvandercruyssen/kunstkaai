@@ -1,0 +1,67 @@
+body {
+    background-color: rgba(0, 0, 0, 0.821);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #747373;
+}
+
+.opschuiven {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+section{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    
+}
+.galerij2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    
+
+    
+}
+
+.onepiece {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
+}
+.galerij img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3 ease;
+}
+.galerij img{
+transition: transform 0.3s ease;
+}
+
+main {
+    color: rgb(255, 255, 255);
+    
+}     
+
+.afgerond {
+    border-radius: 10px;
+}
+
+
+
+
+li {
+    list-style-position: inside;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}

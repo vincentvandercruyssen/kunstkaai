@@ -1,0 +1,58 @@
+.polaroid {width: 200px;
+background-color: rgb(255, 255, 255);
+position: absolute;
+padding: 20px;
+box-shadow: 10px 2px 25px;
+box-sizing: border-box;}
+
+.polaroid img {width: 100%;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+object-position: middle;
+filter: brightness(120%) contrast(70%) invert(5%) saturate(120%) sepia(20%);}
+
+
+
+h2 { font-family: "shantell-sans-bouncy", sans-serif;;}
+body{background-color: rgb(143, 139, 132);
+background-image: url(images/background\ hot\ planks.avif);}
+
+#polaroid1 {
+    top: 50%;
+    left: 50%;
+    rotate: -15deg}
+
+#polaroid2 {
+     top: 10%;}
+
+#polaroid3 { 
+    top: 5%;
+    left: 30%;
+    rotate: 10deg}
+
+#polaroid4 {
+    top:45%;
+    left:25%;
+    rotate:7deg}
+
+#polaroid5 {
+    top:20%;
+    left:47%;}
+
+#polaroid6 {
+    top:32%;
+    left:70%;
+    rotate:20deg} 
+    
+#polaroid7 {
+    top: 64%;
+    left: -1%;
+    rotate: -9deg}
+#polaroid8 {
+    top: 2%;
+    left:70%;
+    rotate: 10deg}
+#polaroid9 {
+    top: 62%;
+    left: 76%;
+    rotate: 30deg}

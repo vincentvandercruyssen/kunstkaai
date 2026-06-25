@@ -1,0 +1,27 @@
+body {
+    background-color: aqua;
+    font-family: Arial ;
+    color:rgb(0, 0, 0) ;
+    }
+main {
+    padding: 50px;
+    padding-top: 10px;
+    background-color: rgb(42, 84, 255);
+}
+
+    header {
+        background-color: blueviolet;
+        color:black ;
+        padding: 50px;
+    }
+    h2 {
+        margin-bottom: 0px;
+        background-color: rgb(138, 43, 232);
+    }
+
+    #hobbys {
+        background-color: aqua;
+    }
+    #Reisbestemmingen {
+        background-color: aqua;
+    }

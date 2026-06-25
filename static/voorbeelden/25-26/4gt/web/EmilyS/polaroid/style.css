@@ -1,0 +1,54 @@
+@import url("https://use.typekit.net/xva8jjl.css"); 
+
+.polaroid{
+    width: 250px;
+    position: absolute;
+    background-color: rgb(241, 239, 223);
+    box-shadow: 25%;
+    text-align: center;
+    filter: drop-shadow(0 0 7px rgba(0,0,0,0.56));
+}
+.polaroid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: top;
+
+}
+body{
+background-image: url(images/background.jpg);
+background-size: cover;
+font-family: "montana", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 20px;
+}
+#polaroid1 {
+    top: 95%;
+}
+#polaroid2 {
+    top: 170%;
+}
+#polaroid3 {
+    left: 40%;
+}
+#polaroid4 {
+    left: 40%;
+    top: 95%;
+}
+#polaroid5 {
+    left: 40%;
+    top: 170%;
+}
+#polaroid6 {
+    left: 80%
+}
+#polaroid7 {
+    left: 80%;
+    top: 95%;
+}
+#polaroid8 {
+    left: 80%;
+    top: 170%;
+}
+

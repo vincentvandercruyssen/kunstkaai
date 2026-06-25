@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vliegtuigen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>De Evolutie van Vliegtuigen</h1>
+    </header>
+    <main>
+        <div class="tijdlijn-container">
+            
+            <div class="tijdlijn-item">
+                <h2>1903</h2>
+                <h3>Wright Flyer</h3>
+                <img src="images/wright-brothers-ANP-366807447-900x500-1-890x500.jpg" alt="Wright Flyer">
+                <p>De eerste succesvolle gemotoriseerde vlucht werd uitgevoerd door Orville en Wilbur Wright.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>1909</h2>
+                <h3>Wright Company</h3>
+                <img src="images/Vliegtuigen-in-aanbouw.jpg" alt="Wright Company">
+                <p>De gebroeders Wright richtten hun eerste vliegtuigbedrijf op voor commerciële productie.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>1915</h2>
+                <h3>Junkers J 1</h3>
+                <img src="images/old-bi-plane-royalty-free-image-1603374970.avif" alt="Junkers J 1">
+                <p>Het eerste volledig metalen vliegtuig betekende een grote technologische doorbraak.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>1919</h2>
+                <h3>Eerste Trans-Atlantische Vlucht</h3>
+                <img src="images/Unbekannt_-_Alcock_and_Browns_aeroplane_after_completing_the_first_non-stop_transatlantic_fl_-_(MeisterDrucke-733453).jpg" alt="Trans-Atlantische vlucht">
+                <p>Alcock en Brown maakten de eerste non-stop vlucht over de Atlantische Oceaan.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>1927</h2>
+                <h3>Spirit of St. Louis</h3>
+                <img src="images/4787349_orig.jpg" alt="Spirit of St. Louis">
+                <p>Charles Lindbergh vloog solo van New York naar Parijs over de Atlantische Oceaan.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>1935</h2>
+                <h3>Douglas DC-3</h3>
+                <img src="images/on-this-day-in-1940-the-first-pressurized-cabin-airliner-v0-thllcic40ea91.webp" alt="Douglas DC-3">
+                <p>De DC-3 maakte commerciële luchtvaart betrouwbaar, snel en betaalbaar.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>1939</h2>
+                <h3>Heinkel He 178</h3>
+                <img src="images/jetfly-fb.jpg" alt="Heinkel He 178">
+                <p>Het eerste vliegtuig dat volledig werd aangedreven door een straalmotor.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>1947</h2>
+                <h3>Bell X-1</h3>
+                <img src="images/geluidsbarriere-sonic-boom-1.jpg" alt="Bell X-1">
+                <p>Chuck Yeager doorbrak als eerste piloot de geluidsbarrière.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>1952</h2>
+                <h3>de Havilland Comet</h3>
+                <img src="images/de-Havilland-DH.106-Comet-1-G-AYLP-London-2-May-1952.jpg" alt="de Havilland Comet">
+                <p>Het eerste commerciële straalvliegtuig trad in dienst voor passagiersvervoer.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>1969</h2>
+                <h3>Boeing 747</h3>
+                <img src="images/15315139_web1_L-Boeing-747-First-Takeoff-EDH-190208.jpg" alt="Boeing 747">
+                <p>De Jumbo Jet veranderde internationaal luchtverkeer voorgoed.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>1976</h2>
+                <h3>Concorde</h3>
+                <img src="images/concordecairbus-1200.jpg" alt="Concorde">
+                <p>Supersonische passagiersvluchten maakten reizen sneller dan ooit tevoren.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>1988</h2>
+                <h3>Antonov An-225</h3>
+                <img src="images/today-in-aviation-history-december-21st-in-1988-the-first-v0-04hdlotnsk8g1.png" alt="Antonov An-225">
+                <p>Het grootste transportvliegtuig ter wereld maakte zijn eerste vlucht.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>2005</h2>
+                <h3>Airbus A380</h3>
+                <img src="images/a380.webp" alt="Airbus A380">
+                <p>Het grootste passagiersvliegtuig ooit gebouwd steeg voor het eerst op.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>2009</h2>
+                <h3>Boeing 787 Dreamliner</h3>
+                <img src="images/K64825-03_med.jpg" alt="Boeing 787 Dreamliner">
+                <p>Een nieuwe generatie zuinige vliegtuigen met lichte composietmaterialen.</p>
+            </div>
+
+            <div class="tijdlijn-item">
+                <h2>2020</h2>
+                <h3>Boeing 777X</h3>
+                <img src="images/777X_Roll-Out_(47372862931).jpg" alt="Boeing 777X">
+                <p>De nieuwste generatie langeafstandsvliegtuigen met geavanceerde technologie.</p>
+            </div>
+        </div>
+    </main>
+   <script>
+    const afbeeldingen = document.querySelectorAll(".tijdlijn-item img");
+
+    afbeeldingen.forEach(img => {
+        img.addEventListener("click", () => {
+
+            img.classList.add("wegvliegen");
+
+            setTimeout(() => {
+                img.classList.remove("wegvliegen");
+            }, 5000);
+
+        });
+    });
+</script>
+</body>
+</html>

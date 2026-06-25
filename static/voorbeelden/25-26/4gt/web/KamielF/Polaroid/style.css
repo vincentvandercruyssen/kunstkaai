@@ -1,0 +1,83 @@
+body {
+    font-family: "p22-shibumi", sans-serif;
+    background-color: azure;
+    background-image: url(images/deku_ends_the_final_war.webp) ;
+    background-size: cover;
+}
+.polaroid {
+    background-color: rgb(3, 97, 42);
+    position: absolute;
+    width: 200px;
+    padding: 12px;   
+}
+
+.polaroid img {
+    width: 100%;
+
+    
+    object-position: top;
+}
+
+#polaroid1 {
+    top: 51%;
+    left: 1%;
+    rotate: -20deg;
+}
+
+#polaroid2 {
+    top:22%;
+    left: 10%;
+    rotate: -15deg;
+}
+#polaroid3 {
+    top: 18%;
+    left: 19%;
+    rotate: -10deg;
+}
+
+#polaroid4 {
+    top: 11%;
+    left: 27%;
+    rotate: -5deg;
+}
+
+#polaroid5 {
+    top:11%;
+    left: 36%;
+    rotate: -1deg;
+}
+
+#polaroid6 {
+    top: 11%;
+    left: 45%;
+}
+
+#polaroid7 {
+    top: 11%;
+    left: 54%;
+    rotate: 1;
+}
+
+#polaroid8 {
+    top: 15%;
+    left: 63%;
+    rotate: 5deg;
+}
+
+#polaroid9 {
+    top: 18%;
+    left: 72%;
+    rotate: 10deg;
+}
+
+#polaroid10 {
+    top: 33%;
+    left: 81%;
+    rotate: 15deg;
+}
+
+#polaroid11 {
+    top: 51%;
+    left: 90%;
+    rotate: 20deg;
+}

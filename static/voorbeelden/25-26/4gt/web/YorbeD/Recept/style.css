@@ -1,0 +1,91 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(170, 106, 26);
+}
+section {
+    background-color: rgb(230, 192, 127);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(146, 100, 9, 0.589);
+    margin-bottom: 15px;
+    font-size: larger;
+}
+#kleinkoptekst{
+    background-color: rgb(178, 116, 40);
+}
+
+#koptekst{
+    text-align: center;
+    
+}
+h2{ text-align: center;}
+img{
+    max-width: 700px;
+margin: auto;
+display: block;
+}
+h1{
+
+    font-size: 30pt;
+}
+#receptenboek{
+    text-decoration: solid;
+    box-shadow: 0 0 20px rgba(22, 15, 1, 0.589);
+    font-style: italic;
+    color: rgb(75, 55, 16);
+    border-radius: 20px;
+    font-size: 20pt;
+    padding: 3px;
+}
+#receptenboek:hover{
+    color: rgb(187, 123, 13);
+    font-style: normal;
+}
+
+#recepten{
+    text-decoration: solid;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 0 0 20px rgba(66, 45, 3, 0.589);
+    font-style: italic;
+    color: rgb(75, 55, 16);
+    padding: 3px;
+}
+#recepten:hover{
+    color: rgb(187, 123, 13);
+    font-style: normal;
+}
+
+#website{
+    text-decoration: solid;
+    font-style: italic;
+    color: rgb(75, 55, 16);
+}
+
+#website:hover {
+    color: rgb(187, 123, 13);
+}
+li{ 
+    padding: 4px;
+}
+#receptenfoto{
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+}
+#receptenfoto img{
+width: 100%;
+}
+#footer{
+    text-align: center;
+    font-size: 10pt;
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+    color: rgb(75, 55, 16);
+    font-style: italic;
+}
+a:hover{
+    color: rgb(187, 123, 13);
+    font-style: normal;
+}

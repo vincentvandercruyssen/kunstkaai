@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(79, 136, 205);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.absolute {
+    position: absolute;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 40mm;
+    translate: -50% -50%;
+}
+
+#tekst1 {
+    font-size: 34mm;
+    top: 30%;
+    left: -5%;
+    rotate: 90deg;
+}
+
+#tekst2 {
+    font-size: 20mm;
+    bottom: 10%;
+    right: 2%;
+    animation: draaien 2s infinite linear;
+}
+
+@keyframes draaien {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+#tekst3 {
+    font-size: 20%;
+}

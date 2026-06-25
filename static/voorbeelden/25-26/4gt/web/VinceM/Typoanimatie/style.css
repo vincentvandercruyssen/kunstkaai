@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(208, 62, 62);
+    font-family: 'Anton', sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  
+  main {
+    height: 100%;
+    position: relative;
+  }
+  
+  
+  .woord {
+    position: absolute;
+    font-size: 15vw;
+    opacity: 100%;
+  }
+  html, body {
+    height: 100%;
+  }
+  #w1 {
+    top: 20%;
+    left: 10%;
+    animation: draaien 1s infinite;
+  }
+  
+  @keyframes draaien {
+      0%  {
+        top: -10%;
+        left: 0%;
+        rotate: +180deg;
+      }
+  
+
+      100%  {
+        top: 50%;
+        left: 50%;
+        rotate: 0deg;
+      }
+    }
+  #w2 {
+    top: 50%;
+    left: 20%;
+    animation: draaien2 1s infinite;
+    
+    
+  }
+
+  @keyframes draaien2 {
+    0%  {
+      top: 10%;
+      left: 0%;
+      rotate: -180deg;
+    }
+
+    100%  {
+      top: -10%;
+      left: 5@0%;
+      rotate: 0deg;
+    }
+  }
+
+  #w3 {
+    top: 30%;
+    left: 60%;
+  }
+  
+  #w4 {
+    top: 70%;
+    left: 40%;
+  }
+
+  
+ 

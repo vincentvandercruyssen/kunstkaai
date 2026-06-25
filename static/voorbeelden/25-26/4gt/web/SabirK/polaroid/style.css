@@ -1,0 +1,69 @@
+.polaroid {
+   
+width: 200px;
+position: absolute;
+background-color: rgb(255, 255, 255); 
+box-shadow: 70px;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.polaroid img {
+width: 100%;
+}
+
+body{
+    background-image: url(images/pngtree-minimalistic-white-and-grey-abstract-texture-picture-image_15970824.png);
+    font-family: "dragster-script-jf", sans-serif;
+}
+
+#polaroid1{
+top: 50%;
+left: 10%;
+rotate: 20deg;
+
+}
+
+#polaroid2{
+    top: 70%;
+left: 20%;rotate: -10deg;
+}
+#polaroid3{
+    top: 20%;
+left: 30%;rotate: -30deg;
+}
+
+#polaroid4{
+    top: 5%;
+left: 80%;rotate: 20deg;
+}
+
+#polaroid5{
+    top: 80%;
+left: 80%;rotate: 10deg;
+}
+
+#polaroid6{
+    top: 50%;
+left: 50%;rotate: 20deg;
+}
+
+#polaroid7{
+    top: 40%;
+left: 80%;rotate: 0deg;
+}
+
+#polaroid8{
+    top: 85%;
+left: 50%;rotate: -20deg;
+}
+
+#polaroid9{
+    top: 0%;
+left: 10%;rotate: 30deg;
+}
+
+
+
+
+

@@ -1,0 +1,30 @@
+.tijdlijn-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: proximity;
+}
+.tijdlijn-item img {
+    width: 100%;
+}
+.tijdlijn-item {
+    scroll-snap-align: start;
+    width: 230px;
+    margin: 100px;
+}
+header {
+    color:aliceblue;
+    background-color: rgb(127, 164, 219);
+    text-align: center;
+    height: auto
+}
+html, body {
+  height: 100%;
+  background-color: rgb(100, 121, 215);
+}
+main {
+  height: calc(100% - 120px);
+  display: flex;
+  align-items: center;
+}
+

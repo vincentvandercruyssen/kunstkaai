@@ -1,0 +1,26 @@
+body {
+background-color: aqua;
+font-family: Arial ;
+color:blue ;
+}
+main{
+    padding: 30px;
+    padding-top: 0;
+
+}
+
+section {
+    background-color: rgb(17, 156, 194);
+    padding: 50px;
+}
+header {
+    background-color: rgb(33, 91, 207);
+padding: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+#hobbys {
+    background-color: rgb(70, 70, 244);
+}

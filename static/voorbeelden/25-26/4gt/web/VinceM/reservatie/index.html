@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservatie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+    <h1>Reservatie</h1>
+    <h2>Reserveer een tafel</h2>
+
+    <form action="https://formspree.io/f/xojjdoyk" method="POST">
+        
+        <label for="naam">Naam *</label>
+        <input type="text" id="naam" name="naam" required>
+
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="datum">Datum *</label>
+        <input type="date" id="datum" name="datum" required>
+
+        <label for="tijd">Tijd *</label>
+        <input type="time" id="tijd" name="tijd" required>
+
+        <label for="telefoon">Telefoonnummer *</label>
+        <input type="tel" id="telefoon" name="telefoon" required>
+
+        <label for="bericht">Bericht</label>
+        <textarea id="bericht" name="bericht" rows="4"></textarea>
+
+        <button type="submit">Versturen</button>
+
+    </form>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    background-color: rgba(15, 11, 0, 0.416);
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    padding: px;
+
+}
+header h1{
+    background-color: rgba(154, 131, 49, 0);
+    text-align: center
+}
+
+main{
+    padding: 30px;
+   max-width: 700px;
+   margin: 0 auto;
+   border-radius: 10%;
+   background-color: rgba(175, 168, 75, 0.715);
+    padding-top: 50px
+    }
+header{
+    padding: 20px;
+    padding-bottom: 30px;
+    background-color: rgba(23, 23, 13, 0.638);
+}
+img{
+    display: block;
+    margin: auto;
+}
+#chatgpt{ 
+    color: rgb(29, 255, 74);
+}
+
+main h1 {
+    text-align: center;
+}
+
+
+a {
+    color: blanchedalmond;
+}
+section {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+

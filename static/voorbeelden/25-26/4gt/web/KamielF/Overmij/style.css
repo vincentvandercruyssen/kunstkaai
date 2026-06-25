@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(255, 85, 0);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+section{
+    background-color: rgb(144, 214, 250);
+    padding: 10px;
+    
+}
+
+main {
+    color: rgb(255, 85, 0);
+    
+}        
+    

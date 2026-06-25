@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(24, 109, 60);
+    color: rgb(169, 236, 162);
+    background-image:url("images/Dark\ wood.jpeg");
+    font-family: "protest-revolution", sans-serif;
+
+}
+
+.polaroid {
+    position:absolute;
+    background-color: rgb(28, 145, 79);
+    width: 200px;
+    padding: 12px;
+    filter: drop-shadow(10px 10px 10px black);
+    text-align: center;
+}
+
+.polaroid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center right;
+    filter: brightness(80%) contrast(90%) sepia(30%);
+}
+#polaroid1 {
+    top: 10%;
+    left: 10%;
+}
+#polaroid1 img {
+    object-position: center 30%;
+}
+#polaroid2 {
+    top: 15%;
+    left: 50%;
+    rotate: -15deg;
+}
+
+#polaroid3 {
+    top: 15%;
+    left: 70%;
+    rotate: 10deg;
+}
+
+#polaroid4 {
+    top: 40%;
+    left: 30%;
+    rotate: deg;
+}
+
+#polaroid5 {
+    top: 70%;
+    left: 60%;
+    rotate: -20deg;
+}
+#polaroid5 img {
+    object-position: 30%;
+}
+#polaroid6 {
+    top: 70%;
+    left: 20%;
+    rotate: 10deg;
+}
+
+#polaroid7 {
+    top: 40%;
+    left: 80%;
+    rotate: 10deg;
+}
+
+#polaroid8 {
+    top: 50%;
+    left: 5%;
+    rotate: -10deg;
+}
+
+#polaroid9 {
+    top: 55%; 
+    left: 40%;
+    rotate: 10deg;
+}

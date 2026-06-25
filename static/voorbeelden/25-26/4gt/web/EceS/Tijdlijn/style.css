@@ -1,0 +1,71 @@
+html, body{
+    height: 100%;
+    background-color: #3d70a3;
+}
+header {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    height: calc(100% - 120px);
+    display: flex;
+    align-items: center;
+    background-color: rgb(161, 183, 218); height: 75%;
+  }
+  .tijdlijn-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+.tijdlijn-container {
+    scroll-snap-type: x proximity;
+    overflow-x: auto;
+}
+
+.tijdlijn-item {
+    scroll-snap-align: start;
+}
+h1, h2 {
+  background-color: rgb(48, 64, 108); width: 60%; 
+  margin: 10px auto;
+  color: aliceblue;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3, p{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+tijdlijn-container::-webkit-scrollbar {
+  height: 10px;
+  }
+   
+  
+  .tijdlijn-container::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 210, 120);
+  border-radius: 999px;
+  }
+  
+  
+  
+  .tijdlijn-item {
+  min-width: 320px;
+  max-width: 400px;
+  background-color: rgb(102, 167, 227);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(210, 103, 103, 0.08);
+  scroll-snap-align: start;
+  text-align: center;
+  transition: transform 0.3s ease,
+  box-shadow 0.3s ease;
+  }
+   
+  
+  .tijdlijn-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(9, 2, 73, 0.559);}

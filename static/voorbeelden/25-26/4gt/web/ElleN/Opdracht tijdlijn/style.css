@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+}
+
+ header {
+ height: 100px;
+ }
+
+main {
+  height: calc(100% - 220px);
+  display: flex;
+  align-items: center;
+}
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(122, 0, 0);
+    font-family: "cc-dead-mans-folly", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+    
+}
+
+.tijdlijn-container {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+}
+
+.tijdlijn-item {
+    min-width: 40ch;
+}
+
+.tijdlijn-item img {
+    width: 100%;
+}
+
+.tijdlijn-item img:hover {
+    scale: 1.1;
+    color: brown;
+}
+
+.tijdlijn-item textarea:hover {
+    scale: 1.1
+}

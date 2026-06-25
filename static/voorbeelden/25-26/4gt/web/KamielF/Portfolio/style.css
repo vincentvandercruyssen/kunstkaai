@@ -1,0 +1,22 @@
+body {
+    background-color: rgba(0, 0, 0, 0.821);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+} 
+
+header {
+    background-color: #747373;
+    border-radius: 11px;
+} 
+
+main img{
+    border-radius: 33px;
+    align-self: center;
+    background-color: #00000090;
+}
+main {
+    display: flex;
+    align-items: center;
+   
+}

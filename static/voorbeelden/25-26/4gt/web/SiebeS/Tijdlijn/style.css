@@ -1,0 +1,56 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(50, 73, 95);
+}
+
+
+.tijdlijn-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 50px;
+    scroll-snap-type: x proximity;
+    overflow: scroll;
+    scrollbar-color: rgb(60, 85, 212) rgb(115, 132, 216);
+    scrollbar-width: thin;
+}
+
+.tijdlijn-item{
+    min-width:50ch;
+    scroll-snap-align: start;
+    background-color: rgb(78, 123, 196);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.tijdlijn-item img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    border-radius: 30px;
+    object-fit: cover;
+   
+}
+
+img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.3);
+    
+}
+
+img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1{
+    background-color: rgb(131, 139, 252);
+    border-radius: 15px;
+    padding: 10px;
+    text-align:center;
+    
+}
+h2{
+text-align: center;
+}
+
+h3{
+text-align: center;
+}

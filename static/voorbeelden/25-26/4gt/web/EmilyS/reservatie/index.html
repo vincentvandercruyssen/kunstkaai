@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservatie</title>
+</head>
+<body>
+    <main>
+        <h1>Reservatie</h1>
+        <h2>Hier kun je reserveren.</h2>
+        <form action="https://formspree.io/f/mreebyzy" method="post">
+            <label for="Naam">Voornaam</label>
+            <input type="text" id="Naam" name="Naam" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="datum">Datum</label>
+            <input type="date" name="datum" id="datum">
+
+            <label for="tijd">Tijd:</label>
+            <input type="time" name="tijd" id="tijd">
+
+            <label for="telefoon">Telefoonnummer</label>
+            <input type="tel" name="telefoon" id="telefoon" required>
+
+            <label for="bericht">Bericht</label>
+            <textarea name="bericht" id="bericht"></textarea>
+
+            <button type="submit"> Verzenden</button>
+        </form>
+    </main>
+</body>
+</html>

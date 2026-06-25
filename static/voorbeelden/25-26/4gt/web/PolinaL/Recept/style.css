@@ -1,0 +1,48 @@
+body{
+    background-color: rgba(248, 197, 160, 0.626);
+    color:  rgb(87, 44, 44);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+    
+}
+header{
+    background-color: rgb(202, 151, 122);
+    text-align: center;
+    text-decoration:underline;
+    margin-bottom: 5%;
+    font-size: larger;
+    border-style: dashed;
+}
+section{
+    background-color: rgb(251, 211, 182);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-style:dashed;
+    text-align: center;
+    
+}
+
+img {
+    border-radius: 5%;
+    border-style: dashed;
+}
+
+a {
+    color: rgb(154, 85, 60);
+    font-size: medium;
+}
+h2 {
+text-align: center;
+background-color: rgb(202, 151, 122);
+color: rgb(255, 221, 200);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li {
+    list-style-position: inside;
+    text-align: center;
+}
+

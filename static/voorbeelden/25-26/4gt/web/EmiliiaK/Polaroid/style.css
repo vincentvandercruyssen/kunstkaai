@@ -1,0 +1,98 @@
+.polaroid{
+    width: 200px;
+    position: absolute;
+    background-color: #c3af94;
+    box-shadow: 2px 5px 5px 15px #c3af94;
+    }
+
+ body{ 
+     font-family: "felt-tip-woman", sans-serif;
+     background-image: url(fotos/achtergrond.jpg);
+     background-size: cover;
+     background-position: center;
+
+     
+ }
+
+ .polaroid{
+    width: 200px;
+    position: absolute;
+    background-color: #c3af94;
+    box-shadow: 2px 5px 5px 15px #c3af94;
+    box-sizing: border-box;
+    }
+
+.polaroid img { 
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    filter: brightness(120%) contrast(80%) invert(5%) saturate(120%) sepia(40%);
+ }
+ body{ 
+     font-family: "felt-tip-woman", sans-serif;
+     background-image: url(fotos/achtergrond.jpg);
+     background-size: cover;
+ }
+#polaroid_01_Tiffani
+ {
+top: 9%;
+left: 5%;
+rotate: -5deg;
+
+}
+#polaroid_02_feline{
+    top: 5%;
+    left: 40%;
+    rotate: 15deg;
+}
+#polaroid_03_Tefi{
+    top: 55%;
+    left: 40%;
+    rotate: -5deg;
+}
+#polaroid_04_Winnie{
+    top: 70%;
+    left: 70%;
+}
+#polaroid_05_Belalchik{
+
+    top:120%;
+    left: 70%;
+    rotate: 10deg;
+}
+#polaroid_06_Mishenka{
+    top: 10%;
+    left: 70%;
+}
+#polaroid_07_NenE{
+    top: 95%;
+    left: 5%;
+}
+
+#polaroid_08_menn{
+top:50% ;
+left:15%;
+}
+#polaroid_09_Ike{
+    top: 90%;
+    left: 160%;
+}
+
+#polaroid_10_Puppy{
+    top: 100%;
+    left: 30%;
+    rotate: 3deg;
+}
+#polaroid_11_skater{
+    top: -30%;
+    left: 160%;
+    rotate: 3deg;
+}
+#polaroid_12_allemal{
+top:90%;
+left: 290%;
+    
+}
+h3{
+    margin-left: 35%;
+}

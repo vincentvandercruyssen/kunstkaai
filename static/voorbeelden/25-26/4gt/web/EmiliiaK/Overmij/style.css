@@ -1,0 +1,31 @@
+body{ 
+    background-color: rgb(138, 116, 89);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: rgb(255, 225, 0);
+}
+header{
+    background-color: rgba(96, 73, 29, 0.389);
+    padding: 0,5%
+    ;
+}
+h2{ 
+    margin-bottom: 30px;
+    background-color: rgb(140, 94, 37);
+    
+}
+p{ 
+    margin-bottom: 20px;
+    background-color: rgba(96, 73, 29, 0.389);
+    
+    
+}
+section{ 
+    background-color: rgba(136, 97, 46, 0.753);
+}
+#hobbys{ 
+    padding: 5%;
+}
+li{ 
+    background-color: rgba(189, 137, 100, 0.447);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

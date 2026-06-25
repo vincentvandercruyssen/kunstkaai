@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(203, 166, 121);
+    color: rgb(62, 46, 24);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+margin: 3%;
+padding: 2%;
+}
+header{
+  padding: 0,5%;
+    background-color: rgb(186, 144, 93);
+    text-align: center;
+    border: 2px solid rgba(255, 183, 0, 0.914);
+}
+h2{
+    padding: 5pt;
+   background-color: rgb(208, 153, 82); 
+   margin-bottom: 3%;
+   text-align: center;
+}
+li{ 
+    padding:3pt;
+}
+
+.mijn-foto {
+    border-radius: 10px;
+   
+}
+
+p{
+    padding: 5px 80px;
+    background-color: rgba(116, 86, 42, 0.273);
+    text-align: center;
+}
+
+main {
+  max-width: 900px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 2%;
+  
+}
+
+h3 {
+   padding: 5pt;
+     background-color: rgba(116, 86, 42, 0.273);
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    
+}
+img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+a{
+    color: rgb(225, 203, 106);
+}
+
+header a {
+    font-size: 20px;
+}
+.simple-slide {
+    animation: simpleDown 0.8s ease-out;
+}
+.simple-slide {
+    animation: simpleDown 0.8s ease-out;
+}
+
+@keyframes simpleDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.draai {
+    transition: 0.3s;
+}
+
+.draai:hover {
+    transform: rotate(57deg);
+}

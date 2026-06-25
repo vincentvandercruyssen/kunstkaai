@@ -1,0 +1,30 @@
+body{
+    font-family: "waverly-cf", sans-serif;
+font-weight: 300;
+font-style: normal;
+margin: 0;
+}
+
+header{
+    background-color: rgb(206, 204, 204);
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+h1{
+    font-size: 70px;
+    margin-top: 0;
+}
+
+.portfolio{
+    margin-top: -70px;
+}
+section{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    width: 200px;
+}

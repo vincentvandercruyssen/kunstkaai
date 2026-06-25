@@ -1,0 +1,76 @@
+@import url("https://use.typekit.net/zyd0wlf.css");
+.polaroid {
+     position: absolute;
+     width: 230px;
+     background-color: rgb(249, 245, 240);
+     box-sizing: border-box;
+     box-shadow: 1px 1px 12px 12px rgb(209, 189, 164);
+     padding: 10px;
+     filter:sepia(0.2)
+}
+
+.polaroid img {
+    width: 100%;
+   
+}
+
+body{
+    font-family: "edu-nsw-act-hand-precursive", sans-serif;
+font-weight: 400;
+font-style: normal;
+background-image: url(images/achtergrond\ 7.jpg);
+background-size: cover;
+color: rgb(126, 102, 92);
+}
+#Polaroid_01_lo {
+    top: 30%;
+    left: 53%;
+}
+
+#Polaroid_02 {
+    top: 20%;
+    left: 28%;
+
+}
+
+#Polaroid_03 {
+    top: 55%;
+    left: 5%;
+}
+
+#Polaroid_04 {
+    top: 65%;
+    left: 40%;
+}
+
+#Polaroid_05 {
+    top: 60%;
+    left: 75%;
+}
+
+#Polaroid_06 {
+    top: 5%;
+    left: 75%;
+}
+
+#Polaroid_07 {
+    top: 90%;
+    left: 10%;
+}
+
+#Polaroid_08 {
+    top: 97%;
+    left: 35%;
+}
+
+#Polaroid_09 {
+    top: 95%;
+    left: 67%;
+}
+
+#Polaroid_10 {
+    top: 5%;
+    left: 5%;
+}
+
+

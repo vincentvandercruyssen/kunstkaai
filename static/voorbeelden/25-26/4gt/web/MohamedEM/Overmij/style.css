@@ -1,0 +1,31 @@
+body {
+    font-family: Verdana, sans-serif;
+    padding: 20px;
+    background: #eee;
+}
+
+main {
+    background: rgb(255, 102, 0);
+    padding: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1,
+h2 {
+    color: #8d1919;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+a {
+    color: #d8f000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

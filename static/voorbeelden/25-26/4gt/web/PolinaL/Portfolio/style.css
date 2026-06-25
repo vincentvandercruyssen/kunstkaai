@@ -1,0 +1,44 @@
+@import url("https://use.typekit.net/zyd0wlf.css");
+
+
+header {
+    
+    padding: 30px;
+    background-color: rgb(243, 193, 217);
+    text-align: center;
+    border-radius: 30px;
+    border-color: rgb(255, 255, 255);
+    border-style: dotted;
+    border-width: 5px;
+}
+nav {
+    display: flex;
+    gap: 16px;
+    font-family:font-family: "tt-cometus", sans-serif;
+font-weight: 400;
+font-style: normal;
+    justify-content: center;
+    align-items: center;
+}
+nav a {
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 10%;
+}
+.galerij {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+body {
+    background-color: rgb(181, 255, 243);
+    color: rgb(72, 16, 16);
+    background-image: url(images/achtergrond.jpg);
+    background-blend-mode:lighten;
+    text-align: center;
+     }
+
+img {
+    width: 100%;
+}

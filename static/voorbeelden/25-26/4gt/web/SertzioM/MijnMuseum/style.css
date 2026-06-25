@@ -1,0 +1,37 @@
+body {
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+
+}
+
+a {
+color: rgba(0, 0, 0, 0.893);
+
+}
+
+
+
+nav {
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+
+nav img {
+    width: 130px;
+}
+
+.galerij {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+img {
+width: 300px;
+}

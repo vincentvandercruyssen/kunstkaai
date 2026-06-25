@@ -1,0 +1,96 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; 
+  font-family: 'Arial Black', sans-serif; 
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+
+.typo {
+  position: absolute;
+  line-height: 0.9;
+  cursor: crosshair;
+}
+
+
+#woord-focus {
+  font-size: 25vw;
+  top: -5%;
+  left: -2%;
+  color: transparent;
+  -webkit-text-stroke: 2px #000;
+  z-index: 1;
+}
+
+
+#woord-druk {
+  font-size: 12vw;
+  bottom: 5%;
+  left: 5%;
+  background-color: #000;
+  color: #fff;
+  padding: 0 20px;
+  transform: rotate(-2deg); 
+}
+
+
+#woord-pixel {
+  font-size: 10vw;
+  top: 40%;
+  right: 10%;
+  color: #ff0055; 
+  z-index: 2;
+}
+
+
+
+@keyframes stretch-it {
+  0%, 100% {
+    transform: scaleX(1) scaleY(1) rotate(-2deg);
+  }
+  50% {
+    transform: scaleX(1.4) scaleY(0.8) rotate(-2deg);
+    }
+}
+
+/
+@keyframes flash {
+  0%, 100% { color: #ff6200; }
+  50% { color: #0000ff; }
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+
+#woord-druk {
+  animation: stretch-it 2s ease-in-out infinite;
+}
+
+#woord-pixel {
+  animation: flash 0.5s steps(2) infinite, float 4s ease-in-out infinite;
+}
+
+#woord-focus {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+#woord-focus:hover {
+  color: #000;
+  -webkit-text-stroke: 0px transparent;
+  transform: scale(1.05);
+}

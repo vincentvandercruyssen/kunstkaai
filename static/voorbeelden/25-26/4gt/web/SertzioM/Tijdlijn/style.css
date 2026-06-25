@@ -1,0 +1,76 @@
+header {
+color: rgb(0, 0, 0);
+background-color: rgb(255, 0, 0);
+text-transform: uppercase;
+
+}
+
+main {
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.tijdlijn-container {
+display: flex;
+overflow-x: auto;
+gap: 20px;
+scroll-snap-type: x proximity;
+}
+
+.tijdlijn-item {
+min-width: 50ch;
+scroll-snap-align: start;
+}
+
+.tijdlijn-item img {
+width: 100%;
+}
+
+.tijdlijn-container1 {
+display: flex;
+overflow-x: auto;
+gap: 20px;
+scroll-snap-type: x proximity;
+}
+
+.tijdlijn-item1 {
+min-width: 50ch;
+scroll-snap-align: start;
+}
+
+.tijdlijn-item1 img {
+width: 100%;
+}
+
+.tijdlijn-container2 {
+display: flex;
+overflow-x: auto;
+gap: 20px;
+scroll-snap-type: x proximity;
+}
+
+.tijdlijn-item2 {
+min-width: 50ch;
+scroll-snap-align: start;
+}
+
+.tijdlijn-item2 img {
+width: 100%;
+}
+
+.tijdlijn-container3 {
+display: flex;
+overflow-x: auto;
+gap: 20px;
+scroll-snap-type: x proximity;
+}
+
+.tijdlijn-item3 {
+min-width: 50ch;
+scroll-snap-align: start;
+}
+
+.tijdlijn-item3 img {
+width: 100%;
+}

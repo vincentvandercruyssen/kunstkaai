@@ -1,0 +1,17 @@
+body{
+   font-family: "poppins", sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+
+.inleiding{
+    font-weight: normal;
+}
+
+.achtergrond{
+    background-color: blanchedalmond;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectorieel Tekenen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header></header>
+<body>
+<main>
+    <div class="startpage">
+        <a href="index.html"><h1 id="Startpage">Startpagina</h1></a>
+    </div>
+    <div class="aanbod">
+        <div class="item">
+            <h2>Webontwikkeling</h2>
+            <a href="webontwikkeling.html"> Zie Onze Aanbod</a>
+        </div>
+    
+        <div class="item">
+            <h2>Beeldverwerking</h2>
+            <a href="beeldverwerking.html">Zie Onze Aanbod</a>
+        </div>
+    
+        <div class="item">
+            <h2>Vectorieel Tekenen</h2>
+            <a href="vectekenen.html">Zie Onze Aanbod</a>
+        </div>
+    
+        <div class="item">
+            <h2>Typografische Vormgeving</h2>
+            <a href="typovormgeving.html">Zie Onze Aanbod</a>
+        </div>
+    </div>
+        <h1 id="titel">Vectorieel Tekenen</h1> 
+        <svg class="svg-left" viewBox="0 0 190 190">
+            <symbol id="s-text-left">
+                <text text-anchor="left" dy="1em">
+                    VECTORIEEL TEKENEN
+                </text>
+            </symbol>
+        
+            <use class="text" href="#s-text-left"></use>
+            <use class="text" href="#s-text-left"></use>
+            <use class="text" href="#s-text-left"></use>
+            <use class="text" href="#s-text-left"></use>
+            <use class="text" href="#s-text-left"></use>
+        </svg>
+        <svg class="svg-right" viewBox="0 0 190 55">
+            <symbol id="s-text-right">
+                <text text-anchor="right" dy="1em">
+                    VECTORIEEL TEKENEN 
+                </text>
+            </symbol>
+        
+            <use class="text" href="#s-text-right"></use>
+            <use class="text" href="#s-text-right"></use>
+            <use class="text" href="#s-text-right"></use>
+            <use class="text" href="#s-text-right"></use>
+            <use class="text" href="#s-text-right"></use>
+        </svg>
+        <div class="center">
+            <p id="tiliakos">Tijdens vectorieel tekenen ontdek je hoe je strakke en schaalbare illustraties maakt met Adobe Illustrator. Je leert werken met vormen, lijnen en paden om eigen ontwerpen te creëren, zoals logo’s, illustraties en zelfs mandala’s. Stap voor stap bouw je je vaardigheden op en leer je hoe je van een eenvoudig idee een professioneel ontwerp maakt. Verwacht een combinatie van precisie, creativiteit en af en toe even zoeken waarom je lijn ineens verdwenen is (spoiler: hij staat waarschijnlijk gewoon op 0% opacity)</p>
+        </div>
+        
+        <div id="vec" class="gallerij">
+
+            <img src="afbeeldingen/Vectorieeltekenen1.png" alt="">
+            <img src="afbeeldingen/Vectorieeltekenen2.png" alt="">
+            <img src="afbeeldingen/Vectorieeltekenen3.png" alt="">
+        </div>
+    </main>
+    
+    <footer>
+        <p>Gemaakt Door Mohamed Amine El Issaoui - 4GT</p>
+    </footer>
+    <div class="overlay" id="imageOverlay" onclick="sluitAfbeelding()">
+        <img id="vergroteAfbeelding" src="" alt="Vergrote afbeelding">
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>

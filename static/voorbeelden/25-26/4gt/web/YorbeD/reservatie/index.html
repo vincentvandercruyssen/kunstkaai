@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservatie</title>
+</head>
+<body>
+    <main>
+        <h1>Reservatie Big Café</h1>
+        <form action="https://formspree.io/f/xlggdwvq" method="POST">
+            <label for="name">
+                <ul>Naam:*</ul>
+                <input type="text" id="naam" name="naam" required>
+            </label>
+
+            <label for="e-mail">
+                <ul>e-mail:*</ul>
+                <input type="email" id="e-mail" name="e-mail" required>
+            </label>
+
+            <label for="date">
+                <ul>datum:*</ul>
+                <input type="date" id="datum" name="datum" required>
+            </label>
+
+            <label for="">
+                <ul>tijd:* </ul>  
+                <input type="time" id="tijd" name="tijd" required>
+            </label>
+         
+
+        <label for="telefoon">
+                <ul>telefoon:</ul>
+                <input type="text" id="tele" name="telefoon nummer">
+             </label>
+
+             <table>
+                <ul>extra info:</ul>
+                <textarea type="text" id="extra" name="extra info" ></textarea>
+                
+             </table>
+             <button type="submit" > versturen</button>
+             
+
+        </form>
+
+
+    </main>
+
+    
+</body>
+</html>

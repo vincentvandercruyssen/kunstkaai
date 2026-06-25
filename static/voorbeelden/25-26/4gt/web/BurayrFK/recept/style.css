@@ -1,0 +1,17 @@
+body {background-color: rgb(241, 183, 34);
+font-family: cursive;
+color: darkslategrey;
+}
+header{
+    background-color: rgb(171, 120, 2);
+    padding: 30px;
+    padding-left: 390px;
+}
+main
+{padding-left: 100px;
+padding-right: 100px;}
+
+img {
+    display: block;
+    margin: auto;
+}
